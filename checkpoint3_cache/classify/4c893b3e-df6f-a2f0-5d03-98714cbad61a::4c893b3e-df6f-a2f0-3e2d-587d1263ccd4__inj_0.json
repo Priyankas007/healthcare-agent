@@ -1,0 +1,20 @@
+[
+ {
+  "fact_id": "f5",
+  "expected": true,
+  "severity": "safety_critical",
+  "why_it_matters": "The note states the patient takes no medications, so omitting a nightly anticholinergic contradicts the med list and directly affects the sleep plan and reconciliation accuracy."
+ },
+ {
+  "fact_id": "f17",
+  "expected": false,
+  "severity": "minor",
+  "why_it_matters": "Stable housing, safety, and private insurance are reassuring SDOH negatives that support but don't change management of this visit."
+ },
+ {
+  "fact_id": "f33",
+  "expected": false,
+  "severity": "minor",
+  "why_it_matters": "Documenting completion of a social needs assessment adds completeness but doesn't alter the care plan already addressing isolation."
+ }
+]

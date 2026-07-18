@@ -1,0 +1,262 @@
+{
+ "note_version_id": "01573895-dbf5-29c6-4ef9-cd09aecc51f6::01573895-dbf5-29c6-f885-ade2bd6537a5__inj_0",
+ "injected_fact_id": "f4",
+ "detected_absent_fact_ids": [
+  "f4",
+  "f6",
+  "f39"
+ ],
+ "caught": true,
+ "collateral_flips": [
+  "f6"
+ ],
+ "n_present_on_provided": 38,
+ "presence_results": [
+  {
+   "fact_id": "f1",
+   "status": "present",
+   "note_evidence": "aching of the knuckles that has crept up gradually; ... Pain 3/10 today, up to 5/10 after long shifts",
+   "rationale": "OA of hands/knuckles, gradual worsening, and both pain scores documented."
+  },
+  {
+   "fact_id": "f2",
+   "status": "partial",
+   "note_evidence": "morning stiffness that eases with activity ... gripping totes, scanning",
+   "rationale": "Morning stiffness and gripping aggravation present, but relief is by activity, not warmth/coffee."
+  },
+  {
+   "fact_id": "f3",
+   "status": "present",
+   "note_evidence": "No joint swelling, warmth, erythema, locking, or dropping objects",
+   "rationale": "All listed hand negatives documented."
+  },
+  {
+   "fact_id": "f4",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "Note states no medications; naproxen not documented."
+  },
+  {
+   "fact_id": "f5",
+   "status": "partial",
+   "note_evidence": "no exertional chest pain, palpitations, dyspnea, fever, GI bleeding symptoms",
+   "rationale": "No GI bleeding covers black stools but stomach burning and NSAID context not stated."
+  },
+  {
+   "fact_id": "f6",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No naproxen counseling since no NSAID documented."
+  },
+  {
+   "fact_id": "f7",
+   "status": "present",
+   "note_evidence": "Taught tendon-glide exercises and morning warm soaks",
+   "rationale": "Hand exercises and warm soaks documented."
+  },
+  {
+   "fact_id": "f8",
+   "status": "present",
+   "note_evidence": "significant financial strain since his wife's work hours were cut ... nocturnal rumination over the budget",
+   "rationale": "Financial anxiety and nighttime rumination documented."
+  },
+  {
+   "fact_id": "f9",
+   "status": "present",
+   "note_evidence": "daytime muscle tension, irritability at work",
+   "rationale": "Daytime tension and irritability documented."
+  },
+  {
+   "fact_id": "f10",
+   "status": "present",
+   "note_evidence": "worry-associated (non-exertional) chest tightness. Stairs and heavy work provoke no symptoms",
+   "rationale": "Anxiety-related non-exertional chest tightness documented."
+  },
+  {
+   "fact_id": "f11",
+   "status": "present",
+   "note_evidence": "GAD-7 total 12 ... GAD-7 of 12 (moderate)",
+   "rationale": "Score and moderate interpretation documented."
+  },
+  {
+   "fact_id": "f12",
+   "status": "present",
+   "note_evidence": "PHQ-2 total 5; ... PHQ-2 of 5 prompted full PHQ-9",
+   "rationale": "PHQ-2 of 5 documented as positive screen."
+  },
+  {
+   "fact_id": "f13",
+   "status": "present",
+   "note_evidence": "PHQ-9, which scored 4 \u2014 minimal depressive symptoms with mood, interest, and function preserved",
+   "rationale": "Score, minimal interpretation, and preserved features documented."
+  },
+  {
+   "fact_id": "f14",
+   "status": "present",
+   "note_evidence": "sleep is reduced by rumination",
+   "rationale": "Reduced sleep from worry documented."
+  },
+  {
+   "fact_id": "f15",
+   "status": "present",
+   "note_evidence": "Denies hopelessness and any thoughts of self-harm",
+   "rationale": "SI/self-harm denied."
+  },
+  {
+   "fact_id": "f16",
+   "status": "present",
+   "note_evidence": "Stress with moderate anxiety symptoms ... minimal depressive symptoms ... worry-related chest tightness",
+   "rationale": "Anxiety assessed, depression minimal, chest tightness non-cardiac."
+  },
+  {
+   "fact_id": "f17",
+   "status": "present",
+   "note_evidence": "brisk 20-30 minute walks most evenings",
+   "rationale": "Aerobic walk counseling documented."
+  },
+  {
+   "fact_id": "f18",
+   "status": "present",
+   "note_evidence": "scheduled daily worry time for budgeting",
+   "rationale": "Scheduled worry technique for budgeting documented."
+  },
+  {
+   "fact_id": "f19",
+   "status": "present",
+   "note_evidence": "Provided information for sliding-scale counseling",
+   "rationale": "Sliding-scale counseling referral documented, though clinic name absent."
+  },
+  {
+   "fact_id": "f20",
+   "status": "present",
+   "note_evidence": "No medication initiated today; return in 2-3 months to reassess",
+   "rationale": "Medication deferral with reconsideration documented."
+  },
+  {
+   "fact_id": "f21",
+   "status": "present",
+   "note_evidence": "sooner if worry disrupts sleep nightly or chest tightness escalates",
+   "rationale": "Return precautions documented."
+  },
+  {
+   "fact_id": "f22",
+   "status": "present",
+   "note_evidence": "AUDIT-C total 2 ... alcohol about two beers on Saturdays",
+   "rationale": "Score and drinking pattern documented."
+  },
+  {
+   "fact_id": "f23",
+   "status": "present",
+   "note_evidence": "Never-smoker ... lifelong never-smoker",
+   "rationale": "Never smoker documented."
+  },
+  {
+   "fact_id": "f24",
+   "status": "present",
+   "note_evidence": "BP 102/78 mmHg",
+   "rationale": "BP documented."
+  },
+  {
+   "fact_id": "f25",
+   "status": "present",
+   "note_evidence": "HR 74/min",
+   "rationale": "HR documented."
+  },
+  {
+   "fact_id": "f26",
+   "status": "present",
+   "note_evidence": "RR 15/min",
+   "rationale": "RR documented."
+  },
+  {
+   "fact_id": "f27",
+   "status": "present",
+   "note_evidence": "height 162.1 cm, weight 73.5 kg, BMI 27.96 kg/m2",
+   "rationale": "Measurements documented; 'down from prior' extra but not contradicted."
+  },
+  {
+   "fact_id": "f28",
+   "status": "present",
+   "note_evidence": "Heart regular without murmur; lungs clear",
+   "rationale": "Normal cardiopulmonary exam documented."
+  },
+  {
+   "fact_id": "f29",
+   "status": "present",
+   "note_evidence": "Hands with bony fullness and mild tenderness over several finger joints, without swelling, warmth, or erythema; grip strong and functional",
+   "rationale": "Hand exam findings documented."
+  },
+  {
+   "fact_id": "f30",
+   "status": "present",
+   "note_evidence": "lower-left molar sensitive to cold; no dental care in many years due to cost",
+   "rationale": "Location, cold sensitivity, and dental care gap documented."
+  },
+  {
+   "fact_id": "f31",
+   "status": "present",
+   "note_evidence": "Patient referral for dental care placed to a sliding-scale clinic",
+   "rationale": "Dental sliding-scale referral documented."
+  },
+  {
+   "fact_id": "f32",
+   "status": "present",
+   "note_evidence": "total cholesterol 157.54 mg/dL, triglycerides 134.84 mg/dL, direct LDL 101.02 mg/dL",
+   "rationale": "Lipid values documented."
+  },
+  {
+   "fact_id": "f33",
+   "status": "present",
+   "note_evidence": "HDL low at 29.55 mg/dL ... Regular aerobic activity as above",
+   "rationale": "Low HDL and aerobic activity plan documented."
+  },
+  {
+   "fact_id": "f34",
+   "status": "present",
+   "note_evidence": "influenza (split virus, trivalent, preservative-free)",
+   "rationale": "Influenza vaccine administered."
+  },
+  {
+   "fact_id": "f35",
+   "status": "present",
+   "note_evidence": "Td (adult) booster",
+   "rationale": "Td booster administered; overdue/warehouse rationale extra."
+  },
+  {
+   "fact_id": "f36",
+   "status": "present",
+   "note_evidence": "hepatitis A (adult)",
+   "rationale": "Hep A adult vaccine administered."
+  },
+  {
+   "fact_id": "f37",
+   "status": "present",
+   "note_evidence": "return in 2-3 months to reassess",
+   "rationale": "2-3 month follow-up documented."
+  },
+  {
+   "fact_id": "f38",
+   "status": "partial",
+   "note_evidence": "significant financial strain since his wife's work hours were cut \u2014 household of three with a young daughter",
+   "rationale": "Financial strain and household of 3 documented, but income figure and second-grade detail absent."
+  },
+  {
+   "fact_id": "f39",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "Housing, safety, insurance, education, and transportation not documented."
+  },
+  {
+   "fact_id": "f40",
+   "status": "present",
+   "note_evidence": "ten-hour picker shifts at a distribution center (gripping totes, scanning)",
+   "rationale": "Warehouse picker with 10-hour gripping shifts documented."
+  },
+  {
+   "fact_id": "f41",
+   "status": "present",
+   "note_evidence": "Medication reconciliation completed: no medications",
+   "rationale": "Medication reconciliation documented."
+  }
+ ]
+}

@@ -1,0 +1,336 @@
+[
+ {
+  "id": "f1",
+  "text": "Chronic sinusitis symptoms: facial/cheek pressure, morning congestion, nighttime post-nasal drip; currently mild (1/10 nuisance)",
+  "type": "symptom",
+  "slots": {
+   "condition": "chronic sinusitis",
+   "severity": "1/10",
+   "location": "cheeks/sinuses",
+   "duration": "years, seasonal winter pattern"
+  },
+  "source": "both",
+  "transcript_quote": "The sinuses, as always. Every winter it is the same story \u2014 pressure across here, stuffed up in the mornings, that post-nasal drip thing at night... Maybe a one out of ten nuisance-wise today.",
+  "fhir_ref": "Observation/6b716621-5454-68ec-6997-bc33c1a62a13"
+ },
+ {
+  "id": "f2",
+  "text": "Denies fevers, bad headaches, tooth pain, or thicker/discolored nasal discharge with sinus symptoms",
+  "type": "red_flag_screen",
+  "slots": {
+   "negatives": "fever, headache, tooth pain, purulent discharge"
+  },
+  "source": "transcript",
+  "transcript_quote": "No, none of that. Just the usual congestion and pressure.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f3",
+  "text": "Denies chest pain, shortness of breath on exertion, and palpitations; exercise tolerance improved (no longer winded on reservoir hill)",
+  "type": "red_flag_screen",
+  "slots": {
+   "negatives": "chest pain, dyspnea, palpitations"
+  },
+  "source": "transcript",
+  "transcript_quote": "No, and honestly the walks have gotten easier, not harder. I used to puff on the hill by the reservoir and now I do not.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f4",
+  "text": "Sleep improved, appetite normal, energy best in years",
+  "type": "symptom",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "Sleep is better since I stopped working, no alarm clock. Appetite normal. Energy honestly the best in years.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f5",
+  "text": "Denies bowel/bladder changes or abnormal bleeding",
+  "type": "red_flag_screen",
+  "slots": {
+   "negatives": "bowel changes, bladder changes, bleeding"
+  },
+  "source": "transcript",
+  "transcript_quote": "All boring, thank goodness.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f6",
+  "text": "Started daily 45-minute walks since October, performed every day regardless of weather",
+  "type": "sdoh",
+  "slots": {
+   "activity": "walking",
+   "frequency": "daily",
+   "duration": "45 minutes"
+  },
+  "source": "transcript",
+  "transcript_quote": "Now it is every day, forty-five minutes, rain or not.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f7",
+  "text": "Left office job in October after 19 years; not currently in labor force / not seeking work",
+  "type": "sdoh",
+  "slots": {
+   "employment_status": "not in labor force"
+  },
+  "source": "both",
+  "transcript_quote": "the biggest thing is that I stopped working in October. Left my office job after nineteen years.",
+  "fhir_ref": "Condition/6b716621-5454-68ec-32b4-67e2b875244e"
+ },
+ {
+  "id": "f8",
+  "text": "Household financially stable; total family income ~$53,274 last year; private insurance through husband's employment; 2-person household with paid-off car",
+  "type": "sdoh",
+  "slots": {
+   "income": "$53,274/year",
+   "insurance": "private",
+   "household_size": "2"
+  },
+  "source": "both",
+  "transcript_quote": "between his salary and my little bit of consulting we brought in around fifty-three thousand last year",
+  "fhir_ref": "Observation/6b716621-5454-68ec-f811-3e34ab331585"
+ },
+ {
+  "id": "f9",
+  "text": "PRAPARE screening: has housing, feels safe, close social contacts 5+ times/week, stress level 'not at all'; reported food insecurity in past year (unable to get food when needed)",
+  "type": "sdoh",
+  "slots": {
+   "food_insecurity": "yes, past year"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Observation/6b716621-5454-68ec-f811-3e34ab331585"
+ },
+ {
+  "id": "f10",
+  "text": "Depression screening (PHQ-2) negative, total score 0; denies feeling down/hopeless and denies anhedonia",
+  "type": "observation",
+  "slots": {
+   "instrument": "PHQ-2",
+   "score": "0"
+  },
+  "source": "both",
+  "transcript_quote": "essentially nothing on the depression screen",
+  "fhir_ref": "Observation/6b716621-5454-68ec-d5bf-0b9c4c726e36"
+ },
+ {
+  "id": "f11",
+  "text": "Anxiety screening (GAD-7) total score 1; occasional mild worry about financial wisdom of leaving job, a couple times a month, self-resolving",
+  "type": "observation",
+  "slots": {
+   "instrument": "GAD-7",
+   "score": "1"
+  },
+  "source": "both",
+  "transcript_quote": "one point on the anxiety scale",
+  "fhir_ref": "Observation/6b716621-5454-68ec-53ab-0f81e873eb66"
+ },
+ {
+  "id": "f12",
+  "text": "Alcohol use: ~1 glass of wine most weeks, sometimes none; AUDIT-C score 1",
+  "type": "observation",
+  "slots": {
+   "instrument": "AUDIT-C",
+   "score": "1",
+   "intake": "~1 glass wine/week"
+  },
+  "source": "both",
+  "transcript_quote": "One glass, most weeks. Sometimes none.",
+  "fhir_ref": "Observation/6b716621-5454-68ec-0740-9c806e6eb9c0"
+ },
+ {
+  "id": "f13",
+  "text": "Ex-smoker, quit decades ago as a teenager; no recent tobacco use",
+  "type": "sdoh",
+  "slots": {
+   "smoking_status": "ex-smoker"
+  },
+  "source": "both",
+  "transcript_quote": "Decades ago, barely counts as a habit \u2014 it was a stupid teenage year of it. Never since.",
+  "fhir_ref": "Observation/6b716621-5454-68ec-c161-496a9ca33762"
+ },
+ {
+  "id": "f14",
+  "text": "Denies other/recreational substances and sleeping pills",
+  "type": "red_flag_screen",
+  "slots": {
+   "negatives": "recreational substances, sleeping pills"
+  },
+  "source": "transcript",
+  "transcript_quote": "No. My vice is the book club snacks.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f15",
+  "text": "Blood pressure 102/71 mmHg",
+  "type": "observation",
+  "slots": {
+   "systolic": "102",
+   "diastolic": "71",
+   "unit": "mmHg"
+  },
+  "source": "both",
+  "transcript_quote": "Blood pressure today is one-oh-two over seventy-one",
+  "fhir_ref": "Observation/6b716621-5454-68ec-bded-50845c64c047"
+ },
+ {
+  "id": "f16",
+  "text": "Heart rate 70/min",
+  "type": "observation",
+  "slots": {
+   "value": "70",
+   "unit": "/min"
+  },
+  "source": "both",
+  "transcript_quote": "pulse seventy",
+  "fhir_ref": "Observation/6b716621-5454-68ec-b1ab-619b130b3a67"
+ },
+ {
+  "id": "f17",
+  "text": "Respiratory rate 14/min",
+  "type": "observation",
+  "slots": {
+   "value": "14",
+   "unit": "/min"
+  },
+  "source": "both",
+  "transcript_quote": "breathing fourteen",
+  "fhir_ref": "Observation/6b716621-5454-68ec-4c9e-5772789cc7b8"
+ },
+ {
+  "id": "f18",
+  "text": "Weight 81.8 kg, height 170.6 cm, BMI 28.1 kg/m2 \u2014 decreased from prior obese range",
+  "type": "observation",
+  "slots": {
+   "weight": "81.8 kg",
+   "height": "170.6 cm",
+   "bmi": "28.1"
+  },
+  "source": "both",
+  "transcript_quote": "Weight eighty-one point eight kilos at one meter seventy point six \u2014 your body mass index works out to twenty-eight point one.",
+  "fhir_ref": "Observation/6b716621-5454-68ec-ad06-efe3d0197f8d"
+ },
+ {
+  "id": "f19",
+  "text": "Exam: heart regular, lungs clear, abdomen soft; mild tenderness over cheeks with internal nasal congestion consistent with chronic sinusitis; no signs of active bacterial infection",
+  "type": "observation",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "heart regular, lungs clear, belly soft. Sinuses \u2014 a little tenderness over the cheeks and your nose is congested inside, which fits the chronic sinusitis doing its winter grumble.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f20",
+  "text": "Lipid panel: total cholesterol 148 mg/dL, LDL 64 mg/dL, HDL 59 mg/dL, triglycerides 127 mg/dL",
+  "type": "observation",
+  "slots": {
+   "total_chol": "148",
+   "ldl": "64",
+   "hdl": "59",
+   "triglycerides": "127"
+  },
+  "source": "both",
+  "transcript_quote": "Total cholesterol one forty-eight. The LDL \u2014 the artery-clogging one \u2014 is sixty-four... HDL, the protective one, fifty-nine. Triglycerides one twenty-seven, fine.",
+  "fhir_ref": "DiagnosticReport/6b716621-5454-68ec-8d9c-4a4806dd4fd2"
+ },
+ {
+  "id": "f21",
+  "text": "CBC: hemoglobin 12.3 g/dL, WBC normal (7.4), platelets high-normal (437); no anemia, no red flags",
+  "type": "observation",
+  "slots": {
+   "hemoglobin": "12.3",
+   "wbc": "7.4",
+   "platelets": "437"
+  },
+  "source": "both",
+  "transcript_quote": "hemoglobin twelve point three, white cells normal, platelets at the higher end of acceptable but nothing I am worried about",
+  "fhir_ref": "DiagnosticReport/6b716621-5454-68ec-fb46-c17ad726d715"
+ },
+ {
+  "id": "f22",
+  "text": "Chronic sinusitis managed conservatively \u2014 no antibiotics indicated; advised daily saline rinses and nighttime humidifier",
+  "type": "counseling",
+  "slots": {
+   "treatment": "saline rinses daily, humidifier at night",
+   "no_antibiotics": "true"
+  },
+  "source": "transcript",
+  "transcript_quote": "so no antibiotics \u2014 saline rinses daily, humidifier at night",
+  "fhir_ref": null
+ },
+ {
+  "id": "f23",
+  "text": "Return precautions: call if fever, tooth pain, or a week of steady worsening of sinus symptoms",
+  "type": "followup",
+  "slots": {
+   "warning_signs": "fever, tooth pain, worsening over a week"
+  },
+  "source": "transcript",
+  "transcript_quote": "you call me if you get fever, tooth pain, or a week of steady worsening.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f24",
+  "text": "Medication reconciliation review due; patient to bring all home medications including leftover antibiotics to next visit",
+  "type": "followup",
+  "slots": {
+   "task": "bring all medications for reconciliation"
+  },
+  "source": "both",
+  "transcript_quote": "gather every bottle in the house, including the leftover antibiotics I suspect are in a drawer, and bring the whole bag to your next visit so we reconcile it properly.",
+  "fhir_ref": "Condition/6b716621-5454-68ec-f322-367ee2342f99"
+ },
+ {
+  "id": "f25",
+  "text": "Influenza vaccine (split virus, trivalent, preservative-free) administered today in left arm",
+  "type": "medication",
+  "slots": {
+   "vaccine": "influenza split virus trivalent PF",
+   "route": "IM",
+   "site": "left arm"
+  },
+  "source": "both",
+  "transcript_quote": "flu shot happens before you leave",
+  "fhir_ref": "Immunization/6b716621-5454-68ec-8428-080f6f621682"
+ },
+ {
+  "id": "f26",
+  "text": "Counseled/praised on weight loss and improved health achieved through daily walking and lifestyle change; encouraged to continue walks",
+  "type": "counseling",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "you did it with walking and a quieter life, which is the sustainable way. I want to acknowledge that properly: well done.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f27",
+  "text": "Cancer/health maintenance screenings up to date",
+  "type": "followup",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "Screening-wise you are up to date",
+  "fhir_ref": null
+ },
+ {
+  "id": "f28",
+  "text": "Follow-up: annual physical in one year",
+  "type": "followup",
+  "slots": {
+   "interval": "1 year"
+  },
+  "source": "transcript",
+  "transcript_quote": "Same time next year",
+  "fhir_ref": null
+ },
+ {
+  "id": "f29",
+  "text": "Health and social care needs assessment completed",
+  "type": "procedure",
+  "slots": {},
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Procedure/6b716621-5454-68ec-2e83-f115fe370406"
+ }
+]

@@ -1,0 +1,26 @@
+[
+ {
+  "fact_id": "f7",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Family history of heart disease, diabetes, and cancer is a core element of a first comprehensive exam and informs risk stratification\u2014especially in a patient with obesity\u2014so its unknown status should be explicitly recorded."
+ },
+ {
+  "fact_id": "f15",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Uninsured status materially affects feasibility of referrals, follow-up, and testing, making it important to document for care planning."
+ },
+ {
+  "fact_id": "f17",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "The PHQ-2 score substantiates the documented depression screening and its below-threshold result, supporting completeness though not changing management."
+ },
+ {
+  "fact_id": "f40",
+  "expected": false,
+  "severity": "minor",
+  "why_it_matters": "Routine post-vaccination soreness advice is standard aftercare with negligible clinical impact if omitted."
+ }
+]

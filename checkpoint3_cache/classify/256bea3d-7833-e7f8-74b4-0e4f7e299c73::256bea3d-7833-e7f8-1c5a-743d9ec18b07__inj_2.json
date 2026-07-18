@@ -1,0 +1,20 @@
+[
+ {
+  "fact_id": "f8",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "An active emergency epinephrine auto-injector should be captured in the completed medication review, as it reflects an anaphylaxis-risk allergy history and affects prescription continuity."
+ },
+ {
+  "fact_id": "f11",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Documenting the absence of recent allergic reactions and no EpiPen use is a relevant pertinent negative given her allergy profile but has low immediate clinical impact."
+ },
+ {
+  "fact_id": "f42",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Medicaid status is directly relevant to this visit's referrals and cost-related access issues (dental, medications), influencing care coordination decisions."
+ }
+]

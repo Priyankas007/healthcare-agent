@@ -1,0 +1,26 @@
+[
+ {
+  "fact_id": "f11",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Given the documented loneliness and social isolation, a recorded depression screen result substantiates the clinical reasoning that ruled out depression and supports appropriate risk stratification."
+ },
+ {
+  "fact_id": "f37",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Documenting completion of depression screening is important for care completeness and quality-measure compliance, especially given the patient's isolation and stress."
+ },
+ {
+  "fact_id": "f41",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Justice involvement and a criminal record affecting employment are actionable social determinants that could compound this patient's occupational stress and social isolation and warrant documentation and support referral."
+ },
+ {
+  "fact_id": "f42",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "These PRAPARE findings are mostly reassuring background, but the low social-contact frequency corroborates the identified social isolation and rounds out the SDOH assessment."
+ }
+]

@@ -1,0 +1,14 @@
+[
+ {
+  "fact_id": "f10",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "An active NSAID prescription must be documented for medication reconciliation and to flag GI/renal/cardiovascular risk in this elderly patient already on meperidine."
+ },
+ {
+  "fact_id": "f29",
+  "expected": false,
+  "severity": "minor",
+  "why_it_matters": "Finalization of the H&P is an administrative status already implied by the note and does not affect clinical care."
+ }
+]

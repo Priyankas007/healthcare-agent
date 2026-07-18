@@ -1,0 +1,26 @@
+[
+ {
+  "fact_id": "f16",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Given documented social isolation and unemployment, a recorded PHQ-2 screen validates the negative mood assessment and supports mental-health monitoring."
+ },
+ {
+  "fact_id": "f35",
+  "expected": true,
+  "severity": "safety_critical",
+  "why_it_matters": "Confirming no prior adverse reaction is a mandatory contraindication check before administering the influenza vaccine given today."
+ },
+ {
+  "fact_id": "f39",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Attributing fatigue to anemia, lung recovery, and unemployment with safety-netting guides whether further workup is triggered."
+ },
+ {
+  "fact_id": "f42",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "The PRAPARE safety and stress details complete the SDOH assessment but largely reinforce already-documented housing concerns and reassuring safety findings."
+ }
+]

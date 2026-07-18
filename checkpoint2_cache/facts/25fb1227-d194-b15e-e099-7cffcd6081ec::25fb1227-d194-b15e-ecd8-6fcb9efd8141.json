@@ -1,0 +1,426 @@
+[
+ {
+  "id": "f1",
+  "text": "Patient has colon cancer that began as recurrent polyps and has grown across a stretch of the colon",
+  "type": "condition",
+  "slots": {
+   "condition": "colon cancer",
+   "site": "colon",
+   "history": "recurrent polyps over years"
+  },
+  "source": "transcript",
+  "transcript_quote": "It started with the polyps \u2014 for years they kept finding them, taking them out, finding more back there. Then last year it was not a polyp anymore. The cancer has grown across a whole stretch of the colon now.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f2",
+  "text": "Oncology specialist advised further cancer treatment would harm more than help; patient elected to stop disease-directed treatment",
+  "type": "condition",
+  "slots": {
+   "decision": "cease curative treatment, pursue comfort"
+  },
+  "source": "transcript",
+  "transcript_quote": "He said anything more they could do would take more out of me than it would take out of the cancer. And I said, then I believe we are done.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f3",
+  "text": "Patient's goals of care: remain at home, comfort-focused, avoid hospital death",
+  "type": "other",
+  "slots": {
+   "goal": "home comfort care"
+  },
+  "source": "transcript",
+  "transcript_quote": "Staying right here. This house, my flower beds out front, my shows, Karen, and the cat. I do not want to die in a hospital hallway under those lights. And I do not want to hurt more than I have to.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f4",
+  "text": "Patient reports dull, low abdominal pain most days that comes and goes",
+  "type": "symptom",
+  "slots": {
+   "symptom": "abdominal pain",
+   "quality": "dull",
+   "location": "lower abdomen",
+   "timing": "most days, intermittent"
+  },
+  "source": "transcript",
+  "transcript_quote": "The belly aches most days \u2014 dull, low down, comes and goes.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f5",
+  "text": "Patient reports chronic back pain present for 20 years",
+  "type": "symptom",
+  "slots": {
+   "symptom": "back pain",
+   "duration": "20 years"
+  },
+  "source": "transcript",
+  "transcript_quote": "my back \u2014 the back has been bad for twenty years, that is nothing new",
+  "fhir_ref": null
+ },
+ {
+  "id": "f6",
+  "text": "Pain is currently bearable/controlled on current medications",
+  "type": "relieving_factor",
+  "slots": {
+   "factor": "current pain medications",
+   "effect": "pain about bearable"
+  },
+  "source": "transcript",
+  "transcript_quote": "The pills keep it just about bearable.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f7",
+  "text": "Patient takes acetaminophen 325 mg",
+  "type": "medication",
+  "slots": {
+   "drug": "acetaminophen",
+   "dose": "325 mg",
+   "route": "oral"
+  },
+  "source": "transcript",
+  "transcript_quote": "Acetaminophen, the 325s.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f8",
+  "text": "Patient takes simvastatin 10 mg for cholesterol",
+  "type": "medication",
+  "slots": {
+   "drug": "simvastatin",
+   "dose": "10 mg",
+   "indication": "cholesterol"
+  },
+  "source": "transcript",
+  "transcript_quote": "Simvastatin, 10 milligrams, for cholesterol.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f9",
+  "text": "Patient takes oxycodone extended-release (OxyContin) 10 mg",
+  "type": "medication",
+  "slots": {
+   "drug": "oxycodone extended-release",
+   "dose": "10 mg",
+   "route": "oral"
+  },
+  "source": "transcript",
+  "transcript_quote": "The OxyContin \u2014 oxycodone 10 milligram extended-release.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f10",
+  "text": "Patient takes Percocet (acetaminophen 325 mg / oxycodone 10 mg) for bad pain stretches",
+  "type": "medication",
+  "slots": {
+   "drug": "acetaminophen/oxycodone",
+   "dose": "325 mg / 10 mg",
+   "indication": "breakthrough/bad pain"
+  },
+  "source": "transcript",
+  "transcript_quote": "Percocet \u2014 that is acetaminophen 325 with oxycodone 10 \u2014 for the bad stretches.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f11",
+  "text": "Patient takes tramadol 50 mg",
+  "type": "medication",
+  "slots": {
+   "drug": "tramadol",
+   "dose": "50 mg"
+  },
+  "source": "transcript",
+  "transcript_quote": "Tramadol 50.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f12",
+  "text": "Patient takes naproxen sodium 220 mg",
+  "type": "medication",
+  "slots": {
+   "drug": "naproxen sodium",
+   "dose": "220 mg"
+  },
+  "source": "transcript",
+  "transcript_quote": "Naproxen sodium, the 220s.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f13",
+  "text": "Patient takes hydrocodone extended-release 10 mg capsule",
+  "type": "medication",
+  "slots": {
+   "drug": "hydrocodone extended-release",
+   "dose": "10 mg",
+   "form": "capsule"
+  },
+  "source": "transcript",
+  "transcript_quote": "A hydrocodone 10 milligram extended-release capsule.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f14",
+  "text": "Patient has leftover amoxicillin-clavulanate from the dentist",
+  "type": "medication",
+  "slots": {
+   "drug": "amoxicillin-clavulanate",
+   "status": "leftover, not active regimen",
+   "source": "dental"
+  },
+  "source": "transcript",
+  "transcript_quote": "An amoxicillin-clavulanate left over from the dentist.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f15",
+  "text": "Patient uses a fluoride gel",
+  "type": "medication",
+  "slots": {
+   "drug": "fluoride gel"
+  },
+  "source": "transcript",
+  "transcript_quote": "And a fluoride gel.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f16",
+  "text": "Nurse counseled patient/family that medication list will be organized into a written schedule identifying each medicine's purpose and breakthrough pain med",
+  "type": "counseling",
+  "slots": {
+   "topic": "medication reconciliation and schedule"
+  },
+  "source": "transcript",
+  "transcript_quote": "Over our next visits we will get it organized \u2014 a written schedule, what each medicine is for, which one is for breakthrough pain",
+  "fhir_ref": null
+ },
+ {
+  "id": "f17",
+  "text": "Bowel function screening: patient reports bowels slower than before but moving most days",
+  "type": "red_flag_screen",
+  "slots": {
+   "screen": "constipation/opioid bowel",
+   "result": "slower but moving most days"
+  },
+  "source": "transcript",
+  "transcript_quote": "Slower than I used to, but yes, most days. Karen keeps pushing the prune juice.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f18",
+  "text": "Counseled on constipation prevention with opioids: continue prune juice, fluids, and report if bowels stop",
+  "type": "counseling",
+  "slots": {
+   "topic": "opioid-induced constipation prevention"
+  },
+  "source": "transcript",
+  "transcript_quote": "Keep pushing it, Karen \u2014 fluids, and you tell me right away if things stop. With this cancer and these medicines, that is the one we never ignore.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f19",
+  "text": "Patient reports poor/small appetite",
+  "type": "symptom",
+  "slots": {
+   "symptom": "decreased appetite"
+  },
+  "source": "transcript",
+  "transcript_quote": "Appetite is small. I eat like a bird and Karen fusses.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f20",
+  "text": "Patient reports fatigue with increased daytime sleeping",
+  "type": "symptom",
+  "slots": {
+   "symptom": "fatigue",
+   "detail": "sleeps most afternoons"
+  },
+  "source": "transcript",
+  "transcript_quote": "And I am tired. I sleep more afternoons than not.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f21",
+  "text": "Patient has history of anemia, possibly contributing to fatigue",
+  "type": "condition",
+  "slots": {
+   "condition": "anemia"
+  },
+  "source": "transcript",
+  "transcript_quote": "They always said my blood ran low \u2014 the anemia \u2014 so maybe that is some of it.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f22",
+  "text": "Two-physician hospice certification completed with the attending physician",
+  "type": "procedure",
+  "slots": {
+   "procedure": "hospice certification"
+  },
+  "source": "both",
+  "transcript_quote": "I have completed that certification with her attending doctor. That is done.",
+  "fhir_ref": "Procedure/25fb1227-d194-b15e-2126-93b7565c7cca"
+ },
+ {
+  "id": "f23",
+  "text": "Formal notifications sent to primary physician and insurance regarding hospice coordination",
+  "type": "procedure",
+  "slots": {
+   "procedure": "notifications"
+  },
+  "source": "both",
+  "transcript_quote": "We also send the formal notifications \u2014 her primary doctor and her insurance both get notice that hospice is coordinating everything now.",
+  "fhir_ref": "Procedure/25fb1227-d194-b15e-f8b2-9408936afcfd"
+ },
+ {
+  "id": "f24",
+  "text": "Initial patient assessment / head-to-toe exam performed at this visit",
+  "type": "procedure",
+  "slots": {
+   "procedure": "initial patient assessment"
+  },
+  "source": "both",
+  "transcript_quote": "today counts as your initial assessment \u2014 I will look you over head to toe in a few minutes",
+  "fhir_ref": "Procedure/25fb1227-d194-b15e-04e0-9821a676ecd6"
+ },
+ {
+  "id": "f25",
+  "text": "Individualized plan of care developed reflecting patient's wishes (home, comfort, flowers, cat)",
+  "type": "procedure",
+  "slots": {
+   "procedure": "development of individualized plan of care"
+  },
+  "source": "both",
+  "transcript_quote": "from it we build your individualized plan of care. That is the document that says what Nola wants, what we do about it, and who comes when.",
+  "fhir_ref": "Procedure/25fb1227-d194-b15e-1bfc-d811779c07c2"
+ },
+ {
+  "id": "f26",
+  "text": "Hospice care regime initiated",
+  "type": "procedure",
+  "slots": {
+   "procedure": "hospice care"
+  },
+  "source": "both",
+  "transcript_quote": "our job is simple: comfort, at home, on your terms. That is exactly what hospice is for.",
+  "fhir_ref": "Procedure/25fb1227-d194-b15e-043a-7f95c2580b8b"
+ },
+ {
+  "id": "f27",
+  "text": "Patient declined a hospital bed at this time",
+  "type": "other",
+  "slots": {
+   "item": "hospital bed",
+   "decision": "declined"
+  },
+  "source": "transcript",
+  "transcript_quote": "No hospital bed yet. I have slept in my own bed for forty years and I intend to keep at it a while.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f28",
+  "text": "Patient accepted installation of grab bars in the bathroom",
+  "type": "order",
+  "slots": {
+   "item": "grab bars",
+   "decision": "accepted"
+  },
+  "source": "transcript",
+  "transcript_quote": "The grab bars I would take.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f29",
+  "text": "Care team to provide nursing visits a couple times weekly initially, with aide for bathing/dressing, social worker and chaplain available",
+  "type": "followup",
+  "slots": {
+   "services": "nursing visits, home health aide, social worker, chaplain"
+  },
+  "source": "transcript",
+  "transcript_quote": "I will come a couple of times a week to start, more whenever you need me. An aide can come to help with bathing and dressing... There is a social worker, and a chaplain if you ever want one.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f30",
+  "text": "24/7 hospice on-call number provided to patient and family",
+  "type": "counseling",
+  "slots": {
+   "topic": "24-hour on-call access"
+  },
+  "source": "transcript",
+  "transcript_quote": "this number here answers twenty-four hours a day, every day of the year... You call, a hospice nurse answers.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f31",
+  "text": "Goals-of-care discussion: patient wishes no resuscitation, no CPR, no machines (DNR)",
+  "type": "counseling",
+  "slots": {
+   "topic": "code status / DNR",
+   "wish": "no resuscitation, no machines"
+  },
+  "source": "transcript",
+  "transcript_quote": "Let me go easy. No machines, no pounding on my chest.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f32",
+  "text": "Patient wishes to avoid ambulance transport and emergency room unless she requests it",
+  "type": "counseling",
+  "slots": {
+   "topic": "avoid ER/hospitalization"
+  },
+  "source": "transcript",
+  "transcript_quote": "What we will not do is put her through an ambulance ride and an emergency room, unless she asks for that.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f33",
+  "text": "Nurse follow-up visit scheduled in two days",
+  "type": "followup",
+  "slots": {
+   "interval": "2 days",
+   "who": "hospice nurse"
+  },
+  "source": "transcript",
+  "transcript_quote": "Dana will see you again in two days",
+  "fhir_ref": null
+ },
+ {
+  "id": "f34",
+  "text": "Patient's niece Karen is primary family caregiver, staying most nights and managing paperwork",
+  "type": "sdoh",
+  "slots": {
+   "domain": "caregiver support",
+   "caregiver": "niece Karen"
+  },
+  "source": "transcript",
+  "transcript_quote": "I am Karen, her niece. I have been staying over most nights lately.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f35",
+  "text": "History and physical note documented for the encounter",
+  "type": "procedure",
+  "slots": {
+   "report": "History and physical note"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "DiagnosticReport/ff43a7bc-367a-00f4-ba49-75260ab54192"
+ },
+ {
+  "id": "f36",
+  "text": "Patient's pain is currently well controlled at time of visit",
+  "type": "observation",
+  "slots": {
+   "finding": "pain controlled at rest"
+  },
+  "source": "transcript",
+  "transcript_quote": "Right now? Sitting in my own chair with my cat and people being straight with me? About as good as it gets.",
+  "fhir_ref": null
+ }
+]

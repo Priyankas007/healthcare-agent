@@ -1,0 +1,14 @@
+[
+ {
+  "fact_id": "f44",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Documenting a prognosis discussion with family in a high-risk elderly patient with severe hypoxemia is essential for goals-of-care clarity and reflects communication completeness."
+ },
+ {
+  "fact_id": "f49",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Recording that SpO2 improved to the low 90s on the oxygen mask documents the response to therapy and guides ongoing oxygen titration and escalation decisions."
+ }
+]

@@ -1,0 +1,261 @@
+{
+ "note_version_id": "3a3a1f26-ed23-f65c-a7df-c96fac56f464::3a3a1f26-ed23-f65c-e264-be689558faea__inj_1",
+ "injected_fact_id": "f33",
+ "detected_absent_fact_ids": [
+  "f12",
+  "f33",
+  "f34",
+  "f40"
+ ],
+ "caught": true,
+ "collateral_flips": [],
+ "n_present_on_provided": 33,
+ "presence_results": [
+  {
+   "fact_id": "f1",
+   "status": "partial",
+   "note_evidence": "chronic intractable migraine without aura continues at roughly two significant attacks per week: right retro-orbital pain that builds without aura",
+   "rationale": "Frequency, location, and aura documented but mid-twenties onset not stated."
+  },
+  {
+   "fact_id": "f2",
+   "status": "partial",
+   "note_evidence": "with photophobia and occasional nausea, relieved by sleep in a dark room",
+   "rationale": "Photophobia, nausea, and relief documented but phonophobia not mentioned."
+  },
+  {
+   "fact_id": "f3",
+   "status": "present",
+   "note_evidence": "The pattern is unchanged, with no new neurologic features",
+   "rationale": "Stable pattern, no vision change or focal weakness all documented."
+  },
+  {
+   "fact_id": "f4",
+   "status": "present",
+   "note_evidence": "today he rates pain 2/10",
+   "rationale": "Pain 2/10 explicitly stated."
+  },
+  {
+   "fact_id": "f5",
+   "status": "present",
+   "note_evidence": "feeling generally well but persistently tired",
+   "rationale": "Fatigue documented."
+  },
+  {
+   "fact_id": "f6",
+   "status": "partial",
+   "note_evidence": "significant financial stress and short sleep",
+   "rationale": "Short sleep noted but 5-6 hours and early waking not specified."
+  },
+  {
+   "fact_id": "f7",
+   "status": "present",
+   "note_evidence": "denies hopelessness or persistent depressed mood, noting only occasional transient flatness in the evenings",
+   "rationale": "Flat mood and denial of hopelessness documented."
+  },
+  {
+   "fact_id": "f8",
+   "status": "partial",
+   "note_evidence": "Medication reconciliation completed and chart list updated",
+   "rationale": "Med rec documented but abortive-only/no OTC details absent."
+  },
+  {
+   "fact_id": "f9",
+   "status": "present",
+   "note_evidence": "gradual loss of social connection since college, with no regular confidant outside the household",
+   "rationale": "Social isolation since college documented."
+  },
+  {
+   "fact_id": "f10",
+   "status": "present",
+   "note_evidence": "ongoing stress driven by reduced work hours and finances; he manages the bills for a seven-person household with a reported annual family income of about $26,021",
+   "rationale": "Financial stress, income, and household size documented."
+  },
+  {
+   "fact_id": "f11",
+   "status": "present",
+   "note_evidence": "unreliable access to transportation as a recurring barrier to care \u2014 he has no working household vehicle",
+   "rationale": "Transportation barrier documented."
+  },
+  {
+   "fact_id": "f12",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No mention of utility insecurity."
+  },
+  {
+   "fact_id": "f13",
+   "status": "present",
+   "note_evidence": "HARK total 0",
+   "rationale": "HARK score 0 documented."
+  },
+  {
+   "fact_id": "f14",
+   "status": "present",
+   "note_evidence": "drinks about one beer monthly",
+   "rationale": "Minimal alcohol use documented."
+  },
+  {
+   "fact_id": "f15",
+   "status": "present",
+   "note_evidence": "DAST-10 total 0",
+   "rationale": "DAST-10 score 0 documented."
+  },
+  {
+   "fact_id": "f16",
+   "status": "present",
+   "note_evidence": "He has never smoked",
+   "rationale": "Never smoked documented."
+  },
+  {
+   "fact_id": "f17",
+   "status": "present",
+   "note_evidence": "Helmet and protective-gear counseling for recreational ramp riding",
+   "rationale": "Ramp riding and protective-gear counseling documented."
+  },
+  {
+   "fact_id": "f18",
+   "status": "present",
+   "note_evidence": "BP 98/83 mmHg",
+   "rationale": "BP documented."
+  },
+  {
+   "fact_id": "f19",
+   "status": "present",
+   "note_evidence": "HR 93/min",
+   "rationale": "Heart rate documented; attribution not required."
+  },
+  {
+   "fact_id": "f20",
+   "status": "present",
+   "note_evidence": "RR 14/min",
+   "rationale": "Respiratory rate documented."
+  },
+  {
+   "fact_id": "f21",
+   "status": "present",
+   "note_evidence": "height 176.3 cm, weight 78.7 kg, BMI 25.32 kg/m2",
+   "rationale": "Height, weight, BMI documented."
+  },
+  {
+   "fact_id": "f22",
+   "status": "present",
+   "note_evidence": "Cardiovascular: regular rhythm, no murmur",
+   "rationale": "Cardiac exam documented."
+  },
+  {
+   "fact_id": "f23",
+   "status": "present",
+   "note_evidence": "Lungs: clear bilaterally",
+   "rationale": "Lungs clear documented."
+  },
+  {
+   "fact_id": "f24",
+   "status": "present",
+   "note_evidence": "Abdomen: soft, nontender",
+   "rationale": "Abdomen exam documented."
+  },
+  {
+   "fact_id": "f25",
+   "status": "present",
+   "note_evidence": "gingival margins erythematous and edematous with contact bleeding, consistent with gingivitis",
+   "rationale": "Gingivitis with bleeding documented."
+  },
+  {
+   "fact_id": "f26",
+   "status": "present",
+   "note_evidence": "Patient referral for dental care placed (sliding-scale clinic)",
+   "rationale": "Sliding-scale dental referral documented."
+  },
+  {
+   "fact_id": "f27",
+   "status": "present",
+   "note_evidence": "Daily flossing and twice-daily brushing reviewed",
+   "rationale": "Oral hygiene counseling documented."
+  },
+  {
+   "fact_id": "f28",
+   "status": "present",
+   "note_evidence": "Enrollment in medical ride-service program via care coordination",
+   "rationale": "Ride service enrollment documented."
+  },
+  {
+   "fact_id": "f29",
+   "status": "present",
+   "note_evidence": "total cholesterol 198.2 mg/dL, triglycerides 138.79 mg/dL, direct LDL 137.19 mg/dL, HDL 33.25 mg/dL",
+   "rationale": "Lipid values documented."
+  },
+  {
+   "fact_id": "f30",
+   "status": "present",
+   "note_evidence": "Lifestyle counseling on diet and regular aerobic activity; repeat lipid panel to follow the trend",
+   "rationale": "Lifestyle counseling and recheck documented; no medication started."
+  },
+  {
+   "fact_id": "f31",
+   "status": "present",
+   "note_evidence": "repeat lipid panel to follow the trend",
+   "rationale": "Repeat lipid panel documented; lab slip detail absent but core present."
+  },
+  {
+   "fact_id": "f32",
+   "status": "partial",
+   "note_evidence": "Influenza (split virus, trivalent, PF) administered today",
+   "rationale": "Vaccine documented but left arm site not stated."
+  },
+  {
+   "fact_id": "f33",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No mention of Td tetanus booster."
+  },
+  {
+   "fact_id": "f34",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No counseling on sore arm documented."
+  },
+  {
+   "fact_id": "f35",
+   "status": "present",
+   "note_evidence": "Keep a simple headache log",
+   "rationale": "Headache log advice documented."
+  },
+  {
+   "fact_id": "f36",
+   "status": "present",
+   "note_evidence": "Care coordinator outreach this week",
+   "rationale": "Care coordinator outreach this week documented."
+  },
+  {
+   "fact_id": "f37",
+   "status": "present",
+   "note_evidence": "encouraged trial of community men's group",
+   "rationale": "Men's group encouragement documented; Thursday-evening detail absent but core present."
+  },
+  {
+   "fact_id": "f38",
+   "status": "present",
+   "note_evidence": "Return visit in one year, or sooner as needed",
+   "rationale": "One-year return is sooner than prior two-year interval."
+  },
+  {
+   "fact_id": "f39",
+   "status": "present",
+   "note_evidence": "Assessment of health and social care needs completed (PRAPARE)",
+   "rationale": "Assessment documented."
+  },
+  {
+   "fact_id": "f40",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No 'somewhat' stress level value documented."
+  },
+  {
+   "fact_id": "f41",
+   "status": "partial",
+   "note_evidence": "ongoing stress driven by reduced work hours",
+   "rationale": "Reduced hours noted but full-time status and spring timing not documented."
+  }
+ ]
+}

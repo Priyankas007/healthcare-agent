@@ -1,0 +1,32 @@
+[
+ {
+  "fact_id": "f25",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Pharmacist involvement supports the medication review due on arrival and medication-management goals central to this admission, so its documentation completes the care-team plan."
+ },
+ {
+  "fact_id": "f29",
+  "expected": false,
+  "severity": "minor",
+  "why_it_matters": "This is an admission note for a multi-week SNF stay, so a completed hospital discharge procedure is not pertinent to documenting this visit."
+ },
+ {
+  "fact_id": "f30",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Setting realistic expectations that neuropathy and vision may but might not fully improve informs patient understanding and prevents false reassurance affecting adherence."
+ },
+ {
+  "fact_id": "f31",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Documenting the immediate physician and nursing follow-up establishes the care timeline and accountability for this newly admitted patient."
+ },
+ {
+  "fact_id": "f32",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Given the tearfulness, bereavement, and isolation driving this admission, documenting emotional support and reframing the stay is central to the psychosocial care plan."
+ }
+]

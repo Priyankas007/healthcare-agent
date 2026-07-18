@@ -1,0 +1,308 @@
+{
+ "note_version_id": "7bd9e5b0-5d4b-f10d-9579-f4813faf9cdc::7bd9e5b0-5d4b-f10d-cb93-7fcf216727d8__inj_2",
+ "injected_fact_id": "f14",
+ "detected_absent_fact_ids": [
+  "f14",
+  "f44",
+  "f49"
+ ],
+ "caught": true,
+ "collateral_flips": [],
+ "n_present_on_provided": 43,
+ "presence_results": [
+  {
+   "fact_id": "f1",
+   "status": "present",
+   "note_evidence": "five to six days of initially dry cough",
+   "rationale": "Dry cough with 5-6 day onset documented; holiday timing not stated but core fact present."
+  },
+  {
+   "fact_id": "f2",
+   "status": "present",
+   "note_evidence": "followed by persistent fever",
+   "rationale": "Fever following cough and persisting documented."
+  },
+  {
+   "fact_id": "f3",
+   "status": "present",
+   "note_evidence": "progressively worsening dyspnea, now present with minimal exertion \u2014 she required rest stops walking from bed to bathroom this morning",
+   "rationale": "Progressive dyspnea with bed-to-bathroom limitation documented."
+  },
+  {
+   "fact_id": "f4",
+   "status": "present",
+   "note_evidence": "chest tightness with breathing but explicitly denies chest pain or pressure",
+   "rationale": "Chest tightness without pain documented."
+  },
+  {
+   "fact_id": "f5",
+   "status": "present",
+   "note_evidence": "Poor oral intake for two days",
+   "rationale": "Decreased oral intake over two days documented."
+  },
+  {
+   "fact_id": "f6",
+   "status": "present",
+   "note_evidence": "mild morning fogginess ... the patient is conversant and oriented",
+   "rationale": "Mild fogginess with orientation documented."
+  },
+  {
+   "fact_id": "f7",
+   "status": "present",
+   "note_evidence": "An outpatient SARS-CoV-2 test several days ago was positive; a repeat NAA test on arrival is also positive",
+   "rationale": "Two positive COVID tests documented."
+  },
+  {
+   "fact_id": "f8",
+   "status": "present",
+   "note_evidence": "explicitly denies chest pain or pressure resembling her prior myocardial infarction",
+   "rationale": "Denies chest pain distinct from prior MI documented."
+  },
+  {
+   "fact_id": "f9",
+   "status": "present",
+   "note_evidence": "no falls, syncope, hemoptysis, or leg swelling",
+   "rationale": "Denies hemoptysis and leg swelling documented."
+  },
+  {
+   "fact_id": "f10",
+   "status": "present",
+   "note_evidence": "no falls, syncope",
+   "rationale": "Denies falls and syncope documented."
+  },
+  {
+   "fact_id": "f11",
+   "status": "partial",
+   "note_evidence": "tree nut (allergic disposition) \u2014 dietary flagged",
+   "rationale": "Tree nut allergy and flagging documented but walnut specificity and swelling reaction not stated."
+  },
+  {
+   "fact_id": "f12",
+   "status": "present",
+   "note_evidence": "aspirin 81 mg",
+   "rationale": "Aspirin 81 mg daily documented."
+  },
+  {
+   "fact_id": "f13",
+   "status": "present",
+   "note_evidence": "atenolol 50 mg",
+   "rationale": "Atenolol 50 mg documented."
+  },
+  {
+   "fact_id": "f14",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "Rosuvastatin not mentioned in note."
+  },
+  {
+   "fact_id": "f15",
+   "status": "present",
+   "note_evidence": "lisinopril 20 mg daily",
+   "rationale": "Lisinopril 20 mg documented."
+  },
+  {
+   "fact_id": "f16",
+   "status": "present",
+   "note_evidence": "essential hypertension",
+   "rationale": "Hypertension documented."
+  },
+  {
+   "fact_id": "f17",
+   "status": "present",
+   "note_evidence": "acute ST segment elevation myocardial infarction with history of MI",
+   "rationale": "Prior STEMI documented."
+  },
+  {
+   "fact_id": "f18",
+   "status": "present",
+   "note_evidence": "hyperlipidemia",
+   "rationale": "Hyperlipidemia documented."
+  },
+  {
+   "fact_id": "f19",
+   "status": "present",
+   "note_evidence": "metabolic syndrome X, prediabetes",
+   "rationale": "Metabolic syndrome and prediabetes documented."
+  },
+  {
+   "fact_id": "f20",
+   "status": "present",
+   "note_evidence": "osteoporosis",
+   "rationale": "Osteoporosis documented."
+  },
+  {
+   "fact_id": "f21",
+   "status": "present",
+   "note_evidence": "BMI 30+ obesity",
+   "rationale": "Obesity documented."
+  },
+  {
+   "fact_id": "f22",
+   "status": "present",
+   "note_evidence": "adolescent idiopathic scoliosis",
+   "rationale": "Scoliosis since adolescence documented."
+  },
+  {
+   "fact_id": "f23",
+   "status": "present",
+   "note_evidence": "Plain chest x-ray: findings consistent with pneumonia",
+   "rationale": "Pneumonia on chest x-ray documented."
+  },
+  {
+   "fact_id": "f24",
+   "status": "present",
+   "note_evidence": "Hypoxemia and respiratory distress",
+   "rationale": "Hypoxemia documented."
+  },
+  {
+   "fact_id": "f25",
+   "status": "present",
+   "note_evidence": "Hypoxemia and respiratory distress",
+   "rationale": "Respiratory distress documented."
+  },
+  {
+   "fact_id": "f26",
+   "status": "present",
+   "note_evidence": "SpO2 87.18% (arterial)",
+   "rationale": "Arrival SpO2 87% documented."
+  },
+  {
+   "fact_id": "f27",
+   "status": "present",
+   "note_evidence": "T 38.45 C",
+   "rationale": "Arrival temperature ~38.5C documented."
+  },
+  {
+   "fact_id": "f28",
+   "status": "present",
+   "note_evidence": "HR 56.97/min",
+   "rationale": "Arrival HR in 50s documented."
+  },
+  {
+   "fact_id": "f29",
+   "status": "present",
+   "note_evidence": "BP 105/53 mmHg",
+   "rationale": "Arrival BP 105/53 documented."
+  },
+  {
+   "fact_id": "f30",
+   "status": "present",
+   "note_evidence": "T 38.92 C, RR 24.15/min, HR 89.33/min, SpO2 75.7%",
+   "rationale": "Desaturation to ~76%, fever near 39C, HR high 80s documented."
+  },
+  {
+   "fact_id": "f31",
+   "status": "present",
+   "note_evidence": "WBC 3.42 10*3/uL ... leukopenia",
+   "rationale": "Low WBC documented."
+  },
+  {
+   "fact_id": "f32",
+   "status": "present",
+   "note_evidence": "platelets 136.34 10*3/uL ... borderline-low platelets",
+   "rationale": "Low platelets documented."
+  },
+  {
+   "fact_id": "f33",
+   "status": "present",
+   "note_evidence": "creatinine 2.66 mg/dL",
+   "rationale": "Elevated creatinine documented."
+  },
+  {
+   "fact_id": "f34",
+   "status": "present",
+   "note_evidence": "GFR (MDRD) 11.1 mL/min",
+   "rationale": "Markedly reduced eGFR documented."
+  },
+  {
+   "fact_id": "f35",
+   "status": "present",
+   "note_evidence": "potassium 5.07 mmol/L",
+   "rationale": "Mild hyperkalemia documented."
+  },
+  {
+   "fact_id": "f36",
+   "status": "present",
+   "note_evidence": "Plain chest x-ray: findings consistent with pneumonia",
+   "rationale": "Chest x-ray showing pneumonia documented."
+  },
+  {
+   "fact_id": "f37",
+   "status": "present",
+   "note_evidence": "Hospital admission to isolation room",
+   "rationale": "Admission to isolation room documented."
+  },
+  {
+   "fact_id": "f38",
+   "status": "present",
+   "note_evidence": "Oxygen administration by mask, continuous, titrated to saturation",
+   "rationale": "Continuous oxygen by mask titrated documented."
+  },
+  {
+   "fact_id": "f39",
+   "status": "present",
+   "note_evidence": "Daily prone positioning sessions as tolerated, with padding accommodations for scoliosis",
+   "rationale": "Daily prone positioning with padding documented."
+  },
+  {
+   "fact_id": "f40",
+   "status": "present",
+   "note_evidence": "CBC with automated differential, comprehensive metabolic panel; scheduled troponin I (high-sensitivity), PT/coagulation panel, and iron panel",
+   "rationale": "Daily labs including all listed tests documented."
+  },
+  {
+   "fact_id": "f41",
+   "status": "present",
+   "note_evidence": "Review home antihypertensives daily against renal function and potassium; adjust per lab trend",
+   "rationale": "Adjusting BP meds per renal function documented."
+  },
+  {
+   "fact_id": "f42",
+   "status": "partial",
+   "note_evidence": "support hydration and oral intake",
+   "rationale": "Hydration support documented but IV fluids not explicitly stated."
+  },
+  {
+   "fact_id": "f43",
+   "status": "partial",
+   "note_evidence": "Escalation and call-bell instructions reviewed with patient; monitor for worsening respiratory distress",
+   "rationale": "Call-bell and worsening breathing covered but chest pain/palpitations triggers not detailed."
+  },
+  {
+   "fact_id": "f44",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No documented counseling to family about seriousness/prognosis."
+  },
+  {
+   "fact_id": "f45",
+   "status": "partial",
+   "note_evidence": "Serial high-sensitivity troponin and coagulation monitoring per schedule ... Continue home aspirin 81 mg",
+   "rationale": "Troponin monitoring and aspirin continuation documented but cardiac-risk discussion/counseling not stated."
+  },
+  {
+   "fact_id": "f46",
+   "status": "present",
+   "note_evidence": "no in-room visitors, daily family updates and video calls arranged",
+   "rationale": "Isolation, no visitors, video calls and daily updates documented."
+  },
+  {
+   "fact_id": "f47",
+   "status": "present",
+   "note_evidence": "Tree nut allergy flagged to dietary",
+   "rationale": "Allergy communicated to dietary documented."
+  },
+  {
+   "fact_id": "f48",
+   "status": "present",
+   "note_evidence": "Her daughter, present at admission, reports ... Home medications confirmed with daughter",
+   "rationale": "Daughter present and involved in history documented; name not given."
+  },
+  {
+   "fact_id": "f49",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No documented improvement of SpO2 to low 90s on mask."
+  }
+ ]
+}

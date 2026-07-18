@@ -1,0 +1,344 @@
+[
+ {
+  "id": "f1",
+  "text": "Patient reports gums bleeding when brushing for several months, worse along lower front teeth",
+  "type": "symptom",
+  "slots": {
+   "symptom": "gingival bleeding",
+   "duration": "months",
+   "location": "lower front",
+   "trigger": "brushing"
+  },
+  "source": "transcript",
+  "transcript_quote": "my gums bleed when I brush. It's been going on for months. I spit and it's pink, sometimes more than pink",
+  "fhir_ref": null
+ },
+ {
+  "id": "f2",
+  "text": "Bleeding occurs most times brushing even with gentle technique",
+  "type": "symptom",
+  "slots": {
+   "symptom": "gingival bleeding",
+   "aggravating": "not relieved by gentle brushing"
+  },
+  "source": "transcript",
+  "transcript_quote": "First I figured I was brushing too hard, army style, but it happens even when I go easy.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f3",
+  "text": "Patient reports halitosis (bad breath) recently",
+  "type": "symptom",
+  "slots": {
+   "symptom": "halitosis"
+  },
+  "source": "transcript",
+  "transcript_quote": "my buddy told me \u2014 very helpfully, in front of people \u2014 that my breath's been rough lately",
+  "fhir_ref": null
+ },
+ {
+  "id": "f4",
+  "text": "Patient reports cold sensitivity, especially ice water on the right side",
+  "type": "symptom",
+  "slots": {
+   "symptom": "cold sensitivity",
+   "location": "right side"
+  },
+  "source": "transcript",
+  "transcript_quote": "cold stuff has started to zing me. Ice water especially, right side.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f5",
+  "text": "Denies toothache, night pain, or pain with chewing",
+  "type": "red_flag_screen",
+  "slots": {
+   "denied": "dental pain"
+  },
+  "source": "transcript",
+  "transcript_quote": "No, nothing like that. No pain-pain.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f6",
+  "text": "Denies loose teeth, facial/jaw swelling, and fevers",
+  "type": "red_flag_screen",
+  "slots": {
+   "denied": "loose teeth, swelling, fever"
+  },
+  "source": "transcript",
+  "transcript_quote": "No, no swelling, nothing loose. I'd have come in quicker for that.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f7",
+  "text": "Patient has not had a dental visit in years, due to base moves and a deployment",
+  "type": "sdoh",
+  "slots": {
+   "category": "access to care / military service"
+  },
+  "source": "transcript",
+  "transcript_quote": "Honestly? Years. Between the base moves and a deployment in the middle of it, dental kept falling off the list.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f8",
+  "text": "35-year-old active-duty patient, generally healthy, referred for dental readiness (went 'red')",
+  "type": "sdoh",
+  "slots": {
+   "age": "35",
+   "occupation": "active duty military"
+  },
+  "source": "transcript",
+  "transcript_quote": "Thirty-five, active duty, generally healthy",
+  "fhir_ref": null
+ },
+ {
+  "id": "f9",
+  "text": "Brushes twice daily (fast), flosses infrequently",
+  "type": "sdoh",
+  "slots": {
+   "category": "oral hygiene habits"
+  },
+  "source": "transcript",
+  "transcript_quote": "I brush every day, morning and night. Fast, maybe. Floss... when I remember",
+  "fhir_ref": null
+ },
+ {
+  "id": "f10",
+  "text": "Never smoked, never used smokeless tobacco",
+  "type": "sdoh",
+  "slots": {
+   "category": "tobacco use",
+   "status": "never"
+  },
+  "source": "transcript",
+  "transcript_quote": "Never smoked, never dipped",
+  "fhir_ref": null
+ },
+ {
+  "id": "f11",
+  "text": "High energy drink consumption",
+  "type": "sdoh",
+  "slots": {
+   "category": "diet",
+   "detail": "frequent energy drinks"
+  },
+  "source": "transcript",
+  "transcript_quote": "Energy drinks, though, yeah. A lot of them. It's a fuel-based lifestyle.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f12",
+  "text": "Exam of gingivae: gums red, puffy generally, bleed on light touch, with supra- and subgingival tartar especially lower front and around molars",
+  "type": "observation",
+  "slots": {
+   "finding": "generalized gingival inflammation with calculus"
+  },
+  "source": "both",
+  "transcript_quote": "Your gums are red and puffy pretty much everywhere, and they bleed at a light touch... There's a solid layer of tartar along the gumline, and I can feel it below the gums too",
+  "fhir_ref": "Procedure/e1a7c2af-1e7f-300b-0e83-0e12c694bbea"
+ },
+ {
+  "id": "f13",
+  "text": "Diagnosis of gingival disease, confined to gum tissue without bone loss",
+  "type": "condition",
+  "slots": {
+   "condition": "Gingival disease",
+   "status": "resolved"
+  },
+  "source": "both",
+  "transcript_quote": "It is gum disease \u2014 gingival disease is the formal name for it.",
+  "fhir_ref": "Condition/e1a7c2af-1e7f-300b-d27e-377bd027dbe0"
+ },
+ {
+  "id": "f14",
+  "text": "Bitewing dental X-rays taken; bone levels sound with nothing alarming between teeth",
+  "type": "procedure",
+  "slots": {
+   "procedure": "bitewing X-ray",
+   "result": "normal bone levels"
+  },
+  "source": "both",
+  "transcript_quote": "The bone levels look sound, and there's nothing alarming between the teeth.",
+  "fhir_ref": "Procedure/e1a7c2af-1e7f-300b-3d83-50e8b56e413a"
+ },
+ {
+  "id": "f15",
+  "text": "Removal of supragingival plaque and calculus from all teeth performed",
+  "type": "procedure",
+  "slots": {
+   "procedure": "supragingival scaling"
+  },
+  "source": "both",
+  "transcript_quote": "First the scaling above the gumline \u2014 all the buildup you can see.",
+  "fhir_ref": "Procedure/e1a7c2af-1e7f-300b-da6c-fec20af80882"
+ },
+ {
+  "id": "f16",
+  "text": "Removal of subgingival plaque and calculus from all teeth performed under local anesthesia",
+  "type": "procedure",
+  "slots": {
+   "procedure": "subgingival scaling",
+   "anesthesia": "local numbing"
+  },
+  "source": "both",
+  "transcript_quote": "Then below the gumline, around every tooth, which is the part that actually turns this around. I'll numb the areas that need it",
+  "fhir_ref": "Procedure/e1a7c2af-1e7f-300b-68d3-f570f4604e90"
+ },
+ {
+  "id": "f17",
+  "text": "Gingivectomy/gingivoplasty performed on lower right where gum overgrew and pocketed around a tooth",
+  "type": "procedure",
+  "slots": {
+   "procedure": "gingivectomy",
+   "location": "lower right"
+  },
+  "source": "both",
+  "transcript_quote": "I'll do a small gum procedure right there \u2014 a gingivectomy, basically trimming and reshaping that little section",
+  "fhir_ref": "Procedure/e1a7c2af-1e7f-300b-8641-8dfa54420015"
+ },
+ {
+  "id": "f18",
+  "text": "Application of desensitizing medicament to cold-sensitive spots",
+  "type": "procedure",
+  "slots": {
+   "procedure": "desensitizing medicament application"
+  },
+  "source": "both",
+  "transcript_quote": "I'll paint a desensitizing medicament onto those zingy spots. It seals up the little channels that make cold feel electric.",
+  "fhir_ref": "Procedure/e1a7c2af-1e7f-300b-571e-8ec87df53e32"
+ },
+ {
+  "id": "f19",
+  "text": "Fluoride treatment applied to strengthen enamel",
+  "type": "procedure",
+  "slots": {
+   "procedure": "fluoride treatment"
+  },
+  "source": "both",
+  "transcript_quote": "we finish the whole visit with a fluoride treatment to toughen the enamel back up",
+  "fhir_ref": "Procedure/e1a7c2af-1e7f-300b-b29b-7a07af36043c"
+ },
+ {
+  "id": "f20",
+  "text": "Dental consultation and report completed",
+  "type": "procedure",
+  "slots": {
+   "procedure": "dental consultation"
+  },
+  "source": "both",
+  "transcript_quote": "I got the referral note that sent you our way.",
+  "fhir_ref": "Procedure/e1a7c2af-1e7f-300b-96d9-178205a3f3ad"
+ },
+ {
+  "id": "f21",
+  "text": "Post-op instruction: wait ~30 minutes after fluoride to eat, keep food soft today, avoid hot/sharp foods",
+  "type": "followup",
+  "slots": {
+   "instruction": "dietary restriction post-procedure"
+  },
+  "source": "both",
+  "transcript_quote": "Give it about thirty minutes after the fluoride, then keep it soft today... Nothing scalding hot, nothing sharp like chips or crusty bread.",
+  "fhir_ref": "Procedure/e1a7c2af-1e7f-300b-1c58-e25fc991f798"
+ },
+ {
+  "id": "f22",
+  "text": "Instructed to start gentle salt-water rinses tomorrow for lower right",
+  "type": "followup",
+  "slots": {
+   "instruction": "salt-water rinses starting next day"
+  },
+  "source": "transcript",
+  "transcript_quote": "Gentle salt-water rinses starting tomorrow for the lower right.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f23",
+  "text": "Counseled to continue brushing with soft brush and easy hand despite bleeding while healing",
+  "type": "counseling",
+  "slots": {
+   "topic": "brushing during healing"
+  },
+  "source": "transcript",
+  "transcript_quote": "don't stop brushing just because things bleed a little while they heal \u2014 soft brush, easy hand",
+  "fhir_ref": null
+ },
+ {
+  "id": "f24",
+  "text": "Oral health education: soft-bristle brush twice daily for two minutes, bristles angled into gumline with small circles, floss once daily",
+  "type": "counseling",
+  "slots": {
+   "topic": "brushing and flossing technique"
+  },
+  "source": "both",
+  "transcript_quote": "Soft-bristle brush, twice a day, two full minutes \u2014 angle the bristles into the gumline, little circles... And floss once a day, every day",
+  "fhir_ref": "Procedure/e1a7c2af-1e7f-300b-c154-40aae304c334"
+ },
+ {
+  "id": "f25",
+  "text": "Counseled to reduce energy drink sipping \u2014 drink quickly rather than over hours, water in between",
+  "type": "counseling",
+  "slots": {
+   "topic": "energy drink reduction / diet"
+  },
+  "source": "transcript",
+  "transcript_quote": "If you're going to have one, drink it and be done. Don't sip one can across four hours. Water in between.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f26",
+  "text": "Return precautions: call same day for real swelling, pus, fever, or bleeding that won't stop with pressure",
+  "type": "followup",
+  "slots": {
+   "instruction": "return precautions"
+  },
+  "source": "transcript",
+  "transcript_quote": "If you get real swelling, pus, fever, or bleeding that won't quit with pressure, you call the office the same day.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f27",
+  "text": "Follow-up appointment in a few weeks to check healing and gum response",
+  "type": "followup",
+  "slots": {
+   "timeframe": "few weeks"
+  },
+  "source": "transcript",
+  "transcript_quote": "I want you back in a few weeks so I can check the healing and see how your gums are responding",
+  "fhir_ref": null
+ },
+ {
+  "id": "f28",
+  "text": "Cleared for morning workout; advised to take it easy tonight and avoid chewing on the treated side today",
+  "type": "counseling",
+  "slots": {
+   "topic": "activity restriction"
+  },
+  "source": "transcript",
+  "transcript_quote": "Morning workout is fine \u2014 just take it easy tonight and keep the chewing off that side today.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f29",
+  "text": "Medication requested/prescribed during encounter (label unresolved)",
+  "type": "medication",
+  "slots": {
+   "drug": "unresolved"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "MedicationRequest/e1a7c2af-1e7f-300b-07a0-584ea1f7b191"
+ },
+ {
+  "id": "f30",
+  "text": "Imaging study available from encounter",
+  "type": "order",
+  "slots": {
+   "study": "dental imaging"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "ImagingStudy/e1a7c2af-1e7f-300b-69fd-f6990634f6c2"
+ }
+]

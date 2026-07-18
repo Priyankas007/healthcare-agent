@@ -1,0 +1,537 @@
+[
+ {
+  "id": "f1",
+  "text": "Patient is 85 years old and presents for annual full checkup, feeling generally well",
+  "type": "symptom",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "it has been about a year since your last full checkup. How have you been feeling overall?",
+  "fhir_ref": null
+ },
+ {
+  "id": "f2",
+  "text": "Denies chest pain, pressure, or tightness on walks; occasional exertional twinge in the yard that resolves with rest",
+  "type": "red_flag_screen",
+  "slots": {
+   "finding": "no anginal chest pain",
+   "exception": "brief exertional twinge relieved by sitting"
+  },
+  "source": "transcript",
+  "transcript_quote": "No, nothing like that. Once in a while I get a twinge if I overdo it in the yard, but it passes as soon as I sit down.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f3",
+  "text": "Has not needed nitroglycerin spray in a long time",
+  "type": "symptom",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "I have not had to use that little spray in a long while.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f4",
+  "text": "Denies shortness of breath, ankle swelling, and paroxysmal nocturnal dyspnea",
+  "type": "red_flag_screen",
+  "slots": {
+   "finding": "no dyspnea, edema, or PND"
+  },
+  "source": "transcript",
+  "transcript_quote": "No, none of that. No swelling. I sleep like a rock, always have.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f5",
+  "text": "Denies dizziness, lightheadedness, and falls in the past year",
+  "type": "red_flag_screen",
+  "slots": {
+   "finding": "no dizziness or falls"
+  },
+  "source": "transcript",
+  "transcript_quote": "No falls. I hold the rail on the stairs like my daughter makes me promise to.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f6",
+  "text": "Appetite is good and weight is steady",
+  "type": "symptom",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "Appetite is fine. I eat what the garden gives me, mostly.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f7",
+  "text": "Patient retired in June after 60-year career; now out of the labor force",
+  "type": "sdoh",
+  "slots": {
+   "domain": "employment",
+   "status": "retired"
+  },
+  "source": "both",
+  "transcript_quote": "Sixty years of keeping books for people, and I closed the ledger for good in June.",
+  "fhir_ref": "Condition/74919836-2db2-2f73-acfa-8d2ccad9bef3"
+ },
+ {
+  "id": "f8",
+  "text": "Lives with daughter and grandson; three people in the household",
+  "type": "sdoh",
+  "slots": {
+   "domain": "living_situation",
+   "household_size": "3"
+  },
+  "source": "both",
+  "transcript_quote": "my daughter and grandson live with me",
+  "fhir_ref": "Observation/74919836-2db2-2f73-85ca-6a0c58a265d3"
+ },
+ {
+  "id": "f9",
+  "text": "No difficulty affording food, medications, or transportation to appointments; financially comfortable",
+  "type": "sdoh",
+  "slots": {
+   "domain": "financial_security",
+   "status": "no unmet needs"
+  },
+  "source": "both",
+  "transcript_quote": "No, we are comfortable. I saved carefully.",
+  "fhir_ref": "Observation/74919836-2db2-2f73-85ca-6a0c58a265d3"
+ },
+ {
+  "id": "f10",
+  "text": "PRAPARE social needs assessment completed; primary insurance Medicare, has stable housing, sees close contacts less than once a week, stress level 'a little bit'",
+  "type": "sdoh",
+  "slots": {
+   "domain": "social_assessment"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Observation/74919836-2db2-2f73-85ca-6a0c58a265d3"
+ },
+ {
+  "id": "f11",
+  "text": "Medication reconciliation performed using patient's brought-in bottles",
+  "type": "procedure",
+  "slots": {},
+  "source": "both",
+  "transcript_quote": "Let us go through your medications one by one \u2014 it has been a while since we did a proper reconciliation",
+  "fhir_ref": "Procedure/74919836-2db2-2f73-6521-2e9c7153ea1e"
+ },
+ {
+  "id": "f12",
+  "text": "Simvastatin 20 mg discontinued (duplicate statin; empty bottle from prior hospitalization)",
+  "type": "medication",
+  "slots": {
+   "drug": "simvastatin",
+   "dose": "20 mg",
+   "action": "stopped"
+  },
+  "source": "transcript",
+  "transcript_quote": "Simvastatin comes off the list today.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f13",
+  "text": "Old metoprolol 50 mg discontinued as duplicate/outdated dose",
+  "type": "medication",
+  "slots": {
+   "drug": "metoprolol",
+   "dose": "50 mg",
+   "action": "stopped"
+  },
+  "source": "transcript",
+  "transcript_quote": "the old fifty-milligram metoprolol are off the list",
+  "fhir_ref": null
+ },
+ {
+  "id": "f14",
+  "text": "Continue atorvastatin 20 mg orally every evening, no missed days",
+  "type": "medication",
+  "slots": {
+   "drug": "atorvastatin",
+   "dose": "20 mg",
+   "route": "oral",
+   "freq": "every evening",
+   "action": "continued"
+  },
+  "source": "transcript",
+  "transcript_quote": "Let us keep the atorvastatin every evening, no missed days",
+  "fhir_ref": null
+ },
+ {
+  "id": "f15",
+  "text": "Continue metoprolol extended-release 100 mg orally each morning",
+  "type": "medication",
+  "slots": {
+   "drug": "metoprolol ER",
+   "dose": "100 mg",
+   "route": "oral",
+   "freq": "each morning",
+   "action": "continued"
+  },
+  "source": "transcript",
+  "transcript_quote": "I take the hundred in the morning.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f16",
+  "text": "Continue aspirin 81 mg orally daily",
+  "type": "medication",
+  "slots": {
+   "drug": "aspirin",
+   "dose": "81 mg",
+   "route": "oral",
+   "freq": "daily",
+   "action": "continued"
+  },
+  "source": "transcript",
+  "transcript_quote": "the baby aspirin, the eighty-one, and the losartan fifty \u2014 still every day?",
+  "fhir_ref": null
+ },
+ {
+  "id": "f17",
+  "text": "Continue losartan 50 mg orally daily",
+  "type": "medication",
+  "slots": {
+   "drug": "losartan",
+   "dose": "50 mg",
+   "route": "oral",
+   "freq": "daily",
+   "action": "continued"
+  },
+  "source": "transcript",
+  "transcript_quote": "the baby aspirin, the eighty-one, and the losartan fifty \u2014 still every day?",
+  "fhir_ref": null
+ },
+ {
+  "id": "f18",
+  "text": "Continue carrying nitroglycerin spray as needed",
+  "type": "medication",
+  "slots": {
+   "drug": "nitroglycerin spray",
+   "freq": "as needed",
+   "action": "continued"
+  },
+  "source": "transcript",
+  "transcript_quote": "keep carrying it, but I am glad you have not needed it",
+  "fhir_ref": null
+ },
+ {
+  "id": "f19",
+  "text": "Started metformin extended-release 500 mg orally once daily with dinner for type 2 diabetes/metabolic syndrome",
+  "type": "medication",
+  "slots": {
+   "drug": "metformin ER",
+   "dose": "500 mg",
+   "route": "oral",
+   "freq": "once daily with dinner",
+   "action": "started"
+  },
+  "source": "both",
+  "transcript_quote": "add a gentle dose of metformin, the extended-release kind, five hundred milligrams once daily with dinner",
+  "fhir_ref": "MedicationRequest/74919836-2db2-2f73-8df9-321196380906"
+ },
+ {
+  "id": "f20",
+  "text": "Started hydrochlorothiazide 25 mg orally each morning to smooth blood pressure and lower potassium",
+  "type": "medication",
+  "slots": {
+   "drug": "hydrochlorothiazide",
+   "dose": "25 mg",
+   "route": "oral",
+   "freq": "each morning",
+   "action": "started"
+  },
+  "source": "both",
+  "transcript_quote": "I want to add hydrochlorothiazide, twenty-five milligrams each morning \u2014 a mild water pill.",
+  "fhir_ref": "MedicationRequest/74919836-2db2-2f73-7dad-412e5b4e0a70"
+ },
+ {
+  "id": "f21",
+  "text": "Counseled that metformin ER with food reduces GI upset; call rather than quit if it causes stomach upset",
+  "type": "counseling",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "If it bothers you, call me \u2014 do not just quit it quietly.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f22",
+  "text": "Counseled to take hydrochlorothiazide in the morning and report dizziness or feeling washed out, especially on standing",
+  "type": "counseling",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "If you feel dizzy or washed out, especially when you stand up, I want to hear about it right away.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f23",
+  "text": "Blood pressure 107/58 mm Hg",
+  "type": "observation",
+  "slots": {
+   "test": "blood pressure",
+   "value": "107/58 mm Hg"
+  },
+  "source": "both",
+  "transcript_quote": "Blood pressure today is one-oh-seven over fifty-eight",
+  "fhir_ref": "Observation/74919836-2db2-2f73-3987-7a1a97c2eda0"
+ },
+ {
+  "id": "f24",
+  "text": "Heart rate 96 /min",
+  "type": "observation",
+  "slots": {
+   "test": "heart rate",
+   "value": "96 /min"
+  },
+  "source": "both",
+  "transcript_quote": "your heart rate is ninety-six",
+  "fhir_ref": "Observation/74919836-2db2-2f73-ffe9-5eb983dabde7"
+ },
+ {
+  "id": "f25",
+  "text": "Weight 78.5 kg; BMI 27.8 kg/m2",
+  "type": "observation",
+  "slots": {
+   "test": "weight/BMI",
+   "value": "78.5 kg, BMI 27.8"
+  },
+  "source": "both",
+  "transcript_quote": "Weight is seventy-eight and a half kilos, and the body mass index works out to twenty-seven point eight",
+  "fhir_ref": "Observation/74919836-2db2-2f73-2fb6-1fb6a5e16a6f"
+ },
+ {
+  "id": "f26",
+  "text": "Hemoglobin A1c 5.45% \u2014 excellent control for type 2 diabetes",
+  "type": "observation",
+  "slots": {
+   "test": "HbA1c",
+   "value": "5.45%"
+  },
+  "source": "both",
+  "transcript_quote": "The A1c ... came back at five point four five percent, which is excellent for someone with type two diabetes",
+  "fhir_ref": "Observation/74919836-2db2-2f73-c1ef-3fe24bd1ea82"
+ },
+ {
+  "id": "f27",
+  "text": "Fasting glucose low at ~66 mg/dL; advised not to skip breakfast before walks",
+  "type": "observation",
+  "slots": {
+   "test": "fasting glucose",
+   "value": "66.82 mg/dL"
+  },
+  "source": "both",
+  "transcript_quote": "Your fasting sugar this morning was actually on the low side, around sixty-six, so I do not want you skipping breakfast before those walks.",
+  "fhir_ref": "Observation/74919836-2db2-2f73-1d68-0fee6448e042"
+ },
+ {
+  "id": "f28",
+  "text": "Creatinine 0.6 mg/dL \u2014 kidney function strong",
+  "type": "observation",
+  "slots": {
+   "test": "creatinine",
+   "value": "0.6 mg/dL"
+  },
+  "source": "both",
+  "transcript_quote": "Kidneys look strong \u2014 creatinine is zero point six.",
+  "fhir_ref": "Observation/74919836-2db2-2f73-fde1-632c66c24e29"
+ },
+ {
+  "id": "f29",
+  "text": "Potassium mildly elevated at 5.16 mmol/L",
+  "type": "observation",
+  "slots": {
+   "test": "potassium",
+   "value": "5.16 mmol/L"
+  },
+  "source": "both",
+  "transcript_quote": "Your potassium ran a touch high at five point one six.",
+  "fhir_ref": "Observation/74919836-2db2-2f73-1f5c-78cf8e3f1e03"
+ },
+ {
+  "id": "f30",
+  "text": "Total cholesterol 226 mg/dL with LDL 148 mg/dL \u2014 higher than desired given cardiac history",
+  "type": "observation",
+  "slots": {
+   "test": "lipid panel",
+   "value": "total 226, LDL 148 mg/dL"
+  },
+  "source": "both",
+  "transcript_quote": "total is about two twenty-six with the LDL at one forty-eight, which is higher than I want for a man with your heart history",
+  "fhir_ref": "Observation/74919836-2db2-2f73-19b5-c6cb34627a39"
+ },
+ {
+  "id": "f31",
+  "text": "Recheck lipids before any statin dose change",
+  "type": "followup",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "recheck before we change any dose",
+  "fhir_ref": null
+ },
+ {
+  "id": "f32",
+  "text": "Depression screening (PHQ-2) score 0",
+  "type": "observation",
+  "slots": {
+   "test": "PHQ-2",
+   "value": "0"
+  },
+  "source": "both",
+  "transcript_quote": "the mood ones twice over ... Every score came back a zero",
+  "fhir_ref": "Observation/74919836-2db2-2f73-6a62-36ed6b494aa6"
+ },
+ {
+  "id": "f33",
+  "text": "Domestic abuse/safety screening (HARK) score 0",
+  "type": "observation",
+  "slots": {
+   "test": "HARK",
+   "value": "0"
+  },
+  "source": "both",
+  "transcript_quote": "the safety-at-home questions",
+  "fhir_ref": "Observation/74919836-2db2-2f73-353e-4b7f569b99ef"
+ },
+ {
+  "id": "f34",
+  "text": "Substance/drug use screening (DAST-10) score 0",
+  "type": "observation",
+  "slots": {
+   "test": "DAST-10",
+   "value": "0"
+  },
+  "source": "both",
+  "transcript_quote": "the alcohol and drug ones. Every score came back a zero",
+  "fhir_ref": "Observation/74919836-2db2-2f73-5d10-bbfd12d8acaf"
+ },
+ {
+  "id": "f35",
+  "text": "Fall risk (Morse Fall Scale) score 22 \u2014 low risk",
+  "type": "observation",
+  "slots": {
+   "test": "Morse Fall Scale",
+   "value": "22, low risk"
+  },
+  "source": "both",
+  "transcript_quote": "your fall-risk score was twenty-two, which sits in the low-risk range",
+  "fhir_ref": "Observation/74919836-2db2-2f73-335c-dee7a5372be6"
+ },
+ {
+  "id": "f36",
+  "text": "Ex-smoker per tobacco status; reports no alcohol or drug use beyond coffee",
+  "type": "sdoh",
+  "slots": {
+   "domain": "substance_use",
+   "status": "ex-smoker"
+  },
+  "source": "both",
+  "transcript_quote": "I told her the strongest thing I take is black coffee.",
+  "fhir_ref": "Observation/74919836-2db2-2f73-535a-d51b8cecb5e6"
+ },
+ {
+  "id": "f37",
+  "text": "Chronic anemia stable/quiet; no new blood count drawn today, will monitor at next labs",
+  "type": "condition",
+  "slots": {
+   "condition": "anemia",
+   "status": "stable, monitoring"
+  },
+  "source": "transcript",
+  "transcript_quote": "Your anemia has been quiet too \u2014 no new blood count today ... we will keep watching it at the next round of labs.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f38",
+  "text": "Gingivitis diagnosed \u2014 red, puffy lower gums that bleed with brushing",
+  "type": "condition",
+  "slots": {
+   "condition": "gingivitis"
+  },
+  "source": "both",
+  "transcript_quote": "Your gums are red and puffy along the lower teeth, and you mentioned they bleed when you brush.",
+  "fhir_ref": "Condition/74919836-2db2-2f73-a4fc-de4efc522302"
+ },
+ {
+  "id": "f39",
+  "text": "Counseled that gum disease and heart disease are linked; treatment recommended",
+  "type": "counseling",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "gum disease and heart disease are unfriendly neighbors",
+  "fhir_ref": null
+ },
+ {
+  "id": "f40",
+  "text": "Referral placed to dental clinic for cleaning and exam",
+  "type": "referral",
+  "slots": {
+   "referral_to": "dental clinic"
+  },
+  "source": "both",
+  "transcript_quote": "I am sending a referral to the dental clinic for a proper cleaning and exam.",
+  "fhir_ref": "Procedure/74919836-2db2-2f73-e3db-5b4f1d2ae126"
+ },
+ {
+  "id": "f41",
+  "text": "Influenza vaccine (trivalent, preservative-free) administered today; no prior bad reactions",
+  "type": "procedure",
+  "slots": {
+   "vaccine": "influenza trivalent PF"
+  },
+  "source": "both",
+  "transcript_quote": "we will do it before you leave",
+  "fhir_ref": "Immunization/74919836-2db2-2f73-996e-4d876779f473"
+ },
+ {
+  "id": "f42",
+  "text": "Follow-up in about 6 months for repeat labs; return sooner for chest pain, dizziness, or GI intolerance to new medication",
+  "type": "followup",
+  "slots": {
+   "interval": "6 months"
+  },
+  "source": "transcript",
+  "transcript_quote": "I will see you back in about six months for repeat labs \u2014 sooner if there is any chest pain, dizziness, or if the new pill argues with your stomach.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f43",
+  "text": "Advised not to skip breakfast before morning walks",
+  "type": "counseling",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "no skipped breakfasts",
+  "fhir_ref": null
+ },
+ {
+  "id": "f44",
+  "text": "Pain severity reported as 1/10",
+  "type": "observation",
+  "slots": {
+   "test": "pain score",
+   "value": "1/10"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Observation/74919836-2db2-2f73-a739-764cf6cc86f4"
+ },
+ {
+  "id": "f45",
+  "text": "Basic metabolic panel and lipid panel completed and finalized",
+  "type": "order",
+  "slots": {
+   "tests": "BMP, lipid panel"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "DiagnosticReport/74919836-2db2-2f73-7536-555d2d22380d"
+ },
+ {
+  "id": "f46",
+  "text": "Assessment of health and social care needs completed",
+  "type": "procedure",
+  "slots": {},
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Procedure/74919836-2db2-2f73-920c-018c2e6e01e1"
+ }
+]

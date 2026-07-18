@@ -1,0 +1,20 @@
+[
+ {
+  "fact_id": "f9",
+  "expected": true,
+  "severity": "safety_critical",
+  "why_it_matters": "An additional long-acting opioid materially adds to her already heavy multi-opioid burden, and omission risks unrecognized opioid stacking, oversedation, and worsened constipation."
+ },
+ {
+  "fact_id": "f33",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "A concrete near-term nurse visit date operationalizes the care plan and ensures timely reassessment of pain and bowel function; omission leaves the follow-up interval ambiguous."
+ },
+ {
+  "fact_id": "f35",
+  "expected": false,
+  "severity": "minor",
+  "why_it_matters": "Documenting that an H&P note exists is administrative metadata that does not change clinical management of this visit."
+ }
+]

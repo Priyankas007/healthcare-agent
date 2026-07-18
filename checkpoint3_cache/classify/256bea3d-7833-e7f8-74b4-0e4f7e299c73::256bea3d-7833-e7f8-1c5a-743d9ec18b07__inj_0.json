@@ -1,0 +1,20 @@
+[
+ {
+  "fact_id": "f6",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "A completed medication review should list all active medications including topical hydrocortisone to ensure accurate reconciliation and avoid omission-related errors."
+ },
+ {
+  "fact_id": "f41",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "The high PRAPARE stress rating reinforces the documented social strain but adds little beyond the extensive stress and anxiety assessment already captured this visit."
+ },
+ {
+  "fact_id": "f42",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Documenting Medicaid coverage is relevant to the sliding-scale dental referral and low-income context, affecting care access and resource planning."
+ }
+]

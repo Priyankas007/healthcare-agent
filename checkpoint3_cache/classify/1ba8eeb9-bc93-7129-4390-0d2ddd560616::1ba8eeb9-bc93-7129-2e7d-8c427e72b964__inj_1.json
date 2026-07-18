@@ -1,0 +1,8 @@
+[
+ {
+  "fact_id": "f13",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "The positive PHQ-2 documents the screening trigger that prompted the PHQ-9, but its clinical content is fully captured by the more detailed PHQ-9 of 17 already recorded, so omission has minimal impact."
+ }
+]

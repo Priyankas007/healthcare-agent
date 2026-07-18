@@ -1,0 +1,265 @@
+{
+ "note_version_id": "374e68b2-ee15-0852-cd48-3c7b6fd8e114::374e68b2-ee15-0852-8f80-26e1007e6c00__inj_0",
+ "injected_fact_id": "f20",
+ "detected_absent_fact_ids": [
+  "f20",
+  "f35"
+ ],
+ "caught": true,
+ "collateral_flips": [],
+ "n_present_on_provided": 36,
+ "presence_results": [
+  {
+   "fact_id": "f1",
+   "status": "partial",
+   "note_evidence": "hospitalization for sepsis complicated by septic shock and acute respiratory distress syndrome",
+   "rationale": "Sepsis/septic shock/ARDS documented but mechanical ventilation not mentioned."
+  },
+  {
+   "fact_id": "f2",
+   "status": "present",
+   "note_evidence": "remains exertionally limited on hills and stairs",
+   "rationale": "Exertional limitation on hills/stairs with denial of rest dyspnea documented."
+  },
+  {
+   "fact_id": "f3",
+   "status": "present",
+   "note_evidence": "he walks daily and tolerates level ground well but remains exertionally limited on hills and stairs",
+   "rationale": "Improving stamina, daily walking, and exertional limitation documented."
+  },
+  {
+   "fact_id": "f4",
+   "status": "present",
+   "note_evidence": "He denies fever, chills, night sweats",
+   "rationale": "Infection symptoms explicitly denied."
+  },
+  {
+   "fact_id": "f5",
+   "status": "present",
+   "note_evidence": "denies fever, chills, night sweats, cough, chest pain, dyspnea at rest",
+   "rationale": "Chest pain and rest dyspnea denied."
+  },
+  {
+   "fact_id": "f6",
+   "status": "present",
+   "note_evidence": "cough",
+   "rationale": "Cough listed among denied symptoms."
+  },
+  {
+   "fact_id": "f7",
+   "status": "present",
+   "note_evidence": "he denies dizziness or pallor and notes his family feels his color has returned",
+   "rationale": "Dizziness and palpitations denied and color returned noted, though not timed to March."
+  },
+  {
+   "fact_id": "f8",
+   "status": "present",
+   "note_evidence": "Known anemia is clinically asymptomatic today... Continue longitudinal monitoring of anemia",
+   "rationale": "Known anemia asymptomatic and monitored documented."
+  },
+  {
+   "fact_id": "f9",
+   "status": "present",
+   "note_evidence": "He rates pain 1/10, attributed to intermittent low back ache with prolonged sitting",
+   "rationale": "Low back pain 1/10 with prolonged sitting documented."
+  },
+  {
+   "fact_id": "f10",
+   "status": "present",
+   "note_evidence": "he lost his logistics job in February after his prolonged medical leave and is unemployed for the first time in his adult life",
+   "rationale": "Unemployment since February and first-time unemployment documented."
+  },
+  {
+   "fact_id": "f11",
+   "status": "present",
+   "note_evidence": "He describes markedly reduced social contact since the illness",
+   "rationale": "Social isolation/reduced contact documented."
+  },
+  {
+   "fact_id": "f12",
+   "status": "partial",
+   "note_evidence": "lives with five family members in a three-bedroom rental with delayed landlord maintenance and describes the housing situation as unsatisfactory and crowded",
+   "rationale": "Overcrowding and disrepair documented but not worry about losing housing."
+  },
+  {
+   "fact_id": "f13",
+   "status": "partial",
+   "note_evidence": "household finances remain stable on his wife's income",
+   "rationale": "Income adequacy from wife documented but insurance not mentioned."
+  },
+  {
+   "fact_id": "f14",
+   "status": "present",
+   "note_evidence": "Community resource sheet provided (employment center, tenant advocacy line)",
+   "rationale": "Resource sheet with employment center and tenant advocacy documented."
+  },
+  {
+   "fact_id": "f15",
+   "status": "present",
+   "note_evidence": "Assessment of health and social care needs completed today",
+   "rationale": "Assessment completion documented."
+  },
+  {
+   "fact_id": "f16",
+   "status": "present",
+   "note_evidence": "Depression screening negative (PHQ-2 score 1)",
+   "rationale": "PHQ-2 score 1 with negative/low risk documented."
+  },
+  {
+   "fact_id": "f17",
+   "status": "present",
+   "note_evidence": "DAST-10 total score 0... denies any drug use",
+   "rationale": "Drug use denial and DAST-10 score 0 documented."
+  },
+  {
+   "fact_id": "f18",
+   "status": "present",
+   "note_evidence": "He has never smoked, drinks alcohol rarely",
+   "rationale": "Never-smoker and rare alcohol documented."
+  },
+  {
+   "fact_id": "f19",
+   "status": "present",
+   "note_evidence": "drug abuse screening negative (DAST-10 score 0)... Substance use assessment unremarkable",
+   "rationale": "Substance use/drug abuse screening documented."
+  },
+  {
+   "fact_id": "f20",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "Note does not state patient takes no daily medications or that hospital meds were tapered."
+  },
+  {
+   "fact_id": "f21",
+   "status": "present",
+   "note_evidence": "No known allergies",
+   "rationale": "No known allergies documented."
+  },
+  {
+   "fact_id": "f22",
+   "status": "present",
+   "note_evidence": "Medication reconciliation completed",
+   "rationale": "Medication reconciliation documented, though purpose not specified."
+  },
+  {
+   "fact_id": "f23",
+   "status": "present",
+   "note_evidence": "BP 107/69 mmHg",
+   "rationale": "BP documented."
+  },
+  {
+   "fact_id": "f24",
+   "status": "present",
+   "note_evidence": "HR 63/min",
+   "rationale": "Heart rate documented."
+  },
+  {
+   "fact_id": "f25",
+   "status": "present",
+   "note_evidence": "RR 15/min",
+   "rationale": "Respiratory rate documented."
+  },
+  {
+   "fact_id": "f26",
+   "status": "present",
+   "note_evidence": "Lungs clear bilaterally without increased work of breathing. Heart regular rate and rhythm... No lower extremity edema",
+   "rationale": "Clear lungs, regular heart, no edema documented."
+  },
+  {
+   "fact_id": "f27",
+   "status": "present",
+   "note_evidence": "weight 84.4 kg, height 166.8 cm, BMI 30.34 kg/m2",
+   "rationale": "Weight, height, BMI documented."
+  },
+  {
+   "fact_id": "f28",
+   "status": "present",
+   "note_evidence": "Hemoglobin A1c 5.99%... remains in the prediabetic range",
+   "rationale": "A1c 5.99% with prediabetes documented."
+  },
+  {
+   "fact_id": "f29",
+   "status": "present",
+   "note_evidence": "glucose 86.7 mg/dL... normal fasting glucose of 86.7 mg/dL",
+   "rationale": "Normal glucose documented."
+  },
+  {
+   "fact_id": "f30",
+   "status": "present",
+   "note_evidence": "sodium 139.13 mmol/L, potassium 4.89 mmol/L, chloride 104.04 mmol/L, total CO2 28.05 mmol/L",
+   "rationale": "BMP electrolytes documented."
+  },
+  {
+   "fact_id": "f31",
+   "status": "present",
+   "note_evidence": "creatinine 1.22 mg/dL... BUN 13.78 mg/dL",
+   "rationale": "Renal indices documented as reassuring after septic shock."
+  },
+  {
+   "fact_id": "f32",
+   "status": "present",
+   "note_evidence": "goal of 5\u20137% weight loss and progressive daily walking",
+   "rationale": "Weight-loss goal and daily walking counseling documented."
+  },
+  {
+   "fact_id": "f33",
+   "status": "present",
+   "note_evidence": "progressive daily walking",
+   "rationale": "Daily walking counseling documented, though 30 min duration not specified."
+  },
+  {
+   "fact_id": "f34",
+   "status": "partial",
+   "note_evidence": "Influenza vaccine (split virus, trivalent, preservative-free) administered today",
+   "rationale": "Vaccine administration documented but not left-arm site or missed fall shot."
+  },
+  {
+   "fact_id": "f35",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No prior vaccine reaction history documented."
+  },
+  {
+   "fact_id": "f36",
+   "status": "present",
+   "note_evidence": "Repeat A1c at follow-up in approximately 6 months",
+   "rationale": "A1c recheck in 6 months documented."
+  },
+  {
+   "fact_id": "f37",
+   "status": "present",
+   "note_evidence": "Follow-up visit in approximately 6 months... Continue longitudinal monitoring of anemia... patient agreed to report mood changes",
+   "rationale": "Follow-up and anemia/mood monitoring documented, though not checkout booking."
+  },
+  {
+   "fact_id": "f38",
+   "status": "present",
+   "note_evidence": "patient agreed to report mood changes",
+   "rationale": "Mood reporting/safety-netting documented."
+  },
+  {
+   "fact_id": "f39",
+   "status": "partial",
+   "note_evidence": "Continue longitudinal monitoring of anemia and fatigue trajectory",
+   "rationale": "Fatigue monitoring documented but not multifactorial attribution."
+  },
+  {
+   "fact_id": "f40",
+   "status": "present",
+   "note_evidence": "Medication review due... Medication reconciliation completed",
+   "rationale": "Medication review due and completed documented."
+  },
+  {
+   "fact_id": "f41",
+   "status": "present",
+   "note_evidence": "calcium 9.98 mg/dL",
+   "rationale": "Calcium value documented."
+  },
+  {
+   "fact_id": "f42",
+   "status": "partial",
+   "note_evidence": "PRAPARE completed: household of 6; reported annual family income $198,810",
+   "rationale": "PRAPARE completion noted but safety, partner fear, stress, and housing insecurity responses not documented."
+  }
+ ]
+}

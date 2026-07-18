@@ -1,0 +1,14 @@
+[
+ {
+  "fact_id": "f28",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "The note states medication reconciliation was completed and lists only fluoride gel, so omitting a monthly PRN acetaminophen makes the med review incomplete and could matter for cumulative dosing/hepatotoxicity counseling."
+ },
+ {
+  "fact_id": "f41",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Justice involvement is a PRAPARE SDOH domain relevant to this visit's social needs assessment and affects the employment and social-isolation care plan being addressed."
+ }
+]

@@ -1,0 +1,8 @@
+[
+ {
+  "fact_id": "f9",
+  "expected": true,
+  "severity": "safety_critical",
+  "why_it_matters": "Medication reconciliation is essential in pregnancy\u2014confirming no teratogenic drugs and documenting untreated longstanding hypertension (and absence of prenatal vitamins/folic acid) directly affects safety and management decisions."
+ }
+]

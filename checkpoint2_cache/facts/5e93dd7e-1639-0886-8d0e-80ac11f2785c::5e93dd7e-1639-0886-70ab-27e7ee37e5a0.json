@@ -1,0 +1,370 @@
+[
+ {
+  "id": "f1",
+  "text": "Poorly controlled diabetes with hyperglycemia over the past couple of months",
+  "type": "condition",
+  "slots": {
+   "condition": "hyperglycemia / uncontrolled diabetes mellitus",
+   "duration": "couple of months"
+  },
+  "source": "transcript",
+  "transcript_quote": "The sugars have been running high \u2014 the doctor called it hyperglycemia \u2014 and I could feel it.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f2",
+  "text": "Polydipsia (excessive thirst)",
+  "type": "symptom",
+  "slots": {
+   "symptom": "thirst"
+  },
+  "source": "transcript",
+  "transcript_quote": "Thirsty all the time, dragging, foggy.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f3",
+  "text": "Fatigue and mental fogginess",
+  "type": "symptom",
+  "slots": {
+   "symptom": "fatigue, cognitive fog"
+  },
+  "source": "transcript",
+  "transcript_quote": "Thirsty all the time, dragging, foggy.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f4",
+  "text": "Intermittent blurred vision, worse in the afternoons",
+  "type": "symptom",
+  "slots": {
+   "symptom": "blurred vision",
+   "timing": "afternoons, comes and goes"
+  },
+  "source": "transcript",
+  "transcript_quote": "my eyes started blurring, especially afternoons. Reading a pill bottle was like reading through wax paper.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f5",
+  "text": "Tingling/pins-and-needles in hands and feet, mostly at night, for a few months and worsening",
+  "type": "symptom",
+  "slots": {
+   "symptom": "paresthesia hands and feet",
+   "timing": "worse at night",
+   "duration": "a few months, worsening"
+  },
+  "source": "transcript",
+  "transcript_quote": "my hands and feet \u2014 pins and needles. At night mostly. Like they fell asleep and forgot to wake back up.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f6",
+  "text": "Denies falls",
+  "type": "red_flag_screen",
+  "slots": {
+   "screen": "falls",
+   "result": "negative"
+  },
+  "source": "transcript",
+  "transcript_quote": "No falls, knock wood.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f7",
+  "text": "Denies foot sores, burns, cuts, or non-healing wounds",
+  "type": "red_flag_screen",
+  "slots": {
+   "screen": "foot wounds/non-healing sores",
+   "result": "negative"
+  },
+  "source": "transcript",
+  "transcript_quote": "No sores. I check my feet \u2014 well, when I remember to.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f8",
+  "text": "Recent ophthalmology visit 2 weeks ago with dilated fundus exam using tropicamide",
+  "type": "procedure",
+  "slots": {
+   "procedure": "dilated eye exam",
+   "agent": "tropicamide",
+   "timing": "2 weeks ago"
+  },
+  "source": "transcript",
+  "transcript_quote": "Two weeks ago. They put in those stinging drops that blow your pupils up like an owl.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f9",
+  "text": "Continue metformin extended-release 500 mg once daily, unchanged, given with food at consistent time",
+  "type": "medication",
+  "slots": {
+   "drug": "metformin extended-release",
+   "dose": "500 mg",
+   "route": "oral",
+   "freq": "once daily",
+   "change": "continued/unchanged"
+  },
+  "source": "transcript",
+  "transcript_quote": "Just the metformin \u2014 the extended-release, 500. One a day.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f10",
+  "text": "Reports irregular meals and inconsistent medication adherence during recent stressful period",
+  "type": "sdoh",
+  "slots": {
+   "issue": "food insecurity / medication non-adherence",
+   "context": "stress"
+  },
+  "source": "transcript",
+  "transcript_quote": "meals got random. Crackers for dinner, then nothing until two the next afternoon. And when the meals go sideways, the pill schedule goes sideways with them.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f11",
+  "text": "Lives alone",
+  "type": "sdoh",
+  "slots": {
+   "issue": "lives alone"
+  },
+  "source": "transcript",
+  "transcript_quote": "I live alone.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f12",
+  "text": "Financial hardship after dropping to part-time then stopping work",
+  "type": "sdoh",
+  "slots": {
+   "issue": "financial insecurity / loss of income"
+  },
+  "source": "transcript",
+  "transcript_quote": "Money got tight when I dropped to part-time, and tighter when I stopped.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f13",
+  "text": "Social isolation and grief following death of sister two years ago",
+  "type": "sdoh",
+  "slots": {
+   "issue": "social isolation, bereavement"
+  },
+  "source": "transcript",
+  "transcript_quote": "My sister passed two years ago, and she was my person \u2014 the phone does not ring much now.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f14",
+  "text": "Difficulty coping with self-management leading to disengagement from care",
+  "type": "symptom",
+  "slots": {
+   "issue": "self-care burnout / disengagement"
+  },
+  "source": "transcript",
+  "transcript_quote": "I got so tired of managing it all \u2014 the sugars, the appointments, the everything \u2014 that I sort of stopped managing it.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f15",
+  "text": "History and physical examination performed",
+  "type": "procedure",
+  "slots": {
+   "procedure": "history and physical examination"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Procedure/5e93dd7e-1639-0886-81d5-7f7fb9c0521d"
+ },
+ {
+  "id": "f16",
+  "text": "Initial patient assessment completed",
+  "type": "procedure",
+  "slots": {
+   "procedure": "initial patient assessment"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Procedure/5e93dd7e-1639-0886-72e4-c488a6198a39"
+ },
+ {
+  "id": "f17",
+  "text": "Development of individualized plan of care",
+  "type": "procedure",
+  "slots": {
+   "procedure": "individualized plan of care"
+  },
+  "source": "both",
+  "transcript_quote": "Here is the plan \u2014 stop me anytime with questions.",
+  "fhir_ref": "Procedure/5e93dd7e-1639-0886-6152-25c575ed8410"
+ },
+ {
+  "id": "f18",
+  "text": "Daily nursing care with pre-meal blood glucose checks and medication administration with meals",
+  "type": "order",
+  "slots": {
+   "order": "nursing surveillance / blood glucose monitoring / med administration"
+  },
+  "source": "both",
+  "transcript_quote": "They will check your blood sugar before meals, give the metformin at the same time every day with actual food in front of you",
+  "fhir_ref": "Procedure/5e93dd7e-1639-0886-b5c0-925a0a5bda77"
+ },
+ {
+  "id": "f19",
+  "text": "Daily nursing foot checks as part of routine",
+  "type": "order",
+  "slots": {
+   "order": "daily foot examination"
+  },
+  "source": "transcript",
+  "transcript_quote": "the nurses here will look at your feet every day, that is part of the routine",
+  "fhir_ref": null
+ },
+ {
+  "id": "f20",
+  "text": "Dietitian consult for consistent carbohydrate meal planning and home-cookable diet education",
+  "type": "referral",
+  "slots": {
+   "referral": "dietitian"
+  },
+  "source": "both",
+  "transcript_quote": "our dietitian will sit with you and build a version of it you can actually cook at home",
+  "fhir_ref": "Procedure/5e93dd7e-1639-0886-e2be-030277d0009c"
+ },
+ {
+  "id": "f21",
+  "text": "Occupational therapy several times weekly for kitchen routines, medication organization, and energy pacing",
+  "type": "procedure",
+  "slots": {
+   "procedure": "occupational therapy",
+   "frequency": "several times per week"
+  },
+  "source": "both",
+  "transcript_quote": "Occupational therapy will work with you several times a week \u2014 that is the practical side: kitchen routines, organizing the medications, pacing your energy",
+  "fhir_ref": "Procedure/5e93dd7e-1639-0886-b8a7-51a05c9346c7"
+ },
+ {
+  "id": "f22",
+  "text": "Physical therapy a couple of times for strength and balance",
+  "type": "procedure",
+  "slots": {
+   "procedure": "physical therapy",
+   "focus": "strength and balance"
+  },
+  "source": "both",
+  "transcript_quote": "Physical therapy will see you a couple of times for strength and balance, since you have been so run down.",
+  "fhir_ref": "Procedure/5e93dd7e-1639-0886-12e9-c6eea37553f3"
+ },
+ {
+  "id": "f23",
+  "text": "Speech-language therapy for baseline swallowing check and cognitive strategies (memory aids, checklists)",
+  "type": "procedure",
+  "slots": {
+   "procedure": "speech and language therapy",
+   "focus": "swallowing baseline and cognitive routine support"
+  },
+  "source": "both",
+  "transcript_quote": "They will do a quick swallowing check as a baseline, but mostly they work on strategies for keeping complicated routines straight",
+  "fhir_ref": "Procedure/5e93dd7e-1639-0886-2ae4-d40f955a01cf"
+ },
+ {
+  "id": "f24",
+  "text": "Social work involvement for support and coping with isolation",
+  "type": "referral",
+  "slots": {
+   "referral": "social worker"
+  },
+  "source": "both",
+  "transcript_quote": "Our social worker is part of your team here \u2014 not because anything is wrong with you, but because rebuilding the routine goes better with company.",
+  "fhir_ref": "Procedure/5e93dd7e-1639-0886-e2be-030277d0009c"
+ },
+ {
+  "id": "f25",
+  "text": "Pharmacist involvement as part of care team",
+  "type": "referral",
+  "slots": {
+   "referral": "pharmacist"
+  },
+  "source": "transcript",
+  "transcript_quote": "a whole crew of specialists who will be checking in on you regularly through the stay \u2014 dietitian, social services, the pharmacist",
+  "fhir_ref": null
+ },
+ {
+  "id": "f26",
+  "text": "Continue/keep scheduled ophthalmology follow-up appointment",
+  "type": "followup",
+  "slots": {
+   "followup": "ophthalmology follow-up"
+  },
+  "source": "transcript",
+  "transcript_quote": "You have a follow-up with them, and we will keep that on the calendar.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f27",
+  "text": "Pre-discharge assessment planned to evaluate ability to manage medications, meals, stairs, and home support needs",
+  "type": "procedure",
+  "slots": {
+   "procedure": "pre-discharge assessment"
+  },
+  "source": "both",
+  "transcript_quote": "Toward the end we do a full pre-discharge assessment: can you manage the medicines, the meals, the stairs, and what support you will need at home.",
+  "fhir_ref": "Procedure/5e93dd7e-1639-0886-784e-c5d48659a88c"
+ },
+ {
+  "id": "f28",
+  "text": "Anticipated length of stay a few weeks to achieve steady glucose control and improved strength",
+  "type": "followup",
+  "slots": {
+   "followup": "estimated stay a few weeks"
+  },
+  "source": "transcript",
+  "transcript_quote": "a few weeks is the usual shape of it \u2014 long enough for steady sugars and steadier legs",
+  "fhir_ref": null
+ },
+ {
+  "id": "f29",
+  "text": "Discharge from hospital procedure completed",
+  "type": "procedure",
+  "slots": {
+   "procedure": "discharge from hospital"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Procedure/5e93dd7e-1639-0886-4176-7a099685cfe3"
+ },
+ {
+  "id": "f30",
+  "text": "Counseling that neuropathy and blurred vision symptoms often improve with steady glucose control but degree/timing not guaranteed",
+  "type": "counseling",
+  "slots": {
+   "topic": "symptom prognosis with glycemic control"
+  },
+  "source": "transcript",
+  "transcript_quote": "they often improve as the sugars steady, but I cannot promise how much or how fast.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f31",
+  "text": "Physician will see patient on rounds the following morning; full nursing check-in this afternoon",
+  "type": "followup",
+  "slots": {
+   "followup": "physician rounds next morning, nursing intake this afternoon"
+  },
+  "source": "transcript",
+  "transcript_quote": "the nurses will do your full check-in this afternoon, and I will see you on rounds tomorrow morning",
+  "fhir_ref": null
+ },
+ {
+  "id": "f32",
+  "text": "Counseling and emotional support regarding adjustment to admission and reframing stay as short-term rehabilitation",
+  "type": "counseling",
+  "slots": {
+   "topic": "adjustment support / goals of care"
+  },
+  "source": "transcript",
+  "transcript_quote": "this is a pit stop, not a parking spot. You are here to get the diabetes steadied and your strength back so that home works again.",
+  "fhir_ref": null
+ }
+]

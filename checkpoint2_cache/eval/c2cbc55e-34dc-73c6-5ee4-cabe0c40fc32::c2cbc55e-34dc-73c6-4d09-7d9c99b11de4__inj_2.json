@@ -1,0 +1,300 @@
+{
+ "note_version_id": "c2cbc55e-34dc-73c6-5ee4-cabe0c40fc32::c2cbc55e-34dc-73c6-4d09-7d9c99b11de4__inj_2",
+ "injected_fact_id": "f3",
+ "detected_absent_fact_ids": [
+  "f3"
+ ],
+ "caught": true,
+ "collateral_flips": [],
+ "n_present_on_provided": 48,
+ "presence_results": [
+  {
+   "fact_id": "f1",
+   "status": "present",
+   "note_evidence": "after three positive home pregnancy tests",
+   "rationale": "Three positive home pregnancy tests documented."
+  },
+  {
+   "fact_id": "f2",
+   "status": "present",
+   "note_evidence": "approximately ten weeks from her last menstrual period by her own dating",
+   "rationale": "~10 weeks from LMP documented."
+  },
+  {
+   "fact_id": "f3",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No age stated in the note."
+  },
+  {
+   "fact_id": "f4",
+   "status": "present",
+   "note_evidence": "a prior early first-trimester miscarriage",
+   "rationale": "Prior early first-trimester miscarriage documented."
+  },
+  {
+   "fact_id": "f5",
+   "status": "present",
+   "note_evidence": "essential hypertension",
+   "rationale": "Hypertension history documented."
+  },
+  {
+   "fact_id": "f6",
+   "status": "present",
+   "note_evidence": "prediabetes",
+   "rationale": "Prediabetes documented."
+  },
+  {
+   "fact_id": "f7",
+   "status": "present",
+   "note_evidence": "anemia",
+   "rationale": "Anemia documented."
+  },
+  {
+   "fact_id": "f8",
+   "status": "present",
+   "note_evidence": "obesity (documented body mass index in the 30+ range), and metabolic syndrome",
+   "rationale": "Obesity and metabolic syndrome documented."
+  },
+  {
+   "fact_id": "f9",
+   "status": "present",
+   "note_evidence": "She reports taking no regular medications at present",
+   "rationale": "No regular medications documented, hypertension untreated."
+  },
+  {
+   "fact_id": "f10",
+   "status": "present",
+   "note_evidence": "No vaginal bleeding or spotting",
+   "rationale": "No bleeding/spotting documented."
+  },
+  {
+   "fact_id": "f11",
+   "status": "present",
+   "note_evidence": "no cramping",
+   "rationale": "No cramping documented."
+  },
+  {
+   "fact_id": "f12",
+   "status": "present",
+   "note_evidence": "She describes breast tenderness",
+   "rationale": "Breast tenderness documented."
+  },
+  {
+   "fact_id": "f13",
+   "status": "present",
+   "note_evidence": "afternoon fatigue",
+   "rationale": "Afternoon fatigue documented."
+  },
+  {
+   "fact_id": "f14",
+   "status": "present",
+   "note_evidence": "smell aversions",
+   "rationale": "Smell aversions documented."
+  },
+  {
+   "fact_id": "f15",
+   "status": "present",
+   "note_evidence": "morning queasiness without vomiting; oral intake is adequate",
+   "rationale": "Nausea without vomiting documented."
+  },
+  {
+   "fact_id": "f16",
+   "status": "present",
+   "note_evidence": "no headache, no visual changes, and no hand or facial swelling",
+   "rationale": "Negative preeclampsia symptom screen documented."
+  },
+  {
+   "fact_id": "f17",
+   "status": "present",
+   "note_evidence": "urinary frequency without dysuria",
+   "rationale": "Urinary frequency without dysuria documented."
+  },
+  {
+   "fact_id": "f18",
+   "status": "present",
+   "note_evidence": "discloses past abuse by a former husband; she reports feeling safe in her current marriage",
+   "rationale": "Past IPV, currently safe documented."
+  },
+  {
+   "fact_id": "f19",
+   "status": "present",
+   "note_evidence": "support resources provided in the visit packet",
+   "rationale": "IPV resources in packet documented."
+  },
+  {
+   "fact_id": "f20",
+   "status": "present",
+   "note_evidence": "Office pregnancy test positive",
+   "rationale": "In-office pregnancy test performed."
+  },
+  {
+   "fact_id": "f21",
+   "status": "present",
+   "note_evidence": "Ultrasound for fetal viability demonstrated a viable intrauterine pregnancy with fetal cardiac activity",
+   "rationale": "Viability ultrasound with cardiac activity and intrauterine location documented."
+  },
+  {
+   "fact_id": "f22",
+   "status": "present",
+   "note_evidence": "corroborated by auscultation of the fetal heart with Doppler",
+   "rationale": "Fetal heart auscultated via Doppler documented."
+  },
+  {
+   "fact_id": "f23",
+   "status": "present",
+   "note_evidence": "uterine size on fundal height evaluation",
+   "rationale": "Fundal height evaluated."
+  },
+  {
+   "fact_id": "f24",
+   "status": "present",
+   "note_evidence": "Cardiopulmonary examination unremarkable",
+   "rationale": "Physical examination performed."
+  },
+  {
+   "fact_id": "f25",
+   "status": "present",
+   "note_evidence": "blood group typing",
+   "rationale": "Blood group typing ordered."
+  },
+  {
+   "fact_id": "f26",
+   "status": "present",
+   "note_evidence": "automated hemogram with manual differential",
+   "rationale": "CBC/hemogram ordered."
+  },
+  {
+   "fact_id": "f27",
+   "status": "present",
+   "note_evidence": "hepatitis B surface antigen",
+   "rationale": "Hep B surface antigen ordered."
+  },
+  {
+   "fact_id": "f28",
+   "status": "present",
+   "note_evidence": "hepatitis C antibody confirmatory test",
+   "rationale": "Hep C antibody ordered."
+  },
+  {
+   "fact_id": "f29",
+   "status": "present",
+   "note_evidence": "HIV antigen test",
+   "rationale": "HIV test ordered."
+  },
+  {
+   "fact_id": "f30",
+   "status": "present",
+   "note_evidence": "syphilis titer",
+   "rationale": "Syphilis test ordered."
+  },
+  {
+   "fact_id": "f31",
+   "status": "present",
+   "note_evidence": "rubella screen",
+   "rationale": "Rubella screen ordered."
+  },
+  {
+   "fact_id": "f32",
+   "status": "present",
+   "note_evidence": "varicella-zoster antibody measurement",
+   "rationale": "Varicella immunity ordered."
+  },
+  {
+   "fact_id": "f33",
+   "status": "present",
+   "note_evidence": "chlamydia antigen",
+   "rationale": "Chlamydia test ordered."
+  },
+  {
+   "fact_id": "f34",
+   "status": "present",
+   "note_evidence": "gonorrhea titer",
+   "rationale": "Gonorrhea test ordered."
+  },
+  {
+   "fact_id": "f35",
+   "status": "present",
+   "note_evidence": "Urine culture",
+   "rationale": "Urine culture ordered."
+  },
+  {
+   "fact_id": "f36",
+   "status": "present",
+   "note_evidence": "qualitative urine protein",
+   "rationale": "Urine protein ordered."
+  },
+  {
+   "fact_id": "f37",
+   "status": "present",
+   "note_evidence": "urine diabetes screen collected",
+   "rationale": "Urine diabetes screen collected."
+  },
+  {
+   "fact_id": "f38",
+   "status": "present",
+   "note_evidence": "Cervical cytology (Pap smear) collected",
+   "rationale": "Pap smear performed."
+  },
+  {
+   "fact_id": "f39",
+   "status": "present",
+   "note_evidence": "Tuberculosis Tine skin test placed on the forearm ... to be read in two to three days",
+   "rationale": "TB skin test placed on forearm, read in 2-3 days."
+  },
+  {
+   "fact_id": "f40",
+   "status": "present",
+   "note_evidence": "Normal pregnancy \u2014 initial prenatal visit",
+   "rationale": "Normal early intrauterine pregnancy diagnosed."
+  },
+  {
+   "fact_id": "f41",
+   "status": "present",
+   "note_evidence": "visits about every four weeks initially, more frequent later in pregnancy",
+   "rationale": "4-week interval visits documented."
+  },
+  {
+   "fact_id": "f42",
+   "status": "present",
+   "note_evidence": "Education on preeclampsia warning signs (headache, visual changes, sudden swelling) with instructions to call immediately",
+   "rationale": "Preeclampsia warning sign counseling documented."
+  },
+  {
+   "fact_id": "f43",
+   "status": "present",
+   "note_evidence": "call promptly for bleeding, cramping, or intractable vomiting",
+   "rationale": "When-to-call counseling documented."
+  },
+  {
+   "fact_id": "f44",
+   "status": "present",
+   "note_evidence": "Nutrition counseling: regular balanced meals ... Dietary counseling on iron-rich foods ... Gentle regular activity such as daily walking",
+   "rationale": "Diet and lifestyle counseling documented (sleep not mentioned but topic captured)."
+  },
+  {
+   "fact_id": "f45",
+   "status": "present",
+   "note_evidence": "Discussion of optional genetic screening at the next visit",
+   "rationale": "Genetic screening at next visit documented."
+  },
+  {
+   "fact_id": "f46",
+   "status": "present",
+   "note_evidence": "Results to the patient via portal",
+   "rationale": "Portal results delivery documented."
+  },
+  {
+   "fact_id": "f47",
+   "status": "present",
+   "note_evidence": "Family history is notable for diabetes in her mother",
+   "rationale": "Family history of maternal diabetes documented (age not stated)."
+  },
+  {
+   "fact_id": "f48",
+   "status": "partial",
+   "note_evidence": "closer surveillance is planned throughout ... Increased visit frequency as the pregnancy progresses",
+   "rationale": "Closer monitoring documented but attributed to prior loss/GDM risk, not age."
+  }
+ ]
+}

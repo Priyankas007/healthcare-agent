@@ -1,0 +1,218 @@
+[
+ {
+  "fact_id": "f1",
+  "status": "present",
+  "note_evidence": "presenting for her annual general examination",
+  "rationale": "Annual exam visit documented."
+ },
+ {
+  "fact_id": "f2",
+  "status": "present",
+  "note_evidence": "She feels well overall.",
+  "rationale": "Patient reports feeling well."
+ },
+ {
+  "fact_id": "f3",
+  "status": "present",
+  "note_evidence": "asymptomatic (pain 0/10 today); she reports a winter-predominant pattern",
+  "rationale": "Asymptomatic with winter-worse pattern documented."
+ },
+ {
+  "fact_id": "f4",
+  "status": "present",
+  "note_evidence": "Continue naproxen sodium 220 mg as needed with food; reviewed GI precautions.",
+  "rationale": "Drug, dose, route, PRN, food, and indication documented."
+ },
+ {
+  "fact_id": "f5",
+  "status": "present",
+  "note_evidence": "without dyspepsia, melena, or knee swelling",
+  "rationale": "All GI/knee red flags denied."
+ },
+ {
+  "fact_id": "f6",
+  "status": "present",
+  "note_evidence": "She denies chest pain, dyspnea, palpitations",
+  "rationale": "All three symptoms denied."
+ },
+ {
+  "fact_id": "f7",
+  "status": "partial",
+  "note_evidence": "She walks to the market daily (~30 minutes round trip).",
+  "rationale": "Walking documented but uphill/no-limitation details absent."
+ },
+ {
+  "fact_id": "f8",
+  "status": "present",
+  "note_evidence": "denies chest pain, dyspnea, palpitations, dizziness, headaches, visual changes, and focal numbness or weakness",
+  "rationale": "All four symptoms denied."
+ },
+ {
+  "fact_id": "f9",
+  "status": "partial",
+  "note_evidence": "Sleep is preserved except for brief early-morning rumination about finances and family",
+  "rationale": "Early-morning rumination noted but duration/5am/appetite not documented."
+ },
+ {
+  "fact_id": "f10",
+  "status": "present",
+  "note_evidence": "PHQ-2 total 0",
+  "rationale": "PHQ-2 score 0 documented."
+ },
+ {
+  "fact_id": "f11",
+  "status": "present",
+  "note_evidence": "GAD-7 total 5",
+  "rationale": "GAD-7 score 5 with mild anxiety documented."
+ },
+ {
+  "fact_id": "f12",
+  "status": "present",
+  "note_evidence": "Private HARK screen negative (score 0); patient reports feeling safe at home.",
+  "rationale": "HARK negative and feeling safe documented."
+ },
+ {
+  "fact_id": "f13",
+  "status": "present",
+  "note_evidence": "remote history as a victim of intimate partner abuse... the relationship ended many years ago",
+  "rationale": "Past IPV, no longer present, documented."
+ },
+ {
+  "fact_id": "f14",
+  "status": "present",
+  "note_evidence": "Ex-smoker (brief use in adolescence, quit ~age 16)",
+  "rationale": "Ex-smoker, brief teenage use, quit long ago documented."
+ },
+ {
+  "fact_id": "f15",
+  "status": "present",
+  "note_evidence": "rare alcohol; denies drug use... DAST-10 total 0",
+  "rationale": "Minimal alcohol and DAST-10 0 documented."
+ },
+ {
+  "fact_id": "f16",
+  "status": "partial",
+  "note_evidence": "Medication reconciliation and health and social care needs assessment completed",
+  "rationale": "Med rec done but chamomile tea detail not documented."
+ },
+ {
+  "fact_id": "f17",
+  "status": "partial",
+  "note_evidence": "BP 135/82 mmHg",
+  "rationale": "BP value present but interpretation/no-medication not documented."
+ },
+ {
+  "fact_id": "f18",
+  "status": "present",
+  "note_evidence": "HR 60/min, RR 12/min",
+  "rationale": "Both values documented."
+ },
+ {
+  "fact_id": "f19",
+  "status": "partial",
+  "note_evidence": "weight 73.8 kg... BMI 27.71 kg/m2",
+  "rationale": "Weight and BMI present but decreasing trend not documented."
+ },
+ {
+  "fact_id": "f20",
+  "status": "present",
+  "note_evidence": "A1c 6.11%, stable versus prior",
+  "rationale": "A1c value, prediabetes, and stability documented."
+ },
+ {
+  "fact_id": "f21",
+  "status": "present",
+  "note_evidence": "glucose 79.11 mg/dL",
+  "rationale": "Glucose value documented."
+ },
+ {
+  "fact_id": "f22",
+  "status": "present",
+  "note_evidence": "creatinine 0.68 mg/dL",
+  "rationale": "Creatinine value documented."
+ },
+ {
+  "fact_id": "f23",
+  "status": "present",
+  "note_evidence": "sodium 138.23 mmol/L; potassium 3.94 mmol/L",
+  "rationale": "Sodium and potassium documented."
+ },
+ {
+  "fact_id": "f24",
+  "status": "present",
+  "note_evidence": "total cholesterol 168.51 mg/dL, LDL (direct) 87.17 mg/dL, HDL 59.18 mg/dL, triglycerides 110.82 mg/dL",
+  "rationale": "Full lipid panel and well-controlled status documented."
+ },
+ {
+  "fact_id": "f25",
+  "status": "present",
+  "note_evidence": "WBC 7.42, hemoglobin 16.89 g/dL, hematocrit 47.59%... platelets 351.89... without anemia",
+  "rationale": "CBC values and no anemia documented."
+ },
+ {
+  "fact_id": "f26",
+  "status": "present",
+  "note_evidence": "edematous gingival margins with contact bleeding",
+  "rationale": "Gingival swelling/bleeding and gingivitis documented."
+ },
+ {
+  "fact_id": "f27",
+  "status": "present",
+  "note_evidence": "Patient referral for dental care placed for cleaning and examination",
+  "rationale": "Dental referral for cleaning documented."
+ },
+ {
+  "fact_id": "f28",
+  "status": "present",
+  "note_evidence": "oral hygiene counseled",
+  "rationale": "Oral hygiene counseling documented."
+ },
+ {
+  "fact_id": "f29",
+  "status": "partial",
+  "note_evidence": "Influenza vaccine (split virus, trivalent, preservative-free) administered today",
+  "rationale": "Vaccine documented but injection site absent."
+ },
+ {
+  "fact_id": "f30",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "No infection prevention counseling documented."
+ },
+ {
+  "fact_id": "f31",
+  "status": "present",
+  "note_evidence": "She lives with her daughter and three grandchildren and provides substantial childcare; she acknowledges reduced peer contact, consistent with her documented limited social contact and social isolation.",
+  "rationale": "Household, caregiving role, and social isolation documented."
+ },
+ {
+  "fact_id": "f32",
+  "status": "partial",
+  "note_evidence": "She is a refugee who resettled decades ago.",
+  "rationale": "Refugee status documented but language/education/employment/insurance/housing absent."
+ },
+ {
+  "fact_id": "f33",
+  "status": "present",
+  "note_evidence": "pain score 0/10",
+  "rationale": "Pain score documented."
+ },
+ {
+  "fact_id": "f34",
+  "status": "present",
+  "note_evidence": "Repeat A1c at next annual visit... Continue dietary portion control and daily walking... return in one year",
+  "rationale": "One-year follow-up and continued lifestyle measures documented."
+ },
+ {
+  "fact_id": "f35",
+  "status": "present",
+  "note_evidence": "return sooner if symptoms escalate",
+  "rationale": "Return precaution for worsening symptoms documented."
+ },
+ {
+  "fact_id": "f36",
+  "status": "partial",
+  "note_evidence": "New stress documented in the context of caregiving load and social isolation.",
+  "rationale": "Stress documented but as new, not resolved, and no PRAPARE reference."
+ }
+]

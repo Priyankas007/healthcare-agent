@@ -1,0 +1,20 @@
+[
+ {
+  "fact_id": "f27",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "The note claims medication reconciliation confirmed only OTC acetaminophen, so an omitted prescription fluoride gel makes the medication list inaccurate and incomplete."
+ },
+ {
+  "fact_id": "f41",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Justice involvement and a criminal record affecting employment are pertinent social determinants that contextualize this patient's occupational stress and isolation and could change support/referral planning."
+ },
+ {
+  "fact_id": "f42",
+  "expected": false,
+  "severity": "minor",
+  "why_it_matters": "The reassuring PRAPARE findings (housed, safe, insured) are incidental normals, and the low social contact is already captured under social isolation."
+ }
+]

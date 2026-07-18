@@ -1,0 +1,8 @@
+[
+ {
+  "fact_id": "f37",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Food-access constraints directly shape the feasibility of the dietary counseling central to her prediabetes and obesity plan, so omitting it risks unrealistic recommendations and incomplete SDOH documentation."
+ }
+]

@@ -1,0 +1,499 @@
+[
+ {
+  "id": "f1",
+  "text": "Patient has history of sepsis/septic shock admission with mechanical ventilation for ARDS",
+  "type": "condition",
+  "slots": {
+   "condition": "sepsis/septic shock with ARDS on ventilator",
+   "status": "recovering post-discharge"
+  },
+  "source": "transcript",
+  "transcript_quote": "the sepsis admission, septic shock, time on the ventilator with the ARDS",
+  "fhir_ref": null
+ },
+ {
+  "id": "f2",
+  "text": "Patient reports exertional dyspnea (winded on hills/stairs) but no shortness of breath at rest",
+  "type": "symptom",
+  "slots": {
+   "symptom": "exertional dyspnea",
+   "timing": "on exertion, hills, stairs"
+  },
+  "source": "transcript",
+  "transcript_quote": "I get winded on hills, and if I try to jog the dog gets embarrassed for me, but at rest I'm fine.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f3",
+  "text": "Patient reports fatigue/reduced exercise tolerance; stairs remain difficult but walks daily",
+  "type": "symptom",
+  "slots": {
+   "symptom": "fatigue / decreased exercise tolerance"
+  },
+  "source": "transcript",
+  "transcript_quote": "Stairs still take something out of me. But I walk every day now.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f4",
+  "text": "Denies fevers, chills, night sweats since discharge",
+  "type": "red_flag_screen",
+  "slots": {
+   "screen": "infection symptoms",
+   "result": "negative"
+  },
+  "source": "transcript",
+  "transcript_quote": "No, nothing like that. Knock on wood.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f5",
+  "text": "Denies chest pain and dyspnea at rest",
+  "type": "red_flag_screen",
+  "slots": {
+   "screen": "chest pain / rest dyspnea",
+   "result": "negative"
+  },
+  "source": "transcript",
+  "transcript_quote": "No. I get winded on hills... but at rest I'm fine.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f6",
+  "text": "Denies cough",
+  "type": "symptom",
+  "slots": {
+   "symptom": "cough",
+   "result": "absent"
+  },
+  "source": "transcript",
+  "transcript_quote": "Not really. The lungs feel quieter than they used to",
+  "fhir_ref": null
+ },
+ {
+  "id": "f7",
+  "text": "Denies dizziness or palpitations related to anemia; color reportedly returned around March",
+  "type": "red_flag_screen",
+  "slots": {
+   "screen": "anemia symptoms",
+   "result": "negative"
+  },
+  "source": "transcript",
+  "transcript_quote": "My wife says I finally got my color back around March. No dizziness.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f8",
+  "text": "History of anemia found during hospitalization, currently asymptomatic, to continue monitoring",
+  "type": "condition",
+  "slots": {
+   "condition": "anemia",
+   "status": "asymptomatic, being followed"
+  },
+  "source": "transcript",
+  "transcript_quote": "They also found you anemic in the hospital.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f9",
+  "text": "Reports low back pain when sitting too long, rated 1/10",
+  "type": "symptom",
+  "slots": {
+   "symptom": "low back pain",
+   "severity": "1/10",
+   "aggravating": "prolonged sitting"
+  },
+  "source": "both",
+  "transcript_quote": "The low back mutters when I sit too long. It's background noise.",
+  "fhir_ref": "Observation/374e68b2-ee15-0852-7c01-47e94477e73a"
+ },
+ {
+  "id": "f10",
+  "text": "Patient became unemployed in February after layoff following prolonged ICU absence; first time unemployed since age 16",
+  "type": "sdoh",
+  "slots": {
+   "domain": "employment",
+   "detail": "unemployed since February"
+  },
+  "source": "both",
+  "transcript_quote": "I got let go in February... So \u2014 unemployed. First time since I was sixteen years old.",
+  "fhir_ref": "Condition/374e68b2-ee15-0852-5ad0-b67dd25736e1"
+ },
+ {
+  "id": "f11",
+  "text": "Patient reports social isolation, reduced contact with friends/family; sees close people less than once a week",
+  "type": "sdoh",
+  "slots": {
+   "domain": "social isolation",
+   "detail": "limited social contact"
+  },
+  "source": "both",
+  "transcript_quote": "The guys from work stopped calling around the time I stopped being useful to them.",
+  "fhir_ref": "Condition/374e68b2-ee15-0852-9e2b-1d15d2435f0e"
+ },
+ {
+  "id": "f12",
+  "text": "Housing strain: three-bedroom home with 6 occupants, unresolved landlord repairs; worried about housing",
+  "type": "sdoh",
+  "slots": {
+   "domain": "housing",
+   "detail": "overcrowded, disrepair, worried about losing housing"
+  },
+  "source": "both",
+  "transcript_quote": "It's too small, plain and simple. Three bedrooms, six people.",
+  "fhir_ref": "Observation/374e68b2-ee15-0852-d050-f2242c106e2a"
+ },
+ {
+  "id": "f13",
+  "text": "Household income adequate; wife's job supports household; private insurance",
+  "type": "sdoh",
+  "slots": {
+   "domain": "financial/insurance",
+   "detail": "income ~$198,810/yr, private insurance"
+  },
+  "source": "both",
+  "transcript_quote": "Money-wise we're okay \u2014 my wife's job carries the household fine",
+  "fhir_ref": "Observation/374e68b2-ee15-0852-d050-f2242c106e2a"
+ },
+ {
+  "id": "f14",
+  "text": "Community resource sheet provided including employment center and tenant advocacy line",
+  "type": "counseling",
+  "slots": {
+   "topic": "SDOH resources"
+  },
+  "source": "transcript",
+  "transcript_quote": "I'll have the front desk print our community resource sheet \u2014 there's an employment center and a tenant advocacy line on it.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f15",
+  "text": "Assessment of health and social care needs completed",
+  "type": "procedure",
+  "slots": {
+   "procedure": "Assessment of health and social care needs"
+  },
+  "source": "both",
+  "transcript_quote": "Part of today's visit is a formal assessment of health and social care needs",
+  "fhir_ref": "Procedure/374e68b2-ee15-0852-64a8-c500a6a3a588"
+ },
+ {
+  "id": "f16",
+  "text": "Depression screening (PHQ-2) performed, total score 1/6, low risk",
+  "type": "observation",
+  "slots": {
+   "test": "PHQ-2",
+   "score": "1"
+  },
+  "source": "both",
+  "transcript_quote": "That puts you at one point out of six on the short mood screen, which is low",
+  "fhir_ref": "Observation/374e68b2-ee15-0852-216b-21dedd6d0e95"
+ },
+ {
+  "id": "f17",
+  "text": "Denies illicit drug use in past 12 months; DAST-10 score 0",
+  "type": "observation",
+  "slots": {
+   "test": "DAST-10",
+   "score": "0"
+  },
+  "source": "both",
+  "transcript_quote": "Your drug screening questionnaire comes out to a zero",
+  "fhir_ref": "Observation/374e68b2-ee15-0852-3938-3d3c8cfe7ce5"
+ },
+ {
+  "id": "f18",
+  "text": "Never smoker; minimal alcohol (occasional beer)",
+  "type": "sdoh",
+  "slots": {
+   "tobacco": "never",
+   "alcohol": "occasional"
+  },
+  "source": "both",
+  "transcript_quote": "Tobacco, ever? PT: Never.",
+  "fhir_ref": "Observation/374e68b2-ee15-0852-9ff4-1cb862e9ee4f"
+ },
+ {
+  "id": "f19",
+  "text": "Substance use assessment / drug abuse screening performed",
+  "type": "procedure",
+  "slots": {
+   "procedure": "Assessment of substance use / screening for drug abuse"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Procedure/374e68b2-ee15-0852-64f7-9ff99dd1c0a0"
+ },
+ {
+  "id": "f20",
+  "text": "Patient takes no daily prescription medications; hospital medications tapered off at follow-ups",
+  "type": "medication",
+  "slots": {
+   "status": "none current"
+  },
+  "source": "transcript",
+  "transcript_quote": "Day to day? Nothing regular. When I left the hospital they whittled the list down and then off entirely",
+  "fhir_ref": null
+ },
+ {
+  "id": "f21",
+  "text": "No known medication allergies",
+  "type": "observation",
+  "slots": {
+   "allergy": "none known"
+  },
+  "source": "transcript",
+  "transcript_quote": "None that anyone's ever found.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f22",
+  "text": "Medication reconciliation completed to remove residual hospital medications",
+  "type": "procedure",
+  "slots": {
+   "procedure": "medication reconciliation"
+  },
+  "source": "both",
+  "transcript_quote": "Then I'll reconcile the list \u2014 it was still showing some hospital leftovers",
+  "fhir_ref": "Procedure/374e68b2-ee15-0852-eb0c-b1ba15dc4049"
+ },
+ {
+  "id": "f23",
+  "text": "Blood pressure 107/69 mmHg",
+  "type": "observation",
+  "slots": {
+   "measure": "BP",
+   "value": "107/69 mmHg"
+  },
+  "source": "both",
+  "transcript_quote": "Your blood pressure today is 107 over 69, which is excellent.",
+  "fhir_ref": "Observation/374e68b2-ee15-0852-fd79-0cd9d92344f4"
+ },
+ {
+  "id": "f24",
+  "text": "Heart rate 63/min",
+  "type": "observation",
+  "slots": {
+   "measure": "HR",
+   "value": "63/min"
+  },
+  "source": "both",
+  "transcript_quote": "Heart rate 63",
+  "fhir_ref": "Observation/374e68b2-ee15-0852-6ca9-eff9a125478c"
+ },
+ {
+  "id": "f25",
+  "text": "Respiratory rate 15/min",
+  "type": "observation",
+  "slots": {
+   "measure": "RR",
+   "value": "15/min"
+  },
+  "source": "both",
+  "transcript_quote": "breathing 15 times a minute",
+  "fhir_ref": "Observation/374e68b2-ee15-0852-e271-d1520c5dbf1e"
+ },
+ {
+  "id": "f26",
+  "text": "Exam: lungs clear on deep breathing, heart sounds regular, no ankle edema",
+  "type": "observation",
+  "slots": {
+   "exam": "cardiopulmonary and extremities normal"
+  },
+  "source": "transcript",
+  "transcript_quote": "Heart sounds regular. Let me see the ankles... no swelling.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f27",
+  "text": "Weight 84.4 kg, height 166.8 cm, BMI 30.34 (obesity)",
+  "type": "observation",
+  "slots": {
+   "weight": "84.4 kg",
+   "height": "166.8 cm",
+   "bmi": "30.34"
+  },
+  "source": "both",
+  "transcript_quote": "Weight came in at 84.4 kilos, height 166.8, so the BMI works out to 30.34 \u2014 just over the obesity line.",
+  "fhir_ref": "Observation/374e68b2-ee15-0852-9e1b-f9e6f165e7af"
+ },
+ {
+  "id": "f28",
+  "text": "Hemoglobin A1c 5.99% - consistent with prediabetes",
+  "type": "observation",
+  "slots": {
+   "test": "HbA1c",
+   "value": "5.99%",
+   "interpretation": "prediabetes"
+  },
+  "source": "both",
+  "transcript_quote": "The hemoglobin A1c... is 5.99 percent. That keeps you in prediabetes territory.",
+  "fhir_ref": "Observation/374e68b2-ee15-0852-6539-b8e8880208d2"
+ },
+ {
+  "id": "f29",
+  "text": "Fasting/random blood glucose 86.7 mg/dL - normal",
+  "type": "observation",
+  "slots": {
+   "test": "glucose",
+   "value": "86.7 mg/dL"
+  },
+  "source": "both",
+  "transcript_quote": "your glucose today was 86.7, completely normal",
+  "fhir_ref": "Observation/374e68b2-ee15-0852-87d6-160204ddf944"
+ },
+ {
+  "id": "f30",
+  "text": "Basic metabolic panel: Sodium 139, Potassium 4.89, Chloride 104, CO2 28, normal",
+  "type": "observation",
+  "slots": {
+   "test": "BMP electrolytes",
+   "value": "Na 139, K 4.89, Cl 104, CO2 28"
+  },
+  "source": "both",
+  "transcript_quote": "Sodium 139, potassium 4.89, chloride and bicarbonate fine.",
+  "fhir_ref": "DiagnosticReport/374e68b2-ee15-0852-c70d-bd825ed26b3f"
+ },
+ {
+  "id": "f31",
+  "text": "Kidney function normal after septic shock: creatinine 1.22 mg/dL, BUN 13.78 mg/dL",
+  "type": "observation",
+  "slots": {
+   "test": "renal function",
+   "creatinine": "1.22 mg/dL",
+   "bun": "13.78 mg/dL"
+  },
+  "source": "both",
+  "transcript_quote": "Kidneys came through at a creatinine of 1.22 with a BUN of 13.78",
+  "fhir_ref": "Observation/374e68b2-ee15-0852-e17d-51728c73311c"
+ },
+ {
+  "id": "f32",
+  "text": "Prediabetes managed with lifestyle: 5-7% weight loss (~4-6 kg) and increased daily walking",
+  "type": "counseling",
+  "slots": {
+   "topic": "prediabetes lifestyle, weight loss goal",
+   "target": "5-7% weight loss, daily walking 30 min most days"
+  },
+  "source": "transcript",
+  "transcript_quote": "Five to seven percent weight loss \u2014 for you that's roughly four to six kilos \u2014 plus stretching that daily walk out",
+  "fhir_ref": null
+ },
+ {
+  "id": "f33",
+  "text": "Counseled on daily walking routine ~30 minutes most days for metabolic, weight and mood benefit",
+  "type": "counseling",
+  "slots": {
+   "topic": "exercise"
+  },
+  "source": "transcript",
+  "transcript_quote": "I'd rather see thirty minutes most days than one heroic hour on Saturday.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f34",
+  "text": "Influenza vaccine (trivalent, split virus, PF) administered in left arm; missed fall flu shot",
+  "type": "medication",
+  "slots": {
+   "drug": "influenza vaccine, split virus, trivalent, PF",
+   "route": "IM",
+   "site": "left arm"
+  },
+  "source": "both",
+  "transcript_quote": "it's the standard trivalent one, sore arm for a day at most",
+  "fhir_ref": "Immunization/374e68b2-ee15-0852-45d5-676915a62aa6"
+ },
+ {
+  "id": "f35",
+  "text": "No prior adverse reaction to influenza vaccine",
+  "type": "red_flag_screen",
+  "slots": {
+   "screen": "vaccine reaction history",
+   "result": "negative"
+  },
+  "source": "transcript",
+  "transcript_quote": "No, I just forget them.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f36",
+  "text": "Plan to recheck HbA1c in approximately 6 months",
+  "type": "followup",
+  "slots": {
+   "test": "HbA1c",
+   "timing": "~6 months"
+  },
+  "source": "transcript",
+  "transcript_quote": "recheck the A1c in about six months",
+  "fhir_ref": null
+ },
+ {
+  "id": "f37",
+  "text": "Follow-up appointment to be booked at checkout; continue monitoring anemia and mood",
+  "type": "followup",
+  "slots": {
+   "instruction": "schedule follow-up, monitor anemia and mood"
+  },
+  "source": "transcript",
+  "transcript_quote": "the front desk will book your follow-up",
+  "fhir_ref": null
+ },
+ {
+  "id": "f38",
+  "text": "Counseled patient to report any worsening mood to physician",
+  "type": "counseling",
+  "slots": {
+   "topic": "mood monitoring / safety-netting"
+  },
+  "source": "transcript",
+  "transcript_quote": "if that changes, you tell me. Not the dog, me.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f39",
+  "text": "Fatigue attributed to combination of anemia, lung recovery, and unemployment; further workup if it plateaus or worsens",
+  "type": "counseling",
+  "slots": {
+   "topic": "fatigue etiology and safety-netting"
+  },
+  "source": "transcript",
+  "transcript_quote": "Probably a share of each, and all three should keep improving. If the fatigue plateaus or gets worse instead, we look harder at it.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f40",
+  "text": "Medication review flagged as due, now resolved",
+  "type": "condition",
+  "slots": {
+   "condition": "medication review due",
+   "status": "resolved"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Condition/374e68b2-ee15-0852-ee15-0852"
+ },
+ {
+  "id": "f41",
+  "text": "Serum calcium 9.98 mg/dL - normal",
+  "type": "observation",
+  "slots": {
+   "test": "calcium",
+   "value": "9.98 mg/dL"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Observation/374e68b2-ee15-0852-48e4-94d455593770"
+ },
+ {
+  "id": "f42",
+  "text": "PRAPARE assessment: feels safe at home, no partner fear, stress level not at all, housing insecurity concern present",
+  "type": "sdoh",
+  "slots": {
+   "tool": "PRAPARE",
+   "detail": "safe housing, low stress, worried about losing housing"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Observation/374e68b2-ee15-0852-d050-f2242c106e2a"
+ }
+]

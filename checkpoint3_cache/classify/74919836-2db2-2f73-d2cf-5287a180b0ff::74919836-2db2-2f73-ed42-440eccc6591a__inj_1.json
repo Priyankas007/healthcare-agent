@@ -1,0 +1,20 @@
+[
+ {
+  "fact_id": "f10",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "The note already documents a social needs assessment; adding infrequent social contact and stress level enriches geriatric care but does not change management for this visit."
+ },
+ {
+  "fact_id": "f13",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Documenting removal of a duplicate/outdated metoprolol dose is essential to prevent inadvertent double beta-blocker dosing and consequent bradycardia or hypotension."
+ },
+ {
+  "fact_id": "f39",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Recording counseling on the periodontal\u2013cardiovascular link supports the dental referral and patient education but has limited immediate clinical impact."
+ }
+]

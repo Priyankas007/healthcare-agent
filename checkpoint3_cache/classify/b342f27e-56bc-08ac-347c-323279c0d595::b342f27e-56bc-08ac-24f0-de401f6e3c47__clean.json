@@ -1,0 +1,26 @@
+[
+ {
+  "fact_id": "f7",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Adds nuance to the neurologic/nausea review of systems and reassures the symptom is hunger-related, but is mild and non-actionable."
+ },
+ {
+  "fact_id": "f35",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "A vasovagal history with blood draws is actionable for the multiple specimens collected today and warrants documented precautions to prevent syncope-related injury."
+ },
+ {
+  "fact_id": "f43",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Activity and dietary counseling documents patient education completeness for the initial prenatal visit but has low clinical risk if omitted."
+ },
+ {
+  "fact_id": "f44",
+  "expected": false,
+  "severity": "minor",
+  "why_it_matters": "Announcement timing is a psychosocial/personal matter with no medical impact on management or safety."
+ }
+]

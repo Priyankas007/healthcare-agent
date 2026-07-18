@@ -1,0 +1,14 @@
+[
+ {
+  "fact_id": "f7",
+  "expected": true,
+  "severity": "safety_critical",
+  "why_it_matters": "Tramadol is an additional opioid that compounds neonatal withdrawal risk and must be captured in the medication list and taper coordination for accurate management."
+ },
+ {
+  "fact_id": "f45",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Documenting reassurance supports the psychosocial counseling record but does not alter clinical management or safety."
+ }
+]

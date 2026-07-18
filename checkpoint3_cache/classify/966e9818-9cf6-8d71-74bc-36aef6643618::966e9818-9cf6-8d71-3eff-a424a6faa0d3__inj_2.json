@@ -1,0 +1,14 @@
+[
+ {
+  "fact_id": "f2",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "The A1c is the key objective result confirming prediabetes and anchors the glycemic risk assessment and 6-month recheck plan, so its absence leaves the diagnosis undocumented."
+ },
+ {
+  "fact_id": "f37",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "This food-access barrier directly shapes realistic dietary counseling and budget-friendly meal planning for her prediabetes and obesity, but omission has limited clinical impact."
+ }
+]

@@ -1,0 +1,20 @@
+[
+ {
+  "fact_id": "f12",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Utility insecurity is a PRAPARE-captured SDOH need that could trigger additional resource referrals and completes the social needs documentation for this visit."
+ },
+ {
+  "fact_id": "f34",
+  "expected": false,
+  "severity": "minor",
+  "why_it_matters": "Routine post-vaccination soreness counseling is standard anticipatory guidance whose omission has negligible clinical impact."
+ },
+ {
+  "fact_id": "f40",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "The documented PRAPARE stress rating substantiates the assessment of stress and supports the social isolation/stress care plan already noted."
+ }
+]

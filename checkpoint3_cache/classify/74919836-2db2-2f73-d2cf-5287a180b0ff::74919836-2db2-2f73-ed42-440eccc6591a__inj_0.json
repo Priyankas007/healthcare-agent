@@ -1,0 +1,20 @@
+[
+ {
+  "fact_id": "f10",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Documenting the completed PRAPARE screen\u2014especially infrequent social contact suggesting isolation in an 85-year-old\u2014supports completeness and may flag a psychosocial need warranting follow-up."
+ },
+ {
+  "fact_id": "f12",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Discontinuing a duplicate statin identified on reconciliation prevents redundant therapy and potential toxicity, and its documentation confirms an accurate medication list."
+ },
+ {
+  "fact_id": "f39",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Recording counseling on the periodontal\u2013cardiovascular link reinforces the dental referral rationale and patient education for this cardiac patient."
+ }
+]

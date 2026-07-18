@@ -1,0 +1,14 @@
+[
+ {
+  "fact_id": "f13",
+  "expected": true,
+  "severity": "safety_critical",
+  "why_it_matters": "Absence of vaginal bleeding is a key first-trimester red-flag screen for miscarriage or ectopic pregnancy and should be explicitly documented at an initial prenatal visit."
+ },
+ {
+  "fact_id": "f45",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Reassurance about pre-recognition opioid exposure supports the patient emotionally but does not alter clinical management or the medical record's completeness."
+ }
+]

@@ -1,0 +1,8 @@
+[
+ {
+  "fact_id": "f11",
+  "expected": true,
+  "severity": "safety_critical",
+  "why_it_matters": "Omitting an active beta-blocker from the reconciled medication list for a patient with ischemic heart disease risks unintended discontinuation and dangerous rebound tachycardia or angina."
+ }
+]

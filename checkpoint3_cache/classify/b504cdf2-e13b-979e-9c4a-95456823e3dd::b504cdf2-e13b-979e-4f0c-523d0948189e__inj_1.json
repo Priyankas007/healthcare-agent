@@ -1,0 +1,14 @@
+[
+ {
+  "fact_id": "f11",
+  "expected": true,
+  "severity": "safety_critical",
+  "why_it_matters": "A newly started PRN opioid must be documented for medication reconciliation and dosing safety, and meperidine is specifically high-risk (Beers-listed) in a 76-year-old with fall risk and possible neurotoxicity."
+ },
+ {
+  "fact_id": "f12",
+  "expected": true,
+  "severity": "safety_critical",
+  "why_it_matters": "Documenting counseling on opioid-related sedation and fall risk is essential in an elderly, fall-fearful patient and drives the required post-dose nursing monitoring."
+ }
+]

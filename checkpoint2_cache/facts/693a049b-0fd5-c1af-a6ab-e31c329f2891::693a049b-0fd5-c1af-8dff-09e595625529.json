@@ -1,0 +1,346 @@
+[
+ {
+  "id": "f1",
+  "text": "Iron-deficiency/chronic anemia was the initial presenting problem that prompted workup",
+  "type": "condition",
+  "slots": {
+   "condition": "anemia"
+  },
+  "source": "transcript",
+  "transcript_quote": "My blood kept coming up low \u2014 the anemia \u2014 and they went looking for the reason.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f2",
+  "text": "Colon cancer diagnosed after workup (initially a polyp, then a colonic tumor)",
+  "type": "condition",
+  "slots": {
+   "condition": "colon cancer",
+   "site": "colon"
+  },
+  "source": "transcript",
+  "transcript_quote": "First it was a polyp. Then it was the tumor in the colon.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f3",
+  "text": "Patient declined further cancer treatment, electing comfort-focused care over additional therapy",
+  "type": "other",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "More treatment buys me hospital time, not porch time.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f4",
+  "text": "Ischemic heart disease with abnormal cardiac and coronary imaging findings",
+  "type": "condition",
+  "slots": {
+   "condition": "ischemic heart disease"
+  },
+  "source": "transcript",
+  "transcript_quote": "I see the ischemic heart disease in your history, and the imaging of your heart and coronary circulation showed abnormal findings.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f5",
+  "text": "Chronic angina (chest tightness) managed with nitroglycerin spray, occurring a couple times per week with exertion or emotional stress, resolving in a few minutes",
+  "type": "symptom",
+  "slots": {
+   "symptom": "chest tightness/angina",
+   "frequency": "a couple times a week",
+   "triggers": "stairs, emotional stress",
+   "duration": "resolves in a few minutes"
+  },
+  "source": "transcript",
+  "transcript_quote": "A couple of times a week, maybe. If I take the stairs too quickly or get worked up about something. It settles in a few minutes.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f6",
+  "text": "Dull, heavy lower abdominal pain intermittently, low intensity",
+  "type": "symptom",
+  "slots": {
+   "symptom": "abdominal pain",
+   "location": "lower abdomen",
+   "quality": "dull, heavy",
+   "severity": "mild"
+  },
+  "source": "transcript",
+  "transcript_quote": "The belly gets dull and heavy sometimes, low down. Nothing that shouts.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f7",
+  "text": "Fatigue is the predominant symptom",
+  "type": "symptom",
+  "slots": {
+   "symptom": "fatigue"
+  },
+  "source": "transcript",
+  "transcript_quote": "Tired is the main complaint. Tired is a heavy coat.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f8",
+  "text": "Decreased appetite and increased napping, attributed to cancer, heart disease, and anemia",
+  "type": "symptom",
+  "slots": {
+   "symptom": "decreased appetite, increased fatigue/napping"
+  },
+  "source": "transcript",
+  "transcript_quote": "his appetite has gotten small, and he naps more than he used to",
+  "fhir_ref": null
+ },
+ {
+  "id": "f9",
+  "text": "Clopidogrel 75 mg orally once daily continued unchanged",
+  "type": "medication",
+  "slots": {
+   "drug": "clopidogrel",
+   "dose": "75 mg",
+   "route": "oral",
+   "freq": "once daily",
+   "status": "continued"
+  },
+  "source": "transcript",
+  "transcript_quote": "Clopidogrel, 75 milligrams, once a day.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f10",
+  "text": "Simvastatin 20 mg orally at night continued unchanged",
+  "type": "medication",
+  "slots": {
+   "drug": "simvastatin",
+   "dose": "20 mg",
+   "route": "oral",
+   "freq": "nightly",
+   "status": "continued"
+  },
+  "source": "transcript",
+  "transcript_quote": "Simvastatin, 20, at night.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f11",
+  "text": "Metoprolol (long-acting) 100 mg continued unchanged",
+  "type": "medication",
+  "slots": {
+   "drug": "metoprolol (long-acting)",
+   "dose": "100 mg",
+   "route": "oral",
+   "status": "continued"
+  },
+  "source": "transcript",
+  "transcript_quote": "The long-acting metoprolol, 100 milligrams.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f12",
+  "text": "Nitroglycerin spray 0.4 mg sublingual as needed for chest pain continued unchanged",
+  "type": "medication",
+  "slots": {
+   "drug": "nitroglycerin spray",
+   "dose": "0.4 mg",
+   "route": "sublingual",
+   "freq": "PRN chest pain",
+   "status": "continued"
+  },
+  "source": "transcript",
+  "transcript_quote": "the nitroglycerin spray, 0.4 milligrams under the tongue when the chest acts up",
+  "fhir_ref": null
+ },
+ {
+  "id": "f13",
+  "text": "Plan to keep all medications unchanged for now; clopidogrel and simvastatin identified as candidates for future deprescribing if pill burden becomes difficult",
+  "type": "counseling",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "For today we keep everything exactly as it is \u2014 no changes while everything else is new \u2014 but over time, if swallowing a handful of pills becomes a chore, those are the ones we would retire first.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f14",
+  "text": "Decision to stop routine blood draws/lab monitoring unless results would change comfort",
+  "type": "order",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "We will not chase numbers anymore \u2014 no more blood draws unless they would change his comfort.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f15",
+  "text": "Hospice initial patient assessment performed",
+  "type": "procedure",
+  "slots": {
+   "procedure": "initial patient assessment"
+  },
+  "source": "both",
+  "transcript_quote": "Today is the initial assessment \u2014 I will listen to his heart and lungs, check his skin, look at safety around the house.",
+  "fhir_ref": "Procedure/693a049b-0fd5-c1af-6ab4-14906daa5de2"
+ },
+ {
+  "id": "f16",
+  "text": "Individualized plan of care developed with patient's goals in his own words and visit schedule",
+  "type": "procedure",
+  "slots": {
+   "procedure": "development of individualized plan of care"
+  },
+  "source": "both",
+  "transcript_quote": "From that we write his individualized plan of care: his goals in his own words, and the schedule.",
+  "fhir_ref": "Procedure/693a049b-0fd5-c1af-1382-59ccd5202256"
+ },
+ {
+  "id": "f17",
+  "text": "Hospice care regime/therapy initiated",
+  "type": "procedure",
+  "slots": {
+   "procedure": "hospice care"
+  },
+  "source": "both",
+  "transcript_quote": "the hospice admissions nurse",
+  "fhir_ref": "Procedure/693a049b-0fd5-c1af-dd51-1bcb074546f8"
+ },
+ {
+  "id": "f18",
+  "text": "Hospice eligibility certification completed by two physicians (attending and hospice team physician)",
+  "type": "procedure",
+  "slots": {
+   "procedure": "certification procedure"
+  },
+  "source": "both",
+  "transcript_quote": "two physicians certify that the illness has reached the stage where comfort is the right medicine \u2014 his attending physician and I have completed that certification",
+  "fhir_ref": "Procedure/693a049b-0fd5-c1af-d2ff-c2132d5c50d2"
+ },
+ {
+  "id": "f19",
+  "text": "Formal notifications sent to primary physician and Medicare",
+  "type": "procedure",
+  "slots": {
+   "procedure": "notifications"
+  },
+  "source": "both",
+  "transcript_quote": "we send the formal notifications \u2014 his primary doctor, Medicare \u2014 so the paperwork routes through us now",
+  "fhir_ref": "Procedure/693a049b-0fd5-c1af-aa4b-086f8e3aebf9"
+ },
+ {
+  "id": "f20",
+  "text": "Nursing visits scheduled a couple of times per week, next visit Thursday",
+  "type": "followup",
+  "slots": {
+   "frequency": "twice weekly",
+   "next_visit": "Thursday"
+  },
+  "source": "transcript",
+  "transcript_quote": "I will visit a couple of times a week to begin.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f21",
+  "text": "Home health aide for bathing offered but declined by patient; documented as 'not yet' in plan",
+  "type": "counseling",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "An aide can come to help with bathing \u2014 PT: Not yet. A man can still run his own shower.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f22",
+  "text": "Chaplain and social worker services offered",
+  "type": "referral",
+  "slots": {
+   "services": "chaplain, social worker"
+  },
+  "source": "transcript",
+  "transcript_quote": "There is also a chaplain, and a social worker, if either of you ever wants a longer conversation.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f23",
+  "text": "Counseled to call the 24-hour hospice line first for symptoms/emergencies (e.g., chest pain) rather than calling an ambulance",
+  "type": "counseling",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "Chest pain at three in the morning \u2014 you call us first, not the ambulance.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f24",
+  "text": "Respite care benefit explained to support caregiver",
+  "type": "counseling",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "there is respite built into this benefit \u2014 if you ever need a few days to rest, we arrange his care so you can step away",
+  "fhir_ref": null
+ },
+ {
+  "id": "f25",
+  "text": "Patient expressed goals of care: DNR/DNI \u2014 no resuscitation, intubation, chest compressions, or emergency transport",
+  "type": "other",
+  "slots": {
+   "code_status": "DNR/DNI, no heroic measures"
+  },
+  "source": "transcript",
+  "transcript_quote": "Nothing heroic. No machines, no pounding on my chest, no sirens in the driveway.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f26",
+  "text": "Patient's stated goals of a good day: time on porch, listening to jazz records, wife's cooking, and quiet \u2014 care to be built around these",
+  "type": "other",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "The porch in the morning if it is not too cold. My records in the afternoon... Her cooking. And quiet.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f27",
+  "text": "Social isolation: patient has a very small social circle and often goes weeks without seeing anyone besides his wife; content with this",
+  "type": "sdoh",
+  "slots": {
+   "domain": "social isolation"
+  },
+  "source": "transcript",
+  "transcript_quote": "He would go weeks without seeing a soul besides me. But he is content that way",
+  "fhir_ref": null
+ },
+ {
+  "id": "f28",
+  "text": "Patient lives at home with wife of 51 years who serves as primary caregiver and manages his medications",
+  "type": "sdoh",
+  "slots": {
+   "domain": "caregiver support"
+  },
+  "source": "transcript",
+  "transcript_quote": "Margaret loads the box every Sunday. I am the talent; she is management.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f29",
+  "text": "Caregiver instructed to keep a comfort diary tracking pain, appetite, and sleep between visits",
+  "type": "counseling",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "I will show you how to keep a little diary of his comfort \u2014 pain, appetite, sleep \u2014 so every visit starts from what the week actually looked like",
+  "fhir_ref": null
+ },
+ {
+  "id": "f30",
+  "text": "History and physical note documented for encounter",
+  "type": "procedure",
+  "slots": {},
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "DiagnosticReport/0c82def0-6eac-02f8-05c5-3a085c3fc3a1"
+ },
+ {
+  "id": "f31",
+  "text": "Symptom-focused management plan to treat pain, breathlessness, chest tightness, and anxiety",
+  "type": "counseling",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "we treat what he feels: pain, breathlessness, chest tightness, worry",
+  "fhir_ref": null
+ }
+]

@@ -1,0 +1,14 @@
+[
+ {
+  "fact_id": "f10",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "The PRAPARE assessment documents insurance, housing stability, and infrequent social contact (potential isolation) that inform geriatric risk and care planning for an 85-year-old."
+ },
+ {
+  "fact_id": "f39",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Linking periodontal and cardiovascular disease reinforces the dental referral rationale in a patient with ischemic heart disease, but omission has limited clinical impact."
+ }
+]

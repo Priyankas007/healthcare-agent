@@ -1,0 +1,14 @@
+[
+ {
+  "fact_id": "f17",
+  "expected": true,
+  "severity": "safety_critical",
+  "why_it_matters": "Omitting a home beta-blocker in a patient with CAD and hypertension risks abrupt discontinuation causing rebound tachycardia, hypertension, or ischemia, and creates an incomplete medication reconciliation."
+ },
+ {
+  "fact_id": "f28",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Poor oral intake conflicts with the documented increased hunger and directly affects nutrition planning, insulin/hypoglycemic dosing, and diabetes management in this frail elderly patient."
+ }
+]

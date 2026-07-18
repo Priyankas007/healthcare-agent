@@ -1,0 +1,14 @@
+[
+ {
+  "fact_id": "f35",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Prior severe vaccine reaction is a contraindication, so documenting a negative history justifies safe administration of today's influenza vaccine."
+ },
+ {
+  "fact_id": "f39",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Explicitly attributing fatigue and setting a safety-net for workup if it plateaus or worsens guides appropriate follow-up of the patient's known anemia and post-sepsis recovery."
+ }
+]

@@ -1,0 +1,485 @@
+[
+ {
+  "id": "f1",
+  "text": "Hand osteoarthritis with aching knuckles, worsening over time; pain 3/10 at rest, up to 5/10 by end of shift",
+  "type": "condition",
+  "slots": {
+   "condition": "osteoarthritis",
+   "location": "hands/knuckles",
+   "severity_now": "3/10",
+   "severity_worst": "5/10"
+  },
+  "source": "both",
+  "transcript_quote": "You told me a while back it was osteoarthritis, and it has been creeping... Right now, a three. End of a Friday shift, a five maybe.",
+  "fhir_ref": "Observation/01573895-dbf5-29c6-3b35-f150f40da012"
+ },
+ {
+  "id": "f2",
+  "text": "Morning finger stiffness that improves with warmth/coffee; aggravated by 10 hours of gripping totes and scanning at distribution center job",
+  "type": "symptom",
+  "slots": {
+   "symptom": "morning stiffness",
+   "aggravating": "gripping work",
+   "relieving": "warmth/coffee"
+  },
+  "source": "transcript",
+  "transcript_quote": "by end of shift my fingers feel like rusty hinges. Mornings they are stiff until the coffee kicks in.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f3",
+  "text": "Denies joint swelling, heat, redness, locking, or dropping objects in hands",
+  "type": "red_flag_screen",
+  "slots": {
+   "negatives": "no swelling, heat, redness, locking, dropping"
+  },
+  "source": "transcript",
+  "transcript_quote": "No dropping, no hot or red. Just that deep ache.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f4",
+  "text": "Uses OTC naproxen 220 mg with food, one to two times per week for hand pain",
+  "type": "medication",
+  "slots": {
+   "drug": "naproxen",
+   "dose": "220 mg",
+   "route": "oral",
+   "freq": "1-2 times per week",
+   "instruction": "with food"
+  },
+  "source": "transcript",
+  "transcript_quote": "The naproxen helps \u2014 the over-the-counter 220s. One, maybe two a week, with food, like you said last time.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f5",
+  "text": "Denies GI symptoms with NSAID use \u2014 no stomach burning, no black stools",
+  "type": "red_flag_screen",
+  "slots": {
+   "negatives": "no epigastric burning, no melena"
+  },
+  "source": "transcript",
+  "transcript_quote": "No, none of that. I am careful.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f6",
+  "text": "Advised to continue naproxen with food, occasional use as currently doing",
+  "type": "counseling",
+  "slots": {
+   "topic": "NSAID use"
+  },
+  "source": "transcript",
+  "transcript_quote": "keep taking it with food, keep it occasional exactly like you are doing",
+  "fhir_ref": null
+ },
+ {
+  "id": "f7",
+  "text": "Counseled on hand exercises (tendon glides) and morning warm soaks for arthritis",
+  "type": "counseling",
+  "slots": {
+   "topic": "hand exercises/warm soaks"
+  },
+  "source": "transcript",
+  "transcript_quote": "I will show you some hand exercises \u2014 tendon glides, and a warm soak in the morning to loosen the hinges",
+  "fhir_ref": null
+ },
+ {
+  "id": "f8",
+  "text": "Reports financial stress and anxiety with racing thoughts, midnight rumination about finances after spouse's hours were cut",
+  "type": "symptom",
+  "slots": {
+   "symptom": "anxiety/rumination"
+  },
+  "source": "both",
+  "transcript_quote": "Money, mostly. Shauna's hours got cut in the spring... I lie there at midnight running numbers.",
+  "fhir_ref": "Condition/01573895-dbf5-29c6-7149-d8b85f7d1ceb"
+ },
+ {
+  "id": "f9",
+  "text": "Reports daytime tension, shoulder tightness, and irritability/snapping at coworkers",
+  "type": "symptom",
+  "slots": {
+   "symptom": "tension/irritability"
+  },
+  "source": "transcript",
+  "transcript_quote": "I am tense all day \u2014 shoulders up around my ears, snapping at guys at work over nothing.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f10",
+  "text": "Reports episodic chest tightness (band-like) associated with anxiety, not with exertion; stairs and physical work cause no symptoms",
+  "type": "symptom",
+  "slots": {
+   "symptom": "chest tightness",
+   "trigger": "worry/anxiety, not exertion"
+  },
+  "source": "transcript",
+  "transcript_quote": "sometimes my chest gets tight. Not pain. Tight, like a band... When the worry spins up. Stairs I do all shift, no problem.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f11",
+  "text": "GAD-7 score of 12, moderate anxiety range",
+  "type": "observation",
+  "slots": {
+   "instrument": "GAD-7",
+   "score": "12",
+   "interpretation": "moderate"
+  },
+  "source": "both",
+  "transcript_quote": "the GAD-7 \u2014 you scored a 12, which lands in the moderate range",
+  "fhir_ref": "Observation/01573895-dbf5-29c6-6857-6243c15368a3"
+ },
+ {
+  "id": "f12",
+  "text": "PHQ-2 positive screen with score of 5",
+  "type": "observation",
+  "slots": {
+   "instrument": "PHQ-2",
+   "score": "5"
+  },
+  "source": "both",
+  "transcript_quote": "The short screener flagged you \u2014 a 5",
+  "fhir_ref": "Observation/01573895-dbf5-29c6-bf0c-cb71365a2e6f"
+ },
+ {
+  "id": "f13",
+  "text": "PHQ-9 score of 4, minimal depression; retains interest, normal appetite, adequate energy, no hopelessness",
+  "type": "observation",
+  "slots": {
+   "instrument": "PHQ-9",
+   "score": "4",
+   "interpretation": "minimal"
+  },
+  "source": "both",
+  "transcript_quote": "on the full version you come out at a 4, which is minimal",
+  "fhir_ref": "Observation/01573895-dbf5-29c6-bbed-3cb0f6aced99"
+ },
+ {
+  "id": "f14",
+  "text": "Reports thin/reduced sleep due to nighttime worry",
+  "type": "symptom",
+  "slots": {
+   "symptom": "sleep disturbance"
+  },
+  "source": "transcript",
+  "transcript_quote": "Sleep is thin because of the number-spinning.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f15",
+  "text": "Denies suicidal ideation or self-harm thoughts",
+  "type": "red_flag_screen",
+  "slots": {
+   "negatives": "no SI, no self-harm"
+  },
+  "source": "transcript",
+  "transcript_quote": "No. God, no. I have too much to stick around for.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f16",
+  "text": "Assessment: anxiety (stuck alarm), not depression or cardiac cause",
+  "type": "condition",
+  "slots": {
+   "condition": "anxiety"
+  },
+  "source": "transcript",
+  "transcript_quote": "that sounds like anxiety, not your heart",
+  "fhir_ref": null
+ },
+ {
+  "id": "f17",
+  "text": "Counseled on regular aerobic exercise: brisk 20-30 minute walk after dinner most days to reduce anxiety",
+  "type": "counseling",
+  "slots": {
+   "topic": "exercise for anxiety"
+  },
+  "source": "transcript",
+  "transcript_quote": "A brisk walk after dinner, twenty or thirty minutes, most days",
+  "fhir_ref": null
+ },
+ {
+  "id": "f18",
+  "text": "Counseled on 'scheduled worry' technique \u2014 15 minutes same time each evening for budgeting",
+  "type": "counseling",
+  "slots": {
+   "topic": "scheduled worry/CBT technique"
+  },
+  "source": "transcript",
+  "transcript_quote": "schedule the worry. Fifteen minutes, same time every evening, pen and paper, do all the budgeting then.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f19",
+  "text": "Referred to counseling center on Fairview with sliding-scale fees for anxiety therapy",
+  "type": "referral",
+  "slots": {
+   "referral": "counseling/therapy",
+   "detail": "sliding scale"
+  },
+  "source": "transcript",
+  "transcript_quote": "there is a counseling center over on Fairview that runs a sliding scale",
+  "fhir_ref": null
+ },
+ {
+  "id": "f20",
+  "text": "No psychiatric medication started today; option deferred, to reconsider if worry worsens",
+  "type": "counseling",
+  "slots": {
+   "topic": "medication deferral"
+  },
+  "source": "transcript",
+  "transcript_quote": "And no medicines for this today either \u2014 that is not where we are",
+  "fhir_ref": null
+ },
+ {
+  "id": "f21",
+  "text": "Return precautions: come back sooner if worry disrupts sleep nightly or chest tightness worsens",
+  "type": "followup",
+  "slots": {
+   "instruction": "return if symptoms worsen"
+  },
+  "source": "transcript",
+  "transcript_quote": "if the worry starts eating your sleep every night, or that chest tightness ramps up, you come back sooner",
+  "fhir_ref": null
+ },
+ {
+  "id": "f22",
+  "text": "AUDIT-C score of 2; reports about two beers on Saturdays",
+  "type": "observation",
+  "slots": {
+   "instrument": "AUDIT-C",
+   "score": "2"
+  },
+  "source": "both",
+  "transcript_quote": "Two beers, tops.",
+  "fhir_ref": "Observation/01573895-dbf5-29c6-a698-27d3c791a15d"
+ },
+ {
+  "id": "f23",
+  "text": "Never smoked tobacco",
+  "type": "sdoh",
+  "slots": {
+   "factor": "tobacco",
+   "status": "never smoker"
+  },
+  "source": "both",
+  "transcript_quote": "Never smoked, right?",
+  "fhir_ref": "Observation/01573895-dbf5-29c6-2e34-681f040eb73c"
+ },
+ {
+  "id": "f24",
+  "text": "Blood pressure 102/78 mmHg",
+  "type": "observation",
+  "slots": {
+   "vital": "BP",
+   "value": "102/78 mmHg"
+  },
+  "source": "both",
+  "transcript_quote": "Blood pressure is 102 over 78 \u2014 excellent.",
+  "fhir_ref": "Observation/01573895-dbf5-29c6-d0ba-e10b081f68e9"
+ },
+ {
+  "id": "f25",
+  "text": "Heart rate 74/min",
+  "type": "observation",
+  "slots": {
+   "vital": "HR",
+   "value": "74/min"
+  },
+  "source": "both",
+  "transcript_quote": "Pulse 74",
+  "fhir_ref": "Observation/01573895-dbf5-29c6-a0f6-751712c7f175"
+ },
+ {
+  "id": "f26",
+  "text": "Respiratory rate 15/min",
+  "type": "observation",
+  "slots": {
+   "vital": "RR",
+   "value": "15/min"
+  },
+  "source": "both",
+  "transcript_quote": "breathing 15",
+  "fhir_ref": "Observation/01573895-dbf5-29c6-f9f3-dff9e3f39a2e"
+ },
+ {
+  "id": "f27",
+  "text": "Height 162.1 cm, weight 73.5 kg, BMI 27.96 (down from prior)",
+  "type": "observation",
+  "slots": {
+   "height": "162.1 cm",
+   "weight": "73.5 kg",
+   "BMI": "27.96"
+  },
+  "source": "both",
+  "transcript_quote": "You are 162.1 centimeters and 73.5 kilos, which works out to a BMI just under 28 \u2014 you are actually down",
+  "fhir_ref": "Observation/01573895-dbf5-29c6-61d0-0b8c8d00c5f2"
+ },
+ {
+  "id": "f28",
+  "text": "Heart and lungs auscultated normal",
+  "type": "observation",
+  "slots": {
+   "exam": "cardiopulmonary normal"
+  },
+  "source": "transcript",
+  "transcript_quote": "Heart and lungs sound great.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f29",
+  "text": "Hand exam: bony fullness at several knuckles, mild tenderness to palpation, no swelling, no heat, strong grip \u2014 consistent with osteoarthritis",
+  "type": "observation",
+  "slots": {
+   "exam": "hand"
+  },
+  "source": "transcript",
+  "transcript_quote": "I can feel that bony fullness at a few of the knuckles, little tender when I press, but no swelling, no heat, and your grip is strong.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f30",
+  "text": "Dental problem: lower left posterior tooth with cold sensitivity/twinges; no dental care since child's birth",
+  "type": "symptom",
+  "slots": {
+   "symptom": "tooth sensitivity",
+   "location": "lower left posterior"
+  },
+  "source": "transcript",
+  "transcript_quote": "Lower left, in the back. Twinges on cold drinks. I have not sat in a dentist's chair since Ellie was born",
+  "fhir_ref": null
+ },
+ {
+  "id": "f31",
+  "text": "Referred for dental care to sliding-scale clinic",
+  "type": "referral",
+  "slots": {
+   "referral": "dental",
+   "detail": "sliding scale"
+  },
+  "source": "both",
+  "transcript_quote": "I am putting in a dental referral \u2014 and the clinic I refer to runs sliding scale too",
+  "fhir_ref": "Procedure/01573895-dbf5-29c6-c5bd-412b700ceaab"
+ },
+ {
+  "id": "f32",
+  "text": "Lipid panel: total cholesterol 157.54 mg/dL, LDL 101.02 mg/dL, triglycerides 134.84 mg/dL",
+  "type": "observation",
+  "slots": {
+   "total_chol": "157.54",
+   "LDL": "101.02",
+   "triglycerides": "134.84"
+  },
+  "source": "both",
+  "transcript_quote": "total 157.54, LDL 101.02, triglycerides 134.84",
+  "fhir_ref": "DiagnosticReport/01573895-dbf5-29c6-1de7-1cb038b0bda8"
+ },
+ {
+  "id": "f33",
+  "text": "Low HDL cholesterol 29.55 mg/dL; counseled that exercise raises HDL",
+  "type": "observation",
+  "slots": {
+   "HDL": "29.55 mg/dL",
+   "interpretation": "low"
+  },
+  "source": "both",
+  "transcript_quote": "The one soft spot is the HDL, the protective one \u2014 29.55, and we like that higher.",
+  "fhir_ref": "Observation/01573895-dbf5-29c6-5a78-159d52470763"
+ },
+ {
+  "id": "f34",
+  "text": "Influenza vaccine administered",
+  "type": "procedure",
+  "slots": {
+   "vaccine": "influenza, trivalent PF"
+  },
+  "source": "both",
+  "transcript_quote": "The flu vaccine.",
+  "fhir_ref": "Immunization/01573895-dbf5-29c6-d45c-68c65beb9b0e"
+ },
+ {
+  "id": "f35",
+  "text": "Td (tetanus) booster administered \u2014 patient overdue, works in warehouse",
+  "type": "procedure",
+  "slots": {
+   "vaccine": "Td tetanus booster"
+  },
+  "source": "both",
+  "transcript_quote": "Your tetanus booster \u2014 you are overdue",
+  "fhir_ref": "Immunization/01573895-dbf5-29c6-4250-655efa472e9c"
+ },
+ {
+  "id": "f36",
+  "text": "Hepatitis A vaccine (adult) administered",
+  "type": "procedure",
+  "slots": {
+   "vaccine": "Hep A adult"
+  },
+  "source": "both",
+  "transcript_quote": "And hepatitis A, which your generation mostly never got as kids.",
+  "fhir_ref": "Immunization/01573895-dbf5-29c6-95f1-f6846770a8a4"
+ },
+ {
+  "id": "f37",
+  "text": "Follow-up in two to three months to reassess anxiety trend",
+  "type": "followup",
+  "slots": {
+   "interval": "2-3 months"
+  },
+  "source": "transcript",
+  "transcript_quote": "Come back in two or three months regardless, just to tell me which way the worry is trending.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f38",
+  "text": "SDOH: financial strain due to spouse's reduced work hours, single income supporting household of 3 including second-grade child; annual family income ~$46,526",
+  "type": "sdoh",
+  "slots": {
+   "factor": "financial strain",
+   "household_size": "3",
+   "income": "46526/yr"
+  },
+  "source": "both",
+  "transcript_quote": "Shauna's hours got cut in the spring. We have Ellie in second grade, so we are one income and change now",
+  "fhir_ref": "Observation/01573895-dbf5-29c6-c34c-c0e4d98b4148"
+ },
+ {
+  "id": "f39",
+  "text": "SDOH: has stable housing, feels safe at home, full-time employment, private insurance, high school/GED education, no transportation barriers",
+  "type": "sdoh",
+  "slots": {
+   "housing": "stable",
+   "employment": "full-time",
+   "insurance": "private"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Observation/01573895-dbf5-29c6-c34c-c0e4d98b4148"
+ },
+ {
+  "id": "f40",
+  "text": "Occupation: picker/warehouse worker, 10-hour shifts of gripping and walking on concrete",
+  "type": "sdoh",
+  "slots": {
+   "occupation": "warehouse picker"
+  },
+  "source": "transcript",
+  "transcript_quote": "I am a picker at the distribution center \u2014 ten hours of gripping totes and scanning",
+  "fhir_ref": null
+ },
+ {
+  "id": "f41",
+  "text": "Medication reconciliation completed",
+  "type": "procedure",
+  "slots": {
+   "procedure": "medication reconciliation"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Procedure/01573895-dbf5-29c6-8120-f7c552c566ce"
+ }
+]

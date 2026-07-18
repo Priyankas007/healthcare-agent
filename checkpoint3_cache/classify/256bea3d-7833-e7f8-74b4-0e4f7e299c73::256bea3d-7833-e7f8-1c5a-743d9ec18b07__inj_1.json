@@ -1,0 +1,14 @@
+[
+ {
+  "fact_id": "f7",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "A completed medication review should capture all current medications including loratadine to ensure accurate reconciliation and avoid drug interactions or duplication."
+ },
+ {
+  "fact_id": "f42",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Documenting Medicaid coverage clarifies resource eligibility relevant to the sliding-scale dental referral and social care planning, though it does not alter immediate clinical management."
+ }
+]

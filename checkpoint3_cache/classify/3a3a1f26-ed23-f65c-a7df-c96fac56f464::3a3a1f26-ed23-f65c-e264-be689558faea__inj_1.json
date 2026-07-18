@@ -1,0 +1,26 @@
+[
+ {
+  "fact_id": "f12",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Utility insecurity is a PRAPARE-captured social need that could trigger additional resource referrals and completes this SDOH-focused visit's documentation."
+ },
+ {
+  "fact_id": "f33",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "An overdue tetanus booster actually administered today must be recorded to maintain an accurate immunization record and prevent duplicate dosing."
+ },
+ {
+  "fact_id": "f34",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Documenting side-effect counseling confirms informed consent and sets patient expectations, though clinical impact if omitted is low."
+ },
+ {
+  "fact_id": "f40",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "The PRAPARE stress rating supports and quantifies the documented financial-stress assessment but adds little to management decisions."
+ }
+]

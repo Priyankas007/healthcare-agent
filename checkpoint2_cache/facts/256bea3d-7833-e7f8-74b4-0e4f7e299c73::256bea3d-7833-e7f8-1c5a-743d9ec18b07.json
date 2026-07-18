@@ -1,0 +1,542 @@
+[
+ {
+  "id": "f1",
+  "text": "Visit prompted by overdue checkup and medication review notice from clinic",
+  "type": "other",
+  "slots": {},
+  "source": "both",
+  "transcript_quote": "The clinic called about a checkup being overdue, and the letter mentioned a medication review too.",
+  "fhir_ref": "Condition/256bea3d-7833-e7f8-bac4-bcdcd320c95e"
+ },
+ {
+  "id": "f2",
+  "text": "Patient reports feeling 'wound tight' with poor sleep and racing thoughts, primarily about finances",
+  "type": "symptom",
+  "slots": {
+   "symptom": "anxiety/tension",
+   "context": "financial stress"
+  },
+  "source": "transcript",
+  "transcript_quote": "I have been wound so tight lately",
+  "fhir_ref": null
+ },
+ {
+  "id": "f3",
+  "text": "Patient reports difficulty sleeping with mind running about money",
+  "type": "symptom",
+  "slots": {
+   "symptom": "insomnia"
+  },
+  "source": "transcript",
+  "transcript_quote": "I do not sleep great. My mind runs \u2014 money, mostly.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f4",
+  "text": "Patient reports intermittent fluttery chest sensation attributed to worry, which fades with sleep",
+  "type": "symptom",
+  "slots": {
+   "symptom": "chest fluttering",
+   "character": "worry-related"
+  },
+  "source": "transcript",
+  "transcript_quote": "Some nights my chest gets this fluttery feeling.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f5",
+  "text": "Denies chest pain with activity, shortness of breath, fainting, or swelling",
+  "type": "red_flag_screen",
+  "slots": {
+   "denied": [
+    "exertional chest pain",
+    "dyspnea",
+    "syncope",
+    "edema"
+   ]
+  },
+  "source": "transcript",
+  "transcript_quote": "No, nothing like that. Physically I am healthy as a horse.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f6",
+  "text": "Continues hydrocortisone cream for skin flares",
+  "type": "medication",
+  "slots": {
+   "drug": "hydrocortisone cream",
+   "indication": "skin flares",
+   "status": "continued"
+  },
+  "source": "both",
+  "transcript_quote": "The cream for when my skin flares up",
+  "fhir_ref": null
+ },
+ {
+  "id": "f7",
+  "text": "Continues loratadine tablet for seasonal allergies, taken most days in spring",
+  "type": "medication",
+  "slots": {
+   "drug": "loratadine",
+   "freq": "most days in spring",
+   "indication": "allergies",
+   "status": "continued"
+  },
+  "source": "both",
+  "transcript_quote": "the pill most days in spring",
+  "fhir_ref": null
+ },
+ {
+  "id": "f8",
+  "text": "Continues epinephrine auto-injector kept in purse; never used",
+  "type": "medication",
+  "slots": {
+   "drug": "epinephrine auto-injector",
+   "status": "continued",
+   "note": "never used"
+  },
+  "source": "both",
+  "transcript_quote": "the EpiPen lives in my purse",
+  "fhir_ref": null
+ },
+ {
+  "id": "f9",
+  "text": "Allergy to animal dander causing sneezing and hives",
+  "type": "condition",
+  "slots": {
+   "allergen": "animal dander",
+   "reaction": "sneezing, hives"
+  },
+  "source": "transcript",
+  "transcript_quote": "Animal dander sets me off",
+  "fhir_ref": null
+ },
+ {
+  "id": "f10",
+  "text": "Aspirin allergy/intolerance confirmed",
+  "type": "condition",
+  "slots": {
+   "allergen": "aspirin"
+  },
+  "source": "transcript",
+  "transcript_quote": "I cannot take aspirin",
+  "fhir_ref": null
+ },
+ {
+  "id": "f11",
+  "text": "No recent allergic reactions; never had to use EpiPen",
+  "type": "red_flag_screen",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "Never used it, knock on wood.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f12",
+  "text": "History of recurrent urinary tract infections; denies current urinary burning, urgency, or blood",
+  "type": "red_flag_screen",
+  "slots": {
+   "denied": [
+    "dysuria",
+    "urgency",
+    "hematuria"
+   ],
+   "history": "recurrent UTI"
+  },
+  "source": "transcript",
+  "transcript_quote": "No, I have been clear for a good while.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f13",
+  "text": "Periods regular; no chance of pregnancy status post tubal ligation",
+  "type": "condition",
+  "slots": {
+   "detail": "post tubal ligation, prior pregnancy loss"
+  },
+  "source": "transcript",
+  "transcript_quote": "I had my tubes tied after my youngest.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f14",
+  "text": "GAD-7 score of 7, consistent with mild anxiety",
+  "type": "observation",
+  "slots": {
+   "test": "GAD-7",
+   "value": "7",
+   "interpretation": "mild anxiety"
+  },
+  "source": "both",
+  "transcript_quote": "The anxiety score was a seven \u2014 that is the mild range",
+  "fhir_ref": "Observation/256bea3d-7833-e7f8-8100-fb0892c15e09"
+ },
+ {
+  "id": "f15",
+  "text": "PHQ-2 depression screen score of 0; not depressed",
+  "type": "observation",
+  "slots": {
+   "test": "PHQ-2",
+   "value": "0"
+  },
+  "source": "both",
+  "transcript_quote": "The depression screen was a zero \u2014 stressed but not down.",
+  "fhir_ref": "Observation/256bea3d-7833-e7f8-a0a8-4f45d50281ab"
+ },
+ {
+  "id": "f16",
+  "text": "HARK domestic abuse screen positive with score of 2 (marked yes on humiliation and afraid items)",
+  "type": "observation",
+  "slots": {
+   "test": "HARK",
+   "value": "2",
+   "interpretation": "positive for IPV"
+  },
+  "source": "both",
+  "transcript_quote": "You marked yes on two.",
+  "fhir_ref": "Observation/256bea3d-7833-e7f8-6a3d-b4aa81af3282"
+ },
+ {
+  "id": "f17",
+  "text": "Patient is victim of intimate partner emotional/verbal abuse; partner verbally demeaning when drinking, has punched a wall twice; no physical violence toward patient or children",
+  "type": "condition",
+  "slots": {
+   "type": "intimate partner abuse",
+   "form": "verbal/emotional"
+  },
+  "source": "both",
+  "transcript_quote": "when he has been drinking, the things he says... He cuts me down to nothing.",
+  "fhir_ref": "Condition/256bea3d-7833-e7f8-2087-c8e78f364a53"
+ },
+ {
+  "id": "f18",
+  "text": "Patient reports feeling scared and heart pounding when partner gets loud; takes children to bedroom",
+  "type": "symptom",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "when he gets loud I take the kids to the bedroom, and I notice my heart pounding and I am... scared",
+  "fhir_ref": null
+ },
+ {
+  "id": "f19",
+  "text": "Patient denies being in immediate danger this week; no physical contact by partner",
+  "type": "red_flag_screen",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "No. Not danger-danger. He has never touched me or the kids.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f20",
+  "text": "DAST-10 substance screen score of 2; occasional nighttime cannabis use for stress relief",
+  "type": "observation",
+  "slots": {
+   "test": "DAST-10",
+   "value": "2",
+   "substance": "cannabis"
+  },
+  "source": "both",
+  "transcript_quote": "the substance questions scored a two",
+  "fhir_ref": "Observation/256bea3d-7833-e7f8-1a64-d02aa4df6117"
+ },
+ {
+  "id": "f21",
+  "text": "Occasional cannabis use at night for relaxation",
+  "type": "sdoh",
+  "slots": {
+   "substance": "cannabis",
+   "pattern": "some nights"
+  },
+  "source": "transcript",
+  "transcript_quote": "Some nights, after everyone is asleep, I smoke a little weed",
+  "fhir_ref": null
+ },
+ {
+  "id": "f22",
+  "text": "Never smoked tobacco",
+  "type": "observation",
+  "slots": {
+   "status": "never smoker"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Observation/256bea3d-7833-e7f8-a366-28ea57208d1d"
+ },
+ {
+  "id": "f23",
+  "text": "Lungs clear, heart regular rate and rhythm on exam",
+  "type": "observation",
+  "slots": {
+   "exam": "cardiopulmonary normal"
+  },
+  "source": "transcript",
+  "transcript_quote": "lungs are clear, heart is regular and unhurried",
+  "fhir_ref": null
+ },
+ {
+  "id": "f24",
+  "text": "Blood pressure 108/77 mmHg",
+  "type": "observation",
+  "slots": {
+   "systolic": "108",
+   "diastolic": "77"
+  },
+  "source": "both",
+  "transcript_quote": "one-oh-eight over seventy-seven",
+  "fhir_ref": "Observation/256bea3d-7833-e7f8-4811-ac7a0e5c92c5"
+ },
+ {
+  "id": "f25",
+  "text": "Heart rate 67 /min",
+  "type": "observation",
+  "slots": {
+   "value": "67"
+  },
+  "source": "both",
+  "transcript_quote": "pulse sixty-seven",
+  "fhir_ref": "Observation/256bea3d-7833-e7f8-7a47-cc71bd894bf8"
+ },
+ {
+  "id": "f26",
+  "text": "Weight 91.4 kg",
+  "type": "observation",
+  "slots": {
+   "value": "91.4 kg"
+  },
+  "source": "both",
+  "transcript_quote": "Weight came in at ninety-one point four kilos",
+  "fhir_ref": "Observation/256bea3d-7833-e7f8-480d-172539e0b492"
+ },
+ {
+  "id": "f27",
+  "text": "BMI 30.57 kg/m2 (obese range)",
+  "type": "observation",
+  "slots": {
+   "value": "30.57"
+  },
+  "source": "both",
+  "transcript_quote": "the math puts your BMI just over thirty",
+  "fhir_ref": "Observation/256bea3d-7833-e7f8-f53b-07dd8d540c98"
+ },
+ {
+  "id": "f28",
+  "text": "Respiratory rate 16 /min",
+  "type": "observation",
+  "slots": {
+   "value": "16"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Observation/256bea3d-7833-e7f8-9f4c-7f352aa94654"
+ },
+ {
+  "id": "f29",
+  "text": "Body height 172.9 cm",
+  "type": "observation",
+  "slots": {
+   "value": "172.9 cm"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Observation/256bea3d-7833-e7f8-7b71-88a49743de47"
+ },
+ {
+  "id": "f30",
+  "text": "Pain severity score 1/10",
+  "type": "observation",
+  "slots": {
+   "value": "1"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Observation/256bea3d-7833-e7f8-90e2-87b55e76d1e8"
+ },
+ {
+  "id": "f31",
+  "text": "Influenza vaccine (split virus, trivalent, PF) administered today",
+  "type": "procedure",
+  "slots": {
+   "vaccine": "influenza trivalent"
+  },
+  "source": "both",
+  "transcript_quote": "And one shot today \u2014 the flu vaccine.",
+  "fhir_ref": "Immunization/256bea3d-7833-e7f8-bfff-8bfa537b0f4e"
+ },
+ {
+  "id": "f32",
+  "text": "Referral placed to community dental clinic (sliding scale/Medicaid) for overdue dental care",
+  "type": "referral",
+  "slots": {
+   "to": "community dental clinic",
+   "reason": "no dental care in years"
+  },
+  "source": "both",
+  "transcript_quote": "I am putting in a referral to the community dental clinic",
+  "fhir_ref": "Procedure/256bea3d-7833-e7f8-9230-a8c9ef600272"
+ },
+ {
+  "id": "f33",
+  "text": "Provided confidential domestic violence hotline number, written discreetly per patient preference",
+  "type": "counseling",
+  "slots": {
+   "resource": "DV hotline",
+   "detail": "safety planning"
+  },
+  "source": "transcript",
+  "transcript_quote": "There is a confidential domestic violence hotline \u2014 I can write the number small, no label",
+  "fhir_ref": null
+ },
+ {
+  "id": "f34",
+  "text": "IPV documented in chart with patient's permission for care coordination",
+  "type": "counseling",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "I will also note this in your chart, which is confidential",
+  "fhir_ref": null
+ },
+ {
+  "id": "f35",
+  "text": "Counseled on cannabis safety: never before driving and keep locked away from children",
+  "type": "counseling",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "never before driving, and keep it locked away from the kids",
+  "fhir_ref": null
+ },
+ {
+  "id": "f36",
+  "text": "Counseled that walking is free and helps anxiety and weight when time permits",
+  "type": "counseling",
+  "slots": {
+   "topic": "exercise"
+  },
+  "source": "transcript",
+  "transcript_quote": "walking is free and it helps the anxiety at least as much as the waistline",
+  "fhir_ref": null
+ },
+ {
+  "id": "f37",
+  "text": "Follow-up appointment in about one month for anxiety and self-care",
+  "type": "followup",
+  "slots": {
+   "interval": "1 month"
+  },
+  "source": "transcript",
+  "transcript_quote": "I want to see you back in about a month",
+  "fhir_ref": null
+ },
+ {
+  "id": "f38",
+  "text": "Advised to call or walk in without appointment if situation at home worsens or fear escalates",
+  "type": "followup",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "if anything at home changes, if the fear gets bigger, you call or you walk in",
+  "fhir_ref": null
+ },
+ {
+  "id": "f39",
+  "text": "Household crowding: 8 people living at address after sister and her children doubled up due to housing loss",
+  "type": "sdoh",
+  "slots": {
+   "household_size": "8",
+   "issue": "overcrowding"
+  },
+  "source": "both",
+  "transcript_quote": "There are eight of us in the house right now.",
+  "fhir_ref": "Observation/256bea3d-7833-e7f8-ec6d-684664f3d248"
+ },
+ {
+  "id": "f40",
+  "text": "Financial stress: patient laid off from diner during pandemic, partner's hours cut, relying on unemployment; low annual family income (~$10,131)",
+  "type": "sdoh",
+  "slots": {
+   "issue": "unemployment/financial insecurity",
+   "income": "10131/yr"
+  },
+  "source": "both",
+  "transcript_quote": "I got laid off from the diner when everything shut down, my partner's hours got cut, and unemployment barely covers groceries",
+  "fhir_ref": "Observation/256bea3d-7833-e7f8-ec6d-684664f3d248"
+ },
+ {
+  "id": "f41",
+  "text": "High stress level reported on PRAPARE assessment",
+  "type": "sdoh",
+  "slots": {
+   "stress": "very much"
+  },
+  "source": "both",
+  "transcript_quote": "I am... braced. All the time.",
+  "fhir_ref": "Condition/256bea3d-7833-e7f8-42bd-c54476332284"
+ },
+ {
+  "id": "f42",
+  "text": "Insurance is Medicaid",
+  "type": "sdoh",
+  "slots": {
+   "insurance": "Medicaid"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Observation/256bea3d-7833-e7f8-ec6d-684664f3d248"
+ },
+ {
+  "id": "f43",
+  "text": "Barrier to dental care: cost prohibitive, has not seen dentist in years",
+  "type": "sdoh",
+  "slots": {
+   "issue": "cost barrier to dental care"
+  },
+  "source": "transcript",
+  "transcript_quote": "Dental costs real money, and the kids' teeth come first.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f44",
+  "text": "Domestic abuse screening procedure completed",
+  "type": "procedure",
+  "slots": {},
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Procedure/256bea3d-7833-e7f8-70d0-72f5e7142911"
+ },
+ {
+  "id": "f45",
+  "text": "Assessment of anxiety completed",
+  "type": "procedure",
+  "slots": {},
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Procedure/256bea3d-7833-e7f8-fb05-95828ba58144"
+ },
+ {
+  "id": "f46",
+  "text": "Assessment of substance use and drug abuse screening completed",
+  "type": "procedure",
+  "slots": {},
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Procedure/256bea3d-7833-e7f8-e32f-dcef35b94a1e"
+ },
+ {
+  "id": "f47",
+  "text": "Assessment of health and social care needs completed",
+  "type": "procedure",
+  "slots": {},
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Procedure/256bea3d-7833-e7f8-4fc7-a2102a478891"
+ },
+ {
+  "id": "f48",
+  "text": "Patient has social support: sister aware of the abuse situation",
+  "type": "sdoh",
+  "slots": {
+   "factor": "social support"
+  },
+  "source": "transcript",
+  "transcript_quote": "My sister knows some of it already, so I am not alone in the house with it",
+  "fhir_ref": null
+ }
+]

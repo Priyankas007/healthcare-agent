@@ -1,0 +1,198 @@
+{
+ "note_version_id": "693a049b-0fd5-c1af-a6ab-e31c329f2891::693a049b-0fd5-c1af-8dff-09e595625529__inj_2",
+ "injected_fact_id": "f11",
+ "detected_absent_fact_ids": [
+  "f11"
+ ],
+ "caught": true,
+ "collateral_flips": [],
+ "n_present_on_provided": 29,
+ "presence_results": [
+  {
+   "fact_id": "f1",
+   "status": "present",
+   "note_evidence": "His illness declared itself through progressive anemia, which prompted the evaluation",
+   "rationale": "Anemia documented as initial presenting problem prompting workup."
+  },
+  {
+   "fact_id": "f2",
+   "status": "present",
+   "note_evidence": "the evaluation that found first a colon polyp and then the malignancy",
+   "rationale": "Colon cancer found after polyp on workup documented."
+  },
+  {
+   "fact_id": "f3",
+   "status": "present",
+   "note_evidence": "has declined further disease-directed therapy",
+   "rationale": "Patient declined further cancer treatment for comfort care."
+  },
+  {
+   "fact_id": "f4",
+   "status": "present",
+   "note_evidence": "ischemic heart disease with documented abnormal findings on diagnostic imaging of the heart and coronary circulation",
+   "rationale": "Ischemic heart disease with abnormal cardiac/coronary imaging stated."
+  },
+  {
+   "fact_id": "f5",
+   "status": "present",
+   "note_evidence": "exertional and stress-related chest tightness a couple of times weekly, reliably relieved within minutes by nitroglycerin spray",
+   "rationale": "Angina frequency, triggers, resolution, and nitroglycerin all documented."
+  },
+  {
+   "fact_id": "f6",
+   "status": "present",
+   "note_evidence": "intermittent dull, heavy lower abdominal discomfort that does not shout",
+   "rationale": "Dull heavy intermittent low-intensity lower abdominal pain documented."
+  },
+  {
+   "fact_id": "f7",
+   "status": "present",
+   "note_evidence": "prominent fatigue (his heavy coat)",
+   "rationale": "Fatigue described as prominent symptom."
+  },
+  {
+   "fact_id": "f8",
+   "status": "present",
+   "note_evidence": "reduced appetite, and increased daytime napping... Energy decline consistent with advanced malignancy, cardiac disease, and known anemia",
+   "rationale": "Decreased appetite/napping attributed to cancer, cardiac disease, and anemia."
+  },
+  {
+   "fact_id": "f9",
+   "status": "present",
+   "note_evidence": "Continue clopidogrel 75 mg",
+   "rationale": "Clopidogrel 75 mg daily continued documented."
+  },
+  {
+   "fact_id": "f10",
+   "status": "present",
+   "note_evidence": "simvastatin 20 mg nightly... Continue... simvastatin 20 mg",
+   "rationale": "Simvastatin 20 mg nightly continued documented."
+  },
+  {
+   "fact_id": "f11",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "Metoprolol is not mentioned anywhere in the note."
+  },
+  {
+   "fact_id": "f12",
+   "status": "present",
+   "note_evidence": "nitroglycerin 0.4 mg/actuation mucosal spray as needed for chest tightness... Continue nitroglycerin 0.4 mg spray as needed",
+   "rationale": "Nitroglycerin 0.4 mg spray PRN chest tightness continued documented."
+  },
+  {
+   "fact_id": "f13",
+   "status": "present",
+   "note_evidence": "identified with the patient as first candidates for future deprescribing if pill burden grows",
+   "rationale": "Meds continued now with clopidogrel/simvastatin as future deprescribing candidates."
+  },
+  {
+   "fact_id": "f14",
+   "status": "present",
+   "note_evidence": "no further laboratory surveillance planned as it would not change comfort-directed management",
+   "rationale": "Lab monitoring stopped unless it would change comfort care."
+  },
+  {
+   "fact_id": "f15",
+   "status": "present",
+   "note_evidence": "Initial patient assessment completed",
+   "rationale": "Initial hospice patient assessment performed."
+  },
+  {
+   "fact_id": "f16",
+   "status": "present",
+   "note_evidence": "individualized plan of care developed documenting his goals in his own words",
+   "rationale": "Individualized plan of care with patient goals documented."
+  },
+  {
+   "fact_id": "f17",
+   "status": "present",
+   "note_evidence": "admitted today to home hospice care",
+   "rationale": "Hospice care initiated."
+  },
+  {
+   "fact_id": "f18",
+   "status": "present",
+   "note_evidence": "Certification procedure completed by the attending physician and hospice physician",
+   "rationale": "Certification completed by two physicians documented."
+  },
+  {
+   "fact_id": "f19",
+   "status": "present",
+   "note_evidence": "formal notifications sent to his primary physician and Medicare",
+   "rationale": "Notifications to primary physician and Medicare documented."
+  },
+  {
+   "fact_id": "f20",
+   "status": "partial",
+   "note_evidence": "nursing twice weekly to start",
+   "rationale": "Twice-weekly nursing documented but no next visit Thursday stated."
+  },
+  {
+   "fact_id": "f21",
+   "status": "partial",
+   "note_evidence": "aide support offered and declined for now (his choice to revisit)",
+   "rationale": "Aide offered/declined/revisit documented but not specifically for bathing."
+  },
+  {
+   "fact_id": "f22",
+   "status": "present",
+   "note_evidence": "chaplain and social worker available",
+   "rationale": "Chaplain and social worker services offered."
+  },
+  {
+   "fact_id": "f23",
+   "status": "present",
+   "note_evidence": "24/7 on-call line reviewed \u2014 call hospice first, not emergency services",
+   "rationale": "Counseled to call hospice line first instead of emergency services."
+  },
+  {
+   "fact_id": "f24",
+   "status": "present",
+   "note_evidence": "Respite care benefit explained and available",
+   "rationale": "Respite care benefit explained for caregiver."
+  },
+  {
+   "fact_id": "f25",
+   "status": "present",
+   "note_evidence": "no hospital transfers, no resuscitation attempts, no machines",
+   "rationale": "DNR/DNI, no transport or machines documented."
+  },
+  {
+   "fact_id": "f26",
+   "status": "present",
+   "note_evidence": "mornings on the porch, his jazz records, his wife's cooking, quiet",
+   "rationale": "Stated goals of a good day documented."
+  },
+  {
+   "fact_id": "f27",
+   "status": "present",
+   "note_evidence": "longstanding limited social contact and social isolation which he experiences as contentment rather than distress",
+   "rationale": "Social isolation with contentment documented."
+  },
+  {
+   "fact_id": "f28",
+   "status": "present",
+   "note_evidence": "married 51 years; wife Margaret is his devoted primary caregiver",
+   "rationale": "Lives with wife of 51 years as primary caregiver documented."
+  },
+  {
+   "fact_id": "f29",
+   "status": "present",
+   "note_evidence": "wife to keep a simple daily comfort diary (pain, appetite, sleep)",
+   "rationale": "Caregiver comfort diary tracking pain, appetite, sleep documented."
+  },
+  {
+   "fact_id": "f30",
+   "status": "present",
+   "note_evidence": "**Subjective:**... **Objective:** Elderly man reclining comfortably at home",
+   "rationale": "Note documents history and physical for the encounter."
+  },
+  {
+   "fact_id": "f31",
+   "status": "partial",
+   "note_evidence": "symptom control is the goal rather than risk modification",
+   "rationale": "Pain and chest tightness addressed but breathlessness and anxiety management not documented."
+  }
+ ]
+}

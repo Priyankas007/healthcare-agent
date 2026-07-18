@@ -1,0 +1,208 @@
+{
+ "note_version_id": "5e93dd7e-1639-0886-8d0e-80ac11f2785c::5e93dd7e-1639-0886-70ab-27e7ee37e5a0__inj_1",
+ "injected_fact_id": "f6",
+ "detected_absent_fact_ids": [
+  "f6",
+  "f25",
+  "f29",
+  "f31",
+  "f32"
+ ],
+ "caught": true,
+ "collateral_flips": [],
+ "n_present_on_provided": 26,
+ "presence_results": [
+  {
+   "fact_id": "f1",
+   "status": "present",
+   "note_evidence": "several months of poor glycemic control with documented hyperglycemia",
+   "rationale": "Poor control with hyperglycemia over months documented."
+  },
+  {
+   "fact_id": "f2",
+   "status": "present",
+   "note_evidence": "persistent thirst",
+   "rationale": "Thirst documented."
+  },
+  {
+   "fact_id": "f3",
+   "status": "present",
+   "note_evidence": "fatigue, and mental fog",
+   "rationale": "Fatigue and cognitive fog documented."
+  },
+  {
+   "fact_id": "f4",
+   "status": "present",
+   "note_evidence": "Vision blurs intermittently, worse in the afternoons",
+   "rationale": "Intermittent afternoon blurring documented."
+  },
+  {
+   "fact_id": "f5",
+   "status": "partial",
+   "note_evidence": "Tingling of the hands and feet is present a few months, predominantly nocturnal",
+   "rationale": "Location, timing, duration present but worsening not documented."
+  },
+  {
+   "fact_id": "f6",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No falls screen documented."
+  },
+  {
+   "fact_id": "f7",
+   "status": "present",
+   "note_evidence": "without burns, cuts, or non-healing sores",
+   "rationale": "Denial of foot wounds documented."
+  },
+  {
+   "fact_id": "f8",
+   "status": "present",
+   "note_evidence": "dilated eye examination two weeks ago (tropicamide drops)",
+   "rationale": "Dilated exam with tropicamide two weeks ago documented."
+  },
+  {
+   "fact_id": "f9",
+   "status": "present",
+   "note_evidence": "Continue 24-hr metformin 500 mg ER daily, administered consistently with meals; no regimen change at admission",
+   "rationale": "Metformin ER 500 mg daily unchanged with meals documented."
+  },
+  {
+   "fact_id": "f10",
+   "status": "present",
+   "note_evidence": "adherence and meal timing collapsed over a stressful autumn \u2014 erratic meals ... with correspondingly erratic dosing",
+   "rationale": "Irregular meals and adherence during stress documented."
+  },
+  {
+   "fact_id": "f11",
+   "status": "present",
+   "note_evidence": "she lives alone",
+   "rationale": "Lives alone documented."
+  },
+  {
+   "fact_id": "f12",
+   "status": "present",
+   "note_evidence": "finances tightened after leaving work",
+   "rationale": "Financial hardship after leaving work documented."
+  },
+  {
+   "fact_id": "f13",
+   "status": "present",
+   "note_evidence": "her sister and closest confidante died two years ago, and she describes marked social isolation",
+   "rationale": "Bereavement and isolation documented."
+  },
+  {
+   "fact_id": "f14",
+   "status": "present",
+   "note_evidence": "being overwhelmed by self-management, which drove the decision for skilled-level support",
+   "rationale": "Coping difficulty and disengagement documented."
+  },
+  {
+   "fact_id": "f15",
+   "status": "present",
+   "note_evidence": "History and physical examination completed on admission",
+   "rationale": "H&P performed."
+  },
+  {
+   "fact_id": "f16",
+   "status": "present",
+   "note_evidence": "History and physical examination completed on admission",
+   "rationale": "Initial assessment completed."
+  },
+  {
+   "fact_id": "f17",
+   "status": "present",
+   "note_evidence": "individualized plan of care developed with the patient",
+   "rationale": "Individualized care plan documented."
+  },
+  {
+   "fact_id": "f18",
+   "status": "present",
+   "note_evidence": "pre-meal glucose checks, medication administration support, symptom monitoring",
+   "rationale": "Nursing glucose checks and med administration documented."
+  },
+  {
+   "fact_id": "f19",
+   "status": "present",
+   "note_evidence": "Daily foot inspection by nursing",
+   "rationale": "Daily foot checks documented."
+  },
+  {
+   "fact_id": "f20",
+   "status": "present",
+   "note_evidence": "dietitian involvement through professional/ancillary services, including a home-translatable meal plan",
+   "rationale": "Dietitian consult with home-adaptable consistent-carb plan documented."
+  },
+  {
+   "fact_id": "f21",
+   "status": "present",
+   "note_evidence": "Occupational therapy several sessions weekly: medication organization, kitchen and self-management routines, energy pacing",
+   "rationale": "OT several weekly with described focus documented."
+  },
+  {
+   "fact_id": "f22",
+   "status": "present",
+   "note_evidence": "Physical therapy: strength and balance sessions",
+   "rationale": "PT for strength and balance documented."
+  },
+  {
+   "fact_id": "f23",
+   "status": "present",
+   "note_evidence": "Speech and language therapy: baseline swallow screen and cognitive-communication strategies (checklists, memory aids)",
+   "rationale": "SLT swallow baseline and cognitive strategies documented."
+  },
+  {
+   "fact_id": "f24",
+   "status": "present",
+   "note_evidence": "Social services engagement during the stay",
+   "rationale": "Social work involvement documented."
+  },
+  {
+   "fact_id": "f25",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No pharmacist involvement documented."
+  },
+  {
+   "fact_id": "f26",
+   "status": "present",
+   "note_evidence": "maintain scheduled outpatient eye follow-up",
+   "rationale": "Ophthalmology follow-up maintained documented."
+  },
+  {
+   "fact_id": "f27",
+   "status": "present",
+   "note_evidence": "pre-discharge assessment of medication management, meal preparation, mobility, and home supports before discharge home",
+   "rationale": "Pre-discharge assessment documented."
+  },
+  {
+   "fact_id": "f28",
+   "status": "present",
+   "note_evidence": "Goal of a several-week stay",
+   "rationale": "Anticipated several-week stay documented."
+  },
+  {
+   "fact_id": "f29",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "SNF admission, discharge not completed."
+  },
+  {
+   "fact_id": "f30",
+   "status": "partial",
+   "note_evidence": "reassess symptoms as control improves",
+   "rationale": "Expectation of improvement with control implied but counseling and non-guarantee not documented."
+  },
+  {
+   "fact_id": "f31",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No physician rounds/nursing check-in timing documented."
+  },
+  {
+   "fact_id": "f32",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No documented counseling reframing stay as short-term rehab."
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+[
+ {
+  "fact_id": "f9",
+  "expected": true,
+  "severity": "safety_critical",
+  "why_it_matters": "An omitted antiplatelet in a patient with active colon malignancy and progressive anemia carries major bleeding risk and warrants deliberate deprescribing review, so its absence from medication reconciliation is dangerous."
+ },
+ {
+  "fact_id": "f30",
+  "expected": false,
+  "severity": "minor",
+  "why_it_matters": "Documenting that an H&P was completed is administrative and adds little clinical value when the note itself constitutes that documentation."
+ }
+]

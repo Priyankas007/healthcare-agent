@@ -1,0 +1,20 @@
+[
+ {
+  "fact_id": "f34",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "A documented inability to obtain needed care directly affects whether the patient can fill his new prescription and complete the dental referral, and should shape the care plan."
+ },
+ {
+  "fact_id": "f35",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Seasonal/migrant farm work history is a completeness element of the PRAPARE screen and may carry occupational exposure relevance, but has limited immediate impact on this visit's management."
+ },
+ {
+  "fact_id": "f40",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Documenting safety-netting for worsening grief/depression is important given the borderline PHQ-2 and recent bereavement, ensuring a clear plan for escalation if mood deteriorates."
+ }
+]

@@ -1,0 +1,20 @@
+[
+ {
+  "fact_id": "f7",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Alcohol use is a standard general-exam screening item and interacts with his nightly diphenhydramine, though a low-risk AUDIT-C of 2 has limited management impact."
+ },
+ {
+  "fact_id": "f17",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Housing stability, home safety, and insurance are relevant SDOH for a patient with social isolation, but these reassuring findings carry low clinical risk if omitted."
+ },
+ {
+  "fact_id": "f33",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Documenting that a social needs assessment was completed supports care completeness for an isolated patient but has minimal direct clinical consequence."
+ }
+]

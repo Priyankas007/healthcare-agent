@@ -1,0 +1,20 @@
+[
+ {
+  "fact_id": "f9",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "A reported food insecurity directly contradicts the note's 'no unmet needs/denies material hardship' conclusion and warrants resource referral."
+ },
+ {
+  "fact_id": "f12",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Documenting the AUDIT-C score and low-risk alcohol intake completes the substance use assessment referenced in the plan."
+ },
+ {
+  "fact_id": "f27",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "At a 47-year-old woman's preventive visit, cancer screening status (breast, cervical, colon) is central to preventive care and affects management."
+ }
+]

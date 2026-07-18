@@ -1,0 +1,444 @@
+[
+ {
+  "id": "f1",
+  "text": "First pregnancy in a 21-year-old, estimated at approximately 9-10 weeks gestation by last menstrual period (mid-January)",
+  "type": "condition",
+  "slots": {
+   "gravidity": "first pregnancy",
+   "gestational_age": "9-10 weeks",
+   "lmp": "mid-January"
+  },
+  "source": "both",
+  "transcript_quote": "First pregnancy. Twenty-one years old, first everything.",
+  "fhir_ref": "Condition/a3292ec4-64b6-20fc-950f-c0a63feea063"
+ },
+ {
+  "id": "f2",
+  "text": "Patient reports missed period followed by two home pregnancy tests both positive two weeks ago",
+  "type": "symptom",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "Two tests. Both positive, like, instantly. That was two weeks ago",
+  "fhir_ref": null
+ },
+ {
+  "id": "f3",
+  "text": "In-office pregnancy test performed and confirmed positive",
+  "type": "procedure",
+  "slots": {},
+  "source": "both",
+  "transcript_quote": "We've already confirmed your pregnancy test here this morning.",
+  "fhir_ref": "Procedure/a3292ec4-64b6-20fc-91a0-592d4241841f"
+ },
+ {
+  "id": "f4",
+  "text": "Patient reports significant anxiety/nervousness related to first pregnancy and everyday chronic stress",
+  "type": "symptom",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "I've been alternating between browsing baby names and completely freaking out ever since.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f5",
+  "text": "Chronic neck and low back pain since falling off a horse (barrel racing) two summers ago; pain severity fluctuates from background to incapacitating",
+  "type": "condition",
+  "slots": {
+   "location": "neck and low back",
+   "onset": "two summers ago",
+   "cause": "fall from horse"
+  },
+  "source": "transcript",
+  "transcript_quote": "Two summers ago I came off hard, like really hard, and my neck and lower back have never been the same since.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f6",
+  "text": "Patient currently taking hydrocodone-acetaminophen 5 mg tablets for severe pain days, most days recently",
+  "type": "medication",
+  "slots": {
+   "drug": "hydrocodone-acetaminophen",
+   "dose": "5 mg",
+   "route": "oral",
+   "freq": "as needed for bad days, most days lately"
+  },
+  "source": "transcript",
+  "transcript_quote": "the hydrocodone with acetaminophen \u2014 the five milligram tablets",
+  "fhir_ref": null
+ },
+ {
+  "id": "f7",
+  "text": "Patient currently taking tramadol 50 mg for moderate pain days",
+  "type": "medication",
+  "slots": {
+   "drug": "tramadol",
+   "dose": "50 mg",
+   "route": "oral",
+   "freq": "as needed for medium days"
+  },
+  "source": "transcript",
+  "transcript_quote": "tramadol, fifty milligrams",
+  "fhir_ref": null
+ },
+ {
+  "id": "f8",
+  "text": "Counseled patient not to stop opioids suddenly due to risk of withdrawal, which is dangerous to mother and baby in pregnancy",
+  "type": "counseling",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "do not stop these medicines suddenly. Your body is used to them, and stopping cold turkey puts you into withdrawal \u2014 and withdrawal is genuinely risky in pregnancy",
+  "fhir_ref": null
+ },
+ {
+  "id": "f9",
+  "text": "Plan for careful, gradual opioid taper coordinated with pain specialist; patient to continue current doses (least needed to function) until written schedule provided",
+  "type": "followup",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "the plan is a careful, gradual taper, and I don't want you improvising it alone... Until it's in place, keep to your current doses",
+  "fhir_ref": null
+ },
+ {
+  "id": "f10",
+  "text": "Counseled that continued opioid use through pregnancy risks neonatal withdrawal (treatable but difficult)",
+  "type": "counseling",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "the main one is that the baby can be born needing to withdraw, which is treatable but hard on everyone",
+  "fhir_ref": null
+ },
+ {
+  "id": "f11",
+  "text": "Referral/coordination planned with patient's pain specialist to build step-down taper schedule this week",
+  "type": "referral",
+  "slots": {
+   "specialty": "pain specialist/pain clinic"
+  },
+  "source": "transcript",
+  "transcript_quote": "I'll reach out to your pain specialist this week so we're building the step-down schedule together",
+  "fhir_ref": null
+ },
+ {
+  "id": "f12",
+  "text": "Recommended non-opioid pain management: pregnancy-safe physical therapy, heat, stretching, pacing, positioning",
+  "type": "counseling",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "physical therapy that's safe in pregnancy, heat, stretching, pacing your days, positioning tricks as your body changes",
+  "fhir_ref": null
+ },
+ {
+  "id": "f13",
+  "text": "No vaginal bleeding or spotting",
+  "type": "red_flag_screen",
+  "slots": {
+   "finding": "negative"
+  },
+  "source": "transcript",
+  "transcript_quote": "No bleeding, no real cramping.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f14",
+  "text": "No significant cramping; mild low pulling twinges reported",
+  "type": "symptom",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "Twinges? Like little pulling feelings low down, but nothing scary.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f15",
+  "text": "Nausea, mostly mornings, with occasional vomiting",
+  "type": "symptom",
+  "slots": {
+   "timing": "mornings"
+  },
+  "source": "transcript",
+  "transcript_quote": "So much nausea. Mornings mostly. I've actually thrown up a few times",
+  "fhir_ref": null
+ },
+ {
+  "id": "f16",
+  "text": "No dysuria, no fevers",
+  "type": "red_flag_screen",
+  "slots": {
+   "finding": "negative"
+  },
+  "source": "transcript",
+  "transcript_quote": "Any burning when you pee, fevers, anything like that? Nope.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f17",
+  "text": "Urinary frequency reported without dysuria",
+  "type": "symptom",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "Pee is frequent but polite.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f18",
+  "text": "No new headaches or vision changes; only chronic neck-related headaches",
+  "type": "red_flag_screen",
+  "slots": {
+   "finding": "negative"
+  },
+  "source": "transcript",
+  "transcript_quote": "Just my normal neck-headaches. Nothing new or weird.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f19",
+  "text": "Never smoked; one glass of wine before pregnancy known, no alcohol since; no other substances besides prescribed pain medications",
+  "type": "sdoh",
+  "slots": {
+   "tobacco": "never",
+   "alcohol": "one glass before knowing, none since"
+  },
+  "source": "transcript",
+  "transcript_quote": "Never smoked. I had, like, one glass of wine at a birthday before I knew \u2014 nothing since we found out.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f20",
+  "text": "Patient counseled to stop riding/barrel racing (saddle time) due to fall risk in pregnancy; ground time with horses permitted",
+  "type": "counseling",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "Ground time with the horses is absolutely fine. Saddle time needs to pause.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f21",
+  "text": "Patient not currently working due to chronic pain; recently completed degree",
+  "type": "sdoh",
+  "slots": {
+   "employment": "not working"
+  },
+  "source": "transcript",
+  "transcript_quote": "It's actually why I'm not working right now. I finished my degree and then the pain just made every job I tried miserable.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f22",
+  "text": "Obstetric ultrasound for fetal viability performed: intrauterine pregnancy confirmed, fetal heartbeat present, size consistent with dates, normal healthy early pregnancy",
+  "type": "procedure",
+  "slots": {
+   "findings": "intrauterine, cardiac activity present, size matches dates"
+  },
+  "source": "both",
+  "transcript_quote": "everything is sitting right where it should be \u2014 this is a normal, healthy early pregnancy, and the size matches your dates nicely",
+  "fhir_ref": "Procedure/a3292ec4-64b6-20fc-0486-b7a11a83bc54"
+ },
+ {
+  "id": "f23",
+  "text": "Physical examination performed",
+  "type": "procedure",
+  "slots": {},
+  "source": "both",
+  "transcript_quote": "I'll do a physical exam",
+  "fhir_ref": "Procedure/a3292ec4-64b6-20fc-a115-660c3e382f5b"
+ },
+ {
+  "id": "f24",
+  "text": "Uterine fundal height evaluation performed",
+  "type": "procedure",
+  "slots": {},
+  "source": "both",
+  "transcript_quote": "measure your uterus from the outside",
+  "fhir_ref": "Procedure/a3292ec4-64b6-20fc-330c-e9e276af1a40"
+ },
+ {
+  "id": "f25",
+  "text": "Auscultation of fetal heart with Doppler performed",
+  "type": "procedure",
+  "slots": {},
+  "source": "both",
+  "transcript_quote": "listen with the Doppler",
+  "fhir_ref": "Procedure/a3292ec4-64b6-20fc-18de-79a8267dea45"
+ },
+ {
+  "id": "f26",
+  "text": "Blood group typing ordered/performed",
+  "type": "order",
+  "slots": {},
+  "source": "both",
+  "transcript_quote": "blood type",
+  "fhir_ref": "Procedure/a3292ec4-64b6-20fc-425a-3cda3ada5d17"
+ },
+ {
+  "id": "f27",
+  "text": "Complete blood count (hemogram) ordered/performed",
+  "type": "order",
+  "slots": {},
+  "source": "both",
+  "transcript_quote": "a complete blood count",
+  "fhir_ref": "Procedure/a3292ec4-64b6-20fc-ae84-d83141609dbb"
+ },
+ {
+  "id": "f28",
+  "text": "Hepatitis B surface antigen screening ordered/performed",
+  "type": "order",
+  "slots": {},
+  "source": "both",
+  "transcript_quote": "screening for hepatitis B",
+  "fhir_ref": "Procedure/a3292ec4-64b6-20fc-5def-8678874e3947"
+ },
+ {
+  "id": "f29",
+  "text": "Hepatitis C antibody screening ordered/performed",
+  "type": "order",
+  "slots": {},
+  "source": "both",
+  "transcript_quote": "hepatitis B and C",
+  "fhir_ref": "Procedure/a3292ec4-64b6-20fc-3988-cd0d62ce25b4"
+ },
+ {
+  "id": "f30",
+  "text": "HIV screening ordered/performed",
+  "type": "order",
+  "slots": {},
+  "source": "both",
+  "transcript_quote": "HIV",
+  "fhir_ref": "Procedure/a3292ec4-64b6-20fc-f9cf-4554b6762336"
+ },
+ {
+  "id": "f31",
+  "text": "Syphilis screening ordered/performed",
+  "type": "order",
+  "slots": {},
+  "source": "both",
+  "transcript_quote": "and syphilis",
+  "fhir_ref": "Procedure/a3292ec4-64b6-20fc-9687-bca7cdff255a"
+ },
+ {
+  "id": "f32",
+  "text": "Chlamydia swab/test ordered/performed",
+  "type": "order",
+  "slots": {},
+  "source": "both",
+  "transcript_quote": "swabs for chlamydia and gonorrhea",
+  "fhir_ref": "Procedure/a3292ec4-64b6-20fc-b739-f4fa1acdb055"
+ },
+ {
+  "id": "f33",
+  "text": "Gonorrhea swab/test ordered/performed",
+  "type": "order",
+  "slots": {},
+  "source": "both",
+  "transcript_quote": "swabs for chlamydia and gonorrhea",
+  "fhir_ref": "Procedure/a3292ec4-64b6-20fc-efd1-86bde738da18"
+ },
+ {
+  "id": "f34",
+  "text": "Rubella immunity screening ordered/performed",
+  "type": "order",
+  "slots": {},
+  "source": "both",
+  "transcript_quote": "immunity checks for rubella and chickenpox",
+  "fhir_ref": "Procedure/a3292ec4-64b6-20fc-2806-883bdb127005"
+ },
+ {
+  "id": "f35",
+  "text": "Varicella (chickenpox) immunity screening ordered/performed",
+  "type": "order",
+  "slots": {},
+  "source": "both",
+  "transcript_quote": "immunity checks for rubella and chickenpox",
+  "fhir_ref": "Procedure/a3292ec4-64b6-20fc-f4e3-5fa1cea2ffc2"
+ },
+ {
+  "id": "f36",
+  "text": "Pap smear (cervical cytology) performed",
+  "type": "procedure",
+  "slots": {},
+  "source": "both",
+  "transcript_quote": "a Pap smear during the exam",
+  "fhir_ref": "Procedure/a3292ec4-64b6-20fc-b48a-c27d9c8e5cd3"
+ },
+ {
+  "id": "f37",
+  "text": "Urine culture ordered/performed",
+  "type": "order",
+  "slots": {},
+  "source": "both",
+  "transcript_quote": "a urine culture",
+  "fhir_ref": "Procedure/a3292ec4-64b6-20fc-fc7f-6c6e6cadd2d5"
+ },
+ {
+  "id": "f38",
+  "text": "Urine qualitative protein check ordered/performed",
+  "type": "order",
+  "slots": {},
+  "source": "both",
+  "transcript_quote": "a urine protein check",
+  "fhir_ref": "Procedure/a3292ec4-64b6-20fc-dd9f-a3a715415322"
+ },
+ {
+  "id": "f39",
+  "text": "Urine glucose/diabetes screening ordered/performed",
+  "type": "order",
+  "slots": {},
+  "source": "both",
+  "transcript_quote": "a urine sugar screen",
+  "fhir_ref": "Procedure/a3292ec4-64b6-20fc-216f-360329d504e7"
+ },
+ {
+  "id": "f40",
+  "text": "Tuberculosis skin test (Tine) placed on forearm, to be read in a couple of days",
+  "type": "procedure",
+  "slots": {},
+  "source": "both",
+  "transcript_quote": "a little TB skin test on your forearm that we look at again in a couple of days",
+  "fhir_ref": "Procedure/a3292ec4-64b6-20fc-3442-b6ba806b9c93"
+ },
+ {
+  "id": "f41",
+  "text": "Nausea management counseling: small frequent snacks, fluids between meals, and call clinic if unable to keep anything down",
+  "type": "counseling",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "small frequent snacks, fluids between meals instead of with them, and if you get to where you can't keep anything down, you call us",
+  "fhir_ref": null
+ },
+ {
+  "id": "f42",
+  "text": "Counseled that everyday stress is not dangerous to the baby; stress will be monitored each visit with referral to support resources if it escalates",
+  "type": "counseling",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "we'll check in on it at every visit, and if it climbs, we have people to connect you with",
+  "fhir_ref": null
+ },
+ {
+  "id": "f43",
+  "text": "Lifestyle counseling: walking, gentle stretching, adequate sleep",
+  "type": "counseling",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "walking, gentle stretching, actual sleep",
+  "fhir_ref": null
+ },
+ {
+  "id": "f44",
+  "text": "Follow-up prenatal visits every four weeks, closer to term",
+  "type": "followup",
+  "slots": {
+   "interval": "every 4 weeks"
+  },
+  "source": "transcript",
+  "transcript_quote": "Visits about every four weeks for now, closer together toward the end.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f45",
+  "text": "Reassured patient that pre-recognition opioid use has not doomed the pregnancy",
+  "type": "counseling",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "you have not doomed this baby. What matters is what we do from here forward.",
+  "fhir_ref": null
+ }
+]

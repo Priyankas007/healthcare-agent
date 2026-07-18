@@ -1,0 +1,193 @@
+{
+ "note_version_id": "e1a7c2af-1e7f-300b-44f6-012ae75bbab1::e1a7c2af-1e7f-300b-bc8f-6bb66fcf2ddc__inj_1",
+ "injected_fact_id": "f5",
+ "detected_absent_fact_ids": [
+  "f5",
+  "f29"
+ ],
+ "caught": true,
+ "collateral_flips": [],
+ "n_present_on_provided": 28,
+ "presence_results": [
+  {
+   "fact_id": "f1",
+   "status": "present",
+   "note_evidence": "months of gingival bleeding with brushing \u2014 most days, worst along the lower anterior teeth",
+   "rationale": "Bleeding, duration, lower anterior location, and brushing trigger all documented."
+  },
+  {
+   "fact_id": "f2",
+   "status": "present",
+   "note_evidence": "most days ... and present even with gentle technique",
+   "rationale": "Bleeding persists even with gentle brushing."
+  },
+  {
+   "fact_id": "f3",
+   "status": "present",
+   "note_evidence": "halitosis noted by peers",
+   "rationale": "Halitosis documented."
+  },
+  {
+   "fact_id": "f4",
+   "status": "present",
+   "note_evidence": "new cold sensitivity on the right side, especially with ice water",
+   "rationale": "Cold sensitivity on right with ice water documented."
+  },
+  {
+   "fact_id": "f5",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "Note does not mention denial of toothache, night pain, or chewing pain."
+  },
+  {
+   "fact_id": "f6",
+   "status": "present",
+   "note_evidence": "He denies loose teeth, facial or jaw swelling, and fever.",
+   "rationale": "All three denials documented."
+  },
+  {
+   "fact_id": "f7",
+   "status": "present",
+   "note_evidence": "several years without routine dental treatment, largely due to base relocations and a deployment",
+   "rationale": "Years without care due to relocations and deployment documented."
+  },
+  {
+   "fact_id": "f8",
+   "status": "present",
+   "note_evidence": "35-year-old active-duty serviceman referred for dental care ... he is otherwise well",
+   "rationale": "Age, active-duty status, referral, and general health documented."
+  },
+  {
+   "fact_id": "f9",
+   "status": "present",
+   "note_evidence": "He brushes twice daily with a hurried, aggressive technique and flosses only sporadically.",
+   "rationale": "Brushing frequency and infrequent flossing documented."
+  },
+  {
+   "fact_id": "f10",
+   "status": "present",
+   "note_evidence": "He has never used tobacco in any form.",
+   "rationale": "Never used any tobacco documented."
+  },
+  {
+   "fact_id": "f11",
+   "status": "present",
+   "note_evidence": "He reports heavy daily energy-drink consumption",
+   "rationale": "High energy drink consumption documented."
+  },
+  {
+   "fact_id": "f12",
+   "status": "present",
+   "note_evidence": "Generalized erythematous, edematous gingiva with bleeding on gentle contact and probing. Abundant supragingival calculus ... palpable subgingival calculus, most pronounced at the lower anterior teeth and the molars.",
+   "rationale": "Inflammation, bleeding, and calculus distribution documented."
+  },
+  {
+   "fact_id": "f13",
+   "status": "present",
+   "note_evidence": "findings consistent with disease confined to the gingival tissues, with sound interproximal bone support",
+   "rationale": "Gingival disease confined to gum tissue without bone loss documented."
+  },
+  {
+   "fact_id": "f14",
+   "status": "present",
+   "note_evidence": "Bitewing radiographs obtained and reviewed chairside ... sound interproximal bone support",
+   "rationale": "Bitewing X-rays with sound bone documented."
+  },
+  {
+   "fact_id": "f15",
+   "status": "present",
+   "note_evidence": "Removal of supragingival plaque and calculus from all teeth performed",
+   "rationale": "Supragingival scaling documented."
+  },
+  {
+   "fact_id": "f16",
+   "status": "present",
+   "note_evidence": "Removal of subgingival plaque and calculus from all teeth performed with local comfort measures",
+   "rationale": "Subgingival scaling with local measures documented."
+  },
+  {
+   "fact_id": "f17",
+   "status": "present",
+   "note_evidence": "Gingivectomy/gingivoplasty performed per tooth at the overgrown lower right segment",
+   "rationale": "Gingivectomy at lower right overgrown segment documented."
+  },
+  {
+   "fact_id": "f18",
+   "status": "present",
+   "note_evidence": "Desensitizing medicament applied to the affected areas after scaling",
+   "rationale": "Desensitizing medicament application documented."
+  },
+  {
+   "fact_id": "f19",
+   "status": "present",
+   "note_evidence": "Dental fluoride treatment applied at the end of the visit",
+   "rationale": "Fluoride treatment documented."
+  },
+  {
+   "fact_id": "f20",
+   "status": "present",
+   "note_evidence": "Dental consultation completed with report back to the referring clinic",
+   "rationale": "Dental consultation and report documented."
+  },
+  {
+   "fact_id": "f21",
+   "status": "present",
+   "note_evidence": "nothing to eat for about thirty minutes afterward ... soft foods today, nothing scalding or sharp",
+   "rationale": "30-minute wait, soft foods, and avoid hot/sharp documented."
+  },
+  {
+   "fact_id": "f22",
+   "status": "present",
+   "note_evidence": "gentle salt-water rinses starting tomorrow",
+   "rationale": "Salt-water rinses starting next day documented."
+  },
+  {
+   "fact_id": "f23",
+   "status": "present",
+   "note_evidence": "continue gentle brushing through transient bleeding",
+   "rationale": "Gentle brushing despite bleeding while healing documented."
+  },
+  {
+   "fact_id": "f24",
+   "status": "present",
+   "note_evidence": "soft-bristle brush twice daily for two minutes with bristles angled into the gingival margin in small circles; daily flossing",
+   "rationale": "Full brushing/flossing education documented."
+  },
+  {
+   "fact_id": "f25",
+   "status": "present",
+   "note_evidence": "Counseled to stop prolonged sipping of energy drinks; consume promptly if at all, with water in between",
+   "rationale": "Energy drink counseling documented."
+  },
+  {
+   "fact_id": "f26",
+   "status": "present",
+   "note_evidence": "Same-day call for spreading swelling, purulence, fever, or bleeding not controlled with pressure",
+   "rationale": "Return precautions documented."
+  },
+  {
+   "fact_id": "f27",
+   "status": "present",
+   "note_evidence": "Return in a few weeks for postoperative check of the gingivectomy site and reassessment of gingival response",
+   "rationale": "Few-week follow-up to check healing documented."
+  },
+  {
+   "fact_id": "f28",
+   "status": "partial",
+   "note_evidence": "no chewing on the surgical side today",
+   "rationale": "Chewing restriction documented but no mention of workout clearance or resting tonight."
+  },
+  {
+   "fact_id": "f29",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No medication request or prescription documented in the note."
+  },
+  {
+   "fact_id": "f30",
+   "status": "present",
+   "note_evidence": "Bitewing radiographs obtained and reviewed chairside",
+   "rationale": "Dental imaging available from encounter documented."
+  }
+ ]
+}

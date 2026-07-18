@@ -1,0 +1,26 @@
+[
+ {
+  "fact_id": "f5",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "A completed medication reconciliation should explicitly document that the patient takes no prescriptions, vitamins, or supplements to close the med-review flag and establish an accurate baseline."
+ },
+ {
+  "fact_id": "f7",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Family history of heart disease, diabetes, and cancer is essential for risk stratification in a comprehensive exam of a young obese adult and can change screening and prevention plans."
+ },
+ {
+  "fact_id": "f15",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Uninsured status directly affects feasibility of referrals, labs, and follow-up recommended in the plan and should guide resource-appropriate care."
+ },
+ {
+  "fact_id": "f40",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Routine post-vaccination aftercare counseling improves patient comfort and adherence but has minimal clinical impact if omitted."
+ }
+]

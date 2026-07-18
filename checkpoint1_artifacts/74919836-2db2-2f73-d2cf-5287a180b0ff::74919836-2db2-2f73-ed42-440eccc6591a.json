@@ -1,0 +1,980 @@
+{
+ "facts": [
+  {
+   "id": "f1",
+   "text": "Patient reports no chest pain, pressure, or tightness on morning walks",
+   "type": "red_flag_screen",
+   "slots": {
+    "symptom": "chest pain/pressure/tightness",
+    "status": "denied"
+   },
+   "source": "transcript",
+   "transcript_quote": "No, nothing like that.",
+   "fhir_ref": null
+  },
+  {
+   "id": "f2",
+   "text": "Occasional exertional chest twinge when overdoing yard work, resolves with rest",
+   "type": "symptom",
+   "slots": {
+    "symptom": "chest twinge",
+    "trigger": "exertion/yard work",
+    "relief": "sitting down"
+   },
+   "source": "transcript",
+   "transcript_quote": "Once in a while I get a twinge if I overdo it in the yard, but it passes as soon as I sit down.",
+   "fhir_ref": null
+  },
+  {
+   "id": "f3",
+   "text": "Has not needed nitroglycerin spray in a long while",
+   "type": "symptom",
+   "slots": {
+    "medication": "nitroglycerin spray",
+    "status": "not recently used"
+   },
+   "source": "transcript",
+   "transcript_quote": "I have not had to use that little spray in a long while.",
+   "fhir_ref": null
+  },
+  {
+   "id": "f4",
+   "text": "Denies shortness of breath, ankle swelling, and paroxysmal nocturnal dyspnea",
+   "type": "red_flag_screen",
+   "slots": {
+    "symptoms": "dyspnea, edema, PND",
+    "status": "denied"
+   },
+   "source": "transcript",
+   "transcript_quote": "No, none of that. No swelling. I sleep like a rock, always have.",
+   "fhir_ref": null
+  },
+  {
+   "id": "f5",
+   "text": "Denies dizziness, lightheadedness, and falls in the past year",
+   "type": "red_flag_screen",
+   "slots": {
+    "symptoms": "dizziness, lightheadedness, falls",
+    "status": "denied"
+   },
+   "source": "transcript",
+   "transcript_quote": "No falls. I hold the rail on the stairs like my daughter makes me promise to.",
+   "fhir_ref": null
+  },
+  {
+   "id": "f6",
+   "text": "Appetite good and weight steady",
+   "type": "symptom",
+   "slots": {
+    "appetite": "normal",
+    "weight": "steady"
+   },
+   "source": "transcript",
+   "transcript_quote": "Appetite is fine.",
+   "fhir_ref": null
+  },
+  {
+   "id": "f7",
+   "text": "Patient retired in June after 60 years as a bookkeeper (not in labor force)",
+   "type": "sdoh",
+   "slots": {
+    "domain": "employment",
+    "status": "retired"
+   },
+   "source": "both",
+   "transcript_quote": "Sixty years of keeping books for people, and I closed the ledger for good in June.",
+   "fhir_ref": "Condition/74919836-2db2-2f73-acfa-8d2ccad9bef3"
+  },
+  {
+   "id": "f8",
+   "text": "Lives with daughter and grandson; three people in household",
+   "type": "sdoh",
+   "slots": {
+    "domain": "living situation",
+    "household_size": 3
+   },
+   "source": "both",
+   "transcript_quote": "my daughter and grandson live with me",
+   "fhir_ref": "Observation/74919836-2db2-2f73-85ca-6a0c58a265d3"
+  },
+  {
+   "id": "f9",
+   "text": "No difficulty affording food, medications, or transportation to appointments",
+   "type": "sdoh",
+   "slots": {
+    "domain": "financial/access",
+    "status": "no barriers"
+   },
+   "source": "both",
+   "transcript_quote": "No, we are comfortable. I saved carefully.",
+   "fhir_ref": "Observation/74919836-2db2-2f73-85ca-6a0c58a265d3"
+  },
+  {
+   "id": "f10",
+   "text": "Reports seeing/talking to close people less than once a week; stress level a little bit",
+   "type": "sdoh",
+   "slots": {
+    "domain": "social connection",
+    "detail": "less than once a week"
+   },
+   "source": "fhir",
+   "transcript_quote": null,
+   "fhir_ref": "Observation/74919836-2db2-2f73-85ca-6a0c58a265d3"
+  },
+  {
+   "id": "f11",
+   "text": "Primary insurance is Medicare",
+   "type": "sdoh",
+   "slots": {
+    "domain": "insurance",
+    "value": "Medicare"
+   },
+   "source": "fhir",
+   "transcript_quote": null,
+   "fhir_ref": "Observation/74919836-2db2-2f73-85ca-6a0c58a265d3"
+  },
+  {
+   "id": "f12",
+   "text": "Ex-smoker",
+   "type": "sdoh",
+   "slots": {
+    "domain": "tobacco",
+    "status": "ex-smoker"
+   },
+   "source": "fhir",
+   "transcript_quote": null,
+   "fhir_ref": "Observation/74919836-2db2-2f73-535a-d51b8cecb5e6"
+  },
+  {
+   "id": "f13",
+   "text": "Medication reconciliation performed",
+   "type": "procedure",
+   "slots": {
+    "procedure": "medication reconciliation"
+   },
+   "source": "both",
+   "transcript_quote": "it has been a while since we did a proper reconciliation",
+   "fhir_ref": "Procedure/74919836-2db2-2f73-6521-2e9c7153ea1e"
+  },
+  {
+   "id": "f14",
+   "text": "Simvastatin 20 mg discontinued (duplicate statin, empty bottle)",
+   "type": "medication",
+   "slots": {
+    "drug": "simvastatin",
+    "dose": "20 mg",
+    "action": "stopped"
+   },
+   "source": "transcript",
+   "transcript_quote": "Simvastatin comes off the list today.",
+   "fhir_ref": null
+  },
+  {
+   "id": "f15",
+   "text": "Metoprolol 50 mg (old dose) discontinued",
+   "type": "medication",
+   "slots": {
+    "drug": "metoprolol",
+    "dose": "50 mg",
+    "action": "stopped"
+   },
+   "source": "transcript",
+   "transcript_quote": "the old fifty-milligram metoprolol are off the list",
+   "fhir_ref": null
+  },
+  {
+   "id": "f16",
+   "text": "Continue atorvastatin 20 mg oral every evening, no missed doses",
+   "type": "medication",
+   "slots": {
+    "drug": "atorvastatin",
+    "dose": "20 mg",
+    "route": "oral",
+    "freq": "every evening",
+    "action": "continued"
+   },
+   "source": "transcript",
+   "transcript_quote": "Let us keep the atorvastatin every evening, no missed days",
+   "fhir_ref": null
+  },
+  {
+   "id": "f17",
+   "text": "Continue metoprolol extended-release 100 mg oral in the morning",
+   "type": "medication",
+   "slots": {
+    "drug": "metoprolol ER",
+    "dose": "100 mg",
+    "route": "oral",
+    "freq": "every morning",
+    "action": "continued"
+   },
+   "source": "transcript",
+   "transcript_quote": "I take the hundred in the morning.",
+   "fhir_ref": null
+  },
+  {
+   "id": "f18",
+   "text": "Continue aspirin 81 mg oral daily",
+   "type": "medication",
+   "slots": {
+    "drug": "aspirin",
+    "dose": "81 mg",
+    "route": "oral",
+    "freq": "daily",
+    "action": "continued"
+   },
+   "source": "transcript",
+   "transcript_quote": "the baby aspirin, the eighty-one, and the losartan fifty \u2014 still every day?",
+   "fhir_ref": null
+  },
+  {
+   "id": "f19",
+   "text": "Continue losartan 50 mg oral daily",
+   "type": "medication",
+   "slots": {
+    "drug": "losartan",
+    "dose": "50 mg",
+    "route": "oral",
+    "freq": "daily",
+    "action": "continued"
+   },
+   "source": "transcript",
+   "transcript_quote": "Every day with my oatmeal.",
+   "fhir_ref": null
+  },
+  {
+   "id": "f20",
+   "text": "Continue carrying nitroglycerin spray as needed",
+   "type": "medication",
+   "slots": {
+    "drug": "nitroglycerin spray",
+    "freq": "PRN",
+    "action": "continued"
+   },
+   "source": "transcript",
+   "transcript_quote": "keep the nitro spray in your pocket",
+   "fhir_ref": null
+  },
+  {
+   "id": "f21",
+   "text": "Started metformin extended-release 500 mg oral once daily with dinner for type 2 diabetes",
+   "type": "medication",
+   "slots": {
+    "drug": "metformin ER",
+    "dose": "500 mg",
+    "route": "oral",
+    "freq": "once daily with dinner",
+    "action": "started",
+    "indication": "type 2 diabetes"
+   },
+   "source": "both",
+   "transcript_quote": "add a gentle dose of metformin, the extended-release kind, five hundred milligrams once daily with dinner",
+   "fhir_ref": "MedicationRequest/74919836-2db2-2f73-8df9-321196380906"
+  },
+  {
+   "id": "f22",
+   "text": "Started hydrochlorothiazide 25 mg oral each morning for blood pressure and to lower potassium",
+   "type": "medication",
+   "slots": {
+    "drug": "hydrochlorothiazide",
+    "dose": "25 mg",
+    "route": "oral",
+    "freq": "each morning",
+    "action": "started",
+    "indication": "blood pressure / elevated potassium"
+   },
+   "source": "both",
+   "transcript_quote": "I want to add hydrochlorothiazide, twenty-five milligrams each morning",
+   "fhir_ref": "MedicationRequest/74919836-2db2-2f73-7dad-412e5b4e0a70"
+  },
+  {
+   "id": "f23",
+   "text": "Counseled that metformin ER with food reduces GI upset; instructed to call rather than stop if bothered",
+   "type": "counseling",
+   "slots": {
+    "topic": "metformin GI side effects"
+   },
+   "source": "transcript",
+   "transcript_quote": "If it bothers you, call me \u2014 do not just quit it quietly.",
+   "fhir_ref": null
+  },
+  {
+   "id": "f24",
+   "text": "Counseled to take HCTZ in morning and to report dizziness or feeling washed out especially on standing",
+   "type": "counseling",
+   "slots": {
+    "topic": "HCTZ orthostatic symptoms"
+   },
+   "source": "transcript",
+   "transcript_quote": "If you feel dizzy or washed out, especially when you stand up, I want to hear about it right away.",
+   "fhir_ref": null
+  },
+  {
+   "id": "f25",
+   "text": "Counseled not to skip breakfast before morning walks due to low fasting glucose",
+   "type": "counseling",
+   "slots": {
+    "topic": "avoid skipping breakfast"
+   },
+   "source": "transcript",
+   "transcript_quote": "I do not want you skipping breakfast before those walks",
+   "fhir_ref": null
+  },
+  {
+   "id": "f26",
+   "text": "Blood pressure 107/58 mmHg",
+   "type": "observation",
+   "slots": {
+    "test": "blood pressure",
+    "value": "107/58 mmHg"
+   },
+   "source": "both",
+   "transcript_quote": "Blood pressure today is one-oh-seven over fifty-eight",
+   "fhir_ref": "Observation/74919836-2db2-2f73-3987-7a1a97c2eda0"
+  },
+  {
+   "id": "f27",
+   "text": "Heart rate 96 /min",
+   "type": "observation",
+   "slots": {
+    "test": "heart rate",
+    "value": "96 /min"
+   },
+   "source": "both",
+   "transcript_quote": "your heart rate is ninety-six",
+   "fhir_ref": "Observation/74919836-2db2-2f73-ffe9-5eb983dabde7"
+  },
+  {
+   "id": "f28",
+   "text": "Body weight 78.5 kg, BMI 27.8 kg/m2",
+   "type": "observation",
+   "slots": {
+    "weight": "78.5 kg",
+    "bmi": "27.8"
+   },
+   "source": "both",
+   "transcript_quote": "Weight is seventy-eight and a half kilos, and the body mass index works out to twenty-seven point eight",
+   "fhir_ref": "Observation/74919836-2db2-2f73-2fb6-1fb6a5e16a6f"
+  },
+  {
+   "id": "f29",
+   "text": "Hemoglobin A1c 5.45% (excellent for type 2 diabetes)",
+   "type": "observation",
+   "slots": {
+    "test": "HbA1c",
+    "value": "5.45 %"
+   },
+   "source": "both",
+   "transcript_quote": "The A1c ... came back at five point four five percent",
+   "fhir_ref": "Observation/74919836-2db2-2f73-c1ef-3fe24bd1ea82"
+  },
+  {
+   "id": "f30",
+   "text": "Fasting blood glucose low at 66 mg/dL",
+   "type": "observation",
+   "slots": {
+    "test": "fasting glucose",
+    "value": "66.82 mg/dL",
+    "flag": "low"
+   },
+   "source": "both",
+   "transcript_quote": "Your fasting sugar this morning was actually on the low side, around sixty-six",
+   "fhir_ref": "Observation/74919836-2db2-2f73-1d68-0fee6448e042"
+  },
+  {
+   "id": "f31",
+   "text": "Creatinine 0.6 mg/dL (kidneys strong)",
+   "type": "observation",
+   "slots": {
+    "test": "creatinine",
+    "value": "0.6 mg/dL"
+   },
+   "source": "both",
+   "transcript_quote": "creatinine is zero point six",
+   "fhir_ref": "Observation/74919836-2db2-2f73-fde1-632c66c24e29"
+  },
+  {
+   "id": "f32",
+   "text": "Potassium elevated at 5.16 mmol/L",
+   "type": "observation",
+   "slots": {
+    "test": "potassium",
+    "value": "5.16 mmol/L",
+    "flag": "high"
+   },
+   "source": "both",
+   "transcript_quote": "Your potassium ran a touch high at five point one six.",
+   "fhir_ref": "Observation/74919836-2db2-2f73-1f5c-78cf8e3f1e03"
+  },
+  {
+   "id": "f33",
+   "text": "Total cholesterol 226 mg/dL with LDL 148 mg/dL, higher than desired given cardiac history",
+   "type": "observation",
+   "slots": {
+    "test": "lipid panel",
+    "total_chol": "226 mg/dL",
+    "ldl": "148.61 mg/dL"
+   },
+   "source": "both",
+   "transcript_quote": "total is about two twenty-six with the LDL at one forty-eight, which is higher than I want for a man with your heart history",
+   "fhir_ref": "Observation/74919836-2db2-2f73-19b5-c6cb34627a39"
+  },
+  {
+   "id": "f34",
+   "text": "HDL cholesterol 57 mg/dL",
+   "type": "observation",
+   "slots": {
+    "test": "HDL",
+    "value": "57.06 mg/dL"
+   },
+   "source": "fhir",
+   "transcript_quote": null,
+   "fhir_ref": "Observation/74919836-2db2-2f73-e9c2-aa3a20a351a8"
+  },
+  {
+   "id": "f35",
+   "text": "Triglycerides 101.87 mg/dL",
+   "type": "observation",
+   "slots": {
+    "test": "triglycerides",
+    "value": "101.87 mg/dL"
+   },
+   "source": "fhir",
+   "transcript_quote": null,
+   "fhir_ref": "Observation/74919836-2db2-2f73-014c-7f6856d84cf0"
+  },
+  {
+   "id": "f36",
+   "text": "eGFR 148.95 mL/min/1.73m2",
+   "type": "observation",
+   "slots": {
+    "test": "eGFR",
+    "value": "148.95 mL/min/1.73m2"
+   },
+   "source": "fhir",
+   "transcript_quote": null,
+   "fhir_ref": "Observation/74919836-2db2-2f73-eb60-09cd3e7471e0"
+  },
+  {
+   "id": "f37",
+   "text": "Urine microalbumin/creatinine ratio 15.6 mg/g",
+   "type": "observation",
+   "slots": {
+    "test": "microalbumin/creatinine",
+    "value": "15.6 mg/g"
+   },
+   "source": "fhir",
+   "transcript_quote": null,
+   "fhir_ref": "Observation/74919836-2db2-2f73-5159-d54f31669b44"
+  },
+  {
+   "id": "f38",
+   "text": "PHQ-2 depression screen score 0",
+   "type": "observation",
+   "slots": {
+    "test": "PHQ-2",
+    "value": "0"
+   },
+   "source": "both",
+   "transcript_quote": "the mood ones twice over ... Every score came back a zero",
+   "fhir_ref": "Observation/74919836-2db2-2f73-6a62-36ed6b494aa6"
+  },
+  {
+   "id": "f39",
+   "text": "HARK domestic abuse screen score 0",
+   "type": "observation",
+   "slots": {
+    "test": "HARK",
+    "value": "0"
+   },
+   "source": "both",
+   "transcript_quote": "the safety-at-home questions ... Every score came back a zero",
+   "fhir_ref": "Observation/74919836-2db2-2f73-353e-4b7f569b99ef"
+  },
+  {
+   "id": "f40",
+   "text": "DAST-10 drug abuse screen score 0",
+   "type": "observation",
+   "slots": {
+    "test": "DAST-10",
+    "value": "0"
+   },
+   "source": "both",
+   "transcript_quote": "the alcohol and drug ones. Every score came back a zero",
+   "fhir_ref": "Observation/74919836-2db2-2f73-5d10-bbfd12d8acaf"
+  },
+  {
+   "id": "f41",
+   "text": "Morse Fall Scale score 22 \u2014 low risk",
+   "type": "observation",
+   "slots": {
+    "test": "Morse Fall Scale",
+    "value": "22",
+    "risk": "low"
+   },
+   "source": "both",
+   "transcript_quote": "your fall-risk score was twenty-two, which sits in the low-risk range",
+   "fhir_ref": "Observation/74919836-2db2-2f73-335c-dee7a5372be6"
+  },
+  {
+   "id": "f42",
+   "text": "Gingivitis with red, puffy, bleeding lower gums on exam",
+   "type": "condition",
+   "slots": {
+    "condition": "gingivitis",
+    "findings": "red puffy bleeding gums"
+   },
+   "source": "both",
+   "transcript_quote": "Your gums are red and puffy along the lower teeth, and you mentioned they bleed when you brush.",
+   "fhir_ref": "Condition/74919836-2db2-2f73-a4fc-de4efc522302"
+  },
+  {
+   "id": "f43",
+   "text": "Referral to dental clinic for cleaning and exam",
+   "type": "referral",
+   "slots": {
+    "referral": "dental care",
+    "reason": "gingivitis"
+   },
+   "source": "both",
+   "transcript_quote": "I am sending a referral to the dental clinic for a proper cleaning and exam.",
+   "fhir_ref": "Procedure/74919836-2db2-2f73-e3db-5b4f1d2ae126"
+  },
+  {
+   "id": "f44",
+   "text": "Influenza vaccine (trivalent split virus, PF) administered",
+   "type": "procedure",
+   "slots": {
+    "vaccine": "influenza trivalent split virus PF"
+   },
+   "source": "both",
+   "transcript_quote": "we will do it before you leave",
+   "fhir_ref": "Immunization/74919836-2db2-2f73-996e-4d876779f473"
+  },
+  {
+   "id": "f45",
+   "text": "No prior bad reactions to flu shot (only sore arm)",
+   "type": "red_flag_screen",
+   "slots": {
+    "topic": "flu vaccine reaction",
+    "status": "none"
+   },
+   "source": "transcript",
+   "transcript_quote": "Never. Just a sore arm and my daughter's sympathy.",
+   "fhir_ref": null
+  },
+  {
+   "id": "f46",
+   "text": "Known anemia stable, no new blood count; to monitor at next labs",
+   "type": "condition",
+   "slots": {
+    "condition": "anemia",
+    "status": "stable/monitor"
+   },
+   "source": "transcript",
+   "transcript_quote": "Your anemia has been quiet too \u2014 no new blood count today ... we will keep watching it at the next round of labs.",
+   "fhir_ref": null
+  },
+  {
+   "id": "f47",
+   "text": "Follow-up in about 6 months for repeat labs; return sooner if chest pain, dizziness, or GI intolerance to new medication",
+   "type": "followup",
+   "slots": {
+    "interval": "6 months",
+    "reason": "repeat labs",
+    "return_precautions": "chest pain, dizziness, GI upset"
+   },
+   "source": "transcript",
+   "transcript_quote": "I will see you back in about six months for repeat labs \u2014 sooner if there is any chest pain, dizziness, or if the new pill argues with your stomach.",
+   "fhir_ref": null
+  },
+  {
+   "id": "f48",
+   "text": "Plan to recheck lipids before adjusting statin dose",
+   "type": "followup",
+   "slots": {
+    "topic": "lipid recheck before dose change"
+   },
+   "source": "transcript",
+   "transcript_quote": "recheck before we change any dose",
+   "fhir_ref": null
+  },
+  {
+   "id": "f49",
+   "text": "Health and social care needs assessment completed",
+   "type": "procedure",
+   "slots": {
+    "procedure": "assessment of health and social care needs"
+   },
+   "source": "fhir",
+   "transcript_quote": null,
+   "fhir_ref": "Procedure/74919836-2db2-2f73-920c-018c2e6e01e1"
+  },
+  {
+   "id": "f50",
+   "text": "Pain severity score 1/10 reported",
+   "type": "observation",
+   "slots": {
+    "test": "pain score",
+    "value": "1/10"
+   },
+   "source": "fhir",
+   "transcript_quote": null,
+   "fhir_ref": "Observation/74919836-2db2-2f73-a739-764cf6cc86f4"
+  },
+  {
+   "id": "f51",
+   "text": "Respiratory rate 13 /min",
+   "type": "observation",
+   "slots": {
+    "test": "respiratory rate",
+    "value": "13 /min"
+   },
+   "source": "fhir",
+   "transcript_quote": null,
+   "fhir_ref": "Observation/74919836-2db2-2f73-991b-a650a870651b"
+  },
+  {
+   "id": "f52",
+   "text": "Sodium 137 mmol/L, chloride 104 mmol/L, CO2 28 mmol/L, BUN 18.73 mg/dL, calcium 8.74 mg/dL",
+   "type": "observation",
+   "slots": {
+    "panel": "basic metabolic panel"
+   },
+   "source": "fhir",
+   "transcript_quote": null,
+   "fhir_ref": "DiagnosticReport/74919836-2db2-2f73-7536-555d2d22380d"
+  },
+  {
+   "id": "f53",
+   "text": "Counseled on gum disease and heart disease connection",
+   "type": "counseling",
+   "slots": {
+    "topic": "gingivitis and cardiovascular disease"
+   },
+   "source": "transcript",
+   "transcript_quote": "gum disease and heart disease are unfriendly neighbors",
+   "fhir_ref": null
+  }
+ ],
+ "presence": [
+  {
+   "fact_id": "f1",
+   "status": "present",
+   "note_evidence": "He denies chest pain or pressure at rest or with usual exertion",
+   "rationale": "Note denies chest pain/pressure with exertion including walks."
+  },
+  {
+   "fact_id": "f2",
+   "status": "present",
+   "note_evidence": "noting only an occasional brief twinge with heavy yard work that resolves promptly with rest",
+   "rationale": "Exertional twinge with yard work relieved by rest documented."
+  },
+  {
+   "fact_id": "f3",
+   "status": "present",
+   "note_evidence": "he has not needed his nitroglycerin spray in many months",
+   "rationale": "Not recently used nitroglycerin documented."
+  },
+  {
+   "fact_id": "f4",
+   "status": "present",
+   "note_evidence": "He denies exertional dyspnea, orthopnea, paroxysmal nocturnal dyspnea, palpitations, lower-extremity edema",
+   "rationale": "Dyspnea, edema, PND all denied."
+  },
+  {
+   "fact_id": "f5",
+   "status": "present",
+   "note_evidence": "lightheadedness, syncope, and falls over the past year",
+   "rationale": "Lightheadedness/dizziness and falls denied over past year."
+  },
+  {
+   "fact_id": "f6",
+   "status": "present",
+   "note_evidence": "Appetite is preserved and weight is stable to slightly down",
+   "rationale": "Appetite normal and weight stable documented."
+  },
+  {
+   "fact_id": "f7",
+   "status": "present",
+   "note_evidence": "He retired from a sixty-year bookkeeping career this June",
+   "rationale": "Retirement in June after 60-year bookkeeping career noted."
+  },
+  {
+   "fact_id": "f8",
+   "status": "present",
+   "note_evidence": "he lives with his daughter and grandson (three in the household)",
+   "rationale": "Household of three with daughter and grandson documented."
+  },
+  {
+   "fact_id": "f9",
+   "status": "present",
+   "note_evidence": "denies difficulty affording food, medications, or transportation",
+   "rationale": "No barriers to food/meds/transport documented."
+  },
+  {
+   "fact_id": "f10",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No mention of social contact frequency or stress level."
+  },
+  {
+   "fact_id": "f11",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "Insurance/Medicare not mentioned."
+  },
+  {
+   "fact_id": "f12",
+   "status": "present",
+   "note_evidence": "Ex-smoker since young adulthood",
+   "rationale": "Ex-smoker status documented."
+  },
+  {
+   "fact_id": "f13",
+   "status": "present",
+   "note_evidence": "Medication reconciliation performed with his pill bottles",
+   "rationale": "Med reconciliation performed."
+  },
+  {
+   "fact_id": "f14",
+   "status": "present",
+   "note_evidence": "duplicate simvastatin 20 mg entry from a prior hospitalization removed",
+   "rationale": "Simvastatin 20 mg duplicate discontinued."
+  },
+  {
+   "fact_id": "f15",
+   "status": "present",
+   "note_evidence": "outdated 50 mg ER entry removed",
+   "rationale": "Old metoprolol 50 mg ER discontinued."
+  },
+  {
+   "fact_id": "f16",
+   "status": "present",
+   "note_evidence": "Consolidate to atorvastatin 20 mg nightly",
+   "rationale": "Atorvastatin 20 mg nightly continued."
+  },
+  {
+   "fact_id": "f17",
+   "status": "present",
+   "note_evidence": "Continue losartan 50 mg daily and metoprolol succinate ER 100 mg daily",
+   "rationale": "Metoprolol ER 100 mg continued."
+  },
+  {
+   "fact_id": "f18",
+   "status": "present",
+   "note_evidence": "Continue aspirin 81 mg daily",
+   "rationale": "Aspirin 81 mg daily continued."
+  },
+  {
+   "fact_id": "f19",
+   "status": "present",
+   "note_evidence": "Continue losartan 50 mg daily",
+   "rationale": "Losartan 50 mg daily continued."
+  },
+  {
+   "fact_id": "f20",
+   "status": "present",
+   "note_evidence": "nitroglycerin 0.4 mg/actuation mucosal spray PRN chest pain",
+   "rationale": "Nitroglycerin spray PRN continued."
+  },
+  {
+   "fact_id": "f21",
+   "status": "present",
+   "note_evidence": "Start 24 hr metformin hydrochloride 500 mg extended-release tablet daily with the evening meal",
+   "rationale": "Metformin ER 500 mg daily with dinner started for diabetes."
+  },
+  {
+   "fact_id": "f22",
+   "status": "present",
+   "note_evidence": "Start hydrochlorothiazide 25 mg each morning",
+   "rationale": "HCTZ 25 mg each morning started for hypertension with elevated potassium context."
+  },
+  {
+   "fact_id": "f23",
+   "status": "present",
+   "note_evidence": "report GI intolerance rather than self-discontinuing",
+   "rationale": "Counseled on metformin GI intolerance and not stopping."
+  },
+  {
+   "fact_id": "f24",
+   "status": "present",
+   "note_evidence": "Monitor for orthostatic symptoms",
+   "rationale": "HCTZ morning dosing and orthostatic monitoring documented."
+  },
+  {
+   "fact_id": "f25",
+   "status": "present",
+   "note_evidence": "Counseled to avoid skipping breakfast before morning walks",
+   "rationale": "Counseled not to skip breakfast before walks."
+  },
+  {
+   "fact_id": "f26",
+   "status": "present",
+   "note_evidence": "BP 107/58 mmHg",
+   "rationale": "BP value documented."
+  },
+  {
+   "fact_id": "f27",
+   "status": "present",
+   "note_evidence": "HR 96/min",
+   "rationale": "Heart rate documented."
+  },
+  {
+   "fact_id": "f28",
+   "status": "present",
+   "note_evidence": "weight 78.5 kg, height 168 cm, BMI 27.8 kg/m2",
+   "rationale": "Weight and BMI documented."
+  },
+  {
+   "fact_id": "f29",
+   "status": "present",
+   "note_evidence": "HbA1c 5.45%",
+   "rationale": "HbA1c value documented."
+  },
+  {
+   "fact_id": "f30",
+   "status": "present",
+   "note_evidence": "fasting glucose low at 66.82 mg/dL today",
+   "rationale": "Low fasting glucose documented."
+  },
+  {
+   "fact_id": "f31",
+   "status": "present",
+   "note_evidence": "creatinine 0.6 mg/dL",
+   "rationale": "Creatinine value documented."
+  },
+  {
+   "fact_id": "f32",
+   "status": "present",
+   "note_evidence": "potassium 5.16 mmol/L",
+   "rationale": "Potassium at upper margin/elevated documented."
+  },
+  {
+   "fact_id": "f33",
+   "status": "present",
+   "note_evidence": "total cholesterol 226.05 mg/dL; direct LDL 148.61 mg/dL",
+   "rationale": "Total cholesterol and LDL above goal documented."
+  },
+  {
+   "fact_id": "f34",
+   "status": "present",
+   "note_evidence": "HDL 57.06 mg/dL",
+   "rationale": "HDL value documented."
+  },
+  {
+   "fact_id": "f35",
+   "status": "present",
+   "note_evidence": "triglycerides 101.87 mg/dL",
+   "rationale": "Triglycerides value documented."
+  },
+  {
+   "fact_id": "f36",
+   "status": "present",
+   "note_evidence": "eGFR 148.95 mL/min/1.73m2",
+   "rationale": "eGFR value documented."
+  },
+  {
+   "fact_id": "f37",
+   "status": "present",
+   "note_evidence": "urine microalbumin/creatinine 15.6 mg/g",
+   "rationale": "Microalbumin/creatinine ratio documented."
+  },
+  {
+   "fact_id": "f38",
+   "status": "present",
+   "note_evidence": "PHQ-2 0",
+   "rationale": "PHQ-2 score documented."
+  },
+  {
+   "fact_id": "f39",
+   "status": "present",
+   "note_evidence": "HARK 0",
+   "rationale": "HARK score documented."
+  },
+  {
+   "fact_id": "f40",
+   "status": "present",
+   "note_evidence": "DAST-10 0",
+   "rationale": "DAST-10 score documented."
+  },
+  {
+   "fact_id": "f41",
+   "status": "present",
+   "note_evidence": "Morse Fall Scale 22, low risk",
+   "rationale": "Morse Fall Scale score and low risk documented."
+  },
+  {
+   "fact_id": "f42",
+   "status": "present",
+   "note_evidence": "Gingival erythema and edema along the mandibular gumline with friability",
+   "rationale": "Gingivitis with red, swollen, bleeding lower gums documented."
+  },
+  {
+   "fact_id": "f43",
+   "status": "present",
+   "note_evidence": "Patient referral for dental care placed",
+   "rationale": "Dental referral for gingivitis documented."
+  },
+  {
+   "fact_id": "f44",
+   "status": "present",
+   "note_evidence": "Influenza vaccine (split virus, trivalent, preservative-free) administered today",
+   "rationale": "Influenza vaccine administered documented."
+  },
+  {
+   "fact_id": "f45",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No mention of prior flu vaccine reactions."
+  },
+  {
+   "fact_id": "f46",
+   "status": "present",
+   "note_evidence": "Historical and asymptomatic... Continue surveillance at next laboratory draw",
+   "rationale": "Anemia stable, monitor at next labs documented."
+  },
+  {
+   "fact_id": "f47",
+   "status": "present",
+   "note_evidence": "Return in 6 months with repeat labs; sooner for chest pain, dizziness, or medication intolerance",
+   "rationale": "6-month follow-up with return precautions documented."
+  },
+  {
+   "fact_id": "f48",
+   "status": "present",
+   "note_evidence": "Repeat lipid panel at follow-up before dose escalation",
+   "rationale": "Lipid recheck before statin dose change documented."
+  },
+  {
+   "fact_id": "f49",
+   "status": "present",
+   "note_evidence": "assessment of health and social care needs completed",
+   "rationale": "Health and social care needs assessment completed."
+  },
+  {
+   "fact_id": "f50",
+   "status": "present",
+   "note_evidence": "pain 1/10",
+   "rationale": "Pain score documented."
+  },
+  {
+   "fact_id": "f51",
+   "status": "present",
+   "note_evidence": "RR 13/min",
+   "rationale": "Respiratory rate documented."
+  },
+  {
+   "fact_id": "f52",
+   "status": "present",
+   "note_evidence": "BUN 18.73 mg/dL... sodium 137 mmol/L... chloride 104.15 mmol/L; CO2 28.18 mmol/L; calcium 8.74 mg/dL",
+   "rationale": "All BMP values documented."
+  },
+  {
+   "fact_id": "f53",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No counseling on gum disease\u2013heart disease connection documented."
+  }
+ ]
+}

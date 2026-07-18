@@ -1,0 +1,14 @@
+[
+ {
+  "fact_id": "f20",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Documenting that no daily prescription medications are taken completes the medication reconciliation and prevents ambiguity about ongoing therapy after hospital discharge."
+ },
+ {
+  "fact_id": "f35",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Confirming no prior adverse reaction supports the safety and appropriateness of administering the influenza vaccine given today."
+ }
+]

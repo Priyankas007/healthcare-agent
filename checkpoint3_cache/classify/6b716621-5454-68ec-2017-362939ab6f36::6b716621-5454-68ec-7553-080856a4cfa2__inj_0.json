@@ -1,0 +1,20 @@
+[
+ {
+  "fact_id": "f9",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Documented past-year food insecurity is an actionable SDOH finding that contradicts the note's 'no unmet needs' conclusion and warrants resource referral."
+ },
+ {
+  "fact_id": "f10",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "A negative PHQ-2 supports the mood assessment during this work-transition visit but is a normal screen with limited management impact."
+ },
+ {
+  "fact_id": "f27",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "For a 47-year-old woman's preventive visit, documenting that age-appropriate cancer screenings (breast, cervical, colorectal) are current is essential to completeness and could change management if overdue."
+ }
+]

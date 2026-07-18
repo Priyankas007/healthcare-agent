@@ -1,0 +1,8 @@
+[
+ {
+  "fact_id": "f29",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Any medication prescribed during a surgical dental visit must be documented for continuity of care, allergy/interaction checks, and an accurate medication record."
+ }
+]

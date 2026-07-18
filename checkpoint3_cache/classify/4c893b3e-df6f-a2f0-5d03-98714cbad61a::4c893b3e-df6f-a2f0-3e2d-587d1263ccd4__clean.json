@@ -1,0 +1,14 @@
+[
+ {
+  "fact_id": "f17",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Stable housing, home safety, and insurance are reassuring SDOH context relevant to this isolation-focused general exam but do not alter management."
+ },
+ {
+  "fact_id": "f33",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "A completed social needs assessment should be documented for completeness and to support follow-up on the patient's isolation and social barriers."
+ }
+]

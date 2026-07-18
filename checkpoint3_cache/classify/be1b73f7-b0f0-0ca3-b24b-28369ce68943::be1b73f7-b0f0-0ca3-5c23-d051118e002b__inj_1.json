@@ -1,0 +1,26 @@
+[
+ {
+  "fact_id": "f7",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Family history is standard in a comprehensive exam and informs cardiovascular, diabetes, and cancer risk stratification for this obese young adult."
+ },
+ {
+  "fact_id": "f15",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Uninsured status affects feasibility of referrals, follow-up, and testing, directly shaping the care plan."
+ },
+ {
+  "fact_id": "f16",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "The GAD-7 score documents the anxiety assessment already claimed and confirms minimal symptoms, but its normal value has little management impact."
+ },
+ {
+  "fact_id": "f40",
+  "expected": false,
+  "severity": "minor",
+  "why_it_matters": "Routine post-vaccination soreness advice is standard aftercare and its omission is unlikely to affect outcomes."
+ }
+]

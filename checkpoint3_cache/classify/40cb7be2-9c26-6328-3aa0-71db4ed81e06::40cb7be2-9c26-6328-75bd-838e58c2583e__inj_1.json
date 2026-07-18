@@ -1,0 +1,8 @@
+[
+ {
+  "fact_id": "f25",
+  "expected": true,
+  "why_it_matters": "A medication ordered and administered today (B12 injection) must be documented for an accurate medication record, to reflect the anemia treatment plan, and to avoid duplicate dosing or missed follow-up.",
+  "severity": "major"
+ }
+]

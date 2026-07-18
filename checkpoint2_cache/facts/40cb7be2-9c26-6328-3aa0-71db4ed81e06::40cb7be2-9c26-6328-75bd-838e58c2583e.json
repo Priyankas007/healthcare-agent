@@ -1,0 +1,549 @@
+[
+ {
+  "id": "f1",
+  "text": "Patient is pregnant, confirmed by positive urine pregnancy test in clinic today (plus three positive home tests)",
+  "type": "condition",
+  "slots": {
+   "condition": "pregnancy",
+   "confirmation": "positive urine test"
+  },
+  "source": "both",
+  "transcript_quote": "the urine test we ran when you checked in this morning is also positive. You are definitely pregnant.",
+  "fhir_ref": "Procedure/40cb7be2-9c26-6328-2525-69841904f7bd"
+ },
+ {
+  "id": "f2",
+  "text": "First pregnancy (primigravida), planned and wanted",
+  "type": "condition",
+  "slots": {
+   "gravidity": "first pregnancy"
+  },
+  "source": "transcript",
+  "transcript_quote": "First ever. Very planned, very wanted, very terrifying.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f3",
+  "text": "Last menstrual period was end of May, then missed period",
+  "type": "symptom",
+  "slots": {
+   "detail": "missed period end of May"
+  },
+  "source": "transcript",
+  "transcript_quote": "My period didn't show up at the end of May.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f4",
+  "text": "Reports morning nausea lasting until about 10am, vomiting twice",
+  "type": "symptom",
+  "slots": {
+   "symptom": "nausea/vomiting",
+   "timing": "mornings until ~10am",
+   "frequency_vomiting": "twice"
+  },
+  "source": "transcript",
+  "transcript_quote": "Queasy in the mornings \u2014 I've only actually thrown up twice, but the nausea hangs around till about ten.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f5",
+  "text": "Reports breast tenderness",
+  "type": "symptom",
+  "slots": {
+   "symptom": "breast soreness"
+  },
+  "source": "transcript",
+  "transcript_quote": "My chest is really sore.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f6",
+  "text": "Reports significant fatigue, fell asleep at desk",
+  "type": "symptom",
+  "slots": {
+   "symptom": "fatigue"
+  },
+  "source": "transcript",
+  "transcript_quote": "I am tired like I've never been tired. I fell asleep at my desk at lunch on Tuesday.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f7",
+  "text": "Reports urinary frequency",
+  "type": "symptom",
+  "slots": {
+   "symptom": "urinary frequency"
+  },
+  "source": "transcript",
+  "transcript_quote": "nothing weird with peeing except doing it constantly",
+  "fhir_ref": null
+ },
+ {
+  "id": "f8",
+  "text": "Reports occasional low pulling twinges, not painful",
+  "type": "symptom",
+  "slots": {
+   "symptom": "mild low abdominal twinges"
+  },
+  "source": "transcript",
+  "transcript_quote": "Little pulling twinges sometimes, low down. Nothing painful.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f9",
+  "text": "Denies vaginal bleeding or spotting",
+  "type": "red_flag_screen",
+  "slots": {
+   "screen": "bleeding",
+   "result": "negative"
+  },
+  "source": "transcript",
+  "transcript_quote": "Any bleeding or spotting? ... No bleeding, no.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f10",
+  "text": "Denies dysuria and fevers",
+  "type": "red_flag_screen",
+  "slots": {
+   "screen": "dysuria/fever",
+   "result": "negative"
+  },
+  "source": "transcript",
+  "transcript_quote": "Pain when you pee, fevers? ... no",
+  "fhir_ref": null
+ },
+ {
+  "id": "f11",
+  "text": "History of adolescent idiopathic scoliosis diagnosed at age 13, no surgery",
+  "type": "condition",
+  "slots": {
+   "condition": "scoliosis",
+   "onset": "age 13",
+   "treatment": "no surgery"
+  },
+  "source": "transcript",
+  "transcript_quote": "I have scoliosis \u2014 they found it when I was thirteen, adolescent idiopathic whatever-the-full-name-is. It never needed surgery",
+  "fhir_ref": null
+ },
+ {
+  "id": "f12",
+  "text": "History of panic disorder with panic attacks, worse recently; currently not on medication, managed with breathing/routines",
+  "type": "condition",
+  "slots": {
+   "condition": "panic disorder",
+   "treatment": "non-pharmacologic"
+  },
+  "source": "transcript",
+  "transcript_quote": "I have an anxiety disorder \u2014 the panic kind. Actual panic attacks... No, nothing right now. I manage with breathing stuff and routines",
+  "fhir_ref": null
+ },
+ {
+  "id": "f13",
+  "text": "Had a small panic attack in the parking lot before visit, self-managed with partner",
+  "type": "symptom",
+  "slots": {
+   "symptom": "panic attack"
+  },
+  "source": "transcript",
+  "transcript_quote": "I had a small panic attack in the parking lot before this. Jess talked me down.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f14",
+  "text": "No prior surgeries",
+  "type": "condition",
+  "slots": {
+   "detail": "no surgical history"
+  },
+  "source": "transcript",
+  "transcript_quote": "No surgeries.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f15",
+  "text": "No known allergies",
+  "type": "condition",
+  "slots": {
+   "detail": "NKDA"
+  },
+  "source": "transcript",
+  "transcript_quote": "No allergies.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f16",
+  "text": "Former smoker, quit years ago",
+  "type": "sdoh",
+  "slots": {
+   "category": "tobacco",
+   "status": "former smoker, quit years ago"
+  },
+  "source": "transcript",
+  "transcript_quote": "I used to smoke \u2014 quit for good years ago",
+  "fhir_ref": null
+ },
+ {
+  "id": "f17",
+  "text": "Occasional wine use, stopped completely upon positive test",
+  "type": "sdoh",
+  "slots": {
+   "category": "alcohol",
+   "status": "stopped with pregnancy"
+  },
+  "source": "transcript",
+  "transcript_quote": "Wine sometimes, but the second that test turned positive, I stopped completely.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f18",
+  "text": "Transportation barrier: car dead for a month, relies on borrowed car or 1.5-hour bus with transfer to reach clinic",
+  "type": "sdoh",
+  "slots": {
+   "category": "transportation"
+  },
+  "source": "transcript",
+  "transcript_quote": "Our car has been dead for a month, so we borrowed her brother's... the bus from ours takes an hour and a half with a transfer.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f19",
+  "text": "Physical examination performed; uterus/abdomen findings appropriate for stage",
+  "type": "procedure",
+  "slots": {
+   "procedure": "physical examination"
+  },
+  "source": "both",
+  "transcript_quote": "everything feels exactly the way it should for this stage",
+  "fhir_ref": "Procedure/40cb7be2-9c26-6328-caa0-c633bfaed52e"
+ },
+ {
+  "id": "f20",
+  "text": "Fundal height evaluated",
+  "type": "procedure",
+  "slots": {
+   "procedure": "fundal height evaluation"
+  },
+  "source": "both",
+  "transcript_quote": "checking the top of the uterus",
+  "fhir_ref": "Procedure/40cb7be2-9c26-6328-5e29-aa4b6f309675"
+ },
+ {
+  "id": "f21",
+  "text": "Fetal heart auscultated by doppler, strong/fast heartbeat",
+  "type": "procedure",
+  "slots": {
+   "procedure": "fetal heart auscultation"
+  },
+  "source": "both",
+  "transcript_quote": "Hear that quick galloping?",
+  "fhir_ref": "Procedure/40cb7be2-9c26-6328-c6ae-5478454973da"
+ },
+ {
+  "id": "f22",
+  "text": "Fetal viability ultrasound performed: single intrauterine pregnancy with strong heartbeat, measuring consistent with dates",
+  "type": "procedure",
+  "slots": {
+   "procedure": "fetal viability ultrasound",
+   "findings": "single IUP, strong heartbeat, consistent with dates"
+  },
+  "source": "both",
+  "transcript_quote": "a single pregnancy, inside the uterus where it belongs, with a strong heartbeat, measuring consistent with your dates",
+  "fhir_ref": "Procedure/40cb7be2-9c26-6328-cf41-a5ee60b519b3"
+ },
+ {
+  "id": "f23",
+  "text": "Anemia diagnosed on CBC \u2014 red cells low",
+  "type": "condition",
+  "slots": {
+   "condition": "anemia"
+  },
+  "source": "both",
+  "transcript_quote": "Your blood count shows anemia. Your red cells are low.",
+  "fhir_ref": "Condition/40cb7be2-9c26-6328-d8a9-3f0cdfda2442"
+ },
+ {
+  "id": "f24",
+  "text": "Started ferrous sulfate 325 mg orally once daily; take with vitamin C (orange juice), avoid coffee/tea/milk; may cause constipation and dark stools",
+  "type": "medication",
+  "slots": {
+   "drug": "ferrous sulfate",
+   "dose": "325 mg",
+   "route": "oral",
+   "freq": "once daily",
+   "instructions": "take with vitamin C, avoid coffee/tea/milk"
+  },
+  "source": "transcript",
+  "transcript_quote": "ferrous sulfate \u2014 an iron tablet, 325 milligrams, once a day. Take it with orange juice or another vitamin C source, and keep it away from coffee, tea, and milk",
+  "fhir_ref": null
+ },
+ {
+  "id": "f25",
+  "text": "Vitamin B12 injection ordered, first dose to be given today",
+  "type": "medication",
+  "slots": {
+   "drug": "vitamin B12",
+   "route": "injection",
+   "timing": "first dose today"
+  },
+  "source": "transcript",
+  "transcript_quote": "vitamin B12 \u2014 that one's an injection, and you'll get your first one today before you leave",
+  "fhir_ref": null
+ },
+ {
+  "id": "f26",
+  "text": "Blood group typing and antibody status ordered",
+  "type": "order",
+  "slots": {
+   "test": "blood group typing"
+  },
+  "source": "both",
+  "transcript_quote": "Today we check your blood type and antibody status",
+  "fhir_ref": "Procedure/40cb7be2-9c26-6328-cb51-c5026c38cdbd"
+ },
+ {
+  "id": "f27",
+  "text": "Complete blood count / hemogram ordered",
+  "type": "order",
+  "slots": {
+   "test": "CBC"
+  },
+  "source": "both",
+  "transcript_quote": "a full blood count",
+  "fhir_ref": "Procedure/40cb7be2-9c26-6328-af82-466fdf2e1542"
+ },
+ {
+  "id": "f28",
+  "text": "Hepatitis B surface antigen test ordered",
+  "type": "order",
+  "slots": {
+   "test": "hepatitis B"
+  },
+  "source": "both",
+  "transcript_quote": "hepatitis B",
+  "fhir_ref": "Procedure/40cb7be2-9c26-6328-c1a7-662cea2216f9"
+ },
+ {
+  "id": "f29",
+  "text": "Hepatitis C antibody test ordered",
+  "type": "order",
+  "slots": {
+   "test": "hepatitis C"
+  },
+  "source": "both",
+  "transcript_quote": "hepatitis C",
+  "fhir_ref": "Procedure/40cb7be2-9c26-6328-1b0e-7cec1c325df8"
+ },
+ {
+  "id": "f30",
+  "text": "HIV test ordered",
+  "type": "order",
+  "slots": {
+   "test": "HIV"
+  },
+  "source": "both",
+  "transcript_quote": "HIV",
+  "fhir_ref": "Procedure/40cb7be2-9c26-6328-9091-6d544a4fb50e"
+ },
+ {
+  "id": "f31",
+  "text": "Syphilis test ordered",
+  "type": "order",
+  "slots": {
+   "test": "syphilis"
+  },
+  "source": "both",
+  "transcript_quote": "syphilis",
+  "fhir_ref": "Procedure/40cb7be2-9c26-6328-6f6f-73cf580d2b8c"
+ },
+ {
+  "id": "f32",
+  "text": "Gonorrhea test ordered",
+  "type": "order",
+  "slots": {
+   "test": "gonorrhea"
+  },
+  "source": "both",
+  "transcript_quote": "gonorrhea",
+  "fhir_ref": "Procedure/40cb7be2-9c26-6328-3aeb-51d3ca5cfe97"
+ },
+ {
+  "id": "f33",
+  "text": "Chlamydia test ordered",
+  "type": "order",
+  "slots": {
+   "test": "chlamydia"
+  },
+  "source": "both",
+  "transcript_quote": "chlamydia",
+  "fhir_ref": "Procedure/40cb7be2-9c26-6328-3e36-2425285a7462"
+ },
+ {
+  "id": "f34",
+  "text": "Rubella immunity screening ordered",
+  "type": "order",
+  "slots": {
+   "test": "rubella immunity"
+  },
+  "source": "both",
+  "transcript_quote": "whether you're immune to rubella and chickenpox",
+  "fhir_ref": "Procedure/40cb7be2-9c26-6328-601d-41f62c3cc028"
+ },
+ {
+  "id": "f35",
+  "text": "Varicella (chickenpox) immunity screening ordered",
+  "type": "order",
+  "slots": {
+   "test": "varicella immunity"
+  },
+  "source": "both",
+  "transcript_quote": "whether you're immune to rubella and chickenpox",
+  "fhir_ref": "Procedure/40cb7be2-9c26-6328-e1d0-69b6f0a4e9bb"
+ },
+ {
+  "id": "f36",
+  "text": "Urine culture ordered",
+  "type": "order",
+  "slots": {
+   "test": "urine culture"
+  },
+  "source": "both",
+  "transcript_quote": "a urine culture",
+  "fhir_ref": "Procedure/40cb7be2-9c26-6328-5491-72b37c5eaee8"
+ },
+ {
+  "id": "f37",
+  "text": "Urine protein qualitative test ordered",
+  "type": "order",
+  "slots": {
+   "test": "urine protein"
+  },
+  "source": "both",
+  "transcript_quote": "a urine check for protein",
+  "fhir_ref": "Procedure/40cb7be2-9c26-6328-1944-cccfec68fc0a"
+ },
+ {
+  "id": "f38",
+  "text": "Urine glucose/diabetes screening ordered",
+  "type": "order",
+  "slots": {
+   "test": "urine glucose"
+  },
+  "source": "both",
+  "transcript_quote": "for sugar",
+  "fhir_ref": "Procedure/40cb7be2-9c26-6328-6ff6-cabbff4cd5a5"
+ },
+ {
+  "id": "f39",
+  "text": "Pap smear performed during exam",
+  "type": "procedure",
+  "slots": {
+   "procedure": "Pap smear"
+  },
+  "source": "both",
+  "transcript_quote": "a Pap smear, which we did with your exam",
+  "fhir_ref": "Procedure/40cb7be2-9c26-6328-1ed7-787a4cdfbaa3"
+ },
+ {
+  "id": "f40",
+  "text": "TB skin test placed on forearm; needs reading in 2-3 days",
+  "type": "procedure",
+  "slots": {
+   "procedure": "TB skin test",
+   "follow_read": "2-3 days"
+  },
+  "source": "both",
+  "transcript_quote": "a TB skin test \u2014 that's the little bubble I'll put on your forearm; someone needs to look at it in two to three days",
+  "fhir_ref": "Procedure/40cb7be2-9c26-6328-5c7c-7e1581dff2ec"
+ },
+ {
+  "id": "f41",
+  "text": "Nurse visit booked in 2-3 days for TB test read (first morning slot to ease transportation)",
+  "type": "followup",
+  "slots": {
+   "visit": "nurse visit for TB read",
+   "timing": "2-3 days"
+  },
+  "source": "transcript",
+  "transcript_quote": "We'll book the TB check as a quick nurse visit, first slot of the morning",
+  "fhir_ref": null
+ },
+ {
+  "id": "f42",
+  "text": "Prenatal follow-up every 4 weeks now, closer together later; appointments stacked to reduce trips",
+  "type": "followup",
+  "slots": {
+   "schedule": "every 4 weeks"
+  },
+  "source": "transcript",
+  "transcript_quote": "visits every four weeks for now, closer together later in the pregnancy",
+  "fhir_ref": null
+ },
+ {
+  "id": "f43",
+  "text": "Counseled to call immediately for bleeding, severe cramping, fever, or inability to keep fluids down",
+  "type": "counseling",
+  "slots": {
+   "topic": "warning signs"
+  },
+  "source": "transcript",
+  "transcript_quote": "Call immediately for bleeding, severe cramping, fever, or fluids not staying down.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f44",
+  "text": "Counseled on nausea management: small frequent snacks, crackers before rising, cold foods, ginger tea",
+  "type": "counseling",
+  "slots": {
+   "topic": "nausea management"
+  },
+  "source": "transcript",
+  "transcript_quote": "Small frequent snacks so the stomach's never empty, crackers before you even sit up in the morning, cold foods if smells are the enemy, ginger tea if you like it.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f45",
+  "text": "Counseled on back/scoliosis care: keep moving, gentle stretching, supportive shoes, report pain; will discuss labor positioning later",
+  "type": "counseling",
+  "slots": {
+   "topic": "scoliosis/back care"
+  },
+  "source": "transcript",
+  "transcript_quote": "keep moving, gentle stretching, supportive shoes, and tell me if pain shows up rather than toughing it out",
+  "fhir_ref": null
+ },
+ {
+  "id": "f46",
+  "text": "Counseled on anxiety accommodations: quieter waiting area with chart flag, partner welcome at all visits including labor, medication options open if panic worsens",
+  "type": "counseling",
+  "slots": {
+   "topic": "anxiety support"
+  },
+  "source": "transcript",
+  "transcript_quote": "You're always welcome to wait somewhere quieter \u2014 tell the front desk, they'll flag your chart, and Jess is welcome at every single visit, including labor.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f47",
+  "text": "Reassured that early-caught, treated anemia poses no danger to baby; count will be rechecked",
+  "type": "counseling",
+  "slots": {
+   "topic": "anemia reassurance"
+  },
+  "source": "transcript",
+  "transcript_quote": "Treated, no \u2014 we've caught it early, we're correcting it, and we'll recheck your count as we go.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f48",
+  "text": "Normal pregnancy finding documented",
+  "type": "condition",
+  "slots": {
+   "condition": "normal pregnancy"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Condition/40cb7be2-9c26-6328-c541-7e49380d5a38"
+ }
+]

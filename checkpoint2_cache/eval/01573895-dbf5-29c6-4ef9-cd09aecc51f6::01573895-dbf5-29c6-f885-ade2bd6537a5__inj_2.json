@@ -1,0 +1,259 @@
+{
+ "note_version_id": "01573895-dbf5-29c6-4ef9-cd09aecc51f6::01573895-dbf5-29c6-f885-ade2bd6537a5__inj_2",
+ "injected_fact_id": "f12",
+ "detected_absent_fact_ids": [
+  "f12",
+  "f39"
+ ],
+ "caught": true,
+ "collateral_flips": [],
+ "n_present_on_provided": 38,
+ "presence_results": [
+  {
+   "fact_id": "f1",
+   "status": "present",
+   "note_evidence": "aching of the knuckles that has crept up gradually... Pain 3/10 today, up to 5/10 after long shifts",
+   "rationale": "OA of hands with graded pain documented."
+  },
+  {
+   "fact_id": "f2",
+   "status": "partial",
+   "note_evidence": "morning stiffness that eases with activity",
+   "rationale": "Stiffness and gripping aggravation present, but relief attributed to activity, not warmth/coffee."
+  },
+  {
+   "fact_id": "f3",
+   "status": "present",
+   "note_evidence": "No joint swelling, warmth, erythema, locking, or dropping objects",
+   "rationale": "All negatives explicitly documented."
+  },
+  {
+   "fact_id": "f4",
+   "status": "present",
+   "note_evidence": "Naproxen sodium 220 mg once or twice weekly with food",
+   "rationale": "Drug, dose, frequency, and food instruction match."
+  },
+  {
+   "fact_id": "f5",
+   "status": "present",
+   "note_evidence": "no dyspepsia, no melena",
+   "rationale": "GI symptom negatives documented."
+  },
+  {
+   "fact_id": "f6",
+   "status": "present",
+   "note_evidence": "Continue naproxen sodium 220 mg as needed, always with food",
+   "rationale": "Advice to continue with food documented."
+  },
+  {
+   "fact_id": "f7",
+   "status": "present",
+   "note_evidence": "Taught tendon-glide exercises and morning warm soaks",
+   "rationale": "Exercises and warm soaks documented."
+  },
+  {
+   "fact_id": "f8",
+   "status": "present",
+   "note_evidence": "nocturnal rumination over the budget... financial strain since his wife's work hours were cut",
+   "rationale": "Financial stress and rumination documented."
+  },
+  {
+   "fact_id": "f9",
+   "status": "present",
+   "note_evidence": "daytime muscle tension, irritability at work",
+   "rationale": "Tension and workplace irritability documented."
+  },
+  {
+   "fact_id": "f10",
+   "status": "present",
+   "note_evidence": "worry-associated (non-exertional) chest tightness... Stairs and heavy work provoke no symptoms",
+   "rationale": "Anxiety-linked non-exertional chest tightness documented."
+  },
+  {
+   "fact_id": "f11",
+   "status": "present",
+   "note_evidence": "GAD-7 total 12",
+   "rationale": "GAD-7 12 moderate documented."
+  },
+  {
+   "fact_id": "f12",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No PHQ-2 documented; only PHQ-9 of 4."
+  },
+  {
+   "fact_id": "f13",
+   "status": "present",
+   "note_evidence": "PHQ-9 scored 4 \u2014 minimal depressive symptoms with mood, interest, and function preserved",
+   "rationale": "PHQ-9 4 minimal with preserved function documented."
+  },
+  {
+   "fact_id": "f14",
+   "status": "present",
+   "note_evidence": "sleep is reduced by rumination",
+   "rationale": "Reduced sleep due to worry documented."
+  },
+  {
+   "fact_id": "f15",
+   "status": "present",
+   "note_evidence": "Denies hopelessness and any thoughts of self-harm",
+   "rationale": "SI/self-harm denial documented."
+  },
+  {
+   "fact_id": "f16",
+   "status": "present",
+   "note_evidence": "Stress with moderate anxiety symptoms... worry-related chest tightness",
+   "rationale": "Anxiety assessment, not depression or cardiac, documented."
+  },
+  {
+   "fact_id": "f17",
+   "status": "present",
+   "note_evidence": "brisk 20-30 minute walks most evenings",
+   "rationale": "Aerobic walking counseling documented."
+  },
+  {
+   "fact_id": "f18",
+   "status": "present",
+   "note_evidence": "scheduled daily worry time for budgeting",
+   "rationale": "Scheduled worry technique documented."
+  },
+  {
+   "fact_id": "f19",
+   "status": "present",
+   "note_evidence": "Provided information for sliding-scale counseling; patient will consider",
+   "rationale": "Sliding-scale counseling referral documented (Fairview name absent)."
+  },
+  {
+   "fact_id": "f20",
+   "status": "present",
+   "note_evidence": "No medication initiated today; return in 2-3 months to reassess",
+   "rationale": "Medication deferral documented."
+  },
+  {
+   "fact_id": "f21",
+   "status": "present",
+   "note_evidence": "sooner if worry disrupts sleep nightly or chest tightness escalates",
+   "rationale": "Return precautions documented."
+  },
+  {
+   "fact_id": "f22",
+   "status": "present",
+   "note_evidence": "alcohol about two beers on Saturdays... AUDIT-C total 2",
+   "rationale": "AUDIT-C 2 and drinking pattern documented."
+  },
+  {
+   "fact_id": "f23",
+   "status": "present",
+   "note_evidence": "Never-smoker",
+   "rationale": "Never smoker documented."
+  },
+  {
+   "fact_id": "f24",
+   "status": "present",
+   "note_evidence": "BP 102/78 mmHg",
+   "rationale": "BP value matches."
+  },
+  {
+   "fact_id": "f25",
+   "status": "present",
+   "note_evidence": "HR 74/min",
+   "rationale": "HR value matches."
+  },
+  {
+   "fact_id": "f26",
+   "status": "present",
+   "note_evidence": "RR 15/min",
+   "rationale": "RR value matches."
+  },
+  {
+   "fact_id": "f27",
+   "status": "present",
+   "note_evidence": "height 162.1 cm, weight 73.5 kg, BMI 27.96 kg/m2",
+   "rationale": "Measurements match; prior-comparison not needed as core values documented."
+  },
+  {
+   "fact_id": "f28",
+   "status": "present",
+   "note_evidence": "Heart regular without murmur; lungs clear",
+   "rationale": "Normal cardiopulmonary exam documented."
+  },
+  {
+   "fact_id": "f29",
+   "status": "present",
+   "note_evidence": "Hands with bony fullness and mild tenderness over several finger joints, without swelling, warmth, or erythema; grip strong and functional",
+   "rationale": "Hand exam findings match."
+  },
+  {
+   "fact_id": "f30",
+   "status": "present",
+   "note_evidence": "lower-left molar sensitive to cold; no dental care in many years due to cost",
+   "rationale": "Cold-sensitive lower-left tooth with dental care gap documented."
+  },
+  {
+   "fact_id": "f31",
+   "status": "present",
+   "note_evidence": "Patient referral for dental care placed to a sliding-scale clinic",
+   "rationale": "Dental sliding-scale referral documented."
+  },
+  {
+   "fact_id": "f32",
+   "status": "present",
+   "note_evidence": "total cholesterol 157.54 mg/dL, triglycerides 134.84 mg/dL, direct LDL 101.02 mg/dL",
+   "rationale": "Lipid values match."
+  },
+  {
+   "fact_id": "f33",
+   "status": "present",
+   "note_evidence": "HDL low at 29.55 mg/dL... Regular aerobic activity as above",
+   "rationale": "Low HDL and aerobic activity counseling documented."
+  },
+  {
+   "fact_id": "f34",
+   "status": "present",
+   "note_evidence": "influenza (split virus, trivalent, preservative-free)",
+   "rationale": "Influenza vaccine administered."
+  },
+  {
+   "fact_id": "f35",
+   "status": "present",
+   "note_evidence": "Td (adult) booster",
+   "rationale": "Td booster administered (overdue/warehouse detail not stated)."
+  },
+  {
+   "fact_id": "f36",
+   "status": "present",
+   "note_evidence": "hepatitis A (adult)",
+   "rationale": "Hep A adult vaccine administered."
+  },
+  {
+   "fact_id": "f37",
+   "status": "present",
+   "note_evidence": "return in 2-3 months to reassess",
+   "rationale": "2-3 month anxiety reassessment documented."
+  },
+  {
+   "fact_id": "f38",
+   "status": "partial",
+   "note_evidence": "financial strain since his wife's work hours were cut \u2014 household of three with a young daughter",
+   "rationale": "Financial strain and household of 3 documented, but income figure and grade not stated."
+  },
+  {
+   "fact_id": "f39",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "Housing, safety, insurance, education, transport not documented."
+  },
+  {
+   "fact_id": "f40",
+   "status": "present",
+   "note_evidence": "ten-hour picker shifts at a distribution center (gripping totes, scanning)",
+   "rationale": "Warehouse picker with 10-hour gripping shifts documented."
+  },
+  {
+   "fact_id": "f41",
+   "status": "present",
+   "note_evidence": "Medication reconciliation completed",
+   "rationale": "Med reconciliation documented."
+  }
+ ]
+}

@@ -1,0 +1,258 @@
+{
+ "note_version_id": "4b4735a2-ee12-ec86-041f-3ba4d5c81ec9::4b4735a2-ee12-ec86-c1c9-c610cc6ef8ab__inj_1",
+ "injected_fact_id": "f21",
+ "detected_absent_fact_ids": [
+  "f21",
+  "f34",
+  "f35",
+  "f36",
+  "f40"
+ ],
+ "caught": true,
+ "collateral_flips": [
+  "f36"
+ ],
+ "n_present_on_provided": 32,
+ "presence_results": [
+  {
+   "fact_id": "f1",
+   "status": "present",
+   "note_evidence": "intermittent dull occipital headaches on waking over the past few months, resolving by midday",
+   "rationale": "Occipital morning headaches, few months, resolving by midday all documented."
+  },
+  {
+   "fact_id": "f2",
+   "status": "present",
+   "note_evidence": "daily gum bleeding with brushing",
+   "rationale": "Gum bleeding triggered by brushing documented."
+  },
+  {
+   "fact_id": "f3",
+   "status": "partial",
+   "note_evidence": "BP 141/100 mmHg with diastolic predominance, confirmed on repeat measurement, with associated morning occipital headaches",
+   "rationale": "Note associates headaches with hypertension but does not state expected improvement with BP control."
+  },
+  {
+   "fact_id": "f4",
+   "status": "present",
+   "note_evidence": "PHQ-2 score 2 and GAD-7 score 3 (low; consistent with grief)",
+   "rationale": "PHQ-2 of 2, low, documented."
+  },
+  {
+   "fact_id": "f5",
+   "status": "present",
+   "note_evidence": "GAD-7 score 3 (low; consistent with grief)",
+   "rationale": "GAD-7 of 3, low, documented."
+  },
+  {
+   "fact_id": "f6",
+   "status": "present",
+   "note_evidence": "AUDIT-C score 3 (below threshold)... drinks 1\u20132 beers two to three evenings weekly",
+   "rationale": "Score and drinking pattern both documented."
+  },
+  {
+   "fact_id": "f7",
+   "status": "present",
+   "note_evidence": "has never smoked",
+   "rationale": "Never-smoker documented."
+  },
+  {
+   "fact_id": "f8",
+   "status": "present",
+   "note_evidence": "denies drug use",
+   "rationale": "Illicit drug use denied."
+  },
+  {
+   "fact_id": "f9",
+   "status": "present",
+   "note_evidence": "BP 141/100 mmHg (confirmed on repeat)",
+   "rationale": "BP value and confirmation documented."
+  },
+  {
+   "fact_id": "f10",
+   "status": "present",
+   "note_evidence": "HR 100/min",
+   "rationale": "Heart rate documented."
+  },
+  {
+   "fact_id": "f11",
+   "status": "present",
+   "note_evidence": "weight 93.9 kg... BMI 30.21 kg/m2",
+   "rationale": "Weight and BMI (obesity range) documented."
+  },
+  {
+   "fact_id": "f12",
+   "status": "present",
+   "note_evidence": "Hemoglobin A1c 6.28%... Prediabetes",
+   "rationale": "A1c value and prediabetes interpretation documented."
+  },
+  {
+   "fact_id": "f13",
+   "status": "present",
+   "note_evidence": "fasting glucose 91.08 mg/dL remains normal",
+   "rationale": "Glucose value and normal interpretation documented."
+  },
+  {
+   "fact_id": "f14",
+   "status": "present",
+   "note_evidence": "BUN 17.36 mg/dL, creatinine 1.12 mg/dL",
+   "rationale": "Creatinine and BUN documented."
+  },
+  {
+   "fact_id": "f15",
+   "status": "present",
+   "note_evidence": "sodium 139.11 mmol/L, potassium 3.97 mmol/L",
+   "rationale": "Sodium and potassium documented."
+  },
+  {
+   "fact_id": "f16",
+   "status": "present",
+   "note_evidence": "Essential hypertension\nNew diagnosis",
+   "rationale": "Essential hypertension diagnosed."
+  },
+  {
+   "fact_id": "f17",
+   "status": "present",
+   "note_evidence": "Metabolic syndrome X\nNew documentation based on the cluster of hypertension, BMI 30.21 kg/m2, and A1c 6.28%",
+   "rationale": "Metabolic syndrome diagnosed with component cluster."
+  },
+  {
+   "fact_id": "f18",
+   "status": "present",
+   "note_evidence": "erythematous, edematous gingival margins with contact bleeding, consistent with gingivitis",
+   "rationale": "Gingivitis with puffy margins bleeding on contact documented."
+  },
+  {
+   "fact_id": "f19",
+   "status": "present",
+   "note_evidence": "Start hydrochlorothiazide 25 mg orally each morning",
+   "rationale": "Drug, dose, route, and morning frequency documented."
+  },
+  {
+   "fact_id": "f20",
+   "status": "present",
+   "note_evidence": "counseled on diuresis, orthostatic symptoms, and cramping... interval electrolytes after medication initiation",
+   "rationale": "Side-effect counseling and bloodwork recheck documented."
+  },
+  {
+   "fact_id": "f21",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No mention of vitamin B12 injectable in the note."
+  },
+  {
+   "fact_id": "f22",
+   "status": "partial",
+   "note_evidence": "Medication reconciliation completed: newly started hydrochlorothiazide",
+   "rationale": "Reconciliation documented but B12 medication component not listed."
+  },
+  {
+   "fact_id": "f23",
+   "status": "present",
+   "note_evidence": "sodium reduction... dietary emphasis on reduced processed/salty foods",
+   "rationale": "Sodium reduction/dietary counseling documented, specific foods paraphrased."
+  },
+  {
+   "fact_id": "f24",
+   "status": "partial",
+   "note_evidence": "regular walking",
+   "rationale": "Walking counseled but 30 minutes/most days detail not specified."
+  },
+  {
+   "fact_id": "f25",
+   "status": "present",
+   "note_evidence": "Enrolled in lifestyle education regarding hypertension",
+   "rationale": "Hypertension education enrollment documented."
+  },
+  {
+   "fact_id": "f26",
+   "status": "present",
+   "note_evidence": "Patient referral for dental care placed (cleaning and examination)",
+   "rationale": "Dental referral for cleaning/exam documented; last-visit timing is extra detail."
+  },
+  {
+   "fact_id": "f27",
+   "status": "present",
+   "note_evidence": "soft brush twice daily, daily flossing",
+   "rationale": "Oral hygiene counseling documented."
+  },
+  {
+   "fact_id": "f28",
+   "status": "partial",
+   "note_evidence": "Influenza vaccine (split virus, trivalent, preservative-free) administered",
+   "rationale": "Vaccine documented but injection site (left arm) not stated."
+  },
+  {
+   "fact_id": "f29",
+   "status": "present",
+   "note_evidence": "Recheck BP in approximately 1 month... home BP log",
+   "rationale": "One-month BP recheck and home BP log documented."
+  },
+  {
+   "fact_id": "f30",
+   "status": "present",
+   "note_evidence": "left full-time work last year after a prolonged period caring for his mother, who died last fall; he is not currently seeking work",
+   "rationale": "Caregiving, mother's death last fall, and leaving work documented."
+  },
+  {
+   "fact_id": "f31",
+   "status": "present",
+   "note_evidence": "Not in labor force... not currently seeking work",
+   "rationale": "Out of labor force, not seeking work documented."
+  },
+  {
+   "fact_id": "f32",
+   "status": "partial",
+   "note_evidence": "minimal personal income... reported personal annual income $4,829",
+   "rationale": "Low income documented but odd jobs and Medicaid insurance not mentioned."
+  },
+  {
+   "fact_id": "f33",
+   "status": "present",
+   "note_evidence": "living in a five-person household with his sister's family... stable housing with family",
+   "rationale": "Household with sister's family, 5 people, stable housing documented; sofa bed detail extra."
+  },
+  {
+   "fact_id": "f34",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No mention of inability to obtain needed care in past year."
+  },
+  {
+   "fact_id": "f35",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No mention of migrant/seasonal farm work."
+  },
+  {
+   "fact_id": "f36",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No mention of fogginess or heavy legs with B12 skipping."
+  },
+  {
+   "fact_id": "f37",
+   "status": "present",
+   "note_evidence": "pain score 1/10",
+   "rationale": "Pain 1/10 documented."
+  },
+  {
+   "fact_id": "f38",
+   "status": "present",
+   "note_evidence": "endorses intermittent low mood and worry consistent with grief but denies persistent depression",
+   "rationale": "Denial of depression and intermittent grief documented; sleeping detail not stated but core captured."
+  },
+  {
+   "fact_id": "f39",
+   "status": "present",
+   "note_evidence": "RR 13/min",
+   "rationale": "Respiratory rate documented."
+  },
+  {
+   "fact_id": "f40",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "Note does not document revisiting depression/grief treatment if it worsens."
+  }
+ ]
+}

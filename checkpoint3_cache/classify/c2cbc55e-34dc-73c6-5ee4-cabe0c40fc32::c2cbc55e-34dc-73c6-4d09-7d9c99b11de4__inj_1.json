@@ -1,0 +1,8 @@
+[
+ {
+  "fact_id": "f2",
+  "expected": true,
+  "why_it_matters": "Establishing gestational age from the last menstrual period (with the caveat of irregular cycles) is fundamental to dating this pregnancy, scheduling screening, and interpreting fundal height and ultrasound at the initial prenatal visit.",
+  "severity": "major"
+ }
+]

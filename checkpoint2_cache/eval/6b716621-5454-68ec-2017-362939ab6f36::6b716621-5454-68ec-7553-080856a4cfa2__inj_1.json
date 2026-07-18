@@ -1,0 +1,188 @@
+{
+ "note_version_id": "6b716621-5454-68ec-2017-362939ab6f36::6b716621-5454-68ec-7553-080856a4cfa2__inj_1",
+ "injected_fact_id": "f11",
+ "detected_absent_fact_ids": [
+  "f9",
+  "f11",
+  "f27"
+ ],
+ "caught": true,
+ "collateral_flips": [],
+ "n_present_on_provided": 25,
+ "presence_results": [
+  {
+   "fact_id": "f1",
+   "status": "present",
+   "note_evidence": "bilateral facial pressure, morning congestion, and nighttime post-nasal drip, currently a minor nuisance (pain 1/10)",
+   "rationale": "All symptom components and severity documented."
+  },
+  {
+   "fact_id": "f2",
+   "status": "present",
+   "note_evidence": "without fever, severe headache, tooth pain, or purulent discharge",
+   "rationale": "All listed negatives documented."
+  },
+  {
+   "fact_id": "f3",
+   "status": "present",
+   "note_evidence": "no chest pain, dyspnea, palpitations... She reports exertional tolerance has improved on her walks",
+   "rationale": "Negatives and improved exertional tolerance documented."
+  },
+  {
+   "fact_id": "f4",
+   "status": "partial",
+   "note_evidence": "improved sleep, energy, and daily structure",
+   "rationale": "Sleep/energy improvement documented but normal appetite not mentioned."
+  },
+  {
+   "fact_id": "f5",
+   "status": "present",
+   "note_evidence": "no ... GI or GU symptoms, or abnormal bleeding",
+   "rationale": "Bowel/bladder and bleeding negatives documented."
+  },
+  {
+   "fact_id": "f6",
+   "status": "present",
+   "note_evidence": "daily structure built around a 45-minute daily walk",
+   "rationale": "Daily 45-minute walk documented."
+  },
+  {
+   "fact_id": "f7",
+   "status": "present",
+   "note_evidence": "She left her office job of nineteen years in October and is newly out of the labor force",
+   "rationale": "Job exit and labor force status documented."
+  },
+  {
+   "fact_id": "f8",
+   "status": "present",
+   "note_evidence": "annual income of about $53,274 and stable insurance through his employment; she denies material hardship... two-person household",
+   "rationale": "Income, insurance, household documented; paid-off car is minor extra."
+  },
+  {
+   "fact_id": "f9",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "PRAPARE specifics not documented and note denies material hardship, contradicting food insecurity."
+  },
+  {
+   "fact_id": "f10",
+   "status": "present",
+   "note_evidence": "PHQ-2 total 0... She denies depressed mood or anhedonia",
+   "rationale": "Score and negatives documented."
+  },
+  {
+   "fact_id": "f11",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No GAD-7 or anxiety screening documented."
+  },
+  {
+   "fact_id": "f12",
+   "status": "present",
+   "note_evidence": "drinks at most one glass of wine weekly... AUDIT-C total 1",
+   "rationale": "Alcohol intake and AUDIT-C documented."
+  },
+  {
+   "fact_id": "f13",
+   "status": "present",
+   "note_evidence": "ex-smoker (brief teenage use, quit decades ago) with no relapse",
+   "rationale": "Ex-smoker status documented."
+  },
+  {
+   "fact_id": "f14",
+   "status": "present",
+   "note_evidence": "denies other substance use",
+   "rationale": "Denial of other substances documented."
+  },
+  {
+   "fact_id": "f15",
+   "status": "present",
+   "note_evidence": "BP 102/71 mmHg",
+   "rationale": "BP documented."
+  },
+  {
+   "fact_id": "f16",
+   "status": "present",
+   "note_evidence": "HR 70/min",
+   "rationale": "Heart rate documented."
+  },
+  {
+   "fact_id": "f17",
+   "status": "present",
+   "note_evidence": "RR 14/min",
+   "rationale": "Respiratory rate documented."
+  },
+  {
+   "fact_id": "f18",
+   "status": "present",
+   "note_evidence": "weight 81.8 kg, BMI 28.1 kg/m2... improved from the prior obesity-range documentation",
+   "rationale": "Weight, height, BMI and decrease documented."
+  },
+  {
+   "fact_id": "f19",
+   "status": "present",
+   "note_evidence": "mild maxillary tenderness with congested nasal mucosa... no purulence. Cardiovascular: regular rate and rhythm. Lungs: clear. Abdomen: soft, nontender",
+   "rationale": "Exam findings documented."
+  },
+  {
+   "fact_id": "f20",
+   "status": "present",
+   "note_evidence": "total cholesterol 148.41 mg/dL, triglycerides 126.54 mg/dL, direct LDL 64.34 mg/dL, HDL 58.76 mg/dL",
+   "rationale": "Lipid values documented."
+  },
+  {
+   "fact_id": "f21",
+   "status": "present",
+   "note_evidence": "WBC 7.41 10*3/uL, hemoglobin 12.31 g/dL... platelets 436.75 10*3/uL",
+   "rationale": "CBC values documented."
+  },
+  {
+   "fact_id": "f22",
+   "status": "present",
+   "note_evidence": "without features of acute bacterial infection today... Daily saline rinses through the winter; humidifier at night",
+   "rationale": "Conservative management, no antibiotics, saline, humidifier documented."
+  },
+  {
+   "fact_id": "f23",
+   "status": "present",
+   "note_evidence": "Return precautions: fever, tooth pain, or a week of steady worsening",
+   "rationale": "Return precautions documented."
+  },
+  {
+   "fact_id": "f24",
+   "status": "present",
+   "note_evidence": "bring all medication bottles, including leftover medications at home, to the next visit for full reconciliation",
+   "rationale": "Med reconciliation and bringing meds documented; antibiotics is extra detail."
+  },
+  {
+   "fact_id": "f25",
+   "status": "partial",
+   "note_evidence": "Influenza vaccine (split virus, trivalent, PF) administered today",
+   "rationale": "Vaccine and administration documented but left arm site not mentioned."
+  },
+  {
+   "fact_id": "f26",
+   "status": "present",
+   "note_evidence": "Positive reinforcement given; continue current activity and diet pattern",
+   "rationale": "Praise and encouragement to continue documented."
+  },
+  {
+   "fact_id": "f27",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "Note says continue screening but does not state screenings are up to date."
+  },
+  {
+   "fact_id": "f28",
+   "status": "present",
+   "note_evidence": "return in one year",
+   "rationale": "One-year follow-up documented."
+  },
+  {
+   "fact_id": "f29",
+   "status": "present",
+   "note_evidence": "health and social care needs assessment identified no unmet needs",
+   "rationale": "Assessment completion documented."
+  }
+ ]
+}

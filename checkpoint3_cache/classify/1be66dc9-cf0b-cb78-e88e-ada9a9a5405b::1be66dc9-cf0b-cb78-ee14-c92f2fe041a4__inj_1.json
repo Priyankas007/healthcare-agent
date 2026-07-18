@@ -1,0 +1,14 @@
+[
+ {
+  "fact_id": "f16",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Simvastatin is a relevant home medication for this patient's hypertriglyceridemia/metabolic syndrome and cardiovascular risk, and omitting it from reconciliation creates an incomplete medication list that could alter lipid management and drug-interaction screening."
+ },
+ {
+  "fact_id": "f28",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Poor oral intake during hospitalization is pertinent to nutritional planning, diabetes medication dosing, and hypoglycemia risk, and it contextualizes the deconditioning and dietitian involvement central to this admission."
+ }
+]

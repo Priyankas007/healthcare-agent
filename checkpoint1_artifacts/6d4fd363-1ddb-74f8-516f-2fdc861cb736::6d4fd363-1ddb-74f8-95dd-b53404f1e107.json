@@ -1,0 +1,551 @@
+{
+ "facts": [
+  {
+   "id": "f1",
+   "text": "Chronic low back pain for ~6 years, dull ache across the beltline, currently 3/10, climbing to 5-6/10 some evenings",
+   "type": "symptom",
+   "slots": {
+    "location": "low back/beltline",
+    "duration": "6 years",
+    "severity": "3/10, up to 5-6/10",
+    "quality": "dull ache"
+   },
+   "source": "both",
+   "transcript_quote": "Same one, going on six years now. A dull ache right across the beltline... Today it is about a three out of ten. Some evenings it climbs to a five or six.",
+   "fhir_ref": "Observation/6d4fd363-1ddb-74f8-bbd1-95d28b5626f2"
+  },
+  {
+   "id": "f2",
+   "text": "Back pain worse with prolonged sitting at computer and carrying laundry up three flights of stairs",
+   "type": "relieving_factor",
+   "slots": {
+    "aggravating": "prolonged sitting, hauling laundry upstairs"
+   },
+   "source": "transcript",
+   "transcript_quote": "Worse after I sit at the computer doing applications all day, or when I haul the laundry up to the third floor.",
+   "fhir_ref": null
+  },
+  {
+   "id": "f3",
+   "text": "Back pain relieved by stretching and heat",
+   "type": "relieving_factor",
+   "slots": {
+    "relieving": "stretching, heat"
+   },
+   "source": "transcript",
+   "transcript_quote": "Stretching helps some. Heat helps more.",
+   "fhir_ref": null
+  },
+  {
+   "id": "f4",
+   "text": "Denies numbness, tingling, or weakness in legs; denies bladder or bowel dysfunction",
+   "type": "red_flag_screen",
+   "slots": {
+    "screen": "cauda equina/radiculopathy red flags",
+    "result": "negative"
+   },
+   "source": "transcript",
+   "transcript_quote": "No, none of that. It stays in the back.",
+   "fhir_ref": null
+  },
+  {
+   "id": "f5",
+   "text": "Office blood pressure 106/67 mmHg",
+   "type": "observation",
+   "slots": {
+    "systolic": "106 mmHg",
+    "diastolic": "67 mmHg"
+   },
+   "source": "both",
+   "transcript_quote": "Your pressure here in the office is actually fine \u2014 one-oh-six over sixty-seven",
+   "fhir_ref": "Observation/6d4fd363-1ddb-74f8-90a9-82acc4d20f1c"
+  },
+  {
+   "id": "f6",
+   "text": "Home blood pressure readings run high, ~150s systolic most mornings",
+   "type": "observation",
+   "slots": {
+    "context": "home readings"
+   },
+   "source": "transcript",
+   "transcript_quote": "My wife's machine says one-fifty-something most mornings.",
+   "fhir_ref": null
+  },
+  {
+   "id": "f7",
+   "text": "Previously diagnosed hypertension went untreated; patient never started prescribed pills due to cost/insurance change",
+   "type": "condition",
+   "slots": {
+    "condition": "hypertension",
+    "status": "untreated"
+   },
+   "source": "transcript",
+   "transcript_quote": "the blood pressure problem we diagnosed a while back never actually got treated... The pharmacy said it would be forty bucks and I just... left it on the counter.",
+   "fhir_ref": null
+  },
+  {
+   "id": "f8",
+   "text": "Started lisinopril 10 mg oral tablet once daily in the morning for hypertension",
+   "type": "medication",
+   "slots": {
+    "drug": "lisinopril",
+    "dose": "10 mg",
+    "route": "oral",
+    "freq": "once daily (morning)",
+    "action": "started"
+   },
+   "source": "both",
+   "transcript_quote": "lisinopril ten milligrams once a day",
+   "fhir_ref": "MedicationRequest/6d4fd363-1ddb-74f8-20cf-226ba750f387"
+  },
+  {
+   "id": "f9",
+   "text": "Started amlodipine 2.5 mg oral tablet once daily in the morning for hypertension",
+   "type": "medication",
+   "slots": {
+    "drug": "amlodipine",
+    "dose": "2.5 mg",
+    "route": "oral",
+    "freq": "once daily (morning)",
+    "action": "started"
+   },
+   "source": "both",
+   "transcript_quote": "amlodipine two and a half milligrams once a day",
+   "fhir_ref": "MedicationRequest/6d4fd363-1ddb-74f8-6486-ed5b67d56952"
+  },
+  {
+   "id": "f10",
+   "text": "Started hydrochlorothiazide 25 mg oral tablet once daily in the morning for hypertension",
+   "type": "medication",
+   "slots": {
+    "drug": "hydrochlorothiazide",
+    "dose": "25 mg",
+    "route": "oral",
+    "freq": "once daily (morning)",
+    "action": "started"
+   },
+   "source": "both",
+   "transcript_quote": "hydrochlorothiazide twenty-five milligrams in the morning \u2014 that last one is a water pill",
+   "fhir_ref": "MedicationRequest/6d4fd363-1ddb-74f8-f443-78d0bc59244d"
+  },
+  {
+   "id": "f11",
+   "text": "Started acetaminophen (Tylenol) 325 mg oral tablet every 4-6 hours, scheduled, for back pain",
+   "type": "medication",
+   "slots": {
+    "drug": "acetaminophen (Tylenol)",
+    "dose": "325 mg",
+    "route": "oral",
+    "freq": "every 4-6 hours, scheduled",
+    "action": "started"
+   },
+   "source": "both",
+   "transcript_quote": "scheduled acetaminophen \u2014 plain Tylenol, the three-hundred-twenty-five-milligram tablets I am sending to the pharmacy",
+   "fhir_ref": "MedicationRequest/6d4fd363-1ddb-74f8-8ba9-18d7177f5bfc"
+  },
+  {
+   "id": "f12",
+   "text": "Counseled to report dizziness, lightheadedness, dry cough, or ankle swelling from new BP medications",
+   "type": "counseling",
+   "slots": {
+    "topic": "medication side effects"
+   },
+   "source": "transcript",
+   "transcript_quote": "If you get dizzy, lightheaded, a nagging dry cough, or ankle swelling, call me",
+   "fhir_ref": null
+  },
+  {
+   "id": "f13",
+   "text": "Counseled on non-pharmacologic back care: walking, stretching, avoiding prolonged sitting, standing every 30 minutes using a timer",
+   "type": "counseling",
+   "slots": {
+    "topic": "back pain management / activity"
+   },
+   "source": "transcript",
+   "transcript_quote": "the real medicine is movement: walking, the stretches we went over years ago, and no marathon sitting. Set a timer, stand up every half hour",
+   "fhir_ref": null
+  },
+  {
+   "id": "f14",
+   "text": "Unemployed since April due to warehouse shift being cut; job searching, financial strain",
+   "type": "sdoh",
+   "slots": {
+    "domain": "employment/financial",
+    "detail": "lost job April, unemployed"
+   },
+   "source": "both",
+   "transcript_quote": "the warehouse cut my whole shift in April, so I am out of work. I have been applying everywhere, nothing yet. Money is tight",
+   "fhir_ref": "Condition/6d4fd363-1ddb-74f8-d33c-cd22bb5c104b"
+  },
+  {
+   "id": "f15",
+   "text": "Poor housing conditions: broken air conditioning (reached 95\u00b0F), leak with mold growth under kitchen sink, broken elevator requiring three flights of stairs; unresponsive landlord",
+   "type": "sdoh",
+   "slots": {
+    "domain": "housing",
+    "detail": "unsafe housing conditions"
+   },
+   "source": "transcript",
+   "transcript_quote": "The air conditioning has been dead three weeks \u2014 it hit ninety-five in there last weekend. There is a leak under the kitchen sink growing something I do not want to name, and the elevator has been broken",
+   "fhir_ref": null
+  },
+  {
+   "id": "f16",
+   "text": "Provided tenant rights packet and county housing hotline information from front office",
+   "type": "counseling",
+   "slots": {
+    "topic": "housing resources"
+   },
+   "source": "transcript",
+   "transcript_quote": "Our front office keeps a packet on tenant rights and the county housing hotline. I am having them print it for you",
+   "fhir_ref": null
+  },
+  {
+   "id": "f17",
+   "text": "Reports job-loss stress with early morning waking (4 a.m.), but not falling apart; family working and covering rent",
+   "type": "symptom",
+   "slots": {
+    "type": "stress"
+   },
+   "source": "both",
+   "transcript_quote": "I am stressed, I will not lie. I wake up at four some mornings doing math in my head. But I am not falling apart.",
+   "fhir_ref": "Condition/6d4fd363-1ddb-74f8-bd31-282e497be7ad"
+  },
+  {
+   "id": "f18",
+   "text": "GAD-7 anxiety screen score of 1 (minimal), consistent with stress rather than anxiety disorder",
+   "type": "observation",
+   "slots": {
+    "instrument": "GAD-7",
+    "score": "1"
+   },
+   "source": "both",
+   "transcript_quote": "you scored a one, which is minimal, and that matches how you describe it. Stress, not an anxiety disorder.",
+   "fhir_ref": "Observation/6d4fd363-1ddb-74f8-d4ce-cdb9082595e1"
+  },
+  {
+   "id": "f19",
+   "text": "Counseled to report early if stress worsens to nightly waking or mood declines",
+   "type": "counseling",
+   "slots": {
+    "topic": "mental health follow-up"
+   },
+   "source": "transcript",
+   "transcript_quote": "If the four a.m. math sessions become every night, or the mood starts sinking, I want to hear about it early, not late.",
+   "fhir_ref": null
+  },
+  {
+   "id": "f20",
+   "text": "AUDIT-C score of 1, minimal alcohol use (a beer on Sundays)",
+   "type": "observation",
+   "slots": {
+    "instrument": "AUDIT-C",
+    "score": "1"
+   },
+   "source": "both",
+   "transcript_quote": "an AUDIT-C of one, no concern at all",
+   "fhir_ref": "Observation/6d4fd363-1ddb-74f8-057f-ca5c8b3a85af"
+  },
+  {
+   "id": "f21",
+   "text": "Ex-smoker, quit approximately 20 years ago",
+   "type": "observation",
+   "slots": {
+    "status": "ex-smoker",
+    "duration": "~20 years quit"
+   },
+   "source": "both",
+   "transcript_quote": "Almost twenty years quit.",
+   "fhir_ref": "Observation/6d4fd363-1ddb-74f8-db39-c4b64a4d3c1d"
+  },
+  {
+   "id": "f22",
+   "text": "Gingivitis: red, swollen lower gum line that bleeds with light touch",
+   "type": "condition",
+   "slots": {
+    "condition": "gingivitis",
+    "finding": "red, swollen, bleeding gums"
+   },
+   "source": "both",
+   "transcript_quote": "The gum line along the bottom teeth is red and swollen, and it bleeds with just a light touch. That is gingivitis.",
+   "fhir_ref": "Condition/6d4fd363-1ddb-74f8-3372-6652226a1c3e"
+  },
+  {
+   "id": "f23",
+   "text": "Referral placed to dental clinic (sliding-scale) for gingivitis cleaning and home care",
+   "type": "referral",
+   "slots": {
+    "to": "dental clinic",
+    "reason": "gingivitis"
+   },
+   "source": "both",
+   "transcript_quote": "I am putting in a referral to the dental clinic; they run a sliding-scale fee",
+   "fhir_ref": "Procedure/6d4fd363-1ddb-74f8-2b2c-6772da2c6fee"
+  },
+  {
+   "id": "f24",
+   "text": "Administered trivalent split-virus influenza vaccine, left arm",
+   "type": "procedure",
+   "slots": {
+    "vaccine": "influenza, split virus, trivalent, PF",
+    "site": "left arm"
+   },
+   "source": "both",
+   "transcript_quote": "flu shot. You are due, and it costs you nothing with the visit.",
+   "fhir_ref": "Immunization/6d4fd363-1ddb-74f8-b4ab-2cc79c81701e"
+  },
+  {
+   "id": "f25",
+   "text": "Follow-up in 4-6 weeks with home blood pressure log to monitor new medications",
+   "type": "followup",
+   "slots": {
+    "interval": "4-6 weeks",
+    "purpose": "review home BP log, assess BP meds"
+   },
+   "source": "transcript",
+   "transcript_quote": "I want you back in four to six weeks with the home blood pressure log so we can watch the new pills work.",
+   "fhir_ref": null
+  },
+  {
+   "id": "f26",
+   "text": "BMI 29.31 kg/m2 (height 162.1 cm, weight 77 kg)",
+   "type": "observation",
+   "slots": {
+    "bmi": "29.31 kg/m2",
+    "height": "162.1 cm",
+    "weight": "77 kg"
+   },
+   "source": "fhir",
+   "transcript_quote": null,
+   "fhir_ref": "Observation/6d4fd363-1ddb-74f8-f819-1d7724116e8a"
+  },
+  {
+   "id": "f27",
+   "text": "Heart rate 86 /min, respiratory rate 14 /min",
+   "type": "observation",
+   "slots": {
+    "heart_rate": "86 /min",
+    "respiratory_rate": "14 /min"
+   },
+   "source": "fhir",
+   "transcript_quote": null,
+   "fhir_ref": "Observation/6d4fd363-1ddb-74f8-4f7a-e71369ac6999"
+  },
+  {
+   "id": "f28",
+   "text": "PRAPARE screening: worried about losing housing, unable to afford utilities in past year; has housing; feels safe; income ~$118,890/yr; private insurance; 4 people in household; high school education",
+   "type": "sdoh",
+   "slots": {
+    "instrument": "PRAPARE",
+    "findings": "housing insecurity worry, utility insecurity"
+   },
+   "source": "fhir",
+   "transcript_quote": null,
+   "fhir_ref": "Observation/6d4fd363-1ddb-74f8-6d2f-061b7bab886a"
+  },
+  {
+   "id": "f29",
+   "text": "Medication review completed; patient had run out of all medications and stopped refilling after insurance switched to wife's plan",
+   "type": "other",
+   "slots": {
+    "detail": "medication reconciliation"
+   },
+   "source": "transcript",
+   "transcript_quote": "I ran out of everything months ago and stopped refilling when the insurance switched over to my wife's plan.",
+   "fhir_ref": null
+  },
+  {
+   "id": "f30",
+   "text": "Assessment of health and social care needs completed",
+   "type": "procedure",
+   "slots": {
+    "procedure": "assessment of health and social care needs"
+   },
+   "source": "fhir",
+   "transcript_quote": null,
+   "fhir_ref": "Procedure/6d4fd363-1ddb-74f8-d9c9-7260daeacc34"
+  }
+ ],
+ "presence": [
+  {
+   "fact_id": "f1",
+   "status": "present",
+   "note_evidence": "Chronic low back pain, present about six years, is a dull ache across the beltline, currently 3/10 and up to 5-6/10 by evening",
+   "rationale": "All slots documented."
+  },
+  {
+   "fact_id": "f2",
+   "status": "present",
+   "note_evidence": "aggravated by prolonged sitting during job applications and by carrying laundry up three flights of stairs",
+   "rationale": "Aggravating factors match."
+  },
+  {
+   "fact_id": "f3",
+   "status": "present",
+   "note_evidence": "improved with stretching and heat",
+   "rationale": "Relieving factors match."
+  },
+  {
+   "fact_id": "f4",
+   "status": "present",
+   "note_evidence": "He denies radicular pain, numbness, tingling, weakness, and bowel or bladder dysfunction.",
+   "rationale": "Red flag screen negative."
+  },
+  {
+   "fact_id": "f5",
+   "status": "present",
+   "note_evidence": "BP 106/67 mmHg",
+   "rationale": "Office BP documented."
+  },
+  {
+   "fact_id": "f6",
+   "status": "present",
+   "note_evidence": "home systolic readings in the 150s on his wife's monitor",
+   "rationale": "Home readings 150s systolic documented."
+  },
+  {
+   "fact_id": "f7",
+   "status": "present",
+   "note_evidence": "Essential hypertension was diagnosed previously but medication was never started after an insurance change and job loss",
+   "rationale": "Untreated prior HTN documented."
+  },
+  {
+   "fact_id": "f8",
+   "status": "present",
+   "note_evidence": "Start lisinopril 10 mg daily",
+   "rationale": "Drug, dose, frequency documented."
+  },
+  {
+   "fact_id": "f9",
+   "status": "present",
+   "note_evidence": "amlodipine 2.5 mg daily",
+   "rationale": "Drug, dose, frequency documented."
+  },
+  {
+   "fact_id": "f10",
+   "status": "present",
+   "note_evidence": "hydrochlorothiazide 25 mg daily \u2014 low-dose combination taken together each morning",
+   "rationale": "Drug, dose, frequency documented."
+  },
+  {
+   "fact_id": "f11",
+   "status": "partial",
+   "note_evidence": "Acetaminophen 325 mg oral tablets (Tylenol) prescribed for scheduled rather than crisis use",
+   "rationale": "Drug/dose/scheduled present but every 4-6 hours frequency not stated."
+  },
+  {
+   "fact_id": "f12",
+   "status": "present",
+   "note_evidence": "Counseled on dizziness, dry cough, and ankle swelling",
+   "rationale": "Side effect counseling documented."
+  },
+  {
+   "fact_id": "f13",
+   "status": "present",
+   "note_evidence": "Activity prescription: daily walking, previously taught stretches, standing breaks every 30 minutes during computer work",
+   "rationale": "Back care activity counseling documented."
+  },
+  {
+   "fact_id": "f14",
+   "status": "present",
+   "note_evidence": "laid off from warehouse work in April and is actively job hunting; he describes financial strain",
+   "rationale": "Unemployment/financial strain documented."
+  },
+  {
+   "fact_id": "f15",
+   "status": "present",
+   "note_evidence": "air conditioning nonfunctional for three weeks with indoor heat to 95 degrees, an unrepaired leak with suspected mold under the kitchen sink, a chronically broken elevator, and an unresponsive landlord",
+   "rationale": "Housing conditions documented."
+  },
+  {
+   "fact_id": "f16",
+   "status": "present",
+   "note_evidence": "Tenant-rights and county housing hotline resource packet provided at checkout",
+   "rationale": "Housing resources provided."
+  },
+  {
+   "fact_id": "f17",
+   "status": "present",
+   "note_evidence": "early-morning waking with rumination a few times weekly, but preserved mood, appetite, energy, and day-to-day functioning",
+   "rationale": "Job-loss stress with early waking, preserved functioning documented."
+  },
+  {
+   "fact_id": "f18",
+   "status": "present",
+   "note_evidence": "GAD-7 1, consistent with situational stress rather than an anxiety disorder",
+   "rationale": "GAD-7 score and interpretation documented."
+  },
+  {
+   "fact_id": "f19",
+   "status": "present",
+   "note_evidence": "Return earlier if sleep disruption becomes nightly or mood declines",
+   "rationale": "Follow-up counseling documented."
+  },
+  {
+   "fact_id": "f20",
+   "status": "present",
+   "note_evidence": "AUDIT-C 1",
+   "rationale": "AUDIT-C score and low alcohol use documented."
+  },
+  {
+   "fact_id": "f21",
+   "status": "present",
+   "note_evidence": "Ex-smoker since his late teens",
+   "rationale": "Ex-smoker status with quit timeframe roughly matching documented."
+  },
+  {
+   "fact_id": "f22",
+   "status": "present",
+   "note_evidence": "Mandibular gingiva erythematous and edematous with bleeding on light contact",
+   "rationale": "Gingivitis findings documented."
+  },
+  {
+   "fact_id": "f23",
+   "status": "present",
+   "note_evidence": "Patient referral for dental care placed to sliding-scale dental clinic",
+   "rationale": "Dental referral for gingivitis documented."
+  },
+  {
+   "fact_id": "f24",
+   "status": "partial",
+   "note_evidence": "Influenza vaccine (split virus, trivalent, preservative-free) administered",
+   "rationale": "Vaccine documented but injection site (left arm) not stated."
+  },
+  {
+   "fact_id": "f25",
+   "status": "present",
+   "note_evidence": "Return in 4-6 weeks with the log to titrate",
+   "rationale": "Follow-up with BP log documented."
+  },
+  {
+   "fact_id": "f26",
+   "status": "present",
+   "note_evidence": "weight 77 kg, height 162.1 cm, BMI 29.31 kg/m2",
+   "rationale": "BMI, height, weight documented."
+  },
+  {
+   "fact_id": "f27",
+   "status": "present",
+   "note_evidence": "HR 86/min, RR 14/min",
+   "rationale": "HR and RR documented."
+  },
+  {
+   "fact_id": "f28",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "PRAPARE instrument and specifics (income, insurance, education) not documented."
+  },
+  {
+   "fact_id": "f29",
+   "status": "partial",
+   "note_evidence": "Medication review due; no current medications after prior prescriptions lapsed",
+   "rationale": "Lapsed meds noted but review 'due' not completed and wife's-plan detail absent."
+  },
+  {
+   "fact_id": "f30",
+   "status": "present",
+   "note_evidence": "assessment of health and social care needs completed",
+   "rationale": "Assessment documented."
+  }
+ ]
+}

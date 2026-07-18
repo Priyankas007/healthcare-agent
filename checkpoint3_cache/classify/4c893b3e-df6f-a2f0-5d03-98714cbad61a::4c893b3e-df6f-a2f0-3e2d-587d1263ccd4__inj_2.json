@@ -1,0 +1,20 @@
+[
+ {
+  "fact_id": "f8",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Smoking status is essential for cardiovascular risk stratification given the elevated BP, obesity, and lipid discussion, and a documented remote quit completes the risk profile."
+ },
+ {
+  "fact_id": "f17",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "SDOH details on stable housing, safety, and insurance are reassuring negatives relevant to this patient's isolation but do not change immediate management."
+ },
+ {
+  "fact_id": "f33",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Documenting that a social needs assessment was performed supports completeness for a patient with social isolation but has limited direct clinical impact."
+ }
+]

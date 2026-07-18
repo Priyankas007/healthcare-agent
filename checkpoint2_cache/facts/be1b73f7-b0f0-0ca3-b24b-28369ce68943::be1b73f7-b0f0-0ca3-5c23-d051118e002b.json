@@ -1,0 +1,490 @@
+[
+ {
+  "id": "f1",
+  "text": "Patient presents for first adult physical/wellness visit (first physical since college)",
+  "type": "other",
+  "slots": {
+   "visit_type": "annual wellness/preventive"
+  },
+  "source": "transcript",
+  "transcript_quote": "first physical since... honestly, probably since college",
+  "fhir_ref": null
+ },
+ {
+  "id": "f2",
+  "text": "Patient reports weight gain since starting a sedentary desk job",
+  "type": "symptom",
+  "slots": {
+   "symptom": "weight gain",
+   "context": "sedentary desk job"
+  },
+  "source": "transcript",
+  "transcript_quote": "Maybe that I have put on weight since my desk job started. Otherwise I feel fine.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f3",
+  "text": "No known chronic medical conditions (no hypertension, diabetes, asthma)",
+  "type": "condition",
+  "slots": {
+   "status": "none"
+  },
+  "source": "transcript",
+  "transcript_quote": "Nothing. I have a pretty boring file, I think.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f4",
+  "text": "No prior surgeries or hospitalizations",
+  "type": "condition",
+  "slots": {
+   "status": "none"
+  },
+  "source": "transcript",
+  "transcript_quote": "Never. Not even stitches.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f5",
+  "text": "No active medications; patient takes no regular prescriptions, vitamins, or supplements",
+  "type": "medication",
+  "slots": {
+   "drug": "none"
+  },
+  "source": "both",
+  "transcript_quote": "Nothing regular.",
+  "fhir_ref": "Procedure/be1b73f7-b0f0-0ca3-14c0-ba32e62e57b1"
+ },
+ {
+  "id": "f6",
+  "text": "No known drug allergies",
+  "type": "other",
+  "slots": {
+   "allergy_status": "NKDA"
+  },
+  "source": "transcript",
+  "transcript_quote": "None that I know of.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f7",
+  "text": "Family history unknown/none reported for heart disease, diabetes, cancer",
+  "type": "other",
+  "slots": {
+   "family_history": "unknown"
+  },
+  "source": "transcript",
+  "transcript_quote": "Honestly, nothing anyone has told me. My family is not big on talking about health.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f8",
+  "text": "Never smoker / no tobacco use",
+  "type": "sdoh",
+  "slots": {
+   "substance": "tobacco",
+   "status": "never"
+  },
+  "source": "both",
+  "transcript_quote": "Never. Cannot stand the smell.",
+  "fhir_ref": "Observation/be1b73f7-b0f0-0ca3-38f3-c2930a20cc4a"
+ },
+ {
+  "id": "f9",
+  "text": "Occasional alcohol use, one to two drinks about twice a month",
+  "type": "sdoh",
+  "slots": {
+   "substance": "alcohol",
+   "amount": "1-2 drinks",
+   "frequency": "twice a month"
+  },
+  "source": "transcript",
+  "transcript_quote": "Occasionally \u2014 a drink or two if I am out with friends, maybe twice a month.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f10",
+  "text": "Occasional cannabis use (edibles a couple times a month); DAST-10 score 2, no functional problems",
+  "type": "sdoh",
+  "slots": {
+   "substance": "cannabis",
+   "frequency": "couple times a month",
+   "score": "DAST-10 = 2"
+  },
+  "source": "both",
+  "transcript_quote": "some weed now and then. Edibles mostly, a couple of times a month.",
+  "fhir_ref": "Observation/be1b73f7-b0f0-0ca3-c9bd-6f3d5a90be29"
+ },
+ {
+  "id": "f11",
+  "text": "Lives with three roommates (4 people at address); shared housing, stable housing",
+  "type": "sdoh",
+  "slots": {
+   "living_situation": "shares house with 3 roommates"
+  },
+  "source": "both",
+  "transcript_quote": "I share a house with three roommates.",
+  "fhir_ref": "Observation/be1b73f7-b0f0-0ca3-afee-d3c77a674f15"
+ },
+ {
+  "id": "f12",
+  "text": "Employed full-time as a graphic designer, mostly remote; highly sedentary work",
+  "type": "sdoh",
+  "slots": {
+   "employment": "full-time graphic design, remote"
+  },
+  "source": "both",
+  "transcript_quote": "Graphic design, full time, mostly remote. It pays fine. I just sit way too much.",
+  "fhir_ref": "Condition/be1b73f7-b0f0-0ca3-c0da-7972e932db09"
+ },
+ {
+  "id": "f13",
+  "text": "Neighborhood violence exposure (shootings and an assault nearby); background stress affecting sense of safety walking home at night",
+  "type": "sdoh",
+  "slots": {
+   "issue": "community violence exposure"
+  },
+  "source": "transcript",
+  "transcript_quote": "there have been a couple of shootings a few blocks over this year, and someone got jumped outside the corner store last month",
+  "fhir_ref": null
+ },
+ {
+  "id": "f14",
+  "text": "Feels safe inside home but less safe walking home late; times runs for daylight",
+  "type": "sdoh",
+  "slots": {
+   "safety": "safe at home, unsafe walking at night"
+  },
+  "source": "transcript",
+  "transcript_quote": "In the house, yes. Walking home late, less so. I time my runs for daylight now.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f15",
+  "text": "Uninsured (no primary insurance)",
+  "type": "sdoh",
+  "slots": {
+   "insurance": "none/uninsured"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Observation/be1b73f7-b0f0-0ca3-afee-d3c77a674f15"
+ },
+ {
+  "id": "f16",
+  "text": "GAD-7 anxiety screen score 1 (minimal)",
+  "type": "observation",
+  "slots": {
+   "test": "GAD-7",
+   "score": "1"
+  },
+  "source": "both",
+  "transcript_quote": "Your anxiety score was a one, basically minimal.",
+  "fhir_ref": "Observation/be1b73f7-b0f0-0ca3-7f6e-86c5912d006d"
+ },
+ {
+  "id": "f17",
+  "text": "PHQ-2 depression screen score 2 (below threshold of concern)",
+  "type": "observation",
+  "slots": {
+   "test": "PHQ-2",
+   "score": "2"
+  },
+  "source": "both",
+  "transcript_quote": "The depression screen came to a two \u2014 below the level we worry about",
+  "fhir_ref": "Observation/be1b73f7-b0f0-0ca3-178e-47f5258d368c"
+ },
+ {
+  "id": "f18",
+  "text": "Occasional low mood ('gray Sundays') lasting no more than a day or two; sleep, appetite, energy normal",
+  "type": "symptom",
+  "slots": {
+   "symptom": "occasional transient low mood"
+  },
+  "source": "transcript",
+  "transcript_quote": "Sometimes, sure. Gray Sundays. Nothing that sticks around past a day or two.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f19",
+  "text": "HARK domestic abuse screen negative (score 0); no partner violence, patient single",
+  "type": "red_flag_screen",
+  "slots": {
+   "test": "HARK",
+   "score": "0",
+   "result": "negative"
+  },
+  "source": "both",
+  "transcript_quote": "No, nothing like that. I am single anyway",
+  "fhir_ref": "Observation/be1b73f7-b0f0-0ca3-8d0b-0a1d0081944c"
+ },
+ {
+  "id": "f20",
+  "text": "Cardiac exam: heart sounds regular",
+  "type": "observation",
+  "slots": {
+   "exam": "cardiac",
+   "finding": "regular rate/rhythm"
+  },
+  "source": "transcript",
+  "transcript_quote": "Heart sounds nice and regular.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f21",
+  "text": "Pulmonary exam: lungs clear",
+  "type": "observation",
+  "slots": {
+   "exam": "respiratory",
+   "finding": "clear"
+  },
+  "source": "transcript",
+  "transcript_quote": "lungs are clear",
+  "fhir_ref": null
+ },
+ {
+  "id": "f22",
+  "text": "Abdominal exam: no tenderness",
+  "type": "observation",
+  "slots": {
+   "exam": "abdomen",
+   "finding": "nontender"
+  },
+  "source": "transcript",
+  "transcript_quote": "any tenderness when I press here?",
+  "fhir_ref": null
+ },
+ {
+  "id": "f23",
+  "text": "Blood pressure 103/67 mm Hg (normal)",
+  "type": "observation",
+  "slots": {
+   "test": "BP",
+   "value": "103/67 mmHg"
+  },
+  "source": "both",
+  "transcript_quote": "Blood pressure is one-oh-three over sixty-seven, which is great.",
+  "fhir_ref": "Observation/be1b73f7-b0f0-0ca3-1add-7a51e6b96d22"
+ },
+ {
+  "id": "f24",
+  "text": "Heart rate 69 /min",
+  "type": "observation",
+  "slots": {
+   "test": "heart rate",
+   "value": "69/min"
+  },
+  "source": "both",
+  "transcript_quote": "Pulse sixty-nine",
+  "fhir_ref": "Observation/be1b73f7-b0f0-0ca3-35d9-ae9e17c831b1"
+ },
+ {
+  "id": "f25",
+  "text": "Respiratory rate 15 /min",
+  "type": "observation",
+  "slots": {
+   "test": "respiratory rate",
+   "value": "15/min"
+  },
+  "source": "both",
+  "transcript_quote": "breathing fifteen a minute",
+  "fhir_ref": "Observation/be1b73f7-b0f0-0ca3-ba09-4f0bfa7e63ad"
+ },
+ {
+  "id": "f26",
+  "text": "Height 164.3 cm, weight 84.9 kg, BMI 31.45 kg/m2 (obese range)",
+  "type": "observation",
+  "slots": {
+   "height": "164.3 cm",
+   "weight": "84.9 kg",
+   "BMI": "31.45"
+  },
+  "source": "both",
+  "transcript_quote": "Height one sixty-four, weight eighty-four point nine kilos, so the body mass index comes to about thirty-one and a half, which crosses into the obese range",
+  "fhir_ref": "Observation/be1b73f7-b0f0-0ca3-3092-84d78440e3fe"
+ },
+ {
+  "id": "f27",
+  "text": "Obesity (BMI 31.45) identified and addressed",
+  "type": "condition",
+  "slots": {
+   "condition": "obesity",
+   "BMI": "31.45"
+  },
+  "source": "both",
+  "transcript_quote": "which crosses into the obese range on paper",
+  "fhir_ref": "Observation/be1b73f7-b0f0-0ca3-3092-84d78440e3fe"
+ },
+ {
+  "id": "f28",
+  "text": "Lipid panel: Total cholesterol 110 mg/dL, LDL 36 mg/dL, HDL 51 mg/dL, triglycerides 117 mg/dL (excellent)",
+  "type": "observation",
+  "slots": {
+   "total_chol": "110",
+   "LDL": "36",
+   "HDL": "51",
+   "triglycerides": "117"
+  },
+  "source": "both",
+  "transcript_quote": "Total cholesterol one-ten, the LDL \u2014 the bad one \u2014 around thirty-six, HDL fifty-one, triglycerides one-seventeen.",
+  "fhir_ref": "DiagnosticReport/be1b73f7-b0f0-0ca3-a208-e4261ffd406e"
+ },
+ {
+  "id": "f29",
+  "text": "Patient currently exercises: runs about twice a week",
+  "type": "other",
+  "slots": {
+   "activity": "running twice weekly"
+  },
+  "source": "transcript",
+  "transcript_quote": "I run, when the weather and the neighborhood cooperate. Maybe twice a week.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f30",
+  "text": "Counseled to do 3 runs or brisk walks per week, 30-40 minutes, in daylight",
+  "type": "counseling",
+  "slots": {
+   "topic": "exercise",
+   "recommendation": "3x/week 30-40 min brisk walk/run"
+  },
+  "source": "transcript",
+  "transcript_quote": "three runs or brisk walks a week, thirty to forty minutes, daylight hours",
+  "fhir_ref": null
+ },
+ {
+  "id": "f31",
+  "text": "Counseled on dietary change \u2014 swap snacks rather than starve",
+  "type": "counseling",
+  "slots": {
+   "topic": "diet"
+  },
+  "source": "transcript",
+  "transcript_quote": "look at the snacking \u2014 swap it, do not starve",
+  "fhir_ref": null
+ },
+ {
+  "id": "f32",
+  "text": "Counseled on standing desk / reducing sedentary time",
+  "type": "counseling",
+  "slots": {
+   "topic": "sedentary behavior"
+  },
+  "source": "transcript",
+  "transcript_quote": "even alternating an hour up, an hour down changes how much you move",
+  "fhir_ref": null
+ },
+ {
+  "id": "f33",
+  "text": "Nutrition class referral offered; patient declined for now, will try self-directed first",
+  "type": "referral",
+  "slots": {
+   "referral": "nutrition class",
+   "status": "offered/declined"
+  },
+  "source": "transcript",
+  "transcript_quote": "I can refer you to a nutrition class if structure helps. / Let me try the do-it-myself version first.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f34",
+  "text": "Administered Td (adult tetanus-diphtheria) booster in left arm (overdue)",
+  "type": "procedure",
+  "slots": {
+   "vaccine": "Td adult",
+   "site": "left arm"
+  },
+  "source": "both",
+  "transcript_quote": "Your tetanus booster is overdue \u2014 the adult Td",
+  "fhir_ref": "Immunization/be1b73f7-b0f0-0ca3-7a29-13cd41ad7f55"
+ },
+ {
+  "id": "f35",
+  "text": "Administered influenza vaccine (trivalent split virus, PF) in right arm",
+  "type": "procedure",
+  "slots": {
+   "vaccine": "influenza",
+   "site": "right arm"
+  },
+  "source": "both",
+  "transcript_quote": "I would do the flu shot as well",
+  "fhir_ref": "Immunization/be1b73f7-b0f0-0ca3-5f7e-bc4e5b59ddde"
+ },
+ {
+  "id": "f36",
+  "text": "Medication reconciliation completed; documented no active medications",
+  "type": "procedure",
+  "slots": {
+   "procedure": "medication reconciliation"
+  },
+  "source": "both",
+  "transcript_quote": "I will document officially that you have no active medications",
+  "fhir_ref": "Procedure/be1b73f7-b0f0-0ca3-14c0-ba32e62e57b1"
+ },
+ {
+  "id": "f37",
+  "text": "Follow-up in one year for annual visit; return sooner if concerns arise",
+  "type": "followup",
+  "slots": {
+   "interval": "1 year"
+  },
+  "source": "transcript",
+  "transcript_quote": "You should come back \u2014 not in a decade, in a year. Sooner if anything comes up.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f38",
+  "text": "Counseled to contact clinic if neighborhood stress worsens (sleep changes, spiraling worry)",
+  "type": "counseling",
+  "slots": {
+   "topic": "mental health/stress safety-net"
+  },
+  "source": "transcript",
+  "transcript_quote": "if the neighborhood stress ever starts weighing heavier \u2014 sleep changing, worry spiraling \u2014 call us",
+  "fhir_ref": null
+ },
+ {
+  "id": "f39",
+  "text": "Counseled that whole-body screening scans are not recommended; routine annual visit, vaccines, and screening are appropriate at his age",
+  "type": "counseling",
+  "slots": {
+   "topic": "screening / avoid unnecessary imaging"
+  },
+  "source": "transcript",
+  "transcript_quote": "Skip the scans \u2014 that is marketing, mostly.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f40",
+  "text": "Advised post-vaccination arm soreness expected; keep both arms moving",
+  "type": "counseling",
+  "slots": {
+   "topic": "vaccine aftercare"
+  },
+  "source": "transcript",
+  "transcript_quote": "Keep both arms moving today and tomorrow.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f41",
+  "text": "PRAPARE social needs assessment completed; overall stress level reported 'Not at all', housing stable, no transportation barriers",
+  "type": "procedure",
+  "slots": {
+   "assessment": "PRAPARE"
+  },
+  "source": "both",
+  "transcript_quote": "The nurse also ran the mood questionnaires",
+  "fhir_ref": "Observation/be1b73f7-b0f0-0ca3-afee-d3c77a674f15"
+ },
+ {
+  "id": "f42",
+  "text": "Substance use assessment counseling: offered nonjudgmental support if cannabis use becomes a need",
+  "type": "counseling",
+  "slots": {
+   "topic": "substance use"
+  },
+  "source": "transcript",
+  "transcript_quote": "If it ever starts feeling like a need instead of a choice, that is a conversation we can have here without judgment.",
+  "fhir_ref": "Procedure/be1b73f7-b0f0-0ca3-dac1-5b40539c4ad1"
+ }
+]

@@ -1,0 +1,187 @@
+{
+ "note_version_id": "6d4fd363-1ddb-74f8-516f-2fdc861cb736::6d4fd363-1ddb-74f8-95dd-b53404f1e107__inj_1",
+ "injected_fact_id": "f8",
+ "detected_absent_fact_ids": [
+  "f8",
+  "f28"
+ ],
+ "caught": true,
+ "collateral_flips": [],
+ "n_present_on_provided": 26,
+ "presence_results": [
+  {
+   "fact_id": "f1",
+   "status": "present",
+   "note_evidence": "Chronic low back pain, present about six years, is a dull ache across the beltline, currently 3/10 and up to 5-6/10 by evening, aggravated by prolonged sitting during job applications and by carrying laundry up three flights of stairs",
+   "rationale": "Duration, location, severity, and aggravating factors all documented."
+  },
+  {
+   "fact_id": "f2",
+   "status": "present",
+   "note_evidence": "He denies radicular pain, numbness, tingling, weakness, and bowel or bladder dysfunction.",
+   "rationale": "Negative red-flag screen explicitly documented."
+  },
+  {
+   "fact_id": "f3",
+   "status": "present",
+   "note_evidence": "improved with stretching and heat",
+   "rationale": "Relieving factors documented."
+  },
+  {
+   "fact_id": "f4",
+   "status": "present",
+   "note_evidence": "no current medications after prior prescriptions lapsed",
+   "rationale": "Prior meds stopped/lapsed after insurance change documented."
+  },
+  {
+   "fact_id": "f5",
+   "status": "present",
+   "note_evidence": "Essential hypertension was diagnosed previously but medication was never started after an insurance change and job loss",
+   "rationale": "Previously diagnosed untreated hypertension documented."
+  },
+  {
+   "fact_id": "f6",
+   "status": "present",
+   "note_evidence": "BP 106/67 mmHg",
+   "rationale": "Office BP documented."
+  },
+  {
+   "fact_id": "f7",
+   "status": "present",
+   "note_evidence": "home readings reportedly run in the 150s systolic",
+   "rationale": "Elevated home systolic readings documented."
+  },
+  {
+   "fact_id": "f8",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "Note started amlodipine and HCTZ, not lisinopril."
+  },
+  {
+   "fact_id": "f9",
+   "status": "present",
+   "note_evidence": "Start amlodipine 2.5 mg daily",
+   "rationale": "Amlodipine start, dose, morning dosing documented."
+  },
+  {
+   "fact_id": "f10",
+   "status": "present",
+   "note_evidence": "hydrochlorothiazide 25 mg daily \u2014 low-dose combination taken together each morning",
+   "rationale": "HCTZ start, dose, morning dosing documented."
+  },
+  {
+   "fact_id": "f11",
+   "status": "present",
+   "note_evidence": "Counseled on dizziness, dry cough, and ankle swelling",
+   "rationale": "Side-effect counseling documented."
+  },
+  {
+   "fact_id": "f12",
+   "status": "present",
+   "note_evidence": "Acetaminophen 325 mg oral tablets (Tylenol) prescribed for scheduled rather than crisis use",
+   "rationale": "Scheduled acetaminophen with dose documented."
+  },
+  {
+   "fact_id": "f13",
+   "status": "present",
+   "note_evidence": "Activity prescription: daily walking, previously taught stretches, standing breaks every 30 minutes during computer work",
+   "rationale": "Activity/exercise counseling documented."
+  },
+  {
+   "fact_id": "f14",
+   "status": "present",
+   "note_evidence": "He was laid off from warehouse work in April and is actively job hunting; he describes financial strain",
+   "rationale": "Job loss and financial strain documented."
+  },
+  {
+   "fact_id": "f15",
+   "status": "present",
+   "note_evidence": "air conditioning nonfunctional for three weeks with indoor heat to 95 degrees, an unrepaired leak with suspected mold under the kitchen sink, a chronically broken elevator, and an unresponsive landlord",
+   "rationale": "All housing conditions documented."
+  },
+  {
+   "fact_id": "f16",
+   "status": "present",
+   "note_evidence": "Tenant-rights and county housing hotline resource packet provided at checkout",
+   "rationale": "Housing resources provided documented."
+  },
+  {
+   "fact_id": "f17",
+   "status": "present",
+   "note_evidence": "early-morning waking with rumination a few times weekly, but preserved mood, appetite, energy, and day-to-day functioning",
+   "rationale": "Stress with early waking but coping documented."
+  },
+  {
+   "fact_id": "f18",
+   "status": "present",
+   "note_evidence": "GAD-7 1, consistent with situational stress rather than an anxiety disorder",
+   "rationale": "GAD-7 score and interpretation documented."
+  },
+  {
+   "fact_id": "f19",
+   "status": "present",
+   "note_evidence": "Return earlier if sleep disruption becomes nightly or mood declines",
+   "rationale": "Follow-up counseling documented."
+  },
+  {
+   "fact_id": "f20",
+   "status": "present",
+   "note_evidence": "alcohol about one beer weekly ... AUDIT-C 1",
+   "rationale": "Minimal alcohol use and AUDIT-C score documented."
+  },
+  {
+   "fact_id": "f21",
+   "status": "present",
+   "note_evidence": "Ex-smoker since his late teens",
+   "rationale": "Former smoker who quit ~two decades ago (age 36) documented."
+  },
+  {
+   "fact_id": "f22",
+   "status": "present",
+   "note_evidence": "Mandibular gingiva erythematous and edematous with bleeding on light contact",
+   "rationale": "Gingivitis findings documented."
+  },
+  {
+   "fact_id": "f23",
+   "status": "present",
+   "note_evidence": "Patient referral for dental care placed to sliding-scale dental clinic",
+   "rationale": "Dental referral documented."
+  },
+  {
+   "fact_id": "f24",
+   "status": "partial",
+   "note_evidence": "Influenza vaccine (split virus, trivalent, preservative-free) administered",
+   "rationale": "Vaccine documented but injection site not stated."
+  },
+  {
+   "fact_id": "f25",
+   "status": "present",
+   "note_evidence": "Return in 4-6 weeks with the log to titrate",
+   "rationale": "Follow-up interval and BP log documented."
+  },
+  {
+   "fact_id": "f26",
+   "status": "present",
+   "note_evidence": "weight 77 kg, height 162.1 cm, BMI 29.31 kg/m2",
+   "rationale": "BMI, height, weight documented."
+  },
+  {
+   "fact_id": "f27",
+   "status": "present",
+   "note_evidence": "HR 86/min, RR 14/min",
+   "rationale": "Heart rate and respiratory rate documented."
+  },
+  {
+   "fact_id": "f28",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "PRAPARE instrument, utilities need, and private insurance not documented."
+  },
+  {
+   "fact_id": "f29",
+   "status": "present",
+   "note_evidence": "assessment of health and social care needs completed",
+   "rationale": "Assessment explicitly documented."
+  }
+ ]
+}

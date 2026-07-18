@@ -1,0 +1,460 @@
+[
+ {
+  "id": "f1",
+  "text": "Annual wellness/health maintenance visit performed",
+  "type": "procedure",
+  "slots": {
+   "visit_type": "annual physical"
+  },
+  "source": "transcript",
+  "transcript_quote": "So today is your yearly check \u2014 the full once-over.",
+  "fhir_ref": "DiagnosticReport/b9045914-b8c8-d758-7eb5-f88cc5028cc4"
+ },
+ {
+  "id": "f2",
+  "text": "Patient reports feeling mostly well since last year",
+  "type": "symptom",
+  "slots": {
+   "status": "well"
+  },
+  "source": "transcript",
+  "transcript_quote": "Thanks be to God, mostly good. I keep busy.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f3",
+  "text": "Knee osteoarthritis currently asymptomatic; worse in winter, better in summer",
+  "type": "symptom",
+  "slots": {
+   "site": "knee",
+   "condition": "arthritis",
+   "aggravating": "winter/cold",
+   "relieving": "summer/warmth"
+  },
+  "source": "transcript",
+  "transcript_quote": "Today, quiet. Zero complaints... it's the winter when it creaks like my kitchen door.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f4",
+  "text": "Naproxen 220 mg oral tablet, one with breakfast as needed for knee pain, taken with food; some weeks none",
+  "type": "medication",
+  "slots": {
+   "drug": "naproxen",
+   "dose": "220 mg",
+   "route": "oral",
+   "freq": "PRN with breakfast",
+   "indication": "knee arthritis pain"
+  },
+  "source": "transcript",
+  "transcript_quote": "I take the naproxen, the little blue ones from the pharmacy, 220, one with breakfast, and that settles it.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f5",
+  "text": "Denies GI red flags from NSAID use: no stomach burning, no black stools; no knee swelling",
+  "type": "red_flag_screen",
+  "slots": {
+   "denies": [
+    "epigastric burning",
+    "melena",
+    "knee swelling"
+   ]
+  },
+  "source": "transcript",
+  "transcript_quote": "No stomach burning, no black stools, no swelling in the knee?",
+  "fhir_ref": null
+ },
+ {
+  "id": "f6",
+  "text": "Denies chest pain, shortness of breath, and palpitations",
+  "type": "red_flag_screen",
+  "slots": {
+   "denies": [
+    "chest pain",
+    "dyspnea",
+    "palpitations"
+   ]
+  },
+  "source": "transcript",
+  "transcript_quote": "Any chest pain, shortness of breath, palpitations?",
+  "fhir_ref": null
+ },
+ {
+  "id": "f7",
+  "text": "Walks to market 15 minutes each way, uphill on return, without limitation",
+  "type": "symptom",
+  "slots": {
+   "activity": "walking",
+   "tolerance": "no limitation"
+  },
+  "source": "transcript",
+  "transcript_quote": "I walk to the market and back, fifteen minutes each way, no problem. Uphill on the way home",
+  "fhir_ref": null
+ },
+ {
+  "id": "f8",
+  "text": "Denies dizziness, headaches, vision changes, and numbness",
+  "type": "red_flag_screen",
+  "slots": {
+   "denies": [
+    "dizziness",
+    "headache",
+    "vision changes",
+    "numbness"
+   ]
+  },
+  "source": "transcript",
+  "transcript_quote": "Any dizziness, headaches, changes in your vision, numbness?",
+  "fhir_ref": null
+ },
+ {
+  "id": "f9",
+  "text": "Sleep: sleeps well until 5 a.m. then early morning worrying/waking for ~20 minutes; appetite normal",
+  "type": "symptom",
+  "slots": {
+   "issue": "early morning awakening",
+   "duration": "~20 minutes"
+  },
+  "source": "transcript",
+  "transcript_quote": "I sleep like a stone until five, then the worrying shift begins.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f10",
+  "text": "PHQ-2 depression screen negative, score 0",
+  "type": "observation",
+  "slots": {
+   "instrument": "PHQ-2",
+   "score": "0",
+   "interpretation": "negative"
+  },
+  "source": "both",
+  "transcript_quote": "In the past two weeks, little interest or pleasure in things you usually enjoy?",
+  "fhir_ref": "Observation/73043f9e-3254-a1d3-c998-91948f9ab6e7"
+ },
+ {
+  "id": "f11",
+  "text": "GAD-7 anxiety screen score 5, mild anxiety",
+  "type": "observation",
+  "slots": {
+   "instrument": "GAD-7",
+   "score": "5",
+   "interpretation": "mild"
+  },
+  "source": "both",
+  "transcript_quote": "That puts your anxiety score at a five \u2014 mild territory.",
+  "fhir_ref": "Observation/73043f9e-3254-a1d3-137c-05ffb42dd278"
+ },
+ {
+  "id": "f12",
+  "text": "HARK domestic abuse screen negative, score 0; patient reports feeling safe at home",
+  "type": "red_flag_screen",
+  "slots": {
+   "instrument": "HARK",
+   "score": "0",
+   "interpretation": "negative"
+  },
+  "source": "both",
+  "transcript_quote": "In my house now it is me, my daughter, and three noisy angels. I am safe. I promise you that.",
+  "fhir_ref": "Observation/73043f9e-3254-a1d3-8a7f-a59fee902c19"
+ },
+ {
+  "id": "f13",
+  "text": "Prior history of intimate partner violence with first husband, no longer in her life",
+  "type": "sdoh",
+  "slots": {
+   "category": "past IPV",
+   "current_risk": "none"
+  },
+  "source": "transcript",
+  "transcript_quote": "That was my first husband, many years ago, another lifetime. He is long gone from my life.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f14",
+  "text": "Tobacco status: ex-smoker, quit ~50 years ago after brief teenage use",
+  "type": "sdoh",
+  "slots": {
+   "substance": "tobacco",
+   "status": "ex-smoker",
+   "quit": "~50 years ago"
+  },
+  "source": "both",
+  "transcript_quote": "Two years of smoking when I was a teenager... That was almost fifty years ago.",
+  "fhir_ref": "Observation/73043f9e-3254-a1d3-b666-4eb44b72e73b"
+ },
+ {
+  "id": "f15",
+  "text": "Alcohol use minimal (a cup of wine at Christmas); DAST-10 drug screen score 0",
+  "type": "observation",
+  "slots": {
+   "instrument": "DAST-10",
+   "score": "0",
+   "alcohol": "minimal"
+  },
+  "source": "both",
+  "transcript_quote": "A little cup of wine at Christmas. Otherwise no, nothing, never.",
+  "fhir_ref": "Observation/73043f9e-3254-a1d3-d572-f271f9c410be"
+ },
+ {
+  "id": "f16",
+  "text": "Medication reconciliation completed; only naproxen 220 mg PRN plus manzanilla (chamomile) tea, no other supplements",
+  "type": "procedure",
+  "slots": {
+   "procedure": "medication reconciliation"
+  },
+  "source": "both",
+  "transcript_quote": "Reconciled and official.",
+  "fhir_ref": "Procedure/73043f9e-3254-a1d3-1841-219105d308a4"
+ },
+ {
+  "id": "f17",
+  "text": "Blood pressure 135/82 mmHg, mildly elevated systolic, not requiring medication",
+  "type": "observation",
+  "slots": {
+   "test": "blood pressure",
+   "value": "135/82 mmHg",
+   "interpretation": "slightly elevated"
+  },
+  "source": "both",
+  "transcript_quote": "Blood pressure today: 135 over 82. The top number is a touch above perfect",
+  "fhir_ref": "Observation/73043f9e-3254-a1d3-5975-e03888798a5e"
+ },
+ {
+  "id": "f18",
+  "text": "Heart rate 60/min, respiratory rate 12/min",
+  "type": "observation",
+  "slots": {
+   "heart_rate": "60/min",
+   "resp_rate": "12/min"
+  },
+  "source": "both",
+  "transcript_quote": "Heart rate 60 and steady, breathing 12",
+  "fhir_ref": "Observation/73043f9e-3254-a1d3-883a-972b215eba9f"
+ },
+ {
+  "id": "f19",
+  "text": "Weight 73.8 kg, down from prior 78 kg; BMI 27.7",
+  "type": "observation",
+  "slots": {
+   "weight": "73.8 kg",
+   "BMI": "27.7",
+   "trend": "decreasing"
+  },
+  "source": "both",
+  "transcript_quote": "your weight is 73.8 kilos... your BMI is 27.7 now.",
+  "fhir_ref": "Observation/73043f9e-3254-a1d3-63a7-f7a7489e30ba"
+ },
+ {
+  "id": "f20",
+  "text": "Hemoglobin A1c 6.11%, consistent with prediabetes, stable from last year",
+  "type": "observation",
+  "slots": {
+   "test": "HbA1c",
+   "value": "6.11%",
+   "interpretation": "prediabetes, stable"
+  },
+  "source": "both",
+  "transcript_quote": "the A1c \u2014 is 6.11 percent. Still prediabetes, same neighborhood as last year",
+  "fhir_ref": "Observation/73043f9e-3254-a1d3-b58d-33c3c94c4c3b"
+ },
+ {
+  "id": "f21",
+  "text": "Random blood glucose 79 mg/dL",
+  "type": "observation",
+  "slots": {
+   "test": "glucose",
+   "value": "79 mg/dL"
+  },
+  "source": "both",
+  "transcript_quote": "Today's sugar was 79, which is lovely.",
+  "fhir_ref": "Observation/73043f9e-3254-a1d3-a418-5d4865124ef1"
+ },
+ {
+  "id": "f22",
+  "text": "Creatinine 0.68 mg/dL, normal renal function",
+  "type": "observation",
+  "slots": {
+   "test": "creatinine",
+   "value": "0.68 mg/dL"
+  },
+  "source": "both",
+  "transcript_quote": "Kidneys perfect \u2014 creatinine 0.68.",
+  "fhir_ref": "Observation/73043f9e-3254-a1d3-7dba-044c2210dd70"
+ },
+ {
+  "id": "f23",
+  "text": "Sodium 138 mmol/L, potassium 3.9 mmol/L",
+  "type": "observation",
+  "slots": {
+   "sodium": "138 mmol/L",
+   "potassium": "3.9 mmol/L"
+  },
+  "source": "both",
+  "transcript_quote": "Sodium 138, potassium 3.9.",
+  "fhir_ref": "Observation/73043f9e-3254-a1d3-5289-4eee1d539e50"
+ },
+ {
+  "id": "f24",
+  "text": "Lipid panel: total cholesterol 168, LDL 87, HDL 59, triglycerides 110 mg/dL; well-controlled hyperlipidemia",
+  "type": "observation",
+  "slots": {
+   "total_chol": "168",
+   "LDL": "87",
+   "HDL": "59",
+   "triglycerides": "110",
+   "interpretation": "good"
+  },
+  "source": "both",
+  "transcript_quote": "Total cholesterol 168, the bad LDL is 87, the good HDL is 59, triglycerides 110.",
+  "fhir_ref": "DiagnosticReport/73043f9e-3254-a1d3-3b06-344ca27a7c2a"
+ },
+ {
+  "id": "f25",
+  "text": "CBC: hemoglobin 16.9 g/dL, hematocrit 47.6%, platelets 351, WBC 7.4; no anemia, prior anemia resolved",
+  "type": "observation",
+  "slots": {
+   "hemoglobin": "16.9 g/dL",
+   "hematocrit": "47.6%",
+   "platelets": "351",
+   "WBC": "7.4",
+   "interpretation": "no anemia"
+  },
+  "source": "both",
+  "transcript_quote": "hemoglobin 16.9, hematocrit 47.6 \u2014 no sign of the old anemia today",
+  "fhir_ref": "DiagnosticReport/73043f9e-3254-a1d3-2649-d68b24a78ce4"
+ },
+ {
+  "id": "f26",
+  "text": "Oral exam shows puffy lower gums that bleed on touch and with brushing; diagnosed gingivitis",
+  "type": "condition",
+  "slots": {
+   "finding": "gingivitis",
+   "signs": "gum swelling and bleeding"
+  },
+  "source": "both",
+  "transcript_quote": "Your gums are puffy along the bottom, and they bleed a little when I touch them... it's gingivitis, the early, fixable kind of gum disease.",
+  "fhir_ref": "Condition/73043f9e-3254-a1d3-df0c-04534fb1bf25"
+ },
+ {
+  "id": "f27",
+  "text": "Referral to dentist for professional cleaning for gingivitis",
+  "type": "referral",
+  "slots": {
+   "referral_to": "dentist",
+   "reason": "gingivitis / cleaning"
+  },
+  "source": "both",
+  "transcript_quote": "I'm sending you to the dentist for a proper cleaning.",
+  "fhir_ref": "Procedure/73043f9e-3254-a1d3-ac9a-4c86e10bca2d"
+ },
+ {
+  "id": "f28",
+  "text": "Counseled on oral hygiene: brush twice daily with soft brush, continue despite bleeding, improves in weeks",
+  "type": "counseling",
+  "slots": {
+   "topic": "oral hygiene"
+  },
+  "source": "transcript",
+  "transcript_quote": "Brush twice a day, soft brush, and don't stop when it bleeds \u2014 that part gets better in a couple of weeks.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f29",
+  "text": "Influenza vaccine (trivalent, split virus, preservative-free) administered in left arm",
+  "type": "procedure",
+  "slots": {
+   "vaccine": "influenza trivalent",
+   "site": "left arm"
+  },
+  "source": "both",
+  "transcript_quote": "your flu shot... Same one as every year, the trivalent.",
+  "fhir_ref": "Immunization/73043f9e-3254-a1d3-1a65-357c176c3d05"
+ },
+ {
+  "id": "f30",
+  "text": "Counseled on infection prevention: handwashing and sleep given exposure to grandchildren",
+  "type": "counseling",
+  "slots": {
+   "topic": "infection prevention"
+  },
+  "source": "transcript",
+  "transcript_quote": "Wash the hands, get the sleep, and you're as covered as I can make you.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f31",
+  "text": "SDOH: lives with 5 people including daughter and 3 grandchildren; caregiver role in mornings; social isolation noted (limited social contact, 'world got small')",
+  "type": "sdoh",
+  "slots": {
+   "household_size": "5",
+   "social_contact": "1-2 times/week",
+   "concern": "social isolation/loneliness"
+  },
+  "source": "both",
+  "transcript_quote": "My world got small, Doctor. Busy, but small.",
+  "fhir_ref": "Observation/73043f9e-3254-a1d3-6f71-5b8c4d529b02"
+ },
+ {
+  "id": "f32",
+  "text": "SDOH: refugee, primary language other than English, high school education, full-time employment, private insurance, stable housing",
+  "type": "sdoh",
+  "slots": {
+   "refugee": "yes",
+   "language": "non-English",
+   "housing": "stable",
+   "insurance": "private"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Observation/73043f9e-3254-a1d3-6f71-5b8c4d529b02"
+ },
+ {
+  "id": "f33",
+  "text": "Pain severity score 0/10",
+  "type": "observation",
+  "slots": {
+   "instrument": "pain scale",
+   "score": "0"
+  },
+  "source": "both",
+  "transcript_quote": "Today, quiet. Zero complaints",
+  "fhir_ref": "Observation/73043f9e-3254-a1d3-b6d0-7945bdc02842"
+ },
+ {
+  "id": "f34",
+  "text": "Follow-up: recheck sugar/annual labs next year; continue walks and measured rice for prediabetes, oatmeal for cholesterol",
+  "type": "followup",
+  "slots": {
+   "interval": "1 year",
+   "instructions": "continue lifestyle measures"
+  },
+  "source": "transcript",
+  "transcript_quote": "sugar \u2014 steady, keep the walks and the measured rice, we recheck next year.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f35",
+  "text": "Counseled to report if anxiety worsens (persistent, sleep-disrupting, or daytime)",
+  "type": "counseling",
+  "slots": {
+   "topic": "anxiety monitoring / return precautions"
+  },
+  "source": "transcript",
+  "transcript_quote": "If it ever starts staying \u2014 keeping you from sleep past those twenty minutes, or following you through the day \u2014 you tell me",
+  "fhir_ref": null
+ },
+ {
+  "id": "f36",
+  "text": "Stress finding documented (PRAPARE stress level 'somewhat'), status resolved",
+  "type": "condition",
+  "slots": {
+   "finding": "stress",
+   "status": "resolved"
+  },
+  "source": "both",
+  "transcript_quote": "Lying there doing arithmetic \u2014 the bills, my daughter, my sister back home.",
+  "fhir_ref": "Condition/73043f9e-3254-a1d3-b58d-33c3c94c4c3b"
+ }
+]

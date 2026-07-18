@@ -1,0 +1,32 @@
+[
+ {
+  "fact_id": "f6",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "This deconditioned patient with slow, effortful gait and reduced endurance is a fall risk, so documenting a negative falls screen is essential for safety planning in a SNF."
+ },
+ {
+  "fact_id": "f25",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Medication review was due on arrival and med organization is a care goal, so pharmacist involvement supports safe reconciliation and completeness of the care team documentation."
+ },
+ {
+  "fact_id": "f29",
+  "expected": false,
+  "severity": "minor",
+  "why_it_matters": "This appears to be an administrative transfer artifact unrelated to the clinical content of this SNF admission note."
+ },
+ {
+  "fact_id": "f31",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Documenting the immediate physician rounding and nursing check-in schedule clarifies the initial monitoring plan but has limited impact on management."
+ },
+ {
+  "fact_id": "f32",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Bereavement, isolation, and adjustment distress are central to this admission, so documenting counseling and reframing the stay reflects and supports the core treatment plan."
+ }
+]

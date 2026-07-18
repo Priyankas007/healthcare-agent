@@ -1,0 +1,271 @@
+{
+ "note_version_id": "1be66dc9-cf0b-cb78-e88e-ada9a9a5405b::1be66dc9-cf0b-cb78-ee14-c92f2fe041a4__inj_1",
+ "injected_fact_id": "f16",
+ "detected_absent_fact_ids": [
+  "f16",
+  "f28"
+ ],
+ "caught": true,
+ "collateral_flips": [],
+ "n_present_on_provided": 39,
+ "presence_results": [
+  {
+   "fact_id": "f1",
+   "status": "present",
+   "note_evidence": "transferred from the acute hospital for continued nursing care and rehabilitation before returning home",
+   "rationale": "Transfer for SNF rehab before returning home is stated."
+  },
+  {
+   "fact_id": "f2",
+   "status": "present",
+   "note_evidence": "increased hunger with paradoxical fatigue",
+   "rationale": "Fatigue/reduced stamina documented."
+  },
+  {
+   "fact_id": "f3",
+   "status": "present",
+   "note_evidence": "Diabetes mellitus type 2 with diabetic kidney disease ... poorly controlled diabetes",
+   "rationale": "T2DM poorly controlled documented."
+  },
+  {
+   "fact_id": "f4",
+   "status": "present",
+   "note_evidence": "diabetic kidney disease (CKD stage 1)",
+   "rationale": "Stage 1 CKD attributed to diabetes stated."
+  },
+  {
+   "fact_id": "f5",
+   "status": "present",
+   "note_evidence": "Essential hypertension",
+   "rationale": "Hypertension documented."
+  },
+  {
+   "fact_id": "f6",
+   "status": "present",
+   "note_evidence": "Anemia ... Continue vitamin B12 5 mg/mL injectable solution",
+   "rationale": "Anemia treated with B12 injections."
+  },
+  {
+   "fact_id": "f7",
+   "status": "present",
+   "note_evidence": "Hypertriglyceridemia / metabolic syndrome X",
+   "rationale": "Diagnosis documented."
+  },
+  {
+   "fact_id": "f8",
+   "status": "present",
+   "note_evidence": "she reports constant thirst despite steady fluid intake",
+   "rationale": "Polydipsia over recent weeks documented."
+  },
+  {
+   "fact_id": "f9",
+   "status": "present",
+   "note_evidence": "nighttime urinary frequency with several trips nightly",
+   "rationale": "Nocturia with multiple nightly trips documented."
+  },
+  {
+   "fact_id": "f10",
+   "status": "present",
+   "note_evidence": "increased hunger with paradoxical fatigue",
+   "rationale": "Polyphagia with weakness documented."
+  },
+  {
+   "fact_id": "f11",
+   "status": "present",
+   "note_evidence": "tingling of both feet and, to a lesser degree, her hands \u2014 pins-and-needles worst at night",
+   "rationale": "Bilateral paresthesias, night-worse, over months."
+  },
+  {
+   "fact_id": "f12",
+   "status": "present",
+   "note_evidence": "Her daughter confirms new daytime napping",
+   "rationale": "Daytime napping reported by daughter."
+  },
+  {
+   "fact_id": "f13",
+   "status": "present",
+   "note_evidence": "mild word-finding difficulty since hospitalization",
+   "rationale": "Word-finding difficulty documented."
+  },
+  {
+   "fact_id": "f14",
+   "status": "present",
+   "note_evidence": "Thirst, hunger, urinary frequency, fatigue, and distal paresthesias are consistent with poorly controlled diabetes",
+   "rationale": "Clinician attributes symptoms to uncontrolled diabetes."
+  },
+  {
+   "fact_id": "f15",
+   "status": "present",
+   "note_evidence": "Continue clopidogrel 75 mg daily",
+   "rationale": "Clopidogrel 75 mg daily documented."
+  },
+  {
+   "fact_id": "f16",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No simvastatin mentioned in the note."
+  },
+  {
+   "fact_id": "f17",
+   "status": "present",
+   "note_evidence": "Continue 24 HR metoprolol succinate 100 mg extended-release tablet daily",
+   "rationale": "Metoprolol ER 100 mg documented."
+  },
+  {
+   "fact_id": "f18",
+   "status": "present",
+   "note_evidence": "Continue vitamin B12 5 mg/mL injectable solution per established schedule",
+   "rationale": "Scheduled B12 injection for anemia."
+  },
+  {
+   "fact_id": "f19",
+   "status": "present",
+   "note_evidence": "Nitroglycerin 0.4 mg/actuation mucosal spray available as needed for chest tightness",
+   "rationale": "PRN nitroglycerin spray for chest tightness."
+  },
+  {
+   "fact_id": "f20",
+   "status": "present",
+   "note_evidence": "denies chest pain or pressure and has not needed her nitroglycerin spray in months",
+   "rationale": "Denies recent chest symptoms/nitro use."
+  },
+  {
+   "fact_id": "f21",
+   "status": "present",
+   "note_evidence": "patient instructed to alert staff with any chest symptoms or spray use",
+   "rationale": "Counseled to report chest symptoms."
+  },
+  {
+   "fact_id": "f22",
+   "status": "partial",
+   "note_evidence": "Allergies: aspirin",
+   "rationale": "Aspirin allergy noted but swelling reaction not documented."
+  },
+  {
+   "fact_id": "f23",
+   "status": "partial",
+   "note_evidence": "Allergies: aspirin, peanut, and animal dander",
+   "rationale": "Peanut allergy noted but severe throat-itching reaction not documented."
+  },
+  {
+   "fact_id": "f24",
+   "status": "partial",
+   "note_evidence": "animal dander, with a strong general allergic disposition",
+   "rationale": "Dander allergy noted but cat/dog intolerance detail not documented."
+  },
+  {
+   "fact_id": "f25",
+   "status": "present",
+   "note_evidence": "Structured diabetic meals with dietitian involvement; peanut-free tray flag",
+   "rationale": "Peanut-free flag and diabetic diet ordered."
+  },
+  {
+   "fact_id": "f26",
+   "status": "present",
+   "note_evidence": "therapy-animal precautions for animal dander",
+   "rationale": "Therapy-animal precautions for dander ordered."
+  },
+  {
+   "fact_id": "f27",
+   "status": "present",
+   "note_evidence": "Aspirin allergy flagged prominently",
+   "rationale": "Aspirin allergy prominently documented."
+  },
+  {
+   "fact_id": "f28",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "Note reports increased hunger, not poor intake at hospital."
+  },
+  {
+   "fact_id": "f29",
+   "status": "present",
+   "note_evidence": "Professional and ancillary services engaged, including dietitian",
+   "rationale": "Dietitian referral for diabetic peanut-free meals."
+  },
+  {
+   "fact_id": "f30",
+   "status": "present",
+   "note_evidence": "History and physical examination and initial patient assessment were completed on arrival",
+   "rationale": "H&P performed."
+  },
+  {
+   "fact_id": "f31",
+   "status": "present",
+   "note_evidence": "initial patient assessment were completed on arrival",
+   "rationale": "Initial patient assessment performed."
+  },
+  {
+   "fact_id": "f32",
+   "status": "present",
+   "note_evidence": "Development of individualized plan of care with the interdisciplinary team",
+   "rationale": "Individualized care plan by IDT."
+  },
+  {
+   "fact_id": "f33",
+   "status": "present",
+   "note_evidence": "Physical therapy sessions several times weekly for gait, balance, and endurance",
+   "rationale": "PT several times weekly documented."
+  },
+  {
+   "fact_id": "f34",
+   "status": "present",
+   "note_evidence": "Occupational therapy for activities of daily living and home-safety tasks",
+   "rationale": "OT for ADLs documented."
+  },
+  {
+   "fact_id": "f35",
+   "status": "present",
+   "note_evidence": "Speech and language therapy regime for swallowing screening and cognitive-communication work",
+   "rationale": "SLT for swallowing and cognition."
+  },
+  {
+   "fact_id": "f36",
+   "status": "present",
+   "note_evidence": "Nursing care and supplementary surveillance every shift ... glucose monitoring and medication administration ... Daily foot checks",
+   "rationale": "Nursing surveillance with vitals, glucose, meds, skin/foot checks."
+  },
+  {
+   "fact_id": "f37",
+   "status": "present",
+   "note_evidence": "Weekly care regimes assessment to review and adjust the plan",
+   "rationale": "Weekly team care plan review."
+  },
+  {
+   "fact_id": "f38",
+   "status": "present",
+   "note_evidence": "Formal pre-discharge assessment of medication management, meals, stairs, and home setup before release",
+   "rationale": "Pre-discharge assessment planned."
+  },
+  {
+   "fact_id": "f39",
+   "status": "present",
+   "note_evidence": "She lives alone; her daughter lives forty minutes away and is engaged in discharge planning",
+   "rationale": "Lives alone with distant daughter documented."
+  },
+  {
+   "fact_id": "f40",
+   "status": "present",
+   "note_evidence": "difficulty keeping a diabetic diet while cooking for one at home",
+   "rationale": "Difficulty preparing diabetic meals alone."
+  },
+  {
+   "fact_id": "f41",
+   "status": "present",
+   "note_evidence": "next dose placed on the facility calendar so it does not lapse",
+   "rationale": "B12 injection scheduled to avoid lapse."
+  },
+  {
+   "fact_id": "f42",
+   "status": "present",
+   "note_evidence": "Weekly care regimes assessment to review and adjust the plan",
+   "rationale": "Care regimes assessment documented."
+  },
+  {
+   "fact_id": "f43",
+   "status": "present",
+   "note_evidence": "History and physical examination and initial patient assessment were completed on arrival",
+   "rationale": "H&P documented in note."
+  }
+ ]
+}

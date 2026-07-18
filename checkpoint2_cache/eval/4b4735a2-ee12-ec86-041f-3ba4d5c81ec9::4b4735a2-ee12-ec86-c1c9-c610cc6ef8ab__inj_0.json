@@ -1,0 +1,258 @@
+{
+ "note_version_id": "4b4735a2-ee12-ec86-041f-3ba4d5c81ec9::4b4735a2-ee12-ec86-c1c9-c610cc6ef8ab__inj_0",
+ "injected_fact_id": "f19",
+ "detected_absent_fact_ids": [
+  "f19",
+  "f20",
+  "f34",
+  "f35",
+  "f40"
+ ],
+ "caught": true,
+ "collateral_flips": [
+  "f20"
+ ],
+ "n_present_on_provided": 32,
+ "presence_results": [
+  {
+   "fact_id": "f1",
+   "status": "present",
+   "note_evidence": "intermittent dull occipital headaches on waking over the past few months, resolving by midday",
+   "rationale": "All components documented."
+  },
+  {
+   "fact_id": "f2",
+   "status": "present",
+   "note_evidence": "daily gum bleeding with brushing",
+   "rationale": "Symptom and trigger match."
+  },
+  {
+   "fact_id": "f3",
+   "status": "partial",
+   "note_evidence": "confirmed on repeat measurement, with associated morning occipital headaches",
+   "rationale": "Headaches linked to hypertension but no statement they will improve with BP control."
+  },
+  {
+   "fact_id": "f4",
+   "status": "present",
+   "note_evidence": "PHQ-2 score 2 and GAD-7 score 3 (low; consistent with grief)",
+   "rationale": "Score and low interpretation documented."
+  },
+  {
+   "fact_id": "f5",
+   "status": "present",
+   "note_evidence": "GAD-7 score 3 (low; consistent with grief)",
+   "rationale": "Score and low interpretation documented."
+  },
+  {
+   "fact_id": "f6",
+   "status": "present",
+   "note_evidence": "AUDIT-C score 3 (below threshold)... He drinks 1\u20132 beers two to three evenings weekly",
+   "rationale": "Score, threshold, and drinking detail all present."
+  },
+  {
+   "fact_id": "f7",
+   "status": "present",
+   "note_evidence": "has never smoked",
+   "rationale": "Never-smoker status documented."
+  },
+  {
+   "fact_id": "f8",
+   "status": "present",
+   "note_evidence": "denies drug use",
+   "rationale": "Negative drug use documented."
+  },
+  {
+   "fact_id": "f9",
+   "status": "present",
+   "note_evidence": "BP 141/100 mmHg (confirmed on repeat)",
+   "rationale": "BP and repeat confirmation match."
+  },
+  {
+   "fact_id": "f10",
+   "status": "present",
+   "note_evidence": "HR 100/min",
+   "rationale": "Heart rate documented."
+  },
+  {
+   "fact_id": "f11",
+   "status": "present",
+   "note_evidence": "weight 93.9 kg... BMI 30.21 kg/m2",
+   "rationale": "Weight and BMI (obesity range) documented."
+  },
+  {
+   "fact_id": "f12",
+   "status": "present",
+   "note_evidence": "Hemoglobin A1c 6.28%... ### Prediabetes",
+   "rationale": "A1c and prediabetes interpretation documented."
+  },
+  {
+   "fact_id": "f13",
+   "status": "present",
+   "note_evidence": "fasting glucose 91.08 mg/dL remains normal",
+   "rationale": "Glucose value and normal interpretation documented."
+  },
+  {
+   "fact_id": "f14",
+   "status": "present",
+   "note_evidence": "BUN 17.36 mg/dL, creatinine 1.12 mg/dL",
+   "rationale": "Both values documented."
+  },
+  {
+   "fact_id": "f15",
+   "status": "present",
+   "note_evidence": "sodium 139.11 mmol/L, potassium 3.97 mmol/L",
+   "rationale": "Both values documented."
+  },
+  {
+   "fact_id": "f16",
+   "status": "present",
+   "note_evidence": "### Essential hypertension\nNew diagnosis",
+   "rationale": "Diagnosis stated."
+  },
+  {
+   "fact_id": "f17",
+   "status": "present",
+   "note_evidence": "### Metabolic syndrome X\nNew documentation based on the cluster of hypertension, BMI 30.21 kg/m2, and A1c 6.28%",
+   "rationale": "Diagnosis and components documented."
+  },
+  {
+   "fact_id": "f18",
+   "status": "present",
+   "note_evidence": "erythematous, edematous gingival margins with contact bleeding, consistent with gingivitis",
+   "rationale": "Gingivitis with puffy margins and contact bleeding documented."
+  },
+  {
+   "fact_id": "f19",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No hydrochlorothiazide start documented in note."
+  },
+  {
+   "fact_id": "f20",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No HCTZ side-effect counseling documented."
+  },
+  {
+   "fact_id": "f21",
+   "status": "present",
+   "note_evidence": "Continue vitamin B12 5 mg/mL injectable solution on the established schedule",
+   "rationale": "B12 continued for anemia documented."
+  },
+  {
+   "fact_id": "f22",
+   "status": "partial",
+   "note_evidence": "Medication reconciliation completed: B12 injections",
+   "rationale": "Reconciliation done but HCTZ not listed among meds."
+  },
+  {
+   "fact_id": "f23",
+   "status": "present",
+   "note_evidence": "sodium reduction... dietary emphasis on reduced processed/salty foods",
+   "rationale": "Sodium-reduction counseling documented, though specific foods not itemized."
+  },
+  {
+   "fact_id": "f24",
+   "status": "partial",
+   "note_evidence": "regular walking",
+   "rationale": "Walking advised but 30 min/most days detail not stated."
+  },
+  {
+   "fact_id": "f25",
+   "status": "present",
+   "note_evidence": "Enrolled in lifestyle education regarding hypertension",
+   "rationale": "Hypertension education enrollment documented."
+  },
+  {
+   "fact_id": "f26",
+   "status": "present",
+   "note_evidence": "Patient referral for dental care placed (cleaning and examination)",
+   "rationale": "Dental referral for cleaning/exam documented."
+  },
+  {
+   "fact_id": "f27",
+   "status": "present",
+   "note_evidence": "Oral hygiene counseling: soft brush twice daily, daily flossing",
+   "rationale": "Oral hygiene counseling documented."
+  },
+  {
+   "fact_id": "f28",
+   "status": "partial",
+   "note_evidence": "Influenza vaccine (split virus, trivalent, preservative-free) administered",
+   "rationale": "Vaccine documented but injection site not stated."
+  },
+  {
+   "fact_id": "f29",
+   "status": "present",
+   "note_evidence": "Recheck BP in approximately 1 month... home BP log",
+   "rationale": "One-month BP recheck and home BP log documented."
+  },
+  {
+   "fact_id": "f30",
+   "status": "present",
+   "note_evidence": "he left full-time work last year after a prolonged period caring for his mother, who died last fall; he is not currently seeking work",
+   "rationale": "Caregiving, bereavement, and leaving work documented."
+  },
+  {
+   "fact_id": "f31",
+   "status": "present",
+   "note_evidence": "Out of the workforce by choice following caregiving and bereavement... not currently seeking work",
+   "rationale": "Not in labor force, not seeking work documented."
+  },
+  {
+   "fact_id": "f32",
+   "status": "partial",
+   "note_evidence": "reported personal annual income $4,829",
+   "rationale": "Low income documented but odd jobs and Medicaid not mentioned."
+  },
+  {
+   "fact_id": "f33",
+   "status": "present",
+   "note_evidence": "living in a five-person household with his sister's family... stable housing with family",
+   "rationale": "Household and stable housing documented, though sofa bed not stated."
+  },
+  {
+   "fact_id": "f34",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No mention of inability to get needed care in past year."
+  },
+  {
+   "fact_id": "f35",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No migrant/seasonal farm work documented."
+  },
+  {
+   "fact_id": "f36",
+   "status": "present",
+   "note_evidence": "he reports fatigue and leg heaviness when injections are missed",
+   "rationale": "Fatigue and leg heaviness with missed B12 documented."
+  },
+  {
+   "fact_id": "f37",
+   "status": "present",
+   "note_evidence": "pain score 1/10",
+   "rationale": "Pain score documented."
+  },
+  {
+   "fact_id": "f38",
+   "status": "partial",
+   "note_evidence": "endorses intermittent low mood and worry consistent with grief but denies persistent depression",
+   "rationale": "Depression denial and intermittent grief documented but sleep status not mentioned."
+  },
+  {
+   "fact_id": "f39",
+   "status": "present",
+   "note_evidence": "RR 13/min",
+   "rationale": "Respiratory rate documented."
+  },
+  {
+   "fact_id": "f40",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No counseling to revisit depression/grief treatment documented."
+  }
+ ]
+}

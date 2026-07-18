@@ -1,0 +1,20 @@
+[
+ {
+  "fact_id": "f7",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Family history of heart disease, diabetes, and cancer is a standard component of a comprehensive first exam and informs risk stratification and screening decisions for this young obese patient."
+ },
+ {
+  "fact_id": "f15",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Uninsured status directly affects feasibility of referrals, medications, and follow-up planning, so it should be documented to guide realistic management."
+ },
+ {
+  "fact_id": "f40",
+  "expected": false,
+  "severity": "minor",
+  "why_it_matters": "Routine post-vaccination soreness advice is standard aftercare with negligible clinical consequence if omitted from the note."
+ }
+]

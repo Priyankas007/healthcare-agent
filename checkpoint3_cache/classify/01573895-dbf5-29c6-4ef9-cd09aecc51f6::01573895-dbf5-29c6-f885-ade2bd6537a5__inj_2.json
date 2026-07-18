@@ -1,0 +1,14 @@
+[
+ {
+  "fact_id": "f12",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "A positive PHQ-2 of 5 documents the trigger for further depression evaluation and, notably, is internally inconsistent with the reported PHQ-9 of 4, which could confuse the depression assessment if left unreconciled."
+ },
+ {
+  "fact_id": "f39",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Given the prominent financial-strain narrative, documenting stable housing, home safety, employment, and insurance status completes the social risk assessment and confirms no unmet safety or access needs affecting the plan."
+ }
+]

@@ -1,0 +1,20 @@
+[
+ {
+  "fact_id": "f4",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "The note states 'no medications' and completed reconciliation as such, but the patient regularly uses OTC naproxen, an NSAID with GI/renal/cardiac risks relevant to an accurate medication list."
+ },
+ {
+  "fact_id": "f6",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Documenting the advice to continue occasional naproxen with food completes the OA management plan and reinforces safe NSAID use."
+ },
+ {
+  "fact_id": "f39",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Positive SDOH findings (stable housing, safe home, insurance) document the completed social needs assessment but are largely reassuring and non-actionable for this visit."
+ }
+]

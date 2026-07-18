@@ -1,0 +1,20 @@
+[
+ {
+  "fact_id": "f12",
+  "expected": true,
+  "severity": "safety_critical",
+  "why_it_matters": "Aspirin is key secondary prevention after STEMI and its omission from medication reconciliation could lead to inappropriate discontinuation, especially relevant given borderline-low platelets and planned coagulation monitoring."
+ },
+ {
+  "fact_id": "f44",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Documenting prognostic counseling with family reflects shared decision-making and completeness, which is important for a high-risk deteriorating patient."
+ },
+ {
+  "fact_id": "f49",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Recording improvement to low 90s on oxygen documents the patient's response to therapy and informs ongoing titration and escalation decisions after severe desaturation to 75.7%."
+ }
+]

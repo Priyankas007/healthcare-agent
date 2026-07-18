@@ -1,0 +1,14 @@
+[
+ {
+  "fact_id": "f9",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Documented past-year food insecurity directly contradicts the note's claim of 'no unmet needs' and warrants resource referral, making it a material completeness and management gap."
+ },
+ {
+  "fact_id": "f27",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Cancer screening status (breast, cervical, colorectal) is central to a 47-year-old woman's annual preventive visit and its omission leaves screening completeness unverified."
+ }
+]

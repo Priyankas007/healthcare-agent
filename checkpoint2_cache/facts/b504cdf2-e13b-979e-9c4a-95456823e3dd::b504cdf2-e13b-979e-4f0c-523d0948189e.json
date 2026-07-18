@@ -1,0 +1,336 @@
+[
+ {
+  "id": "f1",
+  "text": "Patient is a 76-year-old female admitted to skilled nursing/rehabilitation for reconditioning after ~1 week hospitalization",
+  "type": "condition",
+  "slots": {
+   "age": "76"
+  },
+  "source": "transcript",
+  "transcript_quote": "You're seventy-six.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f2",
+  "text": "Generalized weakness/deconditioning with legs unable to support ambulation following hospitalization",
+  "type": "symptom",
+  "slots": {
+   "symptom": "weakness/deconditioning"
+  },
+  "source": "transcript",
+  "transcript_quote": "by the end of it my legs just wouldn't answer for me anymore. I couldn't have walked to my own mailbox.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f3",
+  "text": "History of osteoporosis",
+  "type": "condition",
+  "slots": {
+   "condition": "osteoporosis"
+  },
+  "source": "transcript",
+  "transcript_quote": "You have osteoporosis \u2014 the thin, brittle bones.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f4",
+  "text": "History of hyperlipidemia (high cholesterol)",
+  "type": "condition",
+  "slots": {
+   "condition": "hyperlipidemia"
+  },
+  "source": "transcript",
+  "transcript_quote": "Your cholesterol runs high.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f5",
+  "text": "History of prediabetes (borderline blood sugar)",
+  "type": "condition",
+  "slots": {
+   "condition": "prediabetes"
+  },
+  "source": "transcript",
+  "transcript_quote": "Your blood sugar has been sitting in that in-between zone they call prediabetes.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f6",
+  "text": "History of multiple lost teeth, chews carefully on one side and eats soft foods",
+  "type": "condition",
+  "slots": {
+   "condition": "edentulism/tooth loss"
+  },
+  "source": "transcript",
+  "transcript_quote": "you've had a hard time with your teeth \u2014 quite a few lost over the years.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f7",
+  "text": "Low back pain radiating to hips, worse with prolonged standing, described as deep ache in the bone",
+  "type": "symptom",
+  "slots": {
+   "symptom": "low back pain",
+   "radiation": "hips",
+   "aggravating": "prolonged standing",
+   "quality": "deep bone ache"
+  },
+  "source": "transcript",
+  "transcript_quote": "It's my low back, mostly, and it spreads out to my hips when I stand too long.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f8",
+  "text": "Pain interferes with sleep on bad nights",
+  "type": "symptom",
+  "slots": {
+   "symptom": "sleep disturbance from pain"
+  },
+  "source": "transcript",
+  "transcript_quote": "Some nights it kept me from sleep more than the noise did.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f9",
+  "text": "Standing worsens pain; can turn in bed slowly; requires support to stand",
+  "type": "aggravating_factor",
+  "slots": {
+   "aggravating": "standing",
+   "relieving": null
+  },
+  "source": "transcript",
+  "transcript_quote": "Standing, I need something to hold and somewhere to aim for.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f10",
+  "text": "Started naproxen 220 mg tablet for baseline chronic pain",
+  "type": "medication",
+  "slots": {
+   "drug": "naproxen",
+   "dose": "220 mg",
+   "route": "oral",
+   "freq": null,
+   "indication": "baseline back/hip pain"
+  },
+  "source": "transcript",
+  "transcript_quote": "The first is naproxen \u2014 an anti-inflammatory tablet, two hundred twenty milligrams, for that steady baseline ache.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f11",
+  "text": "Started meperidine 50 mg tablets PRN for severe pain, used carefully and sparingly (e.g., before therapy or bad nights)",
+  "type": "medication",
+  "slots": {
+   "drug": "meperidine",
+   "dose": "50 mg",
+   "route": "oral",
+   "freq": "PRN severe pain",
+   "indication": "breakthrough pain"
+  },
+  "source": "transcript",
+  "transcript_quote": "The second is a stronger one called meperidine, fifty milligram tablets, for the worse stretches",
+  "fhir_ref": null
+ },
+ {
+  "id": "f12",
+  "text": "Counseled that meperidine can cause drowsiness, fogginess, and unsteadiness/fall risk in elderly; nurses to monitor after each dose and use lowest effective dose",
+  "type": "counseling",
+  "slots": {
+   "topic": "opioid risks in elderly"
+  },
+  "source": "transcript",
+  "transcript_quote": "In folks your age it can cause drowsiness, fogginess, unsteadiness on the feet \u2014 and I would much rather prevent a fall than treat one.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f13",
+  "text": "Patient lives alone with minimal social support; sister died two years ago; one neighbor helps with bins",
+  "type": "sdoh",
+  "slots": {
+   "domain": "social isolation/support"
+  },
+  "source": "transcript",
+  "transcript_quote": "Nobody, really. I'm on my own... My sister passed two winters back. There's a neighbor who takes my bins out.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f14",
+  "text": "Screened for domestic violence/safety regarding former marriage; patient reports no current fear or danger, ex-partner long out of life",
+  "type": "red_flag_screen",
+  "slots": {
+   "screen": "interpersonal safety",
+   "result": "negative for current threat"
+  },
+  "source": "transcript",
+  "transcript_quote": "No, doctor. He's long gone out of my life, years and years now... there's nobody to be afraid of anymore.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f15",
+  "text": "Likely chronic undernutrition/reduced intake due to poor dentition and cooking for one",
+  "type": "sdoh",
+  "slots": {
+   "domain": "nutrition/food"
+  },
+  "source": "transcript",
+  "transcript_quote": "Cooking for one, and chewing being what it is \u2014 supper got small over the years.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f16",
+  "text": "Social worker referral to arrange home support and community engagement (senior center/community programs)",
+  "type": "referral",
+  "slots": {
+   "referral_to": "social work"
+  },
+  "source": "both",
+  "transcript_quote": "a social worker will come visit with you, and I'd like her working on two things: setting up proper support for when you go home, and finding you some regular human faces",
+  "fhir_ref": "Procedure/b504cdf2-e13b-979e-43e5-3c1b408555f2"
+ },
+ {
+  "id": "f17",
+  "text": "Dietitian referral for soft-texture, high-protein, calcium-rich diet balanced for prediabetes and hyperlipidemia",
+  "type": "referral",
+  "slots": {
+   "referral_to": "dietitian",
+   "diet": "soft texture, high protein, calcium"
+  },
+  "source": "transcript",
+  "transcript_quote": "the dietitian is going to be one of your most important visitors here. Soft, manageable textures, but with real nourishment in them \u2014 protein especially... and calcium for those bones.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f18",
+  "text": "Physical therapy ordered for standing, walking, and leg strengthening",
+  "type": "order",
+  "slots": {
+   "service": "physical therapy"
+  },
+  "source": "both",
+  "transcript_quote": "Physical therapy will work with you on standing and walking and building those legs back.",
+  "fhir_ref": "Procedure/b504cdf2-e13b-979e-f9e9-3e63a58309fb"
+ },
+ {
+  "id": "f19",
+  "text": "Occupational therapy ordered for ADLs (dressing, safe bathing, kitchen tasks)",
+  "type": "order",
+  "slots": {
+   "service": "occupational therapy"
+  },
+  "source": "both",
+  "transcript_quote": "occupational therapy will see you as well \u2014 they handle the getting-dressed, bathing-safely, kitchen-counter side of life.",
+  "fhir_ref": "Procedure/b504cdf2-e13b-979e-cab2-2fca609892a7"
+ },
+ {
+  "id": "f20",
+  "text": "History and physical examination performed",
+  "type": "procedure",
+  "slots": {
+   "procedure": "history and physical examination"
+  },
+  "source": "both",
+  "transcript_quote": "Today I do your full history and physical examination",
+  "fhir_ref": "Procedure/b504cdf2-e13b-979e-2001-e0d02f7ab6e6"
+ },
+ {
+  "id": "f21",
+  "text": "Initial nursing admission assessment performed",
+  "type": "procedure",
+  "slots": {
+   "procedure": "initial patient assessment"
+  },
+  "source": "both",
+  "transcript_quote": "the nurses do their own admission assessment",
+  "fhir_ref": "Procedure/b504cdf2-e13b-979e-0e95-5b336e39d465"
+ },
+ {
+  "id": "f22",
+  "text": "Development of individualized plan of care",
+  "type": "procedure",
+  "slots": {
+   "procedure": "individualized plan of care"
+  },
+  "source": "both",
+  "transcript_quote": "the team writes up an individualized plan of care \u2014 yours, not a generic one off the shelf.",
+  "fhir_ref": "Procedure/b504cdf2-e13b-979e-139f-255b1ca2e18d"
+ },
+ {
+  "id": "f23",
+  "text": "Nursing care with supplementary surveillance every shift monitoring pain, blood pressure, skin, and medications",
+  "type": "procedure",
+  "slots": {
+   "procedure": "nursing surveillance",
+   "monitored": "pain, BP, skin, meds"
+  },
+  "source": "both",
+  "transcript_quote": "Nursing checks happen every day, every shift: your pain, your blood pressure, your skin, your medicines.",
+  "fhir_ref": "Procedure/b504cdf2-e13b-979e-7285-21d84d25dac4"
+ },
+ {
+  "id": "f24",
+  "text": "Fall precautions counseling: use call button before standing at all times due to osteoporosis fall risk",
+  "type": "counseling",
+  "slots": {
+   "topic": "fall prevention / call button"
+  },
+  "source": "transcript",
+  "transcript_quote": "call button before you stand. Always. Even at two in the morning, even if you feel spry.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f25",
+  "text": "Pre-discharge assessment planned/completed to evaluate standing, walking, medication and meal management, and home support needs",
+  "type": "procedure",
+  "slots": {
+   "procedure": "pre-discharge assessment"
+  },
+  "source": "both",
+  "transcript_quote": "before you go anywhere, we do a proper pre-discharge assessment",
+  "fhir_ref": "Procedure/b504cdf2-e13b-979e-a4a6-a0acb9811df1"
+ },
+ {
+  "id": "f26",
+  "text": "Anticipated length of stay approximately two weeks depending on strength recovery",
+  "type": "followup",
+  "slots": {
+   "duration": "~2 weeks"
+  },
+  "source": "transcript",
+  "transcript_quote": "Honestly \u2014 a couple of weeks, give or take, depending on how the strength comes back.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f27",
+  "text": "Counseled patient she may report intolerance to meperidine and treatment will be changed",
+  "type": "counseling",
+  "slots": {
+   "topic": "medication tolerance/shared decision"
+  },
+  "source": "transcript",
+  "transcript_quote": "You can and you must. Say it once and we change course",
+  "fhir_ref": null
+ },
+ {
+  "id": "f28",
+  "text": "Discharge from hospital documented (transfer from acute hospital)",
+  "type": "procedure",
+  "slots": {
+   "procedure": "discharge from hospital"
+  },
+  "source": "both",
+  "transcript_quote": "She came over from the hospital about an hour ago",
+  "fhir_ref": "Procedure/b504cdf2-e13b-979e-c3cd-e70b6da34e91"
+ },
+ {
+  "id": "f29",
+  "text": "History and physical note finalized",
+  "type": "other",
+  "slots": {
+   "document": "H&P note"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "DiagnosticReport/3524193c-b6cd-aa89-4242-dda51818a5bb"
+ }
+]

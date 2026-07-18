@@ -1,0 +1,14 @@
+[
+ {
+  "fact_id": "f5",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Documenting absence of toothache, night pain, or pain on chewing helps distinguish reversible dentin sensitivity from irreversible pulpitis and confirms the localized nature of the gingival diagnosis."
+ },
+ {
+  "fact_id": "f29",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Any medication requested or prescribed during the visit must be documented for continuity, allergy/interaction safety, and completeness of the treatment record."
+ }
+]

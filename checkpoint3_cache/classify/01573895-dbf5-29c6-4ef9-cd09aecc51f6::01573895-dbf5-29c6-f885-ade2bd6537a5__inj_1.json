@@ -1,0 +1,14 @@
+[
+ {
+  "fact_id": "f11",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "A GAD-7 of 12 quantifies moderate anxiety and directly supports the anxiety diagnosis and could shift management toward pharmacotherapy or closer follow-up."
+ },
+ {
+  "fact_id": "f39",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "These SDOH details provide reassuring context (housing stability, safety at home, insurance) relevant to the documented financial strain and referrals, but are largely normal background."
+ }
+]

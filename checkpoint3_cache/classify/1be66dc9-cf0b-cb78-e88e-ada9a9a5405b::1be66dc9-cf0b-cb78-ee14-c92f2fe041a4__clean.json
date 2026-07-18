@@ -1,0 +1,8 @@
+[
+ {
+  "fact_id": "f28",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Poor oral intake affects nutrition planning, glycemic management, and hypoglycemia risk in a diabetic, and contrasts with the note's reported increased hunger, so it should be documented to guide dietitian and medication decisions."
+ }
+]

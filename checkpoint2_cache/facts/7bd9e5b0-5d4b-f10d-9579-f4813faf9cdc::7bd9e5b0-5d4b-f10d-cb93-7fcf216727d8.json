@@ -1,0 +1,581 @@
+[
+ {
+  "id": "f1",
+  "text": "Dry cough started approximately 5-6 days ago, beginning after the holiday",
+  "type": "symptom",
+  "slots": {
+   "symptom": "dry cough",
+   "onset": "5-6 days ago",
+   "character": "dry"
+  },
+  "source": "transcript",
+  "transcript_quote": "Five days. Maybe six. A cough first. Dry.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f2",
+  "text": "Fever developed after cough onset and has persisted; feverish by New Year's Eve",
+  "type": "symptom",
+  "slots": {
+   "symptom": "fever",
+   "course": "persistent"
+  },
+  "source": "both",
+  "transcript_quote": "Then the fever came... and stayed.",
+  "fhir_ref": "Observation/7bd9e5b0-5d4b-f10d-56a0-9ab4978203c3"
+ },
+ {
+  "id": "f3",
+  "text": "Progressive dyspnea; this morning could not walk from bed to bathroom without stopping twice to catch her breath",
+  "type": "symptom",
+  "slots": {
+   "symptom": "dyspnea on exertion",
+   "severity": "worsening"
+  },
+  "source": "transcript",
+  "transcript_quote": "this morning she could not get from the bed to the bathroom without stopping twice to breathe",
+  "fhir_ref": null
+ },
+ {
+  "id": "f4",
+  "text": "Chest tightness described as 'air is thin,' without pain",
+  "type": "symptom",
+  "slots": {
+   "symptom": "chest tightness"
+  },
+  "source": "transcript",
+  "transcript_quote": "No pain. Just tight. Like the air is... thin.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f5",
+  "text": "Decreased oral intake \u2014 stopped eating properly and barely drank for two days",
+  "type": "symptom",
+  "slots": {
+   "symptom": "poor oral intake"
+  },
+  "source": "transcript",
+  "transcript_quote": "She barely drank anything for two days. I kept trying.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f6",
+  "text": "Mild confusion/'foggy' this morning, but oriented and interactive",
+  "type": "symptom",
+  "slots": {
+   "symptom": "mild confusion"
+  },
+  "source": "transcript",
+  "transcript_quote": "She seemed a little foggy this morning, but as you can hear, she is still herself.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f7",
+  "text": "COVID-19 confirmed: positive swab at urgent care and repeat positive swab in the ED",
+  "type": "condition",
+  "slots": {
+   "condition": "COVID-19",
+   "confirmation": "positive PCR x2"
+  },
+  "source": "transcript",
+  "transcript_quote": "We repeated the swab here in the emergency department and it is positive as well, so the diagnosis is confirmed.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f8",
+  "text": "Denies chest pain or pressure (patient recognizes it differs from her prior heart attack)",
+  "type": "red_flag_screen",
+  "slots": {
+   "screen": "chest pain",
+   "result": "negative"
+  },
+  "source": "transcript",
+  "transcript_quote": "This is not that. No pain.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f9",
+  "text": "Denies hemoptysis and leg swelling",
+  "type": "red_flag_screen",
+  "slots": {
+   "screen": "hemoptysis/leg swelling",
+   "result": "negative"
+  },
+  "source": "transcript",
+  "transcript_quote": "Any coughing up blood? Leg swelling? PT: No. No.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f10",
+  "text": "Denies falls, fainting",
+  "type": "red_flag_screen",
+  "slots": {
+   "screen": "falls/syncope",
+   "result": "negative"
+  },
+  "source": "transcript",
+  "transcript_quote": "No falls.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f11",
+  "text": "Tree nut allergy (walnut) with prior significant swelling; flagged to dietary and on armband",
+  "type": "condition",
+  "slots": {
+   "allergen": "tree nuts",
+   "reaction": "swelling/angioedema"
+  },
+  "source": "transcript",
+  "transcript_quote": "the allergy \u2014 tree nuts... She swelled up badly once from a walnut brownie.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f12",
+  "text": "Home medication: aspirin 81 mg daily",
+  "type": "medication",
+  "slots": {
+   "drug": "aspirin",
+   "dose": "81 mg",
+   "freq": "daily",
+   "route": "oral",
+   "status": "continued"
+  },
+  "source": "both",
+  "transcript_quote": "aspirin eighty-one milligrams daily",
+  "fhir_ref": null
+ },
+ {
+  "id": "f13",
+  "text": "Home medication: atenolol 50 mg",
+  "type": "medication",
+  "slots": {
+   "drug": "atenolol",
+   "dose": "50 mg",
+   "status": "continued"
+  },
+  "source": "both",
+  "transcript_quote": "atenolol fifty",
+  "fhir_ref": null
+ },
+ {
+  "id": "f14",
+  "text": "Home medication: rosuvastatin 40 mg",
+  "type": "medication",
+  "slots": {
+   "drug": "rosuvastatin",
+   "dose": "40 mg",
+   "status": "continued"
+  },
+  "source": "both",
+  "transcript_quote": "rosuvastatin forty",
+  "fhir_ref": null
+ },
+ {
+  "id": "f15",
+  "text": "Home medication: lisinopril 20 mg",
+  "type": "medication",
+  "slots": {
+   "drug": "lisinopril",
+   "dose": "20 mg",
+   "status": "continued"
+  },
+  "source": "both",
+  "transcript_quote": "lisinopril twenty",
+  "fhir_ref": null
+ },
+ {
+  "id": "f16",
+  "text": "Past medical history includes hypertension",
+  "type": "condition",
+  "slots": {
+   "condition": "hypertension"
+  },
+  "source": "transcript",
+  "transcript_quote": "I have high blood pressure",
+  "fhir_ref": null
+ },
+ {
+  "id": "f17",
+  "text": "History of ST-elevation myocardial infarction (STEMI) years ago",
+  "type": "condition",
+  "slots": {
+   "condition": "prior STEMI"
+  },
+  "source": "transcript",
+  "transcript_quote": "the heart attack we mentioned \u2014 an ST-elevation heart attack some years back",
+  "fhir_ref": null
+ },
+ {
+  "id": "f18",
+  "text": "Past medical history includes hyperlipidemia",
+  "type": "condition",
+  "slots": {
+   "condition": "hyperlipidemia"
+  },
+  "source": "transcript",
+  "transcript_quote": "high cholesterol",
+  "fhir_ref": null
+ },
+ {
+  "id": "f19",
+  "text": "Past medical history includes metabolic syndrome and prediabetes",
+  "type": "condition",
+  "slots": {
+   "condition": "metabolic syndrome, prediabetes"
+  },
+  "source": "transcript",
+  "transcript_quote": "metabolic syndrome, prediabetes",
+  "fhir_ref": null
+ },
+ {
+  "id": "f20",
+  "text": "Past medical history includes osteoporosis",
+  "type": "condition",
+  "slots": {
+   "condition": "osteoporosis"
+  },
+  "source": "transcript",
+  "transcript_quote": "osteoporosis",
+  "fhir_ref": null
+ },
+ {
+  "id": "f21",
+  "text": "Past medical history includes obesity",
+  "type": "condition",
+  "slots": {
+   "condition": "obesity"
+  },
+  "source": "transcript",
+  "transcript_quote": "obesity on the problem list",
+  "fhir_ref": null
+ },
+ {
+  "id": "f22",
+  "text": "History of scoliosis since adolescence",
+  "type": "condition",
+  "slots": {
+   "condition": "scoliosis"
+  },
+  "source": "transcript",
+  "transcript_quote": "scoliosis from adolescence",
+  "fhir_ref": null
+ },
+ {
+  "id": "f23",
+  "text": "Admission diagnosis of pneumonia with viral lung inflammation on chest x-ray",
+  "type": "condition",
+  "slots": {
+   "condition": "pneumonia"
+  },
+  "source": "both",
+  "transcript_quote": "The chest x-ray we took shows pneumonia \u2014 the virus has inflamed the lungs themselves.",
+  "fhir_ref": "Condition/7bd9e5b0-5d4b-f10d-1c16-d3b76ec7cfc6"
+ },
+ {
+  "id": "f24",
+  "text": "Hypoxemia present",
+  "type": "condition",
+  "slots": {
+   "condition": "hypoxemia"
+  },
+  "source": "both",
+  "transcript_quote": "your oxygen level was about eighty-seven percent",
+  "fhir_ref": "Condition/7bd9e5b0-5d4b-f10d-9154-86f959fd83aa"
+ },
+ {
+  "id": "f25",
+  "text": "Respiratory distress present",
+  "type": "condition",
+  "slots": {
+   "condition": "respiratory distress"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Condition/7bd9e5b0-5d4b-f10d-8f0b-70ef07e53018"
+ },
+ {
+  "id": "f26",
+  "text": "Arrival oxygen saturation 87% on room air",
+  "type": "observation",
+  "slots": {
+   "measure": "SpO2",
+   "value": "87%"
+  },
+  "source": "both",
+  "transcript_quote": "your oxygen level was about eighty-seven percent",
+  "fhir_ref": "Observation/7bd9e5b0-5d4b-f10d-b220-fbec423e5f3e"
+ },
+ {
+  "id": "f27",
+  "text": "Arrival temperature 38.5\u00b0C",
+  "type": "observation",
+  "slots": {
+   "measure": "temperature",
+   "value": "38.5 C"
+  },
+  "source": "both",
+  "transcript_quote": "your temperature was thirty-eight and a half",
+  "fhir_ref": "Observation/7bd9e5b0-5d4b-f10d-56a0-9ab4978203c3"
+ },
+ {
+  "id": "f28",
+  "text": "Arrival heart rate in the 50s (bradycardia)",
+  "type": "observation",
+  "slots": {
+   "measure": "heart rate",
+   "value": "~57/min"
+  },
+  "source": "both",
+  "transcript_quote": "your heart rate was in the fifties",
+  "fhir_ref": "Observation/7bd9e5b0-5d4b-f10d-b7b1-d9b02a45bc3f"
+ },
+ {
+  "id": "f29",
+  "text": "Arrival blood pressure 105/53 mmHg",
+  "type": "observation",
+  "slots": {
+   "measure": "blood pressure",
+   "value": "105/53 mmHg"
+  },
+  "source": "both",
+  "transcript_quote": "blood pressure one-oh-five over fifty-three",
+  "fhir_ref": "Observation/7bd9e5b0-5d4b-f10d-2e3b-4332bed1e8cb"
+ },
+ {
+  "id": "f30",
+  "text": "Oxygen saturation dropped to ~76% lying flat with fever climbing toward 39\u00b0C and heart rate rising to high 80s",
+  "type": "observation",
+  "slots": {
+   "measure": "SpO2/temp/HR",
+   "value": "SpO2 76%, temp ~39C, HR high 80s"
+  },
+  "source": "both",
+  "transcript_quote": "her oxygen dropped to about seventy-six percent lying flat, her fever is climbing toward thirty-nine, and her heart rate has come up to the high eighties",
+  "fhir_ref": "Observation/7bd9e5b0-5d4b-f10d-35ce-616b57e78ce1"
+ },
+ {
+  "id": "f31",
+  "text": "Leukopenia \u2014 WBC low (~3.4 x10^3/uL)",
+  "type": "observation",
+  "slots": {
+   "measure": "WBC",
+   "value": "3.4 x10^3/uL",
+   "flag": "low"
+  },
+  "source": "both",
+  "transcript_quote": "Her white blood cell count is a little low",
+  "fhir_ref": "Observation/7bd9e5b0-5d4b-f10d-10e9-18b391f31cdb"
+ },
+ {
+  "id": "f32",
+  "text": "Thrombocytopenia \u2014 platelets low (~136 x10^3/uL)",
+  "type": "observation",
+  "slots": {
+   "measure": "platelets",
+   "value": "136 x10^3/uL",
+   "flag": "low"
+  },
+  "source": "both",
+  "transcript_quote": "Her platelets are on the lower side as well, which we will follow.",
+  "fhir_ref": "Observation/7bd9e5b0-5d4b-f10d-ad53-87971169bf9e"
+ },
+ {
+  "id": "f33",
+  "text": "Elevated creatinine at 2.7 mg/dL with acute kidney strain",
+  "type": "observation",
+  "slots": {
+   "measure": "creatinine",
+   "value": "2.7 mg/dL",
+   "flag": "high"
+  },
+  "source": "both",
+  "transcript_quote": "the creatinine is elevated at two point seven",
+  "fhir_ref": "Observation/7bd9e5b0-5d4b-f10d-1cbd-5f4529056130"
+ },
+ {
+  "id": "f34",
+  "text": "Markedly reduced estimated GFR (~11 mL/min)",
+  "type": "observation",
+  "slots": {
+   "measure": "eGFR",
+   "value": "11 mL/min",
+   "flag": "low"
+  },
+  "source": "both",
+  "transcript_quote": "the filtration estimate is quite low",
+  "fhir_ref": "Observation/7bd9e5b0-5d4b-f10d-f61c-e922b1185613"
+ },
+ {
+  "id": "f35",
+  "text": "Mild hyperkalemia \u2014 potassium 5.07 mmol/L",
+  "type": "observation",
+  "slots": {
+   "measure": "potassium",
+   "value": "5.07 mmol/L",
+   "flag": "high"
+  },
+  "source": "both",
+  "transcript_quote": "Her potassium is also running slightly high, which goes along with the kidney strain",
+  "fhir_ref": "Observation/7bd9e5b0-5d4b-f10d-78eb-87705320842c"
+ },
+ {
+  "id": "f36",
+  "text": "Chest x-ray performed, showing pneumonia",
+  "type": "procedure",
+  "slots": {
+   "procedure": "chest x-ray"
+  },
+  "source": "both",
+  "transcript_quote": "The chest x-ray we took shows pneumonia",
+  "fhir_ref": "Procedure/7bd9e5b0-5d4b-f10d-f957-0138b52e46db"
+ },
+ {
+  "id": "f37",
+  "text": "Admission to hospital in an isolation room due to confirmed COVID and pneumonia",
+  "type": "followup",
+  "slots": {
+   "disposition": "admit to isolation room"
+  },
+  "source": "transcript",
+  "transcript_quote": "That combination is why you are being admitted, and because of the virus it has to be an isolation room.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f38",
+  "text": "Continuous oxygen administration by mask, flow titrated to maintain safe saturation",
+  "type": "procedure",
+  "slots": {
+   "procedure": "oxygen by mask",
+   "route": "mask",
+   "duration": "continuous"
+  },
+  "source": "both",
+  "transcript_quote": "First, oxygen by mask, continuously, and we adjust the flow to keep your levels safe.",
+  "fhir_ref": "Procedure/7bd9e5b0-5d4b-f10d-298c-f4d4675fae9c"
+ },
+ {
+  "id": "f39",
+  "text": "Prone positioning sessions daily as tolerated, with padding for scoliosis and scheduled rotation",
+  "type": "procedure",
+  "slots": {
+   "procedure": "prone positioning",
+   "frequency": "daily"
+  },
+  "source": "both",
+  "transcript_quote": "we are going to have you spend a good part of each day lying on your stomach. It is called prone positioning.",
+  "fhir_ref": "Procedure/7bd9e5b0-5d4b-f10d-8c3f-d2a2c6ef4c6c"
+ },
+ {
+  "id": "f40",
+  "text": "Order for daily morning labs: CBC, comprehensive metabolic panel, troponin (given cardiac history), coagulation studies, and iron studies",
+  "type": "order",
+  "slots": {
+   "tests": "CBC, CMP, troponin, coagulation, iron studies",
+   "frequency": "daily AM"
+  },
+  "source": "both",
+  "transcript_quote": "blood work, every morning. A blood count, a chemistry panel, and on a regular schedule some extras \u2014 a heart enzyme called troponin... clotting tests... and iron studies.",
+  "fhir_ref": "DiagnosticReport/7bd9e5b0-5d4b-f10d-c38d-de1c4e159dcf"
+ },
+ {
+  "id": "f41",
+  "text": "Plan to cautiously adjust/hold blood pressure medications while kidneys recover, guided by daily labs",
+  "type": "medication",
+  "slots": {
+   "drug": "antihypertensives",
+   "action": "adjust/hold pending renal recovery"
+  },
+  "source": "transcript",
+  "transcript_quote": "we will be careful and deliberate with her blood pressure medicines while the kidneys recover",
+  "fhir_ref": null
+ },
+ {
+  "id": "f42",
+  "text": "Plan for gentle IV/oral fluids and monitoring for dehydration and renal strain",
+  "type": "order",
+  "slots": {
+   "intervention": "gentle fluids and monitoring"
+  },
+  "source": "transcript",
+  "transcript_quote": "Gentle fluids, monitoring, and time.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f43",
+  "text": "Counseled patient to immediately use call button for worsening breathing, mask feeling inadequate, chest pain, or palpitations",
+  "type": "counseling",
+  "slots": {
+   "topic": "warning signs"
+  },
+  "source": "transcript",
+  "transcript_quote": "If breathing gets harder, if the mask feels like it is not enough, if you feel chest pain or your heart racing \u2014 press the call button immediately.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f44",
+  "text": "Counseled family that condition is serious given age and comorbidities, will be watched closely",
+  "type": "counseling",
+  "slots": {
+   "topic": "prognosis"
+  },
+  "source": "transcript",
+  "transcript_quote": "Honest answer: this is serious, and I am worried enough to watch her very closely.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f45",
+  "text": "Risk of infection triggering another cardiac event discussed; troponin monitored and aspirin/cardiac meds continued as labs allow",
+  "type": "counseling",
+  "slots": {
+   "topic": "cardiac risk"
+  },
+  "source": "transcript",
+  "transcript_quote": "It is a real risk with severe infections, which is exactly why we are checking the troponin regularly and keeping her on her aspirin and heart medicines as long as the labs allow.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f46",
+  "text": "Isolation precautions: no in-room visitors; daily video calls arranged and physician to call daughter each evening with updates",
+  "type": "followup",
+  "slots": {
+   "plan": "daily video call and evening physician call to daughter"
+  },
+  "source": "transcript",
+  "transcript_quote": "The nurses will help you two video call every day, and Teresa, I will call you personally with updates",
+  "fhir_ref": null
+ },
+ {
+  "id": "f47",
+  "text": "Tree nut allergy communicated to dietary/kitchen for meal safety",
+  "type": "counseling",
+  "slots": {
+   "topic": "allergy dietary flagging"
+  },
+  "source": "transcript",
+  "transcript_quote": "Tree nut allergy, flagging it for dietary right now, and it is on her armband.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f48",
+  "text": "Daughter (Teresa) present as caregiver and support, actively involved in history and care coordination",
+  "type": "sdoh",
+  "slots": {
+   "domain": "social/caregiver support"
+  },
+  "source": "transcript",
+  "transcript_quote": "Teresa, her daughter. They let me gown up to help get her settled.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f49",
+  "text": "Oxygen saturation improved to low 90s on oxygen mask after application",
+  "type": "observation",
+  "slots": {
+   "measure": "SpO2 on mask",
+   "value": "low 90s"
+  },
+  "source": "transcript",
+  "transcript_quote": "you are holding in the low nineties on the mask",
+  "fhir_ref": null
+ }
+]

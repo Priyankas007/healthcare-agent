@@ -1,0 +1,541 @@
+[
+ {
+  "id": "f1",
+  "text": "Patient reports three positive home pregnancy tests taken over a two-day period",
+  "type": "symptom",
+  "slots": {
+   "finding": "positive home pregnancy test"
+  },
+  "source": "transcript",
+  "transcript_quote": "Three positive home tests. I didn't trust the first one. Or, apparently, the second.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f2",
+  "text": "Approximately 10 weeks since last menstrual period (irregular cycles)",
+  "type": "observation",
+  "slots": {
+   "gestational_age": "~10 weeks"
+  },
+  "source": "transcript",
+  "transcript_quote": "when I got to about ten weeks since my last period",
+  "fhir_ref": null
+ },
+ {
+  "id": "f3",
+  "text": "Patient is 43 years old (advanced maternal age)",
+  "type": "observation",
+  "slots": {
+   "age": "43"
+  },
+  "source": "transcript",
+  "transcript_quote": "I'm forty-three, doctor.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f4",
+  "text": "History of prior early first-trimester pregnancy loss (miscarriage)",
+  "type": "condition",
+  "slots": {
+   "condition": "prior miscarriage",
+   "timing": "years ago, first trimester"
+  },
+  "source": "transcript",
+  "transcript_quote": "I lost a pregnancy before, years ago, early on",
+  "fhir_ref": null
+ },
+ {
+  "id": "f5",
+  "text": "History of hypertension since her thirties",
+  "type": "condition",
+  "slots": {
+   "condition": "hypertension"
+  },
+  "source": "transcript",
+  "transcript_quote": "The blood pressure thing has followed me around since my thirties.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f6",
+  "text": "History of prediabetes",
+  "type": "condition",
+  "slots": {
+   "condition": "prediabetes"
+  },
+  "source": "transcript",
+  "transcript_quote": "High blood pressure. Prediabetes. Anemia.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f7",
+  "text": "History of anemia",
+  "type": "condition",
+  "slots": {
+   "condition": "anemia"
+  },
+  "source": "transcript",
+  "transcript_quote": "High blood pressure. Prediabetes. Anemia.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f8",
+  "text": "History of obesity and metabolic syndrome",
+  "type": "condition",
+  "slots": {
+   "condition": "obesity / metabolic syndrome"
+  },
+  "source": "transcript",
+  "transcript_quote": "your weight has been in the range we classify as obesity, which along with the blood pressure and the blood sugar gets bundled into something called metabolic syndrome",
+  "fhir_ref": null
+ },
+ {
+  "id": "f9",
+  "text": "Patient is not taking any regular medications (prescription, OTC, or herbal), including no antihypertensive therapy currently",
+  "type": "medication",
+  "slots": {
+   "status": "none"
+  },
+  "source": "transcript",
+  "transcript_quote": "Nothing regular at the moment, no.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f10",
+  "text": "No vaginal bleeding or spotting since positive tests",
+  "type": "red_flag_screen",
+  "slots": {
+   "finding": "no bleeding/spotting",
+   "status": "negative"
+  },
+  "source": "transcript",
+  "transcript_quote": "No bleeding, no cramps.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f11",
+  "text": "No cramping",
+  "type": "red_flag_screen",
+  "slots": {
+   "finding": "no cramping",
+   "status": "negative"
+  },
+  "source": "transcript",
+  "transcript_quote": "No bleeding, no cramps.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f12",
+  "text": "Reports breast/chest soreness",
+  "type": "symptom",
+  "slots": {
+   "symptom": "breast tenderness"
+  },
+  "source": "transcript",
+  "transcript_quote": "My chest is sore",
+  "fhir_ref": null
+ },
+ {
+  "id": "f13",
+  "text": "Reports afternoon fatigue",
+  "type": "symptom",
+  "slots": {
+   "symptom": "fatigue"
+  },
+  "source": "transcript",
+  "transcript_quote": "I'm tired in the afternoons",
+  "fhir_ref": null
+ },
+ {
+  "id": "f14",
+  "text": "Reports smell aversions (e.g., coffee)",
+  "type": "symptom",
+  "slots": {
+   "symptom": "smell aversion"
+  },
+  "source": "transcript",
+  "transcript_quote": "certain smells have become my enemies. Coffee, tragically.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f15",
+  "text": "Reports morning queasiness but keeps food down; no vomiting",
+  "type": "symptom",
+  "slots": {
+   "symptom": "nausea",
+   "vomiting": "none"
+  },
+  "source": "transcript",
+  "transcript_quote": "Queasy some mornings, but I keep food down.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f16",
+  "text": "No headaches, vision changes, or swelling of hands or face",
+  "type": "red_flag_screen",
+  "slots": {
+   "findings": "no headache, vision changes, or edema",
+   "status": "negative"
+  },
+  "source": "transcript",
+  "transcript_quote": "None of that.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f17",
+  "text": "Increased urinary frequency but no dysuria (no burning)",
+  "type": "red_flag_screen",
+  "slots": {
+   "finding": "urinary frequency without burning",
+   "status": "no dysuria"
+  },
+  "source": "transcript",
+  "transcript_quote": "More often, sure, but no burning.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f18",
+  "text": "History of intimate partner violence by ex-husband; currently feels safe, remarried to a supportive partner",
+  "type": "sdoh",
+  "slots": {
+   "domain": "intimate partner violence",
+   "status": "past, currently safe"
+  },
+  "source": "transcript",
+  "transcript_quote": "My ex-husband. It was bad for a few years... But he's three states away, and I'm remarried now, and my husband is a gentle man. I'm safe.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f19",
+  "text": "Provided IPV resource card in patient packet",
+  "type": "counseling",
+  "slots": {
+   "topic": "IPV resources"
+  },
+  "source": "transcript",
+  "transcript_quote": "I'll tuck a card into your packet, no strings attached.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f20",
+  "text": "In-office pregnancy test performed, confirming pregnancy",
+  "type": "procedure",
+  "slots": {
+   "procedure": "standard pregnancy test"
+  },
+  "source": "both",
+  "transcript_quote": "We confirmed your pregnancy test here this morning.",
+  "fhir_ref": "Procedure/c2cbc55e-34dc-73c6-7f53-f978c78c0225"
+ },
+ {
+  "id": "f21",
+  "text": "Ultrasound viability scan performed showing intrauterine pregnancy with cardiac activity, appropriate location and growth",
+  "type": "procedure",
+  "slots": {
+   "procedure": "fetal viability ultrasound",
+   "finding": "heartbeat present, normal location"
+  },
+  "source": "both",
+  "transcript_quote": "That's the heartbeat, strong and steady, and everything is sitting exactly where it should be. This is a normal, healthy early pregnancy.",
+  "fhir_ref": "Procedure/c2cbc55e-34dc-73c6-6ffc-7d5de64265f5"
+ },
+ {
+  "id": "f22",
+  "text": "Fetal heart auscultated via Doppler with audible heartbeat",
+  "type": "procedure",
+  "slots": {
+   "procedure": "fetal heart auscultation",
+   "finding": "positive"
+  },
+  "source": "both",
+  "transcript_quote": "we caught it on the Doppler too \u2014 that swishing sound you heard is exactly what we want",
+  "fhir_ref": "Procedure/c2cbc55e-34dc-73c6-03a8-aba5cf645e52"
+ },
+ {
+  "id": "f23",
+  "text": "Uterine fundal height measured",
+  "type": "procedure",
+  "slots": {
+   "procedure": "fundal height evaluation"
+  },
+  "source": "both",
+  "transcript_quote": "measure your belly for what's called fundal height",
+  "fhir_ref": "Procedure/c2cbc55e-34dc-73c6-f217-65149c73df72"
+ },
+ {
+  "id": "f24",
+  "text": "Physical examination performed",
+  "type": "procedure",
+  "slots": {
+   "procedure": "physical examination"
+  },
+  "source": "both",
+  "transcript_quote": "I'll examine you",
+  "fhir_ref": "Procedure/c2cbc55e-34dc-73c6-167e-771e36620910"
+ },
+ {
+  "id": "f25",
+  "text": "Blood group typing ordered/performed",
+  "type": "order",
+  "slots": {
+   "test": "blood type"
+  },
+  "source": "both",
+  "transcript_quote": "Blood type.",
+  "fhir_ref": "Procedure/c2cbc55e-34dc-73c6-676f-fc226c57e8ea"
+ },
+ {
+  "id": "f26",
+  "text": "Complete blood count (hemogram) ordered to assess anemia",
+  "type": "order",
+  "slots": {
+   "test": "CBC"
+  },
+  "source": "both",
+  "transcript_quote": "A complete blood count, which also tells us where your anemia stands.",
+  "fhir_ref": "Procedure/c2cbc55e-34dc-73c6-420b-d101b370a4d3"
+ },
+ {
+  "id": "f27",
+  "text": "Hepatitis B surface antigen test ordered",
+  "type": "order",
+  "slots": {
+   "test": "hepatitis B"
+  },
+  "source": "both",
+  "transcript_quote": "Screening for hepatitis B, hepatitis C, HIV, and syphilis.",
+  "fhir_ref": "Procedure/c2cbc55e-34dc-73c6-bf48-dd1897d9f3f3"
+ },
+ {
+  "id": "f28",
+  "text": "Hepatitis C antibody test ordered",
+  "type": "order",
+  "slots": {
+   "test": "hepatitis C"
+  },
+  "source": "both",
+  "transcript_quote": "Screening for hepatitis B, hepatitis C, HIV, and syphilis.",
+  "fhir_ref": "Procedure/c2cbc55e-34dc-73c6-b3eb-5ef605a0cf56"
+ },
+ {
+  "id": "f29",
+  "text": "HIV test ordered",
+  "type": "order",
+  "slots": {
+   "test": "HIV"
+  },
+  "source": "both",
+  "transcript_quote": "Screening for hepatitis B, hepatitis C, HIV, and syphilis.",
+  "fhir_ref": "Procedure/c2cbc55e-34dc-73c6-e17b-e7f22b8d594b"
+ },
+ {
+  "id": "f30",
+  "text": "Syphilis test ordered",
+  "type": "order",
+  "slots": {
+   "test": "syphilis"
+  },
+  "source": "both",
+  "transcript_quote": "Screening for hepatitis B, hepatitis C, HIV, and syphilis.",
+  "fhir_ref": "Procedure/c2cbc55e-34dc-73c6-49ec-200867be5298"
+ },
+ {
+  "id": "f31",
+  "text": "Rubella immunity screening ordered",
+  "type": "order",
+  "slots": {
+   "test": "rubella immunity"
+  },
+  "source": "both",
+  "transcript_quote": "Immunity checks for rubella and chickenpox.",
+  "fhir_ref": "Procedure/c2cbc55e-34dc-73c6-2c6f-1ef572296a4e"
+ },
+ {
+  "id": "f32",
+  "text": "Varicella (chickenpox) immunity screening ordered",
+  "type": "order",
+  "slots": {
+   "test": "varicella immunity"
+  },
+  "source": "both",
+  "transcript_quote": "Immunity checks for rubella and chickenpox.",
+  "fhir_ref": "Procedure/c2cbc55e-34dc-73c6-4739-8ad5d9c9d432"
+ },
+ {
+  "id": "f33",
+  "text": "Chlamydia swab/antigen test ordered",
+  "type": "order",
+  "slots": {
+   "test": "chlamydia"
+  },
+  "source": "both",
+  "transcript_quote": "Swabs for chlamydia and gonorrhea.",
+  "fhir_ref": "Procedure/c2cbc55e-34dc-73c6-e1c4-dda91fe09809"
+ },
+ {
+  "id": "f34",
+  "text": "Gonorrhea test ordered",
+  "type": "order",
+  "slots": {
+   "test": "gonorrhea"
+  },
+  "source": "both",
+  "transcript_quote": "Swabs for chlamydia and gonorrhea.",
+  "fhir_ref": "Procedure/c2cbc55e-34dc-73c6-4eda-df0a9242edf1"
+ },
+ {
+  "id": "f35",
+  "text": "Urine culture ordered",
+  "type": "order",
+  "slots": {
+   "test": "urine culture"
+  },
+  "source": "both",
+  "transcript_quote": "A urine culture, a urine check for protein, and a urine sugar screen",
+  "fhir_ref": "Procedure/c2cbc55e-34dc-73c6-608c-65acfe6e8707"
+ },
+ {
+  "id": "f36",
+  "text": "Urine qualitative protein test ordered",
+  "type": "order",
+  "slots": {
+   "test": "urine protein"
+  },
+  "source": "both",
+  "transcript_quote": "a urine check for protein",
+  "fhir_ref": "Procedure/c2cbc55e-34dc-73c6-5773-7c0ee0ee9ba7"
+ },
+ {
+  "id": "f37",
+  "text": "Urine screening for diabetes/glucose ordered given prediabetes",
+  "type": "order",
+  "slots": {
+   "test": "urine glucose"
+  },
+  "source": "both",
+  "transcript_quote": "a urine sugar screen, given the prediabetes",
+  "fhir_ref": "Procedure/c2cbc55e-34dc-73c6-72cc-65749421e93a"
+ },
+ {
+  "id": "f38",
+  "text": "Pap smear (cervical cytology) performed",
+  "type": "procedure",
+  "slots": {
+   "procedure": "Pap smear"
+  },
+  "source": "both",
+  "transcript_quote": "a Pap smear while we do the exam",
+  "fhir_ref": "Procedure/c2cbc55e-34dc-73c6-ffbe-ca4a594f0dbf"
+ },
+ {
+  "id": "f39",
+  "text": "Tuberculosis skin test placed on forearm, to be read in 2-3 days",
+  "type": "procedure",
+  "slots": {
+   "procedure": "TB skin test",
+   "read": "2-3 days"
+  },
+  "source": "both",
+  "transcript_quote": "a small tuberculosis skin test on your forearm. Tiny prick, and we look at it again in two to three days.",
+  "fhir_ref": "Procedure/c2cbc55e-34dc-73c6-7539-dda6c46dc7fa"
+ },
+ {
+  "id": "f40",
+  "text": "Diagnosis of normal, healthy early intrauterine pregnancy",
+  "type": "condition",
+  "slots": {
+   "condition": "normal pregnancy"
+  },
+  "source": "both",
+  "transcript_quote": "This is a normal, healthy early pregnancy.",
+  "fhir_ref": "Condition/c2cbc55e-34dc-73c6-7cad-b3aec57af7da"
+ },
+ {
+  "id": "f41",
+  "text": "Follow-up prenatal visit scheduled in about 4 weeks, with monthly visits initially then more frequent later",
+  "type": "followup",
+  "slots": {
+   "interval": "4 weeks"
+  },
+  "source": "transcript",
+  "transcript_quote": "we'll see you in about four weeks",
+  "fhir_ref": null
+ },
+ {
+  "id": "f42",
+  "text": "Counseled to call for warning signs: headaches, vision spots, sudden swelling of hands/face, given hypertension history",
+  "type": "counseling",
+  "slots": {
+   "topic": "preeclampsia warning signs"
+  },
+  "source": "transcript",
+  "transcript_quote": "I want you paying attention to headaches, spots in your vision, sudden swelling of the hands or face \u2014 those you call about, day or night",
+  "fhir_ref": null
+ },
+ {
+  "id": "f43",
+  "text": "Counseled to call for bleeding, cramping, uncontrollable vomiting, or persistent worry",
+  "type": "counseling",
+  "slots": {
+   "topic": "when to call"
+  },
+  "source": "transcript",
+  "transcript_quote": "you call us in between for anything at all \u2014 bleeding, cramping, vomiting you can't manage, or just a worry that won't quiet down",
+  "fhir_ref": null
+ },
+ {
+  "id": "f44",
+  "text": "Nutritional counseling: regular meals, vegetables, iron-rich foods for anemia, gentle exercise (walking), and sleep",
+  "type": "counseling",
+  "slots": {
+   "topic": "diet and lifestyle"
+  },
+  "source": "transcript",
+  "transcript_quote": "regular meals, plenty of vegetables, iron-rich foods for the anemia \u2014 beans, greens, red meat if you eat it \u2014 and gentle movement. Walking counts. Sleep counts.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f45",
+  "text": "Optional genetic screening to be discussed at next visit",
+  "type": "counseling",
+  "slots": {
+   "topic": "genetic screening"
+  },
+  "source": "transcript",
+  "transcript_quote": "at your next visit we'll sit down properly to talk about the optional genetic screening tests",
+  "fhir_ref": null
+ },
+ {
+  "id": "f46",
+  "text": "Lab results to be delivered via patient portal",
+  "type": "followup",
+  "slots": {
+   "method": "portal"
+  },
+  "source": "transcript",
+  "transcript_quote": "the lab results will come to you through the portal as they finish",
+  "fhir_ref": null
+ },
+ {
+  "id": "f47",
+  "text": "Family history of diabetes (mother diabetic in her fifties)",
+  "type": "sdoh",
+  "slots": {
+   "domain": "family history",
+   "condition": "diabetes"
+  },
+  "source": "transcript",
+  "transcript_quote": "My mother went diabetic in her fifties.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f48",
+  "text": "Counseled that closer/more frequent prenatal monitoring is warranted due to age and BP/blood sugar history",
+  "type": "counseling",
+  "slots": {
+   "topic": "high-risk monitoring plan"
+  },
+  "source": "transcript",
+  "transcript_quote": "means I'll be watching you more closely than the average patient \u2014 more visits, more checks",
+  "fhir_ref": null
+ }
+]

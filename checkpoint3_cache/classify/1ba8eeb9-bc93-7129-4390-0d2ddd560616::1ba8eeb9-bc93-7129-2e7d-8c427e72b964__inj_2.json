@@ -1,0 +1,8 @@
+[
+ {
+  "fact_id": "f14",
+  "expected": true,
+  "severity": "safety_critical",
+  "why_it_matters": "A PHQ-9 of 17 indicates moderately severe depression\u2014an actionable abnormal result that warrants active treatment and contradicts the note's downgrading to mere 'stress,' so omitting it risks under-treatment."
+ }
+]

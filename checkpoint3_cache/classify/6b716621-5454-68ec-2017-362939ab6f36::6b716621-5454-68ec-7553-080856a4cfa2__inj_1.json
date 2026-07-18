@@ -1,0 +1,20 @@
+[
+ {
+  "fact_id": "f9",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Documented food insecurity in the past year contradicts the note's claim of no unmet needs and warrants resource referral, so its omission misrepresents the SDOH assessment."
+ },
+ {
+  "fact_id": "f11",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "A completed GAD-7 with a minimal score of 1 supports documentation completeness of anxiety screening but reflects no actionable finding."
+ },
+ {
+  "fact_id": "f27",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Age-appropriate cancer screening status is central to an annual preventive visit and its absence leaves a gap in documenting whether follow-up screening is needed."
+ }
+]

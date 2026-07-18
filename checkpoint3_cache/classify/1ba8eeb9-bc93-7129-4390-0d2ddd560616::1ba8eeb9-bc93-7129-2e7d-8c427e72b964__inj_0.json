@@ -1,0 +1,8 @@
+[
+ {
+  "fact_id": "f9",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Documenting the absence of current medications completes the medication reconciliation noted for this general exam and confirms no drug interactions with the newly prescribed ibuprofen."
+ }
+]

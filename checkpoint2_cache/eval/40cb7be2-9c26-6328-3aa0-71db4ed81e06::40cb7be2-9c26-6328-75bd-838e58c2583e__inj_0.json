@@ -1,0 +1,300 @@
+{
+ "note_version_id": "40cb7be2-9c26-6328-3aa0-71db4ed81e06::40cb7be2-9c26-6328-75bd-838e58c2583e__inj_0",
+ "injected_fact_id": "f24",
+ "detected_absent_fact_ids": [
+  "f24"
+ ],
+ "caught": true,
+ "collateral_flips": [],
+ "n_present_on_provided": 46,
+ "presence_results": [
+  {
+   "fact_id": "f1",
+   "status": "present",
+   "note_evidence": "confirmed today. Her last menstrual period was in late May; three home pregnancy tests were positive... Standard pregnancy test positive.",
+   "rationale": "Pregnancy confirmed with clinic test and three home tests."
+  },
+  {
+   "fact_id": "f2",
+   "status": "present",
+   "note_evidence": "prenatal intake visit for a planned, desired first pregnancy",
+   "rationale": "First pregnancy, planned and desired documented."
+  },
+  {
+   "fact_id": "f3",
+   "status": "present",
+   "note_evidence": "Her last menstrual period was in late May",
+   "rationale": "LMP late May documented consistent with the fact."
+  },
+  {
+   "fact_id": "f4",
+   "status": "present",
+   "note_evidence": "morning-predominant nausea with two episodes of emesis",
+   "rationale": "Morning nausea and two vomiting episodes captured."
+  },
+  {
+   "fact_id": "f5",
+   "status": "present",
+   "note_evidence": "breast tenderness",
+   "rationale": "Breast tenderness documented."
+  },
+  {
+   "fact_id": "f6",
+   "status": "present",
+   "note_evidence": "pronounced fatigue including a daytime sleep episode at work",
+   "rationale": "Fatigue and falling asleep documented."
+  },
+  {
+   "fact_id": "f7",
+   "status": "present",
+   "note_evidence": "urinary frequency",
+   "rationale": "Urinary frequency documented."
+  },
+  {
+   "fact_id": "f8",
+   "status": "present",
+   "note_evidence": "significant cramping beyond mild twinges",
+   "rationale": "Mild twinges noted."
+  },
+  {
+   "fact_id": "f9",
+   "status": "present",
+   "note_evidence": "She denies vaginal bleeding",
+   "rationale": "Denies bleeding documented."
+  },
+  {
+   "fact_id": "f10",
+   "status": "present",
+   "note_evidence": "dysuria, fever, and abdominal pain",
+   "rationale": "Denies dysuria and fever documented."
+  },
+  {
+   "fact_id": "f11",
+   "status": "partial",
+   "note_evidence": "adolescent idiopathic scoliosis (never operative)",
+   "rationale": "Scoliosis and no surgery noted but age 13 onset not documented."
+  },
+  {
+   "fact_id": "f12",
+   "status": "present",
+   "note_evidence": "severe anxiety with panic attacks, currently unmedicated and self-managed with breathing techniques",
+   "rationale": "Panic disorder, unmedicated, non-pharmacologic management documented."
+  },
+  {
+   "fact_id": "f13",
+   "status": "present",
+   "note_evidence": "she experienced a brief panic episode before today's visit, settled with her partner's support",
+   "rationale": "Pre-visit panic self-managed with partner documented."
+  },
+  {
+   "fact_id": "f14",
+   "status": "present",
+   "note_evidence": "No surgeries",
+   "rationale": "No prior surgeries documented."
+  },
+  {
+   "fact_id": "f15",
+   "status": "present",
+   "note_evidence": "no known allergies",
+   "rationale": "NKDA documented."
+  },
+  {
+   "fact_id": "f16",
+   "status": "present",
+   "note_evidence": "Ex-smoker, quit years ago",
+   "rationale": "Former smoker quit years ago documented."
+  },
+  {
+   "fact_id": "f17",
+   "status": "present",
+   "note_evidence": "alcohol stopped completely at the positive test",
+   "rationale": "Alcohol stopped with pregnancy documented."
+  },
+  {
+   "fact_id": "f18",
+   "status": "present",
+   "note_evidence": "the household car is out of service and public transit to clinic takes ~90 minutes",
+   "rationale": "Transportation barrier documented."
+  },
+  {
+   "fact_id": "f19",
+   "status": "present",
+   "note_evidence": "Abdomen soft and nontender; uterine fundal height evaluated and consistent with stated first-trimester dates",
+   "rationale": "Exam with appropriate findings documented."
+  },
+  {
+   "fact_id": "f20",
+   "status": "present",
+   "note_evidence": "uterine fundal height evaluated",
+   "rationale": "Fundal height evaluated documented."
+  },
+  {
+   "fact_id": "f21",
+   "status": "present",
+   "note_evidence": "Fetal heart auscultated with doppler: regular, rapid fetal heart tones appreciated",
+   "rationale": "Doppler fetal heart with rapid tones documented."
+  },
+  {
+   "fact_id": "f22",
+   "status": "present",
+   "note_evidence": "Ultrasound performed for fetal viability: single live intrauterine pregnancy with cardiac activity, size consistent with dates",
+   "rationale": "Viability ultrasound findings documented."
+  },
+  {
+   "fact_id": "f23",
+   "status": "present",
+   "note_evidence": "Hemogram with differential resulted with findings of anemia",
+   "rationale": "Anemia on hemogram documented."
+  },
+  {
+   "fact_id": "f24",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No ferrous sulfate; only B12 injection documented."
+  },
+  {
+   "fact_id": "f25",
+   "status": "present",
+   "note_evidence": "Vitamin B12 5 mg/mL injectable solution started; first injection administered today",
+   "rationale": "B12 injection first dose today documented."
+  },
+  {
+   "fact_id": "f26",
+   "status": "present",
+   "note_evidence": "blood group typing",
+   "rationale": "Blood group typing ordered."
+  },
+  {
+   "fact_id": "f27",
+   "status": "present",
+   "note_evidence": "Hemogram with differential resulted",
+   "rationale": "CBC/hemogram documented."
+  },
+  {
+   "fact_id": "f28",
+   "status": "present",
+   "note_evidence": "hepatitis B surface antigen",
+   "rationale": "Hepatitis B ordered."
+  },
+  {
+   "fact_id": "f29",
+   "status": "present",
+   "note_evidence": "hepatitis C antibody (confirmatory)",
+   "rationale": "Hepatitis C ordered."
+  },
+  {
+   "fact_id": "f30",
+   "status": "present",
+   "note_evidence": "HIV antigen",
+   "rationale": "HIV ordered."
+  },
+  {
+   "fact_id": "f31",
+   "status": "present",
+   "note_evidence": "syphilis titer",
+   "rationale": "Syphilis ordered."
+  },
+  {
+   "fact_id": "f32",
+   "status": "present",
+   "note_evidence": "gonorrhea titer",
+   "rationale": "Gonorrhea ordered."
+  },
+  {
+   "fact_id": "f33",
+   "status": "present",
+   "note_evidence": "chlamydia antigen",
+   "rationale": "Chlamydia ordered."
+  },
+  {
+   "fact_id": "f34",
+   "status": "present",
+   "note_evidence": "rubella screen",
+   "rationale": "Rubella immunity ordered."
+  },
+  {
+   "fact_id": "f35",
+   "status": "present",
+   "note_evidence": "varicella-zoster antibody",
+   "rationale": "Varicella immunity ordered."
+  },
+  {
+   "fact_id": "f36",
+   "status": "present",
+   "note_evidence": "urine culture",
+   "rationale": "Urine culture ordered."
+  },
+  {
+   "fact_id": "f37",
+   "status": "present",
+   "note_evidence": "urine protein",
+   "rationale": "Urine protein ordered."
+  },
+  {
+   "fact_id": "f38",
+   "status": "present",
+   "note_evidence": "urine diabetes screen",
+   "rationale": "Urine glucose/diabetes screen ordered."
+  },
+  {
+   "fact_id": "f39",
+   "status": "present",
+   "note_evidence": "cervical cytology specimen collected",
+   "rationale": "Pap smear performed."
+  },
+  {
+   "fact_id": "f40",
+   "status": "present",
+   "note_evidence": "Tuberculosis tine test placed on the forearm... TB test read booked as a brief nurse visit in 2\u20133 days",
+   "rationale": "TB test on forearm with 2-3 day read documented."
+  },
+  {
+   "fact_id": "f41",
+   "status": "present",
+   "note_evidence": "TB test read booked as a brief nurse visit in 2\u20133 days",
+   "rationale": "Nurse visit for TB read in 2-3 days documented."
+  },
+  {
+   "fact_id": "f42",
+   "status": "present",
+   "note_evidence": "return visits every 4 weeks for now... Appointments to be clustered",
+   "rationale": "Every 4 week follow-up and clustered appointments documented."
+  },
+  {
+   "fact_id": "f43",
+   "status": "present",
+   "note_evidence": "Return precautions reviewed: bleeding, severe cramping, fever... call if unable to keep fluids down",
+   "rationale": "Warning signs counseling documented."
+  },
+  {
+   "fact_id": "f44",
+   "status": "present",
+   "note_evidence": "small frequent meals, morning crackers, cold foods, ginger tea",
+   "rationale": "Nausea management counseling documented."
+  },
+  {
+   "fact_id": "f45",
+   "status": "present",
+   "note_evidence": "Encourage gentle stretching, supportive footwear, early reporting of back pain... labor positioning and analgesia",
+   "rationale": "Scoliosis/back care counseling documented."
+  },
+  {
+   "fact_id": "f46",
+   "status": "present",
+   "note_evidence": "quiet waiting area flagged in chart; partner welcome at all visits including delivery... discuss pregnancy-safe treatment options if symptoms escalate",
+   "rationale": "Anxiety accommodations documented."
+  },
+  {
+   "fact_id": "f47",
+   "status": "partial",
+   "note_evidence": "Recheck blood count at subsequent visits",
+   "rationale": "Recheck documented but reassurance about baby safety not stated."
+  },
+  {
+   "fact_id": "f48",
+   "status": "present",
+   "note_evidence": "Normal pregnancy \u2014 prenatal intake",
+   "rationale": "Normal pregnancy documented."
+  }
+ ]
+}

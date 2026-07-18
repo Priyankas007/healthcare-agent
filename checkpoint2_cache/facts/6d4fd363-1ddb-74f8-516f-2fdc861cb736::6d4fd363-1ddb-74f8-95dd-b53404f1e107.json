@@ -1,0 +1,362 @@
+[
+ {
+  "id": "f1",
+  "text": "Chronic low back pain for ~6 years, dull ache across the beltline, currently 3/10, worse with prolonged sitting and carrying laundry up stairs",
+  "type": "symptom",
+  "slots": {
+   "condition": "low back pain",
+   "duration": "6 years",
+   "severity": "3/10 (up to 5-6 evenings)",
+   "location": "low back/beltline"
+  },
+  "source": "both",
+  "transcript_quote": "Same one, going on six years now. A dull ache right across the beltline. Worse after I sit at the computer doing applications all day, or when I haul the laundry up to the third floor. Today it is about a three out of ten.",
+  "fhir_ref": "Observation/6d4fd363-1ddb-74f8-bbd1-95d28b5626f2"
+ },
+ {
+  "id": "f2",
+  "text": "No numbness, tingling, or weakness in legs; no bladder or bowel dysfunction",
+  "type": "red_flag_screen",
+  "slots": {
+   "screen": "cauda equina / radiculopathy red flags",
+   "result": "negative"
+  },
+  "source": "transcript",
+  "transcript_quote": "No, none of that. It stays in the back.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f3",
+  "text": "Back pain relieved by stretching and heat",
+  "type": "relieving_factor",
+  "slots": {
+   "factors": "stretching, heat"
+  },
+  "source": "transcript",
+  "transcript_quote": "Stretching helps some. Heat helps more.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f4",
+  "text": "Patient stopped refilling all prior medications months ago after insurance switched to wife's plan",
+  "type": "medication",
+  "slots": {
+   "status": "stopped",
+   "reason": "insurance change / cost"
+  },
+  "source": "transcript",
+  "transcript_quote": "I ran out of everything months ago and stopped refilling when the insurance switched over to my wife's plan.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f5",
+  "text": "Previously diagnosed hypertension was never treated; patient did not start prescribed pills due to cost",
+  "type": "condition",
+  "slots": {
+   "condition": "hypertension",
+   "status": "untreated"
+  },
+  "source": "transcript",
+  "transcript_quote": "the blood pressure problem we diagnosed a while back never actually got treated. You were meant to start pills and it fell through.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f6",
+  "text": "Office blood pressure 106/67 mmHg",
+  "type": "observation",
+  "slots": {
+   "systolic": "106",
+   "diastolic": "67",
+   "unit": "mmHg"
+  },
+  "source": "both",
+  "transcript_quote": "Your pressure here in the office is actually fine \u2014 one-oh-six over sixty-seven",
+  "fhir_ref": "Observation/6d4fd363-1ddb-74f8-90a9-82acc4d20f1c"
+ },
+ {
+  "id": "f7",
+  "text": "Elevated home blood pressure readings ~150s systolic most mornings",
+  "type": "observation",
+  "slots": {
+   "systolic": "~150s",
+   "context": "home readings, mornings"
+  },
+  "source": "transcript",
+  "transcript_quote": "My wife's machine says one-fifty-something most mornings.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f8",
+  "text": "Started lisinopril 10 mg oral tablet once daily in the morning for hypertension",
+  "type": "medication",
+  "slots": {
+   "drug": "lisinopril",
+   "dose": "10 mg",
+   "route": "oral",
+   "freq": "once daily (morning)",
+   "status": "started"
+  },
+  "source": "both",
+  "transcript_quote": "lisinopril ten milligrams once a day",
+  "fhir_ref": "MedicationRequest/6d4fd363-1ddb-74f8-20cf-226ba750f387"
+ },
+ {
+  "id": "f9",
+  "text": "Started amlodipine 2.5 mg oral tablet once daily in the morning for hypertension",
+  "type": "medication",
+  "slots": {
+   "drug": "amlodipine",
+   "dose": "2.5 mg",
+   "route": "oral",
+   "freq": "once daily (morning)",
+   "status": "started"
+  },
+  "source": "both",
+  "transcript_quote": "amlodipine two and a half milligrams once a day",
+  "fhir_ref": "MedicationRequest/6d4fd363-1ddb-74f8-6486-ed5b67d56952"
+ },
+ {
+  "id": "f10",
+  "text": "Started hydrochlorothiazide 25 mg oral tablet once daily in the morning for hypertension",
+  "type": "medication",
+  "slots": {
+   "drug": "hydrochlorothiazide",
+   "dose": "25 mg",
+   "route": "oral",
+   "freq": "once daily (morning)",
+   "status": "started"
+  },
+  "source": "both",
+  "transcript_quote": "hydrochlorothiazide twenty-five milligrams in the morning \u2014 that last one is a water pill",
+  "fhir_ref": "MedicationRequest/6d4fd363-1ddb-74f8-f443-78d0bc59244d"
+ },
+ {
+  "id": "f11",
+  "text": "Counseled to call if dizziness, lightheadedness, dry cough, or ankle swelling occurs with new BP medications",
+  "type": "counseling",
+  "slots": {
+   "topic": "medication side effects to watch for"
+  },
+  "source": "transcript",
+  "transcript_quote": "If you get dizzy, lightheaded, a nagging dry cough, or ankle swelling, call me",
+  "fhir_ref": null
+ },
+ {
+  "id": "f12",
+  "text": "Started scheduled acetaminophen (Tylenol) 325 mg oral tablet every 4-6 hours for back pain",
+  "type": "medication",
+  "slots": {
+   "drug": "acetaminophen (Tylenol)",
+   "dose": "325 mg",
+   "route": "oral",
+   "freq": "every 4-6 hours, scheduled",
+   "status": "started"
+  },
+  "source": "both",
+  "transcript_quote": "I want you on scheduled acetaminophen \u2014 plain Tylenol, the three-hundred-twenty-five-milligram tablets I am sending to the pharmacy",
+  "fhir_ref": "MedicationRequest/6d4fd363-1ddb-74f8-8ba9-18d7177f5bfc"
+ },
+ {
+  "id": "f13",
+  "text": "Counseled on movement for back pain: walking, stretches, avoid prolonged sitting, stand every 30 minutes with a timer",
+  "type": "counseling",
+  "slots": {
+   "topic": "activity/exercise for low back pain"
+  },
+  "source": "transcript",
+  "transcript_quote": "the real medicine is movement: walking, the stretches we went over years ago, and no marathon sitting. Set a timer, stand up every half hour",
+  "fhir_ref": null
+ },
+ {
+  "id": "f14",
+  "text": "Unemployed since April after warehouse shift was cut; financial strain",
+  "type": "sdoh",
+  "slots": {
+   "domain": "employment/financial",
+   "detail": "job loss April, seeking work, money tight"
+  },
+  "source": "both",
+  "transcript_quote": "The warehouse cut my whole shift in April, so I am out of work. I have been applying everywhere, nothing yet.",
+  "fhir_ref": "Condition/6d4fd363-1ddb-74f8-d33c-cd22bb5c104b"
+ },
+ {
+  "id": "f15",
+  "text": "Poor housing conditions: broken A/C for 3 weeks (95\u00b0F indoors), leak/mold under kitchen sink, broken elevator requiring stair climbs; unresponsive landlord",
+  "type": "sdoh",
+  "slots": {
+   "domain": "housing",
+   "detail": "unsafe/inadequate housing conditions"
+  },
+  "source": "transcript",
+  "transcript_quote": "The air conditioning has been dead three weeks \u2014 it hit ninety-five in there last weekend. There is a leak under the kitchen sink growing something I do not want to name, and the elevator has been broken since we moved in",
+  "fhir_ref": null
+ },
+ {
+  "id": "f16",
+  "text": "Provided tenant rights packet and county housing hotline information from front office",
+  "type": "counseling",
+  "slots": {
+   "topic": "housing resources"
+  },
+  "source": "transcript",
+  "transcript_quote": "Our front office keeps a packet on tenant rights and the county housing hotline. I am having them print it for you before you leave.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f17",
+  "text": "Reports job-loss stress with occasional early morning waking (~4 a.m.) but coping; not falling apart",
+  "type": "symptom",
+  "slots": {
+   "symptom": "stress",
+   "detail": "early waking, coping"
+  },
+  "source": "both",
+  "transcript_quote": "I am stressed, I will not lie. I wake up at four some mornings doing math in my head. But I am not falling apart.",
+  "fhir_ref": "Condition/6d4fd363-1ddb-74f8-bd31-282e497be7ad"
+ },
+ {
+  "id": "f18",
+  "text": "GAD-7 score of 1, minimal anxiety; assessed as situational stress, not an anxiety disorder",
+  "type": "observation",
+  "slots": {
+   "instrument": "GAD-7",
+   "score": "1",
+   "interpretation": "minimal"
+  },
+  "source": "both",
+  "transcript_quote": "you scored a one, which is minimal, and that matches how you describe it. Stress, not an anxiety disorder.",
+  "fhir_ref": "Observation/6d4fd363-1ddb-74f8-d4ce-cdb9082595e1"
+ },
+ {
+  "id": "f19",
+  "text": "Counseled to report early if stress worsens to nightly episodes or mood declines",
+  "type": "counseling",
+  "slots": {
+   "topic": "mental health follow-up"
+  },
+  "source": "transcript",
+  "transcript_quote": "If the four a.m. math sessions become every night, or the mood starts sinking, I want to hear about it early, not late.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f20",
+  "text": "Minimal alcohol use (a beer on Sundays); AUDIT-C score of 1, no concern",
+  "type": "observation",
+  "slots": {
+   "instrument": "AUDIT-C",
+   "score": "1",
+   "interpretation": "no concern"
+  },
+  "source": "both",
+  "transcript_quote": "an AUDIT-C of one, no concern at all",
+  "fhir_ref": "Observation/6d4fd363-1ddb-74f8-057f-ca5c8b3a85af"
+ },
+ {
+  "id": "f21",
+  "text": "Former smoker, quit almost 20 years ago",
+  "type": "observation",
+  "slots": {
+   "status": "ex-smoker",
+   "quit": "~20 years ago"
+  },
+  "source": "both",
+  "transcript_quote": "Almost twenty years quit. Teenage me smoked; grown me cannot afford it anyway.",
+  "fhir_ref": "Observation/6d4fd363-1ddb-74f8-db39-c4b64a4d3c1d"
+ },
+ {
+  "id": "f22",
+  "text": "Gingivitis: lower gum line red, swollen, bleeds with light touch and on brushing",
+  "type": "condition",
+  "slots": {
+   "condition": "gingivitis",
+   "findings": "red swollen gums, bleeding on light touch"
+  },
+  "source": "both",
+  "transcript_quote": "The gum line along the bottom teeth is red and swollen, and it bleeds with just a light touch. That is gingivitis.",
+  "fhir_ref": "Condition/6d4fd363-1ddb-74f8-3372-6652226a1c3e"
+ },
+ {
+  "id": "f23",
+  "text": "Referral placed to dental clinic (sliding-scale) for cleaning and gingivitis care",
+  "type": "referral",
+  "slots": {
+   "to": "dental clinic",
+   "reason": "gingivitis / cleaning"
+  },
+  "source": "both",
+  "transcript_quote": "I am putting in a referral to the dental clinic; they run a sliding-scale fee",
+  "fhir_ref": "Procedure/6d4fd363-1ddb-74f8-2b2c-6772da2c6fee"
+ },
+ {
+  "id": "f24",
+  "text": "Administered influenza vaccine (trivalent, split virus, PF) in left arm",
+  "type": "procedure",
+  "slots": {
+   "vaccine": "influenza, trivalent split virus PF",
+   "site": "left arm"
+  },
+  "source": "both",
+  "transcript_quote": "flu shot. You are due, and it costs you nothing with the visit.",
+  "fhir_ref": "Immunization/6d4fd363-1ddb-74f8-b4ab-2cc79c81701e"
+ },
+ {
+  "id": "f25",
+  "text": "Follow-up in 4-6 weeks with home blood pressure log to assess new medications",
+  "type": "followup",
+  "slots": {
+   "interval": "4-6 weeks",
+   "instructions": "bring home BP log"
+  },
+  "source": "transcript",
+  "transcript_quote": "I want you back in four to six weeks with the home blood pressure log so we can watch the new pills work.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f26",
+  "text": "BMI 29.31 kg/m2 (height 162.1 cm, weight 77 kg)",
+  "type": "observation",
+  "slots": {
+   "bmi": "29.31",
+   "height": "162.1 cm",
+   "weight": "77 kg"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Observation/6d4fd363-1ddb-74f8-f819-1d7724116e8a"
+ },
+ {
+  "id": "f27",
+  "text": "Heart rate 86 /min, respiratory rate 14 /min",
+  "type": "observation",
+  "slots": {
+   "heart_rate": "86 /min",
+   "respiratory_rate": "14 /min"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Observation/6d4fd363-1ddb-74f8-4f7a-e71369ac6999"
+ },
+ {
+  "id": "f28",
+  "text": "PRAPARE assessment: worried about losing housing, unable to obtain utilities in past year; feels safe at home, strong social contact; private insurance; household of 4",
+  "type": "sdoh",
+  "slots": {
+   "instrument": "PRAPARE",
+   "findings": "housing insecurity worry, utilities unmet need"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Observation/6d4fd363-1ddb-74f8-6d2f-061b7bab886a"
+ },
+ {
+  "id": "f29",
+  "text": "Assessment of health and social care needs completed",
+  "type": "procedure",
+  "slots": {
+   "procedure": "health and social care needs assessment"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Procedure/6d4fd363-1ddb-74f8-d9c9-7260daeacc34"
+ }
+]

@@ -1,0 +1,259 @@
+{
+ "note_version_id": "966e9818-9cf6-8d71-74bc-36aef6643618::966e9818-9cf6-8d71-3eff-a424a6faa0d3__inj_1",
+ "injected_fact_id": "f14",
+ "detected_absent_fact_ids": [
+  "f14",
+  "f37"
+ ],
+ "caught": true,
+ "collateral_flips": [],
+ "n_present_on_provided": 40,
+ "presence_results": [
+  {
+   "fact_id": "f1",
+   "status": "present",
+   "note_evidence": "presenting for a general physical examination arranged by her aunt, with specific goals of addressing her blood sugar, bleeding gums, and overdue vaccinations",
+   "rationale": "Aunt-prompted visit with the three goals is stated."
+  },
+  {
+   "fact_id": "f2",
+   "status": "present",
+   "note_evidence": "hemoglobin A1c 6.24%; ... persistent in the prediabetes range",
+   "rationale": "A1c value and prediabetes interpretation documented."
+  },
+  {
+   "fact_id": "f3",
+   "status": "partial",
+   "note_evidence": "Known prediabetes was diagnosed previously but never acted on",
+   "rationale": "Prior diagnosis and no action noted, but 'not given guidance' component absent."
+  },
+  {
+   "fact_id": "f4",
+   "status": "present",
+   "note_evidence": "family history includes her grandmother with diabetes",
+   "rationale": "Grandmother with diabetes documented."
+  },
+  {
+   "fact_id": "f5",
+   "status": "present",
+   "note_evidence": "fasting-range glucose of 99.36 mg/dL",
+   "rationale": "Glucose ~99 mg/dL documented as fasting-range/normal."
+  },
+  {
+   "fact_id": "f6",
+   "status": "present",
+   "note_evidence": "height 173.4 cm, weight 94.4 kg, BMI 31.4 kg/m2 ... obesity",
+   "rationale": "Weight, height, BMI, and obesity documented."
+  },
+  {
+   "fact_id": "f7",
+   "status": "present",
+   "note_evidence": "Body mass index 30+ \u2014 obesity ... Newly documented today with BMI 31.4 kg/m2",
+   "rationale": "Obesity as active condition documented."
+  },
+  {
+   "fact_id": "f8",
+   "status": "partial",
+   "note_evidence": "replace juice and sugary drinks",
+   "rationale": "Sugary-drink swap noted but fizzy water substitute not documented."
+  },
+  {
+   "fact_id": "f9",
+   "status": "partial",
+   "note_evidence": "post-shift walking, budget-friendly meal patterns",
+   "rationale": "Walking and meal counseling noted but ~20 min and beans/rice/veg specifics absent."
+  },
+  {
+   "fact_id": "f10",
+   "status": "present",
+   "note_evidence": "Referral to free nutrition class",
+   "rationale": "Free nutrition class referral documented."
+  },
+  {
+   "fact_id": "f11",
+   "status": "present",
+   "note_evidence": "Environmental allergies (mold, dust mite, animal dander, grass and tree pollen) ... aspirin given her documented allergy",
+   "rationale": "All listed allergens plus aspirin documented."
+  },
+  {
+   "fact_id": "f12",
+   "status": "present",
+   "note_evidence": "controlled on daily cetirizine 5 mg ... continue cetirizine daily in season",
+   "rationale": "Cetirizine 5 mg daily through season documented."
+  },
+  {
+   "fact_id": "f13",
+   "status": "present",
+   "note_evidence": "Environmental allergies ... caused significant spring eye and nasal symptoms, reasonably controlled on daily cetirizine",
+   "rationale": "Spring eye symptoms controlled on cetirizine documented."
+  },
+  {
+   "fact_id": "f14",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No mention of EpiPen or its expiration."
+  },
+  {
+   "fact_id": "f15",
+   "status": "present",
+   "note_evidence": "avoid aspirin and check before using related analgesics",
+   "rationale": "Avoid aspirin/related analgesics with checking counseled."
+  },
+  {
+   "fact_id": "f16",
+   "status": "present",
+   "note_evidence": "PHQ-2 total 0",
+   "rationale": "PHQ-2 score 0 documented."
+  },
+  {
+   "fact_id": "f17",
+   "status": "present",
+   "note_evidence": "GAD-7 total 1 ... endorsing only situational pre-exam nerves",
+   "rationale": "GAD-7 1 with pre-exam nerves documented."
+  },
+  {
+   "fact_id": "f18",
+   "status": "present",
+   "note_evidence": "HARK total 0 ... Safety screening negative",
+   "rationale": "HARK 0 negative documented."
+  },
+  {
+   "fact_id": "f19",
+   "status": "present",
+   "note_evidence": "AUDIT-C total 1 ... drinks rarely (about one drink at occasional events)",
+   "rationale": "AUDIT-C 1 with rare drinking documented."
+  },
+  {
+   "fact_id": "f20",
+   "status": "present",
+   "note_evidence": "She has never smoked ... denies vaping or drug use",
+   "rationale": "Never smoked and denies vaping/drugs documented."
+  },
+  {
+   "fact_id": "f21",
+   "status": "present",
+   "note_evidence": "HR 90/min ... Cardiovascular: regular rhythm",
+   "rationale": "HR 90 and regular rhythm documented; attribution extra but core present."
+  },
+  {
+   "fact_id": "f22",
+   "status": "present",
+   "note_evidence": "BP 121/62 mmHg",
+   "rationale": "Blood pressure documented."
+  },
+  {
+   "fact_id": "f23",
+   "status": "present",
+   "note_evidence": "Lungs: clear",
+   "rationale": "Lungs clear documented."
+  },
+  {
+   "fact_id": "f24",
+   "status": "present",
+   "note_evidence": "gingiva edematous and erythematous at the margins with bleeding on light contact, consistent with gingivitis ... several months of gum bleeding with brushing",
+   "rationale": "Exam findings and patient-reported bleeding documented."
+  },
+  {
+   "fact_id": "f25",
+   "status": "present",
+   "note_evidence": "has not seen a dentist since middle school due to cost",
+   "rationale": "Last dental visit middle school due to cost documented."
+  },
+  {
+   "fact_id": "f26",
+   "status": "present",
+   "note_evidence": "Patient referral for dental care placed (clinic accepting her coverage)",
+   "rationale": "Dental referral to coverage-accepting clinic documented."
+  },
+  {
+   "fact_id": "f27",
+   "status": "present",
+   "note_evidence": "daily flossing and brushing technique reviewed",
+   "rationale": "Daily flossing counseling documented."
+  },
+  {
+   "fact_id": "f28",
+   "status": "present",
+   "note_evidence": "hemoglobin 12.66 g/dL, hematocrit 45.64%",
+   "rationale": "CBC values documented supporting no anemia."
+  },
+  {
+   "fact_id": "f29",
+   "status": "present",
+   "note_evidence": "influenza (trivalent, PF)",
+   "rationale": "Influenza vaccine administered documented."
+  },
+  {
+   "fact_id": "f30",
+   "status": "present",
+   "note_evidence": "Td booster",
+   "rationale": "Td booster administered documented."
+  },
+  {
+   "fact_id": "f31",
+   "status": "present",
+   "note_evidence": "hepatitis B (adult)",
+   "rationale": "Hepatitis B vaccine administered documented."
+  },
+  {
+   "fact_id": "f32",
+   "status": "present",
+   "note_evidence": "meningococcal MCV4P",
+   "rationale": "Meningococcal MCV4P administered documented."
+  },
+  {
+   "fact_id": "f33",
+   "status": "present",
+   "note_evidence": "progressive social isolation ... most days spent between work, class, and her room \u2014 which increasingly feels involuntary",
+   "rationale": "Isolation, six-person household, and increasingly involuntary aloneness documented; Sunday specifics minor."
+  },
+  {
+   "fact_id": "f34",
+   "status": "partial",
+   "note_evidence": "Community walking group and student-association engagement recommended",
+   "rationale": "Walking group/student engagement recommended but patient's choice of Sunday group not documented."
+  },
+  {
+   "fact_id": "f35",
+   "status": "present",
+   "note_evidence": "recheck A1c in about 6 months",
+   "rationale": "A1c recheck at 6 months documented."
+  },
+  {
+   "fact_id": "f36",
+   "status": "partial",
+   "note_evidence": "part-time community-college student working early grocery-store shifts and lives in a six-person household (reported family income about $18,297/year)",
+   "rationale": "Student, grocery shifts, household, income documented; nursing degree and Medicaid not explicit."
+  },
+  {
+   "fact_id": "f37",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No mention of store discount favoring unhealthy foods."
+  },
+  {
+   "fact_id": "f38",
+   "status": "present",
+   "note_evidence": "Medication reconciliation completed",
+   "rationale": "Med reconciliation documented."
+  },
+  {
+   "fact_id": "f39",
+   "status": "present",
+   "note_evidence": "creatinine 1.32 mg/dL; sodium 138.94 mmol/L; potassium 3.89 mmol/L ... glucose 99.36 mg/dL",
+   "rationale": "Metabolic panel values documented."
+  },
+  {
+   "fact_id": "f40",
+   "status": "present",
+   "note_evidence": "reported pain 1/10",
+   "rationale": "Pain score 1/10 documented."
+  },
+  {
+   "fact_id": "f41",
+   "status": "present",
+   "note_evidence": "RR 15/min",
+   "rationale": "Respiratory rate documented."
+  }
+ ]
+}

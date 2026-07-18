@@ -1,0 +1,230 @@
+{
+ "note_version_id": "25fb1227-d194-b15e-e099-7cffcd6081ec::25fb1227-d194-b15e-ecd8-6fcb9efd8141__inj_2",
+ "injected_fact_id": "f9",
+ "detected_absent_fact_ids": [
+  "f9",
+  "f33",
+  "f35"
+ ],
+ "caught": true,
+ "collateral_flips": [],
+ "n_present_on_provided": 34,
+ "presence_results": [
+  {
+   "fact_id": "f1",
+   "status": "present",
+   "note_evidence": "years of colon polyps and recurrent rectal polyps before the malignancy was identified; the tumor now involves an extended segment of colon",
+   "rationale": "Colon cancer from recurrent polyps involving extended colon segment is documented."
+  },
+  {
+   "fact_id": "f2",
+   "status": "partial",
+   "note_evidence": "After frank discussion with her specialists she has declined further disease-directed treatment",
+   "rationale": "Decision to stop treatment documented, but specialist advising treatment would harm more than help is not stated."
+  },
+  {
+   "fact_id": "f3",
+   "status": "present",
+   "note_evidence": "remain in her own home... avoid hospitalization... no hospital transfer",
+   "rationale": "Home, comfort, and avoiding hospital documented."
+  },
+  {
+   "fact_id": "f4",
+   "status": "present",
+   "note_evidence": "daily dull lower abdominal aching",
+   "rationale": "Daily dull lower abdominal pain documented."
+  },
+  {
+   "fact_id": "f5",
+   "status": "present",
+   "note_evidence": "two decades of chronic low back pain",
+   "rationale": "20-year chronic back pain documented."
+  },
+  {
+   "fact_id": "f6",
+   "status": "present",
+   "note_evidence": "combined pain is just about bearable on her current regimen",
+   "rationale": "Pain bearable on current meds documented."
+  },
+  {
+   "fact_id": "f7",
+   "status": "present",
+   "note_evidence": "acetaminophen 325 mg",
+   "rationale": "Acetaminophen 325 mg documented."
+  },
+  {
+   "fact_id": "f8",
+   "status": "present",
+   "note_evidence": "simvastatin 10 mg",
+   "rationale": "Simvastatin 10 mg documented; hyperlipidemia also listed."
+  },
+  {
+   "fact_id": "f9",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No oxycodone extended-release/OxyContin listed; only oxycodone in Percocet and hydrocodone ER."
+  },
+  {
+   "fact_id": "f10",
+   "status": "present",
+   "note_evidence": "acetaminophen 325 mg/oxycodone 10 mg (Percocet) for breakthrough pain",
+   "rationale": "Percocet with doses for breakthrough pain documented."
+  },
+  {
+   "fact_id": "f11",
+   "status": "present",
+   "note_evidence": "tramadol 50 mg",
+   "rationale": "Tramadol 50 mg documented."
+  },
+  {
+   "fact_id": "f12",
+   "status": "present",
+   "note_evidence": "naproxen sodium 220 mg",
+   "rationale": "Naproxen sodium 220 mg documented."
+  },
+  {
+   "fact_id": "f13",
+   "status": "present",
+   "note_evidence": "hydrocodone bitartrate 10 mg extended-release capsule",
+   "rationale": "Hydrocodone ER 10 mg capsule documented."
+  },
+  {
+   "fact_id": "f14",
+   "status": "present",
+   "note_evidence": "amoxicillin 250 mg/clavulanate 125 mg remaining from a recent dental course",
+   "rationale": "Leftover amoxicillin-clavulanate from dental course documented."
+  },
+  {
+   "fact_id": "f15",
+   "status": "present",
+   "note_evidence": "sodium fluoride oral gel",
+   "rationale": "Fluoride gel documented."
+  },
+  {
+   "fact_id": "f16",
+   "status": "present",
+   "note_evidence": "nursing to consolidate into a written schedule distinguishing scheduled versus breakthrough dosing for patient and caregiver",
+   "rationale": "Written medication schedule counseling documented."
+  },
+  {
+   "fact_id": "f17",
+   "status": "present",
+   "note_evidence": "Bowel movements are slower but ongoing",
+   "rationale": "Bowels slower but ongoing documented."
+  },
+  {
+   "fact_id": "f18",
+   "status": "partial",
+   "note_evidence": "encourage fluids; caregiver to report absent stool immediately",
+   "rationale": "Fluids and reporting documented but prune juice not mentioned."
+  },
+  {
+   "fact_id": "f19",
+   "status": "present",
+   "note_evidence": "Appetite is poor with small portions",
+   "rationale": "Poor/small appetite documented."
+  },
+  {
+   "fact_id": "f20",
+   "status": "present",
+   "note_evidence": "energy is low with long afternoon naps",
+   "rationale": "Fatigue with daytime sleeping documented."
+  },
+  {
+   "fact_id": "f21",
+   "status": "present",
+   "note_evidence": "likely compounded by her known anemia",
+   "rationale": "Anemia contributing to fatigue documented."
+  },
+  {
+   "fact_id": "f22",
+   "status": "present",
+   "note_evidence": "Certification procedure completed by two physicians confirming hospice eligibility",
+   "rationale": "Two-physician hospice certification documented."
+  },
+  {
+   "fact_id": "f23",
+   "status": "present",
+   "note_evidence": "notifications sent to her primary physician and payer",
+   "rationale": "Notifications to primary physician and payer/insurance documented."
+  },
+  {
+   "fact_id": "f24",
+   "status": "present",
+   "note_evidence": "Initial patient assessment completed today",
+   "rationale": "Initial patient assessment documented."
+  },
+  {
+   "fact_id": "f25",
+   "status": "present",
+   "note_evidence": "individualized plan of care developed around her stated goals",
+   "rationale": "Individualized plan of care reflecting wishes documented."
+  },
+  {
+   "fact_id": "f26",
+   "status": "present",
+   "note_evidence": "admitted today to hospice care",
+   "rationale": "Hospice care initiated documented."
+  },
+  {
+   "fact_id": "f27",
+   "status": "present",
+   "note_evidence": "hospital bed declined for now",
+   "rationale": "Hospital bed declined documented."
+  },
+  {
+   "fact_id": "f28",
+   "status": "present",
+   "note_evidence": "grab bars to be provided",
+   "rationale": "Grab bars accepted/to be provided documented."
+  },
+  {
+   "fact_id": "f29",
+   "status": "present",
+   "note_evidence": "nursing twice weekly to start... aide support for bathing offered... Social worker and chaplain visits offered",
+   "rationale": "Nursing, aide, social worker, chaplain documented."
+  },
+  {
+   "fact_id": "f30",
+   "status": "present",
+   "note_evidence": "24/7 on-call line reviewed with patient and niece",
+   "rationale": "24/7 on-call access provided to patient and family documented."
+  },
+  {
+   "fact_id": "f31",
+   "status": "present",
+   "note_evidence": "avoid resuscitation attempts \u2014 in her words, let me go easy",
+   "rationale": "No resuscitation wish documented."
+  },
+  {
+   "fact_id": "f32",
+   "status": "present",
+   "note_evidence": "avoid hospitalization... no hospital transfer",
+   "rationale": "Avoiding hospitalization/transfer documented."
+  },
+  {
+   "fact_id": "f33",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No two-day nurse follow-up specified; only twice-weekly nursing."
+  },
+  {
+   "fact_id": "f34",
+   "status": "partial",
+   "note_evidence": "substantial support from her niece, who stays most nights and manages logistics",
+   "rationale": "Niece as caregiver staying most nights documented, but name Karen not stated."
+  },
+  {
+   "fact_id": "f35",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No explicit mention of a documented History and physical note."
+  },
+  {
+   "fact_id": "f36",
+   "status": "present",
+   "note_evidence": "comfortable at rest throughout the visit",
+   "rationale": "Comfortable at rest with bearable pain documented."
+  }
+ ]
+}

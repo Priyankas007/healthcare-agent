@@ -1,0 +1,14 @@
+[
+ {
+  "fact_id": "f4",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "The note states 'no current medications' without explaining that prior meds were stopped due to an insurance/cost barrier, which affects medication reconciliation accuracy and predicts adherence risk for the newly prescribed three-drug regimen."
+ },
+ {
+  "fact_id": "f28",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Documenting the standardized PRAPARE screening adds completeness and captures the utilities unmet need and insurance status, though the core housing risks are already addressed elsewhere in the note."
+ }
+]

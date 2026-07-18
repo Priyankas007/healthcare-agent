@@ -1,0 +1,186 @@
+{
+ "note_version_id": "b504cdf2-e13b-979e-9c4a-95456823e3dd::b504cdf2-e13b-979e-4f0c-523d0948189e__inj_2",
+ "injected_fact_id": "f14",
+ "detected_absent_fact_ids": [
+  "f14"
+ ],
+ "caught": true,
+ "collateral_flips": [],
+ "n_present_on_provided": 29,
+ "presence_results": [
+  {
+   "fact_id": "f1",
+   "status": "present",
+   "note_evidence": "Monica Hilpert is a 76-year-old woman admitted to skilled nursing facility care today, transferred from the acute hospital after an inpatient stay of nearly a week, for continued nursing care and rehabilitation",
+   "rationale": "Age, SNF admission, ~1 week hospitalization, and rehab all stated."
+  },
+  {
+   "fact_id": "f2",
+   "status": "present",
+   "note_evidence": "She describes profound fatigue and deconditioning \u2014 by the end of the hospitalization she could not manage short household distances on her feet",
+   "rationale": "Deconditioning with inability to ambulate documented."
+  },
+  {
+   "fact_id": "f3",
+   "status": "present",
+   "note_evidence": "History includes osteoporosis",
+   "rationale": "Osteoporosis history stated."
+  },
+  {
+   "fact_id": "f4",
+   "status": "present",
+   "note_evidence": "hyperlipidemia",
+   "rationale": "Hyperlipidemia listed in history."
+  },
+  {
+   "fact_id": "f5",
+   "status": "present",
+   "note_evidence": "prediabetes",
+   "rationale": "Prediabetes listed in history."
+  },
+  {
+   "fact_id": "f6",
+   "status": "present",
+   "note_evidence": "extensive tooth loss; she chews on one side only, and her meals have contracted over the years toward small, soft foods",
+   "rationale": "Tooth loss, one-sided chewing, soft foods documented."
+  },
+  {
+   "fact_id": "f7",
+   "status": "present",
+   "note_evidence": "a deep, aching low back pain radiating into both hips, worst with prolonged standing",
+   "rationale": "Location, radiation, aggravating factor, and quality all match."
+  },
+  {
+   "fact_id": "f8",
+   "status": "present",
+   "note_evidence": "disturbs sleep on bad nights",
+   "rationale": "Sleep disturbance from pain stated."
+  },
+  {
+   "fact_id": "f9",
+   "status": "present",
+   "note_evidence": "Stands only with support and a fixed target; transfers slowly with assistance",
+   "rationale": "Standing worsens pain and requires support; slow position changes documented."
+  },
+  {
+   "fact_id": "f10",
+   "status": "present",
+   "note_evidence": "Started naproxen sodium 220 mg tablets for baseline pain control",
+   "rationale": "Drug, dose, and indication match."
+  },
+  {
+   "fact_id": "f11",
+   "status": "present",
+   "note_evidence": "Started meperidine hydrochloride 50 mg tablets for more severe pain, to be used sparingly with close nursing observation",
+   "rationale": "Drug, dose, PRN-severe use, and sparing use documented."
+  },
+  {
+   "fact_id": "f12",
+   "status": "present",
+   "note_evidence": "close nursing observation for sedation, confusion, or unsteadiness given her age",
+   "rationale": "Opioid risks in elderly and monitoring counseled."
+  },
+  {
+   "fact_id": "f13",
+   "status": "present",
+   "note_evidence": "She lives alone with minimal social contact; her sister died two years ago, and a neighbor provides her only regular help",
+   "rationale": "Living alone, sister's death, neighbor help all stated."
+  },
+  {
+   "fact_id": "f14",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No mention of domestic violence or interpersonal safety screening."
+  },
+  {
+   "fact_id": "f15",
+   "status": "present",
+   "note_evidence": "her meals have contracted over the years toward small, soft foods, raising concern for longstanding under-nutrition",
+   "rationale": "Chronic undernutrition from dentition/living alone documented."
+  },
+  {
+   "fact_id": "f16",
+   "status": "present",
+   "note_evidence": "Social work to arrange home supports before discharge and to connect her with community or senior-center programs",
+   "rationale": "Social work referral for home support and community engagement stated."
+  },
+  {
+   "fact_id": "f17",
+   "status": "present",
+   "note_evidence": "Dietitian consultation for texture-modified, protein- and calcium-forward meals balanced for glucose and lipids",
+   "rationale": "Dietitian referral with soft texture, protein, calcium, glucose/lipid balance matches."
+  },
+  {
+   "fact_id": "f18",
+   "status": "present",
+   "note_evidence": "Physical therapy for safe transfers, standing tolerance, and gait strengthening",
+   "rationale": "PT for standing, walking, strengthening documented."
+  },
+  {
+   "fact_id": "f19",
+   "status": "present",
+   "note_evidence": "Occupational therapy sessions for dressing, bathing safety, and daily tasks",
+   "rationale": "OT for ADLs documented."
+  },
+  {
+   "fact_id": "f20",
+   "status": "present",
+   "note_evidence": "History and physical examination and the initial patient assessment were completed today",
+   "rationale": "H&P performed."
+  },
+  {
+   "fact_id": "f21",
+   "status": "present",
+   "note_evidence": "the initial patient assessment were completed today",
+   "rationale": "Initial patient assessment performed."
+  },
+  {
+   "fact_id": "f22",
+   "status": "present",
+   "note_evidence": "Development of individualized plan of care with the interdisciplinary team",
+   "rationale": "Individualized plan of care stated."
+  },
+  {
+   "fact_id": "f23",
+   "status": "present",
+   "note_evidence": "Daily nursing care and supplementary surveillance every shift (pain, vital signs, skin, medications)",
+   "rationale": "Every-shift surveillance of pain, vitals, skin, meds documented."
+  },
+  {
+   "fact_id": "f24",
+   "status": "present",
+   "note_evidence": "Strict call-before-standing instruction reinforced; call bell education provided and accepted",
+   "rationale": "Fall precaution call-button counseling documented."
+  },
+  {
+   "fact_id": "f25",
+   "status": "present",
+   "note_evidence": "Formal pre-discharge assessment of mobility, medication and meal management, and home setup prior to release",
+   "rationale": "Pre-discharge assessment planned covering mobility, meds, meals, home."
+  },
+  {
+   "fact_id": "f26",
+   "status": "present",
+   "note_evidence": "Anticipate a stay of roughly two weeks depending on functional progress",
+   "rationale": "~2 week LOS stated."
+  },
+  {
+   "fact_id": "f27",
+   "status": "present",
+   "note_evidence": "regimen to be changed if poorly tolerated",
+   "rationale": "Told regimen will change if not tolerated."
+  },
+  {
+   "fact_id": "f28",
+   "status": "present",
+   "note_evidence": "transferred from the acute hospital after an inpatient stay of nearly a week",
+   "rationale": "Transfer/discharge from acute hospital documented."
+  },
+  {
+   "fact_id": "f29",
+   "status": "present",
+   "note_evidence": "History and physical examination and the initial patient assessment were completed today",
+   "rationale": "H&P completion documented."
+  }
+ ]
+}

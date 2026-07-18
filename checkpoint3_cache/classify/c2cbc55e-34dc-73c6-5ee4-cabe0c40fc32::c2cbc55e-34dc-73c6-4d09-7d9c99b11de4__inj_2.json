@@ -1,0 +1,8 @@
+[
+ {
+  "fact_id": "f3",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Advanced maternal age of 43 substantially elevates aneuploidy and obstetric risk, directly influencing genetic screening counseling and overall high-risk pregnancy management that should be documented at the initial prenatal visit."
+ }
+]

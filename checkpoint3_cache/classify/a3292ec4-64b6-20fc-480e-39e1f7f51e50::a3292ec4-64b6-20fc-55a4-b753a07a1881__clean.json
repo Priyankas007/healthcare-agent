@@ -1,0 +1,8 @@
+[
+ {
+  "fact_id": "f45",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Documenting reassurance about prior opioid exposure supports patient's emotional coping and completeness of counseling, but its omission does not alter clinical management or safety."
+ }
+]

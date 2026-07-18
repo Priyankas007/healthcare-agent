@@ -1,0 +1,14 @@
+[
+ {
+  "fact_id": "f10",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Complete medication reconciliation must list the statin, and in comfort-focused hospice a nightly simvastatin is a prime deprescribing candidate whose omission leaves the med list and plan incomplete."
+ },
+ {
+  "fact_id": "f30",
+  "expected": false,
+  "severity": "minor",
+  "why_it_matters": "The encounter note itself constitutes the H&P documentation, so explicitly noting that an H&P was recorded is administrative and adds little clinical value."
+ }
+]

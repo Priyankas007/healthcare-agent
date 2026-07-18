@@ -1,0 +1,26 @@
+[
+ {
+  "fact_id": "f4",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Given documented grief and low mood, a depression screen belongs in this comprehensive visit, though a negative PHQ-2 has low clinical impact."
+ },
+ {
+  "fact_id": "f34",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Inability to access needed care in the past year directly affects the feasibility of the new hypertension, prediabetes, and dental follow-up plans and warrants documentation and intervention."
+ },
+ {
+  "fact_id": "f35",
+  "expected": false,
+  "severity": "minor",
+  "why_it_matters": "Prior seasonal farm work is background occupational history with limited bearing on today's management, though it could contextualize exposures."
+ },
+ {
+  "fact_id": "f40",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Safety-net counseling to revisit treatment if grief worsens documents an appropriate mental health follow-up plan for a bereaved patient with low mood."
+ }
+]

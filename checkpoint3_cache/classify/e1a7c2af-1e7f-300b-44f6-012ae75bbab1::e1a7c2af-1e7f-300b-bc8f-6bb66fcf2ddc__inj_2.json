@@ -1,0 +1,14 @@
+[
+ {
+  "fact_id": "f6",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Documenting the absence of loose teeth, swelling, and fever confirms no deeper infection or periodontal destruction, supporting the gingival-only diagnosis and completeness of the red-flag review before surgery."
+ },
+ {
+  "fact_id": "f29",
+  "expected": true,
+  "severity": "safety_critical",
+  "why_it_matters": "An unresolved/undocumented medication given or prescribed at the visit creates risk of dosing errors, allergy or interaction oversights, and gaps in the patient's medication record."
+ }
+]

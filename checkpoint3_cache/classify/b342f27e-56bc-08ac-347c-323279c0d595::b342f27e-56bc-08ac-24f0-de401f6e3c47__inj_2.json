@@ -1,0 +1,32 @@
+[
+ {
+  "fact_id": "f7",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Positional/hunger-related wooziness refines the symptom picture but is mild and self-limited, adding little to management."
+ },
+ {
+  "fact_id": "f8",
+  "expected": true,
+  "severity": "safety_critical",
+  "why_it_matters": "Absence of vaginal bleeding or spotting is a key red-flag screen in early pregnancy for miscarriage or ectopic and should be explicitly documented."
+ },
+ {
+  "fact_id": "f35",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "A vasovagal history with blood draws warrants documented accommodation to prevent syncope and injury during the extensive prenatal panel draw."
+ },
+ {
+  "fact_id": "f43",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Activity and diet counseling supports documentation completeness but is routine and low-impact if omitted."
+ },
+ {
+  "fact_id": "f44",
+  "expected": false,
+  "severity": "minor",
+  "why_it_matters": "Announcement timing is a non-medical social point that does not affect clinical care or note completeness."
+ }
+]

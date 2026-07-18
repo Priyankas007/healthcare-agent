@@ -1,0 +1,32 @@
+[
+ {
+  "fact_id": "f7",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Hunger-related wooziness supports the nausea/hypoglycemia picture and reinforces small frequent meals counseling, but it also partly conflicts with the documented denial of dizziness and should be captured accurately."
+ },
+ {
+  "fact_id": "f14",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Discontinuation of contraception and confirmation of no regular medications plus only occasional OTC use is core content of the documented medication review and affects prenatal safety guidance."
+ },
+ {
+  "fact_id": "f35",
+  "expected": true,
+  "severity": "safety_critical",
+  "why_it_matters": "A vasovagal fainting history with blood draws is an injury risk during this visit's extensive phlebotomy and requires the documented accommodation to prevent syncope-related harm."
+ },
+ {
+  "fact_id": "f43",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Activity, work, and diet counseling documents anticipatory guidance appropriate to an initial prenatal visit but is low clinical risk if omitted."
+ },
+ {
+  "fact_id": "f44",
+  "expected": false,
+  "severity": "minor",
+  "why_it_matters": "Announcement timing is a non-medical social discussion that has no bearing on clinical management."
+ }
+]

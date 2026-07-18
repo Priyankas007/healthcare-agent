@@ -1,0 +1,20 @@
+[
+ {
+  "fact_id": "f10",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "The social needs assessment is documented, but the specific PRAPARE findings\u2014especially infrequent social contact in an 85-year-old\u2014add completeness and could flag isolation risk despite living with family."
+ },
+ {
+  "fact_id": "f14",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "An active statin for secondary prevention is central to this IHD/hyperlipidemia visit, and omitting the atorvastatin creates a medication-list discrepancy affecting LDL management decisions."
+ },
+ {
+  "fact_id": "f39",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Documenting counseling on the periodontal\u2013cardiovascular link reinforces the dental referral rationale but has limited direct impact on management."
+ }
+]

@@ -1,0 +1,490 @@
+[
+ {
+  "id": "f1",
+  "text": "Patient reports dull morning headaches at the back of the head for a few months, fading by lunchtime",
+  "type": "symptom",
+  "slots": {
+   "symptom": "headache",
+   "location": "occipital/back of head",
+   "timing": "mornings",
+   "duration": "few months",
+   "course": "resolves by lunchtime"
+  },
+  "source": "transcript",
+  "transcript_quote": "I get these dull headaches at the back of my head some mornings... A few months? They fade by lunchtime.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f2",
+  "text": "Patient reports bleeding gums when brushing",
+  "type": "symptom",
+  "slots": {
+   "symptom": "gum bleeding",
+   "trigger": "brushing"
+  },
+  "source": "transcript",
+  "transcript_quote": "my gums bleed when I brush. Nothing dramatic. Just a pink sink, most days.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f3",
+  "text": "Clinician suspects morning headaches are related to elevated blood pressure and expects them to improve as BP is controlled",
+  "type": "counseling",
+  "slots": {
+   "topic": "headache etiology"
+  },
+  "source": "transcript",
+  "transcript_quote": "morning headaches and high pressure often travel together. My honest expectation is they fade as the numbers come down.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f4",
+  "text": "PHQ-2 depression screen score 2 (low, no treatment indicated)",
+  "type": "observation",
+  "slots": {
+   "instrument": "PHQ-2",
+   "score": "2",
+   "interpretation": "low/negative"
+  },
+  "source": "both",
+  "transcript_quote": "Those answers put you at a two on the depression screen",
+  "fhir_ref": "Observation/4b4735a2-ee12-ec86-2e9f-19c850b08b93"
+ },
+ {
+  "id": "f5",
+  "text": "GAD-7 anxiety screen score 3 (low, no treatment indicated)",
+  "type": "observation",
+  "slots": {
+   "instrument": "GAD-7",
+   "score": "3",
+   "interpretation": "low/negative"
+  },
+  "source": "both",
+  "transcript_quote": "a three on the anxiety scale \u2014 both low, not in a range where I'd push treatment",
+  "fhir_ref": "Observation/4b4735a2-ee12-ec86-030c-9beffd1e1b22"
+ },
+ {
+  "id": "f6",
+  "text": "AUDIT-C alcohol screen score 3 (below concerning level for men); patient drinks 1-2 beers 2-3 evenings/week",
+  "type": "observation",
+  "slots": {
+   "instrument": "AUDIT-C",
+   "score": "3",
+   "detail": "1-2 beers, 2-3 evenings/week"
+  },
+  "source": "both",
+  "transcript_quote": "That scores a three on the alcohol screen \u2014 below the level we worry about for men",
+  "fhir_ref": "Observation/4b4735a2-ee12-ec86-e6bb-c6408c3f5cfc"
+ },
+ {
+  "id": "f7",
+  "text": "Never smoker; denies tobacco use",
+  "type": "observation",
+  "slots": {
+   "status": "never smoked"
+  },
+  "source": "both",
+  "transcript_quote": "Never. I watched my uncle go from cigarettes.",
+  "fhir_ref": "Observation/4b4735a2-ee12-ec86-25e0-44e3c723e60f"
+ },
+ {
+  "id": "f8",
+  "text": "Denies illicit drug use (marijuana, non-prescribed pills)",
+  "type": "red_flag_screen",
+  "slots": {
+   "screen": "substance use",
+   "result": "negative"
+  },
+  "source": "transcript",
+  "transcript_quote": "No, nothing.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f9",
+  "text": "Blood pressure elevated at 141/100 mmHg, confirmed on repeat measurement",
+  "type": "observation",
+  "slots": {
+   "systolic": "141",
+   "diastolic": "100",
+   "unit": "mmHg"
+  },
+  "source": "both",
+  "transcript_quote": "Your blood pressure is 141 over 100 \u2014 and I rechecked it myself after you'd been sitting a while, same story.",
+  "fhir_ref": "Observation/4b4735a2-ee12-ec86-1daf-98eae3ddff3d"
+ },
+ {
+  "id": "f10",
+  "text": "Heart rate 100 /min",
+  "type": "observation",
+  "slots": {
+   "value": "100",
+   "unit": "/min"
+  },
+  "source": "both",
+  "transcript_quote": "Heart rate's 100 today too.",
+  "fhir_ref": "Observation/4b4735a2-ee12-ec86-f9a7-3ac77536ff4a"
+ },
+ {
+  "id": "f11",
+  "text": "Body weight 93.9 kg with BMI 30.21 kg/m2 (obesity)",
+  "type": "observation",
+  "slots": {
+   "weight": "93.9 kg",
+   "bmi": "30.21 kg/m2",
+   "interpretation": "obesity"
+  },
+  "source": "both",
+  "transcript_quote": "Your weight is 93.9 kilos, BMI 30.21, so over the obesity line.",
+  "fhir_ref": "Observation/4b4735a2-ee12-ec86-54b5-79ea10828c86"
+ },
+ {
+  "id": "f12",
+  "text": "Hemoglobin A1c 6.28% consistent with prediabetes",
+  "type": "observation",
+  "slots": {
+   "value": "6.28",
+   "unit": "%",
+   "interpretation": "prediabetes"
+  },
+  "source": "both",
+  "transcript_quote": "Your A1c came back at 6.28 percent \u2014 that's prediabetes, drifting the wrong direction.",
+  "fhir_ref": "Observation/4b4735a2-ee12-ec86-ec1c-954838b6643a"
+ },
+ {
+  "id": "f13",
+  "text": "Blood glucose 91 mg/dL (normal)",
+  "type": "observation",
+  "slots": {
+   "value": "91.08",
+   "unit": "mg/dL"
+  },
+  "source": "both",
+  "transcript_quote": "Glucose today was 91, which is fine day-to-day.",
+  "fhir_ref": "Observation/4b4735a2-ee12-ec86-f359-d2e8f750458c"
+ },
+ {
+  "id": "f14",
+  "text": "Creatinine 1.12 mg/dL and BUN 17.36 mg/dL (kidneys normal)",
+  "type": "observation",
+  "slots": {
+   "creatinine": "1.12 mg/dL",
+   "bun": "17.36 mg/dL"
+  },
+  "source": "both",
+  "transcript_quote": "Kidneys look good \u2014 creatinine 1.12, BUN 17.36.",
+  "fhir_ref": "Observation/4b4735a2-ee12-ec86-6585-51b4adc44abb"
+ },
+ {
+  "id": "f15",
+  "text": "Sodium 139 mmol/L and potassium 3.97 mmol/L",
+  "type": "observation",
+  "slots": {
+   "sodium": "139.11 mmol/L",
+   "potassium": "3.97 mmol/L"
+  },
+  "source": "both",
+  "transcript_quote": "Sodium 139, potassium 3.97.",
+  "fhir_ref": "Observation/4b4735a2-ee12-ec86-fe3e-3469bc508826"
+ },
+ {
+  "id": "f16",
+  "text": "Diagnosis of essential hypertension",
+  "type": "condition",
+  "slots": {
+   "condition": "essential hypertension",
+   "status": "active"
+  },
+  "source": "both",
+  "transcript_quote": "this is real \u2014 essential hypertension, high blood pressure as its own condition.",
+  "fhir_ref": "Condition/4b4735a2-ee12-ec86-43f9-72c6a9c11cad"
+ },
+ {
+  "id": "f17",
+  "text": "Diagnosis of metabolic syndrome (hypertension, prediabetes, obesity)",
+  "type": "condition",
+  "slots": {
+   "condition": "metabolic syndrome",
+   "status": "active"
+  },
+  "source": "both",
+  "transcript_quote": "That cluster has a name \u2014 metabolic syndrome.",
+  "fhir_ref": "Condition/4b4735a2-ee12-ec86-b2be-3ebe10489c19"
+ },
+ {
+  "id": "f18",
+  "text": "Diagnosis of gingivitis; puffy gum line bleeding with light contact, reversible stage",
+  "type": "condition",
+  "slots": {
+   "condition": "gingivitis",
+   "exam": "puffy gum line, bleeds with light contact"
+  },
+  "source": "both",
+  "transcript_quote": "That's gingivitis. The good news is it's the reversible stage of gum disease",
+  "fhir_ref": "Condition/4b4735a2-ee12-ec86-e4d2-99abda3ceb16"
+ },
+ {
+  "id": "f19",
+  "text": "Started hydrochlorothiazide 25 mg oral tablet, one tablet every morning with breakfast",
+  "type": "medication",
+  "slots": {
+   "drug": "hydrochlorothiazide",
+   "dose": "25 mg",
+   "route": "oral",
+   "freq": "once daily every morning",
+   "timing": "with breakfast",
+   "action": "started"
+  },
+  "source": "both",
+  "transcript_quote": "hydrochlorothiazide, 25 milligrams, one tablet every morning. It's a water pill",
+  "fhir_ref": "MedicationRequest/4b4735a2-ee12-ec86-2f73-08977934c44b"
+ },
+ {
+  "id": "f20",
+  "text": "Counseled on hydrochlorothiazide side effects: increased urination initially, call for lightheadedness on standing or muscle cramps; bloodwork to be rechecked",
+  "type": "counseling",
+  "slots": {
+   "topic": "HCTZ side effects/monitoring"
+  },
+  "source": "transcript",
+  "transcript_quote": "If you feel lightheaded when you stand, or you get muscle cramps, call us \u2014 it can nudge your potassium and sodium, so we'll recheck bloodwork after you've been on it a while.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f21",
+  "text": "Vitamin B12 injectable continued unchanged for anemia",
+  "type": "medication",
+  "slots": {
+   "drug": "vitamin B12",
+   "route": "injectable",
+   "action": "continued",
+   "indication": "anemia"
+  },
+  "source": "transcript",
+  "transcript_quote": "the B12 injections continue unchanged, that's for your anemia and it's doing its job.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f22",
+  "text": "Medication reconciliation completed; current meds are vitamin B12 injectable and hydrochlorothiazide 25 mg daily, no other supplements",
+  "type": "procedure",
+  "slots": {
+   "procedure": "medication reconciliation"
+  },
+  "source": "both",
+  "transcript_quote": "Reconciled.",
+  "fhir_ref": "Procedure/4b4735a2-ee12-ec86-cb89-cacd2d81ec75"
+ },
+ {
+  "id": "f23",
+  "text": "Counseled on dietary sodium reduction (avoid deli meat, sausage, canned soups, chips) and cooking more at home",
+  "type": "counseling",
+  "slots": {
+   "topic": "low-sodium diet"
+  },
+  "source": "transcript",
+  "transcript_quote": "salt is the big lever. Deli meat, sausage, canned soups, chips",
+  "fhir_ref": null
+ },
+ {
+  "id": "f24",
+  "text": "Counseled to walk 30 minutes most days",
+  "type": "counseling",
+  "slots": {
+   "topic": "exercise",
+   "detail": "30 minutes walking most days"
+  },
+  "source": "transcript",
+  "transcript_quote": "walking: thirty minutes, most days.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f25",
+  "text": "Enrolled patient in hypertension education program",
+  "type": "order",
+  "slots": {
+   "program": "hypertension education"
+  },
+  "source": "transcript",
+  "transcript_quote": "I'll enroll you in our hypertension education program",
+  "fhir_ref": null
+ },
+ {
+  "id": "f26",
+  "text": "Dental referral placed for cleaning and exam (last dental visit 4-5 years ago)",
+  "type": "referral",
+  "slots": {
+   "referral": "dental care",
+   "reason": "cleaning and exam for gingivitis"
+  },
+  "source": "both",
+  "transcript_quote": "I'm sending a dental referral today \u2014 cleaning and an exam.",
+  "fhir_ref": "Procedure/4b4735a2-ee12-ec86-33e0-eeab2e10d03a"
+ },
+ {
+  "id": "f27",
+  "text": "Counseled on oral hygiene: brush twice daily with soft brush and floss even when bleeding",
+  "type": "counseling",
+  "slots": {
+   "topic": "oral hygiene"
+  },
+  "source": "transcript",
+  "transcript_quote": "Brush twice daily, soft brush, and floss even when it bleeds",
+  "fhir_ref": null
+ },
+ {
+  "id": "f28",
+  "text": "Administered influenza vaccine (trivalent, split virus, preservative-free) in left arm",
+  "type": "procedure",
+  "slots": {
+   "vaccine": "influenza trivalent split virus PF",
+   "site": "left arm"
+  },
+  "source": "both",
+  "transcript_quote": "flu vaccine \u2014 left arm, I heard? Small pinch... done.",
+  "fhir_ref": "Immunization/4b4735a2-ee12-ec86-27e3-8e468a734fbd"
+ },
+ {
+  "id": "f29",
+  "text": "Follow-up in about one month for blood pressure recheck; advised to obtain home BP cuff and keep a log (morning, sitting, feet on floor)",
+  "type": "followup",
+  "slots": {
+   "interval": "1 month",
+   "reason": "BP recheck",
+   "instructions": "home BP log"
+  },
+  "source": "transcript",
+  "transcript_quote": "I want to see you back in about a month for a blood pressure recheck. If you can get hold of a home cuff, even better",
+  "fhir_ref": null
+ },
+ {
+  "id": "f30",
+  "text": "Grief and adjustment: patient was primary caregiver for his mother who died last fall; left work afterward and is not seeking employment",
+  "type": "sdoh",
+  "slots": {
+   "domain": "life stress/caregiving/bereavement",
+   "detail": "mother died last fall, caregiving, left job"
+  },
+  "source": "both",
+  "transcript_quote": "My mother was sick for a long time \u2014 I was her person, day and night, until she passed last fall. After that I just... didn't go back.",
+  "fhir_ref": "Condition/4b4735a2-ee12-ec86-edcf-56b458bd42f5"
+ },
+ {
+  "id": "f31",
+  "text": "Not in labor force / currently unemployed, not seeking work",
+  "type": "sdoh",
+  "slots": {
+   "domain": "employment",
+   "status": "unemployed, not seeking work"
+  },
+  "source": "both",
+  "transcript_quote": "I stopped working last year and I'm not looking",
+  "fhir_ref": "Condition/4b4735a2-ee12-ec86-edcf-56b458bd42f5"
+ },
+ {
+  "id": "f32",
+  "text": "Very low annual income (~a few thousand dollars, ~$4829/yr) from odd jobs; Medicaid insurance",
+  "type": "sdoh",
+  "slots": {
+   "domain": "income/insurance",
+   "income": "~$4829/yr",
+   "insurance": "Medicaid"
+  },
+  "source": "both",
+  "transcript_quote": "my own income this year is next to nothing \u2014 a few thousand dollars, odd jobs.",
+  "fhir_ref": "Observation/4b4735a2-ee12-ec86-1ef6-1e2cd1adea0a"
+ },
+ {
+  "id": "f33",
+  "text": "Housing: living with sister's family, sleeping on sofa bed, 5 people in household; reports feeling safe and has stable housing",
+  "type": "sdoh",
+  "slots": {
+   "domain": "housing",
+   "detail": "living with sister's family, 5 in household, sofa bed"
+  },
+  "source": "both",
+  "transcript_quote": "Her house, her husband, their two kids, and me. Five of us.",
+  "fhir_ref": "Observation/4b4735a2-ee12-ec86-1ef6-1e2cd1adea0a"
+ },
+ {
+  "id": "f34",
+  "text": "PRAPARE: family unable to get needed medicine or health care (medical/dental/mental/vision) in past year",
+  "type": "sdoh",
+  "slots": {
+   "domain": "healthcare access",
+   "detail": "unable to get needed care in past year"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Observation/4b4735a2-ee12-ec86-1ef6-1e2cd1adea0a"
+ },
+ {
+  "id": "f35",
+  "text": "History of migrant/seasonal farm work as main income source at some point in past 2 years",
+  "type": "sdoh",
+  "slots": {
+   "domain": "occupation",
+   "detail": "seasonal/migrant farm work"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Observation/4b4735a2-ee12-ec86-1ef6-1e2cd1adea0a"
+ },
+ {
+  "id": "f36",
+  "text": "Patient reports fogginess and heavy legs when B12 injections are skipped",
+  "type": "symptom",
+  "slots": {
+   "symptom": "fogginess, heavy legs",
+   "context": "when B12 skipped"
+  },
+  "source": "transcript",
+  "transcript_quote": "I do notice when I skip \u2014 I get foggy and my legs feel like sandbags.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f37",
+  "text": "Pain severity reported as 1/10",
+  "type": "observation",
+  "slots": {
+   "value": "1",
+   "scale": "0-10"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Observation/4b4735a2-ee12-ec86-4c13-ce1dbcf80615"
+ },
+ {
+  "id": "f38",
+  "text": "Patient denies feeling depressed and reports sleeping okay; grief symptoms come and go",
+  "type": "symptom",
+  "slots": {
+   "detail": "no depression, grief-related low mood intermittent"
+  },
+  "source": "transcript",
+  "transcript_quote": "I wouldn't call myself depressed. Tired of my own company, sometimes.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f39",
+  "text": "Respiratory rate 13 /min",
+  "type": "observation",
+  "slots": {
+   "value": "13",
+   "unit": "/min"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Observation/4b4735a2-ee12-ec86-c09f-0d0cf7893ef4"
+ },
+ {
+  "id": "f40",
+  "text": "Counseled that if depression/grief worsens, treatment discussion will be revisited",
+  "type": "counseling",
+  "slots": {
+   "topic": "grief/mental health follow-up"
+  },
+  "source": "transcript",
+  "transcript_quote": "If it gets heavier, that's a conversation, not a confession.",
+  "fhir_ref": null
+ }
+]

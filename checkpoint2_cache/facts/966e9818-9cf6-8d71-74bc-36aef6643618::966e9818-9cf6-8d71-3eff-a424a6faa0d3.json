@@ -1,0 +1,474 @@
+[
+ {
+  "id": "f1",
+  "text": "Patient presents for visit prompted by aunt's list: prediabetes follow-up, gum concerns, and vaccinations",
+  "type": "other",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "The sugar thing, from the letter last year. My gums, because she noticed. And she wrote get your shots in capital letters.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f2",
+  "text": "Hemoglobin A1c is 6.24%, in the prediabetes range (below 6.5%, above normal)",
+  "type": "observation",
+  "slots": {
+   "test": "Hemoglobin A1c",
+   "value": "6.24",
+   "unit": "%",
+   "interpretation": "prediabetes"
+  },
+  "source": "both",
+  "transcript_quote": "It came back six point two four. That is still in the prediabetes range",
+  "fhir_ref": "Observation/966e9818-9cf6-8d71-f8ac-2ea2401464bf"
+ },
+ {
+  "id": "f3",
+  "text": "Prediabetes noted last year; patient reports no lifestyle changes were made and was not given guidance on what to do",
+  "type": "condition",
+  "slots": {
+   "condition": "prediabetes"
+  },
+  "source": "transcript",
+  "transcript_quote": "It scared me for like two weeks, and then life happened... nobody really told me what to actually do.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f4",
+  "text": "Family history of diabetes (grandmother)",
+  "type": "condition",
+  "slots": {
+   "relation": "grandmother",
+   "condition": "diabetes"
+  },
+  "source": "transcript",
+  "transcript_quote": "My grandma has diabetes, the real kind, with the finger sticks",
+  "fhir_ref": null
+ },
+ {
+  "id": "f5",
+  "text": "Random blood glucose is 99 mg/dL (normal)",
+  "type": "observation",
+  "slots": {
+   "test": "blood glucose",
+   "value": "99",
+   "unit": "mg/dL"
+  },
+  "source": "both",
+  "transcript_quote": "Your sugar today was ninety-nine, which is fine.",
+  "fhir_ref": "Observation/966e9818-9cf6-8d71-3499-691cbb140898"
+ },
+ {
+  "id": "f6",
+  "text": "Body weight 94.4 kg, height 173 cm, BMI 31.4 kg/m2, in obesity range",
+  "type": "observation",
+  "slots": {
+   "weight": "94.4 kg",
+   "height": "173 cm",
+   "BMI": "31.4 kg/m2",
+   "interpretation": "obesity"
+  },
+  "source": "both",
+  "transcript_quote": "your weight today is ninety-four point four kilos, height one seventy-three, so your body mass index is thirty-one point four. That crosses into the obesity range",
+  "fhir_ref": "Observation/966e9818-9cf6-8d71-d208-160fef5362b6"
+ },
+ {
+  "id": "f7",
+  "text": "Obesity (BMI 30+) - active condition",
+  "type": "condition",
+  "slots": {
+   "condition": "obesity"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Condition/966e9818-9cf6-8d71-21ad-bbe8336014d6"
+ },
+ {
+  "id": "f8",
+  "text": "Counseled to swap sugary drinks (soda/juice) for fizzy water as primary dietary change for prediabetes",
+  "type": "counseling",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "Swap the sugary drinks first \u2014 that is the single biggest one... Juice is soda with better marketing",
+  "fhir_ref": null
+ },
+ {
+  "id": "f9",
+  "text": "Counseled to walk after work shift ~20 minutes and build meals around beans, rice, and frozen vegetables",
+  "type": "counseling",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "Walking after your shift, even twenty minutes. And building meals around the cheap boring staples, beans and rice and frozen vegetables",
+  "fhir_ref": null
+ },
+ {
+  "id": "f10",
+  "text": "Referral to free nutrition class (covered by insurance)",
+  "type": "referral",
+  "slots": {
+   "referral": "nutrition class"
+  },
+  "source": "transcript",
+  "transcript_quote": "I can also refer you to the nutrition class here \u2014 it is free with your coverage.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f11",
+  "text": "Known allergies: mold, dust mites, animal dander, grass and tree pollen, plus aspirin reaction",
+  "type": "condition",
+  "slots": {
+   "allergens": "mold, dust mites, animal dander, grass and tree pollen, aspirin"
+  },
+  "source": "transcript",
+  "transcript_quote": "The chart says mold, dust mites, animal dander, grass and tree pollen \u2014 basically the outdoors and half the indoors \u2014 plus the aspirin reaction.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f12",
+  "text": "Continue cetirizine 5 mg orally once every morning through allergy seasons",
+  "type": "medication",
+  "slots": {
+   "drug": "cetirizine",
+   "dose": "5 mg",
+   "route": "oral",
+   "freq": "once daily (morning)"
+  },
+  "source": "transcript",
+  "transcript_quote": "You take the cetirizine, five milligrams?... Keep the cetirizine daily through your bad seasons",
+  "fhir_ref": null
+ },
+ {
+  "id": "f13",
+  "text": "Patient reports rough spring allergy season with eye symptoms through April, controlled with cetirizine",
+  "type": "symptom",
+  "slots": {
+   "symptom": "allergic eye symptoms"
+  },
+  "source": "transcript",
+  "transcript_quote": "Spring was rough this year, my eyes were a mess through April, but the pill mostly keeps it livable.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f14",
+  "text": "Continue carrying EpiPen; not expired, good until next year",
+  "type": "medication",
+  "slots": {
+   "drug": "epinephrine auto-injector",
+   "instruction": "carry always, keep within reach"
+  },
+  "source": "transcript",
+  "transcript_quote": "I still have the EpiPen, too. I carry it in my backpack... It is good until next year",
+  "fhir_ref": null
+ },
+ {
+  "id": "f15",
+  "text": "Counseled to avoid aspirin and NSAIDs (ibuprofen family); check with pharmacist before new pain medications",
+  "type": "counseling",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "no aspirin, and be careful with the related painkillers, the ibuprofen family; check with a pharmacist before anything new for pain.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f16",
+  "text": "Depression screen (PHQ-2) negative, score 0",
+  "type": "red_flag_screen",
+  "slots": {
+   "screen": "PHQ-2",
+   "score": "0",
+   "result": "negative"
+  },
+  "source": "both",
+  "transcript_quote": "basically nothing on the depression screen",
+  "fhir_ref": "Observation/966e9818-9cf6-8d71-0fd7-168c0f303535"
+ },
+ {
+  "id": "f17",
+  "text": "Anxiety screen (GAD-7) score 1, minimal; patient reports normal pre-exam anxiety that resolves",
+  "type": "red_flag_screen",
+  "slots": {
+   "screen": "GAD-7",
+   "score": "1",
+   "result": "minimal"
+  },
+  "source": "both",
+  "transcript_quote": "one point on the anxiety one",
+  "fhir_ref": "Observation/966e9818-9cf6-8d71-9007-f82dba607eaa"
+ },
+ {
+  "id": "f18",
+  "text": "Domestic abuse/safety screen (HARK) negative, score 0; patient denies humiliation, fear, sexual coercion, or physical violence",
+  "type": "red_flag_screen",
+  "slots": {
+   "screen": "HARK",
+   "score": "0",
+   "result": "negative"
+  },
+  "source": "both",
+  "transcript_quote": "No. Nothing like that. House is loud but safe.",
+  "fhir_ref": "Observation/966e9818-9cf6-8d71-05e6-c5759f06cc05"
+ },
+ {
+  "id": "f19",
+  "text": "Alcohol screen (AUDIT-C) score 1; patient reports rare alcohol use (~one drink at occasions)",
+  "type": "red_flag_screen",
+  "slots": {
+   "screen": "AUDIT-C",
+   "score": "1"
+  },
+  "source": "both",
+  "transcript_quote": "Rarely. A cousin's birthday, maybe one drink.",
+  "fhir_ref": "Observation/966e9818-9cf6-8d71-e8bf-2f5557c3f4d2"
+ },
+ {
+  "id": "f20",
+  "text": "Never smoked tobacco; denies vaping, marijuana, or illicit pills",
+  "type": "red_flag_screen",
+  "slots": {
+   "substance": "tobacco/vaping/marijuana/pills",
+   "result": "never/denies"
+  },
+  "source": "both",
+  "transcript_quote": "None. Never smoked anything.",
+  "fhir_ref": "Observation/966e9818-9cf6-8d71-c047-353d51dd8fa4"
+ },
+ {
+  "id": "f21",
+  "text": "Heart rate 90/min, regular (slightly elevated, attributed to walk from bus)",
+  "type": "observation",
+  "slots": {
+   "test": "heart rate",
+   "value": "90",
+   "unit": "/min"
+  },
+  "source": "both",
+  "transcript_quote": "heart is regular, a touch quick at ninety but you mentioned the walk from the bus",
+  "fhir_ref": "Observation/966e9818-9cf6-8d71-96e6-00e0c1bdbad8"
+ },
+ {
+  "id": "f22",
+  "text": "Blood pressure 121/62 mmHg",
+  "type": "observation",
+  "slots": {
+   "test": "blood pressure",
+   "value": "121/62",
+   "unit": "mmHg"
+  },
+  "source": "both",
+  "transcript_quote": "Blood pressure one twenty-one over sixty-two \u2014 good.",
+  "fhir_ref": "Observation/966e9818-9cf6-8d71-e7c9-c015016f56bd"
+ },
+ {
+  "id": "f23",
+  "text": "Lungs clear on exam",
+  "type": "observation",
+  "slots": {
+   "finding": "lungs clear"
+  },
+  "source": "transcript",
+  "transcript_quote": "Lungs clear.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f24",
+  "text": "Exam shows puffy, red gums that bleed on touch, consistent with gingivitis; patient reports gums bleed a lot with brushing",
+  "type": "condition",
+  "slots": {
+   "condition": "gingivitis"
+  },
+  "source": "both",
+  "transcript_quote": "Your gums are puffy and red along the edges, and they bleed at a touch \u2014 that is gingivitis. Do they bleed when you brush? PT: Yeah, kind of a lot lately.",
+  "fhir_ref": "Condition/966e9818-9cf6-8d71-013a-a164ddbb0102"
+ },
+ {
+  "id": "f25",
+  "text": "Last dental visit was in middle school; dental care never accessible",
+  "type": "sdoh",
+  "slots": {
+   "domain": "dental access"
+  },
+  "source": "transcript",
+  "transcript_quote": "Middle school? Dental was never a thing we could fit.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f26",
+  "text": "Referral to dental clinic downtown for cleaning (accepts Medicaid, no out-of-pocket cost)",
+  "type": "referral",
+  "slots": {
+   "referral": "dental care"
+  },
+  "source": "both",
+  "transcript_quote": "I am sending a referral to the dental clinic downtown \u2014 they take your coverage",
+  "fhir_ref": "Procedure/966e9818-9cf6-8d71-9708-8225b8272b0b"
+ },
+ {
+  "id": "f27",
+  "text": "Counseled to floss daily for gingivitis reversal",
+  "type": "counseling",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "That plus flossing and this is gone in a couple of months.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f28",
+  "text": "CBC normal, no anemia (Hemoglobin 12.66 g/dL, Hematocrit 45.6%)",
+  "type": "observation",
+  "slots": {
+   "test": "CBC",
+   "result": "normal, no anemia"
+  },
+  "source": "both",
+  "transcript_quote": "your blood count from this morning looks fine \u2014 no anemia, nothing alarming.",
+  "fhir_ref": "DiagnosticReport/966e9818-9cf6-8d71-c356-c4939277edbd"
+ },
+ {
+  "id": "f29",
+  "text": "Influenza vaccine administered today",
+  "type": "procedure",
+  "slots": {
+   "vaccine": "influenza, trivalent"
+  },
+  "source": "both",
+  "transcript_quote": "Flu, a tetanus booster, hepatitis B... and the meningitis vaccine.",
+  "fhir_ref": "Immunization/966e9818-9cf6-8d71-956c-45a9b5eeb60e"
+ },
+ {
+  "id": "f30",
+  "text": "Td (tetanus) booster administered today",
+  "type": "procedure",
+  "slots": {
+   "vaccine": "Td adult"
+  },
+  "source": "both",
+  "transcript_quote": "a tetanus booster",
+  "fhir_ref": "Immunization/966e9818-9cf6-8d71-22cd-cabfc50fd875"
+ },
+ {
+  "id": "f31",
+  "text": "Hepatitis B vaccine administered today (relevant for future clinical settings in nursing program)",
+  "type": "procedure",
+  "slots": {
+   "vaccine": "Hep B adult"
+  },
+  "source": "both",
+  "transcript_quote": "hepatitis B \u2014 and because your program will eventually put you in clinical settings, that one matters",
+  "fhir_ref": "Immunization/966e9818-9cf6-8d71-8f67-f0b2643e7cdd"
+ },
+ {
+  "id": "f32",
+  "text": "Meningococcal (MCV4P) vaccine administered today",
+  "type": "procedure",
+  "slots": {
+   "vaccine": "meningococcal MCV4P"
+  },
+  "source": "both",
+  "transcript_quote": "the meningitis vaccine",
+  "fhir_ref": "Immunization/966e9818-9cf6-8d71-1f6c-b377d4a0d0f5"
+ },
+ {
+  "id": "f33",
+  "text": "Social isolation - patient reports living with 6 people but has little social contact; loneliness worse on Sundays, feels less like a choice lately",
+  "type": "sdoh",
+  "slots": {
+   "domain": "social isolation"
+  },
+  "source": "both",
+  "transcript_quote": "lately it feels less like a choice, if that makes sense. Sundays especially. Everyone in the house has their people, and I am just... there.",
+  "fhir_ref": "Condition/966e9818-9cf6-8d71-6cb1-39d40039d901"
+ },
+ {
+  "id": "f34",
+  "text": "Counseled/referred to community center free study group and walking group; patient chose to try Sunday walking group",
+  "type": "counseling",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "The community center by the transit hub runs a study group and a walking group, both free... The walking group would hit two birds, honestly.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f35",
+  "text": "Follow-up: recheck Hemoglobin A1c in about 6 months",
+  "type": "followup",
+  "slots": {
+   "test": "A1c",
+   "interval": "6 months"
+  },
+  "source": "transcript",
+  "transcript_quote": "we recheck the A1c in about six months",
+  "fhir_ref": null
+ },
+ {
+  "id": "f36",
+  "text": "SDOH: patient is a college student pursuing associate degree/nursing, works early shifts at grocery store, lives with aunt's family (6 in household), Medicaid coverage, income ~$18,297/year",
+  "type": "sdoh",
+  "slots": {
+   "employment": "part-time grocery",
+   "education": "more than high school",
+   "insurance": "Medicaid",
+   "household": "6 people"
+  },
+  "source": "both",
+  "transcript_quote": "I take classes... And I work at the grocery store, the early shift some days. I live at my aunt's place with her family, there are six of us in the house.",
+  "fhir_ref": "Observation/966e9818-9cf6-8d71-4a60-f02c6591edbc"
+ },
+ {
+  "id": "f37",
+  "text": "Patient reports feeling housing/food constraint: store discount is mostly on unhealthy foods",
+  "type": "sdoh",
+  "slots": {
+   "domain": "food access"
+  },
+  "source": "transcript",
+  "transcript_quote": "the store discount is mostly on the wrong foods",
+  "fhir_ref": null
+ },
+ {
+  "id": "f38",
+  "text": "Medication reconciliation completed",
+  "type": "procedure",
+  "slots": {},
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Procedure/966e9818-9cf6-8d71-5b2b-6ea694443e4b"
+ },
+ {
+  "id": "f39",
+  "text": "Basic metabolic panel normal (creatinine 1.32 mg/dL, glucose 99, electrolytes within range)",
+  "type": "observation",
+  "slots": {
+   "test": "BMP",
+   "result": "normal"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "DiagnosticReport/966e9818-9cf6-8d71-47b0-46b4502342a1"
+ },
+ {
+  "id": "f40",
+  "text": "Pain severity reported 1/10",
+  "type": "observation",
+  "slots": {
+   "test": "pain score",
+   "value": "1",
+   "unit": "/10"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Observation/966e9818-9cf6-8d71-754a-aeec35f385c3"
+ },
+ {
+  "id": "f41",
+  "text": "Respiratory rate 15/min",
+  "type": "observation",
+  "slots": {
+   "test": "respiratory rate",
+   "value": "15",
+   "unit": "/min"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Observation/966e9818-9cf6-8d71-5b44-f6202a586387"
+ }
+]

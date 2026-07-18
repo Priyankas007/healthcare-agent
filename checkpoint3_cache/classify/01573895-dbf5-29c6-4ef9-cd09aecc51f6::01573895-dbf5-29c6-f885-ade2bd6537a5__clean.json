@@ -1,0 +1,8 @@
+[
+ {
+  "fact_id": "f39",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "The note states a social care needs assessment was completed, so documenting stable housing, home safety, employment, and insurance status confirms that screening and contextualizes the resource referrals, though these are largely reassuring findings."
+ }
+]

@@ -1,0 +1,290 @@
+{
+ "note_version_id": "74919836-2db2-2f73-d2cf-5287a180b0ff::74919836-2db2-2f73-ed42-440eccc6591a__inj_2",
+ "injected_fact_id": "f14",
+ "detected_absent_fact_ids": [
+  "f10",
+  "f14",
+  "f39"
+ ],
+ "caught": true,
+ "collateral_flips": [],
+ "n_present_on_provided": 44,
+ "presence_results": [
+  {
+   "fact_id": "f1",
+   "status": "present",
+   "note_evidence": "Mr. Isreal Howell is an 85-year-old man presenting for his annual comprehensive examination. He reports feeling well.",
+   "rationale": "Age, annual exam, and feeling well all stated."
+  },
+  {
+   "fact_id": "f2",
+   "status": "present",
+   "note_evidence": "He denies chest pain or pressure at rest or with usual exertion, noting only an occasional brief twinge with heavy yard work that resolves promptly with rest",
+   "rationale": "Denial of angina with exertional twinge resolving with rest matches."
+  },
+  {
+   "fact_id": "f3",
+   "status": "present",
+   "note_evidence": "he has not needed his nitroglycerin spray in many months",
+   "rationale": "Directly stated."
+  },
+  {
+   "fact_id": "f4",
+   "status": "present",
+   "note_evidence": "He denies exertional dyspnea, orthopnea, paroxysmal nocturnal dyspnea, palpitations, lower-extremity edema",
+   "rationale": "Dyspnea, PND, and edema denials present."
+  },
+  {
+   "fact_id": "f5",
+   "status": "present",
+   "note_evidence": "lightheadedness, syncope, and falls over the past year",
+   "rationale": "Denial of dizziness/lightheadedness and falls stated."
+  },
+  {
+   "fact_id": "f6",
+   "status": "present",
+   "note_evidence": "Appetite is preserved and weight is stable to slightly down.",
+   "rationale": "Appetite good and weight steady captured."
+  },
+  {
+   "fact_id": "f7",
+   "status": "present",
+   "note_evidence": "He retired from a sixty-year bookkeeping career this June ... Not in labor force newly documented following retirement this year.",
+   "rationale": "Retirement in June after 60-year career and out of labor force stated."
+  },
+  {
+   "fact_id": "f8",
+   "status": "present",
+   "note_evidence": "he lives with his daughter and grandson (three in the household)",
+   "rationale": "Household composition matches."
+  },
+  {
+   "fact_id": "f9",
+   "status": "present",
+   "note_evidence": "denies difficulty affording food, medications, or transportation",
+   "rationale": "No unmet financial needs stated."
+  },
+  {
+   "fact_id": "f10",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No PRAPARE details, insurance, housing, contact frequency, or stress level documented."
+  },
+  {
+   "fact_id": "f11",
+   "status": "present",
+   "note_evidence": "Medication reconciliation performed with his pill bottles",
+   "rationale": "Reconciliation with pill bottles stated."
+  },
+  {
+   "fact_id": "f12",
+   "status": "present",
+   "note_evidence": "a duplicate simvastatin 20 mg entry from a prior hospitalization was removed",
+   "rationale": "Simvastatin 20 mg duplicate removed from prior hospitalization."
+  },
+  {
+   "fact_id": "f13",
+   "status": "present",
+   "note_evidence": "metoprolol succinate ER 100 mg daily (outdated 50 mg ER entry removed)",
+   "rationale": "Outdated metoprolol 50 mg ER entry removed."
+  },
+  {
+   "fact_id": "f14",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "Note references simvastatin, not atorvastatin, which was removed."
+  },
+  {
+   "fact_id": "f15",
+   "status": "present",
+   "note_evidence": "Continue losartan 50 mg daily and metoprolol succinate ER 100 mg daily",
+   "rationale": "Metoprolol ER 100 mg continued."
+  },
+  {
+   "fact_id": "f16",
+   "status": "present",
+   "note_evidence": "Continue aspirin 81 mg daily",
+   "rationale": "Aspirin 81 mg continued."
+  },
+  {
+   "fact_id": "f17",
+   "status": "present",
+   "note_evidence": "Continue losartan 50 mg daily",
+   "rationale": "Losartan 50 mg continued."
+  },
+  {
+   "fact_id": "f18",
+   "status": "present",
+   "note_evidence": "nitroglycerin 0.4 mg/actuation mucosal spray PRN chest pain",
+   "rationale": "Nitroglycerin spray PRN continued."
+  },
+  {
+   "fact_id": "f19",
+   "status": "present",
+   "note_evidence": "Start 24 hr metformin hydrochloride 500 mg extended-release tablet daily with the evening meal",
+   "rationale": "Metformin ER 500 mg daily with dinner started for diabetes/metabolic syndrome."
+  },
+  {
+   "fact_id": "f20",
+   "status": "present",
+   "note_evidence": "Start hydrochlorothiazide 25 mg each morning ... Potassium 5.16 mmol/L at the upper margin",
+   "rationale": "HCTZ 25 mg each morning started with BP/potassium context."
+  },
+  {
+   "fact_id": "f21",
+   "status": "present",
+   "note_evidence": "report GI intolerance rather than self-discontinuing",
+   "rationale": "Counsel to report GI issues rather than quit; taken with meal noted."
+  },
+  {
+   "fact_id": "f22",
+   "status": "partial",
+   "note_evidence": "Monitor for orthostatic symptoms",
+   "rationale": "Orthostatic monitoring noted but not explicit patient counseling to report dizziness."
+  },
+  {
+   "fact_id": "f23",
+   "status": "present",
+   "note_evidence": "BP 107/58 mmHg",
+   "rationale": "Blood pressure matches."
+  },
+  {
+   "fact_id": "f24",
+   "status": "present",
+   "note_evidence": "HR 96/min",
+   "rationale": "Heart rate matches."
+  },
+  {
+   "fact_id": "f25",
+   "status": "present",
+   "note_evidence": "weight 78.5 kg, height 168 cm, BMI 27.8 kg/m2",
+   "rationale": "Weight and BMI match."
+  },
+  {
+   "fact_id": "f26",
+   "status": "present",
+   "note_evidence": "HbA1c 5.45%; ... Excellent glycemic control with HbA1c 5.45%",
+   "rationale": "HbA1c value and excellent control stated."
+  },
+  {
+   "fact_id": "f27",
+   "status": "present",
+   "note_evidence": "fasting glucose low at 66.82 mg/dL today ... Counseled to avoid skipping breakfast before morning walks",
+   "rationale": "Low fasting glucose and breakfast advice present."
+  },
+  {
+   "fact_id": "f28",
+   "status": "present",
+   "note_evidence": "creatinine 0.6 mg/dL; eGFR 148.95 mL/min/1.73m2",
+   "rationale": "Creatinine value with strong renal function."
+  },
+  {
+   "fact_id": "f29",
+   "status": "present",
+   "note_evidence": "potassium 5.16 mmol/L ... Potassium 5.16 mmol/L at the upper margin",
+   "rationale": "Mildly elevated potassium stated."
+  },
+  {
+   "fact_id": "f30",
+   "status": "present",
+   "note_evidence": "total cholesterol 226.05 mg/dL; direct LDL 148.61 mg/dL ... above goal for secondary prevention",
+   "rationale": "Total cholesterol and LDL above goal given cardiac history."
+  },
+  {
+   "fact_id": "f31",
+   "status": "present",
+   "note_evidence": "Repeat lipid panel at follow-up before dose escalation",
+   "rationale": "Recheck lipids before statin change stated."
+  },
+  {
+   "fact_id": "f32",
+   "status": "present",
+   "note_evidence": "PHQ-2 0",
+   "rationale": "PHQ-2 score 0 present."
+  },
+  {
+   "fact_id": "f33",
+   "status": "present",
+   "note_evidence": "HARK 0",
+   "rationale": "HARK score 0 present."
+  },
+  {
+   "fact_id": "f34",
+   "status": "present",
+   "note_evidence": "DAST-10 0",
+   "rationale": "DAST-10 score 0 present."
+  },
+  {
+   "fact_id": "f35",
+   "status": "present",
+   "note_evidence": "Morse Fall Scale 22, low risk",
+   "rationale": "Morse Fall Scale 22 low risk present."
+  },
+  {
+   "fact_id": "f36",
+   "status": "present",
+   "note_evidence": "Ex-smoker since young adulthood; denies alcohol or drug use.",
+   "rationale": "Ex-smoker and no alcohol/drug use stated."
+  },
+  {
+   "fact_id": "f37",
+   "status": "present",
+   "note_evidence": "Historical and asymptomatic; no fatigue, dyspnea, or bleeding source beyond gums. Continue surveillance at next laboratory draw",
+   "rationale": "Anemia stable, monitoring at next labs."
+  },
+  {
+   "fact_id": "f38",
+   "status": "present",
+   "note_evidence": "Gingival erythema and edema along the mandibular gumline with friability ... Mandibular gingival inflammation with bleeding on brushing",
+   "rationale": "Gingivitis with red, puffy lower gums bleeding on brushing."
+  },
+  {
+   "fact_id": "f39",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No documentation linking gum disease and heart disease in counseling."
+  },
+  {
+   "fact_id": "f40",
+   "status": "present",
+   "note_evidence": "Patient referral for dental care placed",
+   "rationale": "Dental referral placed."
+  },
+  {
+   "fact_id": "f41",
+   "status": "present",
+   "note_evidence": "Influenza vaccine (split virus, trivalent, preservative-free) administered today",
+   "rationale": "Trivalent PF influenza vaccine administered today."
+  },
+  {
+   "fact_id": "f42",
+   "status": "present",
+   "note_evidence": "Return in 6 months with repeat labs; sooner for chest pain, dizziness, or medication intolerance",
+   "rationale": "6-month follow-up with return precautions stated."
+  },
+  {
+   "fact_id": "f43",
+   "status": "present",
+   "note_evidence": "Counseled to avoid skipping breakfast before morning walks",
+   "rationale": "Directly stated."
+  },
+  {
+   "fact_id": "f44",
+   "status": "present",
+   "note_evidence": "pain 1/10",
+   "rationale": "Pain score 1/10 present."
+  },
+  {
+   "fact_id": "f45",
+   "status": "present",
+   "note_evidence": "creatinine 0.6 mg/dL ... total cholesterol 226.05 mg/dL; direct LDL 148.61 mg/dL",
+   "rationale": "BMP and lipid panel values reported."
+  },
+  {
+   "fact_id": "f46",
+   "status": "present",
+   "note_evidence": "Medication reconciliation and assessment of health and social care needs completed",
+   "rationale": "Assessment of health and social care needs completed."
+  }
+ ]
+}

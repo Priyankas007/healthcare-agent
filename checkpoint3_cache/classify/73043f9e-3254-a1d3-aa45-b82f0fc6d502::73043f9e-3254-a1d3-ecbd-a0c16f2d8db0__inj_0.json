@@ -1,0 +1,14 @@
+[
+ {
+  "fact_id": "f4",
+  "expected": true,
+  "severity": "safety_critical",
+  "why_it_matters": "The note states 'Medications: none,' but active PRN naproxen use is a documentation contradiction with GI, renal, and blood-pressure implications that also affects the dyspepsia/melena screening and OA management."
+ },
+ {
+  "fact_id": "f30",
+  "expected": false,
+  "severity": "minor",
+  "why_it_matters": "General infection-prevention counseling is reasonable given grandchildren exposure but is non-essential and does not change management."
+ }
+]

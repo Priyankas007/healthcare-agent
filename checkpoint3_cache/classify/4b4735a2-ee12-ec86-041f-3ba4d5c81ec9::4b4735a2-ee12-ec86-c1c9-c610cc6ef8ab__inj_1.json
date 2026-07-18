@@ -1,0 +1,32 @@
+[
+ {
+  "fact_id": "f21",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "An active injectable medication must be captured in the reconciliation to keep the medication list accurate and support ongoing anemia management."
+ },
+ {
+  "fact_id": "f34",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Documented barriers to obtaining care directly affect the feasibility of the new medication, lab follow-up, and dental referral plans."
+ },
+ {
+  "fact_id": "f35",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Prior migrant/seasonal farm work informs occupational exposure risk and social context but has limited immediate bearing on today's management."
+ },
+ {
+  "fact_id": "f36",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "These symptoms reflect the clinical consequence of missed B12 doses and justify continuing the injection, supporting adherence counseling."
+ },
+ {
+  "fact_id": "f40",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Documenting the safety-net plan for worsening grief/depression ensures appropriate follow-up though current screening is low-risk."
+ }
+]

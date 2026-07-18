@@ -1,0 +1,252 @@
+{
+ "note_version_id": "1ba8eeb9-bc93-7129-4390-0d2ddd560616::1ba8eeb9-bc93-7129-2e7d-8c427e72b964__inj_1",
+ "injected_fact_id": "f13",
+ "detected_absent_fact_ids": [
+  "f13"
+ ],
+ "caught": true,
+ "collateral_flips": [],
+ "n_present_on_provided": 34,
+ "presence_results": [
+  {
+   "fact_id": "f1",
+   "status": "present",
+   "note_evidence": "presenting for a general examination, his first in several years",
+   "rationale": "General exam and first-in-several-years documented, matching not seen since college."
+  },
+  {
+   "fact_id": "f2",
+   "status": "present",
+   "note_evidence": "chronic low back pain... dating to a lifting episode in college",
+   "rationale": "Chronic low back pain from college lifting injury documented."
+  },
+  {
+   "fact_id": "f3",
+   "status": "present",
+   "note_evidence": "a dull band across the lower lumbar region, currently 4/10",
+   "rationale": "Quality, location, and severity all documented."
+  },
+  {
+   "fact_id": "f4",
+   "status": "present",
+   "note_evidence": "aggravated by prolonged sitting during work crunches as a software QA tester",
+   "rationale": "Prolonged sitting/desk work aggravation documented."
+  },
+  {
+   "fact_id": "f5",
+   "status": "present",
+   "note_evidence": "It improves with walking and heat... previously used ibuprofen with good effect",
+   "rationale": "Walking, heat, and ibuprofen as relievers documented."
+  },
+  {
+   "fact_id": "f6",
+   "status": "present",
+   "note_evidence": "He denies radicular symptoms, numbness, weakness",
+   "rationale": "Radicular/numbness/weakness negatives documented."
+  },
+  {
+   "fact_id": "f7",
+   "status": "present",
+   "note_evidence": "bowel or bladder dysfunction, night pain, fevers, and weight loss",
+   "rationale": "All listed red-flag negatives documented."
+  },
+  {
+   "fact_id": "f8",
+   "status": "partial",
+   "note_evidence": "Surgical history: appendectomy in adolescence",
+   "rationale": "Appendectomy documented but specific age 15 not stated."
+  },
+  {
+   "fact_id": "f9",
+   "status": "present",
+   "note_evidence": "No medications",
+   "rationale": "No current medications documented."
+  },
+  {
+   "fact_id": "f10",
+   "status": "present",
+   "note_evidence": "no known allergies",
+   "rationale": "No known allergies documented."
+  },
+  {
+   "fact_id": "f11",
+   "status": "present",
+   "note_evidence": "never smoked",
+   "rationale": "Never-smoker documented; vaping not separately stated."
+  },
+  {
+   "fact_id": "f12",
+   "status": "present",
+   "note_evidence": "occasional alcohol",
+   "rationale": "Occasional alcohol use documented."
+  },
+  {
+   "fact_id": "f13",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No PHQ-2 screen or score mentioned in note."
+  },
+  {
+   "fact_id": "f14",
+   "status": "present",
+   "note_evidence": "PHQ-9 total 17 (moderately severe range; item 9 negative)",
+   "rationale": "PHQ-9 score and severity documented."
+  },
+  {
+   "fact_id": "f15",
+   "status": "present",
+   "note_evidence": "anhedonia and low mood most days since winter, initial insomnia, low energy, reduced appetite, intermittent guilt, poor concentration, and restlessness",
+   "rationale": "Depressive symptom cluster documented."
+  },
+  {
+   "fact_id": "f16",
+   "status": "present",
+   "note_evidence": "explicitly and credibly denies thoughts of death or self-harm",
+   "rationale": "Denial of suicidal ideation/self-harm documented."
+  },
+  {
+   "fact_id": "f17",
+   "status": "present",
+   "note_evidence": "low mood most days since winter... in the context of work crunch and his girlfriend's cross-country move",
+   "rationale": "Onset since winter and stressors documented."
+  },
+  {
+   "fact_id": "f18",
+   "status": "present",
+   "note_evidence": "HARK total 0",
+   "rationale": "HARK negative score 0 documented."
+  },
+  {
+   "fact_id": "f19",
+   "status": "present",
+   "note_evidence": "DAST-10 total 1... cannabis edible twice this past winter for pain/sleep",
+   "rationale": "DAST-10 score and cannabis use documented."
+  },
+  {
+   "fact_id": "f20",
+   "status": "present",
+   "note_evidence": "bilateral paraspinal tightness without midline tenderness... straight-leg raise negative bilaterally; lower-extremity strength, sensation, and reflexes intact",
+   "rationale": "All exam findings documented."
+  },
+  {
+   "fact_id": "f21",
+   "status": "present",
+   "note_evidence": "Single office reading of 136/94 mmHg... Recheck blood pressure at 4-week visit; no treatment today",
+   "rationale": "Elevated BP with recheck plan documented."
+  },
+  {
+   "fact_id": "f22",
+   "status": "partial",
+   "note_evidence": "family history of hypertension noted",
+   "rationale": "Family history of hypertension documented but father not specified."
+  },
+  {
+   "fact_id": "f23",
+   "status": "present",
+   "note_evidence": "HR 89/min",
+   "rationale": "Heart rate documented."
+  },
+  {
+   "fact_id": "f24",
+   "status": "present",
+   "note_evidence": "RR 15/min",
+   "rationale": "Respiratory rate documented."
+  },
+  {
+   "fact_id": "f25",
+   "status": "present",
+   "note_evidence": "weight 77 kg, height 185.2 cm, BMI 22.46 kg/m2",
+   "rationale": "Weight, height, and BMI documented."
+  },
+  {
+   "fact_id": "f26",
+   "status": "present",
+   "note_evidence": "erythematous, edematous gingival margins consistent with gingivitis... bleeding on flossing",
+   "rationale": "Gingivitis findings documented."
+  },
+  {
+   "fact_id": "f27",
+   "status": "present",
+   "note_evidence": "Ibuprofen 400 mg oral tablet prescribed; take with food as needed for flares",
+   "rationale": "Ibuprofen 400 mg oral PRN with food documented."
+  },
+  {
+   "fact_id": "f28",
+   "status": "present",
+   "note_evidence": "hourly breaks from sitting, daily walking, hip-hinge lifting mechanics",
+   "rationale": "Back care counseling documented."
+  },
+  {
+   "fact_id": "f29",
+   "status": "present",
+   "note_evidence": "fixed wake time, morning light, daily movement, scheduled social contact",
+   "rationale": "Behavioral activation counseling documented."
+  },
+  {
+   "fact_id": "f30",
+   "status": "present",
+   "note_evidence": "Counseling resource list provided (including telehealth options); patient agreed to review",
+   "rationale": "Counseling list with telehealth provided documented."
+  },
+  {
+   "fact_id": "f31",
+   "status": "present",
+   "note_evidence": "Patient referral for dental care placed for cleaning and examination",
+   "rationale": "Dental referral for gingivitis documented."
+  },
+  {
+   "fact_id": "f32",
+   "status": "partial",
+   "note_evidence": "Daily flossing and twice-daily brushing counseled",
+   "rationale": "Oral hygiene counseled but reversibility/timeline not stated."
+  },
+  {
+   "fact_id": "f33",
+   "status": "present",
+   "note_evidence": "Follow-up visit in 4 weeks: back pain, blood pressure recheck, and PHQ-9 re-screen",
+   "rationale": "4-week follow-up purpose documented."
+  },
+  {
+   "fact_id": "f34",
+   "status": "present",
+   "note_evidence": "Crisis-line information provided with explicit same-day return precautions",
+   "rationale": "Crisis safety counseling documented."
+  },
+  {
+   "fact_id": "f35",
+   "status": "present",
+   "note_evidence": "Medication reconciliation and assessment of health and social care needs completed",
+   "rationale": "Medication reconciliation documented."
+  },
+  {
+   "fact_id": "f36",
+   "status": "partial",
+   "note_evidence": "PRAPARE: 3-person household; reported annual family income $91,796",
+   "rationale": "Household and income documented but employment, insurance, education, language not stated."
+  },
+  {
+   "fact_id": "f37",
+   "status": "present",
+   "note_evidence": "in the setting of occupational crunch and social isolation",
+   "rationale": "Work-related stress from crunch documented."
+  },
+  {
+   "fact_id": "f38",
+   "status": "present",
+   "note_evidence": "PHQ-9 total 17... Repeat PHQ-9 at 4-week follow-up",
+   "rationale": "Depression screening performed documented."
+  },
+  {
+   "fact_id": "f39",
+   "status": "present",
+   "note_evidence": "Domestic abuse screening negative (HARK 0)",
+   "rationale": "Domestic abuse screening performed documented."
+  },
+  {
+   "fact_id": "f40",
+   "status": "present",
+   "note_evidence": "drug abuse screening low risk (DAST-10 score 1)",
+   "rationale": "Substance use screening performed documented."
+  }
+ ]
+}

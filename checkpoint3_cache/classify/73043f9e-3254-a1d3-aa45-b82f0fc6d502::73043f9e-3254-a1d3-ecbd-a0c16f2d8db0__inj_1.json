@@ -1,0 +1,14 @@
+[
+ {
+  "fact_id": "f10",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "A negative PHQ-2 documents that depression was screened and excluded, which complements the anxiety/mood assessment but does not change management given already-negative subjective mood review."
+ },
+ {
+  "fact_id": "f30",
+  "expected": false,
+  "severity": "minor",
+  "why_it_matters": "General infection-prevention counseling is reasonable given childcare exposure but is non-pertinent to this visit's active problems and its omission has negligible clinical impact."
+ }
+]

@@ -1,0 +1,532 @@
+[
+ {
+  "id": "f1",
+  "text": "Patient reports missed period followed by three positive home pregnancy tests",
+  "type": "symptom",
+  "slots": {
+   "finding": "positive home pregnancy tests",
+   "context": "missed period, usually regular"
+  },
+  "source": "transcript",
+  "transcript_quote": "My period did not come when it was supposed to, and I am usually pretty regular... Both had the two lines.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f2",
+  "text": "Normal pregnancy confirmed",
+  "type": "condition",
+  "slots": {
+   "condition": "Normal pregnancy",
+   "status": "confirmed"
+  },
+  "source": "both",
+  "transcript_quote": "Everything today says normal, healthy pregnancy.",
+  "fhir_ref": "Condition/b342f27e-56bc-08ac-2913-b051dda4c455"
+ },
+ {
+  "id": "f3",
+  "text": "Patient reports fatigue that sneaks up on her",
+  "type": "symptom",
+  "slots": {
+   "symptom": "fatigue"
+  },
+  "source": "transcript",
+  "transcript_quote": "Tired in a way that sneaks up on me \u2014 like, sit down on the couch at seven and wake up at nine tired.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f4",
+  "text": "Patient reports morning nausea when she waits too long to eat, relieved by crackers before rising",
+  "type": "symptom",
+  "slots": {
+   "symptom": "morning nausea"
+  },
+  "source": "transcript",
+  "transcript_quote": "A little queasy in the mornings if I wait too long to eat. Crackers before I even get up seem to fix it.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f5",
+  "text": "Eating crackers before getting up relieves morning nausea",
+  "type": "relieving_factor",
+  "slots": {
+   "factor": "crackers before rising",
+   "relieves": "nausea"
+  },
+  "source": "transcript",
+  "transcript_quote": "Crackers before I even get up seem to fix it.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f6",
+  "text": "Denies uncontrolled vomiting, dizziness, or fainting",
+  "type": "red_flag_screen",
+  "slots": {
+   "denies": [
+    "vomiting",
+    "dizziness",
+    "fainting"
+   ]
+  },
+  "source": "transcript",
+  "transcript_quote": "No, nothing like that. Just the wooziness if I am hungry.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f7",
+  "text": "Reports mild wooziness only when hungry",
+  "type": "symptom",
+  "slots": {
+   "symptom": "wooziness when hungry"
+  },
+  "source": "transcript",
+  "transcript_quote": "Just the wooziness if I am hungry.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f8",
+  "text": "Denies vaginal bleeding or spotting",
+  "type": "red_flag_screen",
+  "slots": {
+   "denies": [
+    "bleeding",
+    "spotting"
+   ]
+  },
+  "source": "transcript",
+  "transcript_quote": "No bleeding, no.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f9",
+  "text": "Reports occasional mild low pulling/stretching sensation, no pain or cramping",
+  "type": "symptom",
+  "slots": {
+   "symptom": "low pulling sensation",
+   "severity": "mild, not painful"
+  },
+  "source": "transcript",
+  "transcript_quote": "Maybe the tiniest pulling feeling low down once in a while, like a stretch, but not pain.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f10",
+  "text": "Reports increased urinary frequency but denies burning with urination and fevers",
+  "type": "red_flag_screen",
+  "slots": {
+   "reports": "increased frequency",
+   "denies": [
+    "dysuria",
+    "fever"
+   ]
+  },
+  "source": "transcript",
+  "transcript_quote": "Going more often, yes, but I read that is just pregnancy. No burning.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f11",
+  "text": "History of recurrent urinary tract infections, at least a couple per year since her twenties",
+  "type": "condition",
+  "slots": {
+   "condition": "recurrent UTIs",
+   "frequency": "a couple per year since twenties"
+  },
+  "source": "transcript",
+  "transcript_quote": "I get urinary tract infections all the time. Like, at least a couple every year since my twenties.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f12",
+  "text": "Urine culture obtained today and to be repeated routinely at visits given recurrent UTI history",
+  "type": "order",
+  "slots": {
+   "test": "urine culture",
+   "reason": "recurrent UTI history, asymptomatic bacteriuria screening"
+  },
+  "source": "both",
+  "transcript_quote": "today we send a urine culture no matter what, because in pregnancy an infection can simmer without symptoms",
+  "fhir_ref": "Procedure/b342f27e-56bc-08ac-b97a-ec94f48e7e80"
+ },
+ {
+  "id": "f13",
+  "text": "Counseled that any positive culture will be treated promptly with pregnancy-safe medication",
+  "type": "counseling",
+  "slots": {
+   "topic": "UTI monitoring and treatment"
+  },
+  "source": "transcript",
+  "transcript_quote": "If anything grows, we treat it promptly with medicine that is safe in pregnancy.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f14",
+  "text": "Stopped birth control when trying to conceive; currently takes no regular medications, only occasional OTC for headache",
+  "type": "medication",
+  "slots": {
+   "drug": "birth control",
+   "status": "stopped",
+   "note": "occasional OTC headache medication only"
+  },
+  "source": "transcript",
+  "transcript_quote": "I stopped my birth control a while back when we decided to start trying, and since then it is just the occasional thing for a headache. Nothing regular.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f15",
+  "text": "Counseled to check with provider before taking any new medication including OTC",
+  "type": "counseling",
+  "slots": {
+   "topic": "medication safety in pregnancy"
+  },
+  "source": "transcript",
+  "transcript_quote": "before you take anything new, even over the counter, run it past us.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f16",
+  "text": "In-office urine pregnancy test performed, positive/confirmed pregnancy",
+  "type": "procedure",
+  "slots": {
+   "procedure": "urine pregnancy test",
+   "result": "positive"
+  },
+  "source": "both",
+  "transcript_quote": "the office urine test agrees with your three home tests. You are officially pregnant.",
+  "fhir_ref": "Procedure/b342f27e-56bc-08ac-2127-70aa4d07268b"
+ },
+ {
+  "id": "f17",
+  "text": "Physical examination performed, normal",
+  "type": "procedure",
+  "slots": {
+   "procedure": "physical exam",
+   "result": "healthy and normal"
+  },
+  "source": "both",
+  "transcript_quote": "Exam first: everything looks healthy and normal.",
+  "fhir_ref": "Procedure/b342f27e-56bc-08ac-ec18-e1b554dff322"
+ },
+ {
+  "id": "f18",
+  "text": "Fundal height evaluated; uterus size appropriate for early gestation",
+  "type": "procedure",
+  "slots": {
+   "procedure": "fundal height evaluation",
+   "result": "consistent with early gestation"
+  },
+  "source": "both",
+  "transcript_quote": "Your uterus feels the size I would expect this early \u2014 I checked the fundal height",
+  "fhir_ref": "Procedure/b342f27e-56bc-08ac-c974-a60470c91463"
+ },
+ {
+  "id": "f19",
+  "text": "Ultrasound confirmed intrauterine, viable pregnancy with fetal heartbeat",
+  "type": "procedure",
+  "slots": {
+   "procedure": "fetal viability ultrasound",
+   "result": "intrauterine viable pregnancy, cardiac activity present"
+  },
+  "source": "both",
+  "transcript_quote": "A viable pregnancy, right where it should be.",
+  "fhir_ref": "Procedure/b342f27e-56bc-08ac-0058-65475e991270"
+ },
+ {
+  "id": "f20",
+  "text": "Fetal heart auscultation performed, normal heart sounds",
+  "type": "procedure",
+  "slots": {
+   "procedure": "fetal heart auscultation",
+   "result": "normal"
+  },
+  "source": "both",
+  "transcript_quote": "I also listened in \u2014 the heart sounds are exactly what we want to hear.",
+  "fhir_ref": "Procedure/b342f27e-56bc-08ac-b485-24359052ce73"
+ },
+ {
+  "id": "f21",
+  "text": "Blood group typing ordered/performed",
+  "type": "procedure",
+  "slots": {
+   "procedure": "blood type"
+  },
+  "source": "both",
+  "transcript_quote": "your blood type",
+  "fhir_ref": "Procedure/b342f27e-56bc-08ac-f493-d79edea7421a"
+ },
+ {
+  "id": "f22",
+  "text": "Complete blood count/hemogram ordered/performed to check for anemia",
+  "type": "procedure",
+  "slots": {
+   "procedure": "CBC",
+   "reason": "anemia screening"
+  },
+  "source": "both",
+  "transcript_quote": "a full blood count to check for anemia",
+  "fhir_ref": "Procedure/b342f27e-56bc-08ac-d6ab-23330e55a7d5"
+ },
+ {
+  "id": "f23",
+  "text": "Hepatitis B surface antigen test performed",
+  "type": "procedure",
+  "slots": {
+   "procedure": "hepatitis B screen"
+  },
+  "source": "both",
+  "transcript_quote": "hepatitis B",
+  "fhir_ref": "Procedure/b342f27e-56bc-08ac-2183-fbbcbe0f2199"
+ },
+ {
+  "id": "f24",
+  "text": "Hepatitis C antibody test performed",
+  "type": "procedure",
+  "slots": {
+   "procedure": "hepatitis C screen"
+  },
+  "source": "both",
+  "transcript_quote": "hepatitis C",
+  "fhir_ref": "Procedure/b342f27e-56bc-08ac-a9c8-3f5f79e0df23"
+ },
+ {
+  "id": "f25",
+  "text": "HIV test performed",
+  "type": "procedure",
+  "slots": {
+   "procedure": "HIV screen"
+  },
+  "source": "both",
+  "transcript_quote": "HIV",
+  "fhir_ref": "Procedure/b342f27e-56bc-08ac-95a5-46a81cafef56"
+ },
+ {
+  "id": "f26",
+  "text": "Syphilis screening test performed",
+  "type": "procedure",
+  "slots": {
+   "procedure": "syphilis screen"
+  },
+  "source": "both",
+  "transcript_quote": "and syphilis",
+  "fhir_ref": "Procedure/b342f27e-56bc-08ac-0e86-27c8bff0b571"
+ },
+ {
+  "id": "f27",
+  "text": "Rubella immunity screening performed",
+  "type": "procedure",
+  "slots": {
+   "procedure": "rubella immunity screen"
+  },
+  "source": "both",
+  "transcript_quote": "checking your immunity to rubella",
+  "fhir_ref": "Procedure/b342f27e-56bc-08ac-3aa3-f0d88673f06a"
+ },
+ {
+  "id": "f28",
+  "text": "Varicella (chickenpox) immunity screening performed",
+  "type": "procedure",
+  "slots": {
+   "procedure": "varicella immunity screen"
+  },
+  "source": "both",
+  "transcript_quote": "and chickenpox",
+  "fhir_ref": "Procedure/b342f27e-56bc-08ac-23ae-5f9344d220ee"
+ },
+ {
+  "id": "f29",
+  "text": "Urine chlamydia test performed",
+  "type": "procedure",
+  "slots": {
+   "procedure": "chlamydia test"
+  },
+  "source": "both",
+  "transcript_quote": "We also test urine for chlamydia and gonorrhea",
+  "fhir_ref": "Procedure/b342f27e-56bc-08ac-8f91-1dfb367ed988"
+ },
+ {
+  "id": "f30",
+  "text": "Urine gonorrhea test performed",
+  "type": "procedure",
+  "slots": {
+   "procedure": "gonorrhea test"
+  },
+  "source": "both",
+  "transcript_quote": "We also test urine for chlamydia and gonorrhea",
+  "fhir_ref": "Procedure/b342f27e-56bc-08ac-7bf9-f957d3a59c65"
+ },
+ {
+  "id": "f31",
+  "text": "Urine screened for glucose/sugar",
+  "type": "procedure",
+  "slots": {
+   "procedure": "urine glucose screen"
+  },
+  "source": "both",
+  "transcript_quote": "screen your urine for sugar and protein",
+  "fhir_ref": "Procedure/b342f27e-56bc-08ac-675b-4ae1bff9250d"
+ },
+ {
+  "id": "f32",
+  "text": "Urine screened for protein",
+  "type": "procedure",
+  "slots": {
+   "procedure": "urine protein screen"
+  },
+  "source": "both",
+  "transcript_quote": "screen your urine for sugar and protein",
+  "fhir_ref": "Procedure/b342f27e-56bc-08ac-643e-db7b32b7e05d"
+ },
+ {
+  "id": "f33",
+  "text": "Pap smear performed as patient was due",
+  "type": "procedure",
+  "slots": {
+   "procedure": "Pap smear"
+  },
+  "source": "both",
+  "transcript_quote": "do a Pap smear if you are due \u2014 and you are due",
+  "fhir_ref": "Procedure/b342f27e-56bc-08ac-a527-8174196b4c6e"
+ },
+ {
+  "id": "f34",
+  "text": "Tuberculosis skin (Tine) test placed on forearm, to be read in 2-3 days",
+  "type": "procedure",
+  "slots": {
+   "procedure": "TB skin test",
+   "read_in": "2-3 days"
+  },
+  "source": "both",
+  "transcript_quote": "We will also place a little tuberculosis skin test on your forearm today; someone just has to look at it in two to three days",
+  "fhir_ref": "Procedure/b342f27e-56bc-08ac-4237-d04e1eada042"
+ },
+ {
+  "id": "f35",
+  "text": "Patient reports history of fainting with blood draws; accommodation planned (lying down with juice)",
+  "type": "other",
+  "slots": {
+   "note": "vasovagal history with blood draws"
+  },
+  "source": "transcript",
+  "transcript_quote": "I am a fainter. Historically.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f36",
+  "text": "Counseled that one regular cup of coffee per day is acceptable",
+  "type": "counseling",
+  "slots": {
+   "topic": "caffeine in pregnancy"
+  },
+  "source": "transcript",
+  "transcript_quote": "A regular cup a day is fine.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f37",
+  "text": "Counseled to avoid alcohol, smoking, and recreational drugs",
+  "type": "counseling",
+  "slots": {
+   "topic": "substance avoidance"
+  },
+  "source": "transcript",
+  "transcript_quote": "the true no-go list is alcohol, smoking, and anything recreational.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f38",
+  "text": "Patient reports never smoking and no alcohol since positive pregnancy test",
+  "type": "sdoh",
+  "slots": {
+   "tobacco": "never",
+   "alcohol": "none since pregnancy confirmed"
+  },
+  "source": "transcript",
+  "transcript_quote": "None of those are in the picture. Never smoked, and I have not had a drink since the two lines.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f39",
+  "text": "Counseled on UTI red-flag symptoms warranting same-day call: burning, urgency beyond usual, one-sided back pain, fever",
+  "type": "counseling",
+  "slots": {
+   "topic": "UTI warning signs",
+   "symptoms": [
+    "burning",
+    "urgency",
+    "unilateral back pain",
+    "fever"
+   ]
+  },
+  "source": "transcript",
+  "transcript_quote": "Burning, urgency beyond the usual, back pain on one side, fever \u2014 those are call-us-today symptoms, not wait-and-see symptoms.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f40",
+  "text": "Prenatal visits scheduled every four weeks for now, increasing later in pregnancy",
+  "type": "followup",
+  "slots": {
+   "interval": "every 4 weeks",
+   "note": "more frequent later"
+  },
+  "source": "transcript",
+  "transcript_quote": "We will see her every four weeks for now, more often later in the pregnancy.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f41",
+  "text": "Nurse visit to be booked this week to read TB skin test",
+  "type": "followup",
+  "slots": {
+   "appointment": "TB test reading",
+   "timing": "this week"
+  },
+  "source": "transcript",
+  "transcript_quote": "book two things: the quick visit to read the test this week",
+  "fhir_ref": null
+ },
+ {
+  "id": "f42",
+  "text": "Lab panel results to be posted to patient portal with call for anything requiring action",
+  "type": "followup",
+  "slots": {
+   "topic": "results delivery via patient portal"
+  },
+  "source": "transcript",
+  "transcript_quote": "Results from today's panel come to your patient portal, and we call about anything that needs action.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f43",
+  "text": "Counseled to continue normal activity, work, walks, and normal diet",
+  "type": "counseling",
+  "slots": {
+   "topic": "activity and lifestyle"
+  },
+  "source": "transcript",
+  "transcript_quote": "Live your life. Eat well, keep the crackers strategy, sleep when the couch claims you",
+  "fhir_ref": null
+ },
+ {
+  "id": "f44",
+  "text": "Counseled that there is no medical rule on when to announce the pregnancy",
+  "type": "counseling",
+  "slots": {
+   "topic": "pregnancy announcement timing"
+  },
+  "source": "transcript",
+  "transcript_quote": "No medical rule \u2014 that one is entirely yours to decide, together.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f45",
+  "text": "Patient attended visit with husband, who is supportive and engaged",
+  "type": "sdoh",
+  "slots": {
+   "support": "spouse present and supportive"
+  },
+  "source": "transcript",
+  "transcript_quote": "this is my husband, Marcus. I told him he is contractually obligated to be at the first one.",
+  "fhir_ref": null
+ }
+]

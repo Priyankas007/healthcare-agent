@@ -1,0 +1,200 @@
+[
+ {
+  "fact_id": "f1",
+  "status": "present",
+  "note_evidence": "presenting for a general examination at his brother's urging; his last comprehensive visit was several years ago",
+  "rationale": "Preventive visit at brother's urging after years documented."
+ },
+ {
+  "fact_id": "f2",
+  "status": "present",
+  "note_evidence": "He reports no complaints and rates pain 0/10",
+  "rationale": "No complaints stated."
+ },
+ {
+  "fact_id": "f3",
+  "status": "present",
+  "note_evidence": "lifelong difficulty with sleep onset",
+  "rationale": "Lifelong insomnia documented."
+ },
+ {
+  "fact_id": "f4",
+  "status": "present",
+  "note_evidence": "with morning grogginess he offsets with coffee",
+  "rationale": "Morning grogginess relieved by coffee documented."
+ },
+ {
+  "fact_id": "f5",
+  "status": "present",
+  "note_evidence": "Reduce diphenhydramine to intermittent use for difficult nights only",
+  "rationale": "Drug, dose, route, nightly use and reduction plan all present."
+ },
+ {
+  "fact_id": "f6",
+  "status": "present",
+  "note_evidence": "Sleep hygiene program: fixed schedule, screens off before bed, caffeine cutoff at noon, workspace separated from sleep",
+  "rationale": "Sleep hygiene counseling documented."
+ },
+ {
+  "fact_id": "f7",
+  "status": "present",
+  "note_evidence": "alcohol about two beers on two nights weekly ... AUDIT-C 2",
+  "rationale": "Alcohol use and low-risk AUDIT-C score present."
+ },
+ {
+  "fact_id": "f8",
+  "status": "present",
+  "note_evidence": "Ex-smoker, quit at age 20, none since",
+  "rationale": "Ex-smoker quit at 20 documented."
+ },
+ {
+  "fact_id": "f9",
+  "status": "present",
+  "note_evidence": "PHQ-2 0",
+  "rationale": "PHQ-2 score 0 documented."
+ },
+ {
+  "fact_id": "f10",
+  "status": "present",
+  "note_evidence": "GAD-7 2",
+  "rationale": "GAD-7 score 2 documented."
+ },
+ {
+  "fact_id": "f11",
+  "status": "present",
+  "note_evidence": "HARK 0",
+  "rationale": "HARK 0 negative screen documented."
+ },
+ {
+  "fact_id": "f12",
+  "status": "present",
+  "note_evidence": "rates pain 0/10",
+  "rationale": "Pain 0/10 documented."
+ },
+ {
+  "fact_id": "f13",
+  "status": "present",
+  "note_evidence": "longstanding solitary lifestyle with limited social contact ... acknowledges occasional loneliness",
+  "rationale": "Social isolation and loneliness documented."
+ },
+ {
+  "fact_id": "f14",
+  "status": "present",
+  "note_evidence": "agreed to maintain one weekly shared activity with his brother",
+  "rationale": "Weekly social activity counseling documented."
+ },
+ {
+  "fact_id": "f15",
+  "status": "present",
+  "note_evidence": "works long hours from a home office as a dispatcher ... the brother he lives with (two in household)",
+  "rationale": "Household, employment, occupation documented."
+ },
+ {
+  "fact_id": "f16",
+  "status": "partial",
+  "note_evidence": "social fallout from his criminal record",
+  "rationale": "Criminal record noted but incarceration nights/PRAPARE not documented."
+ },
+ {
+  "fact_id": "f17",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "Housing, insurance, income not documented."
+ },
+ {
+  "fact_id": "f18",
+  "status": "present",
+  "note_evidence": "Mandibular gingival erythema and edema with bleeding on light probing",
+  "rationale": "Gingivitis exam findings documented."
+ },
+ {
+  "fact_id": "f19",
+  "status": "present",
+  "note_evidence": "mild gum bleeding with brushing; his last dental visit was more than ten years ago",
+  "rationale": "Gum bleeding and last dental visit documented."
+ },
+ {
+  "fact_id": "f20",
+  "status": "present",
+  "note_evidence": "Patient referral for dental care placed",
+  "rationale": "Dental referral documented."
+ },
+ {
+  "fact_id": "f21",
+  "status": "partial",
+  "note_evidence": "Counseled on the link between periodontal inflammation and cardiovascular risk",
+  "rationale": "Oral-cardiac link present but reversible/early-stage statement not documented."
+ },
+ {
+  "fact_id": "f22",
+  "status": "present",
+  "note_evidence": "Heart regular rate and rhythm; lungs clear; abdomen soft, nontender; no peripheral edema",
+  "rationale": "Normal cardiac/pulmonary/abdominal/extremity exam documented."
+ },
+ {
+  "fact_id": "f23",
+  "status": "present",
+  "note_evidence": "Single office reading of 143/75 mmHg",
+  "rationale": "Elevated office BP documented."
+ },
+ {
+  "fact_id": "f24",
+  "status": "present",
+  "note_evidence": "Home BP monitoring with a validated cuff, morning and evening for two weeks",
+  "rationale": "Home BP monitoring twice daily 2 weeks documented."
+ },
+ {
+  "fact_id": "f25",
+  "status": "present",
+  "note_evidence": "HR 75/min, RR 14/min",
+  "rationale": "HR and RR documented."
+ },
+ {
+  "fact_id": "f26",
+  "status": "present",
+  "note_evidence": "total cholesterol 114.73 mg/dL; direct LDL 30.34 mg/dL; HDL 56.06 mg/dL; triglycerides 141.64 mg/dL",
+  "rationale": "Lipid panel values documented."
+ },
+ {
+  "fact_id": "f27",
+  "status": "present",
+  "note_evidence": "WBC 7.77 ... hemoglobin 17.44 g/dL ... platelets 318.58",
+  "rationale": "CBC values documented."
+ },
+ {
+  "fact_id": "f28",
+  "status": "present",
+  "note_evidence": "weight 98.1 kg, height 180.6 cm, BMI 30.08 kg/m2",
+  "rationale": "BMI, weight, height documented."
+ },
+ {
+  "fact_id": "f29",
+  "status": "present",
+  "note_evidence": "fully sedentary work routine",
+  "rationale": "Sedentary lifestyle documented."
+ },
+ {
+  "fact_id": "f30",
+  "status": "present",
+  "note_evidence": "Activity prescription: 30-minute walk after work five days weekly",
+  "rationale": "Walking regimen documented."
+ },
+ {
+  "fact_id": "f31",
+  "status": "present",
+  "note_evidence": "Influenza vaccine (split virus, trivalent, preservative-free) administered",
+  "rationale": "Flu vaccine administered documented."
+ },
+ {
+  "fact_id": "f32",
+  "status": "present",
+  "note_evidence": "Return in 2-4 weeks with home BP log",
+  "rationale": "BP recheck follow-up documented."
+ },
+ {
+  "fact_id": "f33",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "No PRAPARE/social needs assessment documented."
+ }
+]

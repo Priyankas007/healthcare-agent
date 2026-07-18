@@ -1,0 +1,8 @@
+[
+ {
+  "fact_id": "f30",
+  "expected": false,
+  "severity": "minor",
+  "why_it_matters": "Generic infection-prevention counseling is a low-stakes wellness topic that does not alter management and is not essential documentation for this annual exam."
+ }
+]

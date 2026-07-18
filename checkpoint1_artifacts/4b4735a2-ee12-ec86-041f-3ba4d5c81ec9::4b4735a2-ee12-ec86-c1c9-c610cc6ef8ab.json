@@ -1,0 +1,692 @@
+{
+ "facts": [
+  {
+   "id": "f1",
+   "text": "Patient presents for a routine physical/health check ('tune-up') at his brother's urging, having not had a physical in years",
+   "type": "other",
+   "slots": {},
+   "source": "transcript",
+   "transcript_quote": "you're fifty-four, you haven't had a proper physical in years, go before something finds you first",
+   "fhir_ref": null
+  },
+  {
+   "id": "f2",
+   "text": "Dull headaches at the back of the head on some mornings for a few months, fading by lunchtime",
+   "type": "symptom",
+   "slots": {
+    "location": "back of head/occipital",
+    "onset": "a few months",
+    "timing": "mornings",
+    "course": "fade by lunchtime"
+   },
+   "source": "transcript",
+   "transcript_quote": "I get these dull headaches at the back of my head some mornings... A few months? They fade by lunchtime.",
+   "fhir_ref": null
+  },
+  {
+   "id": "f3",
+   "text": "Bleeding gums when brushing",
+   "type": "symptom",
+   "slots": {},
+   "source": "transcript",
+   "transcript_quote": "my gums bleed when I brush... Just a pink sink, most days.",
+   "fhir_ref": null
+  },
+  {
+   "id": "f4",
+   "text": "Depression screen (PHQ-2) score of 2 \u2014 low, no treatment indicated",
+   "type": "observation",
+   "slots": {
+    "tool": "PHQ-2",
+    "score": "2"
+   },
+   "source": "both",
+   "transcript_quote": "Those answers put you at a two on the depression screen... both low, not in a range where I'd push treatment",
+   "fhir_ref": "Observation/4b4735a2-ee12-ec86-2e9f-19c850b08b93"
+  },
+  {
+   "id": "f5",
+   "text": "Anxiety screen (GAD-7) score of 3 \u2014 low, no treatment indicated",
+   "type": "observation",
+   "slots": {
+    "tool": "GAD-7",
+    "score": "3"
+   },
+   "source": "both",
+   "transcript_quote": "a three on the anxiety scale \u2014 both low",
+   "fhir_ref": "Observation/4b4735a2-ee12-ec86-030c-9beffd1e1b22"
+  },
+  {
+   "id": "f6",
+   "text": "Alcohol use: 1-2 beers on 2-3 evenings per week; AUDIT-C score 3, below concern threshold for men",
+   "type": "observation",
+   "slots": {
+    "tool": "AUDIT-C",
+    "score": "3"
+   },
+   "source": "both",
+   "transcript_quote": "Two or three evenings a week I'll have a beer or two... That scores a three on the alcohol screen \u2014 below the level we worry about for men",
+   "fhir_ref": "Observation/4b4735a2-ee12-ec86-e6bb-c6408c3f5cfc"
+  },
+  {
+   "id": "f7",
+   "text": "Never smoked tobacco",
+   "type": "observation",
+   "slots": {
+    "status": "never smoker"
+   },
+   "source": "both",
+   "transcript_quote": "Never. I watched my uncle go from cigarettes.",
+   "fhir_ref": "Observation/4b4735a2-ee12-ec86-25e0-44e3c723e60f"
+  },
+  {
+   "id": "f8",
+   "text": "Denies illicit drug use (marijuana, non-prescribed pills)",
+   "type": "red_flag_screen",
+   "slots": {},
+   "source": "transcript",
+   "transcript_quote": "No, nothing.",
+   "fhir_ref": null
+  },
+  {
+   "id": "f9",
+   "text": "Blood pressure elevated at 141/100 mmHg, confirmed on repeat",
+   "type": "observation",
+   "slots": {
+    "systolic": "141",
+    "diastolic": "100",
+    "unit": "mmHg"
+   },
+   "source": "both",
+   "transcript_quote": "Your blood pressure is 141 over 100 \u2014 and I rechecked it myself after you'd been sitting a while, same story.",
+   "fhir_ref": "Observation/4b4735a2-ee12-ec86-1daf-98eae3ddff3d"
+  },
+  {
+   "id": "f10",
+   "text": "Heart rate 100 /min",
+   "type": "observation",
+   "slots": {
+    "value": "100",
+    "unit": "/min"
+   },
+   "source": "both",
+   "transcript_quote": "Heart rate's 100 today too.",
+   "fhir_ref": "Observation/4b4735a2-ee12-ec86-f9a7-3ac77536ff4a"
+  },
+  {
+   "id": "f11",
+   "text": "Body weight 93.9 kg with BMI 30.21 kg/m2, over the obesity line",
+   "type": "observation",
+   "slots": {
+    "weight": "93.9 kg",
+    "bmi": "30.21 kg/m2"
+   },
+   "source": "both",
+   "transcript_quote": "Your weight is 93.9 kilos, BMI 30.21, so over the obesity line.",
+   "fhir_ref": "Observation/4b4735a2-ee12-ec86-54b5-79ea10828c86"
+  },
+  {
+   "id": "f12",
+   "text": "Hemoglobin A1c 6.28% consistent with prediabetes",
+   "type": "observation",
+   "slots": {
+    "value": "6.28",
+    "unit": "%"
+   },
+   "source": "both",
+   "transcript_quote": "Your A1c came back at 6.28 percent \u2014 that's prediabetes, drifting the wrong direction.",
+   "fhir_ref": "Observation/4b4735a2-ee12-ec86-ec1c-954838b6643a"
+  },
+  {
+   "id": "f13",
+   "text": "Blood glucose 91 mg/dL, normal",
+   "type": "observation",
+   "slots": {
+    "value": "91.08",
+    "unit": "mg/dL"
+   },
+   "source": "both",
+   "transcript_quote": "Glucose today was 91, which is fine day-to-day.",
+   "fhir_ref": "Observation/4b4735a2-ee12-ec86-f359-d2e8f750458c"
+  },
+  {
+   "id": "f14",
+   "text": "Creatinine 1.12 mg/dL and BUN 17.36 mg/dL, normal kidney function",
+   "type": "observation",
+   "slots": {
+    "creatinine": "1.12 mg/dL",
+    "bun": "17.36 mg/dL"
+   },
+   "source": "both",
+   "transcript_quote": "Kidneys look good \u2014 creatinine 1.12, BUN 17.36.",
+   "fhir_ref": "Observation/4b4735a2-ee12-ec86-6585-51b4adc44abb"
+  },
+  {
+   "id": "f15",
+   "text": "Sodium 139 mmol/L",
+   "type": "observation",
+   "slots": {
+    "value": "139.11",
+    "unit": "mmol/L"
+   },
+   "source": "both",
+   "transcript_quote": "Sodium 139, potassium 3.97.",
+   "fhir_ref": "Observation/4b4735a2-ee12-ec86-fe3e-3469bc508826"
+  },
+  {
+   "id": "f16",
+   "text": "Potassium 3.97 mmol/L",
+   "type": "observation",
+   "slots": {
+    "value": "3.97",
+    "unit": "mmol/L"
+   },
+   "source": "both",
+   "transcript_quote": "Sodium 139, potassium 3.97.",
+   "fhir_ref": "Observation/4b4735a2-ee12-ec86-e6b6-148f2f2eb3c3"
+  },
+  {
+   "id": "f17",
+   "text": "Diagnosis of essential hypertension",
+   "type": "condition",
+   "slots": {
+    "status": "active"
+   },
+   "source": "both",
+   "transcript_quote": "this is real \u2014 essential hypertension, high blood pressure as its own condition",
+   "fhir_ref": "Condition/4b4735a2-ee12-ec86-43f9-72c6a9c11cad"
+  },
+  {
+   "id": "f18",
+   "text": "Diagnosis of metabolic syndrome (hypertension, prediabetes, obesity cluster)",
+   "type": "condition",
+   "slots": {
+    "status": "active"
+   },
+   "source": "both",
+   "transcript_quote": "That cluster has a name \u2014 metabolic syndrome.",
+   "fhir_ref": "Condition/4b4735a2-ee12-ec86-b2be-3ebe10489c19"
+  },
+  {
+   "id": "f19",
+   "text": "Started hydrochlorothiazide 25 mg oral tablet, one tablet every morning with breakfast",
+   "type": "medication",
+   "slots": {
+    "drug": "hydrochlorothiazide",
+    "dose": "25 mg",
+    "route": "oral",
+    "freq": "once daily in the morning",
+    "status": "started"
+   },
+   "source": "both",
+   "transcript_quote": "hydrochlorothiazide, 25 milligrams, one tablet every morning. It's a water pill",
+   "fhir_ref": "MedicationRequest/4b4735a2-ee12-ec86-2f73-08977934c44b"
+  },
+  {
+   "id": "f20",
+   "text": "Counseled that hydrochlorothiazide can cause lightheadedness on standing and muscle cramps; instructed to call if these occur, with bloodwork recheck planned for potassium/sodium",
+   "type": "counseling",
+   "slots": {},
+   "source": "transcript",
+   "transcript_quote": "If you feel lightheaded when you stand, or you get muscle cramps, call us \u2014 it can nudge your potassium and sodium, so we'll recheck bloodwork after you've been on it a while.",
+   "fhir_ref": null
+  },
+  {
+   "id": "f21",
+   "text": "Vitamin B12 injectable continued unchanged for anemia",
+   "type": "medication",
+   "slots": {
+    "drug": "vitamin B12",
+    "route": "injectable",
+    "status": "continued"
+   },
+   "source": "transcript",
+   "transcript_quote": "the B12 injections continue unchanged, that's for your anemia and it's doing its job",
+   "fhir_ref": null
+  },
+  {
+   "id": "f22",
+   "text": "Medication reconciliation completed: current meds are vitamin B12 injectable and hydrochlorothiazide 25 mg each morning; no other supplements/herbals",
+   "type": "procedure",
+   "slots": {},
+   "source": "both",
+   "transcript_quote": "your list is the vitamin B12 injectable, and now hydrochlorothiazide 25 milligrams each morning... Nothing else.",
+   "fhir_ref": "Procedure/4b4735a2-ee12-ec86-cb89-cacd2d81ec75"
+  },
+  {
+   "id": "f23",
+   "text": "Counseled on low-salt dietary changes (reduce deli meat, sausage, canned soups, chips; cook more at home)",
+   "type": "counseling",
+   "slots": {},
+   "source": "transcript",
+   "transcript_quote": "salt is the big lever. Deli meat, sausage, canned soups, chips... Aim for cooking more of what you eat",
+   "fhir_ref": null
+  },
+  {
+   "id": "f24",
+   "text": "Counseled to walk 30 minutes most days",
+   "type": "counseling",
+   "slots": {
+    "activity": "walking",
+    "duration": "30 minutes",
+    "frequency": "most days"
+   },
+   "source": "transcript",
+   "transcript_quote": "walking: thirty minutes, most days. Take the kids' dog.",
+   "fhir_ref": null
+  },
+  {
+   "id": "f25",
+   "text": "Enrolled in hypertension education program",
+   "type": "referral",
+   "slots": {},
+   "source": "transcript",
+   "transcript_quote": "I'll enroll you in our hypertension education program",
+   "fhir_ref": null
+  },
+  {
+   "id": "f26",
+   "text": "Gingivitis identified on exam \u2014 puffy gum line, bleeds with light contact; reversible stage of gum disease",
+   "type": "condition",
+   "slots": {
+    "status": "resolved"
+   },
+   "source": "both",
+   "transcript_quote": "the gum line is puffy and bleeds with light contact. That's gingivitis.",
+   "fhir_ref": "Condition/4b4735a2-ee12-ec86-e4d2-99abda3ceb16"
+  },
+  {
+   "id": "f27",
+   "text": "Dental referral placed for cleaning and exam; patient not seen dentist in 4-5 years",
+   "type": "referral",
+   "slots": {},
+   "source": "both",
+   "transcript_quote": "I'm sending a dental referral today \u2014 cleaning and an exam.",
+   "fhir_ref": "Procedure/4b4735a2-ee12-ec86-33e0-eeab2e10d03a"
+  },
+  {
+   "id": "f28",
+   "text": "Counseled on oral hygiene: brush twice daily with soft brush, floss even when bleeding; bleeding fades within a couple weeks",
+   "type": "counseling",
+   "slots": {},
+   "source": "transcript",
+   "transcript_quote": "Brush twice daily, soft brush, and floss even when it bleeds; the bleeding fades as the gums get healthier, usually within a couple of weeks.",
+   "fhir_ref": null
+  },
+  {
+   "id": "f29",
+   "text": "Influenza vaccine (split virus, trivalent, preservative-free) administered in left arm",
+   "type": "procedure",
+   "slots": {
+    "vaccine": "influenza trivalent PF",
+    "site": "left arm"
+   },
+   "source": "both",
+   "transcript_quote": "flu vaccine \u2014 left arm, I heard? Small pinch... done.",
+   "fhir_ref": "Immunization/4b4735a2-ee12-ec86-27e3-8e468a734fbd"
+  },
+  {
+   "id": "f30",
+   "text": "Follow-up scheduled in about one month for blood pressure recheck; advised to keep a home BP log (morning, sitting, feet on floor)",
+   "type": "followup",
+   "slots": {
+    "interval": "~1 month",
+    "reason": "BP recheck"
+   },
+   "source": "transcript",
+   "transcript_quote": "I want to see you back in about a month for a blood pressure recheck. If you can get hold of a home cuff, even better",
+   "fhir_ref": null
+  },
+  {
+   "id": "f31",
+   "text": "Counseled that morning headaches likely related to hypertension and expected to improve as BP is controlled; further workup if they persist",
+   "type": "counseling",
+   "slots": {},
+   "source": "transcript",
+   "transcript_quote": "morning headaches and high pressure often travel together. My honest expectation is they fade as the numbers come down.",
+   "fhir_ref": null
+  },
+  {
+   "id": "f32",
+   "text": "SDOH: Patient stopped working last year after being primary caregiver for his mother until her death last fall; not currently seeking work",
+   "type": "sdoh",
+   "slots": {
+    "employment": "unemployed, not seeking work"
+   },
+   "source": "both",
+   "transcript_quote": "I stopped working last year and I'm not looking... I was her person, day and night, until she passed last fall.",
+   "fhir_ref": "Condition/4b4735a2-ee12-ec86-edcf-56b458bd42f5"
+  },
+  {
+   "id": "f33",
+   "text": "SDOH: Very low income (~$4,829/year) from odd jobs; lives with sister's family (5 people in household); has housing and feels safe; Medicaid insurance",
+   "type": "sdoh",
+   "slots": {
+    "income": "~$4829/year",
+    "household": "5 people",
+    "insurance": "Medicaid"
+   },
+   "source": "both",
+   "transcript_quote": "my own income this year is next to nothing \u2014 a few thousand dollars, odd jobs. My sister feeds me",
+   "fhir_ref": "Observation/4b4735a2-ee12-ec86-1ef6-1e2cd1adea0a"
+  },
+  {
+   "id": "f34",
+   "text": "SDOH: Family unable to obtain needed medicine or health care (medical/dental/mental health/vision) in past year per PRAPARE",
+   "type": "sdoh",
+   "slots": {},
+   "source": "fhir",
+   "transcript_quote": null,
+   "fhir_ref": "Observation/4b4735a2-ee12-ec86-1ef6-1e2cd1adea0a"
+  },
+  {
+   "id": "f35",
+   "text": "Grief following mother's death with variable mood; patient does not consider himself depressed; counseled that worsening grief is a conversation to revisit",
+   "type": "counseling",
+   "slots": {},
+   "source": "transcript",
+   "transcript_quote": "Grief keeps its own schedule. If it gets heavier, that's a conversation, not a confession.",
+   "fhir_ref": null
+  },
+  {
+   "id": "f36",
+   "text": "Notes fogginess and heavy legs when B12 injections are skipped",
+   "type": "symptom",
+   "slots": {},
+   "source": "transcript",
+   "transcript_quote": "I do notice when I skip \u2014 I get foggy and my legs feel like sandbags.",
+   "fhir_ref": null
+  },
+  {
+   "id": "f37",
+   "text": "Pain severity score 1/10 reported",
+   "type": "observation",
+   "slots": {
+    "value": "1",
+    "scale": "0-10"
+   },
+   "source": "fhir",
+   "transcript_quote": null,
+   "fhir_ref": "Observation/4b4735a2-ee12-ec86-4c13-ce1dbcf80615"
+  },
+  {
+   "id": "f38",
+   "text": "Respiratory rate 13 /min",
+   "type": "observation",
+   "slots": {
+    "value": "13",
+    "unit": "/min"
+   },
+   "source": "fhir",
+   "transcript_quote": null,
+   "fhir_ref": "Observation/4b4735a2-ee12-ec86-c09f-0d0cf7893ef4"
+  },
+  {
+   "id": "f39",
+   "text": "Calcium 9.7 mg/dL, chloride 106.14 mmol/L, CO2 22.84 mmol/L (basic metabolic panel results)",
+   "type": "observation",
+   "slots": {
+    "calcium": "9.7 mg/dL",
+    "chloride": "106.14 mmol/L",
+    "co2": "22.84 mmol/L"
+   },
+   "source": "fhir",
+   "transcript_quote": null,
+   "fhir_ref": "DiagnosticReport/4b4735a2-ee12-ec86-df3d-f00e7b3505c6"
+  },
+  {
+   "id": "f40",
+   "text": "Body height 176.3 cm",
+   "type": "observation",
+   "slots": {
+    "value": "176.3",
+    "unit": "cm"
+   },
+   "source": "fhir",
+   "transcript_quote": null,
+   "fhir_ref": "Observation/4b4735a2-ee12-ec86-cb9d-ba4dd411d328"
+  }
+ ],
+ "presence": [
+  {
+   "fact_id": "f1",
+   "status": "partial",
+   "note_evidence": "presenting for a general examination, his first comprehensive visit in several years",
+   "rationale": "Routine visit after years documented, but 'at his brother's urging' is not mentioned."
+  },
+  {
+   "fact_id": "f2",
+   "status": "present",
+   "note_evidence": "intermittent dull occipital headaches on waking over the past few months, resolving by midday",
+   "rationale": "Occipital morning headaches with course fully documented."
+  },
+  {
+   "fact_id": "f3",
+   "status": "present",
+   "note_evidence": "daily gum bleeding with brushing",
+   "rationale": "Bleeding gums with brushing documented."
+  },
+  {
+   "fact_id": "f4",
+   "status": "present",
+   "note_evidence": "PHQ-2 score 2 ... (low; consistent with grief)",
+   "rationale": "PHQ-2 score 2, low, documented."
+  },
+  {
+   "fact_id": "f5",
+   "status": "present",
+   "note_evidence": "GAD-7 score 3 (low; consistent with grief)",
+   "rationale": "GAD-7 score 3, low, documented."
+  },
+  {
+   "fact_id": "f6",
+   "status": "present",
+   "note_evidence": "drinks 1\u20132 beers two to three evenings weekly ... AUDIT-C score 3 (below threshold)",
+   "rationale": "Alcohol pattern and AUDIT-C 3 documented."
+  },
+  {
+   "fact_id": "f7",
+   "status": "present",
+   "note_evidence": "has never smoked",
+   "rationale": "Never-smoker documented."
+  },
+  {
+   "fact_id": "f8",
+   "status": "present",
+   "note_evidence": "denies drug use",
+   "rationale": "Denies drug use documented."
+  },
+  {
+   "fact_id": "f9",
+   "status": "present",
+   "note_evidence": "BP 141/100 mmHg (confirmed on repeat)",
+   "rationale": "Elevated BP confirmed on repeat documented."
+  },
+  {
+   "fact_id": "f10",
+   "status": "present",
+   "note_evidence": "HR 100/min",
+   "rationale": "Heart rate 100 documented."
+  },
+  {
+   "fact_id": "f11",
+   "status": "present",
+   "note_evidence": "weight 93.9 kg ... BMI 30.21 kg/m2",
+   "rationale": "Weight and BMI (obesity) documented."
+  },
+  {
+   "fact_id": "f12",
+   "status": "present",
+   "note_evidence": "Hemoglobin A1c 6.28%",
+   "rationale": "A1c 6.28% consistent with prediabetes documented."
+  },
+  {
+   "fact_id": "f13",
+   "status": "present",
+   "note_evidence": "glucose 91.08 mg/dL",
+   "rationale": "Normal glucose documented."
+  },
+  {
+   "fact_id": "f14",
+   "status": "present",
+   "note_evidence": "BUN 17.36 mg/dL, creatinine 1.12 mg/dL",
+   "rationale": "Creatinine and BUN values documented."
+  },
+  {
+   "fact_id": "f15",
+   "status": "present",
+   "note_evidence": "sodium 139.11 mmol/L",
+   "rationale": "Sodium documented."
+  },
+  {
+   "fact_id": "f16",
+   "status": "present",
+   "note_evidence": "potassium 3.97 mmol/L",
+   "rationale": "Potassium documented."
+  },
+  {
+   "fact_id": "f17",
+   "status": "present",
+   "note_evidence": "Essential hypertension\nNew diagnosis",
+   "rationale": "Essential hypertension diagnosed."
+  },
+  {
+   "fact_id": "f18",
+   "status": "present",
+   "note_evidence": "Metabolic syndrome X\nNew documentation based on the cluster of hypertension, BMI 30.21 kg/m2, and A1c 6.28%",
+   "rationale": "Metabolic syndrome documented."
+  },
+  {
+   "fact_id": "f19",
+   "status": "present",
+   "note_evidence": "Start hydrochlorothiazide 25 mg orally each morning",
+   "rationale": "HCTZ 25 mg oral each morning started."
+  },
+  {
+   "fact_id": "f20",
+   "status": "present",
+   "note_evidence": "counseled on diuresis, orthostatic symptoms, and cramping ... interval electrolytes after medication initiation",
+   "rationale": "Orthostatic/cramp counseling and electrolyte recheck documented."
+  },
+  {
+   "fact_id": "f21",
+   "status": "present",
+   "note_evidence": "Continue vitamin B12 5 mg/mL injectable solution on the established schedule",
+   "rationale": "B12 injectable continued for anemia."
+  },
+  {
+   "fact_id": "f22",
+   "status": "present",
+   "note_evidence": "Medication reconciliation completed: B12 injections plus newly started hydrochlorothiazide",
+   "rationale": "Med reconciliation with the two meds documented."
+  },
+  {
+   "fact_id": "f23",
+   "status": "present",
+   "note_evidence": "dietary emphasis on reduced processed/salty foods",
+   "rationale": "Low-salt/processed food counseling documented."
+  },
+  {
+   "fact_id": "f24",
+   "status": "partial",
+   "note_evidence": "regular walking",
+   "rationale": "Walking counseled but 30 minutes/most days not specified."
+  },
+  {
+   "fact_id": "f25",
+   "status": "present",
+   "note_evidence": "Enrolled in lifestyle education regarding hypertension",
+   "rationale": "Hypertension education enrollment documented."
+  },
+  {
+   "fact_id": "f26",
+   "status": "present",
+   "note_evidence": "erythematous, edematous gingival margins with contact bleeding, consistent with gingivitis",
+   "rationale": "Gingivitis with puffy bleeding gum margins documented."
+  },
+  {
+   "fact_id": "f27",
+   "status": "partial",
+   "note_evidence": "Patient referral for dental care placed (cleaning and examination)",
+   "rationale": "Dental referral documented; 'not seen dentist 4-5 years' not mentioned."
+  },
+  {
+   "fact_id": "f28",
+   "status": "present",
+   "note_evidence": "soft brush twice daily, daily flossing",
+   "rationale": "Oral hygiene counseling documented; minor extra details omitted."
+  },
+  {
+   "fact_id": "f29",
+   "status": "partial",
+   "note_evidence": "Influenza vaccine (split virus, trivalent, preservative-free) administered",
+   "rationale": "Vaccine administered but injection site (left arm) not documented."
+  },
+  {
+   "fact_id": "f30",
+   "status": "present",
+   "note_evidence": "Recheck BP in approximately 1 month ... home BP log",
+   "rationale": "One-month BP follow-up and home BP log documented."
+  },
+  {
+   "fact_id": "f31",
+   "status": "partial",
+   "note_evidence": "confirmed on repeat measurement, with associated morning occipital headaches",
+   "rationale": "Headache-hypertension link noted but counseling on improvement/further workup not documented."
+  },
+  {
+   "fact_id": "f32",
+   "status": "present",
+   "note_evidence": "left full-time work last year after a prolonged period caring for his mother, who died last fall; he is not currently seeking work",
+   "rationale": "Caregiving, bereavement, and not seeking work documented."
+  },
+  {
+   "fact_id": "f33",
+   "status": "partial",
+   "note_evidence": "minimal personal income, living in a five-person household with his sister's family ... reported personal annual income $4,829",
+   "rationale": "Income and household documented but Medicaid insurance and 'odd jobs' not stated."
+  },
+  {
+   "fact_id": "f34",
+   "status": "absent",
+   "note_evidence": null,
+   "rationale": "No PRAPARE finding of inability to obtain medicine/care documented."
+  },
+  {
+   "fact_id": "f35",
+   "status": "present",
+   "note_evidence": "intermittent low mood and worry consistent with grief but denies persistent depression ... Supportive counseling",
+   "rationale": "Grief, variable mood, not depressed, and supportive counseling documented."
+  },
+  {
+   "fact_id": "f36",
+   "status": "present",
+   "note_evidence": "reports fatigue and leg heaviness when injections are missed",
+   "rationale": "Fatigue/heavy legs when B12 missed documented."
+  },
+  {
+   "fact_id": "f37",
+   "status": "present",
+   "note_evidence": "pain score 1/10",
+   "rationale": "Pain 1/10 documented."
+  },
+  {
+   "fact_id": "f38",
+   "status": "present",
+   "note_evidence": "RR 13/min",
+   "rationale": "Respiratory rate 13 documented."
+  },
+  {
+   "fact_id": "f39",
+   "status": "present",
+   "note_evidence": "calcium 9.7 mg/dL ... chloride 106.14 mmol/L, total CO2 22.84 mmol/L",
+   "rationale": "Calcium, chloride, CO2 documented."
+  },
+  {
+   "fact_id": "f40",
+   "status": "present",
+   "note_evidence": "height 176.3 cm",
+   "rationale": "Height documented."
+  }
+ ]
+}

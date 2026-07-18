@@ -1,0 +1,399 @@
+[
+ {
+  "id": "f1",
+  "text": "Patient presents for routine preventive visit (physical, labs) after a couple of years; encouraged by brother",
+  "type": "other",
+  "slots": {
+   "visit_type": "preventive/annual physical"
+  },
+  "source": "transcript",
+  "transcript_quote": "The chart says you are due for the works \u2014 physical, labs, the whole menu.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f2",
+  "text": "Patient reports no chief complaint or bothersome symptoms",
+  "type": "symptom",
+  "slots": {
+   "status": "negative"
+  },
+  "source": "transcript",
+  "transcript_quote": "Not really. I am fine.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f3",
+  "text": "Chronic difficulty sleeping; has never slept easily",
+  "type": "symptom",
+  "slots": {
+   "symptom": "insomnia",
+   "chronicity": "lifelong"
+  },
+  "source": "transcript",
+  "transcript_quote": "I have never slept easy, so I take the Benadryl",
+  "fhir_ref": null
+ },
+ {
+  "id": "f4",
+  "text": "Morning grogginess associated with nightly diphenhydramine use, relieved by coffee",
+  "type": "symptom",
+  "slots": {
+   "symptom": "morning grogginess"
+  },
+  "source": "transcript",
+  "transcript_quote": "I am groggy some mornings, but coffee fixes it.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f5",
+  "text": "Diphenhydramine (Benadryl) 25 mg oral nightly for sleep \u2014 plan to demote to bad-nights-only use",
+  "type": "medication",
+  "slots": {
+   "drug": "diphenhydramine",
+   "dose": "25 mg",
+   "route": "oral",
+   "freq": "nightly (to reduce to as-needed for bad nights)",
+   "action": "changed/reduced"
+  },
+  "source": "transcript",
+  "transcript_quote": "I take the Benadryl \u2014 the pink twenty-five-milligram ones. Most nights.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f6",
+  "text": "Counseled on sleep hygiene: consistent bedtime, screens off, no caffeine after noon, no working from bed",
+  "type": "counseling",
+  "slots": {
+   "topic": "sleep hygiene"
+  },
+  "source": "transcript",
+  "transcript_quote": "same bedtime every night, screens off, no caffeine after noon, and the dispatch chair not doubling as a bed",
+  "fhir_ref": null
+ },
+ {
+  "id": "f7",
+  "text": "Alcohol use: a couple of beers about two nights a week; AUDIT-C score of 2 (low risk)",
+  "type": "observation",
+  "slots": {
+   "screen": "AUDIT-C",
+   "score": "2",
+   "interpretation": "low-risk"
+  },
+  "source": "both",
+  "transcript_quote": "the alcohol score came to a two, low-risk territory",
+  "fhir_ref": "Observation/4c893b3e-df6f-a2f0-2445-240d9adf79ff"
+ },
+ {
+  "id": "f8",
+  "text": "Former smoker; quit at age 20, over 30 years ago",
+  "type": "observation",
+  "slots": {
+   "status": "Ex-smoker"
+  },
+  "source": "both",
+  "transcript_quote": "Quit at twenty. Have not touched one in over thirty years.",
+  "fhir_ref": "Observation/4c893b3e-df6f-a2f0-40b3-93ccb2f12372"
+ },
+ {
+  "id": "f9",
+  "text": "PHQ-2 depression screen score of 0 (negative)",
+  "type": "red_flag_screen",
+  "slots": {
+   "screen": "PHQ-2",
+   "score": "0",
+   "result": "negative"
+  },
+  "source": "both",
+  "transcript_quote": "Zero on the depression screen both times",
+  "fhir_ref": "Observation/4c893b3e-df6f-a2f0-3b4e-fc33858fc31e"
+ },
+ {
+  "id": "f10",
+  "text": "GAD-7 anxiety screen score of 2 (minimal/normal)",
+  "type": "red_flag_screen",
+  "slots": {
+   "screen": "GAD-7",
+   "score": "2",
+   "result": "minimal"
+  },
+  "source": "both",
+  "transcript_quote": "a two on the anxiety scale, which is nothing",
+  "fhir_ref": "Observation/4c893b3e-df6f-a2f0-480a-e5bf8e465b44"
+ },
+ {
+  "id": "f11",
+  "text": "HARK domestic abuse/safety screen score of 0; feels safe at home",
+  "type": "red_flag_screen",
+  "slots": {
+   "screen": "HARK",
+   "score": "0",
+   "result": "negative"
+  },
+  "source": "both",
+  "transcript_quote": "the safety-at-home one \u2014 all came back clean",
+  "fhir_ref": "Observation/4c893b3e-df6f-a2f0-e218-c529887c2951"
+ },
+ {
+  "id": "f12",
+  "text": "Pain severity score 0/10; no pain anywhere",
+  "type": "red_flag_screen",
+  "slots": {
+   "screen": "pain score",
+   "score": "0"
+  },
+  "source": "both",
+  "transcript_quote": "Zero. Nothing hurts.",
+  "fhir_ref": "Observation/4c893b3e-df6f-a2f0-03c5-f8806d16e731"
+ },
+ {
+  "id": "f13",
+  "text": "Social isolation identified as a health risk; patient lives with brother, keeps to himself, reports occasional loneliness",
+  "type": "sdoh",
+  "slots": {
+   "domain": "social isolation"
+  },
+  "source": "transcript",
+  "transcript_quote": "isolation sits on my list of health risks, same as cholesterol",
+  "fhir_ref": null
+ },
+ {
+  "id": "f14",
+  "text": "Counseled to establish one standing social activity per week (e.g., watching games with brother)",
+  "type": "counseling",
+  "slots": {
+   "topic": "social connection"
+  },
+  "source": "transcript",
+  "transcript_quote": "One standing thing a week. Coffee with the brother counts.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f15",
+  "text": "Lives with brother; two people in household; full-time work as home-office dispatcher",
+  "type": "sdoh",
+  "slots": {
+   "household_size": "2",
+   "employment": "full-time",
+   "occupation": "dispatcher"
+  },
+  "source": "both",
+  "transcript_quote": "just the two of us",
+  "fhir_ref": "Observation/4c893b3e-df6f-a2f0-4e8c-9f1e611a4346"
+ },
+ {
+  "id": "f16",
+  "text": "History of incarceration: spent more than 2 nights in jail/prison in past year per PRAPARE",
+  "type": "sdoh",
+  "slots": {
+   "domain": "incarceration history"
+  },
+  "source": "both",
+  "transcript_quote": "After everything with my record, people made themselves scarce",
+  "fhir_ref": "Observation/4c893b3e-df6f-a2f0-4e8c-9f1e611a4346"
+ },
+ {
+  "id": "f17",
+  "text": "Has stable housing, not worried about losing it; feels safe at home; has private insurance; annual family income ~$143,750",
+  "type": "sdoh",
+  "slots": {
+   "housing": "stable",
+   "insurance": "private"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Observation/4c893b3e-df6f-a2f0-4e8c-9f1e611a4346"
+ },
+ {
+  "id": "f18",
+  "text": "Oral exam: inflamed, red, puffy lower gums that bled on light touch; gingivitis diagnosed",
+  "type": "condition",
+  "slots": {
+   "condition": "gingivitis",
+   "findings": "gum inflammation, bleeding on touch"
+  },
+  "source": "both",
+  "transcript_quote": "Your gums are inflamed along the bottom \u2014 red, puffy, and they bled just now with a light touch. That is gingivitis.",
+  "fhir_ref": "Condition/4c893b3e-df6f-a2f0-8593-4bdb192d7b3b"
+ },
+ {
+  "id": "f19",
+  "text": "Patient reports gums bleed a little with brushing; last dental visit ~10 years ago",
+  "type": "symptom",
+  "slots": {
+   "symptom": "gum bleeding with brushing"
+  },
+  "source": "transcript",
+  "transcript_quote": "A little. I figured that was normal at my age.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f20",
+  "text": "Referral to dental care placed for gingivitis evaluation/cleaning",
+  "type": "referral",
+  "slots": {
+   "to": "dentist",
+   "reason": "gingivitis"
+  },
+  "source": "both",
+  "transcript_quote": "the referral goes in today",
+  "fhir_ref": "Procedure/4c893b3e-df6f-a2f0-c979-79bad8c9a5a7"
+ },
+ {
+  "id": "f21",
+  "text": "Counseled that gum inflammation is early-stage, reversible with cleaning and flossing; noted association between gum health and heart health",
+  "type": "counseling",
+  "slots": {
+   "topic": "gingivitis / oral-cardiac health"
+  },
+  "source": "transcript",
+  "transcript_quote": "gum inflammation and heart health are connected, which is one more reason we treat it",
+  "fhir_ref": null
+ },
+ {
+  "id": "f22",
+  "text": "Physical exam: heart regular, lungs clear, abdomen soft, no leg edema",
+  "type": "observation",
+  "slots": {
+   "exam": "cardiac/pulmonary/abdominal/extremities normal"
+  },
+  "source": "transcript",
+  "transcript_quote": "heart is regular, lungs clear, belly soft, no swelling in the legs",
+  "fhir_ref": null
+ },
+ {
+  "id": "f23",
+  "text": "Elevated blood pressure 143/75 mmHg in office",
+  "type": "observation",
+  "slots": {
+   "measure": "blood pressure",
+   "value": "143/75 mmHg",
+   "interpretation": "elevated systolic"
+  },
+  "source": "both",
+  "transcript_quote": "Your blood pressure today is one forty-three over seventy-five. That top number is higher than I want to see.",
+  "fhir_ref": "Observation/4c893b3e-df6f-a2f0-0e8a-bb5f0ecd7a82"
+ },
+ {
+  "id": "f24",
+  "text": "Ordered home blood pressure monitoring twice daily (morning and evening) for two weeks with recheck visit",
+  "type": "order",
+  "slots": {
+   "test": "home BP log",
+   "duration": "2 weeks",
+   "freq": "AM and PM"
+  },
+  "source": "transcript",
+  "transcript_quote": "a pharmacy cuff, morning and evening, write them down for two weeks, and we recheck here",
+  "fhir_ref": null
+ },
+ {
+  "id": "f25",
+  "text": "Heart rate 75/min; respiratory rate 14/min",
+  "type": "observation",
+  "slots": {
+   "HR": "75/min",
+   "RR": "14/min"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Observation/4c893b3e-df6f-a2f0-3ec4-050d8950ae5d"
+ },
+ {
+  "id": "f26",
+  "text": "Lipid panel excellent: total cholesterol 115 mg/dL, LDL 30 mg/dL, HDL 56 mg/dL, triglycerides 142 mg/dL",
+  "type": "observation",
+  "slots": {
+   "total_chol": "114.73 mg/dL",
+   "LDL": "30.34 mg/dL",
+   "HDL": "56.06 mg/dL",
+   "triglycerides": "141.64 mg/dL"
+  },
+  "source": "both",
+  "transcript_quote": "Cholesterol is genuinely excellent \u2014 total one-fifteen, the bad LDL down at thirty, the good HDL fifty-six, triglycerides one forty-two.",
+  "fhir_ref": "DiagnosticReport/4c893b3e-df6f-a2f0-6182-5f429216c333"
+ },
+ {
+  "id": "f27",
+  "text": "CBC normal: hemoglobin 17.4 g/dL, platelets 318 x10^3/uL, WBC 7.8 x10^3/uL",
+  "type": "observation",
+  "slots": {
+   "hemoglobin": "17.4 g/dL",
+   "platelets": "318 x10^3/uL",
+   "WBC": "7.77 x10^3/uL"
+  },
+  "source": "both",
+  "transcript_quote": "Blood counts all normal \u2014 hemoglobin seventeen point four, platelets three-eighteen, white count seven point eight.",
+  "fhir_ref": "DiagnosticReport/4c893b3e-df6f-a2f0-73db-2e0951417404"
+ },
+ {
+  "id": "f28",
+  "text": "BMI 30.0 (weight 98.1 kg, height 180.6 cm) \u2014 obesity",
+  "type": "observation",
+  "slots": {
+   "BMI": "30.08 kg/m2",
+   "weight": "98.1 kg",
+   "height": "180.6 cm"
+  },
+  "source": "both",
+  "transcript_quote": "Ninety-eight kilos at your height puts the BMI right at thirty",
+  "fhir_ref": "Observation/4c893b3e-df6f-a2f0-301e-e963214bbcd4"
+ },
+ {
+  "id": "f29",
+  "text": "Sedentary lifestyle; minimal physical activity during workday",
+  "type": "sdoh",
+  "slots": {
+   "domain": "physical inactivity"
+  },
+  "source": "transcript",
+  "transcript_quote": "The walk from the desk to the fridge.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f30",
+  "text": "Counseled to walk 30 minutes after work, 5 days/week (reservoir loop) for weight, BP, sleep, and social benefit",
+  "type": "counseling",
+  "slots": {
+   "topic": "exercise",
+   "regimen": "30 min walking, 5 days/week"
+  },
+  "source": "transcript",
+  "transcript_quote": "Thirty minutes of walking after the shift ends, five days a week.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f31",
+  "text": "Influenza vaccine (split virus, trivalent, preservative-free) administered today",
+  "type": "procedure",
+  "slots": {
+   "vaccine": "influenza trivalent PF",
+   "status": "administered"
+  },
+  "source": "both",
+  "transcript_quote": "Last item \u2014 flu shot. You are due",
+  "fhir_ref": "Immunization/4c893b3e-df6f-a2f0-7830-cd86ec70a7c7"
+ },
+ {
+  "id": "f32",
+  "text": "Follow-up: BP recheck visit in a few weeks with home readings",
+  "type": "followup",
+  "slots": {
+   "timeframe": "~2 weeks",
+   "reason": "BP recheck"
+  },
+  "source": "transcript",
+  "transcript_quote": "See you in a few weeks with that spreadsheet",
+  "fhir_ref": null
+ },
+ {
+  "id": "f33",
+  "text": "Health and social care needs assessment completed",
+  "type": "procedure",
+  "slots": {
+   "assessment": "PRAPARE / social needs"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Procedure/4c893b3e-df6f-a2f0-57be-208bebc4ecf3"
+ }
+]

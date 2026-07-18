@@ -1,0 +1,20 @@
+[
+ {
+  "fact_id": "f14",
+  "expected": true,
+  "severity": "safety_critical",
+  "why_it_matters": "Rosuvastatin 40 mg is a home medication that is unaccounted for and, given GFR of 11 mL/min, requires dose reduction or holding, so its omission risks inappropriate continuation and myopathy/rhabdomyolysis."
+ },
+ {
+  "fact_id": "f44",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Documenting the serious-prognosis discussion with family is essential for goals-of-care clarity and communication continuity in a high-risk, deteriorating patient."
+ },
+ {
+  "fact_id": "f49",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Recording the SpO2 improvement to low 90s on oxygen documents the therapeutic response and establishes the current oxygenation baseline guiding further titration."
+ }
+]

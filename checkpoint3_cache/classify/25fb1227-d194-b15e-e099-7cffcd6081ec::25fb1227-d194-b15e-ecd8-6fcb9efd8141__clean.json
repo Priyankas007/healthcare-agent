@@ -1,0 +1,14 @@
+[
+ {
+  "fact_id": "f33",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "A concrete first nursing follow-up interval anchors continuity of care and safety monitoring (opioid-related bowel/pain issues) beyond the general 'twice weekly' plan."
+ },
+ {
+  "fact_id": "f35",
+  "expected": false,
+  "severity": "minor",
+  "why_it_matters": "Documenting that an H&P was completed is administrative and largely redundant with this note itself, with minimal impact on clinical management."
+ }
+]

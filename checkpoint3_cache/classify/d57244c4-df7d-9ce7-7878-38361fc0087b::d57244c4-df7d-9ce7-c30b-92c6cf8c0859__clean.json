@@ -1,0 +1,8 @@
+[
+ {
+  "fact_id": "f41",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Justice involvement is a documented SDOH domain (PRAPARE) that affects employment, occupational stress, and social isolation already being addressed, so omitting it leaves the social-care assessment and support planning incomplete."
+ }
+]

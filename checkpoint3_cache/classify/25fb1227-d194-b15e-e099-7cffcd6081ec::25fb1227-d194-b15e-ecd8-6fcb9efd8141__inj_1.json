@@ -1,0 +1,20 @@
+[
+ {
+  "fact_id": "f8",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "An unreconciled statin leaves the medication list incomplete and, in comfort-focused hospice care, statins are often candidates for deprescribing\u2014so it should be documented to guide that decision and flag interaction potential with her opioids."
+ },
+ {
+  "fact_id": "f33",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "A concrete two-day nursing follow-up defines the initial monitoring interval for pain and bowel function and should be documented to ensure continuity of the care plan."
+ },
+ {
+  "fact_id": "f35",
+  "expected": false,
+  "severity": "minor",
+  "why_it_matters": "Referencing that an H&P was documented is administrative housekeeping that does not change clinical management of this visit."
+ }
+]

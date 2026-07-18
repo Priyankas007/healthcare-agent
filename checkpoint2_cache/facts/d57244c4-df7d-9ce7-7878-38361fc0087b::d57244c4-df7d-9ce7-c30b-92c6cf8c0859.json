@@ -1,0 +1,520 @@
+[
+ {
+  "id": "f1",
+  "text": "Presents for routine physical/annual exam, overdue by nearly two years",
+  "type": "other",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "It has been almost two years since we did a full physical on you.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f2",
+  "text": "Chronic sinus symptoms with forehead pressure and morning congestion, occasionally progressing to headache rated up to 4/10, present for years",
+  "type": "symptom",
+  "slots": {
+   "location": "behind forehead",
+   "severity": "4/10",
+   "duration": "years",
+   "character": "pressure, congestion, headache"
+  },
+  "source": "both",
+  "transcript_quote": "Pressure behind my forehead, stuffy in the mornings. Some days it works itself into a headache \u2014 maybe a four out of ten at its worst.",
+  "fhir_ref": "Observation/d57244c4-df7d-9ce7-e035-b4c40b1fb0d4"
+ },
+ {
+  "id": "f3",
+  "text": "Chronic sinusitis on chart / longstanding sinus condition",
+  "type": "condition",
+  "slots": {
+   "status": "chronic"
+  },
+  "source": "transcript",
+  "transcript_quote": "That fits with the chronic sinusitis we have on your chart.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f4",
+  "text": "Denies fever, colored drainage, tooth pain, or signs of acute sinus infection",
+  "type": "red_flag_screen",
+  "slots": {
+   "screen": "sinus infection red flags",
+   "result": "negative"
+  },
+  "source": "transcript",
+  "transcript_quote": "No, nothing like that. Just the pressure.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f5",
+  "text": "Reports poor/short sleep, approximately 6 hours, related to working second shift",
+  "type": "symptom",
+  "slots": {
+   "issue": "sleep",
+   "duration": "~6 hours/night"
+  },
+  "source": "transcript",
+  "transcript_quote": "I get maybe six hours.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f6",
+  "text": "Energy and appetite reported as fine/okay",
+  "type": "symptom",
+  "slots": {},
+  "source": "transcript",
+  "transcript_quote": "Energy is okay. Sleep is... eh.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f7",
+  "text": "Full-time employment as logistics coordinator on second shift, ~3 years",
+  "type": "sdoh",
+  "slots": {
+   "domain": "employment",
+   "detail": "full-time, second shift, 3 years"
+  },
+  "source": "both",
+  "transcript_quote": "I am a logistics coordinator on second shift",
+  "fhir_ref": "Condition/d57244c4-df7d-9ce7-717e-7f653f9478f3"
+ },
+ {
+  "id": "f8",
+  "text": "Reports chronic work-related stress, feeling wound up/tense, trouble switching off, tight shoulders, jaw clenching",
+  "type": "condition",
+  "slots": {
+   "type": "stress",
+   "symptoms": "tension, difficulty relaxing, jaw clenching"
+  },
+  "source": "both",
+  "transcript_quote": "Lately I feel wound up all the time.",
+  "fhir_ref": "Condition/d57244c4-df7d-9ce7-677d-c45b43643fab"
+ },
+ {
+  "id": "f9",
+  "text": "Social isolation: lives with brother but limited social contact, dropped bowling league ~1 year ago, reports loneliness",
+  "type": "sdoh",
+  "slots": {
+   "domain": "social isolation",
+   "detail": "no social activity ~1 year, occasional loneliness"
+  },
+  "source": "both",
+  "transcript_quote": "It has been about a year since I did anything social.",
+  "fhir_ref": "Condition/d57244c4-df7d-9ce7-c022-edbd719c83e4"
+ },
+ {
+  "id": "f10",
+  "text": "Lives with brother Marcus; 2 people at household",
+  "type": "sdoh",
+  "slots": {
+   "domain": "household",
+   "detail": "lives with brother, 2 people"
+  },
+  "source": "both",
+  "transcript_quote": "My brother Marcus stays with me.",
+  "fhir_ref": "Observation/d57244c4-df7d-9ce7-3f17-b053889fa8dc"
+ },
+ {
+  "id": "f11",
+  "text": "PHQ-2 depression screen score 1 (negative for depression)",
+  "type": "observation",
+  "slots": {
+   "test": "PHQ-2",
+   "value": "1"
+  },
+  "source": "both",
+  "transcript_quote": "The mood questions came back very low, a one, so depression is not showing its hand.",
+  "fhir_ref": "Observation/d57244c4-df7d-9ce7-aff3-5b01b1730cb5"
+ },
+ {
+  "id": "f12",
+  "text": "Reports still enjoying activities, not down; occasional flatness but no anhedonia",
+  "type": "red_flag_screen",
+  "slots": {
+   "screen": "depression symptoms",
+   "result": "negative"
+  },
+  "source": "transcript",
+  "transcript_quote": "I am flat sometimes, but not down. I still watch my games. I cook on my days off.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f13",
+  "text": "GAD-7 anxiety screen score 4 (mild anxiety)",
+  "type": "observation",
+  "slots": {
+   "test": "GAD-7",
+   "value": "4",
+   "interpretation": "mild"
+  },
+  "source": "both",
+  "transcript_quote": "The worry questionnaire put you at a four, which is the mild end",
+  "fhir_ref": "Observation/d57244c4-df7d-9ce7-fb78-b104c818e5d6"
+ },
+ {
+  "id": "f14",
+  "text": "AUDIT-C score 3; alcohol use 2-3 beers on Saturday nights, never before shift",
+  "type": "observation",
+  "slots": {
+   "test": "AUDIT-C",
+   "value": "3",
+   "detail": "2-3 beers weekend nights"
+  },
+  "source": "both",
+  "transcript_quote": "Saturday nights. Two, maybe three if the game goes long. Never before a shift.",
+  "fhir_ref": "Observation/d57244c4-df7d-9ce7-68d3-de1d96d1592a"
+ },
+ {
+  "id": "f15",
+  "text": "Never smoked tobacco; no vaping, marijuana, or other substances",
+  "type": "sdoh",
+  "slots": {
+   "domain": "substance use",
+   "detail": "never smoker, no other substances"
+  },
+  "source": "both",
+  "transcript_quote": "Never smoked in my life. Nothing else either.",
+  "fhir_ref": "Observation/d57244c4-df7d-9ce7-cf8a-f955d9ce60c2"
+ },
+ {
+  "id": "f16",
+  "text": "Sinus tenderness on palpation over eyebrows on exam",
+  "type": "observation",
+  "slots": {
+   "finding": "sinus tenderness over eyebrows"
+  },
+  "source": "transcript",
+  "transcript_quote": "That is the sinus tenderness, matches your story.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f17",
+  "text": "Blood pressure 111/71 mmHg",
+  "type": "observation",
+  "slots": {
+   "test": "blood pressure",
+   "value": "111/71 mmHg"
+  },
+  "source": "both",
+  "transcript_quote": "Blood pressure today is 111 over 71 \u2014 excellent.",
+  "fhir_ref": "Observation/d57244c4-df7d-9ce7-8170-fd936b80683a"
+ },
+ {
+  "id": "f18",
+  "text": "Heart rate 88 /min",
+  "type": "observation",
+  "slots": {
+   "test": "heart rate",
+   "value": "88 /min"
+  },
+  "source": "both",
+  "transcript_quote": "Heart rate 88",
+  "fhir_ref": "Observation/d57244c4-df7d-9ce7-6c0e-c863d9a03887"
+ },
+ {
+  "id": "f19",
+  "text": "Respiratory rate 13 /min",
+  "type": "observation",
+  "slots": {
+   "test": "respiratory rate",
+   "value": "13 /min"
+  },
+  "source": "both",
+  "transcript_quote": "breathing 13 a minute",
+  "fhir_ref": "Observation/d57244c4-df7d-9ce7-27be-d88763e4af4a"
+ },
+ {
+  "id": "f20",
+  "text": "Height 179.6 cm, weight 90.4 kg, BMI 28.03 kg/m2 (overweight, stable)",
+  "type": "observation",
+  "slots": {
+   "height": "179.6 cm",
+   "weight": "90.4 kg",
+   "BMI": "28.03"
+  },
+  "source": "both",
+  "transcript_quote": "You are 179.6 centimeters, 90.4 kilos, which puts the BMI at 28.03",
+  "fhir_ref": "Observation/d57244c4-df7d-9ce7-9810-85cd675c866c"
+ },
+ {
+  "id": "f21",
+  "text": "Hemoglobin A1c 5.83% \u2014 consistent with prediabetes, stable/not climbing",
+  "type": "observation",
+  "slots": {
+   "test": "HbA1c",
+   "value": "5.83%",
+   "interpretation": "prediabetes"
+  },
+  "source": "both",
+  "transcript_quote": "Your A1c \u2014 the three-month sugar average \u2014 came back at 5.83 percent.",
+  "fhir_ref": "Observation/d57244c4-df7d-9ce7-a38e-62c5d556d611"
+ },
+ {
+  "id": "f22",
+  "text": "Prediabetes (gray zone), holding steady",
+  "type": "condition",
+  "slots": {
+   "status": "prediabetes, stable"
+  },
+  "source": "transcript",
+  "transcript_quote": "we flagged you as prediabetic",
+  "fhir_ref": null
+ },
+ {
+  "id": "f23",
+  "text": "Fasting/blood glucose 81.1 mg/dL \u2014 normal",
+  "type": "observation",
+  "slots": {
+   "test": "glucose",
+   "value": "81.1 mg/dL"
+  },
+  "source": "both",
+  "transcript_quote": "Your glucose was 81.1, completely normal.",
+  "fhir_ref": "Observation/d57244c4-df7d-9ce7-4086-b91d3a127a28"
+ },
+ {
+  "id": "f24",
+  "text": "Creatinine 1.1 mg/dL, BUN 19.99 mg/dL \u2014 kidneys normal",
+  "type": "observation",
+  "slots": {
+   "creatinine": "1.1 mg/dL",
+   "BUN": "19.99 mg/dL"
+  },
+  "source": "both",
+  "transcript_quote": "creatinine 1.1, urea nitrogen about 19.99",
+  "fhir_ref": "Observation/d57244c4-df7d-9ce7-668e-b2b49ed00ede"
+ },
+ {
+  "id": "f25",
+  "text": "Electrolytes within normal range",
+  "type": "observation",
+  "slots": {
+   "detail": "sodium 141.35, potassium 4.84, chloride 105.25, CO2 22.71, calcium 9.31"
+  },
+  "source": "both",
+  "transcript_quote": "Electrolytes all in range.",
+  "fhir_ref": "Observation/d57244c4-df7d-9ce7-3aa8-50b5827bc7ff"
+ },
+ {
+  "id": "f26",
+  "text": "CBC normal \u2014 hemoglobin 13.04 g/dL, platelets 340",
+  "type": "observation",
+  "slots": {
+   "hemoglobin": "13.04 g/dL",
+   "platelets": "340 10*3/uL"
+  },
+  "source": "both",
+  "transcript_quote": "hemoglobin 13.04, platelets 340",
+  "fhir_ref": "Observation/d57244c4-df7d-9ce7-424a-b9361029b386"
+ },
+ {
+  "id": "f27",
+  "text": "Current medication: prescription fluoride gel nightly (from dentist)",
+  "type": "medication",
+  "slots": {
+   "drug": "fluoride gel",
+   "route": "topical/oral",
+   "freq": "at night"
+  },
+  "source": "transcript",
+  "transcript_quote": "just the prescription fluoride gel from your dentist",
+  "fhir_ref": null
+ },
+ {
+  "id": "f28",
+  "text": "Uses acetaminophen (Tylenol) approximately once a month for sinus headache",
+  "type": "medication",
+  "slots": {
+   "drug": "acetaminophen",
+   "freq": "~once monthly PRN",
+   "indication": "sinus headache"
+  },
+  "source": "transcript",
+  "transcript_quote": "a Tylenol maybe once a month for the sinus headache",
+  "fhir_ref": null
+ },
+ {
+  "id": "f29",
+  "text": "Medication reconciliation completed; medication list up to date",
+  "type": "procedure",
+  "slots": {
+   "procedure": "medication reconciliation"
+  },
+  "source": "both",
+  "transcript_quote": "that settles the medication review, all reconciled and up to date",
+  "fhir_ref": "Procedure/d57244c4-df7d-9ce7-c7ed-5f84ac19f0b1"
+ },
+ {
+  "id": "f30",
+  "text": "Influenza vaccine (split virus, trivalent, preservative-free) administered in left arm",
+  "type": "procedure",
+  "slots": {
+   "vaccine": "influenza trivalent PF",
+   "site": "left arm"
+  },
+  "source": "both",
+  "transcript_quote": "the nurse will put it in your left arm before you go",
+  "fhir_ref": "Immunization/d57244c4-df7d-9ce7-29a8-c3c89ea89167"
+ },
+ {
+  "id": "f31",
+  "text": "Counseled to start ~20 minutes of exercise (treadmill/weights) before shift, 4-5 days/week",
+  "type": "counseling",
+  "slots": {
+   "topic": "physical activity",
+   "detail": "20 min before shift, 4-5 days/week"
+  },
+  "source": "transcript",
+  "transcript_quote": "Twenty minutes before shift, four or five days a week \u2014 if you actually do it, that is the single best medicine",
+  "fhir_ref": null
+ },
+ {
+  "id": "f32",
+  "text": "Counseled on dietary change: pack meals instead of late-night drive-through",
+  "type": "counseling",
+  "slots": {
+   "topic": "diet",
+   "detail": "pack cooler/meals, avoid fast food"
+  },
+  "source": "transcript",
+  "transcript_quote": "Pack something instead \u2014 the man who makes weeping-grade gumbo can pack a cooler.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f33",
+  "text": "Counseled to resume a social activity (Saturday morning league) to address isolation",
+  "type": "counseling",
+  "slots": {
+   "topic": "social engagement"
+  },
+  "source": "transcript",
+  "transcript_quote": "Then that is your prescription. Saturday league",
+  "fhir_ref": null
+ },
+ {
+  "id": "f34",
+  "text": "Counseled to call/return if mood drops, loss of joy, or uncontrollable worry develops",
+  "type": "counseling",
+  "slots": {
+   "topic": "mental health warning signs"
+  },
+  "source": "transcript",
+  "transcript_quote": "if the tension ever tips into something heavier \u2014 mood dropping, no joy in anything, worry you cannot shut off \u2014 you call me",
+  "fhir_ref": null
+ },
+ {
+  "id": "f35",
+  "text": "Counseled to continue saline rinses for sinuses and return if fever, bad drainage, or persistent pain occurs",
+  "type": "counseling",
+  "slots": {
+   "topic": "sinus care",
+   "detail": "saline rinses; return precautions"
+  },
+  "source": "transcript",
+  "transcript_quote": "Keep up saline rinses if they help, and come in if you get fever, bad drainage, or pain that will not quit",
+  "fhir_ref": null
+ },
+ {
+  "id": "f36",
+  "text": "Follow-up in one year for repeat physical and A1c recheck",
+  "type": "followup",
+  "slots": {
+   "interval": "1 year",
+   "includes": "physical, A1c recheck"
+  },
+  "source": "transcript",
+  "transcript_quote": "we recheck everything, including the A1c, in a year",
+  "fhir_ref": null
+ },
+ {
+  "id": "f37",
+  "text": "Depression screening procedure completed",
+  "type": "procedure",
+  "slots": {
+   "procedure": "depression screening"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Procedure/d57244c4-df7d-9ce7-961e-7d650478503d"
+ },
+ {
+  "id": "f38",
+  "text": "Anxiety assessment procedure completed",
+  "type": "procedure",
+  "slots": {
+   "procedure": "anxiety assessment"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Procedure/d57244c4-df7d-9ce7-f21a-c02c09e7422e"
+ },
+ {
+  "id": "f39",
+  "text": "Substance use assessment (including AUDIT-C) completed",
+  "type": "procedure",
+  "slots": {
+   "procedure": "substance use assessment"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Procedure/d57244c4-df7d-9ce7-8c7a-f044ebf6ce8c"
+ },
+ {
+  "id": "f40",
+  "text": "Assessment of health and social care needs (PRAPARE) completed",
+  "type": "procedure",
+  "slots": {
+   "procedure": "health and social care needs assessment"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Procedure/d57244c4-df7d-9ce7-c8d7-82fb2492e876"
+ },
+ {
+  "id": "f41",
+  "text": "History of incarceration: spent more than 2 nights in jail/prison/detention in past year (per PRAPARE); mentions criminal record affecting employment",
+  "type": "sdoh",
+  "slots": {
+   "domain": "justice involvement",
+   "detail": "prior incarceration/record"
+  },
+  "source": "both",
+  "transcript_quote": "With my record, it took a long time to find a place that would keep me on",
+  "fhir_ref": "Observation/d57244c4-df7d-9ce7-3f17-b053889fa8dc"
+ },
+ {
+  "id": "f42",
+  "text": "PRAPARE: has stable housing, feels safe, private insurance, high school education, sees close people less than once a week",
+  "type": "sdoh",
+  "slots": {
+   "domain": "social determinants",
+   "detail": "housed, safe, insured, low social contact"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Observation/d57244c4-df7d-9ce7-3f17-b053889fa8dc"
+ },
+ {
+  "id": "f43",
+  "text": "Family history: mother had diabetes with complications (lost a toe)",
+  "type": "other",
+  "slots": {
+   "relation": "mother",
+   "condition": "diabetes with amputation"
+  },
+  "source": "transcript",
+  "transcript_quote": "That is the one my mother had. She lost a toe to it.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f44",
+  "text": "Lung exam clear on auscultation (deep breaths), rest of exam unremarkable",
+  "type": "observation",
+  "slots": {
+   "finding": "normal exam except sinus tenderness"
+  },
+  "source": "transcript",
+  "transcript_quote": "Deep breath... again... good.",
+  "fhir_ref": null
+ }
+]

@@ -1,0 +1,32 @@
+[
+ {
+  "fact_id": "f19",
+  "expected": true,
+  "severity": "safety_critical",
+  "why_it_matters": "An actively started antihypertensive must be documented for accurate medication reconciliation, dosing safety, and monitoring\u2014especially with borderline potassium 3.97 on a potassium-wasting thiazide."
+ },
+ {
+  "fact_id": "f20",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Documenting counseling on orthostasis and cramp warning signs plus lab monitoring shows the patient was safeguarded against thiazide adverse effects and closes the documentation loop."
+ },
+ {
+  "fact_id": "f34",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Inability to obtain needed care directly affects adherence to the new hypertension, dental, and B12 plans and should drive resource intervention."
+ },
+ {
+  "fact_id": "f35",
+  "expected": false,
+  "severity": "minor",
+  "why_it_matters": "Prior seasonal farm work is background occupational history with limited bearing on today's management, though it may inform exposure risk."
+ },
+ {
+  "fact_id": "f40",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Recording the safety-net counseling to revisit treatment if grief worsens documents an appropriate mental-health follow-up plan."
+ }
+]

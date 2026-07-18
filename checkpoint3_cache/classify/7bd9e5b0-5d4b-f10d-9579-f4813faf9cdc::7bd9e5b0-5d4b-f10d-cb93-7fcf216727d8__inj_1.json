@@ -1,0 +1,20 @@
+[
+ {
+  "fact_id": "f13",
+  "expected": true,
+  "severity": "safety_critical",
+  "why_it_matters": "Atenolol is renally cleared and can accumulate to dangerous levels with GFR 11, and its beta-blockade likely explains the admission bradycardia (HR 57), making omission from med reconciliation potentially harmful."
+ },
+ {
+  "fact_id": "f44",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Documenting serious-prognosis counseling given advanced age and comorbidities is essential for goals-of-care clarity and completeness of the family communication record."
+ },
+ {
+  "fact_id": "f49",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "The SpO2 response to oxygen (improvement to low 90s) documents effectiveness of the intervention and informs ongoing titration and escalation decisions."
+ }
+]

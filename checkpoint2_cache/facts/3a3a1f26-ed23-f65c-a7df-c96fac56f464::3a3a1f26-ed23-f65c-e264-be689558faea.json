@@ -1,0 +1,503 @@
+[
+ {
+  "id": "f1",
+  "text": "Chronic migraines since mid-twenties, currently about two bad headaches per week, building behind the right eye without aura",
+  "type": "condition",
+  "slots": {
+   "condition": "chronic migraine",
+   "onset": "mid-twenties",
+   "frequency": "~2 bad ones/week",
+   "location": "behind right eye",
+   "aura": "none"
+  },
+  "source": "transcript",
+  "transcript_quote": "Since my mid-twenties. No warning lights or anything before they start, no aura, they just build behind my right eye and then I am done for the day. Lately maybe two bad ones a week.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f2",
+  "text": "Migraine associated with photophobia, phonophobia, and nausea; relieved by sleep in a dark, quiet room",
+  "type": "symptom",
+  "slots": {
+   "symptom": "migraine features",
+   "associated": "photophobia, phonophobia, nausea",
+   "relief": "sleep"
+  },
+  "source": "transcript",
+  "transcript_quote": "Dark room, no sound... Light makes it worse, and sometimes I get queasy with it. Sleep is the only thing that really resets it.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f3",
+  "text": "No change in migraine pattern, no new symptoms, no unilateral weakness, no vision changes",
+  "type": "red_flag_screen",
+  "slots": {
+   "screen": "migraine red flags",
+   "result": "negative"
+  },
+  "source": "transcript",
+  "transcript_quote": "No, same old enemy.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f4",
+  "text": "Headache today rated 2/10",
+  "type": "observation",
+  "slots": {
+   "measure": "pain severity",
+   "value": "2",
+   "scale": "0-10"
+  },
+  "source": "both",
+  "transcript_quote": "Like a two out of ten. Background noise.",
+  "fhir_ref": "Observation/3a3a1f26-ed23-f65c-2180-6da63bd2c7cf"
+ },
+ {
+  "id": "f5",
+  "text": "Reports chronic fatigue and tiredness",
+  "type": "symptom",
+  "slots": {
+   "symptom": "fatigue"
+  },
+  "source": "transcript",
+  "transcript_quote": "Tired a lot.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f6",
+  "text": "Sleeps only five to six hours; falls asleep fine but wakes early",
+  "type": "symptom",
+  "slots": {
+   "symptom": "early morning awakening / short sleep",
+   "duration": "5-6 hours"
+  },
+  "source": "transcript",
+  "transcript_quote": "Five, six hours. I fall asleep fine, my brain just clocks in early.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f7",
+  "text": "Reports flat mood some evenings that lifts; denies hopelessness or loss of interest",
+  "type": "symptom",
+  "slots": {
+   "symptom": "low/flat mood",
+   "severity": "intermittent, resolves",
+   "denies": "hopelessness, anhedonia"
+  },
+  "source": "transcript",
+  "transcript_quote": "Not hopeless. More like flat, some evenings. It lifts.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f8",
+  "text": "Medication reconciliation completed; patient takes only abortive medication for severe headaches, no OTC/vitamins/supplements",
+  "type": "procedure",
+  "slots": {
+   "procedure": "medication reconciliation"
+  },
+  "source": "both",
+  "transcript_quote": "The stuff I keep for when a headache gets really bad, and that is about it.",
+  "fhir_ref": "Procedure/3a3a1f26-ed23-f65c-405b-e63f78a122bf"
+ },
+ {
+  "id": "f9",
+  "text": "Social isolation: friends scattered after college, no close social contacts outside household",
+  "type": "condition",
+  "slots": {
+   "condition": "social isolation",
+   "status": "active"
+  },
+  "source": "both",
+  "transcript_quote": "There is not really anyone I just hang out with anymore. I did not notice it happening. It just happened.",
+  "fhir_ref": "Condition/3a3a1f26-ed23-f65c-6793-7c12d20dfd90"
+ },
+ {
+  "id": "f10",
+  "text": "Financial stress from cut work hours; total household income ~$26,000/year for seven-person household",
+  "type": "sdoh",
+  "slots": {
+   "domain": "financial strain",
+   "income": "$26,021/year",
+   "household_size": "7"
+  },
+  "source": "both",
+  "transcript_quote": "Last year we brought in about twenty-six thousand all together, and it does not stretch.",
+  "fhir_ref": "Observation/3a3a1f26-ed23-f65c-7c06-749bd4dd3697"
+ },
+ {
+  "id": "f11",
+  "text": "Lack of reliable transportation (no car, unreliable bus) has kept patient from medical appointments",
+  "type": "sdoh",
+  "slots": {
+   "domain": "transportation barrier"
+  },
+  "source": "both",
+  "transcript_quote": "We do not have a car right now... The bus is the plan, and the plan is unreliable.",
+  "fhir_ref": "Observation/3a3a1f26-ed23-f65c-7c06-749bd4dd3697"
+ },
+ {
+  "id": "f12",
+  "text": "Household unable to afford utilities when needed in past year",
+  "type": "sdoh",
+  "slots": {
+   "domain": "utility insecurity"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Observation/3a3a1f26-ed23-f65c-7c06-749bd4dd3697"
+ },
+ {
+  "id": "f13",
+  "text": "Domestic abuse screening (HARK) performed; total score 0, negative for abuse",
+  "type": "red_flag_screen",
+  "slots": {
+   "screen": "HARK",
+   "score": "0",
+   "result": "negative"
+  },
+  "source": "both",
+  "transcript_quote": "No. None of that. The house is chaotic, not dangerous.",
+  "fhir_ref": "Observation/3a3a1f26-ed23-f65c-b87e-54d823644e72"
+ },
+ {
+  "id": "f14",
+  "text": "Alcohol use minimal \u2014 about one beer per month",
+  "type": "sdoh",
+  "slots": {
+   "substance": "alcohol",
+   "frequency": "~1/month"
+  },
+  "source": "transcript",
+  "transcript_quote": "A beer at a barbecue, maybe. Once a month?",
+  "fhir_ref": null
+ },
+ {
+  "id": "f15",
+  "text": "Drug abuse screening (DAST-10) performed; total score 0, denies recreational drug use",
+  "type": "red_flag_screen",
+  "slots": {
+   "screen": "DAST-10",
+   "score": "0",
+   "result": "negative"
+  },
+  "source": "both",
+  "transcript_quote": "No. I watched what that did to a guy I grew up with. Not for me.",
+  "fhir_ref": "Observation/3a3a1f26-ed23-f65c-45b0-2398155a0076"
+ },
+ {
+  "id": "f16",
+  "text": "Never smoked tobacco",
+  "type": "sdoh",
+  "slots": {
+   "substance": "tobacco",
+   "status": "never smoked"
+  },
+  "source": "both",
+  "transcript_quote": "Never. Mom was strict about it \u2014 the house was always smoke-free, and I just kept the rule.",
+  "fhir_ref": "Observation/3a3a1f26-ed23-f65c-5f51-373302a31281"
+ },
+ {
+  "id": "f17",
+  "text": "Engages in high-risk activity (bike ramp jumps); counseled to wear helmet every time, wrist guards, avoid ramps taller than himself",
+  "type": "counseling",
+  "slots": {
+   "topic": "injury prevention",
+   "activity": "bike jumps"
+  },
+  "source": "transcript",
+  "transcript_quote": "Helmet every time, wrist guards if you can, and no new ramps taller than you. Deal?",
+  "fhir_ref": null
+ },
+ {
+  "id": "f18",
+  "text": "Blood pressure 98/83 mmHg",
+  "type": "observation",
+  "slots": {
+   "measure": "blood pressure",
+   "systolic": "98",
+   "diastolic": "83",
+   "unit": "mmHg"
+  },
+  "source": "both",
+  "transcript_quote": "blood pressure ninety-eight over eighty-three",
+  "fhir_ref": "Observation/3a3a1f26-ed23-f65c-0bda-d0d977c74807"
+ },
+ {
+  "id": "f19",
+  "text": "Heart rate 93/min, likely from walking and coffee",
+  "type": "observation",
+  "slots": {
+   "measure": "heart rate",
+   "value": "93",
+   "unit": "/min"
+  },
+  "source": "both",
+  "transcript_quote": "heart rate ninety-three",
+  "fhir_ref": "Observation/3a3a1f26-ed23-f65c-906d-f9f200ed667e"
+ },
+ {
+  "id": "f20",
+  "text": "Respiratory rate 14/min",
+  "type": "observation",
+  "slots": {
+   "measure": "respiratory rate",
+   "value": "14",
+   "unit": "/min"
+  },
+  "source": "both",
+  "transcript_quote": "breathing fourteen a minute",
+  "fhir_ref": "Observation/3a3a1f26-ed23-f65c-c136-3e5bc32df973"
+ },
+ {
+  "id": "f21",
+  "text": "Height 176.3 cm, weight 78.7 kg, BMI ~25.3",
+  "type": "observation",
+  "slots": {
+   "height": "176.3 cm",
+   "weight": "78.7 kg",
+   "bmi": "25.32"
+  },
+  "source": "both",
+  "transcript_quote": "Height one seventy-six, weight seventy-eight point seven, which puts your body mass index right around twenty-five.",
+  "fhir_ref": "Observation/3a3a1f26-ed23-f65c-1585-e0c94faa3e98"
+ },
+ {
+  "id": "f22",
+  "text": "Cardiac exam: regular rhythm, no murmurs",
+  "type": "observation",
+  "slots": {
+   "system": "cardiovascular",
+   "finding": "regular rhythm, no murmurs"
+  },
+  "source": "transcript",
+  "transcript_quote": "Rhythm is regular, no murmurs.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f23",
+  "text": "Lungs clear",
+  "type": "observation",
+  "slots": {
+   "system": "respiratory",
+   "finding": "clear"
+  },
+  "source": "transcript",
+  "transcript_quote": "Lungs are clear.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f24",
+  "text": "Abdomen soft, non-tender",
+  "type": "observation",
+  "slots": {
+   "system": "abdomen",
+   "finding": "soft, no tenderness"
+  },
+  "source": "transcript",
+  "transcript_quote": "Belly is soft, no tenderness.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f25",
+  "text": "Gingivitis (inflamed gums along edges) with reported gum bleeding when brushing",
+  "type": "condition",
+  "slots": {
+   "condition": "gingivitis",
+   "symptom": "bleeding gums"
+  },
+  "source": "both",
+  "transcript_quote": "They are inflamed along the edges \u2014 that is gingivitis. Early gum disease.",
+  "fhir_ref": "Condition/3a3a1f26-ed23-f65c-40f7-7adeeda2aee7"
+ },
+ {
+  "id": "f26",
+  "text": "Referral to sliding-scale dental clinic for cleaning and gum disease care",
+  "type": "referral",
+  "slots": {
+   "referral": "dental care",
+   "reason": "gingivitis"
+  },
+  "source": "both",
+  "transcript_quote": "I am putting in a referral to the dental clinic that works on a sliding scale.",
+  "fhir_ref": "Procedure/3a3a1f26-ed23-f65c-cdba-4cc35c6d4bcd"
+ },
+ {
+  "id": "f27",
+  "text": "Counseled on daily oral care, especially flossing",
+  "type": "counseling",
+  "slots": {
+   "topic": "oral hygiene"
+  },
+  "source": "transcript",
+  "transcript_quote": "a proper dental cleaning and better daily care, flossing especially",
+  "fhir_ref": null
+ },
+ {
+  "id": "f28",
+  "text": "Enrollment in medical ride service arranged via care coordinator to address transportation barrier",
+  "type": "followup",
+  "slots": {
+   "action": "enroll in medical ride service"
+  },
+  "source": "transcript",
+  "transcript_quote": "our care coordinator can enroll you in the medical ride service, so the bus does not get a veto over your health care. It covers dental visits too.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f29",
+  "text": "Lipid panel: total cholesterol 198 mg/dL, triglycerides 139 mg/dL, LDL 137 mg/dL (elevated), HDL 33 mg/dL (low)",
+  "type": "observation",
+  "slots": {
+   "total_chol": "198.2 mg/dL",
+   "triglycerides": "138.79 mg/dL",
+   "ldl": "137.19 mg/dL",
+   "hdl": "33.25 mg/dL"
+  },
+  "source": "both",
+  "transcript_quote": "Total cholesterol is one ninety-eight. Triglycerides one thirty-nine \u2014 fine. The LDL, the buildup kind, is one thirty-seven... And your HDL, the protective kind, is thirty-three",
+  "fhir_ref": "DiagnosticReport/3a3a1f26-ed23-f65c-06ba-bd6ede425ddf"
+ },
+ {
+  "id": "f30",
+  "text": "Dyslipidemia managed with lifestyle (more beans, fish, oats, fewer fried foods, more cardio); no medication started; plan to recheck lipids",
+  "type": "counseling",
+  "slots": {
+   "topic": "diet and exercise for cholesterol",
+   "medication": "none"
+  },
+  "source": "transcript",
+  "transcript_quote": "this is a food-and-movement conversation. More beans, fish, oats, fewer fried things \u2014 and the bike counts as cardio when it is not airborne. We will recheck it and watch the trend.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f31",
+  "text": "Order for repeat lipid panel (recheck) with lab slip provided",
+  "type": "order",
+  "slots": {
+   "test": "lipid panel recheck"
+  },
+  "source": "transcript",
+  "transcript_quote": "the front desk will print your dental referral and the lab slip for the recheck",
+  "fhir_ref": null
+ },
+ {
+  "id": "f32",
+  "text": "Influenza vaccine (split virus, trivalent, PF) administered in left arm",
+  "type": "medication",
+  "slots": {
+   "vaccine": "influenza, split virus, trivalent, PF",
+   "route": "IM",
+   "site": "left arm"
+  },
+  "source": "both",
+  "transcript_quote": "You are due for a flu shot",
+  "fhir_ref": "Immunization/3a3a1f26-ed23-f65c-8988-a72dc5911afe"
+ },
+ {
+  "id": "f33",
+  "text": "Td tetanus booster (adult, preservative free) administered in left arm; was overdue",
+  "type": "medication",
+  "slots": {
+   "vaccine": "Td (adult) tetanus toxoid",
+   "route": "IM",
+   "site": "left arm",
+   "note": "overdue"
+  },
+  "source": "both",
+  "transcript_quote": "your tetanus booster is overdue, which matters for a man who builds ramps out of scrap wood",
+  "fhir_ref": "Immunization/3a3a1f26-ed23-f65c-1a07-31864b15c26e"
+ },
+ {
+  "id": "f34",
+  "text": "Counseled that tetanus/vaccine injection may cause a sore arm for a day or two",
+  "type": "counseling",
+  "slots": {
+   "topic": "vaccine side effects"
+  },
+  "source": "transcript",
+  "transcript_quote": "For a day or two. Ramp construction not recommended tomorrow.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f35",
+  "text": "Advised to keep a simple log of bad migraine days",
+  "type": "counseling",
+  "slots": {
+   "topic": "headache diary"
+  },
+  "source": "transcript",
+  "transcript_quote": "Migraines \u2014 stable pattern, keep a simple log of the bad days if you can.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f36",
+  "text": "Care coordinator to call patient this week to address stress and isolation",
+  "type": "followup",
+  "slots": {
+   "action": "care coordinator call",
+   "timing": "this week"
+  },
+  "source": "transcript",
+  "transcript_quote": "the coordinator will call you this week",
+  "fhir_ref": null
+ },
+ {
+  "id": "f37",
+  "text": "Referred/encouraged to attend men's group at community center Thursday evenings for social isolation",
+  "type": "referral",
+  "slots": {
+   "referral": "men's group at community center",
+   "reason": "social isolation"
+  },
+  "source": "transcript",
+  "transcript_quote": "there is a men's group at the community center on Thursday evenings I want you to try. Once.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f38",
+  "text": "Follow-up requested sooner than the prior two-year interval",
+  "type": "followup",
+  "slots": {
+   "action": "return visit",
+   "timing": "sooner than 2 years"
+  },
+  "source": "transcript",
+  "transcript_quote": "I would like to see you back sooner than two years, please.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f39",
+  "text": "Assessment of health and social care needs completed",
+  "type": "procedure",
+  "slots": {
+   "procedure": "assessment of health and social care needs"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Procedure/3a3a1f26-ed23-f65c-57fb-30acfe7aa8d9"
+ },
+ {
+  "id": "f40",
+  "text": "Stress level reported as 'somewhat' on PRAPARE assessment",
+  "type": "observation",
+  "slots": {
+   "measure": "stress level",
+   "value": "somewhat"
+  },
+  "source": "both",
+  "transcript_quote": "Stress is there.",
+  "fhir_ref": "Observation/3a3a1f26-ed23-f65c-7c06-749bd4dd3697"
+ },
+ {
+  "id": "f41",
+  "text": "Currently employed full-time (household bill handler), with hours cut in spring",
+  "type": "sdoh",
+  "slots": {
+   "domain": "employment",
+   "status": "full-time"
+  },
+  "source": "both",
+  "transcript_quote": "My hours got cut in the spring.",
+  "fhir_ref": "Condition/3a3a1f26-ed23-f65c-ed23-618ac5858a3b"
+ }
+]

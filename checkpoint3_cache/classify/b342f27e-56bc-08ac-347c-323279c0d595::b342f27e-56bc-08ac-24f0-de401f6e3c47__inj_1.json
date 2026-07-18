@@ -1,0 +1,32 @@
+[
+ {
+  "fact_id": "f6",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Screening for uncontrolled vomiting, dizziness, and syncope distinguishes benign nausea from hyperemesis or hemodynamic issues that would change management."
+ },
+ {
+  "fact_id": "f7",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Mild hunger-related wooziness is a benign symptom detail that supports the reassuring picture but has little management impact."
+ },
+ {
+  "fact_id": "f35",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "A documented vasovagal history with blood draws warrants recorded accommodations to prevent injury during the multiple specimens collected this visit."
+ },
+ {
+  "fact_id": "f43",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Activity and diet counseling documents patient education but has limited clinical consequence if omitted."
+ },
+ {
+  "fact_id": "f44",
+  "expected": false,
+  "severity": "minor",
+  "why_it_matters": "Announcement timing is a psychosocial reassurance point with no medical bearing on care."
+ }
+]

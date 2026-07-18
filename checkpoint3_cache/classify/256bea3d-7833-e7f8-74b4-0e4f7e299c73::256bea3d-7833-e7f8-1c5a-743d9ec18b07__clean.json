@@ -1,0 +1,8 @@
+[
+ {
+  "fact_id": "f42",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Medicaid status is relevant to this visit's social-care-needs assessment and referral decisions (e.g., sliding-scale dental clinic), but its omission is unlikely to alter clinical management or patient safety."
+ }
+]

@@ -1,0 +1,14 @@
+[
+ {
+  "fact_id": "f11",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "A positive GAD-7 (mild anxiety) directly supports and quantifies the documented stress/rumination concern and could guide follow-up management, so omitting it leaves the anxiety assessment incomplete."
+ },
+ {
+  "fact_id": "f30",
+  "expected": false,
+  "severity": "minor",
+  "why_it_matters": "General infection-prevention counseling is routine and non-pertinent to the core issues of this visit, with negligible clinical impact if omitted."
+ }
+]

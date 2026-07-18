@@ -1,0 +1,26 @@
+[
+ {
+  "fact_id": "f12",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Utility insecurity is an actionable PRAPARE social need that could trigger resource referrals and complete the SDOH picture central to this visit."
+ },
+ {
+  "fact_id": "f32",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "An administered vaccine must be documented with product, route, and site for the immunization record and to prevent duplicate dosing."
+ },
+ {
+  "fact_id": "f34",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Documenting side-effect counseling supports informed consent but has limited clinical impact if omitted."
+ },
+ {
+  "fact_id": "f40",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "The PRAPARE stress rating substantiates the documented stress/isolation assessment but omission does not change management already addressed."
+ }
+]

@@ -1,0 +1,481 @@
+[
+ {
+  "id": "f1",
+  "text": "Patient presents for a general adult health exam; has not seen a physician since college",
+  "type": "other",
+  "slots": {
+   "visit_type": "general exam"
+  },
+  "source": "transcript",
+  "transcript_quote": "It says you booked a general exam... I haven't really been to a doctor since college.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f2",
+  "text": "Chronic low back pain for several years, originating from a lifting injury during college",
+  "type": "symptom",
+  "slots": {
+   "location": "low back",
+   "duration": "several years",
+   "onset": "lifting injury in junior year of college"
+  },
+  "source": "transcript",
+  "transcript_quote": "It's the same low back thing I've had for a few years. Junior year I helped basically my roommate's entire floor move out in one day... Felt something pull.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f3",
+  "text": "Current low back pain described as a dull band across the very bottom of the back, rated 4/10",
+  "type": "symptom",
+  "slots": {
+   "quality": "dull band",
+   "location": "very low back",
+   "severity": "4/10"
+  },
+  "source": "both",
+  "transcript_quote": "A dull band across the very bottom of my back. Right now it's like a four out of ten.",
+  "fhir_ref": "Observation/1ba8eeb9-bc93-7129-8ea1-f7338c8b8bd4"
+ },
+ {
+  "id": "f4",
+  "text": "Back pain worsened by prolonged sitting/desk work (up to 10 hours during software release crunch)",
+  "type": "relieving_factor",
+  "slots": {
+   "type": "aggravating",
+   "factor": "prolonged sitting/desk work"
+  },
+  "source": "transcript",
+  "transcript_quote": "Desk days make it worse... ten hours in a chair, and by Friday I'm walking like a question mark.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f5",
+  "text": "Back pain relieved by walking, hot showers, and ibuprofen",
+  "type": "relieving_factor",
+  "slots": {
+   "type": "relieving",
+   "factor": "walking, hot showers, ibuprofen"
+  },
+  "source": "transcript",
+  "transcript_quote": "Walking. Hot showers. I had ibuprofen for a while, which worked",
+  "fhir_ref": null
+ },
+ {
+  "id": "f6",
+  "text": "No radiation of pain down the leg, no numbness, tingling, or weakness in the feet",
+  "type": "red_flag_screen",
+  "slots": {
+   "screen": "radicular symptoms",
+   "result": "negative"
+  },
+  "source": "transcript",
+  "transcript_quote": "No, nothing like that. It stays in the back.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f7",
+  "text": "No bladder or bowel dysfunction, no fevers, no night pain, no weight loss",
+  "type": "red_flag_screen",
+  "slots": {
+   "screen": "back pain red flags",
+   "result": "negative"
+  },
+  "source": "transcript",
+  "transcript_quote": "No. It's boring pain. Reliable, boring pain.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f8",
+  "text": "Past surgical history: appendectomy at age 15",
+  "type": "condition",
+  "slots": {
+   "procedure": "appendectomy",
+   "age": "15"
+  },
+  "source": "transcript",
+  "transcript_quote": "You had your appendix out as a teenager, right? PT: Yeah, when I was fifteen. That's my only surgery.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f9",
+  "text": "No current medications",
+  "type": "medication",
+  "slots": {
+   "status": "none"
+  },
+  "source": "transcript",
+  "transcript_quote": "Nothing. The empty ibuprofen bottle doesn't count, I assume.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f10",
+  "text": "No known allergies",
+  "type": "other",
+  "slots": {
+   "category": "allergies",
+   "result": "none"
+  },
+  "source": "transcript",
+  "transcript_quote": "Allergies? PT: None.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f11",
+  "text": "Never smoked tobacco; never vaped",
+  "type": "sdoh",
+  "slots": {
+   "category": "tobacco",
+   "status": "never"
+  },
+  "source": "both",
+  "transcript_quote": "Never. Neither.",
+  "fhir_ref": "Observation/1ba8eeb9-bc93-7129-5d07-3db1be12f111"
+ },
+ {
+  "id": "f12",
+  "text": "Occasional alcohol use \u2014 a beer with roommates on weekends",
+  "type": "sdoh",
+  "slots": {
+   "category": "alcohol",
+   "amount": "occasional, weekends"
+  },
+  "source": "transcript",
+  "transcript_quote": "Occasionally. A beer with the roommates on weekends, if that.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f13",
+  "text": "PHQ-2 screen positive with total score 5",
+  "type": "observation",
+  "slots": {
+   "instrument": "PHQ-2",
+   "score": "5"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Observation/1ba8eeb9-bc93-7129-12ac-8b6a91946ac1"
+ },
+ {
+  "id": "f14",
+  "text": "PHQ-9 total score 17, moderately severe depressive symptoms",
+  "type": "observation",
+  "slots": {
+   "instrument": "PHQ-9",
+   "score": "17",
+   "severity": "moderately severe"
+  },
+  "source": "both",
+  "transcript_quote": "you score a 17, which lands in the moderately severe range for depressive symptoms.",
+  "fhir_ref": "Observation/1ba8eeb9-bc93-7129-462c-51953054a943"
+ },
+ {
+  "id": "f15",
+  "text": "Reports low interest/pleasure most days, depressed/hopeless mood most days, difficulty falling asleep nearly every night, fatigue nearly every day, poor appetite (skips lunch more than half the time), feelings of failure several days, trouble concentrating more than half the days, and restlessness several days",
+  "type": "symptom",
+  "slots": {
+   "condition": "depressive symptoms"
+  },
+  "source": "transcript",
+  "transcript_quote": "Yeah. Most days, kind of a gray filter over everything.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f16",
+  "text": "Denies suicidal ideation or thoughts of self-harm",
+  "type": "red_flag_screen",
+  "slots": {
+   "screen": "suicidal ideation",
+   "result": "negative"
+  },
+  "source": "transcript",
+  "transcript_quote": "No. Never that. I want to be really clear on that one \u2014 no.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f17",
+  "text": "Depressive symptoms present since winter, associated with work crunch, girlfriend moving away for grad school, isolation, and poor sleep",
+  "type": "symptom",
+  "slots": {
+   "duration": "since winter",
+   "context": "work stress, long-distance relationship, isolation"
+  },
+  "source": "transcript",
+  "transcript_quote": "Since winter, maybe? Work went into crunch... my girlfriend moved across the country for grad school in January, so evenings got really quiet.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f18",
+  "text": "HARK domestic violence/abuse screen negative, total score 0",
+  "type": "red_flag_screen",
+  "slots": {
+   "instrument": "HARK",
+   "score": "0",
+   "result": "negative"
+  },
+  "source": "both",
+  "transcript_quote": "Good \u2014 that screen is a zero.",
+  "fhir_ref": "Observation/1ba8eeb9-bc93-7129-27e6-8d0a347d17e7"
+ },
+ {
+  "id": "f19",
+  "text": "DAST-10 drug screen score 1 (low); reports using a cannabis gummy twice this winter for back pain/sleep",
+  "type": "observation",
+  "slots": {
+   "instrument": "DAST-10",
+   "score": "1",
+   "substance": "cannabis gummy, twice"
+  },
+  "source": "both",
+  "transcript_quote": "A friend gave me a gummy once this winter when my back was bad and I couldn't sleep. Twice, total... that puts you at a one out of ten on the drug screen",
+  "fhir_ref": "Observation/1ba8eeb9-bc93-7129-7bf2-bf5e414deabc"
+ },
+ {
+  "id": "f20",
+  "text": "Back exam: low back muscles tight bilaterally, spine non-tender, negative straight leg raise, normal strength and reflexes \u2014 muscular/mechanical picture",
+  "type": "observation",
+  "slots": {
+   "finding": "bilateral paraspinal tightness, non-tender spine, negative SLR, normal strength/reflexes"
+  },
+  "source": "transcript",
+  "transcript_quote": "Your low back muscles are tight on both sides, but the spine itself isn't tender, leg raises don't reproduce anything, strength and reflexes are all normal. That's a muscular, mechanical picture",
+  "fhir_ref": null
+ },
+ {
+  "id": "f21",
+  "text": "Blood pressure elevated at 136/94 mmHg; to be rechecked at follow-up rather than treated today",
+  "type": "observation",
+  "slots": {
+   "measurement": "BP",
+   "value": "136/94 mmHg",
+   "plan": "recheck in 4 weeks"
+  },
+  "source": "both",
+  "transcript_quote": "your blood pressure today is 136 over 94, which is higher than I want to see at twenty-two... we'll recheck at the four-week visit rather than react today.",
+  "fhir_ref": "Observation/1ba8eeb9-bc93-7129-7f62-cbb8a20da3d9"
+ },
+ {
+  "id": "f22",
+  "text": "Family history of hypertension (father)",
+  "type": "condition",
+  "slots": {
+   "relation": "father",
+   "condition": "hypertension"
+  },
+  "source": "transcript",
+  "transcript_quote": "My dad has blood pressure stuff, so... noted.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f23",
+  "text": "Heart rate 89 /min",
+  "type": "observation",
+  "slots": {
+   "measurement": "heart rate",
+   "value": "89 /min"
+  },
+  "source": "both",
+  "transcript_quote": "Heart rate's 89",
+  "fhir_ref": "Observation/1ba8eeb9-bc93-7129-ec07-100190076a1d"
+ },
+ {
+  "id": "f24",
+  "text": "Respiratory rate 15 /min",
+  "type": "observation",
+  "slots": {
+   "measurement": "respiratory rate",
+   "value": "15 /min"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Observation/1ba8eeb9-bc93-7129-8228-724e4fb72e01"
+ },
+ {
+  "id": "f25",
+  "text": "Weight 77 kg, height 185.2 cm, BMI 22.5 (normal)",
+  "type": "observation",
+  "slots": {
+   "weight": "77 kg",
+   "height": "185.2 cm",
+   "BMI": "22.5"
+  },
+  "source": "both",
+  "transcript_quote": "at 77 kilos your BMI is 22.5, dead normal.",
+  "fhir_ref": "Observation/1ba8eeb9-bc93-7129-b869-8e917aa37743"
+ },
+ {
+  "id": "f26",
+  "text": "Oral exam shows red, puffy gums along edges that bleed with flossing \u2014 consistent with gingivitis",
+  "type": "condition",
+  "slots": {
+   "condition": "gingivitis"
+  },
+  "source": "both",
+  "transcript_quote": "Your gums are red and puffy along the edges, and I'd bet they bleed when you floss... Classic gingivitis loop.",
+  "fhir_ref": "Condition/1ba8eeb9-bc93-7129-e7f7-69583b7b0da5"
+ },
+ {
+  "id": "f27",
+  "text": "Prescribed ibuprofen 400 mg oral tablet, take one with food when back pain flares (every 4-6 hours as needed)",
+  "type": "medication",
+  "slots": {
+   "drug": "ibuprofen",
+   "dose": "400 mg",
+   "route": "oral",
+   "freq": "every 4-6 hours PRN",
+   "instruction": "take with food during flares"
+  },
+  "source": "both",
+  "transcript_quote": "I'm prescribing ibuprofen 400 milligrams \u2014 take one with food when it flares, not on an empty stomach.",
+  "fhir_ref": "MedicationRequest/1ba8eeb9-bc93-7129-7358-8f8e398e28cf"
+ },
+ {
+  "id": "f28",
+  "text": "Counseled on back care: stand/move out of chair every hour, walk at lunch, hinge at hips and keep load close when lifting",
+  "type": "counseling",
+  "slots": {
+   "topic": "back ergonomics"
+  },
+  "source": "transcript",
+  "transcript_quote": "out of the chair every hour, even five minutes. Walk at lunch. When you lift \u2014 hinge at the hips, keep the load close.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f29",
+  "text": "Counseled on depression self-management: fixed wake time, morning daylight, daily movement, and scheduling calls with girlfriend",
+  "type": "counseling",
+  "slots": {
+   "topic": "behavioral activation / sleep hygiene"
+  },
+  "source": "transcript",
+  "transcript_quote": "a fixed wake time even after bad nights, daylight in the morning, movement every day... schedule the girlfriend calls like meetings",
+  "fhir_ref": null
+ },
+ {
+  "id": "f30",
+  "text": "Offered referral to counseling/therapy with insurance-compatible list including evening telehealth options; patient to review list",
+  "type": "referral",
+  "slots": {
+   "referral": "psychotherapy/counseling",
+   "status": "list provided"
+  },
+  "source": "transcript",
+  "transcript_quote": "counseling \u2014 a therapist is the best-studied tool for exactly this picture. I can give you a list that works with your insurance, including a couple that do evening telehealth.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f31",
+  "text": "Dental referral placed for gingivitis (cleaning and daily flossing recommended)",
+  "type": "referral",
+  "slots": {
+   "referral": "dental care",
+   "reason": "gingivitis"
+  },
+  "source": "both",
+  "transcript_quote": "I'm sending a dental referral today.",
+  "fhir_ref": "Procedure/1ba8eeb9-bc93-7129-4b40-0467b5f64b54"
+ },
+ {
+  "id": "f32",
+  "text": "Counseled on gingivitis: reverses with dental cleaning and daily flossing; bleeding resolves in a couple of weeks",
+  "type": "counseling",
+  "slots": {
+   "topic": "oral hygiene"
+  },
+  "source": "transcript",
+  "transcript_quote": "It reverses with a real cleaning and daily flossing \u2014 the bleeding stops once the gums calm down, usually a couple of weeks.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f33",
+  "text": "Follow-up in 4 weeks to recheck back, blood pressure, and re-score depression (PHQ-9)",
+  "type": "followup",
+  "slots": {
+   "interval": "4 weeks",
+   "purpose": "back, BP, mood re-score"
+  },
+  "source": "transcript",
+  "transcript_quote": "Front desk will book the four-week recheck \u2014 back, blood pressure, and mood score, all three.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f34",
+  "text": "Safety counseling: contact clinic same-day or use crisis line if depressive symptoms worsen or suicidal thoughts arise",
+  "type": "counseling",
+  "slots": {
+   "topic": "crisis safety plan"
+  },
+  "source": "transcript",
+  "transcript_quote": "if the gray filter ever gets darker than what you told me today... you call us same-day or use the crisis line on the sheet.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f35",
+  "text": "Medication reconciliation completed",
+  "type": "procedure",
+  "slots": {
+   "procedure": "medication reconciliation"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Procedure/1ba8eeb9-bc93-7129-d4f5-dffc1e703df7"
+ },
+ {
+  "id": "f36",
+  "text": "PRAPARE assessment: full-time employment, private insurance, stable housing (3 people at address), education more than high school, feels safe at home, close contact with people 3-5 times/week, annual household income ~$91,796, English preferred language",
+  "type": "sdoh",
+  "slots": {
+   "employment": "full-time",
+   "insurance": "private",
+   "housing": "stable",
+   "income": "$91,796/yr"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Observation/1ba8eeb9-bc93-7129-0f48-dc67d1ebf35c"
+ },
+ {
+  "id": "f37",
+  "text": "Work-related stress reported in context of software release crunch",
+  "type": "sdoh",
+  "slots": {
+   "category": "stress",
+   "context": "work crunch"
+  },
+  "source": "both",
+  "transcript_quote": "Work went into crunch \u2014 we shipped two releases back to back",
+  "fhir_ref": "Condition/1ba8eeb9-bc93-7129-70d3-15e2e4c35a22"
+ },
+ {
+  "id": "f38",
+  "text": "Depression screening procedures and PHQ-9 assessment performed",
+  "type": "procedure",
+  "slots": {
+   "procedure": "depression screening"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Procedure/1ba8eeb9-bc93-7129-e1cc-f3820f55f5cf"
+ },
+ {
+  "id": "f39",
+  "text": "Domestic abuse screening performed",
+  "type": "procedure",
+  "slots": {
+   "procedure": "domestic abuse screening"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Procedure/1ba8eeb9-bc93-7129-7636-8bd4a3399e1e"
+ },
+ {
+  "id": "f40",
+  "text": "Substance use / drug abuse screening performed",
+  "type": "procedure",
+  "slots": {
+   "procedure": "substance use screening"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Procedure/1ba8eeb9-bc93-7129-3d8f-1643774bf9e0"
+ }
+]

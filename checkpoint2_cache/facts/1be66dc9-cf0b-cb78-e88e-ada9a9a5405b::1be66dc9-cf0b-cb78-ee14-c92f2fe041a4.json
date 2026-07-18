@@ -1,0 +1,504 @@
+[
+ {
+  "id": "f1",
+  "text": "Patient transferred from hospital to skilled nursing facility for rehabilitation to build strength before returning home",
+  "type": "condition",
+  "slots": {
+   "reason": "skilled nursing/rehab post-hospitalization"
+  },
+  "source": "both",
+  "transcript_quote": "they've transferred you here for skilled nursing care \u2014 to build your strength back up before you go home",
+  "fhir_ref": "Procedure/1be66dc9-cf0b-cb78-0a74-f9bde798932a"
+ },
+ {
+  "id": "f2",
+  "text": "Patient reports generalized fatigue, everything wears her out",
+  "type": "symptom",
+  "slots": {
+   "symptom": "fatigue"
+  },
+  "source": "transcript",
+  "transcript_quote": "Everything wears me out these days.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f3",
+  "text": "Type 2 diabetes mellitus, sugars running higher than desired",
+  "type": "condition",
+  "slots": {
+   "condition": "type 2 diabetes mellitus"
+  },
+  "source": "transcript",
+  "transcript_quote": "You have type two diabetes",
+  "fhir_ref": null
+ },
+ {
+  "id": "f4",
+  "text": "Stage 1 chronic kidney disease attributed to diabetes",
+  "type": "condition",
+  "slots": {
+   "condition": "chronic kidney disease",
+   "stage": "stage 1"
+  },
+  "source": "transcript",
+  "transcript_quote": "it has started to touch your kidneys \u2014 stage one chronic kidney disease, the earliest stage",
+  "fhir_ref": null
+ },
+ {
+  "id": "f5",
+  "text": "Hypertension (blood pressure runs high)",
+  "type": "condition",
+  "slots": {
+   "condition": "hypertension"
+  },
+  "source": "transcript",
+  "transcript_quote": "Your blood pressure runs high.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f6",
+  "text": "Anemia, treated with vitamin B12 injections",
+  "type": "condition",
+  "slots": {
+   "condition": "anemia"
+  },
+  "source": "transcript",
+  "transcript_quote": "You have anemia, and you receive vitamin B12 injections for it.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f7",
+  "text": "Hypertriglyceridemia / metabolic syndrome (high triglycerides)",
+  "type": "condition",
+  "slots": {
+   "condition": "hypertriglyceridemia / metabolic syndrome"
+  },
+  "source": "transcript",
+  "transcript_quote": "Your triglycerides run high as well, part of what we call metabolic syndrome.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f8",
+  "text": "Patient reports polydipsia \u2014 constant thirst, never satisfied",
+  "type": "symptom",
+  "slots": {
+   "symptom": "polydipsia",
+   "duration": "worsened last few weeks"
+  },
+  "source": "transcript",
+  "transcript_quote": "I'm thirsty all the time, for one. I keep a glass by my chair and a bottle by the bed and it's never enough.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f9",
+  "text": "Patient reports nocturia, urinating 4-5 times per night",
+  "type": "symptom",
+  "slots": {
+   "symptom": "nocturia/polyuria",
+   "frequency": "4-5 times per night"
+  },
+  "source": "transcript",
+  "transcript_quote": "I'm up to the bathroom all night long. Four, five times a night.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f10",
+  "text": "Patient reports polyphagia \u2014 increased hunger and eating despite feeling weak/emptied out",
+  "type": "symptom",
+  "slots": {
+   "symptom": "polyphagia"
+  },
+  "source": "transcript",
+  "transcript_quote": "I'm hungry too. I've been eating more than I ever did, and still I feel emptied out. Weak.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f11",
+  "text": "Patient reports bilateral tingling/paresthesias in feet and hands, worse at night, developed over months",
+  "type": "symptom",
+  "slots": {
+   "symptom": "paresthesias",
+   "location": "bilateral feet and hands",
+   "timing": "worse at night",
+   "duration": "months"
+  },
+  "source": "transcript",
+  "transcript_quote": "They tingle. Both of them, and my hands some too. Pins and needles, like they fell asleep and won't wake all the way up. It's worst at night when I'm trying to rest.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f12",
+  "text": "Patient reports increased daytime napping/sleeping half the day (reported by daughter)",
+  "type": "symptom",
+  "slots": {
+   "symptom": "hypersomnia/napping"
+  },
+  "source": "transcript",
+  "transcript_quote": "She was also napping half the day, which is not my mother.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f13",
+  "text": "Patient reports mild cognitive fogginess and word-finding difficulty (intermittent, recovers)",
+  "type": "symptom",
+  "slots": {
+   "symptom": "cognitive fog / word-finding difficulty"
+  },
+  "source": "transcript",
+  "transcript_quote": "I've been losing my word for things lately. It comes back, but it takes the scenic route.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f14",
+  "text": "Clinician attributes hyperglycemic symptoms (thirst, hunger, polyuria, paresthesias) to poorly controlled diabetes",
+  "type": "observation",
+  "slots": {
+   "assessment": "symptoms consistent with hyperglycemia/uncontrolled diabetes"
+  },
+  "source": "transcript",
+  "transcript_quote": "those symptoms \u2014 the thirst, the hunger, all the trips to the bathroom, the tingling in the hands and feet \u2014 those point straight back at the diabetes, and they tell me your sugars have been running higher than we want",
+  "fhir_ref": null
+ },
+ {
+  "id": "f15",
+  "text": "Clopidogrel 75 mg orally once daily (antiplatelet)",
+  "type": "medication",
+  "slots": {
+   "drug": "clopidogrel",
+   "dose": "75 mg",
+   "route": "oral",
+   "freq": "once daily"
+  },
+  "source": "transcript",
+  "transcript_quote": "Clopidogrel, seventy-five milligrams once a day \u2014 that's a blood thinner.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f16",
+  "text": "Simvastatin 20 mg orally at night",
+  "type": "medication",
+  "slots": {
+   "drug": "simvastatin",
+   "dose": "20 mg",
+   "route": "oral",
+   "freq": "at night"
+  },
+  "source": "transcript",
+  "transcript_quote": "Simvastatin, twenty milligrams at night, for the blood fats.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f17",
+  "text": "Metoprolol extended-release 100 mg for blood pressure and heart rate",
+  "type": "medication",
+  "slots": {
+   "drug": "metoprolol (long-acting)",
+   "dose": "100 mg",
+   "route": "oral"
+  },
+  "source": "transcript",
+  "transcript_quote": "The long-acting metoprolol, one hundred milligrams, for blood pressure and heart rate.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f18",
+  "text": "Vitamin B12 injection on a schedule for anemia",
+  "type": "medication",
+  "slots": {
+   "drug": "vitamin B12",
+   "route": "injection",
+   "freq": "scheduled"
+  },
+  "source": "transcript",
+  "transcript_quote": "The vitamin B12 injection on a schedule for the anemia.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f19",
+  "text": "Nitroglycerin sublingual spray PRN for chest tightness",
+  "type": "medication",
+  "slots": {
+   "drug": "nitroglycerin spray",
+   "route": "sublingual",
+   "freq": "as needed for chest tightness"
+  },
+  "source": "transcript",
+  "transcript_quote": "a nitroglycerin spray you keep with you, for under the tongue if you ever feel chest tightness",
+  "fhir_ref": null
+ },
+ {
+  "id": "f20",
+  "text": "Patient denies recent chest tightness / has not needed nitroglycerin in a long while",
+  "type": "red_flag_screen",
+  "slots": {
+   "screen": "chest pain/tightness",
+   "result": "negative recently"
+  },
+  "source": "transcript",
+  "transcript_quote": "I haven't needed it in a good long while, thank the Lord.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f21",
+  "text": "Counseled patient to press call button and report immediately if chest pressure occurs rather than self-treating",
+  "type": "counseling",
+  "slots": {
+   "topic": "chest pain reporting/safety"
+  },
+  "source": "transcript",
+  "transcript_quote": "if you ever feel that chest pressure while you're here, you press the call button first. Don't just quietly reach into the handbag.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f22",
+  "text": "Allergy: aspirin, causes swelling",
+  "type": "condition",
+  "slots": {
+   "allergen": "aspirin",
+   "reaction": "swelling"
+  },
+  "source": "transcript",
+  "transcript_quote": "Aspirin swells me up.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f23",
+  "text": "Allergy: peanuts, severe \u2014 throat itching even with peanut dust",
+  "type": "condition",
+  "slots": {
+   "allergen": "peanuts",
+   "reaction": "throat itching, severe"
+  },
+  "source": "transcript",
+  "transcript_quote": "Peanuts are the dangerous one \u2014 even peanut dust starts my throat itching.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f24",
+  "text": "Allergy: animal dander \u2014 cannot tolerate cats or dogs",
+  "type": "condition",
+  "slots": {
+   "allergen": "animal dander",
+   "reaction": "intolerance"
+  },
+  "source": "transcript",
+  "transcript_quote": "I can't be around cats or dogs for long",
+  "fhir_ref": null
+ },
+ {
+  "id": "f25",
+  "text": "Ordered peanut-free flag on all meal trays and diabetic-friendly diet accommodations",
+  "type": "order",
+  "slots": {
+   "order": "peanut-free/diabetic diet flag"
+  },
+  "source": "transcript",
+  "transcript_quote": "The kitchen gets a peanut-free flag on every one of your trays",
+  "fhir_ref": null
+ },
+ {
+  "id": "f26",
+  "text": "Therapy dog to be kept off patient's hallway due to animal dander allergy",
+  "type": "order",
+  "slots": {
+   "order": "avoid therapy dog / dander precaution"
+  },
+  "source": "transcript",
+  "transcript_quote": "we have a therapy dog that makes rounds on Thursdays, so we'll keep him off your hallway",
+  "fhir_ref": null
+ },
+ {
+  "id": "f27",
+  "text": "Aspirin allergy to be documented prominently on front of chart",
+  "type": "order",
+  "slots": {
+   "order": "allergy documentation"
+  },
+  "source": "transcript",
+  "transcript_quote": "the aspirin allergy goes in large letters on the front of the chart",
+  "fhir_ref": null
+ },
+ {
+  "id": "f28",
+  "text": "Patient reports poor oral intake, barely eating at hospital",
+  "type": "symptom",
+  "slots": {
+   "symptom": "poor appetite/intake"
+  },
+  "source": "transcript",
+  "transcript_quote": "She barely touched anything at the hospital.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f29",
+  "text": "Dietitian referral for diabetic-friendly, peanut-free meal planning based on patient preferences",
+  "type": "referral",
+  "slots": {
+   "referral": "dietitian"
+  },
+  "source": "transcript",
+  "transcript_quote": "A dietitian is part of your team here. Meals will be diabetic-friendly and built around the peanut allergy",
+  "fhir_ref": null
+ },
+ {
+  "id": "f30",
+  "text": "History and physical examination performed",
+  "type": "procedure",
+  "slots": {
+   "procedure": "history and physical exam"
+  },
+  "source": "both",
+  "transcript_quote": "This morning I'll do a complete history and physical exam.",
+  "fhir_ref": "Procedure/1be66dc9-cf0b-cb78-3d73-e7d0fe706143"
+ },
+ {
+  "id": "f31",
+  "text": "Initial patient assessment performed by nursing",
+  "type": "procedure",
+  "slots": {
+   "procedure": "initial patient assessment"
+  },
+  "source": "both",
+  "transcript_quote": "The nursing staff will do their own initial assessment.",
+  "fhir_ref": "Procedure/1be66dc9-cf0b-cb78-0722-edbecf6f753d"
+ },
+ {
+  "id": "f32",
+  "text": "Development of individualized plan of care by interdisciplinary team",
+  "type": "procedure",
+  "slots": {
+   "procedure": "individualized plan of care"
+  },
+  "source": "both",
+  "transcript_quote": "the whole team sits down together and writes what we call an individualized plan of care \u2014 that's the map for your entire stay",
+  "fhir_ref": "Procedure/1be66dc9-cf0b-cb78-b07b-13c5791069c6"
+ },
+ {
+  "id": "f33",
+  "text": "Physical therapy ordered several times weekly for walking, balance, and transfers",
+  "type": "procedure",
+  "slots": {
+   "procedure": "physical therapy",
+   "focus": "gait, balance, chair transfers"
+  },
+  "source": "both",
+  "transcript_quote": "Physical therapy will work with you several times a week \u2014 walking, balance, getting out of a chair without it becoming a production.",
+  "fhir_ref": "Procedure/1be66dc9-cf0b-cb78-7128-94fedb05c817"
+ },
+ {
+  "id": "f34",
+  "text": "Occupational therapy ordered for activities of daily living (bathing, dressing, kitchen tasks)",
+  "type": "procedure",
+  "slots": {
+   "procedure": "occupational therapy",
+   "focus": "ADLs"
+  },
+  "source": "both",
+  "transcript_quote": "Occupational therapy comes too, and they handle the daily-living side \u2014 bathing safely, dressing, kitchen tasks.",
+  "fhir_ref": "Procedure/1be66dc9-cf0b-cb78-25b8-9e7101dcaf76"
+ },
+ {
+  "id": "f35",
+  "text": "Speech-language therapy ordered for swallowing safety and cognitive/memory assessment",
+  "type": "procedure",
+  "slots": {
+   "procedure": "speech-language therapy",
+   "focus": "swallowing safety, cognition"
+  },
+  "source": "both",
+  "transcript_quote": "The speech therapist checks swallowing safety, and runs through thinking and memory exercises.",
+  "fhir_ref": "Procedure/1be66dc9-cf0b-cb78-4de6-2dc7ace891f3"
+ },
+ {
+  "id": "f36",
+  "text": "Nursing care/supplementary surveillance every shift \u2014 vital signs, blood sugars, medications, skin checks",
+  "type": "procedure",
+  "slots": {
+   "procedure": "nursing surveillance",
+   "focus": "vitals, glucose, meds, skin"
+  },
+  "source": "both",
+  "transcript_quote": "the nurses will check on you every shift, every day \u2014 vital signs, blood sugars, medicines, skin checks, the whole picture",
+  "fhir_ref": "Procedure/1be66dc9-cf0b-cb78-3387-49d2653f6597"
+ },
+ {
+  "id": "f37",
+  "text": "Weekly interdisciplinary team review of care plan (nursing, therapy, dietitian, social services, physician)",
+  "type": "followup",
+  "slots": {
+   "interval": "weekly",
+   "activity": "team care plan review"
+  },
+  "source": "transcript",
+  "transcript_quote": "once a week, the full team \u2014 nursing, therapy, the dietitian, social services, and me \u2014 sits down and reviews how the plan is working",
+  "fhir_ref": null
+ },
+ {
+  "id": "f38",
+  "text": "Pre-discharge assessment planned to evaluate ability to manage medications, meals, stairs, and home safety before discharge",
+  "type": "procedure",
+  "slots": {
+   "procedure": "pre-discharge assessment"
+  },
+  "source": "both",
+  "transcript_quote": "when you're getting close, we do a formal pre-discharge assessment. Can you manage your medicines, your meals, the stairs, is the house set up safely.",
+  "fhir_ref": "Procedure/1be66dc9-cf0b-cb78-f4c5-1609a740452e"
+ },
+ {
+  "id": "f39",
+  "text": "SDOH: patient lives alone; daughter lives 40 minutes away with her own family \u2014 discharge readiness for independent self-care is a priority",
+  "type": "sdoh",
+  "slots": {
+   "domain": "social support/living situation",
+   "detail": "lives alone, limited nearby support"
+  },
+  "source": "transcript",
+  "transcript_quote": "I live alone, doctor. Denise is forty minutes away with a family of her own. If I go home, I need to be able to do for myself.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f40",
+  "text": "SDOH: patient reports difficulty cooking proper diabetic meals for one person and let self-care slide at home",
+  "type": "sdoh",
+  "slots": {
+   "domain": "diet/self-management",
+   "detail": "difficulty preparing diabetic meals alone"
+  },
+  "source": "transcript",
+  "transcript_quote": "I let things slide at home. Cooking a proper diabetic meal for one person is a sorry business.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f41",
+  "text": "Ordered to add scheduled vitamin B12 injection to facility schedule so dose does not lapse",
+  "type": "order",
+  "slots": {
+   "order": "schedule B12 injection"
+  },
+  "source": "transcript",
+  "transcript_quote": "The nurses will get the B12 onto the facility schedule today so nothing lapses.",
+  "fhir_ref": null
+ },
+ {
+  "id": "f42",
+  "text": "Care regimes assessment performed",
+  "type": "procedure",
+  "slots": {
+   "procedure": "care regimes assessment"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "Procedure/1be66dc9-cf0b-cb78-5515-998485cb98ed"
+ },
+ {
+  "id": "f43",
+  "text": "History and physical note documented",
+  "type": "other",
+  "slots": {
+   "document": "H&P note"
+  },
+  "source": "fhir",
+  "transcript_quote": null,
+  "fhir_ref": "DiagnosticReport/e7d37edf-105f-2bce-6f75-231e312bbd80"
+ }
+]

@@ -102,7 +102,26 @@ def md_to_html(md: str) -> str:
     return "\n".join(out)
 
 
-def render_flags(facts_by_id: dict, presence: list[dict], classify: list[dict]) -> dict:
+WPM = 150  # conversational speaking rate for estimated transcript timestamps
+
+
+def quote_timestamp(transcript: str, quote: str | None) -> str | None:
+    """Estimated mm:ss position of a quote in the visit, derived from word
+    offset at ~150 wpm. Honest label: estimated, not audio-aligned."""
+    if not quote:
+        return None
+    idx = transcript.find(quote)
+    if idx < 0:  # tolerate small paraphrase: try a distinctive prefix
+        probe = quote[:40].strip()
+        idx = transcript.find(probe) if len(probe) > 15 else -1
+    if idx < 0:
+        return None
+    words_before = len(transcript[:idx].split())
+    seconds = int(words_before / WPM * 60)
+    return f"{seconds // 60:02d}:{seconds % 60:02d}"
+
+
+def render_flags(facts_by_id: dict, presence: list[dict], classify: list[dict], transcript: str = "") -> dict:
     """Mirror recall.render: relevance filter + severity sort (no cap)."""
     status = {r["fact_id"]: r for r in presence}
     surfaced, minor, suppressed = [], [], []
@@ -117,6 +136,7 @@ def render_flags(facts_by_id: dict, presence: list[dict], classify: list[dict]) 
             "severity": c["severity"],
             "why": c["why_it_matters"],
             "quote": f.get("transcript_quote"),
+            "ts": quote_timestamp(transcript, f.get("transcript_quote")),
             "fhir": f.get("fhir_ref"),
             "rationale": status.get(f["id"], {}).get("rationale", ""),
         }
@@ -163,7 +183,7 @@ def build() -> None:
                 "counts": counts,
                 "coverage": round(counts["present"] / total * 100),
                 "n_facts": len(presence),
-                "flags": render_flags(facts_by_id, presence, classify),
+                "flags": render_flags(facts_by_id, presence, classify, rec["transcript"]),
                 "planted": planted,
             }
 
@@ -266,6 +286,7 @@ def build_writeback(records: dict) -> dict:
                 "text": f["text"],
                 "type": f.get("type"),
                 "quote": f.get("transcript_quote"),
+                "ts": quote_timestamp(rec["transcript"], f.get("transcript_quote")),
                 "fhir_type": g["fhir_type"],
                 "resource": resource,
             }
@@ -404,6 +425,8 @@ TEMPLATE = r"""<!DOCTYPE html>
   .ev .src{color:var(--faint);letter-spacing:.1em;font-size:9.5px;text-transform:uppercase;font-weight:600}
   .ev .q{font-style:italic;color:var(--ink2)} .ev code{font-family:var(--mono);font-size:10.5px;color:var(--pine-deep);
     background:var(--pine-wash);border-radius:4px;padding:1px 5px}
+  .tstamp{font-family:var(--mono);font-size:10px;color:var(--pine-deep);background:var(--pine-wash);
+    border-radius:4px;padding:1px 6px;font-weight:600;letter-spacing:.02em;cursor:help;text-transform:none}
   .minorbox{font-size:12px;color:var(--faint);background:var(--panel);border:1px solid var(--line);border-radius:10px;
     padding:9px 13px;animation:rise .45s both}
 
@@ -659,7 +682,7 @@ function showResults(){
   fl.surfaced.forEach((f,i)=>{
     const sev=f.severity==='safety_critical'?'SAFETY-CRITICAL':'MAJOR';
     let ev='';
-    if(f.quote) ev+=`<div class="ev"><span class="src">Transcript</span><div class="q">“${esc(f.quote)}”</div></div>`;
+    if(f.quote) ev+=`<div class="ev"><span class="src">Transcript${f.ts?` · <span class="tstamp" title="estimated from transcript position">▸ ${f.ts}</span>`:''}</span><div class="q">“${esc(f.quote)}”</div></div>`;
     if(f.fhir) ev+=`<div class="ev"><span class="src">Patient chart</span> <code>${esc(f.fhir)}</code></div>`;
     let fix='';
     const p = (v.planted && f.fact_id===v.planted.fact_id) ? v.patch : null;
@@ -774,7 +797,7 @@ async function renderWriteback(){
   WB.gaps.forEach((g,i)=>{
     html += `<div class="gapcard" id="gap${i}">
       <div class="gt">${esc0(g.text)}</div>
-      <div class="gq">Said in the visit: “${esc0(g.quote||'')}”</div>
+      <div class="gq">Said in the visit${g.ts?` <span class="tstamp" title="estimated from transcript position">▸ ${g.ts}</span>`:''}: “${esc0(g.quote||'')}”</div>
       ${resourcePreview(g.resource, g.fhir_type)}
       <div class="gbtns">
         <button class="approve" onclick="approveGap(${i}, this)">✓ Approve &amp; write to chart</button>

@@ -206,11 +206,67 @@ def build() -> None:
     hero_ids = json.loads((REPO / "hero_cases.json").read_text())
     encounters.sort(key=lambda e: (0 if e["id"] in hero_ids else 1, e["title"]))
 
-    payload = json.dumps({"encounters": encounters}, separators=(",", ":"))
+    payload = json.dumps(
+        {"encounters": encounters, "writeback": build_writeback(records)},
+        separators=(",", ":"),
+    )
     OUT.write_text(TEMPLATE.replace("__DATA__", payload.replace("</", "<\\/")))
     size_mb = OUT.stat().st_size / 1e6
     n_versions = sum(len(e["versions"]) for e in encounters)
     print(f"Wrote {OUT}  ({size_mb:.1f} MB, {len(encounters)} encounters, {n_versions} note versions)")
+
+
+WRITEBACK_RID = (
+    "1be66dc9-cf0b-cb78-e88e-ada9a9a5405b::1be66dc9-cf0b-cb78-ee14-c92f2fe041a4"
+)
+
+
+def build_writeback(records: dict) -> dict:
+    """Embed the chart write-back demo data: coverage gaps + pre-authored FHIR
+    resources for the SNF-admission encounter (patient-stated allergies that
+    exist nowhere in the coded chart). Live POSTs happen from the browser."""
+    import sys
+    sys.path.insert(0, str(REPO))
+    from recall.writeback import select_coverage_gaps
+
+    rec = records[WRITEBACK_RID]
+    facts = json.loads((C2 / "facts" / f"{WRITEBACK_RID}.json").read_text())
+    presence = json.loads((C2 / "presence_provided" / f"{WRITEBACK_RID}.json").read_text())
+    gaps, skipped = select_coverage_gaps(facts, presence)
+
+    gap_cards = []
+    for g in gaps:
+        f = g["fact"]
+        authored = REPO / "checkpoint6_cache" / "authored" / f"{WRITEBACK_RID}__{f['id']}.json"
+        if not authored.exists():
+            continue
+        resource = json.loads(authored.read_text())
+        resource.pop("encounter", None)  # browser demo scaffolds only a Patient
+        gap_cards.append(
+            {
+                "fact_id": f["id"],
+                "text": f["text"],
+                "type": f.get("type"),
+                "quote": f.get("transcript_quote"),
+                "fhir_type": g["fhir_type"],
+                "resource": resource,
+            }
+        )
+
+    patient = dict(rec["patient_context"]["patient"])
+    patient.pop("id", None)  # server assigns a fresh id per demo session
+    return {
+        "encounter_id": WRITEBACK_RID,
+        "title": rec["metadata"]["visit_title"],
+        "patient_resource": patient,
+        "gaps": gap_cards,
+        "n_skipped": len(skipped),
+        "skipped_sample": [
+            {"text": s["text"][:80], "type": s["type"], "reason": s["reason"][:110]}
+            for s in skipped[:6]
+        ],
+        "base_url": "http://localhost:8080/fhir",
+    }
 
 
 TEMPLATE = r"""<!DOCTYPE html>
@@ -369,6 +425,39 @@ TEMPLATE = r"""<!DOCTYPE html>
   .step.guard{border-left:3px solid var(--major)}
   .evalnote{margin-top:16px;background:var(--pine-wash);border-radius:10px;padding:12px 16px;font-size:12.5px;color:var(--pine-deep)}
   .close{all:unset;float:right;cursor:pointer;font-size:22px;color:var(--faint);line-height:1}
+
+  /* write-back overlay */
+  .wb-status{display:flex;gap:10px;align-items:center;font-size:13px;margin:0 0 16px;padding:10px 14px;
+    border-radius:10px;background:var(--panel);border:1px solid var(--line)}
+  .wb-status.err{background:var(--crit-wash);border-color:#e8c4c0;color:var(--crit)}
+  .wb-live{width:9px;height:9px;border-radius:50%;background:var(--ok);flex:none;box-shadow:0 0 0 3px var(--ok-wash)}
+  .wb-count{font-family:var(--serif);font-size:30px;font-weight:700;color:var(--pine-deep)}
+  .wb-count.zero{color:var(--faint)}
+  .wb-before{display:flex;gap:16px;align-items:center;background:var(--panel);border:1px solid var(--line);
+    border-radius:12px;padding:14px 18px;margin-bottom:14px}
+  .wb-before .lbl{font-size:12.5px;color:var(--ink2)} .wb-before .lbl b{display:block;color:var(--ink);font-size:13.5px}
+  .wb-query{font-family:var(--mono);font-size:11px;color:var(--pine-deep);background:var(--pine-wash);
+    border-radius:6px;padding:2px 8px}
+  .gapcard{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--pine);
+    border-radius:10px;padding:14px 16px;margin-bottom:12px}
+  .gapcard .gt{font-weight:600;font-size:14px}
+  .gapcard .gq{font-style:italic;font-size:12.5px;color:var(--ink2);margin:5px 0}
+  .gapcard .rtype{font-family:var(--mono);font-size:10.5px;color:var(--pine-deep);background:var(--pine-wash);
+    border-radius:5px;padding:1px 7px}
+  .gapcard pre{background:#f4f8f6;border:1px solid var(--line);border-radius:8px;font-family:var(--mono);
+    font-size:10.5px;max-height:170px;overflow:auto;padding:10px;margin:9px 0;white-space:pre-wrap}
+  .gapcard .unconf{font-size:11px;color:var(--major);font-weight:600}
+  .gapcard .gbtns{display:flex;gap:8px;margin-top:9px;align-items:center}
+  .gapcard .gbtns button{all:unset;font-size:12.5px;font-weight:600;padding:6px 15px;border-radius:8px;cursor:pointer}
+  .gapcard .approve{background:var(--pine);color:#fff} .gapcard .approve:hover{background:var(--pine-deep)}
+  .gapcard .reject{border:1px solid var(--line);color:var(--ink2)}
+  .gapcard .result{font-size:12.5px;font-weight:600}
+  .gapcard.written{border-left-color:var(--ok);background:linear-gradient(to right,var(--ok-wash),var(--panel) 40%)}
+  .gapcard.rejected{opacity:.55;border-left-color:var(--faint)}
+  .wb-skips{font-size:12px;color:var(--faint);background:var(--panel);border:1px solid var(--line);
+    border-radius:10px;padding:10px 14px;margin-top:4px}
+  .wb-skips summary{cursor:pointer;font-weight:600;color:var(--ink2)}
+  .wb-skips li{margin:4px 0 4px 14px}
 </style>
 </head>
 <body>
@@ -381,6 +470,7 @@ TEMPLATE = r"""<!DOCTYPE html>
     <span><b>96.5%</b> patch faithfulness</span>
   </div>
   <button class="sysbtn" onclick="document.getElementById('ov').classList.add('show')">⌘ System architecture</button>
+  <button class="sysbtn" onclick="openWriteback()">⚡ Chart write-back</button>
 </header>
 
 <div class="layout">
@@ -418,6 +508,15 @@ TEMPLATE = r"""<!DOCTYPE html>
       </div>
     </div>
     <div class="evalnote"><b>Evaluation — the injection harness:</b> delete a known-present fact from a gold note (confirm-absent QC), run the detector blind, check it flags exactly that fact. 69 confirmed single-fact deletions → <b>100% recall</b>; untouched notes give the false-positive upper bound (1.56 → 0.96 after the relevance filter); collateral flip rate 0.34%.</div>
+  </div>
+</div>
+
+<div class="overlay" id="wbov" onclick="if(event.target===this)this.classList.remove('show')">
+  <div class="sheet">
+    <button class="close" onclick="document.getElementById('wbov').classList.remove('show')">×</button>
+    <h2>Chart write-back <span style="font-size:12px;color:var(--major);font-weight:600">STRETCH · sandbox only</span></h2>
+    <p class="cap" id="wb-cap"></p>
+    <div id="wb-body"></div>
   </div>
 </div>
 
@@ -558,6 +657,98 @@ function acceptPatch(btn){
   renderMain();
   const ins=document.querySelector('#main .doc .ins');
   if(ins) ins.scrollIntoView({behavior:'smooth', block:'center'});
+}
+
+/* ---------------- chart write-back (live FHIR sandbox) ---------------- */
+const WB = DATA.writeback;
+let wbPatient = null;  // fresh Patient id per session
+
+async function fhir(method, path, body){
+  const res = await fetch(WB.base_url + path, {
+    method, headers: {'Content-Type':'application/fhir+json'},
+    body: body ? JSON.stringify(body) : undefined,
+  });
+  if(!res.ok && res.status !== 201) throw new Error(method+' '+path+' → HTTP '+res.status);
+  return res.status === 204 ? null : res.json();
+}
+
+async function allergyCount(){
+  const b = await fhir('GET', `/AllergyIntolerance?patient=${wbPatient}&_summary=count`);
+  return b.total ?? 0;
+}
+
+async function openWriteback(){
+  document.getElementById('wbov').classList.add('show');
+  document.getElementById('wb-cap').textContent =
+    `${esc0(WB.title)} — patient-stated facts with NO coded FHIR counterpart. Each write requires explicit approval; resources are verificationStatus=unconfirmed with the transcript quote as provenance.`;
+  const body = document.getElementById('wb-body');
+  body.innerHTML = '<div class="wb-status"><span class="spin"></span>Connecting to sandbox FHIR server…</div>';
+  try{
+    await fhir('GET', '/metadata?_summary=true');
+    if(!wbPatient){
+      const created = await fhir('POST', '/Patient', WB.patient_resource);
+      wbPatient = created.id;
+    }
+    renderWriteback();
+  }catch(e){
+    body.innerHTML = `<div class="wb-status err">Sandbox unreachable (${esc0(e.message)}). Start it with:
+      <code style="font-family:var(--mono)">docker start hapi-fhir</code> — writes are refused for any non-localhost host.</div>`;
+  }
+}
+function esc0(s){const d=document.createElement('div'); d.textContent=s??''; return d.innerHTML;}
+
+async function renderWriteback(){
+  const body = document.getElementById('wb-body');
+  const n = await allergyCount();
+  let html = `
+    <div class="wb-status"><span class="wb-live"></span>Live sandbox · HAPI FHIR R4 · <span class="wb-query">${esc0(WB.base_url)}</span> · Patient/${esc0(wbPatient)} (fresh this session)</div>
+    <div class="wb-before">
+      <div class="wb-count ${n===0?'zero':''}" id="wb-n">${n}</div>
+      <div class="lbl"><b>Coded allergies on the chart</b>
+      <span class="wb-query">GET /AllergyIntolerance?patient=${esc0(wbPatient)}</span></div>
+    </div>`;
+  WB.gaps.forEach((g,i)=>{
+    html += `<div class="gapcard" id="gap${i}">
+      <span class="rtype">${esc0(g.fhir_type)}</span> <span class="unconf">verificationStatus=unconfirmed</span>
+      <div class="gt">${esc0(g.text)}</div>
+      <div class="gq">Transcript: “${esc0(g.quote||'')}”</div>
+      <pre>${esc0(JSON.stringify(g.resource, null, 1))}</pre>
+      <div class="gbtns">
+        <button class="approve" onclick="approveGap(${i}, this)">✓ Approve &amp; write to chart</button>
+        <button class="reject" onclick="rejectGap(${i}, this)">Reject</button>
+        <span class="result"></span>
+      </div>
+    </div>`;
+  });
+  html += `<div class="wb-skips"><details><summary>${WB.n_skipped} candidates auto-excluded by safety screens — never auto-coded</summary><ul>`
+    + WB.skipped_sample.map(s=>`<li><b>${esc0(s.type)}</b> “${esc0(s.text)}…” — ${esc0(s.reason)}</li>`).join('')
+    + `</ul></details></div>`;
+  body.innerHTML = html;
+}
+
+async function approveGap(i, btn){
+  const card = document.getElementById('gap'+i);
+  const resEl = card.querySelector('.result');
+  btn.disabled = true; resEl.textContent = 'Writing…';
+  try{
+    const resource = JSON.parse(JSON.stringify(WB.gaps[i].resource));
+    resource.patient = {reference: 'Patient/'+wbPatient};
+    const created = await fhir('POST', '/'+WB.gaps[i].fhir_type, resource);
+    card.classList.add('written');
+    card.querySelector('.gbtns .reject').style.display='none';
+    btn.style.display='none';
+    resEl.innerHTML = `✅ 201 Created — <span class="wb-query">${esc0(WB.gaps[i].fhir_type)}/${esc0(created.id)}</span> confirmed on chart`;
+    const n = await allergyCount();
+    const cnt = document.getElementById('wb-n');
+    cnt.textContent = n; cnt.classList.remove('zero');
+  }catch(e){
+    btn.disabled = false; resEl.textContent = '⚠ write failed: '+e.message;
+  }
+}
+function rejectGap(i, btn){
+  const card = document.getElementById('gap'+i);
+  card.classList.add('rejected');
+  card.querySelector('.gbtns').innerHTML = '<span class="result">✗ Rejected by clinician — nothing written</span>';
 }
 
 buildSidebar(); select(cur.enc, cur.ver);

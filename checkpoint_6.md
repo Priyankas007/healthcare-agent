@@ -13,17 +13,17 @@
 ## Configuration
 
 - Base URL: `http://localhost:8080/fhir`
-- Patient: `Patient/1000` (synthetic, from the encounter's patient_context)
-- Encounter scaffold: `Encounter/1001`
+- Patient: `Patient/1005` (synthetic, from the encounter's patient_context)
+- Encounter scaffold: `Encounter/1006`
 - Gap cap: --max-gaps 3
 
 ## Coverage gaps selected
 
 | Fact | Target FHIR type | In note? | Authored | Valid | Approved | Written | Server id |
 |---|---|---|---|---|---|---|---|
-| Allergy: aspirin, causes swelling (`f22`) | AllergyIntolerance | partial | ✅ | ✅ | ✅ | ✅ | `1002` |
-| Allergy: peanuts, severe — throat itching even with peanut dust (`f23`) | AllergyIntolerance | partial | ✅ | ✅ | ✅ | ✅ | `1003` |
-| Allergy: animal dander — cannot tolerate cats or dogs (`f24`) | AllergyIntolerance | partial | ✅ | ✅ | ✅ | ✅ | `1004` |
+| Allergy: aspirin, causes swelling (`f22`) | AllergyIntolerance | partial | ✅ | ✅ | ✅ | ✅ | `1007` |
+| Allergy: peanuts, severe — throat itching even with peanut dust (`f23`) | AllergyIntolerance | partial | ✅ | ✅ | ✅ | ✅ | `1008` |
+| Allergy: animal dander — cannot tolerate cats or dogs (`f24`) | AllergyIntolerance | partial | ✅ | ✅ | ✅ | ✅ | `1009` |
 
 ## Skipped by safety screens (with reasons)
 
@@ -50,7 +50,7 @@
 
 | Resource type | Before | After |
 |---|---|---|
-| AllergyIntolerance | 3 | 3 |
+| AllergyIntolerance | 0 | 0 |
 | Condition | 0 | 0 |
 | FamilyMemberHistory | 0 | 0 |
 | MedicationStatement | 0 | 0 |

@@ -1,0 +1,64 @@
+{
+ "resourceType": "AllergyIntolerance",
+ "clinicalStatus": {
+  "coding": [
+   {
+    "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+    "code": "active",
+    "display": "Active"
+   }
+  ]
+ },
+ "verificationStatus": {
+  "coding": [
+   {
+    "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+    "code": "unconfirmed",
+    "display": "Unconfirmed"
+   }
+  ]
+ },
+ "code": {
+  "coding": [
+   {
+    "system": "http://snomed.info/sct",
+    "code": "91935009",
+    "display": "Allergy to peanuts (provisional \u2014 needs verification)"
+   }
+  ],
+  "text": "peanuts"
+ },
+ "patient": {
+  "reference": "Patient/1000"
+ },
+ "encounter": {
+  "reference": "Encounter/1001"
+ },
+ "reaction": [
+  {
+   "manifestation": [
+    {
+     "text": "throat itching"
+    }
+   ],
+   "severity": "severe"
+  }
+ ],
+ "note": [
+  {
+   "text": "Peanuts are the dangerous one \u2014 even peanut dust starts my throat itching."
+  },
+  {
+   "text": "RECALL write-back demo: patient-reported fact captured from the ambient transcript; absent from the structured chart; all codings provisional and pending clinician verification. Transcript: \"Peanuts are the dangerous one \u2014 even peanut dust starts my throat itching.\""
+  }
+ ],
+ "meta": {
+  "tag": [
+   {
+    "system": "urn:recall:verification",
+    "code": "unconfirmed",
+    "display": "Unconfirmed \u2014 patient-reported ambient capture, pending clinician verification"
+   }
+  ]
+ }
+}

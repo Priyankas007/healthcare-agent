@@ -176,9 +176,21 @@
   .gapcard .gq{font-style:italic;font-size:12.5px;color:var(--ink2);margin:5px 0}
   .gapcard .rtype{font-family:var(--mono);font-size:10.5px;color:var(--pine-deep);background:var(--pine-wash);
     border-radius:5px;padding:1px 7px}
-  .gapcard pre{background:#f4f8f6;border:1px solid var(--line);border-radius:8px;font-family:var(--mono);
-    font-size:10.5px;max-height:170px;overflow:auto;padding:10px;margin:9px 0;white-space:pre-wrap}
   .gapcard .unconf{font-size:11px;color:var(--major);font-weight:600}
+  .rsc{background:linear-gradient(180deg,#f7faf9,#f1f6f4);border:1px solid var(--line);border-radius:10px;
+    padding:12px 14px;margin:10px 0}
+  .rsc .rschead{display:flex;align-items:center;gap:8px;margin-bottom:9px}
+  .rsc .rtitle{font-family:var(--serif);font-weight:700;font-size:15px;color:var(--pine-deep)}
+  .rsc .spill{font-size:9.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+    padding:2px 8px;border-radius:20px}
+  .rsc .spill.active{background:var(--ok-wash);color:var(--ok)}
+  .rsc .spill.unconfirmed{background:var(--major-wash);color:var(--major)}
+  .rsc .rrow{display:grid;grid-template-columns:96px 1fr;gap:10px;padding:4px 0;font-size:12.5px;
+    border-top:1px dashed var(--line)}
+  .rsc .rrow .rl{color:var(--faint);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;padding-top:2px}
+  .rsc .codechip{font-family:var(--mono);font-size:10.5px;background:var(--panel);border:1px solid var(--line);
+    border-radius:5px;padding:1px 6px;color:var(--pine-deep)}
+  .rsc .prov{font-style:italic;color:var(--ink2)}
   .gapcard .gbtns{display:flex;gap:8px;margin-top:9px;align-items:center}
   .gapcard .gbtns button{all:unset;font-size:12.5px;font-weight:600;padding:6px 15px;border-radius:8px;cursor:pointer}
   .gapcard .approve{background:var(--pine);color:#fff} .gapcard .approve:hover{background:var(--pine-deep)}
@@ -435,6 +447,31 @@ async function openWriteback(){
 }
 function esc0(s){const d=document.createElement('div'); d.textContent=s??''; return d.innerHTML;}
 
+const NICE_TYPE = {AllergyIntolerance:'Allergy record', MedicationStatement:'Medication record',
+  Condition:'Condition record', FamilyMemberHistory:'Family history record', Observation:'Observation record'};
+
+function resourcePreview(r, ftype){
+  const cc = r.code || {};
+  const coding = (cc.coding||[])[0] || {};
+  const display = cc.text || coding.display || '—';
+  const statusPills = [];
+  const clin = r.clinicalStatus?.coding?.[0]?.display || r.clinicalStatus?.coding?.[0]?.code;
+  if(clin) statusPills.push(`<span class="spill active">${esc0(clin)}</span>`);
+  statusPills.push(`<span class="spill unconfirmed">Unconfirmed — needs clinician verification</span>`);
+  const rows = [];
+  rows.push(['What', esc0(display.replace(/\s*\(provisional[^)]*\)/i,''))]);
+  const reactions = (r.reaction||[]).flatMap(x=>(x.manifestation||[]).map(m=>m.text||m.coding?.[0]?.display)).filter(Boolean);
+  if(reactions.length) rows.push(['Reaction', esc0(reactions.join(', '))]);
+  if(r.criticality) rows.push(['Criticality', esc0(r.criticality)]);
+  if(coding.code) rows.push(['Coding', `<span class="codechip">${esc0(coding.system?.includes('snomed')?'SNOMED':'code')} ${esc0(coding.code)}</span> <span style="font-size:11px;color:var(--faint)">provisional — needs verification</span>`]);
+  const note = (r.note||[])[0]?.text;
+  if(note) rows.push(['Provenance', `<span class="prov">${esc0(note)}</span>`]);
+  return `<div class="rsc">
+    <div class="rschead"><span class="rtitle">${esc0(NICE_TYPE[ftype]||ftype)}</span>${statusPills.join('')}</div>
+    ${rows.map(([l,v])=>`<div class="rrow"><span class="rl">${l}</span><span>${v}</span></div>`).join('')}
+  </div>`;
+}
+
 async function renderWriteback(){
   const body = document.getElementById('wb-body');
   const n = await allergyCount();
@@ -447,10 +484,9 @@ async function renderWriteback(){
     </div>`;
   WB.gaps.forEach((g,i)=>{
     html += `<div class="gapcard" id="gap${i}">
-      <span class="rtype">${esc0(g.fhir_type)}</span> <span class="unconf">verificationStatus=unconfirmed</span>
       <div class="gt">${esc0(g.text)}</div>
-      <div class="gq">Transcript: “${esc0(g.quote||'')}”</div>
-      <pre>${esc0(JSON.stringify(g.resource, null, 1))}</pre>
+      <div class="gq">Said in the visit: “${esc0(g.quote||'')}”</div>
+      ${resourcePreview(g.resource, g.fhir_type)}
       <div class="gbtns">
         <button class="approve" onclick="approveGap(${i}, this)">✓ Approve &amp; write to chart</button>
         <button class="reject" onclick="rejectGap(${i}, this)">Reject</button>

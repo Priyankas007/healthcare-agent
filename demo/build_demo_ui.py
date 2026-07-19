@@ -150,14 +150,15 @@ def build() -> None:
         facts_by_id = {f["id"]: f for f in facts}
         versions = []
 
-        def make_version(vid, label, note_text, presence, planted=None):
-            cpath = C3 / f"{vid}.json"
+        def make_version(vid, label, note_text, presence, planted=None, kind="clean", classify_path=None):
+            cpath = classify_path or (C3 / f"{vid}.json")
             classify = json.loads(cpath.read_text()) if cpath.exists() else []
             counts = presence_counts(presence)
             total = max(len(presence), 1)
             return {
                 "id": vid,
                 "label": label,
+                "kind": kind,
                 "note_html": md_to_html(note_text),
                 "counts": counts,
                 "coverage": round(counts["present"] / total * 100),
@@ -168,6 +169,23 @@ def build() -> None:
 
         prov_presence = json.loads((C2 / "presence_provided" / f"{rid}.json").read_text())
         versions.append(make_version(f"{rid}__clean", "Original note", rec["note"], prov_presence))
+
+        # Generated (B0) note with REAL detection results, when the b0 run has
+        # cached this encounter (rebuild after run_b0_detection.py for all 25).
+        b0_pres_path = REPO / "b0_cache" / "presence" / f"{rid}.json"
+        b0_cls_path = REPO / "b0_cache" / "classify" / f"{rid}.json"
+        gen_note_path = REPO / "generated_notes" / f"{rid}.md"
+        if b0_pres_path.exists() and b0_cls_path.exists() and gen_note_path.exists():
+            versions.append(
+                make_version(
+                    f"{rid}__b0",
+                    "Generated note (B0 scribe)",
+                    gen_note_path.read_text(),
+                    json.loads(b0_pres_path.read_text()),
+                    kind="b0",
+                    classify_path=b0_cls_path,
+                )
+            )
 
         for inj in sorted(inj_by_note.get(rid, []), key=lambda r: r["injection_id"]):
             iid = inj["injection_id"]
@@ -181,7 +199,7 @@ def build() -> None:
                 "caught": fact["id"] in ev["detected_absent_fact_ids"],
             }
             note_md = (INJ / f"{iid}.md").read_text()
-            version = make_version(iid, label, note_md, ev["presence_results"], planted)
+            version = make_version(iid, label, note_md, ev["presence_results"], planted, kind="deg")
             patch = load_patch(iid)
             if patch and not patch["unpatchable"]:
                 patched_html = md_to_html(
@@ -318,7 +336,10 @@ TEMPLATE = r"""<!DOCTYPE html>
   .vers button:hover{background:var(--wash)}
   .vers button.sel{background:var(--pine);color:#fff}
   .dot{width:7px;height:7px;border-radius:50%;flex:none}
-  .dot.clean{background:var(--ok)} .dot.deg{background:var(--major)}
+  .dot.clean{background:var(--ok)} .dot.deg{background:var(--major)} .dot.b0{background:var(--minor)}
+  .b0-banner{margin:14px 0 0;border:1px dashed var(--pine);background:var(--pine-wash);border-radius:10px;
+    padding:10px 14px;font-size:13px}
+  .b0-banner b{color:var(--pine-deep)}
 
   /* center */
   main{overflow-y:auto;padding:26px 34px}
@@ -538,7 +559,7 @@ function buildSidebar(){
     box.appendChild(head);
     const vers=el('div','vers');
     enc.versions.forEach(v=>{
-      const b=el('button',null,`<span class="dot ${v.planted?'deg':'clean'}"></span>${esc(v.label)}`);
+      const b=el('button',null,`<span class="dot ${v.kind||'clean'}"></span>${esc(v.label)}`);
       b.onclick=(e)=>{e.stopPropagation(); select(enc,v);};
       b.dataset.vid=v.id;
       vers.appendChild(b);
@@ -560,6 +581,9 @@ function renderMain(){
   m.appendChild(head);
   if(cur.ver.planted){
     m.appendChild(el('div','planted',`<b>Eval harness ground truth:</b> the fact “${esc(cur.ver.planted.text)}” <b>was deleted</b> from this note copy. Run the verifier to see if it catches the omission blind.`));
+  }
+  if(cur.ver.kind==='b0'){
+    m.appendChild(el('div','b0-banner',`<b>Scribe output — real detection:</b> this note was generated from the transcript alone by a naive ambient scribe. Any flags below are <b>authentic omissions</b> — nothing was planted.`));
   }
   const tabs=el('div','tabs');
   [['note','Clinical note'],['transcript','Transcript']].forEach(([k,label])=>{
@@ -613,6 +637,9 @@ function showResults(){
     if(caughtAndSurfaced) r.appendChild(el('div','catchband ok',`✓ Planted omission <b>caught and surfaced</b> — the deleted ${esc(v.planted.type)} fact is flagged below.`));
     else if(v.planted.caught) r.appendChild(el('div','catchband miss',`◐ Detected as absent, but classified below the surfacing bar (logged as minor) — a severity-calibration case, not a detection miss.`));
     else r.appendChild(el('div','catchband miss',`✗ Not detected — a genuine miss.`));
+  }
+  if(v.kind==='b0' && fl.surfaced.length>0){
+    r.appendChild(el('div','catchband ok',`● <b>${fl.surfaced.length} authentic omission(s)</b> in the scribe's own output — nothing planted, no answer key.`));
   }
   if(fl.surfaced.length===0){
     r.appendChild(el('div','noflag','No safety-critical or major omissions to review. Note is clear to sign.'));

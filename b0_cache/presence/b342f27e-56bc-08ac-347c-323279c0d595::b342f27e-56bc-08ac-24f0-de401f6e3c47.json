@@ -1,0 +1,272 @@
+[
+ {
+  "fact_id": "f1",
+  "status": "present",
+  "note_evidence": "She reports a missed period (typically regular cycles) prompting home pregnancy testing, with three positive home tests.",
+  "rationale": "Missed period and three positive home tests documented."
+ },
+ {
+  "fact_id": "f2",
+  "status": "present",
+  "note_evidence": "Confirmed intrauterine pregnancy, early gestation, viable \u2014 normal and healthy at this time.",
+  "rationale": "Normal confirmed pregnancy stated."
+ },
+ {
+  "fact_id": "f3",
+  "status": "present",
+  "note_evidence": "Fatigue that \"sneaks up\" on her",
+  "rationale": "Fatigue documented."
+ },
+ {
+  "fact_id": "f4",
+  "status": "present",
+  "note_evidence": "Mild morning nausea when she waits too long to eat, relieved by eating crackers before rising",
+  "rationale": "Morning nausea and relief described."
+ },
+ {
+  "fact_id": "f5",
+  "status": "present",
+  "note_evidence": "relieved by eating crackers before rising",
+  "rationale": "Crackers relieving nausea documented."
+ },
+ {
+  "fact_id": "f6",
+  "status": "present",
+  "note_evidence": "No vomiting she cannot keep ahead of\n- No dizziness or fainting",
+  "rationale": "Denies uncontrolled vomiting, dizziness, fainting."
+ },
+ {
+  "fact_id": "f7",
+  "status": "present",
+  "note_evidence": "reports only wooziness when hungry",
+  "rationale": "Mild wooziness when hungry documented."
+ },
+ {
+  "fact_id": "f8",
+  "status": "present",
+  "note_evidence": "No vaginal bleeding or spotting",
+  "rationale": "Denies bleeding/spotting."
+ },
+ {
+  "fact_id": "f9",
+  "status": "present",
+  "note_evidence": "No cramping or abdominal pain; occasional mild low \"pulling/stretching\" sensation, not painful",
+  "rationale": "Mild low pulling sensation without pain documented."
+ },
+ {
+  "fact_id": "f10",
+  "status": "present",
+  "note_evidence": "Increased urinary frequency; no dysuria/burning\n- No fevers",
+  "rationale": "Increased frequency, denies dysuria and fever."
+ },
+ {
+  "fact_id": "f11",
+  "status": "present",
+  "note_evidence": "History of at least a couple of UTIs per year since her twenties.",
+  "rationale": "Recurrent UTI history documented."
+ },
+ {
+  "fact_id": "f12",
+  "status": "present",
+  "note_evidence": "Urine culture sent (to be repeated routinely at prenatal visits given recurrent UTI history",
+  "rationale": "Urine culture obtained and to be repeated documented."
+ },
+ {
+  "fact_id": "f13",
+  "status": "present",
+  "note_evidence": "asymptomatic bacteriuria to be treated promptly with pregnancy-safe antibiotics",
+  "rationale": "Prompt pregnancy-safe treatment counseling documented."
+ },
+ {
+  "fact_id": "f14",
+  "status": "present",
+  "note_evidence": "Recently stopped birth control when planning conception.\n\n**Medications:** No regular medications. Occasional over-the-counter analgesic for headache.",
+  "rationale": "Stopped birth control, no regular meds, occasional OTC documented."
+ },
+ {
+  "fact_id": "f15",
+  "status": "present",
+  "note_evidence": "instructed to check with provider before taking any new medication, including OTC",
+  "rationale": "Medication safety counseling documented."
+ },
+ {
+  "fact_id": "f16",
+  "status": "present",
+  "note_evidence": "**Office Urine Pregnancy Test:** Positive",
+  "rationale": "In-office positive urine pregnancy test documented."
+ },
+ {
+  "fact_id": "f17",
+  "status": "present",
+  "note_evidence": "General exam healthy and normal per provider.",
+  "rationale": "Normal physical exam documented."
+ },
+ {
+  "fact_id": "f18",
+  "status": "present",
+  "note_evidence": "Uterus size consistent with early gestational age. Fundal height measured (baseline).",
+  "rationale": "Fundal height evaluated, uterus appropriate for gestation."
+ },
+ {
+  "fact_id": "f19",
+  "status": "present",
+  "note_evidence": "Intrauterine pregnancy confirmed... Cardiac activity present (\"flicker\")... Viable pregnancy.",
+  "rationale": "Ultrasound intrauterine viable pregnancy with cardiac activity."
+ },
+ {
+  "fact_id": "f20",
+  "status": "present",
+  "note_evidence": "**Fetal Heart Tones:** Auscultated, reassuring.",
+  "rationale": "Normal fetal heart auscultation documented."
+ },
+ {
+  "fact_id": "f21",
+  "status": "present",
+  "note_evidence": "Blood work: blood type",
+  "rationale": "Blood type ordered."
+ },
+ {
+  "fact_id": "f22",
+  "status": "present",
+  "note_evidence": "CBC (anemia screen)",
+  "rationale": "CBC for anemia documented."
+ },
+ {
+  "fact_id": "f23",
+  "status": "present",
+  "note_evidence": "infection panel (hepatitis B",
+  "rationale": "Hepatitis B screen documented."
+ },
+ {
+  "fact_id": "f24",
+  "status": "present",
+  "note_evidence": "hepatitis C",
+  "rationale": "Hepatitis C screen documented."
+ },
+ {
+  "fact_id": "f25",
+  "status": "present",
+  "note_evidence": "HIV",
+  "rationale": "HIV screen documented."
+ },
+ {
+  "fact_id": "f26",
+  "status": "present",
+  "note_evidence": "syphilis",
+  "rationale": "Syphilis screen documented."
+ },
+ {
+  "fact_id": "f27",
+  "status": "present",
+  "note_evidence": "rubella and varicella immunity",
+  "rationale": "Rubella immunity screen documented."
+ },
+ {
+  "fact_id": "f28",
+  "status": "present",
+  "note_evidence": "rubella and varicella immunity",
+  "rationale": "Varicella immunity screen documented."
+ },
+ {
+  "fact_id": "f29",
+  "status": "present",
+  "note_evidence": "Urine testing for chlamydia and gonorrhea",
+  "rationale": "Chlamydia urine test documented."
+ },
+ {
+  "fact_id": "f30",
+  "status": "present",
+  "note_evidence": "Urine testing for chlamydia and gonorrhea",
+  "rationale": "Gonorrhea urine test documented."
+ },
+ {
+  "fact_id": "f31",
+  "status": "present",
+  "note_evidence": "Urine screen for glucose and protein",
+  "rationale": "Urine glucose screen documented."
+ },
+ {
+  "fact_id": "f32",
+  "status": "present",
+  "note_evidence": "Urine screen for glucose and protein",
+  "rationale": "Urine protein screen documented."
+ },
+ {
+  "fact_id": "f33",
+  "status": "present",
+  "note_evidence": "Pap smear (patient due)",
+  "rationale": "Pap smear performed as due."
+ },
+ {
+  "fact_id": "f34",
+  "status": "present",
+  "note_evidence": "Tuberculosis skin test placed on forearm; requires reading in 2\u20133 days",
+  "rationale": "TB skin test placed on forearm, read in 2-3 days."
+ },
+ {
+  "fact_id": "f35",
+  "status": "present",
+  "note_evidence": "Patient advised she is a historical fainter; blood draw to be performed lying down with juice available.",
+  "rationale": "Fainting history and accommodation documented."
+ },
+ {
+  "fact_id": "f36",
+  "status": "present",
+  "note_evidence": "One cup of coffee per day acceptable",
+  "rationale": "Caffeine counseling documented."
+ },
+ {
+  "fact_id": "f37",
+  "status": "present",
+  "note_evidence": "avoid alcohol, smoking, and recreational substances",
+  "rationale": "Substance avoidance counseling documented."
+ },
+ {
+  "fact_id": "f38",
+  "status": "present",
+  "note_evidence": "No alcohol since positive pregnancy test\n- Never smoked",
+  "rationale": "Never smoked, no alcohol since pregnancy documented."
+ },
+ {
+  "fact_id": "f39",
+  "status": "present",
+  "note_evidence": "**Call same day** for: burning with urination, urgency beyond usual, unilateral back pain, or fever",
+  "rationale": "UTI red-flag counseling documented."
+ },
+ {
+  "fact_id": "f40",
+  "status": "present",
+  "note_evidence": "Prenatal visits every 4 weeks for now, increasing in frequency later in pregnancy",
+  "rationale": "Prenatal visit schedule documented."
+ },
+ {
+  "fact_id": "f41",
+  "status": "present",
+  "note_evidence": "nurse visit this week for TB test reading",
+  "rationale": "Nurse visit this week for TB reading documented."
+ },
+ {
+  "fact_id": "f42",
+  "status": "present",
+  "note_evidence": "Lab results to be posted to patient portal; office will call regarding any actionable results",
+  "rationale": "Portal results delivery documented."
+ },
+ {
+  "fact_id": "f43",
+  "status": "present",
+  "note_evidence": "Continue normal activities, diet, work, and exercise (walks)",
+  "rationale": "Activity and lifestyle counseling documented."
+ },
+ {
+  "fact_id": "f44",
+  "status": "present",
+  "note_evidence": "Timing of announcing pregnancy is patient's personal decision; no medical restriction",
+  "rationale": "Announcement timing counseling documented."
+ },
+ {
+  "fact_id": "f45",
+  "status": "partial",
+  "note_evidence": "accompanied by her husband",
+  "rationale": "Husband's presence noted but supportive/engaged not documented."
+ }
+]

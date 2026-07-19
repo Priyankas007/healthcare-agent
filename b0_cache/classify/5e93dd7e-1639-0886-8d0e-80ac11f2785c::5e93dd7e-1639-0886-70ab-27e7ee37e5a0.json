@@ -1,0 +1,20 @@
+[
+ {
+  "fact_id": "f29",
+  "expected": false,
+  "why_it_matters": "This is a SNF admission-day note focused on goals and plan; a completed hospital discharge is background administrative detail not central to documenting this visit.",
+  "severity": "minor"
+ },
+ {
+  "fact_id": "f30",
+  "expected": true,
+  "why_it_matters": "Setting realistic expectations that neuropathy and vision symptoms may improve with glycemic control but without guaranteed degree/timing supports informed engagement and adherence, and its omission leaves counseling documentation incomplete.",
+  "severity": "major"
+ },
+ {
+  "fact_id": "f32",
+  "expected": true,
+  "why_it_matters": "The patient is tearful, isolated, and struggling to accept facility care, so documenting emotional support and reframing the stay as short-term rehab is central to addressing her psychosocial distress and care plan.",
+  "severity": "major"
+ }
+]

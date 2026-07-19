@@ -1,0 +1,266 @@
+[
+ {
+  "fact_id": "f1",
+  "status": "present",
+  "note_evidence": "Routine physical (last full exam ~2 years ago)",
+  "rationale": "Routine exam ~2 years since last documented."
+ },
+ {
+  "fact_id": "f2",
+  "status": "present",
+  "note_evidence": "pressure behind the forehead and morning congestion, occasionally progressing to headache rated up to 4/10 at worst. Symptoms are long-standing (years)",
+  "rationale": "All components documented."
+ },
+ {
+  "fact_id": "f3",
+  "status": "present",
+  "note_evidence": "consistent with his known chronic sinusitis",
+  "rationale": "Chronic sinusitis noted as known."
+ },
+ {
+  "fact_id": "f4",
+  "status": "present",
+  "note_evidence": "He denies fever, colored drainage, tooth pain, or symptoms of acute infection.",
+  "rationale": "Negative acute sinus infection screen documented."
+ },
+ {
+  "fact_id": "f5",
+  "status": "present",
+  "note_evidence": "Approximately 6 hours nightly; works second shift as a logistics coordinator, resulting in an inverted sleep schedule.",
+  "rationale": "Short sleep tied to second shift documented."
+ },
+ {
+  "fact_id": "f6",
+  "status": "present",
+  "note_evidence": "Energy: Adequate. ... Appetite: Fine.",
+  "rationale": "Both reported fine."
+ },
+ {
+  "fact_id": "f7",
+  "status": "partial",
+  "note_evidence": "works second shift as a logistics coordinator",
+  "rationale": "Role/shift documented but not full-time or ~3 years duration."
+ },
+ {
+  "fact_id": "f8",
+  "status": "present",
+  "note_evidence": "feeling \"wound up\" and tense, with difficulty switching off after work (~midnight), tight shoulders, and jaw clenching. Attributes this to job-related pressure.",
+  "rationale": "Work stress with tension and jaw clenching documented."
+ },
+ {
+  "fact_id": "f9",
+  "status": "present",
+  "note_evidence": "Reports social isolation \u2014 discontinued a Sunday bowling league ~1 year ago after switching to second shift. Acknowledges loneliness at times.",
+  "rationale": "Isolation, dropped league, loneliness documented."
+ },
+ {
+  "fact_id": "f10",
+  "status": "partial",
+  "note_evidence": "Lives with his brother (works opposite shift; limited interaction).",
+  "rationale": "Lives with brother documented but name Marcus and 2-person count not stated."
+ },
+ {
+  "fact_id": "f11",
+  "status": "present",
+  "note_evidence": "Depression screen: score 1 (negative).",
+  "rationale": "Depression screen score 1 negative documented (instrument name unspecified but entailed)."
+ },
+ {
+  "fact_id": "f12",
+  "status": "present",
+  "note_evidence": "Denies feeling down; still enjoys activities (watching games, cooking). Reports occasional flatness but no anhedonia.",
+  "rationale": "Negative depression symptoms documented."
+ },
+ {
+  "fact_id": "f13",
+  "status": "present",
+  "note_evidence": "Anxiety/worry screen: score 4 (mild).",
+  "rationale": "Anxiety screen score 4 mild documented."
+ },
+ {
+  "fact_id": "f14",
+  "status": "present",
+  "note_evidence": "Alcohol screen: score 3 ... Alcohol: 2\u20133 beers on Saturday nights only; never before a shift.",
+  "rationale": "AUDIT-C 3 and alcohol pattern documented."
+ },
+ {
+  "fact_id": "f15",
+  "status": "present",
+  "note_evidence": "Tobacco/vaping/marijuana/other: Denies, lifelong nonuse.",
+  "rationale": "Never smoker, no other substances documented."
+ },
+ {
+  "fact_id": "f16",
+  "status": "present",
+  "note_evidence": "Sinuses: Tenderness over bilateral supraorbital region, reproducible with palpation.",
+  "rationale": "Supraorbital tenderness on palpation documented."
+ },
+ {
+  "fact_id": "f17",
+  "status": "present",
+  "note_evidence": "BP: 111/71 mmHg",
+  "rationale": "BP documented."
+ },
+ {
+  "fact_id": "f18",
+  "status": "present",
+  "note_evidence": "HR: 88 bpm",
+  "rationale": "HR documented."
+ },
+ {
+  "fact_id": "f19",
+  "status": "present",
+  "note_evidence": "RR: 13/min",
+  "rationale": "RR documented."
+ },
+ {
+  "fact_id": "f20",
+  "status": "present",
+  "note_evidence": "Height: 179.6 cm Weight: 90.4 kg BMI: 28.03 ... Overweight \u2014 BMI 28.03, stable.",
+  "rationale": "All values and overweight/stable documented."
+ },
+ {
+  "fact_id": "f21",
+  "status": "present",
+  "note_evidence": "Hemoglobin A1c: 5.83% (prediabetic range, stable)",
+  "rationale": "A1c and prediabetes stable documented."
+ },
+ {
+  "fact_id": "f22",
+  "status": "present",
+  "note_evidence": "Prediabetes \u2014 A1c 5.83%, stable and just above threshold",
+  "rationale": "Prediabetes holding steady documented."
+ },
+ {
+  "fact_id": "f23",
+  "status": "present",
+  "note_evidence": "Glucose: 81.1 mg/dL (normal)",
+  "rationale": "Glucose normal documented."
+ },
+ {
+  "fact_id": "f24",
+  "status": "present",
+  "note_evidence": "Creatinine: 1.1 BUN: ~19.99",
+  "rationale": "Creatinine and BUN documented (normal kidney values)."
+ },
+ {
+  "fact_id": "f25",
+  "status": "present",
+  "note_evidence": "Electrolytes: within range",
+  "rationale": "Electrolytes normal documented."
+ },
+ {
+  "fact_id": "f26",
+  "status": "present",
+  "note_evidence": "Hemoglobin: 13.04 Platelets: 340",
+  "rationale": "Hemoglobin and platelets documented."
+ },
+ {
+  "fact_id": "f27",
+  "status": "present",
+  "note_evidence": "Prescription fluoride gel (dental) nightly.",
+  "rationale": "Fluoride gel nightly documented."
+ },
+ {
+  "fact_id": "f28",
+  "status": "present",
+  "note_evidence": "Acetaminophen (Tylenol) PRN sinus headache (~monthly).",
+  "rationale": "Acetaminophen monthly PRN sinus headache documented."
+ },
+ {
+  "fact_id": "f29",
+  "status": "present",
+  "note_evidence": "Reconciled; no changes.",
+  "rationale": "Med reconciliation done, list unchanged."
+ },
+ {
+  "fact_id": "f30",
+  "status": "partial",
+  "note_evidence": "Influenza vaccine administered (left arm) by nursing before discharge.",
+  "rationale": "Flu vaccine and left arm documented but not split/trivalent/PF specifics."
+ },
+ {
+  "fact_id": "f31",
+  "status": "present",
+  "note_evidence": "Initiate exercise: ~20 minutes at the warehouse gym before shift, 4\u20135 days/week (treadmill and/or weights).",
+  "rationale": "Exercise counseling documented."
+ },
+ {
+  "fact_id": "f32",
+  "status": "present",
+  "note_evidence": "Pack meals (e.g., cooler with sandwich and fruit) to replace late-night drive-through dinners.",
+  "rationale": "Diet counseling documented."
+ },
+ {
+  "fact_id": "f33",
+  "status": "present",
+  "note_evidence": "Encouraged to resume a social activity; patient considering a Saturday morning bowling league.",
+  "rationale": "Social activity counseling documented."
+ },
+ {
+  "fact_id": "f34",
+  "status": "present",
+  "note_evidence": "Return/call precautions for worsening mood, anhedonia, or uncontrollable worry",
+  "rationale": "Mental health warning signs counseling documented."
+ },
+ {
+  "fact_id": "f35",
+  "status": "present",
+  "note_evidence": "Continue saline rinses as helpful. Return precautions: fever, purulent drainage, or persistent/severe pain warrant reevaluation.",
+  "rationale": "Saline rinses and return precautions documented."
+ },
+ {
+  "fact_id": "f36",
+  "status": "present",
+  "note_evidence": "Comprehensive re-evaluation, including A1c, in 1 year",
+  "rationale": "1-year follow-up with A1c documented."
+ },
+ {
+  "fact_id": "f37",
+  "status": "present",
+  "note_evidence": "Depression screen: score 1 (negative).",
+  "rationale": "Depression screening performed."
+ },
+ {
+  "fact_id": "f38",
+  "status": "present",
+  "note_evidence": "Anxiety/worry screen: score 4 (mild).",
+  "rationale": "Anxiety assessment performed."
+ },
+ {
+  "fact_id": "f39",
+  "status": "present",
+  "note_evidence": "Alcohol screen: score 3 (below at-risk threshold for age).",
+  "rationale": "Substance/alcohol screen performed."
+ },
+ {
+  "fact_id": "f40",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "No PRAPARE or health/social care needs assessment documented."
+ },
+ {
+  "fact_id": "f41",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "No incarceration or criminal record mentioned."
+ },
+ {
+  "fact_id": "f42",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "Housing, safety, insurance, education items not documented."
+ },
+ {
+  "fact_id": "f43",
+  "status": "present",
+  "note_evidence": "Family history of diabetes (mother, with complication of toe amputation).",
+  "rationale": "Maternal diabetes with toe amputation documented."
+ },
+ {
+  "fact_id": "f44",
+  "status": "present",
+  "note_evidence": "Lungs: Clear to auscultation with deep breathing. ... Remainder of exam unremarkable.",
+  "rationale": "Clear lungs and unremarkable exam documented."
+ }
+]

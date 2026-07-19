@@ -1,0 +1,242 @@
+[
+ {
+  "fact_id": "f1",
+  "status": "present",
+  "note_evidence": "Dull, located at the back of the head, occurring some mornings over the past few months. Resolve by lunchtime.",
+  "rationale": "All components documented."
+ },
+ {
+  "fact_id": "f2",
+  "status": "present",
+  "note_evidence": "Gums bleed with brushing (\"pink sink\" most days).",
+  "rationale": "Gum bleeding with brushing stated."
+ },
+ {
+  "fact_id": "f3",
+  "status": "partial",
+  "note_evidence": "Likely contributing to morning headaches.",
+  "rationale": "BP-headache link stated but expected improvement with control not mentioned."
+ },
+ {
+  "fact_id": "f4",
+  "status": "present",
+  "note_evidence": "Depression (PHQ): low interest and feeling down \"several days\" \u2014 score 2.",
+  "rationale": "PHQ-2 score 2, no treatment indicated documented."
+ },
+ {
+  "fact_id": "f5",
+  "status": "present",
+  "note_evidence": "Anxiety (GAD): nervous/on edge a few days per week; able to redirect worry \u2014 score 3.",
+  "rationale": "GAD score 3, low, no treatment indicated."
+ },
+ {
+  "fact_id": "f6",
+  "status": "present",
+  "note_evidence": "Alcohol: 1\u20132 beers on 2\u20133 evenings per week \u2014 score 3.",
+  "rationale": "Score and drinking detail documented."
+ },
+ {
+  "fact_id": "f7",
+  "status": "present",
+  "note_evidence": "Tobacco: never.",
+  "rationale": "Never smoker documented."
+ },
+ {
+  "fact_id": "f8",
+  "status": "present",
+  "note_evidence": "Illicit drugs: none.",
+  "rationale": "Denies illicit drug use."
+ },
+ {
+  "fact_id": "f9",
+  "status": "present",
+  "note_evidence": "BP 141/100 (repeated by physician after seated rest, consistent)",
+  "rationale": "BP and repeat confirmation documented."
+ },
+ {
+  "fact_id": "f10",
+  "status": "present",
+  "note_evidence": "HR 100 bpm",
+  "rationale": "Heart rate 100 documented."
+ },
+ {
+  "fact_id": "f11",
+  "status": "present",
+  "note_evidence": "Weight 93.9 kg\n- BMI 30.21",
+  "rationale": "Weight, BMI and obesity documented."
+ },
+ {
+  "fact_id": "f12",
+  "status": "present",
+  "note_evidence": "A1c 6.28%",
+  "rationale": "A1c consistent with prediabetes documented."
+ },
+ {
+  "fact_id": "f13",
+  "status": "present",
+  "note_evidence": "Glucose 91",
+  "rationale": "Glucose value documented."
+ },
+ {
+  "fact_id": "f14",
+  "status": "present",
+  "note_evidence": "Creatinine 1.12\n- BUN 17.36",
+  "rationale": "Creatinine and BUN documented."
+ },
+ {
+  "fact_id": "f15",
+  "status": "present",
+  "note_evidence": "Sodium 139\n- Potassium 3.97",
+  "rationale": "Sodium and potassium documented."
+ },
+ {
+  "fact_id": "f16",
+  "status": "present",
+  "note_evidence": "Essential hypertension",
+  "rationale": "Diagnosis documented."
+ },
+ {
+  "fact_id": "f17",
+  "status": "present",
+  "note_evidence": "Metabolic syndrome \u2014 clustering of hypertension, prediabetes, and obesity",
+  "rationale": "Diagnosis and components documented."
+ },
+ {
+  "fact_id": "f18",
+  "status": "present",
+  "note_evidence": "Gingivitis \u2014 reversible stage of gum disease; ... Gum line puffy with bleeding on light contact.",
+  "rationale": "Gingivitis with exam findings documented."
+ },
+ {
+  "fact_id": "f19",
+  "status": "present",
+  "note_evidence": "Start hydrochlorothiazide 25 mg PO once every morning with breakfast.",
+  "rationale": "Drug, dose, route, frequency, timing, action documented."
+ },
+ {
+  "fact_id": "f20",
+  "status": "present",
+  "note_evidence": "Counseled on increased urination initially ... report lightheadedness on standing or muscle cramps. Recheck electrolytes/bloodwork after time on therapy",
+  "rationale": "Side effects and monitoring documented."
+ },
+ {
+  "fact_id": "f21",
+  "status": "present",
+  "note_evidence": "Anemia: Continue B12 injections on current schedule, unchanged.",
+  "rationale": "B12 continued unchanged for anemia documented."
+ },
+ {
+  "fact_id": "f22",
+  "status": "present",
+  "note_evidence": "Medications reconciled: (1) Vitamin B12 injectable; (2) Hydrochlorothiazide 25 mg every morning.",
+  "rationale": "Med reconciliation with current meds documented."
+ },
+ {
+  "fact_id": "f23",
+  "status": "present",
+  "note_evidence": "reduce sodium (deli meats, sausage, canned soups, chips); cook more meals at home.",
+  "rationale": "Low-sodium diet counseling documented."
+ },
+ {
+  "fact_id": "f24",
+  "status": "present",
+  "note_evidence": "Physical activity: walk ~30 minutes most days.",
+  "rationale": "Exercise counseling documented."
+ },
+ {
+  "fact_id": "f25",
+  "status": "present",
+  "note_evidence": "Enroll in hypertension education program.",
+  "rationale": "Program enrollment documented."
+ },
+ {
+  "fact_id": "f26",
+  "status": "present",
+  "note_evidence": "Dental referral placed today for cleaning and exam. ... No dental care in approximately 4\u20135 years.",
+  "rationale": "Dental referral and last visit documented."
+ },
+ {
+  "fact_id": "f27",
+  "status": "present",
+  "note_evidence": "Brush twice daily with soft brush; floss daily despite bleeding",
+  "rationale": "Oral hygiene counseling documented."
+ },
+ {
+  "fact_id": "f28",
+  "status": "partial",
+  "note_evidence": "Influenza vaccine administered today, left arm, no complications.",
+  "rationale": "Flu vaccine and site documented but formulation details omitted."
+ },
+ {
+  "fact_id": "f29",
+  "status": "present",
+  "note_evidence": "BP recheck in ~1 month. Encouraged home BP monitoring (morning, seated, feet on floor) with a log",
+  "rationale": "Follow-up interval, reason, home log instructions documented."
+ },
+ {
+  "fact_id": "f30",
+  "status": "present",
+  "note_evidence": "served as primary caregiver for his mother until her death last fall, subsequently left his warehouse job",
+  "rationale": "Bereavement, caregiving and job loss documented."
+ },
+ {
+  "fact_id": "f31",
+  "status": "partial",
+  "note_evidence": "subsequently left his warehouse job (position remains open)",
+  "rationale": "Unemployment implied but 'not seeking work' not explicitly stated."
+ },
+ {
+  "fact_id": "f32",
+  "status": "partial",
+  "note_evidence": "Minimal income this year from odd jobs; trades home repairs for room and board.",
+  "rationale": "Low income from odd jobs documented but specific figure and Medicaid absent."
+ },
+ {
+  "fact_id": "f33",
+  "status": "partial",
+  "note_evidence": "moved in with his sister's family (5 people in the household) ... sleeping on a sofa bed",
+  "rationale": "Housing details present but feeling safe/stable housing not documented."
+ },
+ {
+  "fact_id": "f34",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "No mention of inability to obtain needed care."
+ },
+ {
+  "fact_id": "f35",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "No mention of migrant/seasonal farm work."
+ },
+ {
+  "fact_id": "f36",
+  "status": "present",
+  "note_evidence": "Notes fogginess and heavy legs when doses are skipped.",
+  "rationale": "Symptoms when B12 skipped documented."
+ },
+ {
+  "fact_id": "f37",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "No pain score documented."
+ },
+ {
+  "fact_id": "f38",
+  "status": "partial",
+  "note_evidence": "attributes low periods to grief. Does not identify as depressed.",
+  "rationale": "Depression denial and intermittent grief documented but sleep status not mentioned."
+ },
+ {
+  "fact_id": "f39",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "Respiratory rate not documented."
+ },
+ {
+  "fact_id": "f40",
+  "status": "present",
+  "note_evidence": "Advised patient to return if symptoms worsen \u2014 \"a conversation, not a confession.\"",
+  "rationale": "Counseling to revisit if worsens documented."
+ }
+]

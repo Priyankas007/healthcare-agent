@@ -1,0 +1,26 @@
+[
+ {
+  "fact_id": "f30",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Infection-prevention counseling for a caregiver of young children is reasonable preventive guidance but has low individual clinical impact if omitted."
+ },
+ {
+  "fact_id": "f32",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Refugee status, non-English language, insurance, and housing are core SDOH that shape communication needs, resources, and care planning at a wellness visit, and the employment detail also conflicts with the caregiver narrative."
+ },
+ {
+  "fact_id": "f33",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "A documented 0/10 pain score corroborates the asymptomatic osteoarthritis assessment but adds little beyond what is already described."
+ },
+ {
+  "fact_id": "f36",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "A standardized stress finding supports the caregiver-burden and anxiety assessment, though marked resolved it has limited impact on current management."
+ }
+]

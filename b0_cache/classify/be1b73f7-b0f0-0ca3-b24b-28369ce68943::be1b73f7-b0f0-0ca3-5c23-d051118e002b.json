@@ -1,0 +1,20 @@
+[
+ {
+  "fact_id": "f15",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Uninsured status directly affects affordability of referrals (nutrition class), potential medications, and follow-up, so it should guide cost-conscious planning."
+ },
+ {
+  "fact_id": "f36",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "The note already documents no active medications, so recording the reconciliation adds process completeness but has little added clinical impact."
+ },
+ {
+  "fact_id": "f41",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Documenting the formal PRAPARE screening supports completeness, but the note already captures the pertinent social needs and reassuring findings."
+ }
+]

@@ -1,0 +1,14 @@
+[
+ {
+  "fact_id": "f17",
+  "expected": false,
+  "severity": "minor",
+  "why_it_matters": "Stable housing, safety, and private insurance are favorable/normal SDOH background already partly captured by the negative home safety screen and do not change management for this visit."
+ },
+ {
+  "fact_id": "f25",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Complete vital signs support documentation completeness, but the normal heart and respiratory rates do not alter management given the note's focus on elevated BP."
+ }
+]

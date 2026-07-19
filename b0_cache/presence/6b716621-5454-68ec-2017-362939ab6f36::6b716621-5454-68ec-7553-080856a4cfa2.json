@@ -1,0 +1,176 @@
+[
+ {
+  "fact_id": "f1",
+  "status": "present",
+  "note_evidence": "Reports her usual winter symptoms of facial pressure, morning congestion, and nighttime post-nasal drip. Currently mild, rated 1/10 nuisance.",
+  "rationale": "Symptoms and mild 1/10 severity documented."
+ },
+ {
+  "fact_id": "f2",
+  "status": "present",
+  "note_evidence": "Denies fever, headache, tooth pain, or purulent/discolored discharge.",
+  "rationale": "All red-flag negatives documented."
+ },
+ {
+  "fact_id": "f3",
+  "status": "present",
+  "note_evidence": "Denies chest pain, shortness of breath, or palpitations. Reports improved exercise tolerance (previously winded on hill, no longer).",
+  "rationale": "Cardiopulmonary negatives and improved tolerance documented."
+ },
+ {
+  "fact_id": "f4",
+  "status": "present",
+  "note_evidence": "Sleep improved, appetite normal, energy the best in years.",
+  "rationale": "Directly stated."
+ },
+ {
+  "fact_id": "f5",
+  "status": "present",
+  "note_evidence": "Denies bowel or bladder changes, denies bleeding.",
+  "rationale": "All negatives documented."
+ },
+ {
+  "fact_id": "f6",
+  "status": "present",
+  "note_evidence": "established a daily walking routine (45 minutes daily)",
+  "rationale": "Daily 45-minute walks documented; October transition context present."
+ },
+ {
+  "fact_id": "f7",
+  "status": "present",
+  "note_evidence": "having left her office job in October after 19 years... currently not in the labor force.",
+  "rationale": "Employment change and status documented."
+ },
+ {
+  "fact_id": "f8",
+  "status": "partial",
+  "note_evidence": "Household income ~$53,000 last year for two-person household; reports finances stable. Insurance now through husband's employment.",
+  "rationale": "Income/insurance/household present but paid-off car not mentioned."
+ },
+ {
+  "fact_id": "f9",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "No PRAPARE screening, housing, safety, social contacts, stress, or food insecurity documented."
+ },
+ {
+  "fact_id": "f10",
+  "status": "partial",
+  "note_evidence": "Depression screen (asked in two forms): negative; denies depressed mood, hopelessness, or anhedonia.",
+  "rationale": "Negative screen documented but PHQ-2 name and score 0 not stated."
+ },
+ {
+  "fact_id": "f11",
+  "status": "present",
+  "note_evidence": "Anxiety screen: 1 point; reports occasional (a couple times/month) worry regarding financial soundness of leaving work, which resolves with reassurance.",
+  "rationale": "Score 1 and worry description documented."
+ },
+ {
+  "fact_id": "f12",
+  "status": "partial",
+  "note_evidence": "~1 glass of wine most weeks, sometimes none; screen non-concerning.",
+  "rationale": "Intake documented but AUDIT-C score 1 not stated."
+ },
+ {
+  "fact_id": "f13",
+  "status": "present",
+  "note_evidence": "Former smoker; quit decades ago (teenage year of use). No relapse.",
+  "rationale": "Ex-smoker status documented."
+ },
+ {
+  "fact_id": "f14",
+  "status": "present",
+  "note_evidence": "Denies recreational drugs, sleeping pills, or other substances.",
+  "rationale": "Negatives documented."
+ },
+ {
+  "fact_id": "f15",
+  "status": "present",
+  "note_evidence": "BP: 102/71 mmHg",
+  "rationale": "BP documented."
+ },
+ {
+  "fact_id": "f16",
+  "status": "present",
+  "note_evidence": "Pulse: 70 bpm",
+  "rationale": "Heart rate documented."
+ },
+ {
+  "fact_id": "f17",
+  "status": "present",
+  "note_evidence": "Respiratory rate: 14",
+  "rationale": "RR documented."
+ },
+ {
+  "fact_id": "f18",
+  "status": "present",
+  "note_evidence": "Weight: 81.8 kg - Height: 170.6 cm - BMI: 28.1 (decreased from prior; previously in obese range)",
+  "rationale": "All values documented."
+ },
+ {
+  "fact_id": "f19",
+  "status": "present",
+  "note_evidence": "Regular rate and rhythm... Lungs clear... Abdomen: Soft... Mild tenderness over cheeks; internal nasal congestion. No findings suggestive of active bacterial infection.",
+  "rationale": "Exam findings documented."
+ },
+ {
+  "fact_id": "f20",
+  "status": "present",
+  "note_evidence": "Total cholesterol: 148 mg/dL - LDL: 64 mg/dL - HDL: 59 mg/dL - Triglycerides: 127 mg/dL",
+  "rationale": "All lipid values documented."
+ },
+ {
+  "fact_id": "f21",
+  "status": "partial",
+  "note_evidence": "Hemoglobin: 12.3 g/dL - WBC: normal - Platelets: high-normal, not clinically concerning - No anemia; no red flags",
+  "rationale": "Hemoglobin and qualitative CBC present but numeric WBC 7.4 and platelets 437 not stated."
+ },
+ {
+  "fact_id": "f22",
+  "status": "present",
+  "note_evidence": "Daily saline rinses (emphasize daily use in winter), nighttime humidifier... No antibiotics.",
+  "rationale": "Conservative management documented."
+ },
+ {
+  "fact_id": "f23",
+  "status": "present",
+  "note_evidence": "Return precautions discussed\u2014call for fever, tooth pain, or one week of steady worsening.",
+  "rationale": "Warning signs documented."
+ },
+ {
+  "fact_id": "f24",
+  "status": "present",
+  "note_evidence": "Patient to bring all medications from home\u2014including leftover antibiotics\u2014to next visit for full reconciliation.",
+  "rationale": "Med rec task documented."
+ },
+ {
+  "fact_id": "f25",
+  "status": "partial",
+  "note_evidence": "Influenza vaccination: Administered today (left arm)",
+  "rationale": "Administration and site documented but split-virus trivalent PF specifics not stated."
+ },
+ {
+  "fact_id": "f26",
+  "status": "present",
+  "note_evidence": "achieved through daily walking and lifestyle change. Sustainable improvement... Continue daily 45-minute walks.",
+  "rationale": "Weight/health improvement counseling and encouragement documented."
+ },
+ {
+  "fact_id": "f27",
+  "status": "present",
+  "note_evidence": "Health maintenance: Screening up to date.",
+  "rationale": "Screenings up to date documented."
+ },
+ {
+  "fact_id": "f28",
+  "status": "present",
+  "note_evidence": "Return in one year for annual exam.",
+  "rationale": "One-year follow-up documented."
+ },
+ {
+  "fact_id": "f29",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "No documented health/social care needs assessment as a completed procedure."
+ }
+]

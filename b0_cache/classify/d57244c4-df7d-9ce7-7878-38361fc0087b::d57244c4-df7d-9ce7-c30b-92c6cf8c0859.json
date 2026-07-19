@@ -1,0 +1,20 @@
+[
+ {
+  "fact_id": "f40",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Documenting that a formal social needs assessment (PRAPARE) was completed supports the note's social isolation diagnosis and completes the preventive/psychosocial workup."
+ },
+ {
+  "fact_id": "f41",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Justice involvement and a criminal record affecting employment are significant social determinants that contextualize the patient's occupational stress and isolation and could guide resource referrals."
+ },
+ {
+  "fact_id": "f42",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "These PRAPARE findings\u2014especially seeing close contacts less than weekly\u2014corroborate the social isolation assessment while documenting reassuring housing, safety, and insurance status."
+ }
+]

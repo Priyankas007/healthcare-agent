@@ -1,0 +1,218 @@
+[
+ {
+  "fact_id": "f1",
+  "status": "present",
+  "note_evidence": "long history of colonic polyps requiring repeated removal, progressing over the past year to invasive cancer now involving a \"whole stretch of the colon.\"",
+  "rationale": "Note documents colon cancer arising from recurrent polyps spanning the colon."
+ },
+ {
+  "fact_id": "f2",
+  "status": "present",
+  "note_evidence": "Her specialist advised last month that further disease-directed treatment would cause more harm than benefit; the patient elected to forgo further curative/aggressive treatment and pursue comfort-focused care.",
+  "rationale": "Specialist advice and patient's election to stop treatment documented."
+ },
+ {
+  "fact_id": "f3",
+  "status": "present",
+  "note_evidence": "Remain at home; ... avoid dying in a hospital; and minimize pain.",
+  "rationale": "Home, comfort, avoid hospital death all documented."
+ },
+ {
+  "fact_id": "f4",
+  "status": "present",
+  "note_evidence": "Dull, low abdominal pain, intermittent, most days.",
+  "rationale": "Matches quality, location, and intermittent timing."
+ },
+ {
+  "fact_id": "f5",
+  "status": "present",
+  "note_evidence": "Chronic low back pain for ~20 years (baseline).",
+  "rationale": "Back pain for 20 years documented."
+ },
+ {
+  "fact_id": "f6",
+  "status": "present",
+  "note_evidence": "Currently controlled to \"just about bearable\" on medications.",
+  "rationale": "Pain bearable on current meds documented."
+ },
+ {
+  "fact_id": "f7",
+  "status": "present",
+  "note_evidence": "Acetaminophen 325 mg",
+  "rationale": "Drug and dose listed."
+ },
+ {
+  "fact_id": "f8",
+  "status": "present",
+  "note_evidence": "Simvastatin 10 mg (cholesterol)",
+  "rationale": "Drug, dose, and indication documented."
+ },
+ {
+  "fact_id": "f9",
+  "status": "present",
+  "note_evidence": "Oxycodone extended-release (OxyContin) 10 mg",
+  "rationale": "Drug and dose documented."
+ },
+ {
+  "fact_id": "f10",
+  "status": "present",
+  "note_evidence": "Oxycodone/acetaminophen 10/325 mg (Percocet) \u2014 for \"bad stretches\"",
+  "rationale": "Combination drug, dose, and breakthrough indication documented."
+ },
+ {
+  "fact_id": "f11",
+  "status": "present",
+  "note_evidence": "Tramadol 50 mg",
+  "rationale": "Drug and dose documented."
+ },
+ {
+  "fact_id": "f12",
+  "status": "present",
+  "note_evidence": "Naproxen sodium 220 mg",
+  "rationale": "Drug and dose documented."
+ },
+ {
+  "fact_id": "f13",
+  "status": "present",
+  "note_evidence": "Hydrocodone extended-release 10 mg capsule",
+  "rationale": "Drug, dose, and form documented."
+ },
+ {
+  "fact_id": "f14",
+  "status": "present",
+  "note_evidence": "Amoxicillin-clavulanate (leftover from dental care)",
+  "rationale": "Leftover dental antibiotic documented."
+ },
+ {
+  "fact_id": "f15",
+  "status": "present",
+  "note_evidence": "Fluoride gel",
+  "rationale": "Fluoride gel listed."
+ },
+ {
+  "fact_id": "f16",
+  "status": "present",
+  "note_evidence": "nurse to create written medication schedule clarifying purpose of each medication and identifying breakthrough vs. scheduled agents",
+  "rationale": "Written schedule with purpose and breakthrough med documented."
+ },
+ {
+  "fact_id": "f17",
+  "status": "present",
+  "note_evidence": "Slower than baseline but moving most days",
+  "rationale": "Bowel screen result documented."
+ },
+ {
+  "fact_id": "f18",
+  "status": "present",
+  "note_evidence": "continue fluids and prune juice; report promptly if bowel movements stop",
+  "rationale": "Constipation prevention counseling documented."
+ },
+ {
+  "fact_id": "f19",
+  "status": "present",
+  "note_evidence": "Appetite: Poor; \"eats like a bird.\"",
+  "rationale": "Poor appetite documented."
+ },
+ {
+  "fact_id": "f20",
+  "status": "present",
+  "note_evidence": "Fatigued; sleeping most afternoons.",
+  "rationale": "Fatigue with daytime sleeping documented."
+ },
+ {
+  "fact_id": "f21",
+  "status": "present",
+  "note_evidence": "History of anemia, which patient feels may contribute.",
+  "rationale": "Anemia possibly contributing to fatigue documented."
+ },
+ {
+  "fact_id": "f22",
+  "status": "present",
+  "note_evidence": "Two-physician hospice certification completed with attending physician.",
+  "rationale": "Certification documented."
+ },
+ {
+  "fact_id": "f23",
+  "status": "present",
+  "note_evidence": "Formal notifications sent to primary care physician and insurer; hospice now coordinating care.",
+  "rationale": "Notifications documented."
+ },
+ {
+  "fact_id": "f24",
+  "status": "present",
+  "note_evidence": "Physical head-to-toe examination performed by hospice nurse at this visit",
+  "rationale": "Head-to-toe exam performed documented."
+ },
+ {
+  "fact_id": "f25",
+  "status": "present",
+  "note_evidence": "Individualized plan of care to be developed documenting patient's goals in her own words: home, comfort, flowers, cat (Biscuit named per patient request).",
+  "rationale": "Individualized plan of care reflecting wishes documented."
+ },
+ {
+  "fact_id": "f26",
+  "status": "present",
+  "note_evidence": "appropriate for and electing home hospice care ... hospice now coordinating care.",
+  "rationale": "Hospice care initiated documented."
+ },
+ {
+  "fact_id": "f27",
+  "status": "present",
+  "note_evidence": "Hospital bed \u2014 declined at this time; patient prefers own bed.",
+  "rationale": "Hospital bed declined documented."
+ },
+ {
+  "fact_id": "f28",
+  "status": "present",
+  "note_evidence": "Grab bars for bathroom \u2014 approved by patient.",
+  "rationale": "Grab bars accepted documented."
+ },
+ {
+  "fact_id": "f29",
+  "status": "present",
+  "note_evidence": "Skilled nursing visits ~2x/week initially ... Home health aide offered for bathing/dressing. Social worker and chaplain available",
+  "rationale": "All listed services documented."
+ },
+ {
+  "fact_id": "f30",
+  "status": "present",
+  "note_evidence": "24/7 hospice on-call line provided to patient and family.",
+  "rationale": "24/7 on-call line provided documented."
+ },
+ {
+  "fact_id": "f31",
+  "status": "present",
+  "note_evidence": "wants no resuscitation, no machines, no chest compressions (\"let me go easy\")",
+  "rationale": "DNR wishes documented."
+ },
+ {
+  "fact_id": "f32",
+  "status": "partial",
+  "note_evidence": "Patient clearly declines hospitalization and aggressive interventions.",
+  "rationale": "Avoidance of hospitalization noted but ambulance transport/ER 'unless requested' not specifically stated."
+ },
+ {
+  "fact_id": "f33",
+  "status": "present",
+  "note_evidence": "Next nursing visit in 2 days.",
+  "rationale": "Nurse follow-up in two days documented."
+ },
+ {
+  "fact_id": "f34",
+  "status": "present",
+  "note_evidence": "Niece Karen has been staying overnight most nights and manages medications/paperwork.",
+  "rationale": "Niece Karen as caregiver documented."
+ },
+ {
+  "fact_id": "f35",
+  "status": "present",
+  "note_evidence": "Physical head-to-toe examination performed by hospice nurse at this visit",
+  "rationale": "History and physical exam documented in the encounter note."
+ },
+ {
+  "fact_id": "f36",
+  "status": "present",
+  "note_evidence": "At time of visit, pain reported as \"about as good as it gets.\"",
+  "rationale": "Pain controlled at time of visit documented."
+ }
+]

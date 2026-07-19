@@ -1,0 +1,14 @@
+[
+ {
+  "fact_id": "f12",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Utility insecurity is an actionable SDOH domain that, given documented financial strain and a household of 7, could trigger resource referrals and should be captured in a note already emphasizing social determinants."
+ },
+ {
+  "fact_id": "f40",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "The PRAPARE stress rating adds a standardized data point to an already well-documented psychosocial stress assessment but does not itself change management."
+ }
+]

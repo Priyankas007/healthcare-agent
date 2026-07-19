@@ -1,0 +1,26 @@
+[
+ {
+  "fact_id": "f13",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "PHQ-2 documents the initial positive depression screen that justified the full PHQ-9, but the PHQ-9=17 already captures the actionable finding, making this largely redundant."
+ },
+ {
+  "fact_id": "f24",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Respiratory rate completes the vital sign set for a general exam, though the normal value here has no impact on management."
+ },
+ {
+  "fact_id": "f35",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Medication reconciliation is a standard quality element of a general/annual exam, but with no medications the clinical stakes are low."
+ },
+ {
+  "fact_id": "f36",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "PRAPARE social determinants (stable housing, employment, insurance) contextualize whole-person care and therapy access for depression, though the findings are reassuring and non-actionable."
+ }
+]

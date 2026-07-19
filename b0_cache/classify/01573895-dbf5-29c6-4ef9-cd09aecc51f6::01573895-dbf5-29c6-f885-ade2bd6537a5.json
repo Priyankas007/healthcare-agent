@@ -1,0 +1,8 @@
+[
+ {
+  "fact_id": "f41",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "A comprehensive visit after a 3-year gap warrants documented medication reconciliation to ensure a complete and accurate medication list and to prevent interactions with newly recommended therapies."
+ }
+]

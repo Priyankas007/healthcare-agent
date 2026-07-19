@@ -1,0 +1,278 @@
+[
+ {
+  "fact_id": "f1",
+  "status": "present",
+  "note_evidence": "Mr. Howell is an 85-year-old male presenting for an annual comprehensive checkup ... He reports feeling well overall",
+  "rationale": "Age, annual checkup, and feeling well all stated."
+ },
+ {
+  "fact_id": "f2",
+  "status": "present",
+  "note_evidence": "Denies chest pain, pressure, or tightness resembling his prior heart attack. Reports occasional exertional \"twinge\" with yard overexertion that resolves with rest",
+  "rationale": "Denial plus exertional twinge relieved by rest documented."
+ },
+ {
+  "fact_id": "f3",
+  "status": "present",
+  "note_evidence": "has not required nitroglycerin spray in a long time",
+  "rationale": "Directly stated."
+ },
+ {
+  "fact_id": "f4",
+  "status": "present",
+  "note_evidence": "Denies shortness of breath, ankle swelling, or paroxysmal nocturnal dyspnea",
+  "rationale": "All three denials stated."
+ },
+ {
+  "fact_id": "f5",
+  "status": "present",
+  "note_evidence": "Denies dizziness, lightheadedness, or falls this past year",
+  "rationale": "Directly stated."
+ },
+ {
+  "fact_id": "f6",
+  "status": "present",
+  "note_evidence": "Appetite good, weight steady",
+  "rationale": "Directly stated."
+ },
+ {
+  "fact_id": "f7",
+  "status": "present",
+  "note_evidence": "Retired in June after 60 years as a bookkeeper",
+  "rationale": "Retirement after 60-year career documented."
+ },
+ {
+  "fact_id": "f8",
+  "status": "present",
+  "note_evidence": "Lives with daughter and grandson",
+  "rationale": "Household of three entailed."
+ },
+ {
+  "fact_id": "f9",
+  "status": "present",
+  "note_evidence": "Reports no difficulty affording food, medications, or transportation",
+  "rationale": "No unmet financial needs documented."
+ },
+ {
+  "fact_id": "f10",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "No PRAPARE, Medicare, housing, contact frequency, or stress level documented."
+ },
+ {
+  "fact_id": "f11",
+  "status": "present",
+  "note_evidence": "Medication reconciliation (per patient, with bottles)",
+  "rationale": "Med rec with bottles stated."
+ },
+ {
+  "fact_id": "f12",
+  "status": "present",
+  "note_evidence": "Simvastatin 20 mg (duplicate; bottle empty)",
+  "rationale": "Discontinuation with dose and reason documented."
+ },
+ {
+  "fact_id": "f13",
+  "status": "present",
+  "note_evidence": "Metoprolol 50 mg (old dose)",
+  "rationale": "Old metoprolol 50 mg discontinued documented."
+ },
+ {
+  "fact_id": "f14",
+  "status": "present",
+  "note_evidence": "Atorvastatin 20 mg every evening \u2014 emphasize daily adherence, no missed doses",
+  "rationale": "Continued with dose, timing, adherence stated."
+ },
+ {
+  "fact_id": "f15",
+  "status": "present",
+  "note_evidence": "Metoprolol ER 100 mg every morning",
+  "rationale": "Continued with dose and timing."
+ },
+ {
+  "fact_id": "f16",
+  "status": "present",
+  "note_evidence": "Aspirin 81 mg daily",
+  "rationale": "Continued as stated."
+ },
+ {
+  "fact_id": "f17",
+  "status": "present",
+  "note_evidence": "Losartan 50 mg daily",
+  "rationale": "Continued as stated."
+ },
+ {
+  "fact_id": "f18",
+  "status": "present",
+  "note_evidence": "Nitroglycerin spray PRN \u2014 continue carrying",
+  "rationale": "Continue carrying PRN documented."
+ },
+ {
+  "fact_id": "f19",
+  "status": "present",
+  "note_evidence": "Metformin ER 500 mg once daily with dinner",
+  "rationale": "Started for diabetes/metabolic syndrome context noted."
+ },
+ {
+  "fact_id": "f20",
+  "status": "present",
+  "note_evidence": "Hydrochlorothiazide 25 mg every morning \u2014 to smooth blood pressure and help lower potassium",
+  "rationale": "Started with dose, timing, rationale."
+ },
+ {
+  "fact_id": "f21",
+  "status": "present",
+  "note_evidence": "counseled on GI side effects; advised to call if intolerant rather than stopping abruptly",
+  "rationale": "GI counseling and call-not-quit advice documented."
+ },
+ {
+  "fact_id": "f22",
+  "status": "present",
+  "note_evidence": "counseled to take in morning, report dizziness or lightheadedness (especially orthostatic)",
+  "rationale": "Timing and orthostatic symptom counseling documented."
+ },
+ {
+  "fact_id": "f23",
+  "status": "present",
+  "note_evidence": "Blood pressure: 107/58 mmHg",
+  "rationale": "Value stated."
+ },
+ {
+  "fact_id": "f24",
+  "status": "present",
+  "note_evidence": "Heart rate: 96 bpm",
+  "rationale": "Value stated."
+ },
+ {
+  "fact_id": "f25",
+  "status": "present",
+  "note_evidence": "Weight: 78.5 kg ... BMI: 27.8",
+  "rationale": "Both values stated."
+ },
+ {
+  "fact_id": "f26",
+  "status": "present",
+  "note_evidence": "Hemoglobin A1c: 5.45% ... Excellent control",
+  "rationale": "Value and excellent control documented."
+ },
+ {
+  "fact_id": "f27",
+  "status": "present",
+  "note_evidence": "Fasting glucose: 66 mg/dL (low) ... caution against skipping breakfast",
+  "rationale": "Low glucose and breakfast advice documented."
+ },
+ {
+  "fact_id": "f28",
+  "status": "present",
+  "note_evidence": "Creatinine: 0.6 mg/dL",
+  "rationale": "Value stated; kidney function strong entailed."
+ },
+ {
+  "fact_id": "f29",
+  "status": "present",
+  "note_evidence": "Potassium: 5.16 mmol/L (mildly elevated)",
+  "rationale": "Value and mild elevation stated."
+ },
+ {
+  "fact_id": "f30",
+  "status": "present",
+  "note_evidence": "Total cholesterol: ~226 mg/dL ... LDL: 148 mg/dL (elevated for cardiac history)",
+  "rationale": "Both values and interpretation stated."
+ },
+ {
+  "fact_id": "f31",
+  "status": "present",
+  "note_evidence": "Recheck lipid panel before any dose adjustment",
+  "rationale": "Directly stated."
+ },
+ {
+  "fact_id": "f32",
+  "status": "present",
+  "note_evidence": "Depression/mood screens: score 0",
+  "rationale": "Depression screen score 0 documented."
+ },
+ {
+  "fact_id": "f33",
+  "status": "present",
+  "note_evidence": "Home safety screen: 0",
+  "rationale": "Safety screen score 0 documented (HARK unnamed)."
+ },
+ {
+  "fact_id": "f34",
+  "status": "present",
+  "note_evidence": "Alcohol/drug screen: 0",
+  "rationale": "Substance screen score 0 documented."
+ },
+ {
+  "fact_id": "f35",
+  "status": "present",
+  "note_evidence": "Fall-risk score: 22 (low risk)",
+  "rationale": "Score and low risk documented."
+ },
+ {
+  "fact_id": "f36",
+  "status": "partial",
+  "note_evidence": "Denies alcohol/drug use (only black coffee)",
+  "rationale": "No alcohol/drug use captured but ex-smoker/tobacco status not documented."
+ },
+ {
+  "fact_id": "f37",
+  "status": "present",
+  "note_evidence": "Anemia, chronic \u2014 Stable, asymptomatic. No new CBC today ... Continue monitoring anemia at next labs",
+  "rationale": "Stable anemia, no new CBC, monitoring documented."
+ },
+ {
+  "fact_id": "f38",
+  "status": "present",
+  "note_evidence": "Gingivitis \u2014 Erythematous, bleeding gums ... Erythematous, edematous gingiva along lower teeth; reported bleeding with brushing",
+  "rationale": "Diagnosis and gum findings documented."
+ },
+ {
+  "fact_id": "f39",
+  "status": "present",
+  "note_evidence": "relevant to cardiovascular health ... Referral to dental clinic for cleaning and evaluation of gingivitis",
+  "rationale": "Gum-heart link and treatment recommendation documented."
+ },
+ {
+  "fact_id": "f40",
+  "status": "present",
+  "note_evidence": "Referral to dental clinic for cleaning and evaluation of gingivitis",
+  "rationale": "Dental referral documented."
+ },
+ {
+  "fact_id": "f41",
+  "status": "partial",
+  "note_evidence": "Influenza vaccine administered today, no prior adverse reactions",
+  "rationale": "Vaccine and no prior reaction stated but trivalent preservative-free detail omitted."
+ },
+ {
+  "fact_id": "f42",
+  "status": "present",
+  "note_evidence": "Return in approximately 6 months for repeat labs. Return sooner for chest pain, dizziness, or GI intolerance to metformin",
+  "rationale": "Interval and return precautions documented."
+ },
+ {
+  "fact_id": "f43",
+  "status": "present",
+  "note_evidence": "Avoid skipping breakfast, particularly before morning walks",
+  "rationale": "Directly stated."
+ },
+ {
+  "fact_id": "f44",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "No pain score documented."
+ },
+ {
+  "fact_id": "f45",
+  "status": "present",
+  "note_evidence": "Labs: Hemoglobin A1c ... Creatinine ... Potassium ... Total cholesterol ... LDL",
+  "rationale": "Metabolic and lipid panel results reported, entailing completion."
+ },
+ {
+  "fact_id": "f46",
+  "status": "present",
+  "note_evidence": "Social: Retired ... Reports no difficulty affording food, medications, or transportation ... Screening: Depression/mood ... Home safety ... Fall-risk",
+  "rationale": "Comprehensive health and social needs assessment documented."
+ }
+]

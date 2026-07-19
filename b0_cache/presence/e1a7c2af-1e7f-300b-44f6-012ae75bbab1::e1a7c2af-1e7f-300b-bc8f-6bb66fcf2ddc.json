@@ -1,0 +1,182 @@
+[
+ {
+  "fact_id": "f1",
+  "status": "present",
+  "note_evidence": "Reports gingival bleeding with brushing for several months, occurring most times he brushes and worse along the lower anterior region",
+  "rationale": "Symptom, duration, location, and trigger all documented."
+ },
+ {
+  "fact_id": "f2",
+  "status": "present",
+  "note_evidence": "occurring most times he brushes and worse along the lower anterior region; persists even with gentle brushing",
+  "rationale": "Bleeding most times, not relieved by gentle brushing."
+ },
+ {
+  "fact_id": "f3",
+  "status": "present",
+  "note_evidence": "Also reports recent halitosis (noted by a peer)",
+  "rationale": "Recent halitosis documented."
+ },
+ {
+  "fact_id": "f4",
+  "status": "present",
+  "note_evidence": "cold sensitivity, particularly to ice water on the right side",
+  "rationale": "Cold sensitivity, ice water, right side documented."
+ },
+ {
+  "fact_id": "f5",
+  "status": "present",
+  "note_evidence": "Denies toothache, night pain, pain with chewing",
+  "rationale": "Denials explicitly documented."
+ },
+ {
+  "fact_id": "f6",
+  "status": "present",
+  "note_evidence": "loose teeth, facial or jaw swelling, and fevers",
+  "rationale": "All three denials documented."
+ },
+ {
+  "fact_id": "f7",
+  "status": "present",
+  "note_evidence": "after many years without dental care (attributed to base moves and a deployment)",
+  "rationale": "Access to care with reasons documented."
+ },
+ {
+  "fact_id": "f8",
+  "status": "present",
+  "note_evidence": "35-year-old active duty male, generally healthy, presents via clinic referral for evaluation",
+  "rationale": "Age, occupation, health, referral documented (though 'red' not stated)."
+ },
+ {
+  "fact_id": "f9",
+  "status": "present",
+  "note_evidence": "Brushes twice daily but quickly; flosses inconsistently",
+  "rationale": "Hygiene habits documented."
+ },
+ {
+  "fact_id": "f10",
+  "status": "present",
+  "note_evidence": "Never used tobacco (never smoked or dipped)",
+  "rationale": "Never smoked or smokeless documented."
+ },
+ {
+  "fact_id": "f11",
+  "status": "present",
+  "note_evidence": "Frequent energy drink consumption, often sipped over extended periods",
+  "rationale": "High energy drink use documented."
+ },
+ {
+  "fact_id": "f12",
+  "status": "present",
+  "note_evidence": "Gingiva diffusely erythematous and edematous; Bleeding on light touch (marginal, generalized); Generalized supragingival calculus along the gumline; Subgingival calculus palpable, especially lower anterior and posterior molar regions",
+  "rationale": "All exam findings documented."
+ },
+ {
+  "fact_id": "f13",
+  "status": "present",
+  "note_evidence": "Gingival disease (gingivitis) \u2014 generalized, plaque/calculus induced, without radiographic evidence of bone loss",
+  "rationale": "Gingival disease without bone loss documented."
+ },
+ {
+  "fact_id": "f14",
+  "status": "present",
+  "note_evidence": "Bitewing radiographs obtained. Bone levels sound; no alarming interproximal findings",
+  "rationale": "Bitewings with sound bone levels documented."
+ },
+ {
+  "fact_id": "f15",
+  "status": "present",
+  "note_evidence": "Full-mouth scaling above and below the gumline (deep cleaning)",
+  "rationale": "Supragingival scaling documented."
+ },
+ {
+  "fact_id": "f16",
+  "status": "present",
+  "note_evidence": "Full-mouth scaling above and below the gumline (deep cleaning) under local anesthesia",
+  "rationale": "Subgingival scaling under local anesthesia documented."
+ },
+ {
+  "fact_id": "f17",
+  "status": "present",
+  "note_evidence": "Localized gingivectomy of lower right overgrown/pocketed tissue under same anesthesia",
+  "rationale": "Gingivectomy lower right documented."
+ },
+ {
+  "fact_id": "f18",
+  "status": "present",
+  "note_evidence": "Application of desensitizing medicament to sensitive areas",
+  "rationale": "Desensitizing medicament documented."
+ },
+ {
+  "fact_id": "f19",
+  "status": "present",
+  "note_evidence": "Fluoride treatment",
+  "rationale": "Fluoride treatment documented."
+ },
+ {
+  "fact_id": "f20",
+  "status": "present",
+  "note_evidence": "presents via clinic referral for evaluation",
+  "rationale": "The consultation note itself represents the completed consultation/report."
+ },
+ {
+  "fact_id": "f21",
+  "status": "present",
+  "note_evidence": "No eating for ~30 minutes after fluoride; Soft diet today; avoid scalding hot foods and sharp/crusty foods",
+  "rationale": "Dietary post-op instructions documented."
+ },
+ {
+  "fact_id": "f22",
+  "status": "present",
+  "note_evidence": "Warm salt-water rinses beginning tomorrow for lower right",
+  "rationale": "Salt-water rinses next day documented."
+ },
+ {
+  "fact_id": "f23",
+  "status": "present",
+  "note_evidence": "Continue brushing despite minor bleeding; soft-bristle brush",
+  "rationale": "Continued gentle brushing during healing documented."
+ },
+ {
+  "fact_id": "f24",
+  "status": "present",
+  "note_evidence": "soft-bristle brush, twice daily, two minutes, bristles angled into gumline with small circular motions; Floss once daily",
+  "rationale": "Brushing and flossing technique documented."
+ },
+ {
+  "fact_id": "f25",
+  "status": "present",
+  "note_evidence": "Reduce energy drink use; if consumed, drink promptly rather than sipping over hours; water in between",
+  "rationale": "Energy drink counseling documented."
+ },
+ {
+  "fact_id": "f26",
+  "status": "present",
+  "note_evidence": "Call office same day for significant swelling, pus, fever, or bleeding not controlled with pressure",
+  "rationale": "Return precautions documented."
+ },
+ {
+  "fact_id": "f27",
+  "status": "present",
+  "note_evidence": "Return in a few weeks to assess healing and gingival response",
+  "rationale": "Follow-up in a few weeks documented."
+ },
+ {
+  "fact_id": "f28",
+  "status": "present",
+  "note_evidence": "Avoid chewing on lower right (surgical) side today; Morning PT/exercise permitted; take it easy tonight",
+  "rationale": "Workout clearance and activity restrictions documented."
+ },
+ {
+  "fact_id": "f29",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "No prescribed/requested medication documented in the note."
+ },
+ {
+  "fact_id": "f30",
+  "status": "present",
+  "note_evidence": "Bitewing radiographs obtained",
+  "rationale": "Dental imaging available from encounter."
+ }
+]

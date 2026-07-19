@@ -1,0 +1,176 @@
+[
+ {
+  "fact_id": "f1",
+  "status": "present",
+  "note_evidence": "Mrs. Hilpert is a 76-year-old woman admitted to Maple Grove for rehabilitation following approximately one week of hospitalization.",
+  "rationale": "Age, admission for rehab, and ~1 week hospitalization all documented."
+ },
+ {
+  "fact_id": "f2",
+  "status": "present",
+  "note_evidence": "significant deconditioning, describing profound fatigue and functional decline in her legs to the point of being unable to ambulate",
+  "rationale": "Deconditioning with legs unable to support ambulation documented."
+ },
+ {
+  "fact_id": "f3",
+  "status": "present",
+  "note_evidence": "Osteoporosis",
+  "rationale": "Listed in PMH and assessment."
+ },
+ {
+  "fact_id": "f4",
+  "status": "present",
+  "note_evidence": "Hyperlipidemia",
+  "rationale": "Listed in PMH."
+ },
+ {
+  "fact_id": "f5",
+  "status": "present",
+  "note_evidence": "Prediabetes",
+  "rationale": "Listed in PMH."
+ },
+ {
+  "fact_id": "f6",
+  "status": "present",
+  "note_evidence": "Significant dental loss \u2014 chews carefully on one side, limited to soft foods.",
+  "rationale": "Tooth loss, one-sided chewing, soft foods documented."
+ },
+ {
+  "fact_id": "f7",
+  "status": "present",
+  "note_evidence": "Low back pain radiating to bilateral hips, worse with prolonged standing. Described as a deep, aching, \"toothache in the bone\" sensation.",
+  "rationale": "All pain slots documented."
+ },
+ {
+  "fact_id": "f8",
+  "status": "present",
+  "note_evidence": "Pain has interfered with sleep on some nights.",
+  "rationale": "Sleep disturbance from pain documented."
+ },
+ {
+  "fact_id": "f9",
+  "status": "present",
+  "note_evidence": "Standing is the primary aggravating factor. Requires support and a target to hold onto when standing. Can turn in bed slowly.",
+  "rationale": "Standing worsens pain, turns in bed slowly, needs support to stand."
+ },
+ {
+  "fact_id": "f10",
+  "status": "present",
+  "note_evidence": "Start **naproxen 220 mg** for baseline aching pain.",
+  "rationale": "Naproxen 220 mg for baseline pain documented."
+ },
+ {
+  "fact_id": "f11",
+  "status": "present",
+  "note_evidence": "Start **meperidine 50 mg** tablets for breakthrough/severe pain (e.g., pre-therapy, severe nighttime pain), used sparingly at the lowest effective dose.",
+  "rationale": "Meperidine 50 mg PRN severe pain used sparingly documented."
+ },
+ {
+  "fact_id": "f12",
+  "status": "present",
+  "note_evidence": "Counseled patient on risks in older adults: drowsiness, cognitive fogginess, unsteadiness, and fall risk. Nursing to monitor closely after each dose.",
+  "rationale": "Opioid risk counseling and monitoring documented."
+ },
+ {
+  "fact_id": "f13",
+  "status": "present",
+  "note_evidence": "Lives alone. No family support nearby; sister died two winters ago. A neighbor assists with taking out bins.",
+  "rationale": "Isolation, sister's death, neighbor help documented."
+ },
+ {
+  "fact_id": "f14",
+  "status": "present",
+  "note_evidence": "Denies any current fear of the former spouse or any other person; states he has been out of her life for years and there is no current safety concern.",
+  "rationale": "Safety screen negative for current threat documented."
+ },
+ {
+  "fact_id": "f15",
+  "status": "present",
+  "note_evidence": "Reports reduced intake over years due to poor dentition and cooking for one; diet often limited to toast and tea.",
+  "rationale": "Reduced intake due to dentition and cooking for one documented."
+ },
+ {
+  "fact_id": "f16",
+  "status": "present",
+  "note_evidence": "**Social work consult** for: (1) discharge support planning, and (2) addressing social isolation \u2014 community programs/senior center resources.",
+  "rationale": "Social work referral for home support and community engagement documented."
+ },
+ {
+  "fact_id": "f17",
+  "status": "present",
+  "note_evidence": "**Dietitian consult:** soft/manageable textures with adequate nourishment; emphasis on protein for strength and calcium for bone health; balanced for prediabetes and hyperlipidemia.",
+  "rationale": "Dietitian referral with specified diet documented."
+ },
+ {
+  "fact_id": "f18",
+  "status": "present",
+  "note_evidence": "**Physical therapy:** standing, gait training, lower extremity strengthening.",
+  "rationale": "PT ordered for standing, walking, strengthening."
+ },
+ {
+  "fact_id": "f19",
+  "status": "present",
+  "note_evidence": "**Occupational therapy:** dressing, safe bathing, kitchen/ADL tasks.",
+  "rationale": "OT ordered for ADLs documented."
+ },
+ {
+  "fact_id": "f20",
+  "status": "partial",
+  "note_evidence": "Full history and physical examination to be completed at time of admission (as stated during visit).",
+  "rationale": "History taken but full H&P/physical exam stated as still to be completed."
+ },
+ {
+  "fact_id": "f21",
+  "status": "present",
+  "note_evidence": "Complete admission assessment.",
+  "rationale": "Nursing admission assessment documented in plan."
+ },
+ {
+  "fact_id": "f22",
+  "status": "present",
+  "note_evidence": "Team to develop individualized plan of care.",
+  "rationale": "Individualized plan of care documented."
+ },
+ {
+  "fact_id": "f23",
+  "status": "present",
+  "note_evidence": "Every-shift monitoring of pain, blood pressure, skin, and medications.",
+  "rationale": "Every-shift monitoring of specified parameters documented."
+ },
+ {
+  "fact_id": "f24",
+  "status": "present",
+  "note_evidence": "Call button before every stand, at all times including overnight. Nursing fall-risk precautions given osteoporosis.",
+  "rationale": "Fall precautions and call button counseling due to osteoporosis documented."
+ },
+ {
+  "fact_id": "f25",
+  "status": "present",
+  "note_evidence": "**Pre-discharge assessment** required prior to discharge: ability to stand/walk, manage medications and meals, and confirmation of adequate home support.",
+  "rationale": "Pre-discharge assessment planned with listed components."
+ },
+ {
+  "fact_id": "f26",
+  "status": "present",
+  "note_evidence": "Anticipated length of stay approximately two weeks, dependent on strength recovery.",
+  "rationale": "~2 week LOS documented."
+ },
+ {
+  "fact_id": "f27",
+  "status": "present",
+  "note_evidence": "Patient instructed to report any undesirable cognitive/sedating effects; regimen will be adjusted as needed.",
+  "rationale": "Counseled to report intolerance with regimen adjustment documented."
+ },
+ {
+  "fact_id": "f28",
+  "status": "present",
+  "note_evidence": "following approximately one week of hospitalization... at the time of hospital discharge",
+  "rationale": "Transfer/discharge from hospital documented."
+ },
+ {
+  "fact_id": "f29",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "Note states H&P to be completed later; no finalized H&P note documented."
+ }
+]

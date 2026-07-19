@@ -1,0 +1,26 @@
+[
+ {
+  "fact_id": "f38",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Med reconciliation is standard for a visit administering multiple vaccines and confirming ongoing cetirizine/EpiPen use, and its documentation supports safe prescribing."
+ },
+ {
+  "fact_id": "f39",
+  "expected": true,
+  "severity": "safety_critical",
+  "why_it_matters": "A creatinine of 1.32 mg/dL is elevated for a 22-year-old and is an actionable abnormal result with direct bearing on NSAID avoidance and diabetes-related renal risk, so labeling it 'normal' could mask early kidney dysfunction."
+ },
+ {
+  "fact_id": "f40",
+  "expected": false,
+  "severity": "minor",
+  "why_it_matters": "The patient has no pain complaint, so a minimal pain score is a non-pertinent incidental finding for this visit."
+ },
+ {
+  "fact_id": "f41",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Respiratory rate completes the vital signs set but is normal and non-contributory given clear lungs and no respiratory complaint."
+ }
+]

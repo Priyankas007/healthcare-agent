@@ -1,0 +1,200 @@
+[
+ {
+  "fact_id": "f1",
+  "status": "present",
+  "note_evidence": "Routine comprehensive physical exam (patient overdue, encouraged by brother)... presents for a routine health maintenance visit after a gap of approximately two years",
+  "rationale": "Preventive visit after ~2 years, encouraged by brother, with labs documented."
+ },
+ {
+  "fact_id": "f2",
+  "status": "present",
+  "note_evidence": "No acute complaints... He reports feeling well overall with no specific complaints.",
+  "rationale": "Note states no complaints."
+ },
+ {
+  "fact_id": "f3",
+  "status": "present",
+  "note_evidence": "Reports lifelong difficulty sleeping.",
+  "rationale": "Lifelong insomnia documented."
+ },
+ {
+  "fact_id": "f4",
+  "status": "present",
+  "note_evidence": "Takes over-the-counter diphenhydramine 25 mg most nights to fall asleep. Notes morning grogginess relieved by coffee.",
+  "rationale": "Grogginess with diphenhydramine, relieved by coffee documented."
+ },
+ {
+  "fact_id": "f5",
+  "status": "present",
+  "note_evidence": "Diphenhydramine (Benadryl) 25 mg PO most nights for sleep... Reduce diphenhydramine to \"bad nights only.\"",
+  "rationale": "Drug, dose, route, frequency, and reduction plan present."
+ },
+ {
+  "fact_id": "f6",
+  "status": "present",
+  "note_evidence": "Implement sleep hygiene\u2014consistent bedtime, screens off, no caffeine after noon, avoid using work chair as a bed.",
+  "rationale": "Sleep hygiene counseling documented."
+ },
+ {
+  "fact_id": "f7",
+  "status": "present",
+  "note_evidence": "Alcohol: 2 beers, ~2 nights/week (AUDIT score 2, low risk).",
+  "rationale": "Alcohol use, score 2, low risk documented."
+ },
+ {
+  "fact_id": "f8",
+  "status": "present",
+  "note_evidence": "Tobacco: Quit at age 20; >30 years smoke-free.",
+  "rationale": "Former smoker quit at 20 documented."
+ },
+ {
+  "fact_id": "f9",
+  "status": "present",
+  "note_evidence": "Depression screen (PHQ): 0",
+  "rationale": "PHQ score 0 negative documented."
+ },
+ {
+  "fact_id": "f10",
+  "status": "present",
+  "note_evidence": "Anxiety screen (GAD): 2",
+  "rationale": "GAD score 2 documented."
+ },
+ {
+  "fact_id": "f11",
+  "status": "present",
+  "note_evidence": "Home safety screen: negative",
+  "rationale": "Negative safety screen entails feeling safe at home."
+ },
+ {
+  "fact_id": "f12",
+  "status": "present",
+  "note_evidence": "Denies any pain anywhere today.",
+  "rationale": "No pain anywhere entails pain score 0."
+ },
+ {
+  "fact_id": "f13",
+  "status": "present",
+  "note_evidence": "Social isolation. Identified as a health risk... Lives with his brother; otherwise keeps to himself... Acknowledges occasional loneliness",
+  "rationale": "Social isolation risk, brother, loneliness documented."
+ },
+ {
+  "fact_id": "f14",
+  "status": "present",
+  "note_evidence": "Encouraged at least one regular weekly social activity (e.g., game nights with brother, which patient agreed to count).",
+  "rationale": "Weekly social activity counseling documented."
+ },
+ {
+  "fact_id": "f15",
+  "status": "present",
+  "note_evidence": "Lives with brother... Works long hours from a home office as a dispatcher (sedentary).",
+  "rationale": "Lives with brother, full-time dispatcher home office documented."
+ },
+ {
+  "fact_id": "f16",
+  "status": "partial",
+  "note_evidence": "Reports self-imposed isolation, in part related to a past record.",
+  "rationale": "Past record noted but not the specific >2 nights jail/PRAPARE detail."
+ },
+ {
+  "fact_id": "f17",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "Housing, insurance, and income not documented."
+ },
+ {
+  "fact_id": "f18",
+  "status": "present",
+  "note_evidence": "Oral: Lower gingiva inflamed\u2014red, puffy, with bleeding on light touch... Gingivitis.",
+  "rationale": "Gingivitis with inflammation and bleeding documented."
+ },
+ {
+  "fact_id": "f19",
+  "status": "present",
+  "note_evidence": "Reports gums bleed \"a little\" with brushing... Last dental visit approximately 10 years ago or more.",
+  "rationale": "Gum bleeding with brushing and last dental visit documented."
+ },
+ {
+  "fact_id": "f20",
+  "status": "present",
+  "note_evidence": "Referral placed today for evaluation and cleaning of gingivitis.",
+  "rationale": "Dental referral for gingivitis documented."
+ },
+ {
+  "fact_id": "f21",
+  "status": "present",
+  "note_evidence": "Reassured that findings are early-stage and reversible; discussed known association between gum inflammation and cardiovascular health.",
+  "rationale": "Counseling on reversibility and oral-cardiac link documented."
+ },
+ {
+  "fact_id": "f22",
+  "status": "present",
+  "note_evidence": "Cardiovascular: Regular rate and rhythm; no lower extremity edema. Pulmonary: Lungs clear. Abdomen: Soft.",
+  "rationale": "Normal cardiac, pulmonary, abdominal, extremity exam documented."
+ },
+ {
+  "fact_id": "f23",
+  "status": "present",
+  "note_evidence": "Blood pressure: 143/75 mmHg... Elevated blood pressure (single reading 143/75).",
+  "rationale": "Elevated BP 143/75 documented."
+ },
+ {
+  "fact_id": "f24",
+  "status": "present",
+  "note_evidence": "Home BP monitoring (pharmacy cuff) morning and evening for 2 weeks with a written log. Recheck in office at follow-up visit.",
+  "rationale": "Home BP twice daily 2 weeks with recheck documented."
+ },
+ {
+  "fact_id": "f25",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "Heart rate and respiratory rate not documented."
+ },
+ {
+  "fact_id": "f26",
+  "status": "present",
+  "note_evidence": "Total cholesterol: 115 mg/dL, LDL: 30 mg/dL, HDL: 56 mg/dL, Triglycerides: 142 mg/dL",
+  "rationale": "Lipid panel values documented."
+ },
+ {
+  "fact_id": "f27",
+  "status": "present",
+  "note_evidence": "Hemoglobin: 17.4 g/dL, Platelets: 318, WBC: 7.8",
+  "rationale": "CBC values documented."
+ },
+ {
+  "fact_id": "f28",
+  "status": "present",
+  "note_evidence": "Weight: 98 kg, BMI: ~30... Overweight/obesity, BMI ~30.",
+  "rationale": "BMI 30, weight, obesity documented; height omitted but BMI conveyed."
+ },
+ {
+  "fact_id": "f29",
+  "status": "present",
+  "note_evidence": "Minimal physical activity; largely sedentary throughout workday.",
+  "rationale": "Sedentary lifestyle documented."
+ },
+ {
+  "fact_id": "f30",
+  "status": "present",
+  "note_evidence": "Begin 30 minutes of walking, 5 days/week, after shift (reservoir loop suggested), which also addresses BP, sleep, and social contact.",
+  "rationale": "30-min walk 5 days/week reservoir loop counseling documented."
+ },
+ {
+  "fact_id": "f31",
+  "status": "partial",
+  "note_evidence": "Influenza vaccine administered today by nursing.",
+  "rationale": "Flu vaccine administered documented but not the split-virus/trivalent/PF specifics."
+ },
+ {
+  "fact_id": "f32",
+  "status": "present",
+  "note_evidence": "Return in a few weeks with home BP log for recheck.",
+  "rationale": "BP recheck in a few weeks documented."
+ },
+ {
+  "fact_id": "f33",
+  "status": "partial",
+  "note_evidence": "Screening Questionnaires: Depression screen (PHQ): 0... Home safety screen: negative... AUDIT (alcohol): 2",
+  "rationale": "Multiple social/health screens done but no explicit PRAPARE/social needs assessment completion stated."
+ }
+]

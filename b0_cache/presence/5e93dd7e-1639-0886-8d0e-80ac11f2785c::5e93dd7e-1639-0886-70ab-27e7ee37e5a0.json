@@ -1,0 +1,194 @@
+[
+ {
+  "fact_id": "f1",
+  "status": "present",
+  "note_evidence": "the past couple of months have been difficult, with blood sugars running high (previously described to her as hyperglycemia)",
+  "rationale": "Hyperglycemia over couple of months documented."
+ },
+ {
+  "fact_id": "f2",
+  "status": "present",
+  "note_evidence": "Polydipsia (\"thirsty all the time\")",
+  "rationale": "Excessive thirst documented."
+ },
+ {
+  "fact_id": "f3",
+  "status": "present",
+  "note_evidence": "Fatigue and mental fogginess",
+  "rationale": "Both documented."
+ },
+ {
+  "fact_id": "f4",
+  "status": "present",
+  "note_evidence": "Intermittent blurry vision, worse in the afternoons, interfering with reading",
+  "rationale": "Blurred vision worse afternoons documented."
+ },
+ {
+  "fact_id": "f5",
+  "status": "present",
+  "note_evidence": "Bilateral hand and foot paresthesias (\"pins and needles\"), present for a few months, off and on, worse at night and worsening recently",
+  "rationale": "Matches symptom, timing, duration, worsening."
+ },
+ {
+  "fact_id": "f6",
+  "status": "present",
+  "note_evidence": "She denies falls",
+  "rationale": "Falls denied."
+ },
+ {
+  "fact_id": "f7",
+  "status": "present",
+  "note_evidence": "denies falls, foot sores, burns, cuts, or non-healing wounds",
+  "rationale": "Foot wounds denied."
+ },
+ {
+  "fact_id": "f8",
+  "status": "present",
+  "note_evidence": "Saw ophthalmology 2 weeks ago with dilated exam (tropicamide drops)",
+  "rationale": "All slots matched."
+ },
+ {
+  "fact_id": "f9",
+  "status": "present",
+  "note_evidence": "Continue metformin ER 500 mg daily; no medication change at this time. Administer metformin at a consistent time each day, paired with meals",
+  "rationale": "Drug, dose, freq, unchanged, with food documented."
+ },
+ {
+  "fact_id": "f10",
+  "status": "present",
+  "note_evidence": "medication and meal routines have broken down over the fall due to stress. Meals have been irregular",
+  "rationale": "Irregular meals and non-adherence with stress documented."
+ },
+ {
+  "fact_id": "f11",
+  "status": "present",
+  "note_evidence": "Lives alone.",
+  "rationale": "Explicitly stated."
+ },
+ {
+  "fact_id": "f12",
+  "status": "present",
+  "note_evidence": "Financial stress after reducing to part-time work and then stopping work.",
+  "rationale": "Financial hardship documented."
+ },
+ {
+  "fact_id": "f13",
+  "status": "present",
+  "note_evidence": "Sister (her primary support) passed away two years ago; describes significant social isolation and loneliness.",
+  "rationale": "Bereavement and isolation documented."
+ },
+ {
+  "fact_id": "f14",
+  "status": "present",
+  "note_evidence": "overwhelmed by managing her diabetes, appointments, and daily life, and \"sort of stopped managing it.\"",
+  "rationale": "Difficulty coping leading to disengagement documented."
+ },
+ {
+  "fact_id": "f15",
+  "status": "partial",
+  "note_evidence": "No vital signs, physical exam findings, or laboratory/point-of-care results were documented during this encounter.",
+  "rationale": "History taken but physical exam explicitly not documented."
+ },
+ {
+  "fact_id": "f16",
+  "status": "present",
+  "note_evidence": "Skilled nursing/rehabilitation unit \u2014 admission day",
+  "rationale": "Admission assessment completed via note."
+ },
+ {
+  "fact_id": "f17",
+  "status": "present",
+  "note_evidence": "safe discharge home with an individualized, sustainable plan",
+  "rationale": "Individualized plan of care documented."
+ },
+ {
+  "fact_id": "f18",
+  "status": "present",
+  "note_evidence": "Daily nursing assessments. ... Check blood glucose before meals. ... Administer metformin at a consistent time each day, paired with meals",
+  "rationale": "Daily nursing, pre-meal glucose, med with meals all documented."
+ },
+ {
+  "fact_id": "f19",
+  "status": "present",
+  "note_evidence": "Daily foot checks.",
+  "rationale": "Daily foot checks documented."
+ },
+ {
+  "fact_id": "f20",
+  "status": "present",
+  "note_evidence": "Dietitian consult to build a sustainable, home-transferable meal plan.",
+  "rationale": "Dietitian consult documented."
+ },
+ {
+  "fact_id": "f21",
+  "status": "present",
+  "note_evidence": "Occupational therapy several times weekly \u2014 kitchen routines, medication organization, energy pacing",
+  "rationale": "OT frequency and focus documented."
+ },
+ {
+  "fact_id": "f22",
+  "status": "present",
+  "note_evidence": "Physical therapy a couple of times weekly \u2014 strength and balance.",
+  "rationale": "PT for strength and balance documented."
+ },
+ {
+  "fact_id": "f23",
+  "status": "present",
+  "note_evidence": "Speech-language therapy a couple of visits \u2014 baseline swallow screen and cognitive strategies (memory aids, checklists)",
+  "rationale": "SLT swallow and cognitive strategies documented."
+ },
+ {
+  "fact_id": "f24",
+  "status": "present",
+  "note_evidence": "Social work involvement for psychosocial support and discharge planning.",
+  "rationale": "Social work involvement documented."
+ },
+ {
+  "fact_id": "f25",
+  "status": "present",
+  "note_evidence": "Pharmacist involvement.",
+  "rationale": "Pharmacist documented."
+ },
+ {
+  "fact_id": "f26",
+  "status": "present",
+  "note_evidence": "Maintain scheduled ophthalmology follow-up.",
+  "rationale": "Ophthalmology follow-up documented."
+ },
+ {
+  "fact_id": "f27",
+  "status": "present",
+  "note_evidence": "Comprehensive pre-discharge assessment planned to evaluate ability to manage medications, meals, and stairs, and to determine home support needs.",
+  "rationale": "Pre-discharge assessment documented."
+ },
+ {
+  "fact_id": "f28",
+  "status": "present",
+  "note_evidence": "Anticipated length of stay approximately a few weeks, pending steady glycemic control and improved strength.",
+  "rationale": "Estimated stay documented."
+ },
+ {
+  "fact_id": "f29",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "This is admission day; discharge not completed."
+ },
+ {
+  "fact_id": "f30",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "No counseling on symptom prognosis with glycemic control documented."
+ },
+ {
+  "fact_id": "f31",
+  "status": "present",
+  "note_evidence": "Attending rounds tomorrow morning. ... Full nursing check-in this afternoon.",
+  "rationale": "Physician rounds next morning and nursing check-in this afternoon documented."
+ },
+ {
+  "fact_id": "f32",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "No explicit adjustment counseling or reframing of stay documented."
+ }
+]

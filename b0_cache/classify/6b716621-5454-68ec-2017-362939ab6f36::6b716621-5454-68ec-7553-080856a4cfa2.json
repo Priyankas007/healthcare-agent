@@ -1,0 +1,14 @@
+[
+ {
+  "fact_id": "f9",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Past-year food insecurity is an actionable social risk that contradicts the note's 'finances stable, no concerns' framing and warrants resource referral or further screening."
+ },
+ {
+  "fact_id": "f29",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Documenting that the social care needs assessment was completed supports note completeness and screening tracking but does not itself alter management."
+ }
+]

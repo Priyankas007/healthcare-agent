@@ -1,0 +1,242 @@
+[
+ {
+  "fact_id": "f1",
+  "status": "present",
+  "note_evidence": "presenting for a general examination, reporting no medical care since college",
+  "rationale": "General exam and no care since college documented."
+ },
+ {
+  "fact_id": "f2",
+  "status": "present",
+  "note_evidence": "Chronic, recurrent low back pain for several years, originally onset during junior year of college after a day of heavy lifting",
+  "rationale": "Chronicity, duration, and lifting onset stated."
+ },
+ {
+  "fact_id": "f3",
+  "status": "present",
+  "note_evidence": "Describes a dull band across the very low back, currently 4/10",
+  "rationale": "Quality, location, and severity match."
+ },
+ {
+  "fact_id": "f4",
+  "status": "present",
+  "note_evidence": "Aggravated by prolonged sitting (works in software QA, up to 10-hour desk days near release deadlines)",
+  "rationale": "Aggravating factor with 10-hour desk days documented."
+ },
+ {
+  "fact_id": "f5",
+  "status": "present",
+  "note_evidence": "Relieved by walking and hot showers; previously used ibuprofen with good effect",
+  "rationale": "All three relieving factors documented."
+ },
+ {
+  "fact_id": "f6",
+  "status": "present",
+  "note_evidence": "Denies radiation to the legs, numbness, tingling, or weakness",
+  "rationale": "Radicular symptoms negative."
+ },
+ {
+  "fact_id": "f7",
+  "status": "present",
+  "note_evidence": "Denies bowel/bladder dysfunction, fevers, night pain, and weight loss",
+  "rationale": "Red flags negative."
+ },
+ {
+  "fact_id": "f8",
+  "status": "present",
+  "note_evidence": "Appendectomy at age 15 (only surgery)",
+  "rationale": "Surgical history matches."
+ },
+ {
+  "fact_id": "f9",
+  "status": "present",
+  "note_evidence": "Medications: None.",
+  "rationale": "No current medications documented."
+ },
+ {
+  "fact_id": "f10",
+  "status": "present",
+  "note_evidence": "Allergies: None reported.",
+  "rationale": "No known allergies documented."
+ },
+ {
+  "fact_id": "f11",
+  "status": "present",
+  "note_evidence": "Tobacco: Never smoked or vaped.",
+  "rationale": "Never smoked/vaped documented."
+ },
+ {
+  "fact_id": "f12",
+  "status": "present",
+  "note_evidence": "Alcohol: Occasional (a beer on weekends).",
+  "rationale": "Occasional weekend beer documented."
+ },
+ {
+  "fact_id": "f13",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "No PHQ-2 screen or score mentioned."
+ },
+ {
+  "fact_id": "f14",
+  "status": "present",
+  "note_evidence": "PHQ-9: 17 (moderately severe range)",
+  "rationale": "PHQ-9 score and severity documented."
+ },
+ {
+  "fact_id": "f15",
+  "status": "present",
+  "note_evidence": "low interest/pleasure, depressed mood (\"gray filter\"), difficulty falling asleep nearly nightly, fatigue nearly daily, poor appetite (skips lunch >half the time), feelings of failure several days, difficulty concentrating >half the days, and restlessness several days",
+  "rationale": "All listed depressive symptoms documented."
+ },
+ {
+  "fact_id": "f16",
+  "status": "present",
+  "note_evidence": "Explicitly denies any thoughts of self-harm or being better off dead.",
+  "rationale": "SI/self-harm denied."
+ },
+ {
+  "fact_id": "f17",
+  "status": "present",
+  "note_evidence": "approximately 4 months (since winter)... Attributes to work crunch, girlfriend relocating across country for grad school in January, and evening isolation",
+  "rationale": "Onset and context documented."
+ },
+ {
+  "fact_id": "f18",
+  "status": "present",
+  "note_evidence": "Intimate partner violence screen: negative (0)",
+  "rationale": "Abuse screen negative with score 0 documented."
+ },
+ {
+  "fact_id": "f19",
+  "status": "present",
+  "note_evidence": "Drug use screen: 1/10 (low)... Cannabis gummy twice this winter for sleep/back pain",
+  "rationale": "Drug screen score and cannabis use documented."
+ },
+ {
+  "fact_id": "f20",
+  "status": "present",
+  "note_evidence": "Bilateral low back paraspinal muscle tightness. No spinal tenderness. Straight leg raise negative bilaterally... Strength and reflexes normal.",
+  "rationale": "All exam findings documented."
+ },
+ {
+  "fact_id": "f21",
+  "status": "present",
+  "note_evidence": "BP: 136/94... To be rechecked, not treated today.",
+  "rationale": "Elevated BP and recheck plan documented."
+ },
+ {
+  "fact_id": "f22",
+  "status": "present",
+  "note_evidence": "Father with hypertension.",
+  "rationale": "Family history documented."
+ },
+ {
+  "fact_id": "f23",
+  "status": "present",
+  "note_evidence": "HR: 89",
+  "rationale": "Heart rate documented."
+ },
+ {
+  "fact_id": "f24",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "No respiratory rate in vitals."
+ },
+ {
+  "fact_id": "f25",
+  "status": "partial",
+  "note_evidence": "Weight: 77 kg\n- BMI: 22.5",
+  "rationale": "Weight and BMI present but height not documented."
+ },
+ {
+  "fact_id": "f26",
+  "status": "present",
+  "note_evidence": "Gums red and puffy along the gumline; reports bleeding with flossing",
+  "rationale": "Gingivitis findings documented."
+ },
+ {
+  "fact_id": "f27",
+  "status": "partial",
+  "note_evidence": "Ibuprofen 400 mg PO with food as needed for flares (avoid empty stomach)",
+  "rationale": "Drug, dose, route, PRN flares present but every 4-6 hour interval not stated."
+ },
+ {
+  "fact_id": "f28",
+  "status": "present",
+  "note_evidence": "stand/move at least 5 minutes every hour, walk at lunch, use proper lifting mechanics (hinge at hips, keep load close)",
+  "rationale": "Back care counseling documented."
+ },
+ {
+  "fact_id": "f29",
+  "status": "present",
+  "note_evidence": "fixed wake time, morning daylight exposure, daily movement, scheduled calls with girlfriend",
+  "rationale": "Depression self-management counseling documented."
+ },
+ {
+  "fact_id": "f30",
+  "status": "present",
+  "note_evidence": "Provided list of insurance-compatible therapists, including evening telehealth options; patient to review.",
+  "rationale": "Counseling referral list documented."
+ },
+ {
+  "fact_id": "f31",
+  "status": "present",
+  "note_evidence": "Dental referral placed today for cleaning; encouraged daily flossing.",
+  "rationale": "Dental referral for gingivitis documented."
+ },
+ {
+  "fact_id": "f32",
+  "status": "present",
+  "note_evidence": "reversible with dental care and flossing",
+  "rationale": "Gingivitis counseling on reversibility documented."
+ },
+ {
+  "fact_id": "f33",
+  "status": "present",
+  "note_evidence": "Return in 4 weeks for recheck of back pain, blood pressure, and mood score.",
+  "rationale": "4-week follow-up with purposes documented."
+ },
+ {
+  "fact_id": "f34",
+  "status": "present",
+  "note_evidence": "instructed to call same-day or use crisis line if mood worsens or any thoughts of self-harm arise",
+  "rationale": "Crisis safety counseling documented."
+ },
+ {
+  "fact_id": "f35",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "No mention of medication reconciliation being completed."
+ },
+ {
+  "fact_id": "f36",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "No PRAPARE items like income, insurance, housing count documented."
+ },
+ {
+  "fact_id": "f37",
+  "status": "present",
+  "note_evidence": "work crunch... up to 10-hour desk days near release deadlines",
+  "rationale": "Work stress from release crunch documented."
+ },
+ {
+  "fact_id": "f38",
+  "status": "present",
+  "note_evidence": "PHQ-9: 17 (moderately severe range)",
+  "rationale": "Depression screening performed."
+ },
+ {
+  "fact_id": "f39",
+  "status": "present",
+  "note_evidence": "Intimate partner violence screen: negative (0)",
+  "rationale": "Domestic abuse screening performed."
+ },
+ {
+  "fact_id": "f40",
+  "status": "present",
+  "note_evidence": "Drug use screen: 1/10 (low)",
+  "rationale": "Substance use screening performed."
+ }
+]

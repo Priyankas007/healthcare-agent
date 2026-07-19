@@ -1,0 +1,8 @@
+[
+ {
+  "fact_id": "f29",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Any medication requested or prescribed during the encounter must be documented for medication reconciliation, allergy/interaction checking, and continuity of care, and its omission leaves the treatment record incomplete."
+ }
+]

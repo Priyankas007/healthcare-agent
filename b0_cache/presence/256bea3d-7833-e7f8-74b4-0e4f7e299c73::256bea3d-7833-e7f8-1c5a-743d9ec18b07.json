@@ -1,0 +1,290 @@
+[
+ {
+  "fact_id": "f1",
+  "status": "present",
+  "note_evidence": "presents for an overdue wellness visit prompted by a clinic reminder",
+  "rationale": "Overdue checkup with medication review prompted by clinic reminder documented."
+ },
+ {
+  "fact_id": "f2",
+  "status": "present",
+  "note_evidence": "feeling \"wound tight.\"... poor sleep with a racing mind, primarily focused on money worries",
+  "rationale": "Tension, poor sleep, racing thoughts about finances documented."
+ },
+ {
+  "fact_id": "f3",
+  "status": "present",
+  "note_evidence": "poor sleep with a racing mind, primarily focused on money worries",
+  "rationale": "Sleep difficulty with money-focused racing mind documented."
+ },
+ {
+  "fact_id": "f4",
+  "status": "present",
+  "note_evidence": "intermittent \"fluttery\" sensation in her chest that she attributes to worry rather than palpitations. The sensation resolves once she falls asleep",
+  "rationale": "Worry-related fluttery chest resolving with sleep documented."
+ },
+ {
+  "fact_id": "f5",
+  "status": "present",
+  "note_evidence": "denies exertional chest pain, shortness of breath, syncope, or swelling",
+  "rationale": "All four denials documented."
+ },
+ {
+  "fact_id": "f6",
+  "status": "present",
+  "note_evidence": "Continue hydrocortisone cream... Hydrocortisone cream \u2014 for skin flares",
+  "rationale": "Continued hydrocortisone for skin flares documented."
+ },
+ {
+  "fact_id": "f7",
+  "status": "present",
+  "note_evidence": "Loratadine \u2014 most days in spring",
+  "rationale": "Continued loratadine most days in spring documented."
+ },
+ {
+  "fact_id": "f8",
+  "status": "present",
+  "note_evidence": "Epinephrine auto-injector \u2014 carried, never used",
+  "rationale": "Continued epinephrine auto-injector never used documented."
+ },
+ {
+  "fact_id": "f9",
+  "status": "present",
+  "note_evidence": "Animal dander (confirmed)... History of sneezing and hives",
+  "rationale": "Animal dander allergy with sneezing and hives documented."
+ },
+ {
+  "fact_id": "f10",
+  "status": "present",
+  "note_evidence": "Aspirin (documented/confirmed)",
+  "rationale": "Aspirin allergy confirmed documented."
+ },
+ {
+  "fact_id": "f11",
+  "status": "partial",
+  "note_evidence": "never required epinephrine auto-injector",
+  "rationale": "Never used EpiPen documented but no recent allergic reactions not explicitly stated."
+ },
+ {
+  "fact_id": "f12",
+  "status": "present",
+  "note_evidence": "History of recurrent urinary tract infections; currently asymptomatic (denies dysuria, urgency, hematuria)",
+  "rationale": "Recurrent UTI history with denial of urinary symptoms documented."
+ },
+ {
+  "fact_id": "f13",
+  "status": "present",
+  "note_evidence": "Periods \"regular-ish.\" Status post tubal ligation; no chance of pregnancy. History of one prior pregnancy loss.",
+  "rationale": "Regular periods, tubal ligation, pregnancy loss documented."
+ },
+ {
+  "fact_id": "f14",
+  "status": "present",
+  "note_evidence": "Anxiety screen: score 7 (mild range)",
+  "rationale": "Anxiety screen score 7 mild documented."
+ },
+ {
+  "fact_id": "f15",
+  "status": "present",
+  "note_evidence": "Depression screen: score 0 \u2014 denies feeling sad/down",
+  "rationale": "Depression screen 0, not depressed documented."
+ },
+ {
+  "fact_id": "f16",
+  "status": "present",
+  "note_evidence": "IPV safety screen: positive on 2 items (humiliation, fear)",
+  "rationale": "Positive IPV screen score 2 on humiliation and fear documented."
+ },
+ {
+  "fact_id": "f17",
+  "status": "present",
+  "note_evidence": "emotional/verbal abuse by her partner, particularly when he has been drinking... a wall has been punched (~twice). She reports no physical violence toward herself or the children",
+  "rationale": "Emotional/verbal IPV, wall punched twice, no physical violence documented."
+ },
+ {
+  "fact_id": "f18",
+  "status": "present",
+  "note_evidence": "taking the children to the bedroom when he becomes loud and notices her heart pounding with fear",
+  "rationale": "Fear, heart pounding, taking children to bedroom documented."
+ },
+ {
+  "fact_id": "f19",
+  "status": "present",
+  "note_evidence": "she is not in immediate danger this week... no physical violence toward herself",
+  "rationale": "Denies immediate danger and physical contact documented."
+ },
+ {
+  "fact_id": "f20",
+  "status": "present",
+  "note_evidence": "Substance screen: score 2... Occasional marijuana use at night",
+  "rationale": "Substance screen score 2 with occasional nighttime cannabis documented."
+ },
+ {
+  "fact_id": "f21",
+  "status": "present",
+  "note_evidence": "Occasional marijuana use at night (obtained from her sister) to relax",
+  "rationale": "Occasional nighttime cannabis for relaxation documented."
+ },
+ {
+  "fact_id": "f22",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "No mention of tobacco/smoking status in note."
+ },
+ {
+  "fact_id": "f23",
+  "status": "present",
+  "note_evidence": "Lungs: Clear to auscultation... Heart: Regular rate and rhythm",
+  "rationale": "Clear lungs and regular heart documented."
+ },
+ {
+  "fact_id": "f24",
+  "status": "present",
+  "note_evidence": "BP: 108/77 mmHg",
+  "rationale": "Blood pressure documented."
+ },
+ {
+  "fact_id": "f25",
+  "status": "present",
+  "note_evidence": "Pulse: 67 bpm",
+  "rationale": "Heart rate 67 documented."
+ },
+ {
+  "fact_id": "f26",
+  "status": "present",
+  "note_evidence": "Weight: 91.4 kg",
+  "rationale": "Weight documented."
+ },
+ {
+  "fact_id": "f27",
+  "status": "partial",
+  "note_evidence": "BMI: just over 30",
+  "rationale": "BMI just over 30/obese documented but exact 30.57 value not stated."
+ },
+ {
+  "fact_id": "f28",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "Respiratory rate not documented."
+ },
+ {
+  "fact_id": "f29",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "Height not documented."
+ },
+ {
+  "fact_id": "f30",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "Pain score not documented."
+ },
+ {
+  "fact_id": "f31",
+  "status": "present",
+  "note_evidence": "Influenza vaccine administered today",
+  "rationale": "Influenza vaccine administered today documented."
+ },
+ {
+  "fact_id": "f32",
+  "status": "present",
+  "note_evidence": "Referral to community dental clinic (sliding scale / Medicaid)",
+  "rationale": "Dental clinic referral for overdue dental care documented."
+ },
+ {
+  "fact_id": "f33",
+  "status": "present",
+  "note_evidence": "Provided confidential domestic violence hotline number (written discreetly, per patient request)",
+  "rationale": "DV hotline provided written discreetly documented."
+ },
+ {
+  "fact_id": "f34",
+  "status": "present",
+  "note_evidence": "Documented disclosure in confidential chart with patient's permission to facilitate continuity of care",
+  "rationale": "IPV documented with permission for care coordination documented."
+ },
+ {
+  "fact_id": "f35",
+  "status": "present",
+  "note_evidence": "Counseled: never use before driving; keep secured away from children",
+  "rationale": "Cannabis safety counseling documented."
+ },
+ {
+  "fact_id": "f36",
+  "status": "present",
+  "note_evidence": "Encouraged walking as a free, accessible intervention for both anxiety and weight when time permits",
+  "rationale": "Walking counseling for anxiety and weight documented."
+ },
+ {
+  "fact_id": "f37",
+  "status": "present",
+  "note_evidence": "Follow-up visit in ~1 month to reassess anxiety and provide dedicated support",
+  "rationale": "One-month follow-up for anxiety documented."
+ },
+ {
+  "fact_id": "f38",
+  "status": "present",
+  "note_evidence": "Advised patient she may call or walk in any time the clinic is open, without appointment, if the situation escalates or fear increases",
+  "rationale": "Advised call/walk-in if situation worsens documented."
+ },
+ {
+  "fact_id": "f39",
+  "status": "present",
+  "note_evidence": "household of eight (patient, partner, two children, sister, and sister's three children; sister moved in after losing her apartment",
+  "rationale": "Household of 8 with sister doubling up documented."
+ },
+ {
+  "fact_id": "f40",
+  "status": "partial",
+  "note_evidence": "laid off from her diner job when businesses shut down, her partner's hours were cut, and unemployment benefits barely cover groceries",
+  "rationale": "Job loss and financial strain documented but specific income figure not stated."
+ },
+ {
+  "fact_id": "f41",
+  "status": "partial",
+  "note_evidence": "significant psychosocial stress related to financial strain",
+  "rationale": "High stress noted but PRAPARE 'very much' rating not explicitly documented."
+ },
+ {
+  "fact_id": "f42",
+  "status": "partial",
+  "note_evidence": "Referral to community dental clinic (sliding scale / Medicaid)",
+  "rationale": "Medicaid mentioned in referral context but not clearly stated as patient's insurance."
+ },
+ {
+  "fact_id": "f43",
+  "status": "partial",
+  "note_evidence": "Overdue dental care... Referral to community dental clinic (sliding scale / Medicaid)",
+  "rationale": "Overdue dental care and cost-based referral documented but cost prohibitive/years detail not explicit."
+ },
+ {
+  "fact_id": "f44",
+  "status": "present",
+  "note_evidence": "IPV safety screen: positive on 2 items",
+  "rationale": "Domestic abuse screening completed documented."
+ },
+ {
+  "fact_id": "f45",
+  "status": "present",
+  "note_evidence": "Anxiety, mild \u2014 score 7... Follow-up visit in ~1 month to reassess anxiety",
+  "rationale": "Anxiety assessment completed documented."
+ },
+ {
+  "fact_id": "f46",
+  "status": "present",
+  "note_evidence": "Substance screen: score 2... Marijuana use \u2014 occasional, low risk (screen score 2)",
+  "rationale": "Substance/drug abuse screening completed documented."
+ },
+ {
+  "fact_id": "f47",
+  "status": "present",
+  "note_evidence": "significant psychosocial stress related to financial strain... overcrowded housing... Overdue dental care",
+  "rationale": "Health and social care needs assessment documented."
+ },
+ {
+  "fact_id": "f48",
+  "status": "present",
+  "note_evidence": "Her sister is aware of the situation",
+  "rationale": "Social support with sister aware of abuse documented."
+ }
+]

@@ -1,0 +1,26 @@
+[
+ {
+  "fact_id": "f23",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "A physical exam is a standard component of an initial prenatal visit, and documenting its findings is needed for baseline completeness and to support the assessment."
+ },
+ {
+  "fact_id": "f24",
+  "expected": false,
+  "severity": "minor",
+  "why_it_matters": "At 9\u201310 weeks the uterus is typically not palpable above the symphysis, so fundal height measurement is not yet clinically meaningful and its omission is inconsequential."
+ },
+ {
+  "fact_id": "f25",
+  "expected": false,
+  "severity": "minor",
+  "why_it_matters": "Fetal Doppler is often unreliable this early and viability was already confirmed by ultrasound cardiac activity, so absence of Doppler documentation does not affect care."
+ },
+ {
+  "fact_id": "f45",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "The patient had significant fear about medication harm and nearly stopped opioids abruptly, so documenting reassurance that prior use has not doomed the pregnancy supports adherence to the safe taper plan and addresses her anxiety."
+ }
+]

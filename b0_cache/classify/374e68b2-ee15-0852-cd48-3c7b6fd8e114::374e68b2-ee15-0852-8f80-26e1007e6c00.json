@@ -1,0 +1,14 @@
+[
+ {
+  "fact_id": "f41",
+  "expected": false,
+  "severity": "minor",
+  "why_it_matters": "A normal incidental calcium adds no actionable information to this post-ICU follow-up and is not pertinent to any active problem."
+ },
+ {
+  "fact_id": "f42",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "This visit explicitly centers on a health/social needs assessment, so documenting the PRAPARE results\u2014including home safety, absence of partner fear, low stress, and housing insecurity\u2014completes the psychosocial evaluation and supports the referrals made."
+ }
+]

@@ -1,0 +1,26 @@
+[
+ {
+  "fact_id": "f22",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Tobacco status is a core element of a wellness/health-maintenance visit and affects cardiovascular risk assessment for her chest fluttering and preventive counseling."
+ },
+ {
+  "fact_id": "f28",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "A normal respiratory rate completes the vital-sign record and supports the reassuring cardiopulmonary assessment but is not independently actionable."
+ },
+ {
+  "fact_id": "f29",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Height documents the basis for the BMI/obesity diagnosis and completes the objective data."
+ },
+ {
+  "fact_id": "f30",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "A low pain score is a routine vital-sign element and confirms no acute pain concern at this visit."
+ }
+]

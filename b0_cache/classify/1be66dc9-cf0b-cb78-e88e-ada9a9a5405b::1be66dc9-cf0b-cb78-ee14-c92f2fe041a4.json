@@ -1,0 +1,14 @@
+[
+ {
+  "fact_id": "f28",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "Poor oral intake contradicts the documented polyphagia and directly affects diabetic medication/insulin dosing and hypoglycemia risk during the SNF stay."
+ },
+ {
+  "fact_id": "f42",
+  "expected": false,
+  "severity": "minor",
+  "why_it_matters": "A generic care-regime assessment is largely captured by the planned interdisciplinary care plan and adds little beyond documentation completeness."
+ }
+]

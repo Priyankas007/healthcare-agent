@@ -1,0 +1,26 @@
+[
+ {
+  "fact_id": "f26",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "BMI in the overweight range is a modifiable cardiovascular risk factor directly relevant to initiating hypertension treatment and lifestyle counseling."
+ },
+ {
+  "fact_id": "f27",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Heart rate and respiratory rate complete the vital sign set and provide baseline context, but these normal values do not change management at this visit."
+ },
+ {
+  "fact_id": "f28",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "The PRAPARE findings substantiate the documented housing/social stressors and justify the tenant-rights and housing-hotline interventions central to this visit."
+ },
+ {
+  "fact_id": "f29",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Documenting that a health and social care needs assessment was completed supports care-coordination and billing completeness but does not alter clinical decisions."
+ }
+]

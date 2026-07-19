@@ -1,0 +1,218 @@
+[
+ {
+  "fact_id": "f1",
+  "status": "present",
+  "note_evidence": "# Clinical Note \u2014 Annual Wellness Visit",
+  "rationale": "Note documents an annual comprehensive health examination."
+ },
+ {
+  "fact_id": "f2",
+  "status": "present",
+  "note_evidence": "reports feeling mostly well since her last visit",
+  "rationale": "Directly stated."
+ },
+ {
+  "fact_id": "f3",
+  "status": "partial",
+  "note_evidence": "Currently asymptomatic. Symptoms are worse in winter.",
+  "rationale": "Asymptomatic and winter worsening present, but summer/warmth relief not documented."
+ },
+ {
+  "fact_id": "f4",
+  "status": "present",
+  "note_evidence": "Uses naproxen 220 mg PRN, one tablet with breakfast, sometimes none for weeks",
+  "rationale": "Drug, dose, PRN with breakfast, food, and indication all documented."
+ },
+ {
+  "fact_id": "f5",
+  "status": "present",
+  "note_evidence": "Denies GI burning, black stools, or knee swelling",
+  "rationale": "All three denials documented."
+ },
+ {
+  "fact_id": "f6",
+  "status": "present",
+  "note_evidence": "Denies chest pain, shortness of breath, palpitations",
+  "rationale": "All three denials documented."
+ },
+ {
+  "fact_id": "f7",
+  "status": "present",
+  "note_evidence": "walking to and from the market (~15 minutes each way, uphill on return)",
+  "rationale": "Walking activity with duration and uphill return, active without limitation."
+ },
+ {
+  "fact_id": "f8",
+  "status": "present",
+  "note_evidence": "Denies dizziness, headaches, vision changes, numbness",
+  "rationale": "All four denials documented."
+ },
+ {
+  "fact_id": "f9",
+  "status": "present",
+  "note_evidence": "Sleeps well until ~5 a.m., then experiences ~20 minutes of worry ... before rising",
+  "rationale": "Early morning waking with worry ~20 min and good appetite documented."
+ },
+ {
+  "fact_id": "f10",
+  "status": "partial",
+  "note_evidence": "Denies anhedonia and depressed mood over the past two weeks",
+  "rationale": "Negative depression screen entailed but PHQ-2 name and score 0 not stated."
+ },
+ {
+  "fact_id": "f11",
+  "status": "present",
+  "note_evidence": "GAD-7 score reported as 5 (mild)",
+  "rationale": "Instrument, score, and mild interpretation documented."
+ },
+ {
+  "fact_id": "f12",
+  "status": "partial",
+  "note_evidence": "Denies any current abuse, intimidation, or coercion ... Reports feeling safe in her current household.",
+  "rationale": "Negative abuse screen and safety documented but HARK name/score 0 not stated."
+ },
+ {
+  "fact_id": "f13",
+  "status": "present",
+  "note_evidence": "prior history of an abusive first husband (\"another lifetime,\" no longer in her life)",
+  "rationale": "Past IPV with first husband, no current presence documented."
+ },
+ {
+  "fact_id": "f14",
+  "status": "present",
+  "note_evidence": "Former smoker; ~2 years as a teenager, quit ~50 years ago",
+  "rationale": "Ex-smoker, teenage use, quit ~50 years ago documented."
+ },
+ {
+  "fact_id": "f15",
+  "status": "partial",
+  "note_evidence": "Alcohol: A small cup of wine at Christmas ... drug screen negative",
+  "rationale": "Minimal alcohol and negative drug screen documented but DAST-10 name/score 0 not stated."
+ },
+ {
+  "fact_id": "f16",
+  "status": "present",
+  "note_evidence": "Medications (reconciled): - Naproxen 220 mg PO PRN with food ... OTC: Chamomile (manzanilla) tea",
+  "rationale": "Reconciliation completed with only naproxen and chamomile tea."
+ },
+ {
+  "fact_id": "f17",
+  "status": "present",
+  "note_evidence": "Elevated blood pressure \u2014 135/82; above optimal but not requiring pharmacotherapy",
+  "rationale": "Value, mild elevation, and no medication documented."
+ },
+ {
+  "fact_id": "f18",
+  "status": "present",
+  "note_evidence": "HR: 60 bpm, regular ... RR: 12",
+  "rationale": "Heart rate and respiratory rate documented."
+ },
+ {
+  "fact_id": "f19",
+  "status": "present",
+  "note_evidence": "Weight: 73.8 kg (down from prior 78 kg) ... BMI: 27.7",
+  "rationale": "Weight, trend, and BMI documented."
+ },
+ {
+  "fact_id": "f20",
+  "status": "present",
+  "note_evidence": "HbA1c: 6.11% (prediabetes, stable)",
+  "rationale": "Value and interpretation documented."
+ },
+ {
+  "fact_id": "f21",
+  "status": "present",
+  "note_evidence": "Fasting glucose: 79 mg/dL",
+  "rationale": "Glucose value 79 mg/dL documented."
+ },
+ {
+  "fact_id": "f22",
+  "status": "present",
+  "note_evidence": "Creatinine: 0.68 mg/dL",
+  "rationale": "Value documented with normal renal function implied."
+ },
+ {
+  "fact_id": "f23",
+  "status": "present",
+  "note_evidence": "Sodium: 138 | Potassium: 3.9",
+  "rationale": "Both values documented."
+ },
+ {
+  "fact_id": "f24",
+  "status": "present",
+  "note_evidence": "Total cholesterol: 168 | LDL: 87 | HDL: 59 | Triglycerides: 110 ... Excellent control",
+  "rationale": "All lipid values and good control documented."
+ },
+ {
+  "fact_id": "f25",
+  "status": "present",
+  "note_evidence": "Hemoglobin: 16.9 | Hematocrit: 47.6 ... Platelets: 351 | WBC: 7.4 ... Prior history of anemia \u2014 Resolved",
+  "rationale": "All CBC values and resolved anemia documented."
+ },
+ {
+  "fact_id": "f26",
+  "status": "present",
+  "note_evidence": "Gingiva puffy along the lower gumline with mild bleeding to touch. Consistent with gingivitis.",
+  "rationale": "Gingivitis with swelling and bleeding documented."
+ },
+ {
+  "fact_id": "f27",
+  "status": "present",
+  "note_evidence": "Referred to dentist for cleaning/evaluation",
+  "rationale": "Dental referral for cleaning documented."
+ },
+ {
+  "fact_id": "f28",
+  "status": "present",
+  "note_evidence": "Advised to brush twice daily with a soft brush and continue brushing despite mild bleeding, expected to improve within a couple of weeks",
+  "rationale": "Oral hygiene counseling documented."
+ },
+ {
+  "fact_id": "f29",
+  "status": "present",
+  "note_evidence": "Trivalent influenza vaccine administered today, left deltoid",
+  "rationale": "Trivalent influenza vaccine in left arm documented."
+ },
+ {
+  "fact_id": "f30",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "No handwashing/sleep infection-prevention counseling documented."
+ },
+ {
+  "fact_id": "f31",
+  "status": "partial",
+  "note_evidence": "primary daytime caregiver for her daughter and three grandchildren ... socially constricted life ... \"my world got small\"",
+  "rationale": "Caregiver role and social isolation documented but household size of 5 and contact frequency not stated."
+ },
+ {
+  "fact_id": "f32",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "Refugee status, language, education, employment, insurance, and housing not documented."
+ },
+ {
+  "fact_id": "f33",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "No 0/10 pain severity score documented."
+ },
+ {
+  "fact_id": "f34",
+  "status": "present",
+  "note_evidence": "Recheck HbA1c at next annual visit ... Continue market walks and portion-controlled diet (measured rice) ... Continue current dietary measures (oatmeal",
+  "rationale": "Annual follow-up and lifestyle measures documented."
+ },
+ {
+  "fact_id": "f35",
+  "status": "present",
+  "note_evidence": "counseled to report if worry becomes persistent, interferes with sleep beyond current pattern, or persists through the day",
+  "rationale": "Anxiety return precautions documented."
+ },
+ {
+  "fact_id": "f36",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "No PRAPARE stress finding or resolved status documented."
+ }
+]

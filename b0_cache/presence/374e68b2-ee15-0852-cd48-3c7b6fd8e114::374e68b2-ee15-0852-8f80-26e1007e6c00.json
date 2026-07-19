@@ -1,0 +1,254 @@
+[
+ {
+  "fact_id": "f1",
+  "status": "present",
+  "note_evidence": "recent complicated hospitalization involving sepsis, septic shock, ventilator-dependent respiratory failure with ARDS",
+  "rationale": "Note documents sepsis/septic shock with ARDS on ventilator, recovering post-discharge."
+ },
+ {
+  "fact_id": "f2",
+  "status": "present",
+  "note_evidence": "dyspnea on exertion with hills and stairs. He denies dyspnea at rest",
+  "rationale": "Exertional dyspnea with no rest dyspnea documented."
+ },
+ {
+  "fact_id": "f3",
+  "status": "present",
+  "note_evidence": "He walks daily (\"once around the block\") but notes reduced exercise tolerance",
+  "rationale": "Fatigue/reduced exercise tolerance while walking daily documented."
+ },
+ {
+  "fact_id": "f4",
+  "status": "present",
+  "note_evidence": "He denies fevers, chills, night sweats, or other signs of recurrent infection",
+  "rationale": "Infection symptom screen negative."
+ },
+ {
+  "fact_id": "f5",
+  "status": "present",
+  "note_evidence": "He denies dyspnea at rest, chest pain, and cough",
+  "rationale": "Denies chest pain and rest dyspnea."
+ },
+ {
+  "fact_id": "f6",
+  "status": "present",
+  "note_evidence": "He denies dyspnea at rest, chest pain, and cough",
+  "rationale": "Cough denied."
+ },
+ {
+  "fact_id": "f7",
+  "status": "present",
+  "note_evidence": "he denies dizziness or palpitations and reports his color returned in March per his wife",
+  "rationale": "Anemia symptom screen negative with color return in March."
+ },
+ {
+  "fact_id": "f8",
+  "status": "present",
+  "note_evidence": "Anemia (hospital-associated) \u2014 Asymptomatic, patient appears well; monitoring",
+  "rationale": "Anemia asymptomatic and being monitored."
+ },
+ {
+  "fact_id": "f9",
+  "status": "present",
+  "note_evidence": "Chronic low back discomfort rated 1/10, positional (worse with prolonged sitting)",
+  "rationale": "Low back pain 1/10 worse with prolonged sitting documented."
+ },
+ {
+  "fact_id": "f10",
+  "status": "present",
+  "note_evidence": "Lost his job in February (logistics)... following a four-month medical absence. First period of unemployment since age 16",
+  "rationale": "Unemployment since February after layoff following ICU absence documented."
+ },
+ {
+  "fact_id": "f11",
+  "status": "present",
+  "note_evidence": "Reports reduced social contact; former work colleagues no longer in touch",
+  "rationale": "Social isolation/limited contact documented."
+ },
+ {
+  "fact_id": "f12",
+  "status": "present",
+  "note_evidence": "three-bedroom home shared by six people, with outstanding unaddressed repairs",
+  "rationale": "Overcrowded home with unresolved repairs documented."
+ },
+ {
+  "fact_id": "f13",
+  "status": "partial",
+  "note_evidence": "finances are stable (spouse's income supports household)",
+  "rationale": "Income adequacy and spouse's support documented, but private insurance not mentioned."
+ },
+ {
+  "fact_id": "f14",
+  "status": "present",
+  "note_evidence": "Provided community resource sheet (employment center, tenant advocacy line)",
+  "rationale": "Resource sheet with employment center and tenant advocacy provided."
+ },
+ {
+  "fact_id": "f15",
+  "status": "present",
+  "note_evidence": "Documented housing strain and job loss as part of health/social needs assessment",
+  "rationale": "Health/social needs assessment completed."
+ },
+ {
+  "fact_id": "f16",
+  "status": "present",
+  "note_evidence": "Mood screen: 1/6, low",
+  "rationale": "Depression screen score 1/6 low risk documented."
+ },
+ {
+  "fact_id": "f17",
+  "status": "present",
+  "note_evidence": "No drug use in past 12 months... Drug screening questionnaire: 0",
+  "rationale": "Denies illicit drug use with screening score 0."
+ },
+ {
+  "fact_id": "f18",
+  "status": "present",
+  "note_evidence": "Never used tobacco. Occasional alcohol (a beer at social events)",
+  "rationale": "Never smoker, occasional alcohol documented."
+ },
+ {
+  "fact_id": "f19",
+  "status": "present",
+  "note_evidence": "Drug screening questionnaire: 0",
+  "rationale": "Substance use screening performed."
+ },
+ {
+  "fact_id": "f20",
+  "status": "present",
+  "note_evidence": "patient on no daily prescription medications. Discontinued residual hospital medications from active list",
+  "rationale": "No daily meds; hospital meds discontinued documented."
+ },
+ {
+  "fact_id": "f21",
+  "status": "present",
+  "note_evidence": "Allergies: No known drug allergies",
+  "rationale": "No known drug allergies documented."
+ },
+ {
+  "fact_id": "f22",
+  "status": "present",
+  "note_evidence": "Medication Reconciliation: Reviewed; patient on no daily prescription medications",
+  "rationale": "Medication reconciliation completed."
+ },
+ {
+  "fact_id": "f23",
+  "status": "present",
+  "note_evidence": "BP 107/69 mmHg",
+  "rationale": "BP value documented."
+ },
+ {
+  "fact_id": "f24",
+  "status": "present",
+  "note_evidence": "HR 63 bpm",
+  "rationale": "HR value documented."
+ },
+ {
+  "fact_id": "f25",
+  "status": "present",
+  "note_evidence": "RR 15",
+  "rationale": "RR value documented."
+ },
+ {
+  "fact_id": "f26",
+  "status": "present",
+  "note_evidence": "Regular heart sounds, no lower extremity edema... Clear to breathing on exam",
+  "rationale": "Clear lungs, regular heart, no edema documented."
+ },
+ {
+  "fact_id": "f27",
+  "status": "present",
+  "note_evidence": "Weight 84.4 kg; Height 166.8 cm; BMI 30.34",
+  "rationale": "Weight, height, BMI with obesity documented."
+ },
+ {
+  "fact_id": "f28",
+  "status": "present",
+  "note_evidence": "Hemoglobin A1c: 5.99% (prediabetes range)",
+  "rationale": "A1c 5.99% consistent with prediabetes documented."
+ },
+ {
+  "fact_id": "f29",
+  "status": "present",
+  "note_evidence": "Glucose: 86.7 mg/dL (normal)",
+  "rationale": "Glucose value normal documented."
+ },
+ {
+  "fact_id": "f30",
+  "status": "partial",
+  "note_evidence": "Sodium 139, Potassium 4.89, Chloride and Bicarbonate within normal limits",
+  "rationale": "Na and K values given but Cl 104 and CO2 28 numeric values not stated."
+ },
+ {
+  "fact_id": "f31",
+  "status": "present",
+  "note_evidence": "Creatinine 1.22, BUN 13.78 (renal function preserved after septic shock)",
+  "rationale": "Normal renal function with creatinine and BUN documented."
+ },
+ {
+  "fact_id": "f32",
+  "status": "present",
+  "note_evidence": "goal of 5\u20137% weight loss (~4\u20136 kg)... Increase physical activity: aim for ~30 minutes of walking most days",
+  "rationale": "Prediabetes lifestyle with weight-loss target and walking documented."
+ },
+ {
+  "fact_id": "f33",
+  "status": "present",
+  "note_evidence": "aim for ~30 minutes of walking most days",
+  "rationale": "Daily walking counseling documented."
+ },
+ {
+  "fact_id": "f34",
+  "status": "present",
+  "note_evidence": "Administered seasonal trivalent influenza vaccine, left deltoid",
+  "rationale": "Trivalent flu vaccine in left arm with overdue fall shot documented (split virus/PF product detail omitted)."
+ },
+ {
+  "fact_id": "f35",
+  "status": "present",
+  "note_evidence": "left deltoid (no prior vaccine reactions)",
+  "rationale": "No prior vaccine reaction documented."
+ },
+ {
+  "fact_id": "f36",
+  "status": "present",
+  "note_evidence": "Recheck A1c in ~6 months",
+  "rationale": "HbA1c recheck in ~6 months planned."
+ },
+ {
+  "fact_id": "f37",
+  "status": "present",
+  "note_evidence": "Routine follow-up to be scheduled... Continue clinical monitoring... Encouraged patient to report any change in mood",
+  "rationale": "Follow-up to schedule with anemia and mood monitoring documented."
+ },
+ {
+  "fact_id": "f38",
+  "status": "present",
+  "note_evidence": "Encouraged patient to report any change in mood; low threshold for follow-up",
+  "rationale": "Mood-monitoring safety-netting documented."
+ },
+ {
+  "fact_id": "f39",
+  "status": "present",
+  "note_evidence": "Fatigue \u2014 Likely multifactorial (deconditioning/pulmonary recovery, anemia, situational stress)... Further workup if fatigue plateaus or worsens",
+  "rationale": "Fatigue etiology and safety-netting documented."
+ },
+ {
+  "fact_id": "f40",
+  "status": "partial",
+  "note_evidence": "Medication Reconciliation: Reviewed... Discontinued residual hospital medications from active list",
+  "rationale": "Reconciliation performed/resolved, but note does not state it was flagged as due."
+ },
+ {
+  "fact_id": "f41",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "No serum calcium value documented in note."
+ },
+ {
+  "fact_id": "f42",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "PRAPARE tool and safety/stress items not documented; only housing strain noted."
+ }
+]

@@ -1,0 +1,14 @@
+[
+ {
+  "fact_id": "f10",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "A comprehensive annual visit should document the standardized social needs assessment, and the finding of infrequent social contact flags potential isolation warranting attention in this elderly patient."
+ },
+ {
+  "fact_id": "f44",
+  "expected": true,
+  "severity": "minor",
+  "why_it_matters": "Pain screening completes the vitals/review for a comprehensive checkup, but a 1/10 score is essentially normal and requires no action."
+ }
+]

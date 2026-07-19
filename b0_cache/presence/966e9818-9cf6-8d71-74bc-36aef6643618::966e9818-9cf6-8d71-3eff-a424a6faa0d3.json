@@ -1,0 +1,248 @@
+[
+ {
+  "fact_id": "f1",
+  "status": "present",
+  "note_evidence": "Patient (22-year-old, presenting at aunt's request) with a checklist of concerns: (1) follow-up on prior abnormal blood sugar, (2) gum problems noted by aunt, (3) immunizations.",
+  "rationale": "All three checklist items and aunt prompting documented."
+ },
+ {
+  "fact_id": "f2",
+  "status": "present",
+  "note_evidence": "Hemoglobin A1c: 6.24% (prediabetes range)",
+  "rationale": "A1c value and prediabetes interpretation, below diabetic threshold, documented."
+ },
+ {
+  "fact_id": "f3",
+  "status": "partial",
+  "note_evidence": "Patient was informed last year of a blood sugar in the prediabetes range but did not act on it beyond initial concern.",
+  "rationale": "Prior prediabetes and no action noted, but 'not given guidance' not stated."
+ },
+ {
+  "fact_id": "f4",
+  "status": "present",
+  "note_evidence": "Reports family history of diabetes (grandmother, insulin/glucose-monitoring dependent).",
+  "rationale": "Grandmother diabetes documented."
+ },
+ {
+  "fact_id": "f5",
+  "status": "present",
+  "note_evidence": "Random glucose: 99",
+  "rationale": "Random glucose 99 documented, normal fasting-range noted."
+ },
+ {
+  "fact_id": "f6",
+  "status": "present",
+  "note_evidence": "Weight: 94.4 kg ... Height: 173 cm ... BMI: 31.4 (obesity range)",
+  "rationale": "All anthropometrics and obesity interpretation present."
+ },
+ {
+  "fact_id": "f7",
+  "status": "present",
+  "note_evidence": "**Obesity** \u2014 BMI 31.4; contributing to metabolic risk.",
+  "rationale": "Obesity listed as active assessment."
+ },
+ {
+  "fact_id": "f8",
+  "status": "present",
+  "note_evidence": "Swap sugary drinks (including juice) for water/sparkling water.",
+  "rationale": "Sugary drink swap for sparkling water counseled."
+ },
+ {
+  "fact_id": "f9",
+  "status": "present",
+  "note_evidence": "Aim for ~20 minutes of walking after shifts. Build meals around affordable staples (beans, rice, frozen vegetables).",
+  "rationale": "Walking and meal staples counseling present."
+ },
+ {
+  "fact_id": "f10",
+  "status": "present",
+  "note_evidence": "Referral to free nutrition class (covered by insurance); class schedule provided.",
+  "rationale": "Nutrition class referral documented."
+ },
+ {
+  "fact_id": "f11",
+  "status": "present",
+  "note_evidence": "Chronic environmental allergies (mold, dust mites, animal dander, grass and tree pollen) ... aspirin allergy",
+  "rationale": "All allergens including aspirin documented."
+ },
+ {
+  "fact_id": "f12",
+  "status": "present",
+  "note_evidence": "Continue cetirizine 5 mg daily, especially during peak seasons.",
+  "rationale": "Cetirizine 5 mg daily documented (morning timing omitted, minor)."
+ },
+ {
+  "fact_id": "f13",
+  "status": "present",
+  "note_evidence": "Spring symptoms (ocular) were significant through April but \"livable\" on medication.",
+  "rationale": "Rough spring ocular symptoms through April controlled on medication."
+ },
+ {
+  "fact_id": "f14",
+  "status": "present",
+  "note_evidence": "Continue carrying EpiPen; maintain monitoring of expiration.",
+  "rationale": "EpiPen carry continued; not expired good until next year noted."
+ },
+ {
+  "fact_id": "f15",
+  "status": "present",
+  "note_evidence": "Avoid aspirin and NSAIDs; consult pharmacist before any new pain medications.",
+  "rationale": "Aspirin/NSAID avoidance and pharmacist check counseled."
+ },
+ {
+  "fact_id": "f16",
+  "status": "present",
+  "note_evidence": "Depression (PHQ): Essentially negative\u2014denies feeling down, hopeless, or anhedonia.",
+  "rationale": "Negative depression screen documented (numeric 0 not stated but result captured)."
+ },
+ {
+  "fact_id": "f17",
+  "status": "present",
+  "note_evidence": "Anxiety (GAD): Minimal (1 point)\u2014situational pre-exam nervousness only.",
+  "rationale": "GAD score 1 minimal with pre-exam anxiety documented."
+ },
+ {
+  "fact_id": "f18",
+  "status": "present",
+  "note_evidence": "Safety: Denies humiliation, fear, coerced sexual activity, or physical violence in the past year.",
+  "rationale": "All HARK items denied (negative result captured)."
+ },
+ {
+  "fact_id": "f19",
+  "status": "present",
+  "note_evidence": "Alcohol rarely (\u22641 drink on occasions).",
+  "rationale": "Rare alcohol ~one drink documented (AUDIT-C score not named)."
+ },
+ {
+  "fact_id": "f20",
+  "status": "present",
+  "note_evidence": "No tobacco, vaping, cannabis, or other substances.",
+  "rationale": "Denial of tobacco/vaping/cannabis/other substances documented."
+ },
+ {
+  "fact_id": "f21",
+  "status": "present",
+  "note_evidence": "Heart rate: 90 (attributed to recent walk from bus) ... Regular rhythm, mildly tachycardic.",
+  "rationale": "HR 90 regular, elevation attributed to walk."
+ },
+ {
+  "fact_id": "f22",
+  "status": "present",
+  "note_evidence": "Blood pressure: 121/62",
+  "rationale": "BP documented."
+ },
+ {
+  "fact_id": "f23",
+  "status": "present",
+  "note_evidence": "Pulmonary: Lungs clear.",
+  "rationale": "Lungs clear on exam."
+ },
+ {
+  "fact_id": "f24",
+  "status": "present",
+  "note_evidence": "Gums puffy and erythematous along the gingival margins, bleeding to light touch \u2014 consistent with gingivitis.",
+  "rationale": "Exam findings, bleeding with brushing, and gingivitis documented."
+ },
+ {
+  "fact_id": "f25",
+  "status": "present",
+  "note_evidence": "Last dental visit was in middle school; dental care not previously accessible.",
+  "rationale": "Dental access history documented."
+ },
+ {
+  "fact_id": "f26",
+  "status": "present",
+  "note_evidence": "Referral to downtown dental clinic (covered, no out-of-pocket cost) for cleaning.",
+  "rationale": "Dental referral documented (Medicaid implied by no out-of-pocket)."
+ },
+ {
+  "fact_id": "f27",
+  "status": "present",
+  "note_evidence": "Begin daily flossing. Expected resolution in a couple of months.",
+  "rationale": "Daily flossing with reversal expectation counseled."
+ },
+ {
+  "fact_id": "f28",
+  "status": "present",
+  "note_evidence": "CBC: within normal limits, no anemia",
+  "rationale": "CBC normal no anemia documented (specific values omitted)."
+ },
+ {
+  "fact_id": "f29",
+  "status": "present",
+  "note_evidence": "Immunizations (administered today): Influenza",
+  "rationale": "Influenza vaccine administered today."
+ },
+ {
+  "fact_id": "f30",
+  "status": "present",
+  "note_evidence": "Influenza, Tdap booster, hepatitis B, meningococcal.",
+  "rationale": "Tetanus (Tdap) booster administered today."
+ },
+ {
+  "fact_id": "f31",
+  "status": "present",
+  "note_evidence": "Influenza, Tdap booster, hepatitis B, meningococcal.",
+  "rationale": "Hepatitis B vaccine administered today."
+ },
+ {
+  "fact_id": "f32",
+  "status": "present",
+  "note_evidence": "Influenza, Tdap booster, hepatitis B, meningococcal.",
+  "rationale": "Meningococcal vaccine administered today (MCV4P subtype not specified)."
+ },
+ {
+  "fact_id": "f33",
+  "status": "present",
+  "note_evidence": "Lives in a full household of six ... minimal social connection ... increasing sense of loneliness, especially Sundays, feeling it is \"less like a choice\" recently.",
+  "rationale": "Social isolation with household of six and Sunday loneliness documented."
+ },
+ {
+  "fact_id": "f34",
+  "status": "present",
+  "note_evidence": "Encouraged to join one free community program this month (walking group or study group at community center near transit hub). Patient selected the Sunday walking group.",
+  "rationale": "Community group referral and Sunday walking group choice documented."
+ },
+ {
+  "fact_id": "f35",
+  "status": "present",
+  "note_evidence": "Recheck A1c in ~6 months.",
+  "rationale": "A1c recheck in 6 months documented."
+ },
+ {
+  "fact_id": "f36",
+  "status": "partial",
+  "note_evidence": "Enrolled in associate degree program (pre-nursing), works early shifts at grocery store. Lives in a full household of six with aunt's family.",
+  "rationale": "Education, employment, household captured; Medicaid and income not explicitly stated."
+ },
+ {
+  "fact_id": "f37",
+  "status": "present",
+  "note_evidence": "grocery discounts favoring less healthy foods",
+  "rationale": "Food access constraint via discount on unhealthy foods documented."
+ },
+ {
+  "fact_id": "f38",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "No mention of medication reconciliation."
+ },
+ {
+  "fact_id": "f39",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "No BMP, creatinine, or electrolytes documented."
+ },
+ {
+  "fact_id": "f40",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "No pain score documented."
+ },
+ {
+  "fact_id": "f41",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "No respiratory rate documented."
+ }
+]

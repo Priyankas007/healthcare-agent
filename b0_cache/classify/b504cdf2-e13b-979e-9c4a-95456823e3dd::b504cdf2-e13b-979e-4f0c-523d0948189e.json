@@ -1,0 +1,8 @@
+[
+ {
+  "fact_id": "f29",
+  "expected": true,
+  "severity": "major",
+  "why_it_matters": "The note explicitly defers the full H&P to admission, so documenting its finalization is required for admission completeness and to ensure the exam, vitals, and baseline findings are actually captured."
+ }
+]

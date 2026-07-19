@@ -1,0 +1,248 @@
+[
+ {
+  "fact_id": "f1",
+  "status": "present",
+  "note_evidence": "Onset in mid-twenties. No aura or warning symptoms. Pain builds behind the right eye. ... Frequency ~2 severe headaches/week",
+  "rationale": "All slots documented in HPI."
+ },
+ {
+  "fact_id": "f2",
+  "status": "present",
+  "note_evidence": "Associated with photophobia, phonophobia, and occasional nausea. Sleep is the only effective relief.",
+  "rationale": "Associated features and sleep relief stated."
+ },
+ {
+  "fact_id": "f3",
+  "status": "present",
+  "note_evidence": "No recent change in pattern, no new symptoms, no unilateral weakness or vision changes.",
+  "rationale": "Red-flag screen negative documented."
+ },
+ {
+  "fact_id": "f4",
+  "status": "present",
+  "note_evidence": "Today rated 2/10 (\"decent day\").",
+  "rationale": "Pain severity today stated."
+ },
+ {
+  "fact_id": "f5",
+  "status": "present",
+  "note_evidence": "Reports feeling \"mostly okay\" but frequently tired.",
+  "rationale": "Fatigue documented."
+ },
+ {
+  "fact_id": "f6",
+  "status": "present",
+  "note_evidence": "5\u20136 hours/night; falls asleep easily but wakes early.",
+  "rationale": "Sleep duration and early awakening documented."
+ },
+ {
+  "fact_id": "f7",
+  "status": "present",
+  "note_evidence": "Denies hopelessness. Reports intermittent \"flat\" moods in evenings that lift. No anhedonia reported.",
+  "rationale": "Flat mood plus denials documented."
+ },
+ {
+  "fact_id": "f8",
+  "status": "present",
+  "note_evidence": "Medication reconciliation performed on-screen. Patient reports only as-needed medication for severe headaches. No OTC medications, vitamins, supplements",
+  "rationale": "Med rec and details documented."
+ },
+ {
+  "fact_id": "f9",
+  "status": "present",
+  "note_evidence": "reports no close friends or social outlets; friends dispersed after college.",
+  "rationale": "Social isolation documented."
+ },
+ {
+  "fact_id": "f10",
+  "status": "present",
+  "note_evidence": "hours cut in spring; household of 7 supported on ~$26,000/year last year",
+  "rationale": "Financial strain, income, household size documented."
+ },
+ {
+  "fact_id": "f11",
+  "status": "present",
+  "note_evidence": "unreliable transportation as barriers ... No dental visit in several years (cost and transportation barriers).",
+  "rationale": "Transportation barrier to care documented."
+ },
+ {
+  "fact_id": "f12",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "No mention of utility insecurity."
+ },
+ {
+  "fact_id": "f13",
+  "status": "partial",
+  "note_evidence": "Safety Screen: Denies humiliation, fear, physical/sexual coercion, or being hit/kicked in the past year.",
+  "rationale": "Screen and negative result present but HARK name and score 0 not stated."
+ },
+ {
+  "fact_id": "f14",
+  "status": "present",
+  "note_evidence": "Alcohol: ~1 beer per month at social events.",
+  "rationale": "Alcohol frequency documented."
+ },
+ {
+  "fact_id": "f15",
+  "status": "partial",
+  "note_evidence": "Standardized written substance-use questionnaire (10 items) ... Denies all recreational drug use.",
+  "rationale": "10-item drug screen and denial present but score 0 not stated."
+ },
+ {
+  "fact_id": "f16",
+  "status": "present",
+  "note_evidence": "Tobacco: Never smoker; smoke-free household.",
+  "rationale": "Never smoked documented."
+ },
+ {
+  "fact_id": "f17",
+  "status": "present",
+  "note_evidence": "Builds and rides bike jump ramps ... Continue helmet use; recommended wrist guards and avoiding taller ramps.",
+  "rationale": "Activity and counseling documented."
+ },
+ {
+  "fact_id": "f18",
+  "status": "present",
+  "note_evidence": "BP: 98/83 mmHg",
+  "rationale": "BP documented."
+ },
+ {
+  "fact_id": "f19",
+  "status": "present",
+  "note_evidence": "HR: 93 bpm (patient noted recent physical exertion and coffee)",
+  "rationale": "HR and attribution documented."
+ },
+ {
+  "fact_id": "f20",
+  "status": "present",
+  "note_evidence": "RR: 14/min",
+  "rationale": "RR documented."
+ },
+ {
+  "fact_id": "f21",
+  "status": "present",
+  "note_evidence": "Height: 176 cm - Weight: 78.7 kg - BMI: ~25",
+  "rationale": "Height/weight/BMI documented (minor rounding)."
+ },
+ {
+  "fact_id": "f22",
+  "status": "present",
+  "note_evidence": "Cardiovascular: Regular rhythm, no murmurs.",
+  "rationale": "Cardiac exam documented."
+ },
+ {
+  "fact_id": "f23",
+  "status": "present",
+  "note_evidence": "Respiratory: Lungs clear.",
+  "rationale": "Lungs clear documented."
+ },
+ {
+  "fact_id": "f24",
+  "status": "present",
+  "note_evidence": "Abdomen: Soft, non-tender.",
+  "rationale": "Abdominal exam documented."
+ },
+ {
+  "fact_id": "f25",
+  "status": "present",
+  "note_evidence": "Reports pink in sink with morning brushing ... Gingival inflammation along gum margins consistent with gingivitis.",
+  "rationale": "Gingivitis with bleeding gums documented."
+ },
+ {
+  "fact_id": "f26",
+  "status": "present",
+  "note_evidence": "Referral to sliding-scale dental clinic for cleaning.",
+  "rationale": "Dental referral documented."
+ },
+ {
+  "fact_id": "f27",
+  "status": "present",
+  "note_evidence": "Daily flossing and improved oral hygiene.",
+  "rationale": "Oral hygiene counseling documented."
+ },
+ {
+  "fact_id": "f28",
+  "status": "present",
+  "note_evidence": "Enrollment in medical ride service (covers medical and dental appointments) via care coordinator.",
+  "rationale": "Ride service enrollment documented."
+ },
+ {
+  "fact_id": "f29",
+  "status": "present",
+  "note_evidence": "Total cholesterol: 198 mg/dL - Triglycerides: 139 mg/dL - LDL: 137 mg/dL (elevated) - HDL: 33 mg/dL (low)",
+  "rationale": "Lipid panel documented."
+ },
+ {
+  "fact_id": "f30",
+  "status": "present",
+  "note_evidence": "increase beans, fish, oats; reduce fried foods. Increase cardiovascular activity ... No medication at this time.",
+  "rationale": "Lifestyle management, no med, recheck documented."
+ },
+ {
+  "fact_id": "f31",
+  "status": "present",
+  "note_evidence": "Recheck lipid panel later ... lab recheck slip to be provided at front desk.",
+  "rationale": "Lipid recheck order and slip documented."
+ },
+ {
+  "fact_id": "f32",
+  "status": "partial",
+  "note_evidence": "Influenza vaccine administered/ordered (left arm).",
+  "rationale": "Flu vaccine and site present but split virus/trivalent/PF not specified."
+ },
+ {
+  "fact_id": "f33",
+  "status": "partial",
+  "note_evidence": "Tetanus booster administered/ordered (left arm). ... tetanus booster overdue.",
+  "rationale": "Tetanus booster, site, overdue present but Td adult PF specifics not stated."
+ },
+ {
+  "fact_id": "f34",
+  "status": "present",
+  "note_evidence": "Counseled: expect 1\u20132 days of arm soreness",
+  "rationale": "Sore arm counseling documented."
+ },
+ {
+  "fact_id": "f35",
+  "status": "present",
+  "note_evidence": "Keep a simple log of bad-headache days.",
+  "rationale": "Headache diary advised."
+ },
+ {
+  "fact_id": "f36",
+  "status": "present",
+  "note_evidence": "Care coordinator to call patient this week.",
+  "rationale": "Care coordinator call timing documented."
+ },
+ {
+  "fact_id": "f37",
+  "status": "present",
+  "note_evidence": "Encouraged to attend men's group at community center (Thursday evenings)",
+  "rationale": "Men's group referral documented."
+ },
+ {
+  "fact_id": "f38",
+  "status": "present",
+  "note_evidence": "Return sooner than 2 years.",
+  "rationale": "Follow-up sooner documented."
+ },
+ {
+  "fact_id": "f39",
+  "status": "present",
+  "note_evidence": "Psychosocial stress with social isolation ... Transportation and financial barriers to care \u2014 significant social determinants impacting access.",
+  "rationale": "Health and social care needs assessed."
+ },
+ {
+  "fact_id": "f40",
+  "status": "absent",
+  "note_evidence": null,
+  "rationale": "No PRAPARE stress score of 'somewhat' documented."
+ },
+ {
+  "fact_id": "f41",
+  "status": "partial",
+  "note_evidence": "hours cut in spring ... patient manages bills",
+  "rationale": "Bill handler and hours cut present but full-time employment status not stated."
+ }
+]

@@ -45,7 +45,7 @@ Legend: `[ ]` todo · `[~]` in progress · `[x]` done · `[!]` blocked
 - [ ] Optional prompt fix (require all slots in insert_text) + rerun 20 non-restored — **user decision** (changes reported numbers)
 - [x] CP5 scaffold: ready (reviewer fixed skipped-R3 crash path + report key mismatch); **run deferred** (user call)
 - [x] CP6 scaffold: ready (reviewer extended negation screening, tightened gates); **HAPI FHIR server UP** (R4, localhost:8080)
-- [ ] CP6: run the write-back demo (interactive approval gate) when user is ready to film it
+- [x] CP6: write-back demo **verified end-to-end** (3/3 AllergyIntolerance → sandbox HAPI, 18 safety-screened; checkpoint_6.md written); filming kit: reset written/patient/encounter caches, rerun WITHOUT --approve-all for the live gate
 - [ ] Post-run: fold CP4 metrics into demo assets; optional CP2 `--benchmark`
 
 ## Demo assets

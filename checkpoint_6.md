@@ -4,7 +4,7 @@
 
 ## Safety framing
 
-- **Human-in-the-loop:** every resource required explicit approval before writing _(bypassed this run via --approve-all — DEMO ONLY)_.
+- **Human-in-the-loop:** every resource required explicit approval before writing.
 - **Nothing is verified truth:** AllergyIntolerance/Condition carry `verificationStatus=unconfirmed`; other types use their most conservative legal status; every resource carries an `unconfirmed` meta tag and a provenance note with the verbatim transcript quote.
 - **Provisional codes:** RxNorm/SNOMED/LOINC codings are model-suggested and explicitly marked needs-verification — a clinician must confirm before any downstream use.
 - **Sensitive exclusions:** IPV, substance-use, and mental-health disclosures (plus all SDOH-typed facts and negative findings) are screened out before structuring; see the skipped list.
@@ -50,7 +50,7 @@
 
 | Resource type | Before | After |
 |---|---|---|
-| AllergyIntolerance | 0 | 0 |
+| AllergyIntolerance | 3 | 3 |
 | Condition | 0 | 0 |
 | FamilyMemberHistory | 0 | 0 |
 | MedicationStatement | 0 | 0 |

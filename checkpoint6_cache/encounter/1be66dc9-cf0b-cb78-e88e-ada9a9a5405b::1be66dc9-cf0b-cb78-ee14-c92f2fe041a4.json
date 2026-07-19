@@ -1,9 +1,9 @@
 {
  "resourceType": "Encounter",
- "id": "1001",
+ "id": "1006",
  "meta": {
   "versionId": "1",
-  "lastUpdated": "2026-07-19T00:18:18.348+00:00"
+  "lastUpdated": "2026-07-19T00:25:53.963+00:00"
  },
  "status": "finished",
  "class": {
@@ -23,7 +23,7 @@
   }
  ],
  "subject": {
-  "reference": "Patient/1000"
+  "reference": "Patient/1005"
  },
  "period": {
   "start": "2019-11-20T14:42:13-08:00",

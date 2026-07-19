@@ -1,0 +1,79 @@
+{
+ "patch": {
+  "flag_id": "f14",
+  "section": "Subjective",
+  "insert_text": "She stopped her birth control when they decided to start trying to conceive and takes no regular medications, only occasional over-the-counter medication for headache.",
+  "mode": "append",
+  "added_claims": [
+   "Stopped birth control when trying to conceive",
+   "Takes no regular medications",
+   "Occasional OTC medication for headache"
+  ]
+ },
+ "verify": {
+  "patch_id": "f14",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "All three claims are supported by the transcript: stopping birth control when trying to conceive, nothing regular (no regular meds), and occasional headache remedy.",
+   "The note's medication review mention lacks these specifics, so this adds new detail without duplicating.",
+   "Patient-reported medication/contraception history belongs in Subjective."
+  ]
+ },
+ "iterations": 2,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f14",
+    "section": "Assessment and Plan",
+    "insert_text": "Patient stopped birth control when the couple decided to try to conceive; takes no regular medications, only occasional over-the-counter analgesic for headache.",
+    "mode": "append",
+    "added_claims": [
+     "Stopped birth control when trying to conceive",
+     "No regular medications",
+     "Occasional OTC analgesic for headache"
+    ]
+   },
+   "verify": {
+    "patch_id": "f14",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": false,
+    "pass": false,
+    "reasons": [
+     "All three claims are supported by the transcript: stopped birth control when trying to conceive, nothing regular (no regular meds), and occasional OTC for headache.",
+     "These specific medication-history details are not already stated in the note; the existing A&P only notes that review was completed and the list updated.",
+     "This is patient-reported medication/contraception history, which belongs in the Subjective section, not appended to Assessment and Plan."
+    ]
+   }
+  },
+  {
+   "patch": {
+    "flag_id": "f14",
+    "section": "Subjective",
+    "insert_text": "She stopped her birth control when they decided to start trying to conceive and takes no regular medications, only occasional over-the-counter medication for headache.",
+    "mode": "append",
+    "added_claims": [
+     "Stopped birth control when trying to conceive",
+     "Takes no regular medications",
+     "Occasional OTC medication for headache"
+    ]
+   },
+   "verify": {
+    "patch_id": "f14",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "All three claims are supported by the transcript: stopping birth control when trying to conceive, nothing regular (no regular meds), and occasional headache remedy.",
+     "The note's medication review mention lacks these specifics, so this adds new detail without duplicating.",
+     "Patient-reported medication/contraception history belongs in Subjective."
+    ]
+   }
+  }
+ ]
+}

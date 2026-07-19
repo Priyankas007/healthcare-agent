@@ -1,0 +1,50 @@
+{
+ "patch": {
+  "flag_id": "f16",
+  "section": "Objective",
+  "insert_text": "PHQ-2 total score 1/6 (low risk).",
+  "mode": "merge",
+  "added_claims": [
+   "PHQ-2 depression screening performed with total score 1/6, indicating low risk"
+  ]
+ },
+ "verify": {
+  "patch_id": "f16",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Insertion matches evidence: PHQ-2 total score 1/6 low risk, supported by transcript span and FHIR Observation (LOINC 55758-7, value 1).",
+   "No existing PHQ-2 or mood screening mention in note; the SDOH/mental health screening content is distinct.",
+   "Objective section is appropriate for a screening tool score, consistent with DAST-10 and PRAPARE already listed under Screenings."
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f16",
+    "section": "Objective",
+    "insert_text": "PHQ-2 total score 1/6 (low risk).",
+    "mode": "merge",
+    "added_claims": [
+     "PHQ-2 depression screening performed with total score 1/6, indicating low risk"
+    ]
+   },
+   "verify": {
+    "patch_id": "f16",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Insertion matches evidence: PHQ-2 total score 1/6 low risk, supported by transcript span and FHIR Observation (LOINC 55758-7, value 1).",
+     "No existing PHQ-2 or mood screening mention in note; the SDOH/mental health screening content is distinct.",
+     "Objective section is appropriate for a screening tool score, consistent with DAST-10 and PRAPARE already listed under Screenings."
+    ]
+   }
+  }
+ ]
+}

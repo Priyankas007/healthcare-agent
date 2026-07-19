@@ -1,0 +1,12 @@
+{
+ "patch_id": "stress_misplaced",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": false,
+ "pass": false,
+ "reasons": [
+  "Evidence (transcript span and FHIR Observation) confirms GAD-7 total score of 12 in the moderate range \u2014 claim is supported.",
+  "No GAD-7 result appears anywhere in the note; existing screening scores are PHQ-2, PHQ-9, and AUDIT-C \u2014 not redundant.",
+  "A quantified screening/survey score belongs in Objective, where the other screening scores (PHQ-2, PHQ-9, AUDIT-C) are already documented; appending it to Subjective is the wrong section."
+ ]
+}

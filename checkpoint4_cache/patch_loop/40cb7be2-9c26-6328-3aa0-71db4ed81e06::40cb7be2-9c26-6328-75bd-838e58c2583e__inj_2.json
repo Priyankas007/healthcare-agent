@@ -1,0 +1,50 @@
+{
+ "patch": {
+  "flag_id": "f9",
+  "section": "Subjective",
+  "insert_text": "She denies vaginal bleeding or spotting.",
+  "mode": "append",
+  "added_claims": [
+   "Patient denies vaginal bleeding or spotting"
+  ]
+ },
+ "verify": {
+  "patch_id": "f9",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Claim directly supported by transcript 'No bleeding, no.'",
+   "Bleeding denial not previously stated in note; existing denials cover cramping, dysuria, fever, abdominal pain only",
+   "Patient-reported denial belongs in Subjective"
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f9",
+    "section": "Subjective",
+    "insert_text": "She denies vaginal bleeding or spotting.",
+    "mode": "append",
+    "added_claims": [
+     "Patient denies vaginal bleeding or spotting"
+    ]
+   },
+   "verify": {
+    "patch_id": "f9",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Claim directly supported by transcript 'No bleeding, no.'",
+     "Bleeding denial not previously stated in note; existing denials cover cramping, dysuria, fever, abdominal pain only",
+     "Patient-reported denial belongs in Subjective"
+    ]
+   }
+  }
+ ]
+}

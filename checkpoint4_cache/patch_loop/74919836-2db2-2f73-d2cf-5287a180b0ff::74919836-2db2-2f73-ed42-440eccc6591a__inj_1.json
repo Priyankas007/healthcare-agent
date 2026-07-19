@@ -1,0 +1,50 @@
+{
+ "patch": {
+  "flag_id": "f13",
+  "section": "Assessment and Plan",
+  "insert_text": "; old metoprolol 50 mg discontinued as an outdated duplicate dose",
+  "mode": "merge",
+  "added_claims": [
+   "Old metoprolol 50 mg was discontinued as a duplicate/outdated dose"
+  ]
+ },
+ "verify": {
+  "patch_id": "f13",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Evidence 'the old fifty-milligram metoprolol are off the list' supports discontinuation of the outdated 50 mg dose; framing as a duplicate is reasonable given the active metoprolol succinate ER 100 mg entry.",
+   "Note previously documented removing duplicate simvastatin but not the old metoprolol dose, so this adds new information.",
+   "Medication reconciliation detail belongs in the Assessment and Plan (fits the metoprolol/hypertension medication context)."
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f13",
+    "section": "Assessment and Plan",
+    "insert_text": "; old metoprolol 50 mg discontinued as an outdated duplicate dose",
+    "mode": "merge",
+    "added_claims": [
+     "Old metoprolol 50 mg was discontinued as a duplicate/outdated dose"
+    ]
+   },
+   "verify": {
+    "patch_id": "f13",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Evidence 'the old fifty-milligram metoprolol are off the list' supports discontinuation of the outdated 50 mg dose; framing as a duplicate is reasonable given the active metoprolol succinate ER 100 mg entry.",
+     "Note previously documented removing duplicate simvastatin but not the old metoprolol dose, so this adds new information.",
+     "Medication reconciliation detail belongs in the Assessment and Plan (fits the metoprolol/hypertension medication context)."
+    ]
+   }
+  }
+ ]
+}

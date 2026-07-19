@@ -1,0 +1,12 @@
+{
+ "patch_id": "f8",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": true,
+ "pass": true,
+ "reasons": [
+  "Evidence 'No bleeding, no.' supports denial of vaginal bleeding/spotting",
+  "Bleeding/spotting not already in the ROS negatives list",
+  "Denial of a symptom belongs in Subjective ROS"
+ ]
+}

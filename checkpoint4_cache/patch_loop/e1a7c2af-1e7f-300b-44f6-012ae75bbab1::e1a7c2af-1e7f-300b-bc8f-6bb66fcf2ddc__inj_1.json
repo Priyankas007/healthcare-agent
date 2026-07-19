@@ -1,0 +1,73 @@
+{
+ "patch": {
+  "flag_id": "f5",
+  "section": "Subjective",
+  "insert_text": "He denies any dental pain.",
+  "mode": "append",
+  "added_claims": [
+   "Patient denies dental pain"
+  ]
+ },
+ "verify": {
+  "patch_id": "f5",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Evidence 'No pain-pain' supports the denial of dental pain",
+   "Note lists other denials (loose teeth, swelling, fever) but not pain, so not redundant",
+   "Patient-reported denial belongs in Subjective"
+  ]
+ },
+ "iterations": 2,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f5",
+    "section": "Subjective",
+    "insert_text": "He denies toothache, night pain, or pain with chewing.",
+    "mode": "append",
+    "added_claims": [
+     "Patient denies toothache, night pain, or pain with chewing"
+    ]
+   },
+   "verify": {
+    "patch_id": "f5",
+    "grounded": false,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": false,
+    "reasons": [
+     "Evidence 'No, nothing like that. No pain-pain.' is vague and does not specifically support the three distinct denials of toothache, night pain, and pain with chewing",
+     "Note does not already document these specific pain denials",
+     "Patient-reported symptom denials belong in Subjective"
+    ]
+   }
+  },
+  {
+   "patch": {
+    "flag_id": "f5",
+    "section": "Subjective",
+    "insert_text": "He denies any dental pain.",
+    "mode": "append",
+    "added_claims": [
+     "Patient denies dental pain"
+    ]
+   },
+   "verify": {
+    "patch_id": "f5",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Evidence 'No pain-pain' supports the denial of dental pain",
+     "Note lists other denials (loose teeth, swelling, fever) but not pain, so not redundant",
+     "Patient-reported denial belongs in Subjective"
+    ]
+   }
+  }
+ ]
+}

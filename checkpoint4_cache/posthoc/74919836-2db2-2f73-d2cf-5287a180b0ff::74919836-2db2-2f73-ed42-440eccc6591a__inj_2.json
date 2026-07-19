@@ -1,0 +1,12 @@
+{
+ "patch_id": "f14",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": true,
+ "pass": true,
+ "reasons": [
+  "Insertion matches evidence span verbatim about continuing atorvastatin every evening with no missed days",
+  "Note discusses simvastatin removal but does not mention continuing atorvastatin, so no duplication",
+  "Medication continuation belongs in Assessment and Plan section"
+ ]
+}

@@ -34,6 +34,7 @@ import json
 import os
 import statistics
 import sys
+import threading
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass
@@ -132,12 +133,25 @@ def load_records() -> list[dict]:
         return [json.loads(line) for line in f if line.strip()]
 
 
+def _atomic_write(path: Path, text: str) -> None:
+    """Concurrent-safe cache write: same-encounter versions share cache files
+    (e.g. the per-encounter retrieval decision), so a plain write_text lets a
+    parallel reader observe a partial file. Write-to-temp + os.replace is
+    atomic on POSIX."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_name(f"{path.name}.tmp{os.getpid()}-{threading.get_ident()}")
+    tmp.write_text(text)
+    os.replace(tmp, path)
+
+
 def _cached(path: Path, compute):
     if path.exists():
-        return json.loads(path.read_text())
+        try:
+            return json.loads(path.read_text())
+        except json.JSONDecodeError:
+            pass  # partial/corrupt file (interrupted or concurrent writer) — recompute
     value = compute()
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(value, indent=1))
+    _atomic_write(path, json.dumps(value, indent=1))
     return value
 
 
@@ -145,8 +159,7 @@ def _cached_text(path: Path, compute):
     if path.exists() and path.stat().st_size > 0:
         return path.read_text()
     value = compute()
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(value)
+    _atomic_write(path, value)
     return value
 
 
@@ -570,117 +583,38 @@ def run_R3(ctx: dict, cfg: AblationConfig, prior: dict) -> dict:
     }
 
 
-# ---------------------------------------------------------------- R4 (patch — CP4 contract)
+# ---------------------------------------------------------------- R4 (patch — CP4 modules)
 
-_PATCH_LOOP_NAMES = ("patch_loop", "patch_with_verify", "propose_and_verify", "run_patch")
-_PROPOSE_NAMES = ("propose_patch", "patch", "propose")
-_VERIFY_NAMES = ("verify_patch", "verify")
+MAX_PATCH_ITERATIONS = 3  # mirrors run_checkpoint4's evaluator-optimizer loop
 
 
-def _call_flexible(fn, pool: dict):
-    """Call a CP4 entry point by matching its parameter names against a pool
-    of known values (the CP4 modules are built in a parallel session; this
-    adapter tolerates naming differences without guessing semantics)."""
-    import inspect
-
-    sig = inspect.signature(fn)
-    kwargs = {}
-    for name, p in sig.parameters.items():
-        if p.kind in (p.VAR_POSITIONAL, p.VAR_KEYWORD):
-            continue
-        if name in pool:
-            kwargs[name] = pool[name]
-        elif p.default is p.empty:
-            raise AssertionError(
-                f"CP4 contract mismatch: {fn.__module__}.{fn.__name__} requires "
-                f"parameter {name!r} that run_checkpoint5 does not know how to "
-                f"supply — extend the pool in _patch_one."
-            )
-    return fn(**kwargs)
-
-
-def _first_attr(mod, names):
-    for n in names:
-        fn = getattr(mod, n, None)
-        if callable(fn):
-            return fn
-    return None
-
-
-def _truthy_verdict(v) -> bool:
-    if isinstance(v, dict):
-        return bool(v.get("verified") or v.get("patch_verified") or v.get("grounded") or v.get("ok"))
-    return bool(v)
-
-
-def _patch_one(patch_mod, verify_mod, note: str, fact: dict, flag: dict, transcript: str, evidence) -> dict:
-    pool = {
-        "note": note,
-        "note_text": note,
-        "fact": fact,
-        "flag": flag,
-        "candidate_fact": fact,
-        "transcript": transcript,
-        "transcript_quote": fact.get("transcript_quote"),
-        "fhir_evidence": evidence,
-        "evidence": evidence,
-        "fhir_ref": fact.get("fhir_ref"),
-        "severity": flag.get("severity"),
-        "why_it_matters": flag.get("why_it_matters"),
-        "model": MODEL,
-    }
-    loop_fn = _first_attr(patch_mod, _PATCH_LOOP_NAMES)
-    if loop_fn is not None:
-        result = _call_flexible(loop_fn, pool)
-        if not isinstance(result, dict):
-            return {"fact_id": fact["id"], "verified": False, "raw": str(result)[:300]}
-        diff = result.get("proposed_diff") or result.get("diff")
-        if diff is None and {"section", "insert_text"} <= set(result):
-            diff = {k: result.get(k) for k in ("section", "insert_text", "mode")}
-        verified = result.get("patch_verified", result.get("verified"))
-        if verified is None:
-            verified = _truthy_verdict(result.get("verifier") or result.get("verdict"))
-        return {
-            "fact_id": fact["id"],
-            "verified": bool(verified),
-            "diff": diff,
-            "verifier": result.get("verifier") or result.get("verdict"),
-        }
-
-    propose_fn = _first_attr(patch_mod, _PROPOSE_NAMES)
-    verify_fn = _first_attr(verify_mod, _VERIFY_NAMES)
-    assert propose_fn is not None and verify_fn is not None, (
-        "CP4 contract mismatch: recall.patch/verify_patch expose none of "
-        f"{_PATCH_LOOP_NAMES} / {_PROPOSE_NAMES} / {_VERIFY_NAMES} — adapt _patch_one."
-    )
-    diff, verdict, verified = None, None, False
-    for _attempt in range(2):  # manual evaluator-optimizer loop, 1 revision
-        diff = _call_flexible(propose_fn, pool)
-        verdict = _call_flexible(
-            verify_fn, {**pool, "diff": diff, "proposed_diff": diff, "patch": diff}
-        )
-        verified = _truthy_verdict(verdict)
-        if verified:
-            break
-        pool["feedback"] = verdict  # only passed if propose_fn accepts it
-    return {"fact_id": fact["id"], "verified": verified, "diff": diff, "verifier": verdict}
+def _repeated_ngram_rate(text: str, n: int = 5) -> float:
+    """Share of word n-grams that are repeats — the redundancy proxy
+    (kept locally so this runner never imports another run_checkpoint script)."""
+    words = text.lower().split()
+    grams = [tuple(words[i : i + n]) for i in range(len(words) - n + 1)]
+    if not grams:
+        return 0.0
+    return 1 - len(set(grams)) / len(grams)
 
 
 def run_R4(ctx: dict, cfg: AblationConfig, prior: dict) -> dict:
-    """Patch + verifier over every surfaced flag. Gated on the CP4 modules
-    (parallel session): asserts recall/patch.py + recall/verify_patch.py import."""
-    import importlib
-
+    """Patch + verifier (evaluator-optimizer loop) over every surfaced flag.
+    Gated on the CP4 modules; uses their real contract:
+    patch(fact, evidence, note, feedback) / verify_patch(patch, evidence, note)."""
     try:
-        patch_mod = importlib.import_module("recall.patch")
-        verify_mod = importlib.import_module("recall.verify_patch")
+        from recall.patch import apply_patch, evidence_for
+        from recall.patch import patch as propose_patch
+        from recall.verify_patch import verify_patch
     except ImportError as exc:
         raise AssertionError(
             "R4 requires checkpoint-4 modules recall/patch.py + recall/verify_patch.py "
             f"(built in a parallel session) — not importable yet: {exc}"
         )
 
-    r3 = prior.get("R3") or run_fhir_arm(ctx, "targeted")
+    r3 = prior.get("R3")
+    if not r3 or "per_version" not in r3:  # R3 not run or skipped — recompute
+        r3 = run_fhir_arm(ctx, "targeted")  # asserts its own prerequisites
     records, facts_by_note = ctx["records"], ctx["facts_by_note"]
     versions_by_id = {v["note_version_id"]: v for v in ctx["versions"]}
 
@@ -692,7 +626,8 @@ def run_R4(ctx: dict, cfg: AblationConfig, prior: dict) -> dict:
 
         def compute():
             facts = {f["id"]: f for f in facts_by_note[v["note_id"]]}
-            transcript = records[v["note_id"]]["transcript"]
+            enc = records[v["note_id"]]["encounter_fhir"]
+            note = v["note_text"]
             out = []
             for fid in pv["surfaced_fact_ids"]:
                 if pv["pattern_by_fact"].get(fid) == "reconciliation_needed":
@@ -701,14 +636,37 @@ def run_R4(ctx: dict, cfg: AblationConfig, prior: dict) -> dict:
                          "skipped": "reconciliation_needed — never auto-patched"}
                     )
                     continue
-                flag = {"fact_id": fid, "severity": None, "why_it_matters": None}
+                fact = facts[fid]
+                evidence = evidence_for(fact, enc)
+                fhir_ev = pv["evidence_by_fact"].get(fid)
+                if fhir_ev and fhir_ev != "(shared full-chart context)":
+                    evidence += "\nTargeted FHIR evidence:\n" + fhir_ev
                 try:
-                    out.append(
-                        _patch_one(
-                            patch_mod, verify_mod, v["note_text"], facts[fid], flag,
-                            transcript, pv["evidence_by_fact"].get(fid),
+                    feedback = None
+                    p = verdict = None
+                    iterations = 0
+                    for iterations in range(1, MAX_PATCH_ITERATIONS + 1):
+                        p = propose_patch(fact, evidence, note, feedback=feedback, model=MODEL)
+                        verdict = verify_patch(p, evidence, note, model=MODEL)
+                        if verdict["pass"]:
+                            break
+                        feedback = verdict["reasons"]
+                    verified = bool(verdict and verdict["pass"])
+                    entry = {
+                        "fact_id": fid,
+                        "verified": verified,
+                        "grounded": bool(verdict and verdict.get("grounded")),
+                        "iterations": iterations,
+                        "patch": p,
+                        "verify": verdict,
+                        "redundancy_delta": None,
+                    }
+                    if verified:
+                        patched = apply_patch(note, p)
+                        entry["redundancy_delta"] = (
+                            _repeated_ngram_rate(patched) - _repeated_ngram_rate(note)
                         )
-                    )
+                    out.append(entry)
                 except Exception as exc:  # per-flag isolation
                     out.append({"fact_id": fid, "verified": False, "error": repr(exc)})
             return out
@@ -722,6 +680,7 @@ def run_R4(ctx: dict, cfg: AblationConfig, prior: dict) -> dict:
     attempted = [p for p in flat if "skipped" not in p]
     verified = [p for p in attempted if p.get("verified")]
     errors = [p for p in attempted if p.get("error")]
+    deltas = [p["redundancy_delta"] for p in verified if p.get("redundancy_delta") is not None]
     return {
         "adds": cfg.adds,
         "n_flags": len(flat),
@@ -730,10 +689,13 @@ def run_R4(ctx: dict, cfg: AblationConfig, prior: dict) -> dict:
         "n_errors": len(errors),
         "n_skipped_reconciliation": len(flat) - len(attempted),
         "patch_success": (len(verified) / len(attempted)) if attempted else None,
-        # Faithfulness proxy = verifier-accepted (grounded) share; a dedicated
-        # faithfulness judge is CP4's own metric — reported there.
-        "patch_faithfulness_proxy": (len(verified) / len(attempted)) if attempted else None,
-        "redundancy_delta": None,  # pending CP4 verifier contract (self-overlap before/after)
+        # Faithfulness = verifier-grounded share (no unsupported claims added).
+        "patch_faithfulness": (
+            sum(1 for p in attempted if p.get("grounded")) / len(attempted)
+            if attempted
+            else None
+        ),
+        "redundancy_delta_mean": (sum(deltas) / len(deltas)) if deltas else None,
         "surfaced_recall": r3["surfaced_recall"],
         "clean_surfaced_rate": r3["clean_surfaced_rate"],
     }
@@ -866,7 +828,9 @@ def _tvf_verdict(t: dict, f: dict) -> str:
 
 
 def run_R5(ctx: dict, cfg: AblationConfig, prior: dict) -> dict:
-    r3 = prior.get("R3") or run_fhir_arm(ctx, "targeted")
+    r3 = prior.get("R3")
+    if not r3 or "per_version" not in r3:  # R3 not run or skipped — recompute
+        r3 = run_fhir_arm(ctx, "targeted")  # asserts its own prerequisites
     full = run_fhir_arm(ctx, "full")
     contr = run_contradictions(ctx)
     tvf = {
@@ -1097,8 +1061,11 @@ def write_report(results: dict, ctx: dict) -> None:
     if r4 and not r4.get("skipped"):
         lines.append(
             f"- **R4 (patch+verify):** {r4.get('n_verified')}/{r4.get('n_attempted')} patches verified "
-            f"({_fmt(r4.get('patch_success'), 'pct')}); {r4.get('n_skipped_reconciliation')} "
-            f"reconciliation-needed flags never auto-patched; {r4.get('n_errors')} errors."
+            f"({_fmt(r4.get('patch_success'), 'pct')}); faithfulness (verifier-grounded) "
+            f"{_fmt(r4.get('patch_faithfulness'), 'pct')}; redundancy delta "
+            f"{_fmt(r4.get('redundancy_delta_mean'), 'f2')} (self-overlap after−before, ≤0 is good); "
+            f"{r4.get('n_skipped_reconciliation')} reconciliation-needed flags never auto-patched; "
+            f"{r4.get('n_errors')} errors."
         )
         attributed = True
     if r5 and r5.get("targeted_vs_full"):
@@ -1112,15 +1079,17 @@ def write_report(results: dict, ctx: dict) -> None:
     lines.append("## Annotated examples")
     lines.append("")
     shown = 0
-    for r in (r3 or {}), (r5 or {}):
-        for ex in r.get("examples", []) or []:
-            if shown >= 3:
-                break
-            lines.append(
-                f"- **{ex['kind']}** (`{ex['note_version_id']}`): “{ex['fact_text']}” — "
-                f"{ex['detail'] or 'no judge rationale'} → {ex['outcome']}"
-            )
-            shown += 1
+    candidates = ((r3 or {}).get("examples") or []) + (
+        (r5 or {}).get("full_arm_examples") or []
+    )
+    for ex in candidates:
+        if shown >= 3:
+            break
+        lines.append(
+            f"- **{ex['kind']}** (`{ex['note_version_id']}`): “{ex['fact_text']}” — "
+            f"{ex['detail'] or 'no judge rationale'} → {ex['outcome']}"
+        )
+        shown += 1
     if r5 and r5.get("contradiction", {}).get("example") and shown < 3:
         ex = r5["contradiction"]["example"]
         lines.append(

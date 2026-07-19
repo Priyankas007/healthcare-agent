@@ -1,0 +1,50 @@
+{
+ "patch": {
+  "flag_id": "f11",
+  "section": "Objective",
+  "insert_text": "GAD-7 total 12.",
+  "mode": "merge",
+  "added_claims": [
+   "GAD-7 total score is 12"
+  ]
+ },
+ "verify": {
+  "patch_id": "f11",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "GAD-7 total 12 supported by transcript span and FHIR Observation valueQuantity 12",
+   "No GAD-7 score present in original note; other screening scores listed but not this one",
+   "Objective section is correct for screening/survey scores, consistent with existing PHQ-2/PHQ-9/AUDIT-C placement"
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f11",
+    "section": "Objective",
+    "insert_text": "GAD-7 total 12.",
+    "mode": "merge",
+    "added_claims": [
+     "GAD-7 total score is 12"
+    ]
+   },
+   "verify": {
+    "patch_id": "f11",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "GAD-7 total 12 supported by transcript span and FHIR Observation valueQuantity 12",
+     "No GAD-7 score present in original note; other screening scores listed but not this one",
+     "Objective section is correct for screening/survey scores, consistent with existing PHQ-2/PHQ-9/AUDIT-C placement"
+    ]
+   }
+  }
+ ]
+}

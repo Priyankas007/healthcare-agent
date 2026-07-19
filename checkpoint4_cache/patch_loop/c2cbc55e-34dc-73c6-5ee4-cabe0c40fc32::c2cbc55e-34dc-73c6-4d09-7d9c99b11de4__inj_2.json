@@ -1,0 +1,50 @@
+{
+ "patch": {
+  "flag_id": "f3",
+  "section": "Subjective",
+  "insert_text": "43-year-old",
+  "mode": "merge",
+  "added_claims": [
+   "Patient is 43 years old (advanced maternal age)"
+  ]
+ },
+ "verify": {
+  "patch_id": "f3",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Age 43 is directly stated in the transcript ('I'm forty-three, doctor'); advanced maternal age is a standard definitional inference for age \u226535.",
+   "The note contains no prior mention of patient age, so this adds new information.",
+   "Patient demographics/age belongs in the Subjective section."
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f3",
+    "section": "Subjective",
+    "insert_text": "43-year-old",
+    "mode": "merge",
+    "added_claims": [
+     "Patient is 43 years old (advanced maternal age)"
+    ]
+   },
+   "verify": {
+    "patch_id": "f3",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Age 43 is directly stated in the transcript ('I'm forty-three, doctor'); advanced maternal age is a standard definitional inference for age \u226535.",
+     "The note contains no prior mention of patient age, so this adds new information.",
+     "Patient demographics/age belongs in the Subjective section."
+    ]
+   }
+  }
+ ]
+}

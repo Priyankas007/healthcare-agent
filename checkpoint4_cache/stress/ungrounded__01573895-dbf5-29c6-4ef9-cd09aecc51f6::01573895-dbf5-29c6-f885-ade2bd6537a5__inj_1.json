@@ -1,0 +1,12 @@
+{
+ "patch_id": "stress_ungrounded",
+ "grounded": false,
+ "non_redundant": true,
+ "correctly_placed": false,
+ "pass": false,
+ "reasons": [
+  "Evidence is a GAD-7 score of 12 (moderate anxiety); it does not mention amiodarone or symptom resolution\u2014both claims are unsupported/invented",
+  "No mention of amiodarone anywhere; patient's only medication is naproxen, contradicting the insertion",
+  "Claims contradict evidence (moderate anxiety score vs. 'fully resolved')"
+ ]
+}

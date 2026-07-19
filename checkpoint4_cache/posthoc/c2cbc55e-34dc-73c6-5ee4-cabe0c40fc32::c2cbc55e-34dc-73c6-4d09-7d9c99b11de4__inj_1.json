@@ -1,0 +1,12 @@
+{
+ "patch_id": "f2",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": true,
+ "pass": true,
+ "reasons": [
+  "Evidence transcript span directly supports ~10 weeks since LMP",
+  "LMP timing not previously stated in the note",
+  "Patient-reported menstrual history belongs in Subjective"
+ ]
+}

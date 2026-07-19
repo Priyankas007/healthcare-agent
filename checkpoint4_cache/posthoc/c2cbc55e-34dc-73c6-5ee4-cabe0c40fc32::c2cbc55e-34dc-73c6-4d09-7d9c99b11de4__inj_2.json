@@ -1,0 +1,12 @@
+{
+ "patch_id": "f3",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": true,
+ "pass": true,
+ "reasons": [
+  "Age 43 directly supported by transcript ('I'm forty-three'); advanced maternal age is a correct standard inference for age 43",
+  "Note describes patient only as 'woman' without age, so the age is new information",
+  "Patient age/demographics belong in the Subjective section"
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "patch": {
+  "flag_id": "f21",
+  "section": "Assessment and Plan",
+  "insert_text": "- Continue vitamin B12 injections unchanged for anemia.",
+  "mode": "append",
+  "added_claims": [
+   "Vitamin B12 injections continued unchanged for anemia"
+  ]
+ },
+ "verify": {
+  "patch_id": "f21",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Evidence explicitly states B12 injections continue unchanged for anemia",
+   "Note only says anemia is 'stable' with no mention of B12 injections, so not redundant",
+   "Anemia management belongs in Assessment and Plan"
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f21",
+    "section": "Assessment and Plan",
+    "insert_text": "- Continue vitamin B12 injections unchanged for anemia.",
+    "mode": "append",
+    "added_claims": [
+     "Vitamin B12 injections continued unchanged for anemia"
+    ]
+   },
+   "verify": {
+    "patch_id": "f21",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Evidence explicitly states B12 injections continue unchanged for anemia",
+     "Note only says anemia is 'stable' with no mention of B12 injections, so not redundant",
+     "Anemia management belongs in Assessment and Plan"
+    ]
+   }
+  }
+ ]
+}

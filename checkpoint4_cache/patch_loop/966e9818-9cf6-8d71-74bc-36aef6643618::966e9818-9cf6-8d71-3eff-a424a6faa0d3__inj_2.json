@@ -1,0 +1,50 @@
+{
+ "patch": {
+  "flag_id": "f2",
+  "section": "Objective",
+  "insert_text": "Hemoglobin A1c 6.24%.",
+  "mode": "merge",
+  "added_claims": [
+   "Hemoglobin A1c is 6.24%"
+  ]
+ },
+ "verify": {
+  "patch_id": "f2",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "A1c 6.24% supported by both transcript and FHIR Observation",
+   "A1c not present in original note labs",
+   "Lab value correctly belongs in Objective section"
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f2",
+    "section": "Objective",
+    "insert_text": "Hemoglobin A1c 6.24%.",
+    "mode": "merge",
+    "added_claims": [
+     "Hemoglobin A1c is 6.24%"
+    ]
+   },
+   "verify": {
+    "patch_id": "f2",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "A1c 6.24% supported by both transcript and FHIR Observation",
+     "A1c not present in original note labs",
+     "Lab value correctly belongs in Objective section"
+    ]
+   }
+  }
+ ]
+}

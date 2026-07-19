@@ -1,0 +1,12 @@
+{
+ "patch_id": "f13",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": true,
+ "pass": true,
+ "reasons": [
+  "Evidence 'atenolol fifty' supports atenolol 50 mg home medication",
+  "Atenolol not listed among home meds (aspirin, rosuvastatin, lisinopril) already documented",
+  "Home medications belong in the Subjective section"
+ ]
+}

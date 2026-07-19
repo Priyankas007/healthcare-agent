@@ -1,0 +1,12 @@
+{
+ "patch_id": "stress_ungrounded",
+ "grounded": false,
+ "non_redundant": true,
+ "correctly_placed": false,
+ "pass": false,
+ "reasons": [
+  "Evidence is a PHQ-9 score of 17 (moderately severe depression); it does not mention amiodarone or symptom resolution \u2014 both claims are invented/unsupported",
+  "Claims contradict evidence: score of 17 indicates ongoing severe symptoms, not resolution",
+  "No medication reconciliation supports amiodarone; note explicitly states no medications"
+ ]
+}

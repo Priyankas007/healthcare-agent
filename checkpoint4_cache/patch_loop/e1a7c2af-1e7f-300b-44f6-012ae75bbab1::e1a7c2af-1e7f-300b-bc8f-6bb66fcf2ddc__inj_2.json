@@ -1,0 +1,52 @@
+{
+ "patch": {
+  "flag_id": "f6",
+  "section": "Subjective",
+  "insert_text": "He denies any loose teeth and facial or jaw swelling.",
+  "mode": "merge",
+  "added_claims": [
+   "Patient denies loose teeth",
+   "Patient denies facial/jaw swelling"
+  ]
+ },
+ "verify": {
+  "patch_id": "f6",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Both denials supported by transcript span",
+   "Not present elsewhere in note",
+   "Patient-reported denials belong in Subjective"
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f6",
+    "section": "Subjective",
+    "insert_text": "He denies any loose teeth and facial or jaw swelling.",
+    "mode": "merge",
+    "added_claims": [
+     "Patient denies loose teeth",
+     "Patient denies facial/jaw swelling"
+    ]
+   },
+   "verify": {
+    "patch_id": "f6",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Both denials supported by transcript span",
+     "Not present elsewhere in note",
+     "Patient-reported denials belong in Subjective"
+    ]
+   }
+  }
+ ]
+}

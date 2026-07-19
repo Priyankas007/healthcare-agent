@@ -524,6 +524,11 @@ def main() -> None:
         f"Checkpoint 3 classify cache incomplete ({len(missing)} missing, e.g. {missing[:3]}) — "
         "finish run_checkpoint3.py first."
     )
+    missing_eval = [i for i in injection_ids if not (EVAL_DIR / f"{i}.json").exists()]
+    assert not missing_eval, (
+        f"checkpoint2_cache/eval incomplete ({len(missing_eval)} missing, e.g. {missing_eval[:3]}) — "
+        "finish run_checkpoint2.py first."
+    )
 
     eligible, skipped = load_eligible()
     print(

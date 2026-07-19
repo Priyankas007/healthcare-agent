@@ -1,0 +1,12 @@
+{
+ "patch_id": "stress_redundant",
+ "grounded": true,
+ "non_redundant": false,
+ "correctly_placed": true,
+ "pass": false,
+ "reasons": [
+  "Claim is supported by the evidence span.",
+  "Redundant: this exact sentence already opens the Subjective section verbatim.",
+  "Subjective is the correct section for patient presentation/history."
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "patch_id": "f11",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": true,
+ "pass": true,
+ "reasons": [
+  "PHQ-2 total of 1 supported by FHIR Observation and transcript span",
+  "Note lists other screening scores but not PHQ-2, so non-redundant",
+  "Screening score belongs in Objective alongside GAD-7/AUDIT-C"
+ ]
+}

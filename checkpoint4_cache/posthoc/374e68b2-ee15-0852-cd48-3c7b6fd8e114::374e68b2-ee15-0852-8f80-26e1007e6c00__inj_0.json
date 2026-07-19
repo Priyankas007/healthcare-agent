@@ -1,0 +1,12 @@
+{
+ "patch_id": "f20",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": true,
+ "pass": true,
+ "reasons": [
+  "Both claims supported by transcript: 'Nothing regular' day-to-day confirms no daily meds; 'whittled the list down and then off entirely' confirms tapering and discontinuation.",
+  "Note only states medication reconciliation completed; the specific fact of no current medications and tapering is new.",
+  "Medication status is appropriately documented in Assessment and Plan (medication review section)."
+ ]
+}

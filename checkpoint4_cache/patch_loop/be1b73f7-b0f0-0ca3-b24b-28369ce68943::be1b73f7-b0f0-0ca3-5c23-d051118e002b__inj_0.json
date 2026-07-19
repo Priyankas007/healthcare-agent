@@ -1,0 +1,73 @@
+{
+ "patch": {
+  "flag_id": "f5",
+  "section": "Assessment and Plan",
+  "insert_text": "- No regular medications",
+  "mode": "append",
+  "added_claims": [
+   "Patient takes no regular medications"
+  ]
+ },
+ "verify": {
+  "patch_id": "f5",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Claim 'no regular medications' matches transcript span 'Nothing regular.'",
+   "Note documents med reconciliation but never states patient takes no regular medications, so not duplicative",
+   "Medication status fits Assessment and Plan (medication review section)"
+  ]
+ },
+ "iterations": 2,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f5",
+    "section": "Assessment and Plan",
+    "insert_text": "- No active medications; patient takes no regular prescriptions, vitamins, or supplements",
+    "mode": "append",
+    "added_claims": [
+     "Patient takes no regular medications, vitamins, or supplements"
+    ]
+   },
+   "verify": {
+    "patch_id": "f5",
+    "grounded": false,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": false,
+    "reasons": [
+     "Evidence 'Nothing regular.' supports no regular medications, but the insertion's added specificity ('vitamins, or supplements') is not explicitly supported by the transcript span, making that part an unsupported elaboration.",
+     "The note documents medication reconciliation but does not explicitly state the patient takes no medications, so this adds new information.",
+     "Medication status is appropriately placed under Assessment and Plan (medication review section context)."
+    ]
+   }
+  },
+  {
+   "patch": {
+    "flag_id": "f5",
+    "section": "Assessment and Plan",
+    "insert_text": "- No regular medications",
+    "mode": "append",
+    "added_claims": [
+     "Patient takes no regular medications"
+    ]
+   },
+   "verify": {
+    "patch_id": "f5",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Claim 'no regular medications' matches transcript span 'Nothing regular.'",
+     "Note documents med reconciliation but never states patient takes no regular medications, so not duplicative",
+     "Medication status fits Assessment and Plan (medication review section)"
+    ]
+   }
+  }
+ ]
+}

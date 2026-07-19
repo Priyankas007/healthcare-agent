@@ -1,0 +1,12 @@
+{
+ "patch_id": "f8",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": true,
+ "pass": true,
+ "reasons": [
+  "Insertion matches transcript span 'the EpiPen lives in my purse' \u2014 EpiPen is an epinephrine auto-injector",
+  "No prior mention of an epinephrine auto-injector in the note",
+  "Patient-reported detail belongs in Subjective"
+ ]
+}

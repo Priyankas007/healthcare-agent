@@ -1,0 +1,50 @@
+{
+ "patch": {
+  "flag_id": "f8",
+  "section": "Subjective",
+  "insert_text": "She also keeps an epinephrine auto-injector in her purse.",
+  "mode": "merge",
+  "added_claims": [
+   "Patient keeps an epinephrine auto-injector in her purse"
+  ]
+ },
+ "verify": {
+  "patch_id": "f8",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Evidence 'the EpiPen lives in my purse' supports the claim about keeping an epinephrine auto-injector in her purse",
+   "No prior mention of an epinephrine auto-injector in the note",
+   "Patient-reported historical detail belongs in Subjective"
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f8",
+    "section": "Subjective",
+    "insert_text": "She also keeps an epinephrine auto-injector in her purse.",
+    "mode": "merge",
+    "added_claims": [
+     "Patient keeps an epinephrine auto-injector in her purse"
+    ]
+   },
+   "verify": {
+    "patch_id": "f8",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Evidence 'the EpiPen lives in my purse' supports the claim about keeping an epinephrine auto-injector in her purse",
+     "No prior mention of an epinephrine auto-injector in the note",
+     "Patient-reported historical detail belongs in Subjective"
+    ]
+   }
+  }
+ ]
+}

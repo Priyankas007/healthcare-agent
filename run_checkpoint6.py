@@ -100,8 +100,11 @@ def load_records() -> list[dict]:
 
 
 def load_gaps(rid: str) -> tuple[list[dict], list[dict]]:
-    facts = json.loads((FACTS_DIR / f"{rid}.json").read_text())
-    presence = json.loads((PRESENCE_DIR / f"{rid}.json").read_text())
+    facts_path, presence_path = FACTS_DIR / f"{rid}.json", PRESENCE_DIR / f"{rid}.json"
+    assert facts_path.exists(), f"{facts_path} missing — run run_checkpoint2.py first."
+    assert presence_path.exists(), f"{presence_path} missing — run run_checkpoint2.py first."
+    facts = json.loads(facts_path.read_text())
+    presence = json.loads(presence_path.read_text())
     return select_coverage_gaps(facts, presence)
 
 
@@ -116,7 +119,10 @@ def choose_record(records: list[dict]) -> dict:
         sys.exit(f"--encounter {ENCOUNTER_ID!r} not found in {DATA_PATH}")
     best, best_key = None, None
     for i, rec in enumerate(records):
-        if not (FACTS_DIR / f"{rec['id']}.json").exists():
+        if not (
+            (FACTS_DIR / f"{rec['id']}.json").exists()
+            and (PRESENCE_DIR / f"{rec['id']}.json").exists()
+        ):
             continue
         gaps, _ = load_gaps(rec["id"])
         key = (
@@ -280,7 +286,8 @@ def main() -> None:
                 receipt_path = C6 / "written" / f"{rid}__{fid}.json"
                 if receipt_path.exists():  # already written on a previous run
                     receipt = json.loads(receipt_path.read_text())
-                    result["approved"] = result["written"] = True
+                    result["approved"] = True
+                    result["written"] = bool(receipt.get("confirmed", True))
                     result["server_id"] = receipt.get("created_id")
                 elif request_approval(gap, resource, approve_all=APPROVE_ALL):
                     result["approved"] = True

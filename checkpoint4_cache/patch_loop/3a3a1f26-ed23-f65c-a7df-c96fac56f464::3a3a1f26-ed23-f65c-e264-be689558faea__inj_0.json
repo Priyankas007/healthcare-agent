@@ -1,0 +1,73 @@
+{
+ "patch": {
+  "flag_id": "f32",
+  "section": "Assessment and Plan",
+  "insert_text": "- Influenza vaccine (split virus, trivalent, PF) administered today.",
+  "mode": "append",
+  "added_claims": [
+   "Influenza vaccine (split virus, trivalent, PF) was administered today."
+  ]
+ },
+ "verify": {
+  "patch_id": "f32",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "FHIR Immunization confirms flu vaccine (CVX 140, split virus trivalent PF) status completed on encounter date",
+   "Not previously mentioned in note; only Td booster documented",
+   "Vaccine administration correctly belongs in Assessment and Plan under preventive care"
+  ]
+ },
+ "iterations": 2,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f32",
+    "section": "Assessment and Plan",
+    "insert_text": "- Influenza vaccine (split virus, trivalent, PF) administered in left arm.",
+    "mode": "append",
+    "added_claims": [
+     "Influenza vaccine (split virus, trivalent, PF) was administered in the left arm"
+    ]
+   },
+   "verify": {
+    "patch_id": "f32",
+    "grounded": false,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": false,
+    "reasons": [
+     "The vaccine administration is supported (Immunization status 'completed', CVX 140 'Influenza, split virus, trivalent, PF'), but the claim 'administered in the left arm' is unsupported \u2014 the FHIR resource contains no site/body-location data and the transcript only says 'due for a flu shot'.",
+     "No existing mention of influenza vaccine in the note, so not redundant.",
+     "Administered vaccine belongs in Assessment and Plan, consistent with the Td booster entry."
+    ]
+   }
+  },
+  {
+   "patch": {
+    "flag_id": "f32",
+    "section": "Assessment and Plan",
+    "insert_text": "- Influenza vaccine (split virus, trivalent, PF) administered today.",
+    "mode": "append",
+    "added_claims": [
+     "Influenza vaccine (split virus, trivalent, PF) was administered today."
+    ]
+   },
+   "verify": {
+    "patch_id": "f32",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "FHIR Immunization confirms flu vaccine (CVX 140, split virus trivalent PF) status completed on encounter date",
+     "Not previously mentioned in note; only Td booster documented",
+     "Vaccine administration correctly belongs in Assessment and Plan under preventive care"
+    ]
+   }
+  }
+ ]
+}

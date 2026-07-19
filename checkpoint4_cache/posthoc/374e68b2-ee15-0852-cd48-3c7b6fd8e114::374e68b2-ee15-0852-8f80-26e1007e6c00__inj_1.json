@@ -1,0 +1,12 @@
+{
+ "patch_id": "f16",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": true,
+ "pass": true,
+ "reasons": [
+  "Score of 1/6 and low-risk interpretation match both the transcript span and the PHQ-2 FHIR Observation (value 1).",
+  "No PHQ-2 or mood screening score is documented elsewhere in the note.",
+  "Screening scores belong in Objective, consistent with existing DAST-10/PRAPARE entries."
+ ]
+}

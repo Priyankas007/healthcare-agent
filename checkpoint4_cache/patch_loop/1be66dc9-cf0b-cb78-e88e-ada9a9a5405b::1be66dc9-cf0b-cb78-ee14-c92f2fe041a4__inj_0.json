@@ -1,0 +1,50 @@
+{
+ "patch": {
+  "flag_id": "f15",
+  "section": "Assessment and Plan",
+  "insert_text": "- Continue clopidogrel 75 mg orally once daily (antiplatelet)",
+  "mode": "append",
+  "added_claims": [
+   "Clopidogrel 75 mg orally once daily (antiplatelet) is continued"
+  ]
+ },
+ "verify": {
+  "patch_id": "f15",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Evidence explicitly states clopidogrel 75 mg once daily as a blood thinner (antiplatelet), matching the added claim.",
+   "No existing mention of clopidogrel in the note; not redundant.",
+   "Medication continuation belongs in Assessment and Plan section."
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f15",
+    "section": "Assessment and Plan",
+    "insert_text": "- Continue clopidogrel 75 mg orally once daily (antiplatelet)",
+    "mode": "append",
+    "added_claims": [
+     "Clopidogrel 75 mg orally once daily (antiplatelet) is continued"
+    ]
+   },
+   "verify": {
+    "patch_id": "f15",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Evidence explicitly states clopidogrel 75 mg once daily as a blood thinner (antiplatelet), matching the added claim.",
+     "No existing mention of clopidogrel in the note; not redundant.",
+     "Medication continuation belongs in Assessment and Plan section."
+    ]
+   }
+  }
+ ]
+}

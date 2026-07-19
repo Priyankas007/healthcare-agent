@@ -1,0 +1,50 @@
+{
+ "patch": {
+  "flag_id": "f10",
+  "section": "Assessment and Plan",
+  "insert_text": "- Started naproxen 220 mg tablet for baseline chronic pain",
+  "mode": "append",
+  "added_claims": [
+   "Naproxen 220 mg tablet started for baseline chronic pain"
+  ]
+ },
+ "verify": {
+  "patch_id": "f10",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Evidence explicitly states naproxen 220 mg for the steady baseline ache, supporting the claim",
+   "Note only lists meperidine for pain; naproxen is not previously mentioned",
+   "Medication for pain belongs in Assessment and Plan (Pain section), matching the target"
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f10",
+    "section": "Assessment and Plan",
+    "insert_text": "- Started naproxen 220 mg tablet for baseline chronic pain",
+    "mode": "append",
+    "added_claims": [
+     "Naproxen 220 mg tablet started for baseline chronic pain"
+    ]
+   },
+   "verify": {
+    "patch_id": "f10",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Evidence explicitly states naproxen 220 mg for the steady baseline ache, supporting the claim",
+     "Note only lists meperidine for pain; naproxen is not previously mentioned",
+     "Medication for pain belongs in Assessment and Plan (Pain section), matching the target"
+    ]
+   }
+  }
+ ]
+}

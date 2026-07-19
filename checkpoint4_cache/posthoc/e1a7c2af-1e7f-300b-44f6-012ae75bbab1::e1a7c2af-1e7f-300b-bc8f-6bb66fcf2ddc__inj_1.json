@@ -1,0 +1,12 @@
+{
+ "patch_id": "f5",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": true,
+ "pass": true,
+ "reasons": [
+  "Evidence 'No pain-pain' supports the denial of dental pain",
+  "Note lists other denials (loose teeth, swelling, fever) but not pain, so not duplicative",
+  "Patient-reported symptom denial belongs in Subjective"
+ ]
+}

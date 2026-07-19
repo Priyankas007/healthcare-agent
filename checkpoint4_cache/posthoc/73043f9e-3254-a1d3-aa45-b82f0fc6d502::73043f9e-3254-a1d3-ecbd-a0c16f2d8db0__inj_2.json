@@ -1,0 +1,12 @@
+{
+ "patch_id": "f11",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": true,
+ "pass": true,
+ "reasons": [
+  "GAD-7 total of 5 (mild) is directly supported by both the transcript span and the FHIR Observation valueQuantity of 5.",
+  "No existing GAD-7 result appears in the note; adds new screening data without duplication.",
+  "Belongs in Objective Screenings alongside PHQ-2, HARK, and DAST-10 scores."
+ ]
+}

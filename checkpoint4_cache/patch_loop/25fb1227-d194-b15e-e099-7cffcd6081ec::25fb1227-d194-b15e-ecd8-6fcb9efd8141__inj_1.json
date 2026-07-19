@@ -1,0 +1,50 @@
+{
+ "patch": {
+  "flag_id": "f8",
+  "section": "Subjective",
+  "insert_text": "simvastatin 10 mg for cholesterol;",
+  "mode": "merge",
+  "added_claims": [
+   "Patient takes simvastatin 10 mg for cholesterol"
+  ]
+ },
+ "verify": {
+  "patch_id": "f8",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Insertion matches evidence: simvastatin 10 mg for cholesterol is directly stated in the transcript span.",
+   "Simvastatin is not already listed among the reconciled medications in the note, so it adds new information.",
+   "Medications belong in the Subjective section's medication reconciliation list, making placement correct."
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f8",
+    "section": "Subjective",
+    "insert_text": "simvastatin 10 mg for cholesterol;",
+    "mode": "merge",
+    "added_claims": [
+     "Patient takes simvastatin 10 mg for cholesterol"
+    ]
+   },
+   "verify": {
+    "patch_id": "f8",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Insertion matches evidence: simvastatin 10 mg for cholesterol is directly stated in the transcript span.",
+     "Simvastatin is not already listed among the reconciled medications in the note, so it adds new information.",
+     "Medications belong in the Subjective section's medication reconciliation list, making placement correct."
+    ]
+   }
+  }
+ ]
+}

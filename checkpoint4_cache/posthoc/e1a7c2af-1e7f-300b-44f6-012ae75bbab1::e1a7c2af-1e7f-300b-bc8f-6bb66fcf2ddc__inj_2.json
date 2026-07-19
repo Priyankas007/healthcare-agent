@@ -1,0 +1,12 @@
+{
+ "patch_id": "f6",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": true,
+ "pass": true,
+ "reasons": [
+  "Both denials supported by transcript quote",
+  "Not present elsewhere in note",
+  "Patient-reported denials belong in Subjective"
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "patch": {
+  "flag_id": "f4",
+  "section": "Subjective",
+  "insert_text": "\u2014 he ran out of everything and stopped refilling months ago when insurance switched to his wife's plan",
+  "mode": "merge",
+  "added_claims": [
+   "Patient stopped refilling all prior medications months ago after insurance switched to his wife's plan"
+  ]
+ },
+ "verify": {
+  "patch_id": "f4",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Claim that he ran out and stopped refilling after insurance switched to wife's plan is directly supported by the transcript span.",
+   "This medication-refill history is not already stated in the note (note only says no current meds).",
+   "Patient-reported medication/refill history belongs in Subjective."
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f4",
+    "section": "Subjective",
+    "insert_text": "\u2014 he ran out of everything and stopped refilling months ago when insurance switched to his wife's plan",
+    "mode": "merge",
+    "added_claims": [
+     "Patient stopped refilling all prior medications months ago after insurance switched to his wife's plan"
+    ]
+   },
+   "verify": {
+    "patch_id": "f4",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Claim that he ran out and stopped refilling after insurance switched to wife's plan is directly supported by the transcript span.",
+     "This medication-refill history is not already stated in the note (note only says no current meds).",
+     "Patient-reported medication/refill history belongs in Subjective."
+    ]
+   }
+  }
+ ]
+}

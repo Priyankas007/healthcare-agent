@@ -1,0 +1,50 @@
+{
+ "patch": {
+  "flag_id": "f16",
+  "section": "Assessment and Plan",
+  "insert_text": "- Continue simvastatin 20 mg orally at night",
+  "mode": "append",
+  "added_claims": [
+   "Simvastatin 20 mg orally at night"
+  ]
+ },
+ "verify": {
+  "patch_id": "f16",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Evidence explicitly states simvastatin 20 mg at night for blood fats, matching the inserted claim",
+   "Simvastatin is not mentioned anywhere in the existing note",
+   "A medication order belongs in Assessment and Plan; fits with the lipid/metabolic management"
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f16",
+    "section": "Assessment and Plan",
+    "insert_text": "- Continue simvastatin 20 mg orally at night",
+    "mode": "append",
+    "added_claims": [
+     "Simvastatin 20 mg orally at night"
+    ]
+   },
+   "verify": {
+    "patch_id": "f16",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Evidence explicitly states simvastatin 20 mg at night for blood fats, matching the inserted claim",
+     "Simvastatin is not mentioned anywhere in the existing note",
+     "A medication order belongs in Assessment and Plan; fits with the lipid/metabolic management"
+    ]
+   }
+  }
+ ]
+}

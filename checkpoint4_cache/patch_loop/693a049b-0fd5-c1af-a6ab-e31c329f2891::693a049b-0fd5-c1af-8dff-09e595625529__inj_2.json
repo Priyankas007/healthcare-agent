@@ -1,0 +1,73 @@
+{
+ "patch": {
+  "flag_id": "f11",
+  "section": "Subjective",
+  "insert_text": "; metoprolol (long-acting) 100 mg",
+  "mode": "merge",
+  "added_claims": [
+   "Metoprolol (long-acting) 100 mg is a reconciled medication"
+  ]
+ },
+ "verify": {
+  "patch_id": "f11",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Evidence transcript explicitly states 'The long-acting metoprolol, 100 milligrams,' supporting the added medication claim",
+   "Metoprolol is not already listed among the reconciled medications (clopidogrel, simvastatin, nitroglycerin)",
+   "Reconciled medications belong in the Subjective section, consistent with existing med list placement"
+  ]
+ },
+ "iterations": 2,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f11",
+    "section": "Subjective",
+    "insert_text": "; metoprolol (long-acting) 100 mg daily",
+    "mode": "merge",
+    "added_claims": [
+     "Metoprolol (long-acting) 100 mg is a reconciled current medication"
+    ]
+   },
+   "verify": {
+    "patch_id": "f11",
+    "grounded": false,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": false,
+    "reasons": [
+     "Evidence supports metoprolol (long-acting) 100 mg, but the frequency 'daily' in the inserted text is not stated in the transcript span provided",
+     "Metoprolol is not already listed among reconciled medications, so it is non-redundant",
+     "Medication reconciliation belongs in the Subjective section, so placement is correct"
+    ]
+   }
+  },
+  {
+   "patch": {
+    "flag_id": "f11",
+    "section": "Subjective",
+    "insert_text": "; metoprolol (long-acting) 100 mg",
+    "mode": "merge",
+    "added_claims": [
+     "Metoprolol (long-acting) 100 mg is a reconciled medication"
+    ]
+   },
+   "verify": {
+    "patch_id": "f11",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Evidence transcript explicitly states 'The long-acting metoprolol, 100 milligrams,' supporting the added medication claim",
+     "Metoprolol is not already listed among the reconciled medications (clopidogrel, simvastatin, nitroglycerin)",
+     "Reconciled medications belong in the Subjective section, consistent with existing med list placement"
+    ]
+   }
+  }
+ ]
+}

@@ -49,6 +49,15 @@
 - Usage: 89 calls, 0% cache — expected (classify prompts share no ≥1024-token stable prefix; caching pays in presence/edit calls, not classify).
 - Rendered hero surfaces look demo-ready (severity-ranked, why-it-matters, transcript+FHIR evidence).
 
+### Scaffold workflow results (CP4/5/6 — 6 agents, ~1.9M tokens)
+- All three checkpoints **ready_with_fixes_applied**. Notable reviewer catches: CP5 run_R4/R5 crashed on a skipped-R3 dict (guard added) + report read wrong key (`examples` vs `full_arm_examples`); CP6 negation screen missed 5 real negative-fact phrasings ("none reported", "not taking"…) and write-receipt cache bug; CP4 needed an eval-cache completeness gate.
+- CP4 design highlights (from builder): verify_patch recomputes `pass` in code (never trusts model's own); apply_patch fully deterministic (verified section headers uniform across all 94 notes); evidence_for inlines actual FHIR resource content (deliberate strengthening over ref-string); redundancy = repeated 5-gram rate (no embedding dep); 10 deterministic stress patches (4 ungrounded / 4 redundant / 2 misplaced). Same-note items sorted adjacent for cache TTL locality.
+- Known minors accepted: --workers-as-last-arg IndexError (consistent with other runners); partial-failure count not in report (resumable rerun heals); some cached prefixes below 1024-token min (silently uncached, harmless).
+- **CP4 run launched** (57 eligible = 69 − 12 not-surfaced; note: eligibility recomputes from checkpoint3 cache). CP5 run deferred per user. CP6 ready to demo against live HAPI server.
+
+### Demo assets (2026-07-18)
+- demo/index.html (self-contained, cached-data replay, 25 encounters / 94 versions) served at localhost:8765; demo/DEMO_SCRIPT.md cut to ~60s around the HCTZ safety-critical case (quote + MedicationRequest dual evidence; potassium 3.97 rationale). Backup: lisinopril inj_1. Q&A one-liners retained.
+
 ### Events
 - Scaffolded repo; venv created; SDK installed.
 - Blocked briefly on API key; user added `.env`; key verified with live Opus 4.8 call.

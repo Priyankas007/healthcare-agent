@@ -1,0 +1,12 @@
+{
+ "patch_id": "f10",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": true,
+ "pass": true,
+ "reasons": [
+  "Evidence explicitly states naproxen 220 mg for baseline ache, matching the added claim",
+  "Note only mentions meperidine for severe pain; naproxen for baseline pain is new content",
+  "Medication for pain belongs in Assessment and Plan (Pain section)"
+ ]
+}

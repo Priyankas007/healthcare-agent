@@ -1,0 +1,12 @@
+{
+ "patch_id": "f12",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": true,
+ "pass": true,
+ "reasons": [
+  "PHQ-2 total of 5 matches the FHIR Observation valueQuantity (5) and transcript span ('a 5').",
+  "No existing PHQ-2 score in the note; only PHQ-9, GAD-7, and AUDIT-C are documented.",
+  "Screening scores belong in the Objective section, consistent with existing placement of GAD-7/PHQ-9/AUDIT-C."
+ ]
+}

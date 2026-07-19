@@ -1,0 +1,12 @@
+{
+ "patch_id": "f9",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": true,
+ "pass": true,
+ "reasons": [
+  "Evidence transcript explicitly states 'OxyContin \u2014 oxycodone 10 milligram extended-release', supporting the claim.",
+  "Note lists hydrocodone ER and Percocet (oxycodone/acetaminophen) but not oxycodone ER (OxyContin); this is a distinct medication, not a duplicate.",
+  "Medication reconciliation belongs in the Subjective section, matching existing medication list placement."
+ ]
+}

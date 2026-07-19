@@ -1,0 +1,12 @@
+{
+ "patch_id": "f21",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": true,
+ "pass": true,
+ "reasons": [
+  "Evidence explicitly states B12 injections continue unchanged for anemia",
+  "Note only says anemia is 'Stable' without mentioning B12 injections",
+  "Treatment plan detail correctly belongs in Assessment and Plan under anemia"
+ ]
+}

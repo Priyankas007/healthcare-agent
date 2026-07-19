@@ -1,0 +1,50 @@
+{
+ "patch": {
+  "flag_id": "f14",
+  "section": "Assessment and Plan",
+  "insert_text": "- Continue atorvastatin every evening, no missed days",
+  "mode": "append",
+  "added_claims": [
+   "Continue atorvastatin every evening with no missed days"
+  ]
+ },
+ "verify": {
+  "patch_id": "f14",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "The claim to continue atorvastatin every evening with no missed days is directly supported by the evidence span 'Let us keep the atorvastatin every evening, no missed days'.",
+   "The note never mentions atorvastatin (only simvastatin removal), so this is new, non-duplicative content.",
+   "A medication continuation directive belongs in Assessment and Plan, appropriate for the IHD/hyperlipidemia management."
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f14",
+    "section": "Assessment and Plan",
+    "insert_text": "- Continue atorvastatin every evening, no missed days",
+    "mode": "append",
+    "added_claims": [
+     "Continue atorvastatin every evening with no missed days"
+    ]
+   },
+   "verify": {
+    "patch_id": "f14",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "The claim to continue atorvastatin every evening with no missed days is directly supported by the evidence span 'Let us keep the atorvastatin every evening, no missed days'.",
+     "The note never mentions atorvastatin (only simvastatin removal), so this is new, non-duplicative content.",
+     "A medication continuation directive belongs in Assessment and Plan, appropriate for the IHD/hyperlipidemia management."
+    ]
+   }
+  }
+ ]
+}

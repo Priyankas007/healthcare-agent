@@ -1,0 +1,52 @@
+{
+ "patch": {
+  "flag_id": "f14",
+  "section": "Assessment and Plan",
+  "insert_text": "continue carrying EpiPen (not expired, good until next year).",
+  "mode": "append",
+  "added_claims": [
+   "Patient continues to carry an EpiPen",
+   "EpiPen is not expired and is good until next year"
+  ]
+ },
+ "verify": {
+  "patch_id": "f14",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Both claims (carries EpiPen, valid until next year) are directly supported by the transcript span",
+   "EpiPen is not mentioned anywhere in the existing note",
+   "EpiPen management is appropriately placed in Assessment and Plan"
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f14",
+    "section": "Assessment and Plan",
+    "insert_text": "continue carrying EpiPen (not expired, good until next year).",
+    "mode": "append",
+    "added_claims": [
+     "Patient continues to carry an EpiPen",
+     "EpiPen is not expired and is good until next year"
+    ]
+   },
+   "verify": {
+    "patch_id": "f14",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Both claims (carries EpiPen, valid until next year) are directly supported by the transcript span",
+     "EpiPen is not mentioned anywhere in the existing note",
+     "EpiPen management is appropriately placed in Assessment and Plan"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,74 @@
+{
+ "patch": {
+  "flag_id": "f7",
+  "section": "Subjective",
+  "insert_text": "She also takes an oral tablet most days in spring.",
+  "mode": "merge",
+  "added_claims": [
+   "Patient takes an oral tablet (pill) most days in spring"
+  ]
+ },
+ "verify": {
+  "patch_id": "f7",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "The claim that the patient takes an oral tablet (pill) most days in spring is supported by the transcript span 'the pill most days in spring'; 'pill' reasonably equates to oral tablet.",
+   "No mention of this seasonal pill exists elsewhere in the note, so it is not redundant.",
+   "Patient-reported medication use belongs in the Subjective section, which already contains the medication review narrative."
+  ]
+ },
+ "iterations": 2,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f7",
+    "section": "Subjective",
+    "insert_text": "She also continues a loratadine tablet for seasonal allergies, taken most days in spring.",
+    "mode": "append",
+    "added_claims": [
+     "Patient continues loratadine tablet for seasonal allergies",
+     "Loratadine taken most days in spring"
+    ]
+   },
+   "verify": {
+    "patch_id": "f7",
+    "grounded": false,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": false,
+    "reasons": [
+     "Evidence span only says 'the pill most days in spring'\u2014it does not name loratadine or specify seasonal allergies, so both added claims are unsupported/invented.",
+     "Loratadine is not mentioned elsewhere in the note (only hydrocortisone and epinephrine), so the content is not redundant.",
+     "Subjective is an appropriate section for a home medication, but grounding fails."
+    ]
+   }
+  },
+  {
+   "patch": {
+    "flag_id": "f7",
+    "section": "Subjective",
+    "insert_text": "She also takes an oral tablet most days in spring.",
+    "mode": "merge",
+    "added_claims": [
+     "Patient takes an oral tablet (pill) most days in spring"
+    ]
+   },
+   "verify": {
+    "patch_id": "f7",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "The claim that the patient takes an oral tablet (pill) most days in spring is supported by the transcript span 'the pill most days in spring'; 'pill' reasonably equates to oral tablet.",
+     "No mention of this seasonal pill exists elsewhere in the note, so it is not redundant.",
+     "Patient-reported medication use belongs in the Subjective section, which already contains the medication review narrative."
+    ]
+   }
+  }
+ ]
+}

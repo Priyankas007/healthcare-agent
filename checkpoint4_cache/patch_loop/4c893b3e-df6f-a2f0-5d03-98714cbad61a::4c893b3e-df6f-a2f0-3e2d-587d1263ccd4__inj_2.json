@@ -1,0 +1,52 @@
+{
+ "patch": {
+  "flag_id": "f8",
+  "section": "Subjective",
+  "insert_text": "Former smoker; quit at age 20, more than thirty years ago.",
+  "mode": "append",
+  "added_claims": [
+   "Patient is a former smoker",
+   "Quit smoking at age 20, over thirty years ago"
+  ]
+ },
+ "verify": {
+  "patch_id": "f8",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Both claims supported: transcript confirms quit at 20 and over thirty years ago; FHIR Observation confirms ex-smoker status",
+   "No smoking history mentioned elsewhere in the note",
+   "Smoking/social history belongs in Subjective section"
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f8",
+    "section": "Subjective",
+    "insert_text": "Former smoker; quit at age 20, more than thirty years ago.",
+    "mode": "append",
+    "added_claims": [
+     "Patient is a former smoker",
+     "Quit smoking at age 20, over thirty years ago"
+    ]
+   },
+   "verify": {
+    "patch_id": "f8",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Both claims supported: transcript confirms quit at 20 and over thirty years ago; FHIR Observation confirms ex-smoker status",
+     "No smoking history mentioned elsewhere in the note",
+     "Smoking/social history belongs in Subjective section"
+    ]
+   }
+  }
+ ]
+}

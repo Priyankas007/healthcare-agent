@@ -1,0 +1,50 @@
+{
+ "patch": {
+  "flag_id": "f14",
+  "section": "Subjective",
+  "insert_text": "Home medications confirmed with daughter: aspirin 81 mg, atenolol 50 mg, lisinopril 20 mg, and rosuvastatin 40 mg daily, with good adherence.",
+  "mode": "merge",
+  "added_claims": [
+   "Home medication rosuvastatin 40 mg daily"
+  ]
+ },
+ "verify": {
+  "patch_id": "f14",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Rosuvastatin 40 mg daily is supported by evidence span 'rosuvastatin forty'",
+   "The added claim (rosuvastatin) is new; existing meds are re-listed only for merge, no duplicated new fact",
+   "Home medications belong in the Subjective section, consistent with existing med list placement"
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f14",
+    "section": "Subjective",
+    "insert_text": "Home medications confirmed with daughter: aspirin 81 mg, atenolol 50 mg, lisinopril 20 mg, and rosuvastatin 40 mg daily, with good adherence.",
+    "mode": "merge",
+    "added_claims": [
+     "Home medication rosuvastatin 40 mg daily"
+    ]
+   },
+   "verify": {
+    "patch_id": "f14",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Rosuvastatin 40 mg daily is supported by evidence span 'rosuvastatin forty'",
+     "The added claim (rosuvastatin) is new; existing meds are re-listed only for merge, no duplicated new fact",
+     "Home medications belong in the Subjective section, consistent with existing med list placement"
+    ]
+   }
+  }
+ ]
+}

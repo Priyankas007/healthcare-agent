@@ -18,8 +18,63 @@ REPO = Path(__file__).resolve().parent.parent
 DATA = REPO / "synthetic-ambient-fhir-25" / "synthetic-ambient-fhir-25.jsonl"
 C2 = REPO / "checkpoint2_cache"
 C3 = REPO / "checkpoint3_cache" / "classify"
+C4 = REPO / "checkpoint4_cache"
 INJ = REPO / "injections"
 OUT = REPO / "demo" / "index.html"
+
+SECTION_HEADERS = {
+    "Subjective": "**Subjective:**",
+    "Objective": "**Objective:**",
+    "Assessment and Plan": "**Assessment and Plan:**",
+}
+
+
+def apply_patch_md(note_md: str, section: str, insert_text: str) -> str:
+    """Insert the patch at the end of the target SOAP section, wrapped in
+    highlight markers (resolved to <span class='ins'> after md rendering)."""
+    marked = f"@@INS@@{insert_text}@@ENDINS@@"
+    lines = note_md.splitlines()
+    header = SECTION_HEADERS.get(section)
+    start = next((i for i, l in enumerate(lines) if header and l.strip().startswith(header)), None)
+    if start is None:
+        return note_md + "\n\n" + marked
+    end = next(
+        (j for j in range(start + 1, len(lines))
+         if any(lines[j].strip().startswith(h) for h in SECTION_HEADERS.values())),
+        len(lines),
+    )
+    # walk back over trailing blank lines of the section
+    while end - 1 > start and lines[end - 1].strip() == "":
+        end -= 1
+    return "\n".join(lines[:end] + [marked] + lines[end:])
+
+
+def load_patch(injection_id: str) -> dict | None:
+    loop_path = C4 / "patch_loop" / f"{injection_id}.json"
+    if not loop_path.exists():
+        return None
+    loop = json.loads(loop_path.read_text())
+    if loop.get("unpatchable") or not loop.get("patch"):
+        return {"unpatchable": True}
+    restore_path = C4 / "restore" / f"{injection_id}.json"
+    restored = None
+    if restore_path.exists():
+        restored = json.loads(restore_path.read_text())[0]["status"]
+    p = loop["patch"]
+    v = loop.get("verify", {})
+    return {
+        "unpatchable": False,
+        "section": p.get("section", "Assessment and Plan"),
+        "insert_text": p.get("insert_text", ""),
+        "mode": p.get("mode", "append"),
+        "iterations": loop.get("iterations", 1),
+        "verify": {
+            "grounded": bool(v.get("grounded")),
+            "non_redundant": bool(v.get("non_redundant")),
+            "correctly_placed": bool(v.get("correctly_placed")),
+        },
+        "restored": restored,
+    }
 
 SEVERITY_RANK = {"safety_critical": 0, "major": 1, "minor": 2}
 TYPE_PRIORITY = {"medication": 0, "observation": 1, "red_flag_screen": 2, "order": 3, "referral": 4}
@@ -125,9 +180,16 @@ def build() -> None:
                 "type": fact["type"],
                 "caught": fact["id"] in ev["detected_absent_fact_ids"],
             }
-            versions.append(
-                make_version(iid, label, (INJ / f"{iid}.md").read_text(), ev["presence_results"], planted)
-            )
+            note_md = (INJ / f"{iid}.md").read_text()
+            version = make_version(iid, label, note_md, ev["presence_results"], planted)
+            patch = load_patch(iid)
+            if patch and not patch["unpatchable"]:
+                patched_html = md_to_html(
+                    apply_patch_md(note_md, patch["section"], patch["insert_text"])
+                ).replace("@@INS@@", '<span class="ins">').replace("@@ENDINS@@", "</span>")
+                version["patch"] = patch
+                version["note_patched_html"] = patched_html
+            versions.append(version)
 
         encounters.append(
             {
@@ -267,6 +329,24 @@ TEMPLATE = r"""<!DOCTYPE html>
     background:var(--pine-wash);border-radius:4px;padding:1px 5px}
   .minorbox{font-size:12px;color:var(--faint);background:var(--panel);border:1px solid var(--line);border-radius:10px;
     padding:9px 13px;animation:rise .45s both}
+
+  /* correction card */
+  .fix{margin-top:11px;border-top:1px dashed var(--line);padding-top:10px}
+  .fix .fixhead{font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:var(--pine-deep)}
+  .fix .badges{display:flex;gap:6px;margin:6px 0}
+  .fix .badge{font-size:10px;padding:2px 8px;border-radius:20px;background:var(--ok-wash);color:var(--ok);font-weight:600}
+  .fix .ins-preview{background:var(--pine-wash);border-left:3px solid var(--pine);border-radius:0 7px 7px 0;
+    padding:8px 11px;font-size:12.8px;margin:7px 0}
+  .fix .where{font-size:11px;color:var(--faint);margin-bottom:8px}
+  .fix .btns{display:flex;gap:8px}
+  .fix button{all:unset;font-size:12.5px;font-weight:600;padding:6px 14px;border-radius:8px;cursor:pointer}
+  .fix .accept{background:var(--pine);color:#fff}
+  .fix .accept:hover{background:var(--pine-deep)}
+  .fix .accept.done{background:var(--ok-wash);color:var(--ok);cursor:default}
+  .fix .dismiss{border:1px solid var(--line);color:var(--ink2);background:var(--panel)}
+  .doc .ins{background:var(--pine-wash);border-bottom:2px solid var(--pine);padding:1px 3px;border-radius:3px;
+    animation:insglow 1.6s ease-out}
+  @keyframes insglow{0%{background:#bfe6dd}100%{background:var(--pine-wash)}}
   @keyframes rise{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:none}}
   .noflag{background:var(--ok-wash);border:1px solid #bfe3cd;color:var(--ok);border-radius:10px;padding:11px 14px;
     font-size:13px;animation:rise .4s both}
@@ -298,6 +378,7 @@ TEMPLATE = r"""<!DOCTYPE html>
     <span><b>100%</b> injection recall (69/69)</span>
     <span><b>0.96</b> clean-note flags (upper bound)</span>
     <span><b>2</b> median flags/note</span>
+    <span><b>96.5%</b> patch faithfulness</span>
   </div>
   <button class="sysbtn" onclick="document.getElementById('ov').classList.add('show')">⌘ System architecture</button>
 </header>
@@ -388,7 +469,10 @@ function renderMain(){
     tabs.appendChild(b);
   });
   m.appendChild(tabs);
-  if(cur.tab==='note'){ m.appendChild(el('div','doc',cur.ver.note_html)); }
+  if(cur.tab==='note'){
+    const body = (cur.ver.accepted && cur.ver.note_patched_html) ? cur.ver.note_patched_html : cur.ver.note_html;
+    m.appendChild(el('div','doc',body));
+  }
   else { m.appendChild(el('div','doc transcript',esc(cur.enc.transcript))); }
 }
 
@@ -439,7 +523,18 @@ function showResults(){
     let ev='';
     if(f.quote) ev+=`<div class="ev"><span class="src">Transcript</span><div class="q">“${esc(f.quote)}”</div></div>`;
     if(f.fhir) ev+=`<div class="ev"><span class="src">Patient chart</span> <code>${esc(f.fhir)}</code></div>`;
-    const box=el('div',`flag ${f.severity}`,`<span class="pill">${sev} · ${esc(f.type)}</span><div class="ft">${esc(f.text)}</div><div class="why">${esc(f.why)}</div>${ev}`);
+    let fix='';
+    const p = (v.planted && f.fact_id===v.planted.fact_id) ? v.patch : null;
+    if(p){
+      const iters = p.iterations>1 ? ` · revised ×${p.iterations-1} by verifier` : '';
+      fix=`<div class="fix"><div class="fixhead">Proposed correction${iters}</div>
+        <div class="badges"><span class="badge">✓ grounded</span><span class="badge">✓ non-redundant</span><span class="badge">✓ placed</span></div>
+        <div class="ins-preview">${esc(p.insert_text)}</div>
+        <div class="where">→ ${esc(p.section)} · ${esc(p.mode)}</div>
+        <div class="btns"><button class="accept" onclick="acceptPatch(this)">✓ Accept insertion</button>
+        <button class="dismiss" onclick="this.closest('.fix').style.display='none'">Dismiss</button></div></div>`;
+    }
+    const box=el('div',`flag ${f.severity}`,`<span class="pill">${sev} · ${esc(f.type)}</span><div class="ft">${esc(f.text)}</div><div class="why">${esc(f.why)}</div>${ev}${fix}`);
     box.style.animationDelay=(i*0.14)+'s';
     r.appendChild(box);
   });
@@ -452,6 +547,17 @@ function showResults(){
   r.classList.add('show');
   document.getElementById('runbtn').disabled=false;
   document.getElementById('runbtn').textContent='Re-run verifier engine';
+}
+
+function acceptPatch(btn){
+  if(!cur.ver.note_patched_html) return;
+  btn.textContent='✓ Insertion accepted'; btn.classList.add('done');
+  btn.parentElement.querySelector('.dismiss').style.display='none';
+  cur.ver.accepted=true;
+  cur.tab='note';
+  renderMain();
+  const ins=document.querySelector('#main .doc .ins');
+  if(ins) ins.scrollIntoView({behavior:'smooth', block:'center'});
 }
 
 buildSidebar(); select(cur.enc, cur.ver);

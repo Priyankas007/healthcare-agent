@@ -39,12 +39,20 @@ Legend: `[ ]` todo · `[~]` in progress · `[x]` done · `[!]` blocked
 - [x] Run full chain on injected + clean sets → **DONE: 57/69 = 82.6% detected-AND-surfaced**; clean surfaced-flag rate 0.96/note (vs 1.56 raw); flags/note median 2, max 4 — surface economical with no cap
 - [ ] Suppression spot-check + severity calibration review — **12 "misses" are all severity-tier disagreements** (classifier downgraded heuristic-major → minor ×11, expected=false ×1), not detection failures; needs eyeball: is the classifier right and the heuristic answer key wrong (e.g. PHQ-2 score 2 → minor looks correct)?
 
-## Checkpoints 4–6 (scaffolding in progress — ultracode workflow)
-- [~] CP4: `recall/patch.py` + `recall/verify_patch.py` + `run_checkpoint4.py` (evaluator-optimizer loop, verifier stress test)
-- [~] CP5: scaffold still lands, but **run SKIPPED for now** (user call 2026-07-18 — "when does FHIR help vs harm" deferred; revisit post-demo if time)
-- [~] CP6 (spec's "8", renamed): `recall/writeback.py` + `run_checkpoint6.py` — **scaffold landed, compiles, sandbox allowlist verified**; Docker daemon started; HAPI image pulling
-- [ ] CP6: confirm HAPI server up → run demo → `checkpoint_6.md`
-- [ ] Review + consolidate scaffolds when workflow completes; then fast-track CP4 patch run (needed for the "after" demo beat)
+## Checkpoints 4–6 (scaffolds DONE — ultracode workflow, 6 agents, all reviews passed)
+- [x] CP4 scaffold: ready (49/49 mock tests; reviewer added eval-cache gate); 57 eligible flags (69 − 12 not-surfaced)
+- [x] CP4 RUN **DONE** (274 calls, 32% cache-read): 57/57 patched, 0 unpatchable, mean 1.32 iterations; **restore 37/57 = 64.9% strict / 54/57 = 94.7% substance** (17 partials = slot-truncation, 3 true failures); faithfulness 96.5%; redundancy Δ ≈ 0; verifier stress 10/10 rejected w/ correct field. Diagnosis appended to checkpoint_4.md
+- [ ] Optional prompt fix (require all slots in insert_text) + rerun 20 non-restored — **user decision** (changes reported numbers)
+- [x] CP5 scaffold: ready (reviewer fixed skipped-R3 crash path + report key mismatch); **run deferred** (user call)
+- [x] CP6 scaffold: ready (reviewer extended negation screening, tightened gates); **HAPI FHIR server UP** (R4, localhost:8080)
+- [ ] CP6: run the write-back demo (interactive approval gate) when user is ready to film it
+- [ ] Post-run: fold CP4 metrics into demo assets; optional CP2 `--benchmark`
+
+## Demo assets
+- [x] `demo/build_demo_ui.py` → `demo/index.html` — self-contained UI, cached data only (25 encounters, 94 note versions), "Run verifier engine" staged replay, architecture flowchart + sources, planted-omission ground-truth banner
+- [x] Served at http://localhost:8765 (background `http.server`); page + data + JS verified
+- [x] `demo/DEMO_SCRIPT.md` — ~2-min technical narration + Q&A one-liners
+- [ ] User: film pass 1 (detection story); pass 2 (patch before/after) once CP4 run lands
 
 ## Later checkpoints (DO NOT BUILD YET)
 - retrieve_fhir (targeted/full-chart arms) · patch + verify_patch · contradiction class · run_ablation

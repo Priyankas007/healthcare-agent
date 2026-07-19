@@ -1,0 +1,12 @@
+{
+ "patch_id": "f16",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": true,
+ "pass": true,
+ "reasons": [
+  "Insertion matches evidence: simvastatin 20 mg at night stated in transcript",
+  "Statin not mentioned elsewhere in note; no duplication",
+  "Medication order belongs in Assessment and Plan section"
+ ]
+}

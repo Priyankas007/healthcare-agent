@@ -1,0 +1,12 @@
+{
+ "patch_id": "f4",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": true,
+ "pass": true,
+ "reasons": [
+  "Evidence transcript span directly supports OTC naproxen 220 mg, with food, one to two times per week for hand pain.",
+  "Not duplicated; note elsewhere states 'no medications,' so this OTC use is new information (and worth reconciling).",
+  "Patient-reported medication use belongs in Subjective."
+ ]
+}

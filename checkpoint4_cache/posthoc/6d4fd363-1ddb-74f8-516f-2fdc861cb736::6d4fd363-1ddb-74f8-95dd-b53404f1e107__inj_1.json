@@ -1,0 +1,12 @@
+{
+ "patch_id": "f8",
+ "grounded": false,
+ "non_redundant": false,
+ "correctly_placed": true,
+ "pass": false,
+ "reasons": [
+  "Evidence (transcript 'lisinopril ten milligrams once a day' and FHIR frequency 1/day) supports lisinopril 10 mg once daily, but 'in the morning' is not stated in the transcript or the provided FHIR timing, so that timing detail is unsupported.",
+  "The note's hypertension plan already prescribes amlodipine 2.5 mg and HCTZ 25 mg; adding lisinopril for the same condition duplicates/contradicts the existing antihypertensive regimen without reconciliation.",
+  "Medication start for essential hypertension belongs in Assessment and Plan, so the target section is correct."
+ ]
+}

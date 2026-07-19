@@ -1,0 +1,96 @@
+{
+ "patch": {
+  "flag_id": "f6",
+  "section": "Subjective",
+  "insert_text": "Hydrocodone-acetaminophen 5 mg tablets were also discussed during the visit.",
+  "mode": "merge",
+  "added_claims": [
+   "Hydrocodone-acetaminophen 5 mg tablets were named/discussed at the visit"
+  ]
+ },
+ "verify": {
+  "patch_id": "f6",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "The evidence explicitly names 'hydrocodone with acetaminophen \u2014 the five milligram tablets,' supporting the neutral claim that they were discussed at the visit.",
+   "No prior mention of hydrocodone-acetaminophen anywhere in the note (only tramadol is referenced), so this adds new information.",
+   "A medication mentioned/discussed during the encounter fits appropriately in the Subjective section."
+  ]
+ },
+ "iterations": 3,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f6",
+    "section": "Subjective",
+    "insert_text": "and hydrocodone-acetaminophen 5 mg tablets",
+    "mode": "merge",
+    "added_claims": [
+     "Patient is also taking hydrocodone-acetaminophen 5 mg tablets"
+    ]
+   },
+   "verify": {
+    "patch_id": "f6",
+    "grounded": false,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": false,
+    "reasons": [
+     "The evidence span only names 'hydrocodone with acetaminophen \u2014 the five milligram tablets' but does not clearly establish that the patient is currently taking it (could be a discussion/alternative); the claim 'also taking' is an inference not fully supported by the isolated span.",
+     "Not redundant: the note lists tramadol but does not mention hydrocodone-acetaminophen.",
+     "Medication/history belongs in the Subjective section, so placement is appropriate."
+    ]
+   }
+  },
+  {
+   "patch": {
+    "flag_id": "f6",
+    "section": "Subjective",
+    "insert_text": "Hydrocodone-acetaminophen 5 mg tablets were also mentioned as part of her pain regimen.",
+    "mode": "merge",
+    "added_claims": [
+     "Hydrocodone-acetaminophen 5 mg tablets were mentioned in the context of the patient's pain regimen"
+    ]
+   },
+   "verify": {
+    "patch_id": "f6",
+    "grounded": false,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": false,
+    "reasons": [
+     "The evidence span only shows that hydrocodone-acetaminophen 5 mg tablets were named; it does not establish that this medication is actually part of the patient's pain regimen (vs. an alternative discussed, a past med, etc.), so the claim overstates the evidence.",
+     "Non-redundant: the note only documents tramadol, so this medication is new information.",
+     "Correctly placed: medication/pain history belongs in the Subjective section."
+    ]
+   }
+  },
+  {
+   "patch": {
+    "flag_id": "f6",
+    "section": "Subjective",
+    "insert_text": "Hydrocodone-acetaminophen 5 mg tablets were also discussed during the visit.",
+    "mode": "merge",
+    "added_claims": [
+     "Hydrocodone-acetaminophen 5 mg tablets were named/discussed at the visit"
+    ]
+   },
+   "verify": {
+    "patch_id": "f6",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "The evidence explicitly names 'hydrocodone with acetaminophen \u2014 the five milligram tablets,' supporting the neutral claim that they were discussed at the visit.",
+     "No prior mention of hydrocodone-acetaminophen anywhere in the note (only tramadol is referenced), so this adds new information.",
+     "A medication mentioned/discussed during the encounter fits appropriately in the Subjective section."
+    ]
+   }
+  }
+ ]
+}

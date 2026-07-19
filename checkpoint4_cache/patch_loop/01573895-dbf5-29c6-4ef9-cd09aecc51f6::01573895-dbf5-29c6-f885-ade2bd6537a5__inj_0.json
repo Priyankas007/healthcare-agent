@@ -1,0 +1,50 @@
+{
+ "patch": {
+  "flag_id": "f4",
+  "section": "Subjective",
+  "insert_text": "Uses OTC naproxen 220 mg with food, one to two times per week, for hand pain.",
+  "mode": "append",
+  "added_claims": [
+   "Patient takes over-the-counter naproxen 220 mg with food, one to two times per week, for hand pain"
+  ]
+ },
+ "verify": {
+  "patch_id": "f4",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Evidence explicitly states OTC naproxen 220 mg, one to two times weekly, with food; 'for hand pain' is contextually supported.",
+   "Naproxen use is not mentioned elsewhere in the note (which otherwise says 'no medications'), so this adds new information.",
+   "Patient-reported medication use belongs in the Subjective section."
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f4",
+    "section": "Subjective",
+    "insert_text": "Uses OTC naproxen 220 mg with food, one to two times per week, for hand pain.",
+    "mode": "append",
+    "added_claims": [
+     "Patient takes over-the-counter naproxen 220 mg with food, one to two times per week, for hand pain"
+    ]
+   },
+   "verify": {
+    "patch_id": "f4",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Evidence explicitly states OTC naproxen 220 mg, one to two times weekly, with food; 'for hand pain' is contextually supported.",
+     "Naproxen use is not mentioned elsewhere in the note (which otherwise says 'no medications'), so this adds new information.",
+     "Patient-reported medication use belongs in the Subjective section."
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "patch_id": "f12",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": true,
+ "pass": true,
+ "reasons": [
+  "Aspirin 81 mg daily is directly supported by the transcript span",
+  "Aspirin not previously listed among home medications in the note",
+  "Home medications belong in the Subjective section"
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "patch_id": "f17",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": true,
+ "pass": true,
+ "reasons": [
+  "Evidence explicitly states long-acting metoprolol 100 mg for blood pressure and heart rate, matching the claim",
+  "Metoprolol is not mentioned anywhere else in the note",
+  "A cardiovascular/BP-HR medication belongs in Assessment and Plan (fits hypertension/cardiovascular medication management)"
+ ]
+}

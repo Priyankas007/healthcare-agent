@@ -1,0 +1,50 @@
+{
+ "patch": {
+  "flag_id": "f12",
+  "section": "Objective",
+  "insert_text": "PHQ-2 total 5;",
+  "mode": "merge",
+  "added_claims": [
+   "PHQ-2 total score was 5"
+  ]
+ },
+ "verify": {
+  "patch_id": "f12",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "PHQ-2 total score of 5 is directly supported by the FHIR Observation (LOINC 55758-7, value 5) and the transcript span 'a 5'",
+   "The note lists GAD-7, PHQ-9, and AUDIT-C scores but no PHQ-2, so this adds new information",
+   "Screening scores belong in the Objective section, matching existing placement of GAD-7/PHQ-9/AUDIT-C"
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f12",
+    "section": "Objective",
+    "insert_text": "PHQ-2 total 5;",
+    "mode": "merge",
+    "added_claims": [
+     "PHQ-2 total score was 5"
+    ]
+   },
+   "verify": {
+    "patch_id": "f12",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "PHQ-2 total score of 5 is directly supported by the FHIR Observation (LOINC 55758-7, value 5) and the transcript span 'a 5'",
+     "The note lists GAD-7, PHQ-9, and AUDIT-C scores but no PHQ-2, so this adds new information",
+     "Screening scores belong in the Objective section, matching existing placement of GAD-7/PHQ-9/AUDIT-C"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "patch": {
+  "flag_id": "f9",
+  "section": "Subjective",
+  "insert_text": "oxycodone 10 mg extended-release capsule (OxyContin);",
+  "mode": "merge",
+  "added_claims": [
+   "Patient takes oxycodone extended-release (OxyContin) 10 mg"
+  ]
+ },
+ "verify": {
+  "patch_id": "f9",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Evidence explicitly states 'OxyContin \u2014 oxycodone 10 milligram extended-release,' fully supporting the claim.",
+   "OxyContin (oxycodone ER) is distinct from the listed Percocet (acetaminophen/oxycodone) and hydrocodone ER, so not a duplicate.",
+   "Medication reconciliation belongs in the Subjective section, matching the existing med list."
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f9",
+    "section": "Subjective",
+    "insert_text": "oxycodone 10 mg extended-release capsule (OxyContin);",
+    "mode": "merge",
+    "added_claims": [
+     "Patient takes oxycodone extended-release (OxyContin) 10 mg"
+    ]
+   },
+   "verify": {
+    "patch_id": "f9",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Evidence explicitly states 'OxyContin \u2014 oxycodone 10 milligram extended-release,' fully supporting the claim.",
+     "OxyContin (oxycodone ER) is distinct from the listed Percocet (acetaminophen/oxycodone) and hydrocodone ER, so not a duplicate.",
+     "Medication reconciliation belongs in the Subjective section, matching the existing med list."
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,101 @@
+{
+ "patch": {
+  "flag_id": "f6",
+  "section": "Subjective",
+  "insert_text": "She reports wooziness only when she is hungry.",
+  "mode": "merge",
+  "added_claims": [
+   "Patient reports wooziness (lightheadedness) only when hungry"
+  ]
+ },
+ "verify": {
+  "patch_id": "f6",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Evidence 'Just the wooziness if I am hungry' directly supports the claim of hunger-related wooziness",
+   "Note mentions fatigue and morning queasiness but not wooziness when hungry, so not duplicated",
+   "Patient-reported symptom belongs in Subjective section"
+  ]
+ },
+ "iterations": 3,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f6",
+    "section": "Subjective",
+    "insert_text": "She denies uncontrolled vomiting, dizziness, or fainting.",
+    "mode": "merge",
+    "added_claims": [
+     "Denies uncontrolled vomiting",
+     "Denies dizziness",
+     "Denies fainting"
+    ]
+   },
+   "verify": {
+    "patch_id": "f6",
+    "grounded": false,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": false,
+    "reasons": [
+     "The claim 'denies dizziness' contradicts the evidence, in which the patient reports 'wooziness if I am hungry' (i.e., she does experience dizziness when hungry).",
+     "'Uncontrolled vomiting' and 'fainting' may be covered by 'nothing like that,' but the specific symptoms being denied are not clearly established by the vague span.",
+     "Content is new and not duplicated in the note.",
+     "Subjective is the correct section for patient-reported symptom denials."
+    ]
+   }
+  },
+  {
+   "patch": {
+    "flag_id": "f6",
+    "section": "Subjective",
+    "insert_text": "She denies uncontrolled vomiting or fainting, noting only mild wooziness when hungry.",
+    "mode": "append",
+    "added_claims": [
+     "Denies uncontrolled vomiting",
+     "Denies fainting",
+     "Reports mild wooziness when hungry"
+    ]
+   },
+   "verify": {
+    "patch_id": "f6",
+    "grounded": false,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": false,
+    "reasons": [
+     "Only the 'wooziness when hungry' claim is directly supported; the evidence span 'No, nothing like that' is ambiguous and does not explicitly name uncontrolled vomiting or fainting, so those two specific denials are inferred/unsupported.",
+     "Content (fainting, uncontrolled vomiting, wooziness) is not already documented in the note.",
+     "Symptom denials/reports correctly belong in the Subjective section."
+    ]
+   }
+  },
+  {
+   "patch": {
+    "flag_id": "f6",
+    "section": "Subjective",
+    "insert_text": "She reports wooziness only when she is hungry.",
+    "mode": "merge",
+    "added_claims": [
+     "Patient reports wooziness (lightheadedness) only when hungry"
+    ]
+   },
+   "verify": {
+    "patch_id": "f6",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Evidence 'Just the wooziness if I am hungry' directly supports the claim of hunger-related wooziness",
+     "Note mentions fatigue and morning queasiness but not wooziness when hungry, so not duplicated",
+     "Patient-reported symptom belongs in Subjective section"
+    ]
+   }
+  }
+ ]
+}

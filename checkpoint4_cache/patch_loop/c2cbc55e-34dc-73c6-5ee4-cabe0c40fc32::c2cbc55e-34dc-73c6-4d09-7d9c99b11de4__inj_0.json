@@ -1,0 +1,50 @@
+{
+ "patch": {
+  "flag_id": "f9",
+  "section": "Subjective",
+  "insert_text": "She reports taking no regular medications at this time.",
+  "mode": "append",
+  "added_claims": [
+   "Patient is not currently taking any regular medications"
+  ]
+ },
+ "verify": {
+  "patch_id": "f9",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "The claim of no regular medications is directly supported by the transcript span 'Nothing regular at the moment, no.'",
+   "No mention of current medications exists in the original note, so this is non-redundant",
+   "Medication status is patient-reported history, appropriate for the Subjective section"
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f9",
+    "section": "Subjective",
+    "insert_text": "She reports taking no regular medications at this time.",
+    "mode": "append",
+    "added_claims": [
+     "Patient is not currently taking any regular medications"
+    ]
+   },
+   "verify": {
+    "patch_id": "f9",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "The claim of no regular medications is directly supported by the transcript span 'Nothing regular at the moment, no.'",
+     "No mention of current medications exists in the original note, so this is non-redundant",
+     "Medication status is patient-reported history, appropriate for the Subjective section"
+    ]
+   }
+  }
+ ]
+}

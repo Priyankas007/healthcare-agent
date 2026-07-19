@@ -1,0 +1,12 @@
+{
+ "patch_id": "f10",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": true,
+ "pass": true,
+ "reasons": [
+  "Evidence 'Simvastatin, 20, at night' supports the reconciled medication claim; oral route is a reasonable default for simvastatin.",
+  "Simvastatin is not mentioned anywhere in the original note's medication list.",
+  "Medications reconciled belong in the Subjective section."
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "patch_id": "f13",
+ "grounded": false,
+ "non_redundant": true,
+ "correctly_placed": true,
+ "pass": false,
+ "reasons": [
+  "Evidence states the old 50 mg metoprolol is 'off the list,' supporting discontinuation, but does not characterize it as an 'outdated duplicate dose'\u2014that reasoning is inferred/unsupported.",
+  "Note documents med reconciliation and simvastatin removal but does not mention removing old metoprolol 50 mg, so not redundant.",
+  "Medication reconciliation content belongs in Assessment and Plan, an appropriate placement."
+ ]
+}

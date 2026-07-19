@@ -1,0 +1,50 @@
+{
+ "patch": {
+  "flag_id": "f8",
+  "section": "Subjective",
+  "insert_text": "vaginal bleeding or spotting,",
+  "mode": "merge",
+  "added_claims": [
+   "Patient denies vaginal bleeding or spotting"
+  ]
+ },
+ "verify": {
+  "patch_id": "f8",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Evidence 'No bleeding, no.' supports the denial of vaginal bleeding or spotting.",
+   "ROS in the note does not already mention vaginal bleeding/spotting, so it adds new content.",
+   "A denial of bleeding is a subjective ROS finding, correctly placed in the Subjective section."
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f8",
+    "section": "Subjective",
+    "insert_text": "vaginal bleeding or spotting,",
+    "mode": "merge",
+    "added_claims": [
+     "Patient denies vaginal bleeding or spotting"
+    ]
+   },
+   "verify": {
+    "patch_id": "f8",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Evidence 'No bleeding, no.' supports the denial of vaginal bleeding or spotting.",
+     "ROS in the note does not already mention vaginal bleeding/spotting, so it adds new content.",
+     "A denial of bleeding is a subjective ROS finding, correctly placed in the Subjective section."
+    ]
+   }
+  }
+ ]
+}

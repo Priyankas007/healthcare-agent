@@ -1,0 +1,77 @@
+{
+ "patch": {
+  "flag_id": "f20",
+  "section": "Assessment and Plan",
+  "insert_text": "Patient takes no daily prescription medications; hospital medications were tapered down and then discontinued entirely after discharge.",
+  "mode": "append",
+  "added_claims": [
+   "Patient takes no daily prescription medications",
+   "Hospital medications were tapered down and then discontinued entirely after discharge"
+  ]
+ },
+ "verify": {
+  "patch_id": "f20",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Both claims are supported: 'Nothing regular' backs no daily prescription meds, and 'whittled the list down and then off entirely' backs the taper/discontinuation.",
+   "The note references a medication review/reconciliation but never states the patient is on no medications or that hospital meds were tapered off, so this adds new content.",
+   "Medication-related detail belongs in Assessment and Plan, consistent with the existing 'Medication review due' section."
+  ]
+ },
+ "iterations": 2,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f20",
+    "section": "Assessment and Plan",
+    "insert_text": "Patient reports no daily prescription medications; hospital medications were tapered off and discontinued at follow-up visits.",
+    "mode": "merge",
+    "added_claims": [
+     "Patient takes no daily prescription medications",
+     "Hospital medications were tapered off and discontinued at follow-up visits"
+    ]
+   },
+   "verify": {
+    "patch_id": "f20",
+    "grounded": false,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": false,
+    "reasons": [
+     "First claim (no daily prescription medications) is supported by 'Nothing regular.'",
+     "Second claim's phrase 'discontinued at follow-up visits' is not supported; evidence says medications were whittled down 'and then off entirely' after leaving the hospital, with no mention of follow-up visits.",
+     "Insertion adds specific medication detail not already in the note, so non-redundant.",
+     "Medication content correctly belongs in the Assessment and Plan medication review section."
+    ]
+   }
+  },
+  {
+   "patch": {
+    "flag_id": "f20",
+    "section": "Assessment and Plan",
+    "insert_text": "Patient takes no daily prescription medications; hospital medications were tapered down and then discontinued entirely after discharge.",
+    "mode": "append",
+    "added_claims": [
+     "Patient takes no daily prescription medications",
+     "Hospital medications were tapered down and then discontinued entirely after discharge"
+    ]
+   },
+   "verify": {
+    "patch_id": "f20",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Both claims are supported: 'Nothing regular' backs no daily prescription meds, and 'whittled the list down and then off entirely' backs the taper/discontinuation.",
+     "The note references a medication review/reconciliation but never states the patient is on no medications or that hospital meds were tapered off, so this adds new content.",
+     "Medication-related detail belongs in Assessment and Plan, consistent with the existing 'Medication review due' section."
+    ]
+   }
+  }
+ ]
+}

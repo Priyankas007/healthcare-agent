@@ -1,0 +1,12 @@
+{
+ "patch_id": "stress_misplaced",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": false,
+ "pass": false,
+ "reasons": [
+  "Grounded: transcript states patient uses OTC naproxen 220 mg with food 1-2x/week for hand pain.",
+  "Non-redundant: the note does not mention naproxen use; it even states 'No medications', so this is new information.",
+  "Incorrectly placed: patient-reported medication use is Subjective information, not an Objective exam/lab finding; belongs in Subjective (and reconciles the medication review)."
+ ]
+}

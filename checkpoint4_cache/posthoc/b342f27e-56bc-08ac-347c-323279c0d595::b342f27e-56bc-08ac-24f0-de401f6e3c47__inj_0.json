@@ -1,0 +1,12 @@
+{
+ "patch_id": "f14",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": true,
+ "pass": true,
+ "reasons": [
+  "All three claims are supported: stopping birth control when trying to conceive, no regular meds ('Nothing regular'), and occasional medication for headache; 'OTC' is a reasonable interpretation.",
+  "Note only mentions medication review was completed but not these specific details, so no duplication.",
+  "Patient-reported medication/contraception history belongs in Subjective."
+ ]
+}

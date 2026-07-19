@@ -1,0 +1,50 @@
+{
+ "patch": {
+  "flag_id": "f9",
+  "section": "Assessment and Plan",
+  "insert_text": "- Start amlodipine 2.5 mg daily each morning",
+  "mode": "append",
+  "added_claims": [
+   "Amlodipine 2.5 mg oral tablet once daily in the morning started for hypertension"
+  ]
+ },
+ "verify": {
+  "patch_id": "f9",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "The added claim (amlodipine 2.5 mg oral tablet once daily in the morning for hypertension) is directly supported by the transcript span and the FHIR MedicationRequest resource.",
+   "Amlodipine is not mentioned elsewhere in the note; the existing HTN plan lists lisinopril and HCTZ, so this is new, non-duplicative content.",
+   "A medication order belongs in Assessment and Plan, which is the correct SOAP section for this hypertension-related fact."
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f9",
+    "section": "Assessment and Plan",
+    "insert_text": "- Start amlodipine 2.5 mg daily each morning",
+    "mode": "append",
+    "added_claims": [
+     "Amlodipine 2.5 mg oral tablet once daily in the morning started for hypertension"
+    ]
+   },
+   "verify": {
+    "patch_id": "f9",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "The added claim (amlodipine 2.5 mg oral tablet once daily in the morning for hypertension) is directly supported by the transcript span and the FHIR MedicationRequest resource.",
+     "Amlodipine is not mentioned elsewhere in the note; the existing HTN plan lists lisinopril and HCTZ, so this is new, non-duplicative content.",
+     "A medication order belongs in Assessment and Plan, which is the correct SOAP section for this hypertension-related fact."
+    ]
+   }
+  }
+ ]
+}

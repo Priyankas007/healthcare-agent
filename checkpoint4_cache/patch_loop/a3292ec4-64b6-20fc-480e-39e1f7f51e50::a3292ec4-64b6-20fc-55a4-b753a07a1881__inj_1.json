@@ -1,0 +1,73 @@
+{
+ "patch": {
+  "flag_id": "f7",
+  "section": "Assessment and Plan",
+  "insert_text": "and tramadol 50 mg",
+  "mode": "merge",
+  "added_claims": [
+   "Patient is taking tramadol 50 mg"
+  ]
+ },
+ "verify": {
+  "patch_id": "f7",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "The added claim 'tramadol 50 mg' is directly supported by the evidence span 'tramadol, fifty milligrams'.",
+   "Tramadol is not mentioned anywhere in the original note, so the insertion is not redundant.",
+   "The medication fact belongs in the Assessment and Plan chronic pain section where current medications are documented."
+  ]
+ },
+ "iterations": 2,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f7",
+    "section": "Assessment and Plan",
+    "insert_text": ", and tramadol 50 mg for moderate pain days",
+    "mode": "merge",
+    "added_claims": [
+     "Patient also takes tramadol 50 mg for moderate pain days"
+    ]
+   },
+   "verify": {
+    "patch_id": "f7",
+    "grounded": false,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": false,
+    "reasons": [
+     "Evidence span only shows 'tramadol, fifty milligrams' \u2014 it does not support the qualifier 'for moderate pain days,' which is an unsupported/invented detail",
+     "Tramadol is not mentioned anywhere in the existing note, so the addition is non-redundant",
+     "Placement within the Chronic pain \u2014 opioid use section is contextually appropriate for a medication used for pain"
+    ]
+   }
+  },
+  {
+   "patch": {
+    "flag_id": "f7",
+    "section": "Assessment and Plan",
+    "insert_text": "and tramadol 50 mg",
+    "mode": "merge",
+    "added_claims": [
+     "Patient is taking tramadol 50 mg"
+    ]
+   },
+   "verify": {
+    "patch_id": "f7",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "The added claim 'tramadol 50 mg' is directly supported by the evidence span 'tramadol, fifty milligrams'.",
+     "Tramadol is not mentioned anywhere in the original note, so the insertion is not redundant.",
+     "The medication fact belongs in the Assessment and Plan chronic pain section where current medications are documented."
+    ]
+   }
+  }
+ ]
+}

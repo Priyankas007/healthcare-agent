@@ -1,0 +1,12 @@
+{
+ "patch_id": "f6",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": true,
+ "pass": true,
+ "reasons": [
+  "Evidence 'No falls, knock wood.' directly supports the denial of falls claim",
+  "No mention of falls anywhere in the existing note, so not redundant",
+  "Patient-reported denial belongs in Subjective (ROS/history)"
+ ]
+}

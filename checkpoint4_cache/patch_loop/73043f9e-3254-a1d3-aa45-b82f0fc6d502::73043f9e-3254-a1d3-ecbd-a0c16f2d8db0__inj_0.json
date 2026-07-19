@@ -1,0 +1,78 @@
+{
+ "patch": {
+  "flag_id": "f4",
+  "section": "Subjective",
+  "insert_text": "Naproxen 220 mg oral tablet, one with breakfast as needed for knee pain, taken with food.",
+  "mode": "append",
+  "added_claims": [
+   "Patient takes naproxen 220 mg orally, one tablet with breakfast as needed for knee pain",
+   "Naproxen taken with food"
+  ]
+ },
+ "verify": {
+  "patch_id": "f4",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Insertion is supported: transcript confirms naproxen 220 mg, one with breakfast (with food), for knee pain that it 'settles'; PRN framing is a reasonable reflection of the patient's self-directed use",
+   "Adds new medication information; the note previously listed 'Medications: none,' so this corrects/updates rather than duplicates",
+   "Medications are appropriately documented in the Subjective section"
+  ]
+ },
+ "iterations": 2,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f4",
+    "section": "Subjective",
+    "insert_text": "Naproxen 220 mg oral tablet, one with breakfast as needed for knee pain, taken with food (some weeks none)",
+    "mode": "append",
+    "added_claims": [
+     "Patient takes naproxen 220 mg orally, one tablet with breakfast as needed for knee pain",
+     "Naproxen taken with food",
+     "Some weeks patient takes none"
+    ]
+   },
+   "verify": {
+    "patch_id": "f4",
+    "grounded": false,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": false,
+    "reasons": [
+     "Naproxen 220 mg, one with breakfast, for knee pain, and 'with food' (implied by breakfast) are supported by the evidence span.",
+     "The claim 'some weeks patient takes none' is not supported anywhere in the evidence.",
+     "Not redundant: the note currently lists 'Medications: none,' so this adds new information.",
+     "Subjective is an appropriate section for patient-reported medication use."
+    ]
+   }
+  },
+  {
+   "patch": {
+    "flag_id": "f4",
+    "section": "Subjective",
+    "insert_text": "Naproxen 220 mg oral tablet, one with breakfast as needed for knee pain, taken with food.",
+    "mode": "append",
+    "added_claims": [
+     "Patient takes naproxen 220 mg orally, one tablet with breakfast as needed for knee pain",
+     "Naproxen taken with food"
+    ]
+   },
+   "verify": {
+    "patch_id": "f4",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Insertion is supported: transcript confirms naproxen 220 mg, one with breakfast (with food), for knee pain that it 'settles'; PRN framing is a reasonable reflection of the patient's self-directed use",
+     "Adds new medication information; the note previously listed 'Medications: none,' so this corrects/updates rather than duplicates",
+     "Medications are appropriately documented in the Subjective section"
+    ]
+   }
+  }
+ ]
+}

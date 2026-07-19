@@ -1,0 +1,50 @@
+{
+ "patch": {
+  "flag_id": "f17",
+  "section": "Assessment and Plan",
+  "insert_text": "- Continue metoprolol extended-release 100 mg for blood pressure and heart rate",
+  "mode": "append",
+  "added_claims": [
+   "Metoprolol extended-release 100 mg is continued for blood pressure and heart rate"
+  ]
+ },
+ "verify": {
+  "patch_id": "f17",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Insertion matches evidence: metoprolol ER 100 mg for blood pressure and heart rate.",
+   "No mention of metoprolol elsewhere in the note; not redundant.",
+   "Medication continuation belongs in Assessment and Plan (fits hypertension/cardiovascular management)."
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f17",
+    "section": "Assessment and Plan",
+    "insert_text": "- Continue metoprolol extended-release 100 mg for blood pressure and heart rate",
+    "mode": "append",
+    "added_claims": [
+     "Metoprolol extended-release 100 mg is continued for blood pressure and heart rate"
+    ]
+   },
+   "verify": {
+    "patch_id": "f17",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Insertion matches evidence: metoprolol ER 100 mg for blood pressure and heart rate.",
+     "No mention of metoprolol elsewhere in the note; not redundant.",
+     "Medication continuation belongs in Assessment and Plan (fits hypertension/cardiovascular management)."
+    ]
+   }
+  }
+ ]
+}

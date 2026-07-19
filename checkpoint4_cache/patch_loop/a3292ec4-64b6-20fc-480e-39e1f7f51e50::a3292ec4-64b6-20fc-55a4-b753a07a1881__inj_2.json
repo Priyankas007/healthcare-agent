@@ -1,0 +1,50 @@
+{
+ "patch": {
+  "flag_id": "f13",
+  "section": "Subjective",
+  "insert_text": "vaginal bleeding,",
+  "mode": "append",
+  "added_claims": [
+   "Patient denies vaginal bleeding"
+  ]
+ },
+ "verify": {
+  "patch_id": "f13",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Evidence 'No bleeding' supports the denial of vaginal bleeding",
+   "Note does not already mention bleeding; it lists other denied symptoms",
+   "Patient-reported denial belongs in Subjective"
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f13",
+    "section": "Subjective",
+    "insert_text": "vaginal bleeding,",
+    "mode": "append",
+    "added_claims": [
+     "Patient denies vaginal bleeding"
+    ]
+   },
+   "verify": {
+    "patch_id": "f13",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Evidence 'No bleeding' supports the denial of vaginal bleeding",
+     "Note does not already mention bleeding; it lists other denied symptoms",
+     "Patient-reported denial belongs in Subjective"
+    ]
+   }
+  }
+ ]
+}

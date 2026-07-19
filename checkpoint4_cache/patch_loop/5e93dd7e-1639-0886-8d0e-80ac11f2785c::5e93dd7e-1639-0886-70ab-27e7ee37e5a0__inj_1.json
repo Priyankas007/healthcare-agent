@@ -1,0 +1,50 @@
+{
+ "patch": {
+  "flag_id": "f6",
+  "section": "Subjective",
+  "insert_text": "Denies falls.",
+  "mode": "merge",
+  "added_claims": [
+   "Patient denies falls"
+  ]
+ },
+ "verify": {
+  "patch_id": "f6",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "'Denies falls' is supported by transcript 'No falls, knock wood.'",
+   "No mention of falls exists in the original note, so not redundant.",
+   "Falls history/denial is a patient-reported ROS item, correctly placed in Subjective."
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f6",
+    "section": "Subjective",
+    "insert_text": "Denies falls.",
+    "mode": "merge",
+    "added_claims": [
+     "Patient denies falls"
+    ]
+   },
+   "verify": {
+    "patch_id": "f6",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "'Denies falls' is supported by transcript 'No falls, knock wood.'",
+     "No mention of falls exists in the original note, so not redundant.",
+     "Falls history/denial is a patient-reported ROS item, correctly placed in Subjective."
+    ]
+   }
+  }
+ ]
+}

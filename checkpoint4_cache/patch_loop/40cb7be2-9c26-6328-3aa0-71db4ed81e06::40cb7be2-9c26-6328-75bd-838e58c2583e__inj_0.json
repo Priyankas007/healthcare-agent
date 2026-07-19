@@ -1,0 +1,80 @@
+{
+ "patch": {
+  "flag_id": "f24",
+  "section": "Assessment and Plan",
+  "insert_text": "- Ferrous sulfate 325 mg orally once daily; take with vitamin C (orange juice), avoid coffee, tea, and milk.",
+  "mode": "append",
+  "added_claims": [
+   "Ferrous sulfate 325 mg orally once daily started",
+   "Take with vitamin C (orange juice)",
+   "Avoid coffee, tea, and milk"
+  ]
+ },
+ "verify": {
+  "patch_id": "f24",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "All three claims (ferrous sulfate 325 mg once daily, take with vitamin C/orange juice, avoid coffee/tea/milk) are directly supported by the transcript span.",
+   "The note's Anemia section only mentions a Vitamin B12 injection; oral ferrous sulfate and its administration instructions are new, non-duplicative content.",
+   "An iron supplement for the newly identified anemia belongs in Assessment and Plan; appending is appropriate."
+  ]
+ },
+ "iterations": 2,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f24",
+    "section": "Assessment and Plan",
+    "insert_text": "- Ferrous sulfate 325 mg orally once daily; take with vitamin C (orange juice), avoid coffee/tea/milk; may cause constipation and dark stools.",
+    "mode": "append",
+    "added_claims": [
+     "Ferrous sulfate 325 mg orally once daily started",
+     "Take with vitamin C source (orange juice)",
+     "Avoid coffee, tea, and milk",
+     "May cause constipation and dark stools"
+    ]
+   },
+   "verify": {
+    "patch_id": "f24",
+    "grounded": false,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": false,
+    "reasons": [
+     "Most claims supported (ferrous sulfate 325 mg daily, take with vitamin C/orange juice, avoid coffee/tea/milk), but 'may cause constipation and dark stools' is not present in the evidence span \u2014 unsupported/invented.",
+     "Content is new; note only mentions B12 injection for anemia, not oral iron \u2014 non-redundant.",
+     "Iron therapy belongs in Assessment and Plan (Anemia section), so placement is appropriate."
+    ]
+   }
+  },
+  {
+   "patch": {
+    "flag_id": "f24",
+    "section": "Assessment and Plan",
+    "insert_text": "- Ferrous sulfate 325 mg orally once daily; take with vitamin C (orange juice), avoid coffee, tea, and milk.",
+    "mode": "append",
+    "added_claims": [
+     "Ferrous sulfate 325 mg orally once daily started",
+     "Take with vitamin C (orange juice)",
+     "Avoid coffee, tea, and milk"
+    ]
+   },
+   "verify": {
+    "patch_id": "f24",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "All three claims (ferrous sulfate 325 mg once daily, take with vitamin C/orange juice, avoid coffee/tea/milk) are directly supported by the transcript span.",
+     "The note's Anemia section only mentions a Vitamin B12 injection; oral ferrous sulfate and its administration instructions are new, non-duplicative content.",
+     "An iron supplement for the newly identified anemia belongs in Assessment and Plan; appending is appropriate."
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "patch_id": "f9",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": true,
+ "pass": true,
+ "reasons": [
+  "Claim directly supported by transcript: 'No bleeding, no.'",
+  "Note's denials list (cramping, dysuria, fever, abdominal pain) does not include bleeding/spotting, so not redundant",
+  "Patient-reported denial belongs in Subjective section"
+ ]
+}

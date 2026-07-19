@@ -1,0 +1,50 @@
+{
+ "patch": {
+  "flag_id": "f27",
+  "section": "Assessment and Plan",
+  "insert_text": "and prescription fluoride gel from his dentist",
+  "mode": "merge",
+  "added_claims": [
+   "Current medication includes prescription fluoride gel from the patient's dentist"
+  ]
+ },
+ "verify": {
+  "patch_id": "f27",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Evidence 'just the prescription fluoride gel from your dentist' directly supports the added claim of prescription fluoride gel from dentist.",
+   "The note's medication list only mentions occasional acetaminophen; fluoride gel is new, non-duplicative information.",
+   "Belongs in medication review under Assessment and Plan, which the note's existing 'Medication review due' section addresses."
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f27",
+    "section": "Assessment and Plan",
+    "insert_text": "and prescription fluoride gel from his dentist",
+    "mode": "merge",
+    "added_claims": [
+     "Current medication includes prescription fluoride gel from the patient's dentist"
+    ]
+   },
+   "verify": {
+    "patch_id": "f27",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Evidence 'just the prescription fluoride gel from your dentist' directly supports the added claim of prescription fluoride gel from dentist.",
+     "The note's medication list only mentions occasional acetaminophen; fluoride gel is new, non-duplicative information.",
+     "Belongs in medication review under Assessment and Plan, which the note's existing 'Medication review due' section addresses."
+    ]
+   }
+  }
+ ]
+}

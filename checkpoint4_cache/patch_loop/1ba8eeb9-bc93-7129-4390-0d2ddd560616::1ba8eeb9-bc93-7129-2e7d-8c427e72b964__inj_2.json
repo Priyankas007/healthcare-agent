@@ -1,0 +1,52 @@
+{
+ "patch": {
+  "flag_id": "f14",
+  "section": "Objective",
+  "insert_text": "PHQ-9 total 17 (moderately severe);",
+  "mode": "merge",
+  "added_claims": [
+   "PHQ-9 total score was 17",
+   "This score indicates moderately severe depressive symptoms"
+  ]
+ },
+ "verify": {
+  "patch_id": "f14",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "PHQ-9 total 17 and 'moderately severe' both supported by transcript span and FHIR Observation valueQuantity of 17",
+   "Note only lists PHQ-2 total 5 and PHQ-9 item 9 negative; the PHQ-9 total score is not previously stated",
+   "Objective is correct for a screening/assessment score, consistent with existing Screenings entries"
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f14",
+    "section": "Objective",
+    "insert_text": "PHQ-9 total 17 (moderately severe);",
+    "mode": "merge",
+    "added_claims": [
+     "PHQ-9 total score was 17",
+     "This score indicates moderately severe depressive symptoms"
+    ]
+   },
+   "verify": {
+    "patch_id": "f14",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "PHQ-9 total 17 and 'moderately severe' both supported by transcript span and FHIR Observation valueQuantity of 17",
+     "Note only lists PHQ-2 total 5 and PHQ-9 item 9 negative; the PHQ-9 total score is not previously stated",
+     "Objective is correct for a screening/assessment score, consistent with existing Screenings entries"
+    ]
+   }
+  }
+ ]
+}

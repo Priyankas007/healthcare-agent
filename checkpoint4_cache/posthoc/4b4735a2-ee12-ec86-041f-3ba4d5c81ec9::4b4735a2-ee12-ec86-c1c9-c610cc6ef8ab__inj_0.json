@@ -1,0 +1,12 @@
+{
+ "patch_id": "f19",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": true,
+ "pass": true,
+ "reasons": [
+  "HCTZ 25mg daily supported by transcript span and FHIR MedicationRequest",
+  "Not previously mentioned in note; hypertension plan lacked medication",
+  "FHIR reasonReference ties to essential hypertension, appropriate for A&P"
+ ]
+}

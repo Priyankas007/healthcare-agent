@@ -1,0 +1,50 @@
+{
+ "patch": {
+  "flag_id": "f11",
+  "section": "Assessment and Plan",
+  "insert_text": "- Started meperidine 50 mg tablets for the worse stretches",
+  "mode": "append",
+  "added_claims": [
+   "Meperidine 50 mg tablets started for the worse stretches (severe pain)"
+  ]
+ },
+ "verify": {
+  "patch_id": "f11",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Insertion matches evidence: meperidine 50 mg tablets started for the worse (severe) stretches of pain.",
+   "Note only mentions naproxen for pain; meperidine is a new, non-duplicated medication.",
+   "A pain medication belongs in the Assessment and Plan (Pain) section, so placement is correct."
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f11",
+    "section": "Assessment and Plan",
+    "insert_text": "- Started meperidine 50 mg tablets for the worse stretches",
+    "mode": "append",
+    "added_claims": [
+     "Meperidine 50 mg tablets started for the worse stretches (severe pain)"
+    ]
+   },
+   "verify": {
+    "patch_id": "f11",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Insertion matches evidence: meperidine 50 mg tablets started for the worse (severe) stretches of pain.",
+     "Note only mentions naproxen for pain; meperidine is a new, non-duplicated medication.",
+     "A pain medication belongs in the Assessment and Plan (Pain) section, so placement is correct."
+    ]
+   }
+  }
+ ]
+}

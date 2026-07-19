@@ -1,0 +1,12 @@
+{
+ "patch_id": "f12",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": true,
+ "pass": true,
+ "reasons": [
+  "Evidence explicitly states 'Simvastatin comes off the list today,' supporting the discontinuation claim.",
+  "The note nowhere mentions discontinuing simvastatin, so no duplication.",
+  "A medication discontinuation is appropriately documented in the Assessment and Plan section."
+ ]
+}

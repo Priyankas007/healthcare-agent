@@ -1,0 +1,50 @@
+{
+ "patch": {
+  "flag_id": "f12",
+  "section": "Subjective",
+  "insert_text": "aspirin 81 mg daily,",
+  "mode": "merge",
+  "added_claims": [
+   "Home medication includes aspirin 81 mg daily"
+  ]
+ },
+ "verify": {
+  "patch_id": "f12",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Evidence transcript span 'aspirin eighty-one milligrams daily' directly supports the claim.",
+   "Aspirin 81 mg is not among the previously listed home medications (atenolol, rosuvastatin, lisinopril), so no duplication.",
+   "Home medications belong in the Subjective section, which is the correct placement."
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f12",
+    "section": "Subjective",
+    "insert_text": "aspirin 81 mg daily,",
+    "mode": "merge",
+    "added_claims": [
+     "Home medication includes aspirin 81 mg daily"
+    ]
+   },
+   "verify": {
+    "patch_id": "f12",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Evidence transcript span 'aspirin eighty-one milligrams daily' directly supports the claim.",
+     "Aspirin 81 mg is not among the previously listed home medications (atenolol, rosuvastatin, lisinopril), so no duplication.",
+     "Home medications belong in the Subjective section, which is the correct placement."
+    ]
+   }
+  }
+ ]
+}

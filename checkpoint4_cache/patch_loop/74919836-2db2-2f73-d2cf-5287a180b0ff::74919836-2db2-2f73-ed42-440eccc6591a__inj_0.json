@@ -1,0 +1,73 @@
+{
+ "patch": {
+  "flag_id": "f12",
+  "section": "Assessment and Plan",
+  "insert_text": "- Discontinue simvastatin",
+  "mode": "append",
+  "added_claims": [
+   "Simvastatin discontinued"
+  ]
+ },
+ "verify": {
+  "patch_id": "f12",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Evidence explicitly states 'Simvastatin comes off the list today,' directly supporting the discontinuation claim.",
+   "No mention of discontinuing simvastatin anywhere in the existing note.",
+   "Medication discontinuation appropriately belongs in the Assessment and Plan section."
+  ]
+ },
+ "iterations": 2,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f12",
+    "section": "Assessment and Plan",
+    "insert_text": "- Discontinue simvastatin 20 mg",
+    "mode": "append",
+    "added_claims": [
+     "Simvastatin 20 mg discontinued"
+    ]
+   },
+   "verify": {
+    "patch_id": "f12",
+    "grounded": false,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": false,
+    "reasons": [
+     "Evidence states 'Simvastatin comes off the list today' supporting discontinuation, but the specific dose '20 mg' is not mentioned anywhere in the evidence and is an invented detail.",
+     "No mention of simvastatin appears elsewhere in the note, so it is not redundant.",
+     "Discontinuing a medication belongs in Assessment and Plan, so placement is appropriate."
+    ]
+   }
+  },
+  {
+   "patch": {
+    "flag_id": "f12",
+    "section": "Assessment and Plan",
+    "insert_text": "- Discontinue simvastatin",
+    "mode": "append",
+    "added_claims": [
+     "Simvastatin discontinued"
+    ]
+   },
+   "verify": {
+    "patch_id": "f12",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Evidence explicitly states 'Simvastatin comes off the list today,' directly supporting the discontinuation claim.",
+     "No mention of discontinuing simvastatin anywhere in the existing note.",
+     "Medication discontinuation appropriately belongs in the Assessment and Plan section."
+    ]
+   }
+  }
+ ]
+}

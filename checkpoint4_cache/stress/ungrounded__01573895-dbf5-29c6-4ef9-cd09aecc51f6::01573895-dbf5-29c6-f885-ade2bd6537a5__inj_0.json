@@ -1,0 +1,12 @@
+{
+ "patch_id": "stress_ungrounded",
+ "grounded": false,
+ "non_redundant": true,
+ "correctly_placed": false,
+ "pass": false,
+ "reasons": [
+  "Evidence mentions occasional OTC naproxen 220 mg, not amiodarone 200 mg twice daily \u2014 the medication claim is invented and contradicts the note stating 'No medications'",
+  "Claim of fully resolved symptoms is unsupported; evidence only says naproxen 'helps' with 1-2 uses/week",
+  "Fabricated medication and outcome claims make placement irrelevant, but a new medication/symptom-status change would not be well-supported here"
+ ]
+}

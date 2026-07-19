@@ -1,0 +1,50 @@
+{
+ "patch": {
+  "flag_id": "f8",
+  "section": "Assessment and Plan",
+  "insert_text": "- Start lisinopril 10 mg oral tablet once daily in the morning",
+  "mode": "append",
+  "added_claims": [
+   "Lisinopril 10 mg oral tablet started once daily in the morning for essential hypertension"
+  ]
+ },
+ "verify": {
+  "patch_id": "f8",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "The added claim (lisinopril 10 mg oral tablet once daily each morning for essential hypertension) is directly supported by both the transcript span 'lisinopril ten milligrams once a day' and the FHIR MedicationRequest resource (lisinopril 10 MG Oral Tablet, daily frequency, reason: essential hypertension).",
+   "The note does not already mention lisinopril; existing HTN meds are amlodipine and HCTZ, so this is not a duplicate.",
+   "A new medication order belongs in the Assessment and Plan section, consistent with the hypertension management plan."
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f8",
+    "section": "Assessment and Plan",
+    "insert_text": "- Start lisinopril 10 mg oral tablet once daily in the morning",
+    "mode": "append",
+    "added_claims": [
+     "Lisinopril 10 mg oral tablet started once daily in the morning for essential hypertension"
+    ]
+   },
+   "verify": {
+    "patch_id": "f8",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "The added claim (lisinopril 10 mg oral tablet once daily each morning for essential hypertension) is directly supported by both the transcript span 'lisinopril ten milligrams once a day' and the FHIR MedicationRequest resource (lisinopril 10 MG Oral Tablet, daily frequency, reason: essential hypertension).",
+     "The note does not already mention lisinopril; existing HTN meds are amlodipine and HCTZ, so this is not a duplicate.",
+     "A new medication order belongs in the Assessment and Plan section, consistent with the hypertension management plan."
+    ]
+   }
+  }
+ ]
+}

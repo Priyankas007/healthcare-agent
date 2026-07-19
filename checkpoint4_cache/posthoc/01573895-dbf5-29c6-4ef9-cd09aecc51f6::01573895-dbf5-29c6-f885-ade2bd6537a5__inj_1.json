@@ -1,0 +1,12 @@
+{
+ "patch_id": "f11",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": true,
+ "pass": true,
+ "reasons": [
+  "GAD-7 total 12 is supported by transcript span and FHIR Observation valueQuantity of 12",
+  "Note lists PHQ-2, PHQ-9, AUDIT-C scores but not GAD-7, so no duplication",
+  "Screening scores belong in Objective section, consistent with existing score placement"
+ ]
+}

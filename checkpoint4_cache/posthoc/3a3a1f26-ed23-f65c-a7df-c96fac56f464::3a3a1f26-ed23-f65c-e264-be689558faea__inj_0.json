@@ -1,0 +1,12 @@
+{
+ "patch_id": "f32",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": true,
+ "pass": true,
+ "reasons": [
+  "FHIR Immunization status 'completed' with matching vaccine code confirms flu shot administered today",
+  "No existing mention of influenza vaccine in note (only Td booster)",
+  "Vaccine administration correctly belongs in Assessment and Plan"
+ ]
+}

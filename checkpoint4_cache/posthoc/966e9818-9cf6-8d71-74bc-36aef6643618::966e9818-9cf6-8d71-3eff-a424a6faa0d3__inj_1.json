@@ -1,0 +1,12 @@
+{
+ "patch_id": "f14",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": true,
+ "pass": true,
+ "reasons": [
+  "Both claims supported by transcript: patient still carries EpiPen in backpack and it is good until next year (implying not expired).",
+  "EpiPen is not mentioned anywhere in the existing note, so no duplication.",
+  "EpiPen carrying/medication status fits Assessment and Plan (medication management)."
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "patch": {
+  "flag_id": "f10",
+  "section": "Subjective",
+  "insert_text": "simvastatin 20 mg orally at night;",
+  "mode": "merge",
+  "added_claims": [
+   "Simvastatin 20 mg orally at night is a reconciled medication"
+  ]
+ },
+ "verify": {
+  "patch_id": "f10",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Evidence 'Simvastatin, 20, at night' supports the reconciled medication claim; oral route is the standard default for simvastatin",
+   "Simvastatin is not previously listed in the medications reconciled (only clopidogrel, metoprolol, nitroglycerin)",
+   "Reconciled medications belong in the Subjective section, consistent with existing medication list"
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f10",
+    "section": "Subjective",
+    "insert_text": "simvastatin 20 mg orally at night;",
+    "mode": "merge",
+    "added_claims": [
+     "Simvastatin 20 mg orally at night is a reconciled medication"
+    ]
+   },
+   "verify": {
+    "patch_id": "f10",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Evidence 'Simvastatin, 20, at night' supports the reconciled medication claim; oral route is the standard default for simvastatin",
+     "Simvastatin is not previously listed in the medications reconciled (only clopidogrel, metoprolol, nitroglycerin)",
+     "Reconciled medications belong in the Subjective section, consistent with existing medication list"
+    ]
+   }
+  }
+ ]
+}

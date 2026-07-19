@@ -1,0 +1,12 @@
+{
+ "patch_id": "f8",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": true,
+ "pass": true,
+ "reasons": [
+  "Both claims supported by transcript ('Quit at twenty...over thirty years') and FHIR ex-smoker finding",
+  "Note contains no prior smoking status; not duplicative",
+  "Smoking/social history belongs in Subjective section"
+ ]
+}

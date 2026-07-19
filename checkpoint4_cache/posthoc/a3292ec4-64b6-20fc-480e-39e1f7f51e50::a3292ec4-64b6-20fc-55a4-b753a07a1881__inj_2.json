@@ -1,0 +1,12 @@
+{
+ "patch_id": "f13",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": true,
+ "pass": true,
+ "reasons": [
+  "Evidence 'No bleeding, no real cramping' supports patient denying vaginal bleeding",
+  "Note denies cramping/fever but does not mention denial of vaginal bleeding, so not redundant",
+  "Denial of a symptom belongs in Subjective section"
+ ]
+}

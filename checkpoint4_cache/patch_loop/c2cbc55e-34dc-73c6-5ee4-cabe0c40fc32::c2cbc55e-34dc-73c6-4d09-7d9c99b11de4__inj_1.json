@@ -1,0 +1,50 @@
+{
+ "patch": {
+  "flag_id": "f2",
+  "section": "Subjective",
+  "insert_text": "She reports it has been approximately ten weeks since her last menstrual period.",
+  "mode": "append",
+  "added_claims": [
+   "Approximately 10 weeks since last menstrual period"
+  ]
+ },
+ "verify": {
+  "patch_id": "f2",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Insertion directly matches transcript span 'about ten weeks since my last period'",
+   "LMP timing is not stated anywhere in the original note",
+   "LMP history is patient-reported and belongs in Subjective"
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f2",
+    "section": "Subjective",
+    "insert_text": "She reports it has been approximately ten weeks since her last menstrual period.",
+    "mode": "append",
+    "added_claims": [
+     "Approximately 10 weeks since last menstrual period"
+    ]
+   },
+   "verify": {
+    "patch_id": "f2",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Insertion directly matches transcript span 'about ten weeks since my last period'",
+     "LMP timing is not stated anywhere in the original note",
+     "LMP history is patient-reported and belongs in Subjective"
+    ]
+   }
+  }
+ ]
+}

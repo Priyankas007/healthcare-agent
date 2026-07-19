@@ -1,0 +1,12 @@
+{
+ "patch_id": "f14",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": true,
+ "pass": true,
+ "reasons": [
+  "Rosuvastatin 40 mg daily is supported by evidence span 'rosuvastatin forty'",
+  "The new claim (rosuvastatin) is not already in the note; other meds are restated only for merge context",
+  "Home medication list belongs in the Subjective section"
+ ]
+}

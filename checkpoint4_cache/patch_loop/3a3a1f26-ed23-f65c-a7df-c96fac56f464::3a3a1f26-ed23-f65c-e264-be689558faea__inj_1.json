@@ -1,0 +1,76 @@
+{
+ "patch": {
+  "flag_id": "f33",
+  "section": "Assessment and Plan",
+  "insert_text": "- Td (adult, preservative-free) tetanus booster administered today; was overdue.",
+  "mode": "append",
+  "added_claims": [
+   "Td (adult, preservative-free) tetanus booster was administered today",
+   "The Td tetanus booster was overdue"
+  ]
+ },
+ "verify": {
+  "patch_id": "f33",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "FHIR Immunization (status completed, CVX 113 preservative-free Td adult, occurrence today) supports administration; transcript states the tetanus booster is overdue",
+   "Note only documents influenza vaccine; no prior mention of Td",
+   "Vaccine administration belongs in Assessment and Plan preventive section"
+  ]
+ },
+ "iterations": 2,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f33",
+    "section": "Assessment and Plan",
+    "insert_text": "- Td tetanus booster (adult, preservative free) administered in left arm; was overdue.",
+    "mode": "append",
+    "added_claims": [
+     "Td tetanus booster (adult, preservative free) administered in left arm",
+     "tetanus booster was overdue"
+    ]
+   },
+   "verify": {
+    "patch_id": "f33",
+    "grounded": false,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": false,
+    "reasons": [
+     "Td administration and 'overdue' status are supported by the FHIR Immunization resource and transcript, but the specific detail 'in left arm' is not documented in either the transcript span or the FHIR resource (no site/bodySite field) \u2014 invented claim.",
+     "No prior mention of a Td/tetanus booster in the note, so it is non-redundant.",
+     "Immunization administration belongs in Assessment and Plan, consistent with the influenza vaccine entry."
+    ]
+   }
+  },
+  {
+   "patch": {
+    "flag_id": "f33",
+    "section": "Assessment and Plan",
+    "insert_text": "- Td (adult, preservative-free) tetanus booster administered today; was overdue.",
+    "mode": "append",
+    "added_claims": [
+     "Td (adult, preservative-free) tetanus booster was administered today",
+     "The Td tetanus booster was overdue"
+    ]
+   },
+   "verify": {
+    "patch_id": "f33",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "FHIR Immunization (status completed, CVX 113 preservative-free Td adult, occurrence today) supports administration; transcript states the tetanus booster is overdue",
+     "Note only documents influenza vaccine; no prior mention of Td",
+     "Vaccine administration belongs in Assessment and Plan preventive section"
+    ]
+   }
+  }
+ ]
+}

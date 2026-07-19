@@ -1,0 +1,74 @@
+{
+ "patch": {
+  "flag_id": "f19",
+  "section": "Assessment and Plan",
+  "insert_text": "- Start hydrochlorothiazide 25 mg oral tablet, one tablet every morning.",
+  "mode": "append",
+  "added_claims": [
+   "Started hydrochlorothiazide 25 mg oral tablet, one tablet every morning"
+  ]
+ },
+ "verify": {
+  "patch_id": "f19",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "HCTZ 25 mg oral tablet every morning is supported by the transcript span and FHIR MedicationRequest (RxNorm 310798).",
+   "Note's hypertension plan only mentions lifestyle education and BP recheck; no antihypertensive medication was previously listed.",
+   "Medication start for essential hypertension correctly belongs in Assessment and Plan."
+  ]
+ },
+ "iterations": 2,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f19",
+    "section": "Assessment and Plan",
+    "insert_text": "- Start hydrochlorothiazide 25 mg oral tablet, one tablet every morning with breakfast.",
+    "mode": "append",
+    "added_claims": [
+     "Started hydrochlorothiazide 25 mg oral tablet, one tablet every morning with breakfast"
+    ]
+   },
+   "verify": {
+    "patch_id": "f19",
+    "grounded": false,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": false,
+    "reasons": [
+     "Core claim (hydrochlorothiazide 25 mg oral tablet, one tablet every morning) is supported by both the transcript span and the FHIR MedicationRequest.",
+     "The added detail 'with breakfast' is not present in the visible evidence (transcript says only 'every morning'; FHIR dosage is truncated), so that portion is unsupported/invented.",
+     "No existing medication for hypertension is documented, so the insertion is non-redundant.",
+     "Assessment and Plan is the correct SOAP section for a new medication order; it belongs with the Essential hypertension problem (reasonReference confirms)."
+    ]
+   }
+  },
+  {
+   "patch": {
+    "flag_id": "f19",
+    "section": "Assessment and Plan",
+    "insert_text": "- Start hydrochlorothiazide 25 mg oral tablet, one tablet every morning.",
+    "mode": "append",
+    "added_claims": [
+     "Started hydrochlorothiazide 25 mg oral tablet, one tablet every morning"
+    ]
+   },
+   "verify": {
+    "patch_id": "f19",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "HCTZ 25 mg oral tablet every morning is supported by the transcript span and FHIR MedicationRequest (RxNorm 310798).",
+     "Note's hypertension plan only mentions lifestyle education and BP recheck; no antihypertensive medication was previously listed.",
+     "Medication start for essential hypertension correctly belongs in Assessment and Plan."
+    ]
+   }
+  }
+ ]
+}

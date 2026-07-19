@@ -1,0 +1,12 @@
+{
+ "patch_id": "f33",
+ "grounded": true,
+ "non_redundant": true,
+ "correctly_placed": true,
+ "pass": true,
+ "reasons": [
+  "Both claims supported: FHIR Immunization (CVX 113, preservative-free Td) with status completed and today's occurrenceDateTime; transcript confirms booster was overdue.",
+  "No prior mention of Td/tetanus in the note (only influenza documented).",
+  "Vaccine administration belongs in Assessment and Plan under preventive health."
+ ]
+}

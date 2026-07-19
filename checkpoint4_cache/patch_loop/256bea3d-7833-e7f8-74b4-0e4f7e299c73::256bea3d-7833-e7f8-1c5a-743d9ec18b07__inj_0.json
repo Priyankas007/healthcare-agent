@@ -1,0 +1,73 @@
+{
+ "patch": {
+  "flag_id": "f6",
+  "section": "Subjective",
+  "insert_text": "She also uses a topical cream for skin flares.",
+  "mode": "merge",
+  "added_claims": [
+   "Uses a topical cream for skin flares"
+  ]
+ },
+ "verify": {
+  "patch_id": "f6",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Insertion matches transcript span mentioning a cream for skin flares",
+   "No existing mention of a topical cream in the note",
+   "Patient-reported medication use belongs in Subjective"
+  ]
+ },
+ "iterations": 2,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f6",
+    "section": "Subjective",
+    "insert_text": ", and hydrocortisone cream for skin flares",
+    "mode": "merge",
+    "added_claims": [
+     "Patient continues hydrocortisone cream for skin flares"
+    ]
+   },
+   "verify": {
+    "patch_id": "f6",
+    "grounded": false,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": false,
+    "reasons": [
+     "Evidence says 'The cream for when my skin flares up' but does not name it as hydrocortisone; the specific drug is unsupported/invented",
+     "Not duplicated elsewhere in the note",
+     "Medication use belongs in Subjective, so placement is appropriate"
+    ]
+   }
+  },
+  {
+   "patch": {
+    "flag_id": "f6",
+    "section": "Subjective",
+    "insert_text": "She also uses a topical cream for skin flares.",
+    "mode": "merge",
+    "added_claims": [
+     "Uses a topical cream for skin flares"
+    ]
+   },
+   "verify": {
+    "patch_id": "f6",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Insertion matches transcript span mentioning a cream for skin flares",
+     "No existing mention of a topical cream in the note",
+     "Patient-reported medication use belongs in Subjective"
+    ]
+   }
+  }
+ ]
+}

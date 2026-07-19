@@ -1,0 +1,50 @@
+{
+ "patch": {
+  "flag_id": "f11",
+  "section": "Objective",
+  "insert_text": "; PHQ-2 total 1",
+  "mode": "merge",
+  "added_claims": [
+   "PHQ-2 depression screen total score of 1"
+  ]
+ },
+ "verify": {
+  "patch_id": "f11",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "PHQ-2 total of 1 is supported by both transcript span and FHIR Observation valueQuantity of 1",
+   "Note lists other screening scores (GAD-7, AUDIT-C) but not PHQ-2, so no duplication",
+   "Screening scores belong in Objective section alongside existing GAD-7 and AUDIT-C"
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f11",
+    "section": "Objective",
+    "insert_text": "; PHQ-2 total 1",
+    "mode": "merge",
+    "added_claims": [
+     "PHQ-2 depression screen total score of 1"
+    ]
+   },
+   "verify": {
+    "patch_id": "f11",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "PHQ-2 total of 1 is supported by both transcript span and FHIR Observation valueQuantity of 1",
+     "Note lists other screening scores (GAD-7, AUDIT-C) but not PHQ-2, so no duplication",
+     "Screening scores belong in Objective section alongside existing GAD-7 and AUDIT-C"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "patch": {
+  "flag_id": "f28",
+  "section": "Subjective",
+  "insert_text": "He also takes acetaminophen (Tylenol) approximately once a month for sinus headache.",
+  "mode": "append",
+  "added_claims": [
+   "Uses acetaminophen (Tylenol) approximately once a month for sinus headache"
+  ]
+ },
+ "verify": {
+  "patch_id": "f28",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Claim matches evidence span 'a Tylenol maybe once a month for the sinus headache'",
+   "Note only lists sodium fluoride gel; acetaminophen use not previously mentioned",
+   "Patient-reported medication use is appropriate for the Subjective section"
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f28",
+    "section": "Subjective",
+    "insert_text": "He also takes acetaminophen (Tylenol) approximately once a month for sinus headache.",
+    "mode": "append",
+    "added_claims": [
+     "Uses acetaminophen (Tylenol) approximately once a month for sinus headache"
+    ]
+   },
+   "verify": {
+    "patch_id": "f28",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Claim matches evidence span 'a Tylenol maybe once a month for the sinus headache'",
+     "Note only lists sodium fluoride gel; acetaminophen use not previously mentioned",
+     "Patient-reported medication use is appropriate for the Subjective section"
+    ]
+   }
+  }
+ ]
+}

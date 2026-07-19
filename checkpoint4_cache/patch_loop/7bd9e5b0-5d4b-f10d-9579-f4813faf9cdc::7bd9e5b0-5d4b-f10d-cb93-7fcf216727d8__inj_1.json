@@ -1,0 +1,50 @@
+{
+ "patch": {
+  "flag_id": "f13",
+  "section": "Subjective",
+  "insert_text": ", atenolol 50 mg",
+  "mode": "merge",
+  "added_claims": [
+   "Home medication atenolol 50 mg"
+  ]
+ },
+ "verify": {
+  "patch_id": "f13",
+  "grounded": true,
+  "non_redundant": true,
+  "correctly_placed": true,
+  "pass": true,
+  "reasons": [
+   "Evidence 'atenolol fifty' supports the added home medication atenolol 50 mg.",
+   "Atenolol is not already listed among the home medications (aspirin, rosuvastatin, lisinopril).",
+   "Home medications are documented in the Subjective section, so placement is correct."
+  ]
+ },
+ "iterations": 1,
+ "unpatchable": false,
+ "history": [
+  {
+   "patch": {
+    "flag_id": "f13",
+    "section": "Subjective",
+    "insert_text": ", atenolol 50 mg",
+    "mode": "merge",
+    "added_claims": [
+     "Home medication atenolol 50 mg"
+    ]
+   },
+   "verify": {
+    "patch_id": "f13",
+    "grounded": true,
+    "non_redundant": true,
+    "correctly_placed": true,
+    "pass": true,
+    "reasons": [
+     "Evidence 'atenolol fifty' supports the added home medication atenolol 50 mg.",
+     "Atenolol is not already listed among the home medications (aspirin, rosuvastatin, lisinopril).",
+     "Home medications are documented in the Subjective section, so placement is correct."
+    ]
+   }
+  }
+ ]
+}

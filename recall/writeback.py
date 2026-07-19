@@ -81,10 +81,13 @@ SENSITIVE_KEYWORDS = (
     "hallucin", "trauma",
 )
 
-# Negative findings must not become positive chart entries.
+# Negative findings must not become positive chart entries. Like the
+# sensitive screen, this deliberately over-excludes (a mixed fact that also
+# carries a positive component gets skipped — safe failure mode).
 NEGATION_MARKERS = (
     "no known", "denies", "denied", "no recent", "no history of", "never had",
-    "no prior", "without any", "negative for",
+    "no prior", "without any", "negative for", "none reported", "no current",
+    "not taking", "takes no",
 )
 
 GAP_PRIORITY = {

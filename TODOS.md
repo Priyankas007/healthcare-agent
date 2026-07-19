@@ -48,6 +48,10 @@ Legend: `[ ]` todo · `[~]` in progress · `[x]` done · `[!]` blocked
 - [x] CP6: write-back demo **verified end-to-end** (3/3 AllergyIntolerance → sandbox HAPI, 18 safety-screened; checkpoint_6.md written); filming kit: reset written/patient/encounter caches, rerun WITHOUT --approve-all for the live gate
 - [ ] Post-run: fold CP4 metrics into demo assets; optional CP2 `--benchmark`
 
+## B0 real detection (Job 2 — added late, high value)
+- [x] `run_b0_detection.py` on all 25 generated notes: mean 2.1 absent/note, 0.9 surfaced; **22 authentic omissions** (1 safety-critical: creatinine 1.32 reasoned past "normal" label; 21 major); SDOH most-dropped type (9) → `b0_detection.md`
+- [x] All 25 "Generated note (B0 scribe)" versions wired into demo UI (blue dot, authentic-omissions band)
+
 ## Demo assets
 - [x] `demo/build_demo_ui.py` → `demo/index.html` — self-contained UI, cached data only (25 encounters, 94 note versions), "Run verifier engine" staged replay, architecture flowchart + sources, planted-omission ground-truth banner
 - [x] Served at http://localhost:8765 (background `http.server`); page + data + JS verified

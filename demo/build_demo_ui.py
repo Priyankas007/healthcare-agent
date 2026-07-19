@@ -490,7 +490,7 @@ TEMPLATE = r"""<!DOCTYPE html>
     <span><b>2</b> median flags/note</span>
     <span><b>96.5%</b> patch faithfulness</span>
   </div>
-  <button class="sysbtn" onclick="document.getElementById('ov').classList.add('show')">⌘ System architecture</button>
+  <button class="sysbtn" onclick="document.getElementById('ov').classList.add('show')">⌘ How it works</button>
   <button class="sysbtn" onclick="openWriteback()">⚡ Chart write-back</button>
 </header>
 
@@ -503,7 +503,7 @@ TEMPLATE = r"""<!DOCTYPE html>
     <h2>Pre-signature safety</h2>
     <p class="sub">Coverage verifier</p>
     <button class="runbtn" id="runbtn" onclick="runVerifier()">Run verifier engine</button>
-    <p class="replay-note">Deterministic replay of the cached Opus 4.8 pipeline — no live calls in this demo.</p>
+    <p class="replay-note">Replays the pipeline's pre-computed analysis — deterministic, no live calls in this demo.</p>
     <div id="stages" style="margin-top:14px"></div>
     <div class="results" id="results"></div>
   </div>
@@ -512,23 +512,23 @@ TEMPLATE = r"""<!DOCTYPE html>
 <div class="overlay" id="ov" onclick="if(event.target===this)this.classList.remove('show')">
   <div class="sheet">
     <button class="close" onclick="document.getElementById('ov').classList.remove('show')">×</button>
-    <h2>System architecture</h2>
-    <p class="cap">Orchestrator–worker pipeline · every stage a separate structured-JSON Opus 4.8 call · prompt-cached prefixes</p>
+    <h2>How it works</h2>
+    <p class="cap">A pipeline of independent steps — checking is always kept separate from writing, and every claim must cite its source</p>
     <div class="flow">
       <div>
-        <div class="srcbox"><b>Ambient transcript</b>speaker-labeled clinician–patient conversation</div>
-        <div class="srcbox"><b>Encounter FHIR R4</b>MedicationRequest · Observation · Condition · DiagnosticReport…</div>
-        <div class="srcbox"><b>Longitudinal chart</b>problem &amp; medication labels (context)</div>
+        <div class="srcbox"><b>The conversation</b>the full recorded visit — everything the clinician and patient actually said</div>
+        <div class="srcbox"><b>This visit's chart data</b>coded medications, lab results, diagnoses &amp; reports recorded for the encounter</div>
+        <div class="srcbox"><b>Patient history</b>ongoing problems &amp; medications for context</div>
       </div>
       <div class="arrow">→</div>
       <div class="pipe">
-        <div class="step"><span class="n">1</span><div><b>Fact decomposition</b><span>extract_facts — atomic, typed clinical assertions with slots (drug/dose/route/freq) + provenance (verbatim quote or FHIR ref)</span></div></div>
-        <div class="step guard"><span class="n">2</span><div><b>Grounded entailment · guard #1</b><span>presence — one batched judge call per note: is each fact present / partial / absent, with verbatim note evidence? Judges the note text only.</span></div></div>
-        <div class="step"><span class="n">3</span><div><b>Severity + expectation classifier</b><span>classify — for each absent fact: should a complete note document it? clinical impact if left out (safety-critical / major / minor)</span></div></div>
-        <div class="step"><span class="n">4</span><div><b>Relevance-filtered surface</b><span>render — surface expected ∧ (safety-critical ∨ major), ranked; minors logged quietly; no count cap</span></div></div>
+        <div class="step"><span class="n">1</span><div><b>Break the visit into facts</b><span>Every clinically important statement — symptoms, medication changes, results, follow-ups — becomes one discrete fact, linked to its source: the exact words spoken, or the chart entry.</span></div></div>
+        <div class="step guard"><span class="n">2</span><div><b>Check the note against every fact</b><span>An independent checker reads the note and asks, for each fact: is it documented — fully, partially, or not at all? Every verdict must quote the note's own words as evidence.</span></div></div>
+        <div class="step"><span class="n">3</span><div><b>Judge what matters</b><span>For each missing fact: should a complete note for <i>this</i> visit include it? And how serious is the gap if left uncorrected — safety-critical, major, or minor?</span></div></div>
+        <div class="step"><span class="n">4</span><div><b>Show only what matters</b><span>Clinicians see the important, relevant gaps, ranked by severity. Minor items are logged but not surfaced — thoroughness without alarm fatigue.</span></div></div>
       </div>
     </div>
-    <div class="evalnote"><b>Evaluation — the injection harness:</b> delete a known-present fact from a gold note (confirm-absent QC), run the detector blind, check it flags exactly that fact. 69 confirmed single-fact deletions → <b>100% recall</b>; untouched notes give the false-positive upper bound (1.56 → 0.96 after the relevance filter); collateral flip rate 0.34%.</div>
+    <div class="evalnote"><b>How we grade it:</b> there's no existing answer key for omissions, so we make one — remove a single known fact from a complete note, then test whether the system finds it, blind. Across <b>69 planted omissions it caught every one (100%)</b>. On untouched notes it raises fewer than one flag per note — and deleting one fact doesn't disturb the rest of the analysis.</div>
   </div>
 </div>
 
